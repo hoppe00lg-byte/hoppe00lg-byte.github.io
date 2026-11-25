@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>AI 音乐歌词·提示词生成器 — 免费用于 Suno、Flow Music | INSIGHT BRIEF</title>
+<meta name="description" content="选好曲风、氛围、速度、人声与主题，即可得到可直接粘贴到 Suno AI、Google Flow Music 的英文风格标签（200字以内）、Verse/Chorus/Bridge 歌词，以及 ChatGPT、Gemini 作词提示词。支持韩语、英语、日语歌词，无需注册，仅在浏览器内运行。">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/zh/music.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:title" content="AI 音乐歌词·提示词生成器 — 免费用于 Suno、Flow Music">
+<meta property="og:description" content="只选曲风、氛围、速度、人声与主题，风格标签和分段歌词立刻生成。韩语、英语、日语，一键复制，不上传服务器。">
+<meta property="og:url" content="https://insightbriefnews.com/zh/music.html">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI 音乐歌词·提示词生成器 — 免费用于 Suno、Flow Music">
+<meta name="twitter:description" content="选好曲风、氛围、速度、人声与主题，立即得到风格标签与分段歌词。韩语、英语、日语一键复制。">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
+<link rel="stylesheet" href="../assets/css/music.css?v=20261126a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "AI 음악 가사·프롬프트 생성기",
+  "url": "https://insightbriefnews.com/music.html",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "장르·서브장르·분위기·템포(BPM)·보컬·언어·주제를 조합해 Suno AI·Google Flow Music용 영문 스타일 태그와 Verse/Chorus/Bridge 구조의 가사, ChatGPT·Gemini용 작사 프롬프트를 만드는 무료 도구. 서버 전송 없이 브라우저에서만 동작합니다.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/music.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/music.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/music.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/music.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/music.html">
+<link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="../assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tool">
+<a class="skip" href="#main">跳至正文</a>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026年11月26日 星期四</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="../music.html" hreflang="ko" lang="ko">KO</a><a href="../en/music.html" hreflang="en" lang="en">EN</a><a href="music.html" hreflang="zh-Hans" lang="zh-Hans" class="is-on" aria-current="true">ZH</a><a href="../ja/music.html" hreflang="ja" lang="ja">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">独立经济·调查报道研究网络杂志</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF 首页">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>洞察简报</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>解读数字背后的脉络</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">提供线索</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">订阅每周简报</a>
+        <button class="icon-btn search-toggle" type="button" aria-label="打开搜索" aria-expanded="false" aria-controls="search-mobile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">新闻·报告<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="新闻·报告">
+          <a href="index.html" data-nav-key="all">全部报道</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI·科技</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">经济·金融</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">贸易·原材料</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">灾难·安全</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">每周调查报道</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">贸易·采购·行情<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="贸易·采购·行情">
+          <a href="biz.html#trade" data-nav-key="tdoc">贸易单据 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">海运运价·物流成本</a>
+          <a href="market.html" data-nav-key="market">原材料·汇率行情板</a>
+          <a href="global.html#portal" data-nav-key="portal">采购厅·企业验证门户</a>
+          <a href="global.html#email" data-nav-key="email">贸易邮件撰写</a>
+          <a href="global.html#trip" data-nav-key="trip">出差中心</a>
+          <a href="biz.html#cost" data-nav-key="cost">利润·成本·资金计算器</a>
+          <a href="seller.html" data-nav-key="seller">卖家·营销工具</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">全球展会日历</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税务·法律·生活<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税务·法律·生活">
+          <a href="tax.html" data-nav-key="tax">税金·年薪·健康保险</a>
+          <a href="salary.html" data-nav-key="salary">工资·最低工资·四大保险</a>
+          <a href="insurance.html" data-nav-key="insurance">实损·车险计算器</a>
+          <a href="law.html" data-nav-key="law">法律·合同·催告书</a>
+          <a href="forms.html" data-nav-key="forms">表单·电子签名 138种</a>
+          <a href="saju.html" data-nav-key="saju">四柱·新年运势</a>
+          <a href="lotto.html" data-nav-key="lotto">彩票号码生成器</a>
+          <a href="music.html" data-nav-key="music" class="is-active" aria-current="page">AI 音乐·歌词生成器</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">介绍·网站地图<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="介绍·网站地图">
+          <a href="sitemap.html" data-nav-key="sitemap">网站地图</a>
+          <a href="about.html" data-nav-key="about">媒体介绍</a>
+          <a href="ad.html" data-nav-key="ad">广告·合作</a>
+          <a href="contact.html" data-nav-key="contact">爆料·咨询</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="输入关键词搜索" aria-label="搜索文章" autocomplete="off">
+    </form>
+  </div>
+</div>
+<div class="search-mobile" id="search-mobile" hidden>
+  <form class="search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+    <input type="search" name="q" placeholder="输入关键词搜索" aria-label="搜索文章" autocomplete="off">
+  </form>
+</div>
+
+<main id="main" class="mu-main">
+  <div class="container mu-wrap">
+
+    <div class="mu-head">
+      <span class="kicker">FREE TOOL · AI MUSIC STUDIO</span>
+      <h1>AI 音乐<br>歌词·提示词生成器</h1>
+      <p class="dek">选好曲风、氛围、速度和唱腔，就能一次得到可直接粘贴到 Suno AI、Google Flow Music 风格栏的英文标签，以及按 Verse、Chorus、Bridge 结构写好的歌词。支持韩语、英语、日语歌词，一键复制。</p>
+      <div class="mu-badges">
+        <span>免费</span><span>无需注册</span><span>输入不上传服务器</span><span>Suno · Flow Music · Udio</span><span>韩·英·日歌词</span>
+      </div>
+    </div>
+
+    <div class="mu-layout">
+      <!-- 설정 -->
+      <section class="mu-builder" id="mu-builder" aria-labelledby="mu-builder-title">
+        <div class="mu-builder-head">
+          <h2 id="mu-builder-title">歌曲设置</h2>
+          <p>所选设置会立即反映在结果中。在同一设置下点“重新生成”，会得到另一版歌词。</p>
+        </div>
+        <div id="mu-controls" translate="no"></div>
+        <noscript>
+          <p class="mu-noscript">本工具需要 JavaScript。在浏览器中开启后即可生成风格标签与歌词。</p>
+        </noscript>
+        <div class="mu-actions">
+          <button type="button" class="mu-btn mu-btn-main" id="mu-go">生成提示词与歌词</button>
+          <button type="button" class="mu-btn" id="mu-again">重新生成</button>
+          <button type="button" class="mu-btn mu-btn-ghost" id="mu-reset">重置</button>
+        </div>
+        <p class="mu-actions-note">输入的主题与关键词只在这个浏览器里使用，不会保存或上传到任何地方。</p>
+      </section>
+
+      <!-- 결과 -->
+      <section class="mu-out" id="mu-out" aria-labelledby="mu-out-title" aria-live="polite" translate="no">
+        <div class="mu-out-head">
+          <h2 id="mu-out-title">结果</h2>
+          <p class="mu-summary" id="mu-summary" translate="no"></p>
+        </div>
+        <div id="mu-results"></div>
+      </section>
+    </div>
+
+    <!-- 쓰는 법 -->
+    <section class="mu-how" aria-labelledby="mu-how-title">
+      <div class="mu-sec-head">
+        <h2 id="mu-how-title">如何粘贴到 Suno、Flow Music</h2>
+        <span>三步</span>
+      </div>
+      <div class="mu-how-grid">
+        <div class="mu-how-card">
+          <span class="k">STEP 01</span>
+          <h3>风格栏只放英文标签</h3>
+          <p>Suno 的 Style of Music 栏有字数限制，短标签更有利。把上面 200 字以内的 Suno 风格那一行原样粘贴即可，曲风、BPM、氛围、人声都在一行里。</p>
+        </div>
+        <div class="mu-how-card">
+          <span class="k">STEP 02</span>
+          <h3>歌词栏要保留段落标记</h3>
+          <p>在 Custom Mode 的歌词栏里，要连 [Verse 1]、[Chorus] 这样的段落标记一起粘贴，歌曲才不会散。方括号里的标记不会被唱出来。</p>
+        </div>
+        <div class="mu-how-card">
+          <span class="k">STEP 03</span>
+          <h3>不满意就只改一行</h3>
+          <p>用同样的歌词重新生成，旋律会变。只想改某一段时，复制 ChatGPT / Gemini 提示词，让 AI “只重写第二段”更快。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 설명 -->
+    <section class="mu-faq" aria-labelledby="mu-faq-title">
+      <div class="mu-sec-head">
+        <h2 id="mu-faq-title">常见问题</h2>
+        <span>6 个问题</span>
+      </div>
+      <dl>
+        <dt>这个工具生成的歌词有版权吗？</dt>
+        <dd>本工具生成的歌词，是把固定句式与词库组合而成的创作辅助材料。与其原样使用，不如自己改一两行，效果会好得多。AI 生成歌曲的版权与收益分配由 Suno、Flow Music 等服务的使用条款决定。能否商用，请先确认该平台付费方案的条件。</dd>
+
+        <dt>Suno 风格栏应该放多少标签？</dt>
+        <dd>短而具体最好，按曲风、BPM、氛围、人声、乐器的顺序放 5~8 个就够。本工具按这个顺序生成 200 字以内的标签，同时给出适合 Flow Music 等可写长文的扩展标签。</dd>
+
+        <dt>怎样让韩语歌词不被唱糊？</dt>
+        <dd>把歌词语言选为韩语，并确认风格标签里有 korean lyrics。在英文标签下放韩语歌词时，避开过长的词、每行控制在 12~16 字以内，更容易听清。</dd>
+
+        <dt>可以用日语或英语写歌词吗？</dt>
+        <dd>可以。把歌词语言选为日语或英语，歌词就会用该语言的句式生成。无论选哪种语言，风格标签都是英文，因为 Suno、Flow Music 的风格栏以英文为准。</dd>
+
+        <dt>可以做成纯音乐吗？</dt>
+        <dd>在人声里选“纯音乐”，就会得到 [Intro]、[Main Theme]、[Instrumental Break]、[Outro] 结构的纯音乐提示词，适合背景音乐和短视频。</dd>
+
+        <dt>输入的内容会被保存吗？</dt>
+        <dd>不会。所有计算都在这个浏览器里完成，不会发送到服务器。刷新页面后输入与结果都会消失，需要的内容请先复制。</dd>
+      </dl>
+    </section>
+
+    <!-- 다른 도구 -->
+    <p class="mu-xlink">
+      其他免费工具 · <a href="seller.html">卖家/营销人员工具</a>（详情页·广告文案）·
+      <a href="saju.html">免费四柱·新年运势</a> ·
+      <a href="forms.html">138种表格和电子签名</a> ·
+      <a href="biz.html">个体经营者工具 9 种</a>
+    </p>
+
+    <section class="mu-legal" aria-labelledby="mu-legal-title">
+      <h3 id="mu-legal-title">版权与个人信息</h3>
+      <p><b>歌词与提示词的性质</b> — 本页的句式、词库与画面构成由 INSIGHT BRIEF 自行编写，没有复制其他作词服务或歌曲的歌词。结果只是创作的起点，成品曲的版权、收益与发行条件按所用 AI 音乐服务的条款执行。</p>
+      <p><b>个人信息</b> — 主题、关键词与设置只在浏览器内处理，不会保存到服务器。请勿把真实姓名、电话、地址等一旦公开就麻烦的内容填进关键词，分享结果前也请再确认一次。</p>
+      <p><b>受版权保护的素材</b> — 在提示词里写某位歌手的名字、真实歌名或商标，要求“用那位歌手的声音”来做，可能引发肖像权、商标权问题。用曲风和氛围来描述风格更安全。</p>
+      <p><b>平台条款</b> — Suno、Google Flow Music、Udio 等平台按套餐不同，商用范围也不同。在 YouTube、TikTok 或流媒体上变现之前，请先确认该服务的最新条款。本工具与任何平台都没有合作关系。</p>
+    </section>
+
+    <p class="mu-disclaimer">
+      本工具是为创作便利而设的句式组合器，不保证成品曲的质量、版权与收益。结果中出现的人名、曲名、商号均为示例，与真实无关。
+    </p>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>独立经济·调查报道研究网络杂志</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>Insight Brief 是一本独立研究网络杂志，通过数据和采访跟踪经济、金融、贸易、原材料以及人工智能和技术。它不是正式注册的互联网报纸，不符合注册要求，例如拥有5名以上的报道和编辑人员。</p>
+      </div>
+      <div class="f-col">
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">调查报道</a></li>
+          <li><a href="index.html?cat=economy">经济·金融</a></li>
+          <li><a href="index.html?cat=trade">贸易·原材料</a></li>
+          <li><a href="market.html">行情中心</a></li>
+          <li><a href="index.html?cat=ai">AI·科技</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>媒体</h4>
+        <ul>
+          <li><a href="about.html">关于·编辑原则</a></li>
+          <li><a href="contact.html#tip">读者线索</a></li>
+          <li><a href="ad.html">广告·赞助价目表</a></li>
+          <li><a href="ad.html#b2b">B2B 采购·成本咨询</a></li>
+          <li><a href="lotto.html">免费工具 · 选号器</a></li>
+          <li><a href="saju.html">免费工具 · 四柱与2027运势</a></li>
+          <li><a href="music.html">免费工具 · AI 音乐歌词提示词生成器</a></li>
+          <li><a href="biz.html">免费工具 · 个体经营者工具 9 种</a></li>
+          <li><a href="seller.html">免费工具 · 卖家·营销工具 4 种</a></li>
+          <li><a href="feed.xml">RSS 订阅</a></li>
+          <li><a href="sitemap.html">网站地图</a></li>
+          <li><a href="sitemap.xml">sitemap.xml</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>联系我们</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">举报 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">广告 hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">首尔·卷。 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>本网络杂志是一家独立媒体，未注册为互联网报纸。禁止未经授权复制或重新分发文章和照片。赞助/广告内容表示为“广告”。</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 独立经济·调查报道研究网络杂志</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="实时简报频道"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>实时简报频道</h3><p>通过 KakaoTalk 开放聊天和 Telegram 实时接收最新报道与行情。</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk 开放聊天</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram 频道</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+<div class="mu-toast" id="mu-toast" role="status" aria-live="polite"></div>
+<script src="../assets/js/monetize.js?v=20261123c" defer></script>
+<script src="../assets/js/music.js?v=20261126a" defer></script>
+<script src="../assets/js/nav.js?v=20261124c"></script>
+<script src="data/i18n.fallback.js?v=20261124a"></script>
+<script src="../assets/js/i18n.js?v=20261124a"></script>
+<!-- IB:CHAT-FLOAT -->
+<script src="../assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

@@ -1,0 +1,3106 @@
+{
+ "source": "석유화학제품 원단위(Unit Consumption) 표 6장(ABS~Xylene(mixed))을 옮겼습니다.",
+ "unitNote": "원단위는 제품 1톤을 만드는 데 드는 원료의 톤 수입니다. ‘원료’는 그 품목을 만들 때 투입되는 양, ‘제품’은 그 품목이 다른 제품 1톤에 들어가는 양입니다.",
+ "filters": [
+  {
+   "id": "all",
+   "label": "전체"
+  },
+  {
+   "id": "pe",
+   "label": "PE",
+   "note": "HDPE · LDPE · L-LDPE"
+  },
+  {
+   "id": "pp",
+   "label": "PP"
+  },
+  {
+   "id": "pvc",
+   "label": "PVC"
+  },
+  {
+   "id": "ps",
+   "label": "PS"
+  },
+  {
+   "id": "abs",
+   "label": "ABS"
+  },
+  {
+   "id": "pc",
+   "label": "PC",
+   "note": "BPA로 표시"
+  },
+  {
+   "id": "pmma",
+   "label": "PMMA",
+   "note": "MMA로 표시"
+  },
+  {
+   "id": "pet",
+   "label": "PET"
+  }
+ ],
+ "products": [
+  {
+   "name": "ABS",
+   "ko": "ABS 수지",
+   "tags": [
+    "abs"
+   ],
+   "inputs": [
+    {
+     "name": "AN(Acrylonitrile)",
+     "v": "0.27"
+    },
+    {
+     "name": "Butadiene",
+     "v": "0.19"
+    },
+    {
+     "name": "BR(Butadiene Rubber)",
+     "v": "0.19"
+    },
+    {
+     "name": "SAN(Styrene Acrylonitrile Copolymer)",
+     "v": "0.81"
+    },
+    {
+     "name": "SM(Styrene monomer)",
+     "v": "0.54"
+    }
+   ],
+   "outputs": [],
+   "note": "BD 직접 투입과 BR 경유, SAN과 그 원료인 SM이 함께 적혀 있습니다. 그대로 더하면 2.0이 되므로 원가 계산에는 한 경로만 골라 씁니다."
+  },
+  {
+   "name": "Acetaldehyde",
+   "ko": "아세트알데히드",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Ethylene(직접 산화)",
+     "v": "0.67~0.71"
+    },
+    {
+     "name": "Ethylene(Ethanol)",
+     "v": "0.67~0.75"
+    },
+    {
+     "name": "Ethyl alcohol",
+     "v": "1.30~1.40"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Acetic acid",
+     "v": "0.77"
+    },
+    {
+     "name": "1,3-Butanediol",
+     "v": "2.2"
+    },
+    {
+     "name": "n-Butyl alcohol",
+     "v": "1.32"
+    },
+    {
+     "name": "Ethyl acetate",
+     "v": "1.11"
+    },
+    {
+     "name": "2-Ethyl hexanol",
+     "v": "1.49~1.59"
+    },
+    {
+     "name": "Pentaerythritol",
+     "v": "0.4"
+    },
+    {
+     "name": "VAM(Vinyl Acetate Monomer)",
+     "v": "0.58"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Acetic acid",
+   "ko": "초산",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetaldehyde",
+     "v": "0.77"
+    },
+    {
+     "name": "n-Butane",
+     "v": "1.08"
+    },
+    {
+     "name": "Ethyl alcohol",
+     "v": "0.89"
+    },
+    {
+     "name": "Methanol",
+     "v": "0.54~0.56"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Butyl acetate",
+     "v": "0.66~0.67"
+    },
+    {
+     "name": "n-Butyl acetate",
+     "v": "0.53~0.54"
+    },
+    {
+     "name": "Ethyl acetate",
+     "v": "0.69"
+    },
+    {
+     "name": "TPA(Terephtalic Acid) solvent",
+     "v": "0.06~0.10"
+    },
+    {
+     "name": "VAM(Vinyl Acetate Monomer)",
+     "v": "0.72~0.73"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Acetone",
+   "ko": "아세톤",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Cumene",
+     "v": "2.27~2.35"
+    },
+    {
+     "name": "IPA(Isopropyl alcohol)",
+     "v": "1.08~1.14"
+    },
+    {
+     "name": "Propylene",
+     "v": "0.85"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "BPA(Bisphenol-A)",
+     "v": "0.28"
+    },
+    {
+     "name": "IPA(Isopropyl alcohol)",
+     "v": "1.07"
+    },
+    {
+     "name": "MIBK(Methyl Isobutyl Ketone)",
+     "v": "1.25"
+    },
+    {
+     "name": "MMA(Methyl Methacrylate)",
+     "v": "0.82"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Acrylamide",
+   "ko": "아크릴아미드",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "AN(Acrylonitrile)",
+     "v": "0.77~0.94"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Acrylic acid",
+   "ko": "아크릴산",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetylene",
+     "v": "0.42"
+    },
+    {
+     "name": "AN(Acrylonitrile)",
+     "v": "0.82"
+    },
+    {
+     "name": "Propylene",
+     "v": "0.73"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "n-Butyl acrylate",
+     "v": "0.59"
+    },
+    {
+     "name": "Ethyl acrylate",
+     "v": "0.77"
+    },
+    {
+     "name": "2-Ethylhexyl acrylate",
+     "v": "0.41"
+    },
+    {
+     "name": "Methyl acrylate",
+     "v": "0.88"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Acrylic fibers",
+   "ko": "아크릴 섬유",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "AN(Acrylonitrile)",
+     "v": "1"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "AN",
+   "ko": "아크릴로니트릴",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "EO(Ethylene Oxide)",
+     "v": "0.98"
+    },
+    {
+     "name": "HCN",
+     "v": "0.54"
+    },
+    {
+     "name": "Propylene",
+     "v": "1.05~1.15"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "ABS(Acrylonitrile Butadiene Styrene)",
+     "v": "0.27"
+    },
+    {
+     "name": "Acrylamide",
+     "v": "0.77~0.94"
+    },
+    {
+     "name": "Acrylic acid",
+     "v": "0.82"
+    },
+    {
+     "name": "Acrylic esters",
+     "v": "0.49"
+    },
+    {
+     "name": "Acrylic fibers",
+     "v": "1"
+    },
+    {
+     "name": "HMDA",
+     "v": "0.97"
+    },
+    {
+     "name": "NBR(Nitrile Butadiene Rubber)",
+     "v": "0.35"
+    },
+    {
+     "name": "SAN(Styrene Acrylonitrile Copolymer)",
+     "v": "0.3"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Alkyl benzene",
+   "ko": "알킬벤젠",
+   "tags": [],
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "Alkylbenzene sulfonate",
+     "v": "0.72"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Aniline",
+   "ko": "아닐린",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Benzene(chlorobenzene)",
+     "v": "1.03"
+    },
+    {
+     "name": "Benzene(nitrobenzene)",
+     "v": "0.88~0.90"
+    },
+    {
+     "name": "Nitrobenzene(수소화)",
+     "v": "1.33~1.47"
+    },
+    {
+     "name": "Phenol",
+     "v": "1.12"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "MDI(Methylene Di-Isocyanate)",
+     "v": "0.8"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Benzene",
+   "ko": "벤젠",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Ethane",
+     "v": "99~312"
+    },
+    {
+     "name": "Propane",
+     "v": "32.8~45.8"
+    },
+    {
+     "name": "n-Butane",
+     "v": "31.6~57.1"
+    },
+    {
+     "name": "Naphtha",
+     "v": "13.4~24.6"
+    },
+    {
+     "name": "Gas oil",
+     "v": "16.5~20.6"
+    },
+    {
+     "name": "Toluene(disproportionation)",
+     "v": "2.5"
+    },
+    {
+     "name": "Toluene(HDA)",
+     "v": "1.23"
+    },
+    {
+     "name": "Toluene/Xylene",
+     "v": "1.23~1.42"
+    },
+    {
+     "name": "Xylene(dealkylation)",
+     "v": "1.42"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "AB(Alkylbenzene)",
+     "v": "0.4"
+    },
+    {
+     "name": "Aniline(chlorobenzene)",
+     "v": "1.03"
+    },
+    {
+     "name": "Aniline(nitrobenzene)",
+     "v": "0.88~0.90"
+    },
+    {
+     "name": "Chlorobenzene",
+     "v": "0.76"
+    },
+    {
+     "name": "Cumene",
+     "v": "0.68"
+    },
+    {
+     "name": "Cyclohexane",
+     "v": "0.93"
+    },
+    {
+     "name": "Dodecylbenzene",
+     "v": "0.4"
+    },
+    {
+     "name": "Ethylbenzene",
+     "v": "0.75"
+    },
+    {
+     "name": "MA(Maleic anhydride)",
+     "v": "1.25"
+    },
+    {
+     "name": "Nitrobenzene",
+     "v": "0.66"
+    },
+    {
+     "name": "Phenol(benzene sulfonic acid)",
+     "v": "0.94"
+    },
+    {
+     "name": "Phenol(chlorobenzene)",
+     "v": "1.03"
+    },
+    {
+     "name": "Phenol(cumene)",
+     "v": "0.91~1.02"
+    },
+    {
+     "name": "Phenol(Raschig process)",
+     "v": "1.04"
+    },
+    {
+     "name": "SM",
+     "v": "0.86"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Bisphenol-A",
+   "ko": "비스페놀A",
+   "tags": [
+    "pc"
+   ],
+   "inputs": [
+    {
+     "name": "Acetone",
+     "v": "0.28"
+    },
+    {
+     "name": "Phenol",
+     "v": "0.88"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Epoxy resin",
+     "v": "0.71~0.74"
+    },
+    {
+     "name": "Polycarbonate resin",
+     "v": "0.91~0.92"
+    }
+   ],
+   "note": "PC(폴리카보네이트)는 이 표에 완제품 항목이 없습니다. PC 1톤에는 BPA 0.91~0.92톤이 들어갑니다(제품 칸)."
+  },
+  {
+   "name": "Butadiene",
+   "ko": "부타디엔",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetylene",
+     "v": "1.3"
+    },
+    {
+     "name": "Butane",
+     "v": "1.7"
+    },
+    {
+     "name": "Butene",
+     "v": "1.11"
+    },
+    {
+     "name": "Ethane",
+     "v": "33~62"
+    },
+    {
+     "name": "Ethyl alcohol",
+     "v": "2.5"
+    },
+    {
+     "name": "Gas oil",
+     "v": "6.2~7.1"
+    },
+    {
+     "name": "Naphtha",
+     "v": "5.2~9.1"
+    },
+    {
+     "name": "Propane",
+     "v": "4.5~8.8"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "ABS",
+     "v": "0.19"
+    },
+    {
+     "name": "1,4-Butanediol",
+     "v": "1.41"
+    },
+    {
+     "name": "BR",
+     "v": "0.94~1.10"
+    },
+    {
+     "name": "CR",
+     "v": "0.77~0.85"
+    },
+    {
+     "name": "HMDA",
+     "v": "0.67"
+    },
+    {
+     "name": "MBS",
+     "v": "0.21"
+    },
+    {
+     "name": "NBR",
+     "v": "0.65"
+    },
+    {
+     "name": "SBR(emulsion)",
+     "v": "0.59~0.73"
+    },
+    {
+     "name": "SBR(solution)",
+     "v": "0.81"
+    },
+    {
+     "name": "SB-latex",
+     "v": "0.42"
+    },
+    {
+     "name": "SB plastics",
+     "v": "0.45"
+    },
+    {
+     "name": "Styrenic TPE",
+     "v": "0.7"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Butane",
+   "ko": "부탄",
+   "tags": [],
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "Butadiene",
+     "v": "1.7"
+    },
+    {
+     "name": "Ethylene",
+     "v": "0.39~7.81"
+    },
+    {
+     "name": "Pygas",
+     "v": "0.06"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "n-Butane",
+   "ko": "노르말부탄",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetic acid",
+     "v": "1.08"
+    },
+    {
+     "name": "Butadiene",
+     "v": "2.10~2.20"
+    },
+    {
+     "name": "Ethylene",
+     "v": "2.50~2.60"
+    },
+    {
+     "name": "MA",
+     "v": "1.20~1.30"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "1,3-Butadiene",
+   "ko": "1,3-부타디엔",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetaldehyde",
+     "v": "2.2"
+    },
+    {
+     "name": "Acetylene",
+     "v": "0.32"
+    },
+    {
+     "name": "Butadiene",
+     "v": "1.41"
+    },
+    {
+     "name": "Formaldehyde(37% sol.)",
+     "v": "1.97"
+    },
+    {
+     "name": "MA",
+     "v": "1.33"
+    },
+    {
+     "name": "PO",
+     "v": "0.93"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "PBT",
+     "v": "0.44"
+    },
+    {
+     "name": "THF",
+     "v": "1.31"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Butanol",
+   "ko": "부탄올",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Propylene",
+     "v": "0.70~0.77"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "n-Butanol",
+   "ko": "노르말부탄올",
+   "tags": [],
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "Butadiene",
+     "v": "1.11"
+    },
+    {
+     "name": "MA",
+     "v": "1.5"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "n-Butyl acetate",
+   "ko": "초산노르말부틸",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetic acid",
+     "v": "0.53~0.54"
+    },
+    {
+     "name": "n-Butyl alcohol",
+     "v": "0.66~0.67"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "n-Butyl acrylates",
+   "ko": "아크릴산노르말부틸",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acrylic acid",
+     "v": "0.59"
+    },
+    {
+     "name": "n-butyl alcohol",
+     "v": "0.6"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "n-Butyl alcohol",
+   "ko": "노르말부틸알코올",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetaldehyde",
+     "v": "1.32"
+    },
+    {
+     "name": "n-Butylaldehyde",
+     "v": "1.02"
+    },
+    {
+     "name": "Ethyl alcohol",
+     "v": "1.72~1.85"
+    },
+    {
+     "name": "Propylene",
+     "v": "0.66~0.73"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "n-Butyl acetate",
+     "v": "0.66~0.67"
+    },
+    {
+     "name": "n-Butyl acrylate",
+     "v": "0.6"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Butylenes",
+   "ko": "부틸렌",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Ethane",
+     "v": "50~330"
+    },
+    {
+     "name": "Propane",
+     "v": "21~42"
+    },
+    {
+     "name": "Butane",
+     "v": "11~13"
+    },
+    {
+     "name": "Naphtha",
+     "v": "3.2~11"
+    },
+    {
+     "name": "Gas oil",
+     "v": "3.0~6.3"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Isobutylene",
+     "v": "1.2"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Caprolactam",
+   "ko": "카프로락탐",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Cyclohexane(photonitrosation)",
+     "v": "0.92"
+    },
+    {
+     "name": "Cyclohexane(cyclohexanone)",
+     "v": "1.06"
+    },
+    {
+     "name": "Cyclohexane(BASF process)",
+     "v": "1.06"
+    },
+    {
+     "name": "Cyclohexane(Stamicarbon process)",
+     "v": "1.07~1.22"
+    },
+    {
+     "name": "Phenol",
+     "v": "0.9"
+    },
+    {
+     "name": "Toluene",
+     "v": "0.96"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Nylon 6 chip",
+     "v": "1.03"
+    },
+    {
+     "name": "Nylon 6 fiber/film",
+     "v": "1.03"
+    },
+    {
+     "name": "Nylon 6 plastics",
+     "v": "1.05"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Cumene",
+   "ko": "큐멘",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Benzene",
+     "v": "0.68"
+    },
+    {
+     "name": "Propylene",
+     "v": "0.39~0.40"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Acetone",
+     "v": "2.27~2.35"
+    },
+    {
+     "name": "Phenol",
+     "v": "1.33~1.41"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Cyclohexane",
+   "ko": "시클로헥산",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Benzene",
+     "v": "0.93"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Adipic acid",
+     "v": "0.71~0.78"
+    },
+    {
+     "name": "Caprolactam(photonitrosation)",
+     "v": "0.92"
+    },
+    {
+     "name": "Caprolactam(nitric oxide)",
+     "v": "1.06"
+    },
+    {
+     "name": "Caprolactam(Stamicarbon)",
+     "v": "1.07~1.22"
+    },
+    {
+     "name": "Caprolactam(cyclohexanone)",
+     "v": "1.06"
+    },
+    {
+     "name": "HMDA(adipic acid)",
+     "v": "1.21"
+    },
+    {
+     "name": "HMDA(hexanediol)",
+     "v": "1.8"
+    },
+    {
+     "name": "Nylon 6 chips",
+     "v": "1.28"
+    },
+    {
+     "name": "Nylon 6 fibers",
+     "v": "1.28"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "DMT",
+   "ko": "디메틸테레프탈레이트",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Methanol",
+     "v": "0.38"
+    },
+    {
+     "name": "TPA(Terephthalic Acid)",
+     "v": "0.87"
+    },
+    {
+     "name": "p-Xylene",
+     "v": "0.59"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "PBT(Polybutylene Terephthalate)",
+     "v": "0.85~0.89"
+    },
+    {
+     "name": "PET(Polyethylene Terephthalate)",
+     "v": "1.02~1.066"
+    },
+    {
+     "name": "TPA(Terephthalic Acid)",
+     "v": "1.2"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "DNT",
+   "ko": "디니트로톨루엔",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Toluene",
+     "v": "0.53"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Toluene diamine",
+     "v": "1.56"
+    },
+    {
+     "name": "TDI(Toluene Di Isocyanate)",
+     "v": "1.16"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "MDI",
+   "ko": "MDI(이소시아네이트)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Aniline",
+     "v": "0.8"
+    },
+    {
+     "name": "Formaldehyde (37%)",
+     "v": "0.41"
+    },
+    {
+     "name": "MDA",
+     "v": "0.88"
+    },
+    {
+     "name": "Phosgene",
+     "v": "0.9"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Polyurethane elastomers",
+     "v": "0.3"
+    },
+    {
+     "name": "Polyurethane fibers",
+     "v": "0.4"
+    },
+    {
+     "name": "Polyurethane foams, rigid",
+     "v": "0.50~0.55"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "EPDM",
+   "ko": "EPDM 고무",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Ethylene",
+     "v": "0.65"
+    },
+    {
+     "name": "Propylene",
+     "v": "0.35"
+    },
+    {
+     "name": "Diene",
+     "v": "0.05"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Epichlorohydrin",
+   "ko": "에피클로로히드린",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Alkyl chloride",
+     "v": "0.98"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Epoxy Resin",
+     "v": "0.47~0.68"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "EPR",
+   "ko": "EPR 고무",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Ethylene",
+     "v": "0.50~0.60"
+    },
+    {
+     "name": "Propylene",
+     "v": "0.40~0.50"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Ethyl acetate",
+   "ko": "초산에틸",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetaldehyde",
+     "v": "1.11"
+    },
+    {
+     "name": "Acetic acid",
+     "v": "0.69"
+    },
+    {
+     "name": "Ethyl alcohol",
+     "v": "0.53~0.59"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Ethyl alcohol",
+   "ko": "에탄올",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Ethylene",
+     "v": "0.63~0.66"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Acetaldehyde",
+     "v": "1.30~1.40"
+    },
+    {
+     "name": "Acetic acid",
+     "v": "0.89"
+    },
+    {
+     "name": "Butadiene",
+     "v": "0.4"
+    },
+    {
+     "name": "n-Butyl alcohol",
+     "v": "1.72~1.85"
+    },
+    {
+     "name": "Ethyl acetate",
+     "v": "0.53~0.59"
+    },
+    {
+     "name": "Ethyl acrylate",
+     "v": "0.48"
+    },
+    {
+     "name": "Ethyl chloride",
+     "v": "0.75"
+    },
+    {
+     "name": "Ethylene",
+     "v": "0.63"
+    },
+    {
+     "name": "Ethylene glycol monoethyl ether",
+     "v": "0.57"
+    },
+    {
+     "name": "Ethyl ether",
+     "v": "1.32"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Ethyl benzene",
+   "ko": "에틸벤젠",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Benzene",
+     "v": "0.75"
+    },
+    {
+     "name": "Ethylene",
+     "v": "0.28"
+    },
+    {
+     "name": "Xylenes",
+     "v": "1"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "SM(Dehydrogenation)",
+     "v": "1.10~1.20"
+    },
+    {
+     "name": "SM(Acetophenone)",
+     "v": "1.28~1.31"
+    },
+    {
+     "name": "SM(Peroxidation)",
+     "v": "1.14"
+    },
+    {
+     "name": "Toluene",
+     "v": "0.05"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Ethylene",
+   "ko": "에틸렌",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetylene",
+     "v": "1.08"
+    },
+    {
+     "name": "Butane",
+     "v": "2.50~2.60"
+    },
+    {
+     "name": "Ethane",
+     "v": "1.25"
+    },
+    {
+     "name": "Ethyl alcohol",
+     "v": "0.60~0.63"
+    },
+    {
+     "name": "Gas oil",
+     "v": "3.86~4.88"
+    },
+    {
+     "name": "Naphtha",
+     "v": "3.0~4.0"
+    },
+    {
+     "name": "Propane",
+     "v": "2.4"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Acetaldehyde(oxidation)",
+     "v": "0.67~0.71"
+    },
+    {
+     "name": "Acetaldehyde(Ethanol)",
+     "v": "0.67~0.75"
+    },
+    {
+     "name": "EPDM",
+     "v": "0.65"
+    },
+    {
+     "name": "EPM",
+     "v": "0.50~0.60"
+    },
+    {
+     "name": "Ethyl alcohol(hydration)",
+     "v": "0.63"
+    },
+    {
+     "name": "Ethyl alcohol(Ethyl sulfate)",
+     "v": "0.63~0.66"
+    },
+    {
+     "name": "Ethyl benzene",
+     "v": "0.28"
+    },
+    {
+     "name": "Ethyl chloride",
+     "v": "0.49"
+    },
+    {
+     "name": "Ethylene diamine",
+     "v": "0.78"
+    },
+    {
+     "name": "Ethylene dichloride",
+     "v": "0.29~0.30"
+    },
+    {
+     "name": "Ethylene/Ethyl acrylate copolymer",
+     "v": ">0.85"
+    },
+    {
+     "name": "EG(Ethylene Glycol)",
+     "v": "0.89~1.00"
+    },
+    {
+     "name": "Ethylene imine",
+     "v": "0.82"
+    },
+    {
+     "name": "EO(Chlorohydrin)",
+     "v": "0.8"
+    },
+    {
+     "name": "EO(Oxidation)",
+     "v": "0.89~1.00"
+    },
+    {
+     "name": "EVA",
+     "v": "0.8"
+    },
+    {
+     "name": "Linear α-olefins",
+     "v": "1.05"
+    },
+    {
+     "name": "Linear primary alcohols",
+     "v": "1.1"
+    },
+    {
+     "name": "Perchloroethylene",
+     "v": "0.19"
+    },
+    {
+     "name": "HDPE",
+     "v": "1.02~1.04"
+    },
+    {
+     "name": "L-LDPE",
+     "v": "0.93~0.95"
+    },
+    {
+     "name": "LDPE",
+     "v": "1.03"
+    },
+    {
+     "name": "1,1,1-Trichloroethane/Trichloroethylene",
+     "v": "0.25"
+    },
+    {
+     "name": "VAM(Vinyl Acetate Monomer)",
+     "v": "0.37~0.39"
+    },
+    {
+     "name": "VAE Copolymers",
+     "v": "0.87"
+    },
+    {
+     "name": "VCM(Vinyl Chloride Monomer)",
+     "v": "0.51"
+    },
+    {
+     "name": "Vinylidene Chloride",
+     "v": "0.39"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "EDC",
+   "ko": "이염화에틸렌(EDC)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Ethylene",
+     "v": "0.29~0.30"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Ethylene diamine",
+     "v": "2.5"
+    },
+    {
+     "name": "Ethylene amine",
+     "v": "1.96"
+    },
+    {
+     "name": "Perchloroethylene",
+     "v": "0.60~0.67"
+    },
+    {
+     "name": "1.1.1-Trichloroethane",
+     "v": "0.82"
+    },
+    {
+     "name": "Trichloroethylene",
+     "v": "0.75"
+    },
+    {
+     "name": "VCM(Vinyl Chloride Monomer)",
+     "v": "1.65~1.67"
+    },
+    {
+     "name": "Vinylidene chloride",
+     "v": "1.26"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "EG",
+   "ko": "에틸렌글리콜",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "EO(Ethylene Oxide)",
+     "v": "0.75"
+    },
+    {
+     "name": "Formaldehyde",
+     "v": "1.76"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Glycol diacetate",
+     "v": "0.5"
+    },
+    {
+     "name": "PET(Polyethylene Terephthalate)",
+     "v": "0.327~0.339"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "EO",
+   "ko": "산화에틸렌(EO)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Ethylene(chlorohydrin)",
+     "v": "0.8"
+    },
+    {
+     "name": "Ethylene(oxidation)",
+     "v": "0.89~1.00"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "AN(Acrylonitrile)",
+     "v": "0.98"
+    },
+    {
+     "name": "Diethanolamine",
+     "v": "0.88"
+    },
+    {
+     "name": "DEG(Di Ethylene Glycol)",
+     "v": "0.84"
+    },
+    {
+     "name": "Ethylene Cyanohydrin",
+     "v": "0.75"
+    },
+    {
+     "name": "EG(Ethylene glycol)",
+     "v": "0.75"
+    },
+    {
+     "name": "Ethylene glycol monobutyl ether",
+     "v": "0.41"
+    },
+    {
+     "name": "Ethylene glycol monoethyl ether",
+     "v": "0.54"
+    },
+    {
+     "name": "Ethylene glycol monomethyl ether",
+     "v": "0.58"
+    },
+    {
+     "name": "Glycol diacetate",
+     "v": "0.75"
+    },
+    {
+     "name": "Polyether polyol",
+     "v": "1.1"
+    },
+    {
+     "name": "Polyethylene glycols",
+     "v": "1.1"
+    },
+    {
+     "name": "Polyethylene glycol ester",
+     "v": "0.61"
+    },
+    {
+     "name": "Triethanolamine",
+     "v": "0.93"
+    },
+    {
+     "name": "Triethylene glycol",
+     "v": "0.9"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "2-Ethylhexanol",
+   "ko": "2-에틸헥산올",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetaldehyde",
+     "v": "1.49~1.59"
+    },
+    {
+     "name": "n-Butyraldehyde",
+     "v": "1.16"
+    },
+    {
+     "name": "Propylene",
+     "v": "0.75~0.82"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "DOA",
+     "v": "0.78"
+    },
+    {
+     "name": "DOP",
+     "v": "0.7"
+    },
+    {
+     "name": "2-Ethylhexyl acrylate",
+     "v": "0.71"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "EVA",
+   "ko": "EVA 수지",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Ethylene",
+     "v": "0.8"
+    },
+    {
+     "name": "VAM(Vinyl Acetate Monomer)",
+     "v": "0.2"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "HDPE",
+   "ko": "고밀도폴리에틸렌",
+   "tags": [
+    "pe"
+   ],
+   "inputs": [
+    {
+     "name": "Ethylene",
+     "v": "1.02~1.04"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Isobutane",
+   "ko": "이소부탄",
+   "tags": [],
+   "inputs": [],
+   "outputs": [
+    {
+     "name": "t-Butyl alcohol",
+     "v": "0.9"
+    },
+    {
+     "name": "PO(Propylene Oxide)",
+     "v": "2.00~3.00"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Isobutyl acetate",
+   "ko": "초산이소부틸",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetaldehyde",
+     "v": "0.4"
+    },
+    {
+     "name": "Acetic acid",
+     "v": "0.52~0.53"
+    },
+    {
+     "name": "Isobutyl alcohol",
+     "v": "0.72"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Isobutyl alcohol",
+   "ko": "이소부틸알코올",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Propylene",
+     "v": "0.65~0.73"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Isobutylene",
+   "ko": "이소부틸렌",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "t-Butyl alcohol",
+     "v": "1.33"
+    },
+    {
+     "name": "Butylenes",
+     "v": "1"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "t-Butyl alcohol",
+     "v": "0.92"
+    },
+    {
+     "name": "Butyl rubber",
+     "v": "0.98"
+    },
+    {
+     "name": "Isoprene",
+     "v": "1.2"
+    },
+    {
+     "name": "MTBE",
+     "v": "0.64"
+    },
+    {
+     "name": "MMA",
+     "v": "0.68"
+    },
+    {
+     "name": "Polyisobutylene",
+     "v": "1.2"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Isophthalic acid",
+   "ko": "이소프탈산",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Xylene",
+     "v": "0.7"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Alkyd resin",
+     "v": "0.3"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Isopropyl alcohol",
+   "ko": "이소프로필알코올(IPA)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetone",
+     "v": "1.07"
+    },
+    {
+     "name": "Propylene(hydration)",
+     "v": "0.82"
+    },
+    {
+     "name": "Propylene(hydration of isopropyl sulfate)",
+     "v": "0.77"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Acetone(dehydrogenation)",
+     "v": "1.08"
+    },
+    {
+     "name": "Acetone(oxidation)",
+     "v": "1.14"
+    },
+    {
+     "name": "Hydrogen peroxide",
+     "v": "2.26"
+    },
+    {
+     "name": "Isopropyl acetate",
+     "v": "0.59"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Linear Alkyl",
+   "ko": "리니어알킬벤젠(LAB)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Benzene",
+     "v": "0.4"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "LDPE",
+   "ko": "저밀도폴리에틸렌",
+   "tags": [
+    "pe"
+   ],
+   "inputs": [
+    {
+     "name": "Ethylene",
+     "v": "1.03"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "L-LDPE",
+   "ko": "선형저밀도폴리에틸렌",
+   "tags": [
+    "pe"
+   ],
+   "inputs": [
+    {
+     "name": "Ethylene",
+     "v": "0.93~0.95"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "MA",
+   "ko": "무수말레인산",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Benzene",
+     "v": "1.25"
+    },
+    {
+     "name": "n-Butane",
+     "v": "1.16~1.30"
+    },
+    {
+     "name": "n-Butenes",
+     "v": "1.5"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "1,4-Butadiene",
+     "v": "1.33"
+    },
+    {
+     "name": "Fumaric Acid",
+     "v": "0.85"
+    },
+    {
+     "name": "Malic Acid",
+     "v": "0.8"
+    },
+    {
+     "name": "Unsat. polyester resin(UPE Resin)",
+     "v": "0.15~0.17"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "MBS",
+   "ko": "MBS 수지",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Butadiene",
+     "v": "0.21"
+    },
+    {
+     "name": "MMA(Methyl Methacrylate)",
+     "v": "0.21"
+    },
+    {
+     "name": "SM(Styrene Monomer)",
+     "v": "0.57"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Methanol",
+   "ko": "메탄올",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Coal",
+     "v": "1.07"
+    },
+    {
+     "name": "Heavy oils",
+     "v": "0.72"
+    },
+    {
+     "name": "Methane",
+     "v": "0.48~0.58"
+    },
+    {
+     "name": "Naphtha",
+     "v": "0.52"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Acetic acid",
+     "v": "0.54~0.56"
+    },
+    {
+     "name": "Acetic anhydride",
+     "v": "0.35"
+    },
+    {
+     "name": "Diethylene glycol monomethyl ether",
+     "v": "0.3"
+    },
+    {
+     "name": "Dimethylamine",
+     "v": "1.45"
+    },
+    {
+     "name": "Dimethyl phthalate",
+     "v": "0.42"
+    },
+    {
+     "name": "DMT(Dimethyl Terephthalate)",
+     "v": "0.38"
+    },
+    {
+     "name": "Ethylene glycol monomethyl ether",
+     "v": "0.47"
+    },
+    {
+     "name": "Glycol ether",
+     "v": "0.37~0.38"
+    },
+    {
+     "name": "Methyl chloride",
+     "v": "0.68"
+    },
+    {
+     "name": "Methylene chloride",
+     "v": "0.41"
+    },
+    {
+     "name": "MMA(Methyl Methacrylate)",
+     "v": "0.33~0.39"
+    },
+    {
+     "name": "MTBE(Methyl Tert Butyl Ether)",
+     "v": "0.37"
+    },
+    {
+     "name": "Polyphenylene oxide",
+     "v": "0.63"
+    },
+    {
+     "name": "Triethylene glycol monomethylether",
+     "v": "0.22"
+    },
+    {
+     "name": "Trimethylamine",
+     "v": "1.65"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "MTBE",
+   "ko": "MTBE",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Isobutylene",
+     "v": "0.64"
+    },
+    {
+     "name": "Methanol",
+     "v": "0.37"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "MEK",
+   "ko": "MEK(메틸에틸케톤)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "sec-Butyl alcohol",
+     "v": "1.14~1.17"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "MIBK",
+   "ko": "MIBK",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetone",
+     "v": "1.25"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "MMA",
+   "ko": "메틸메타크릴레이트(MMA)",
+   "tags": [
+    "pmma"
+   ],
+   "inputs": [
+    {
+     "name": "Acetone",
+     "v": "0.7"
+    },
+    {
+     "name": "t-Butyl alcohol",
+     "v": "0.97"
+    },
+    {
+     "name": "Ethylene",
+     "v": "1"
+    },
+    {
+     "name": "Formaldehyde(37%)",
+     "v": "2.7"
+    },
+    {
+     "name": "Hydrogen cyanide",
+     "v": "0.32"
+    },
+    {
+     "name": "Isobutylene",
+     "v": "0.68"
+    },
+    {
+     "name": "Methanol",
+     "v": "0.33~0.39"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "MBS(Methyl Methacrylate Butadiene Styrene)",
+     "v": "0.21"
+    }
+   ],
+   "note": "PMMA(아크릴)는 이 표에 완제품 항목이 없습니다. MMA가 PMMA의 주 원료입니다."
+  },
+  {
+   "name": "NBR",
+   "ko": "NBR 고무",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "AN(Acrylonitrile)",
+     "v": "0.35"
+    },
+    {
+     "name": "Butadiene",
+     "v": "0.65"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Nitrobenzene",
+   "ko": "니트로벤젠",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Benzene",
+     "v": "0.66"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Aniline",
+     "v": "1.33~1.47"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Nylon 6 chips",
+   "ko": "나일론6 칩",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Caprolactam",
+     "v": "1.03"
+    },
+    {
+     "name": "Cyclohexane",
+     "v": "1.28"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Nylon 6 fiber",
+     "v": "1"
+    },
+    {
+     "name": "Nylon plastics",
+     "v": "1"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Nylon 66 chips",
+   "ko": "나일론66 칩",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Adipic acid",
+     "v": "0.70~0.71"
+    },
+    {
+     "name": "Caprolactam",
+     "v": "1.03~1.05"
+    },
+    {
+     "name": "HMDA",
+     "v": "0.52~0.55"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Nylon 66 fiber",
+     "v": "1"
+    },
+    {
+     "name": "Nylon plastics",
+     "v": "1"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Pentaerythritol",
+   "ko": "펜타에리트리톨",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetaldehyde",
+     "v": "0.4"
+    },
+    {
+     "name": "Formaldehyde(37%)",
+     "v": "3.3"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Alkyd resin",
+     "v": "0.2"
+    },
+    {
+     "name": "Alkyd resin, styrenated",
+     "v": "0.15"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Phenol",
+   "ko": "페놀",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Benzene(benzene sulfonic acid)",
+     "v": "0.94"
+    },
+    {
+     "name": "Benzene(chlorobenzene)",
+     "v": "1.03"
+    },
+    {
+     "name": "Benzene(cumene)",
+     "v": "0.91~1.02"
+    },
+    {
+     "name": "Benzene(Raschig Process)",
+     "v": "1.04"
+    },
+    {
+     "name": "Chlorobenzene",
+     "v": "1.26"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Cumene",
+     "v": "1.33~1.41"
+    },
+    {
+     "name": "Propylene",
+     "v": "0.58"
+    },
+    {
+     "name": "Toluene",
+     "v": "1.25"
+    },
+    {
+     "name": "Adipic acid",
+     "v": "0.72"
+    },
+    {
+     "name": "Alkylphenol",
+     "v": "0.43~0.69"
+    },
+    {
+     "name": "Aniline",
+     "v": "1.12"
+    },
+    {
+     "name": "BPA(Bisphenol A)",
+     "v": "0.88"
+    },
+    {
+     "name": "Caprolactam",
+     "v": "0.9"
+    },
+    {
+     "name": "Nonylphenol",
+     "v": "0.46"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "PA",
+   "ko": "무수프탈산(PA)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Naphthalene(78°)",
+     "v": "1.19"
+    },
+    {
+     "name": "Naphthalene(80°)",
+     "v": "1.05"
+    },
+    {
+     "name": "O-Xylene",
+     "v": "0.91~0.92"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Alkyd resins",
+     "v": "0.30~0.35"
+    },
+    {
+     "name": "Alkyd resins, styrenated",
+     "v": "0.30~0.45"
+    },
+    {
+     "name": "Butyl octyl phthalate",
+     "v": "0.47"
+    },
+    {
+     "name": "Di-n-butyl phthalate",
+     "v": "0.56"
+    },
+    {
+     "name": "Dicyclohexyl phthalate",
+     "v": "0.5"
+    },
+    {
+     "name": "Diethyl phthalate",
+     "v": "0.78"
+    },
+    {
+     "name": "Diisodecyl phthalate",
+     "v": "0.34"
+    },
+    {
+     "name": "Dimethyl phthalate",
+     "v": "0.82"
+    },
+    {
+     "name": "Dioctyl phthalate",
+     "v": "0.39"
+    },
+    {
+     "name": "Octyl decyl phthalate",
+     "v": "0.38"
+    },
+    {
+     "name": "Unsat. polyester resin",
+     "v": "0.25"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Polyacetal(POM)",
+   "ko": "폴리아세탈(POM)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Formaldehyde",
+     "v": "3"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "BR",
+   "ko": "부타디엔고무(BR)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Butadiene",
+     "v": "0.94~1.10"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "ABS(Acrylonitrile Butadiene Styrene)",
+     "v": "0.19"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Polybutenes",
+   "ko": "폴리부텐",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Butylenes",
+     "v": "1.2"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "PBT",
+   "ko": "PBT 수지",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "1,4-Butadiene",
+     "v": "0.44"
+    },
+    {
+     "name": "DMT(Dimethyl Terephthalate)",
+     "v": "0.89"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Polyether polyols",
+   "ko": "폴리에테르폴리올",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "EO(Ethylene Oxide)",
+     "v": "1.1"
+    },
+    {
+     "name": "PO(Propylene Oxide)",
+     "v": "0.70~0.95"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "PET",
+   "ko": "PET 수지",
+   "tags": [
+    "pet"
+   ],
+   "inputs": [
+    {
+     "name": "DMT(Dimethyl Terephthalate)",
+     "v": "1.02~1.066"
+    },
+    {
+     "name": "EG(Ethylene Glycol)",
+     "v": "0.327~0.339"
+    },
+    {
+     "name": "TPA(Terephthalic Acid)",
+     "v": "0.868~0.88"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Polyester bottle resins",
+     "v": "1.003~1.01"
+    },
+    {
+     "name": "Polyester fiber",
+     "v": "1.01~1.08"
+    },
+    {
+     "name": "Polyester film",
+     "v": "1.01~1.08"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "PP",
+   "ko": "폴리프로필렌",
+   "tags": [
+    "pp"
+   ],
+   "inputs": [
+    {
+     "name": "Propylene",
+     "v": "1.05~1.10"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "PP fiber",
+     "v": "1"
+    },
+    {
+     "name": "PP film",
+     "v": "1"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "PS",
+   "ko": "폴리스티렌",
+   "tags": [
+    "ps"
+   ],
+   "inputs": [
+    {
+     "name": "SM(HI)",
+     "v": "0.93"
+    },
+    {
+     "name": "SM(EPS)",
+     "v": "1.00~1.05"
+    },
+    {
+     "name": "SM(GP)",
+     "v": "1.00~1.05"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Polyvinyl acetate",
+   "ko": "폴리초산비닐",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "VAM(Vinyl Acetate Monomer)",
+     "v": "1.01~1.05"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Polyvinyl alcohol",
+     "v": "2.1"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "PVC",
+   "ko": "폴리염화비닐",
+   "tags": [
+    "pvc"
+   ],
+   "inputs": [
+    {
+     "name": "VCM(Vinyl Chloride Monomer)",
+     "v": "1.01~1.04"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "Propylene",
+   "ko": "프로필렌",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Butane",
+     "v": "5.5~6.0"
+    },
+    {
+     "name": "Naphtha",
+     "v": "6.2~7.7"
+    },
+    {
+     "name": "Gas oil",
+     "v": "6.4~7.2"
+    },
+    {
+     "name": "Propane",
+     "v": "5~8"
+    },
+    {
+     "name": "Propane(dehydrogenation)",
+     "v": "1.25~1.31"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Acetone",
+     "v": "0.85"
+    },
+    {
+     "name": "Acrylic acid",
+     "v": "0.73"
+    },
+    {
+     "name": "Acrylic ester",
+     "v": "0.46~0.47"
+    },
+    {
+     "name": "AN(Acrylonitrile)",
+     "v": "1.1"
+    },
+    {
+     "name": "n-Butyl alcohol",
+     "v": "0.66~0.73"
+    },
+    {
+     "name": "Cumene",
+     "v": "0.39~0.40"
+    },
+    {
+     "name": "Dodecylbenzene",
+     "v": "0.91"
+    },
+    {
+     "name": "Epichlorohydrin",
+     "v": "0.8"
+    },
+    {
+     "name": "EPDM",
+     "v": "0.35"
+    },
+    {
+     "name": "EPR",
+     "v": "0.40~0.50"
+    },
+    {
+     "name": "2-Ethylhexyl alcohol",
+     "v": "0.75~0.82"
+    },
+    {
+     "name": "Isobutyl alcohol",
+     "v": "0.65~0.73"
+    },
+    {
+     "name": "IPA",
+     "v": "0.77~0.82"
+    },
+    {
+     "name": "Phenol",
+     "v": "0.58"
+    },
+    {
+     "name": "PP(Polypropylene)",
+     "v": "1.04"
+    },
+    {
+     "name": "PO",
+     "v": "0.76~0.94"
+    },
+    {
+     "name": "PO(chlorohydrin)",
+     "v": "0.79~0.94"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "PG",
+   "ko": "프로필렌글리콜(PG)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "PO(Propylene Oxide)",
+     "v": "0.77"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Alkyd resin",
+     "v": "0.32~0.33"
+    },
+    {
+     "name": "Polyurethane surface-coating resin",
+     "v": "0.10~0.15"
+    },
+    {
+     "name": "Unsat. Polyester resin(UPE Resin)",
+     "v": "0.32~0.33"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "PO",
+   "ko": "프로필렌옥사이드(PO)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Isobutane",
+     "v": "2.00~3.00"
+    },
+    {
+     "name": "Propylene(peroxidation)",
+     "v": "0.76"
+    },
+    {
+     "name": "Propylene(chlorohydrin)",
+     "v": "0.79~0.94"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "1,4-Butadiene",
+     "v": "0.93"
+    },
+    {
+     "name": "PPG(Polypropylene Glycol)",
+     "v": "1.05"
+    },
+    {
+     "name": "Polyether polyol(flexible foam)",
+     "v": "0.95"
+    },
+    {
+     "name": "Polyether polyol(rigid foam)",
+     "v": "0.7"
+    },
+    {
+     "name": "Polyether polyol(non foam)",
+     "v": "1"
+    },
+    {
+     "name": "PG",
+     "v": "0.77"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "SAN",
+   "ko": "SAN 수지",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "AN(Acrylonitrile)",
+     "v": "0.3"
+    },
+    {
+     "name": "SM(Styrene Monomer)",
+     "v": "0.7"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "ABS(Acrylonitrile Butadiene Styrene)",
+     "v": "0.81"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "SBR",
+   "ko": "SBR 고무",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "SM(Emulsion)",
+     "v": "0.23"
+    },
+    {
+     "name": "Butadiene(Emulsion)",
+     "v": "0.73"
+    },
+    {
+     "name": "SM(Solution)",
+     "v": "0.19"
+    },
+    {
+     "name": "Butadiene(Solution)",
+     "v": "0.81"
+    },
+    {
+     "name": "SM(TPE)",
+     "v": "0.3"
+    },
+    {
+     "name": "Butadiene(TPE)",
+     "v": "0.7"
+    },
+    {
+     "name": "SM(SB-Latex copolymer)",
+     "v": "0.55"
+    },
+    {
+     "name": "Butadiene(SB-Latex copolymer)",
+     "v": "0.42"
+    },
+    {
+     "name": "SM(SB-Latex)",
+     "v": "0.23"
+    },
+    {
+     "name": "Butadiene(SB-Latex)",
+     "v": "0.73"
+    }
+   ],
+   "outputs": [],
+   "note": ""
+  },
+  {
+   "name": "SM",
+   "ko": "스티렌모노머",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Ethyl benzene(dehydrogenation)",
+     "v": "1.10~1.20"
+    },
+    {
+     "name": "Ethyl benzene(acetophenone)",
+     "v": "1.28~1.31"
+    },
+    {
+     "name": "Ethyl benzene(peroxidation)",
+     "v": "1.14"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "ABS(Acrylonitrile Butadiene Styrene)",
+     "v": "0.54"
+    },
+    {
+     "name": "Alkyd resin",
+     "v": "0.15"
+    },
+    {
+     "name": "MBS(Methyl Methacrylate Butadiene Styrene)",
+     "v": "0.57"
+    },
+    {
+     "name": "PS(HI)",
+     "v": "0.93"
+    },
+    {
+     "name": "PS(GP)",
+     "v": "1.00~1.05"
+    },
+    {
+     "name": "PS(EPS)",
+     "v": "1.00~1.05"
+    },
+    {
+     "name": "SAN(Styrene Acrylonitrile Copolymer)",
+     "v": "0.7"
+    },
+    {
+     "name": "SBR/SBR-Latex(emulsion)",
+     "v": "0.23"
+    },
+    {
+     "name": "SBR/SBR-Latex(solution)",
+     "v": "0.19"
+    },
+    {
+     "name": "SB copolymer",
+     "v": "0.55"
+    },
+    {
+     "name": "Styrenic TPE",
+     "v": "0.3"
+    },
+    {
+     "name": "Unsat. Polyester resin",
+     "v": "0.38"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "TPA",
+   "ko": "테레프탈산(TPA)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetic acid",
+     "v": "0.06~0.10"
+    },
+    {
+     "name": "DMT",
+     "v": "1.2"
+    },
+    {
+     "name": "P-Xylene(oxygen)",
+     "v": "0.67"
+    },
+    {
+     "name": "P-Xylene(nitric acid)",
+     "v": "0.75"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "DMT",
+     "v": "0.87"
+    },
+    {
+     "name": "PET(Polyethylene Terephthalate)",
+     "v": "0.868~0.88"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Toluene",
+   "ko": "톨루엔",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Ethyl benzene(SM by-product)",
+     "v": "0.05"
+    },
+    {
+     "name": "Propane",
+     "v": "127~265"
+    },
+    {
+     "name": "n-Butane",
+     "v": "109~130"
+    },
+    {
+     "name": "Naphtha",
+     "v": "21~35"
+    },
+    {
+     "name": "Gas oil",
+     "v": "28~35"
+    },
+    {
+     "name": "Pygas",
+     "v": "3.45~3.70"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Benzene(HDA)",
+     "v": "1.23"
+    },
+    {
+     "name": "Benzene(disproportionation)",
+     "v": "2.5"
+    },
+    {
+     "name": "Caprolactam",
+     "v": "0.96"
+    },
+    {
+     "name": "DNT",
+     "v": "0.53"
+    },
+    {
+     "name": "Phenol",
+     "v": "1.25"
+    },
+    {
+     "name": "TDA",
+     "v": "0.88"
+    },
+    {
+     "name": "TDI(Toluene Diisocyanate)",
+     "v": "0.76"
+    },
+    {
+     "name": "TNT(Tri Nitro Toluene)",
+     "v": "0.48"
+    },
+    {
+     "name": "Xylenes(disproportionation)",
+     "v": "1.8"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "TDA",
+   "ko": "톨루엔디아민(TDA)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "DNT",
+     "v": "1.56"
+    },
+    {
+     "name": "Toluene",
+     "v": "0.88"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "TDI",
+     "v": "0.76"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "TDI",
+   "ko": "TDI",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "DNT",
+     "v": "1.16"
+    },
+    {
+     "name": "Phosgene",
+     "v": "1.31"
+    },
+    {
+     "name": "Toluene",
+     "v": "0.76"
+    },
+    {
+     "name": "TDA",
+     "v": "0.76"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Polyurethane elastomer",
+     "v": "0.3"
+    },
+    {
+     "name": "Polyurethane foams(flexible)",
+     "v": "0.32"
+    },
+    {
+     "name": "Polyurethane foams(rigid)",
+     "v": "0.30~0.40"
+    },
+    {
+     "name": "Polyurethane surface-coating resin(Isocyanate-reactive)",
+     "v": "0.5"
+    },
+    {
+     "name": "Polyurethane surface-coating resin(oil modified)",
+     "v": "0.25~0.35"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "VAM",
+   "ko": "초산비닐(VAM)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetaldehyde",
+     "v": "0.58"
+    },
+    {
+     "name": "Acetic acid",
+     "v": "0.72~0.73"
+    },
+    {
+     "name": "Acetylene",
+     "v": "0.33"
+    },
+    {
+     "name": "Ethylene",
+     "v": "0.39"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "EVA(Ethylene Vinyl Acetate Copolymer)",
+     "v": "0.2"
+    },
+    {
+     "name": "PVAc(Polyvinylacetate)",
+     "v": "1.01~1.05"
+    },
+    {
+     "name": "PVA(Polyvinylalcohol)",
+     "v": "1.85~1.86"
+    },
+    {
+     "name": "VAE copolymer",
+     "v": "0.15"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "VCM",
+   "ko": "염화비닐모노머(VCM)",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Acetylene",
+     "v": "0.43"
+    },
+    {
+     "name": "Ethylene",
+     "v": "0.51"
+    },
+    {
+     "name": "EDC",
+     "v": "1.65"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "PVC(Polyvinyl Chloride)",
+     "v": "1.04"
+    },
+    {
+     "name": "VCM/VAM copolymer",
+     "v": "0.9"
+    },
+    {
+     "name": "(VCM/Vinylidene chloride) copolymer",
+     "v": "0.15"
+    },
+    {
+     "name": "1,1,1-Trichloroethane",
+     "v": "0.52"
+    },
+    {
+     "name": "Vinylidene chloride",
+     "v": "0.8"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "m-Xylene",
+   "ko": "메타자일렌",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Xylenes",
+     "v": "1"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Isophthalic acid",
+     "v": "0.7"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "o-Xylene",
+   "ko": "오쏘자일렌",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Xylenes",
+     "v": "1"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "PA(Phthalic Anhydride)",
+     "v": "0.91~0.92"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "p-Xylene",
+   "ko": "파라자일렌",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "Xylenes",
+     "v": "1.25"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "DMT",
+     "v": "0.59"
+    },
+    {
+     "name": "TPA(oxygen)",
+     "v": "0.67"
+    },
+    {
+     "name": "TPA(air)",
+     "v": "0.69"
+    },
+    {
+     "name": "TPA(nitric acid)",
+     "v": "0.75"
+    }
+   ],
+   "note": ""
+  },
+  {
+   "name": "Xylene(mixed)",
+   "ko": "혼합자일렌",
+   "tags": [],
+   "inputs": [
+    {
+     "name": "n-Butane",
+     "v": "3"
+    },
+    {
+     "name": "Gas Oil",
+     "v": "41~47"
+    },
+    {
+     "name": "Naphtha",
+     "v": "25~66"
+    },
+    {
+     "name": "Pygas",
+     "v": "5.56~5.88"
+    },
+    {
+     "name": "Toluene(disproportionation)",
+     "v": "1.8"
+    }
+   ],
+   "outputs": [
+    {
+     "name": "Benzene",
+     "v": "1.42"
+    },
+    {
+     "name": "EB(Ethylbenzene)",
+     "v": "1"
+    },
+    {
+     "name": "m-Xylenes",
+     "v": "1"
+    },
+    {
+     "name": "o-Xylenes",
+     "v": "1"
+    },
+    {
+     "name": "p-Xylenes",
+     "v": "1.25"
+    }
+   ],
+   "note": ""
+  }
+ ]
+}

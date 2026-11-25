@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>税后工资、最低工资与加班费计算器 — 免费 | INSIGHT BRIEF</title>
+<meta name="description" content="按 2026 年个税税率、五险一金比例估算税后工资，并按人社部公布的主要城市最低工资标准计算 150%/200%/300% 加班费。无需注册，全部在浏览器内计算。">
+<meta name="keywords" content="2027 最低工资, 2027 社保费率, 实发工资计算器, 企业人工成本计算, 年假天数计算, 年假计算器, 国民年金预计领取额, 失业金计算器, 2027 失业金上限, 退职金计算">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/zh/salary.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="税后工资、最低工资与加班费计算器">
+<meta property="og:description" content="按 2026 年税率与五险一金估算税后工资，并计算最低工资与加班费。免费无需注册。">
+<meta property="og:url" content="https://insightbriefnews.com/zh/salary.html">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="税后工资、最低工资与加班费计算器">
+<meta name="twitter:description" content="税后工资、最低工资与加班费，一页算完。无需注册。">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
+<link rel="stylesheet" href="../assets/css/salary.css?v=20261123m">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "2027 급여·4대보험·연차·국민연금·실업급여 계산기",
+  "url": "https://insightbriefnews.com/salary.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "2027년 최저임금 고시와 2027년 4대보험 요율을 반영해 회사 총지출과 근로자 실수령액, 연차유급휴가 발생일수, 국민연금 예상 수령액, 실업급여 수급자격과 예상 금액을 계산하는 무료 도구. 입력값은 서버로 전송하지 않습니다.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "2027년 최저임금은 얼마인가요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "2027년 적용 최저임금은 시간급 10,700원입니다. 주 소정근로 40시간, 월 환산 기준시간 209시간(주휴 8시간 포함)으로 계산한 월 환산액은 2,236,300원입니다. 고용노동부고시 제2026-60호(2026년 8월 5일)로 확정되었습니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "2027년 4대보험 요율은 근로자와 사업주가 각각 얼마인가요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "2027년 국민연금은 10%(근로자 5%·사업주 5%)로 확정됐고, 건강보험은 7.19%(각 3.595%)로 동결됐습니다. 장기요양보험은 건강보험료의 13.90%로 인상이 의결됐습니다. 고용보험 실업급여분은 현행 1.8%(각 0.9%)이고 2.0%(각 1.0%) 인상은 정부안으로 시행령 개정 전입니다. 산재보험은 사업주가 전액 부담하며 업종별 요율에 출퇴근재해 0.06%가 더해집니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "2027년 실업급여 하한액과 상한액은 얼마인가요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "2027년 1월 1일 이후 이직자의 구직급여 하한액은 1일 68,480원입니다(최저임금 10,700원 × 8시간 × 80%). 상한액은 현행 시행령대로면 1일 68,100원이지만, 정부는 상한액을 하한액의 103%로 연동하는 개정안을 입법예고했습니다. 이 계산기는 두 기준을 모두 보여 줍니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "연차유급휴가는 1년에 며칠 발생하나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "근로기준법 제60조에 따라 1년 미만 근로자는 1개월 개근마다 1일(최대 11일)이 발생하고, 1년 이상 80% 이상 출근하면 15일이 발생합니다. 3년 이상 계속 근로하면 최초 1년을 초과하는 매 2년마다 1일이 가산되어 최대 25일까지 늘어납니다." }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/salary.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/salary.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/salary.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/salary.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/salary.html">
+<link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="../assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="salary">
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026年11月26日 星期四</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="../salary.html" hreflang="ko" lang="ko">KO</a><a href="../en/salary.html" hreflang="en" lang="en">EN</a><a href="salary.html" hreflang="zh-Hans" lang="zh-Hans" class="is-on" aria-current="true">ZH</a><a href="../ja/salary.html" hreflang="ja" lang="ja">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">独立经济·调查报道研究网络杂志</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF 首页">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>洞察简报</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>解读数字背后的脉络</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">提供线索</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">订阅每周简报</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">新闻·报告<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="新闻·报告">
+          <a href="index.html" data-nav-key="all">全部报道</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI·科技</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">经济·金融</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">贸易·原材料</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">灾难·安全</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">每周调查报道</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">贸易·采购·行情<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="贸易·采购·行情">
+          <a href="biz.html#trade" data-nav-key="tdoc">贸易单据 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">海运运价·物流成本</a>
+          <a href="market.html" data-nav-key="market">原材料·汇率行情板</a>
+          <a href="global.html#portal" data-nav-key="portal">采购厅·企业验证门户</a>
+          <a href="global.html#email" data-nav-key="email">贸易邮件撰写</a>
+          <a href="global.html#trip" data-nav-key="trip">出差中心</a>
+          <a href="biz.html#cost" data-nav-key="cost">利润·成本·资金计算器</a>
+          <a href="seller.html" data-nav-key="seller">卖家·营销工具</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">全球展会日历</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税务·法律·生活<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税务·法律·生活">
+          <a href="tax.html" data-nav-key="tax">税金·年薪·健康保险</a>
+          <a href="salary.html" data-nav-key="salary" class="is-active" aria-current="page">工资·最低工资·四大保险</a>
+          <a href="insurance.html" data-nav-key="insurance">实损·车险计算器</a>
+          <a href="law.html" data-nav-key="law">法律·合同·催告书</a>
+          <a href="forms.html" data-nav-key="forms">表单·电子签名 138种</a>
+          <a href="saju.html" data-nav-key="saju">四柱·新年运势</a>
+          <a href="lotto.html" data-nav-key="lotto">彩票号码生成器</a>
+          <a href="music.html" data-nav-key="music">AI 音乐·歌词生成器</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">介绍·网站地图<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="介绍·网站地图">
+          <a href="sitemap.html" data-nav-key="sitemap">网站地图</a>
+          <a href="about.html" data-nav-key="about">媒体介绍</a>
+          <a href="ad.html" data-nav-key="ad">广告·合作</a>
+          <a href="contact.html" data-nav-key="contact">爆料·咨询</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="输入关键词搜索" aria-label="搜索文章" autocomplete="off">
+    </form>
+  </div>
+</div>
+
+<main id="main" class="sl-main">
+  <div class="container sl-wrap">
+
+    <div class="sl-head">
+      <span class="kicker">免费工具·2027 年劳动力计算器</span>
+      <h1>2027年工资、四大保险、年假、养老金、失业金计算器</h1>
+      <p class="dek">
+        2027年最低工资标准为小时工资。 <b>10,700 韩元</b>（每月2,236,300韩元）宣布，国民养老金提高至10%，健康保险冻结至7.19%。此页有这些数字 <b>公司实际花的钱和工人持有的钱</b>，计算年假天数、预期国民养老金金额以及是否立即领取失业救济金。计算仅在浏览器内进行，输入的工资和就业日期不会发送到服务器。
+      </p>
+      <div class="sl-badges">
+        <span>2027 年最低工资 <b>10,700 韩元</b> 通知反映</span>
+        <span>每个费率 <b>已确认/政府计划</b> 分隔符</span>
+        <span>无需注册</span>
+        <span>输入不上传服务器</span>
+      </div>
+    </div>
+
+    <aside class="ad sl-ad" data-slot="salary-top" aria-label="广告位">
+      <span class="ad-label">ADVERTISEMENT</span>
+      <span class="ad-slot">人工计算器·热门广告</span>
+      <span class="ad-size">响应式 · 970 × 90</span>
+      <a class="ad-cta" href="contact.html#ad">此处投放广告</a>
+    </aside>
+
+    <nav class="sl-jump" aria-label="转到计算器">
+      <a href="#pay"><b>①</b>公司成本与实际收入</a>
+      <a href="#leave"><b>②</b>带薪年假</a>
+      <a href="#nps"><b>③</b>国民养老金预计金额</a>
+      <a href="#ui"><b>④</b>失业救济金</a>
+      <a href="#basis"><b>⑤</b>费率和基础</a>
+    </nav>
+
+    <!-- ============================================================
+         ① 회사 비용 vs 실수령액
+    ============================================================ -->
+    <section class="sl-sec" id="pay" aria-labelledby="pay-title">
+      <div class="sl-sec-head">
+        <h2 id="pay-title"><span>①</span>公司支出与员工收入</h2>
+        <span class="mono">截至2027年3月·4大保险+所得税+遣散费</span>
+      </div>
+      <p class="sl-lead">
+        默认为 <b>2027年最低工资</b>（每小时 10,700 韩元，每周 40 小时，每月 209 小时 = 2,236,300 韩元）。如果你改变工资类型、企业规模或工伤保险行业，公司在一个人身上花费的总金额以及该人在银行账户中收到的金额也会发生变化。
+      </p>
+
+      <div class="sl-panel">
+        <div class="sl-panel-head">
+          <h3>薪资和工作条件</h3>
+          <span class="mono">如果更改，将立即重新计算</span>
+        </div>
+        <div class="sl-body">
+          <div class="sl-grid two">
+            <div class="sl-field">
+              <div class="lbl"><span>工资形式</span><span class="hint">小时工资 ↔ 工资</span></div>
+              <div class="sl-seg" role="group" aria-label="工资形式">
+                <button type="button" data-paymode="hourly" aria-pressed="true">小时费率</button>
+                <button type="button" data-paymode="monthly" aria-pressed="false">工资</button>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span id="pay-rate-label">小时费率</span><span class="hint" id="pay-rate-hint">2027年最低工资10,700韩元</span></div>
+              <div class="unit">
+                <input type="number" id="pay-rate" inputmode="numeric" min="0" step="10" value="10700" aria-describedby="pay-rate-hint">
+                <span>韩元</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sl-grid three" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>每周工作时间</span><span class="hint">计算包括每周假期</span></div>
+              <div class="unit">
+                <input type="number" id="pay-hours" inputmode="numeric" min="1" max="52" step="0.5" value="40">
+                <span>小时</span>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>企业规模</span><span class="hint">就业稳定性和就业率</span></div>
+              <select id="pay-size" aria-label="企业规模"></select>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>有资格扣除的家庭数量</span><span class="hint">包括我自己</span></div>
+              <select id="pay-family" aria-label="有资格扣除的家庭数量"></select>
+            </div>
+          </div>
+
+          <div class="sl-grid two" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>工伤保险行业</span><span class="hint">雇主支付全额费用</span></div>
+              <select id="pay-industry" aria-label="工伤保险行业"></select>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>直接输入工伤保险费率</span><span class="hint">选择行业时自动</span></div>
+              <div class="unit">
+                <input type="number" id="pay-injury" inputmode="decimal" min="0" max="20" step="0.01" value="0.86">
+                <span>%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sl-grid two" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>2027年就业保险费率</span><span class="hint">失业救济金</span></div>
+              <div class="sl-seg small" role="group" aria-label="就业保险费率">
+                <button type="button" data-emp="now" aria-pressed="true">当前 1.8%（已确认）</button>
+                <button type="button" data-emp="plan" aria-pressed="false">政府计划 2.0%</button>
+              </div>
+            </div>
+            <div class="sl-field" style="display:flex;align-items:flex-end">
+              <label class="sl-check" for="pay-severance">
+                <input type="checkbox" id="pay-severance" checked>
+                <span><b>包括遣散费累积</b><br>月薪的1/12加入公司费用（连续工作1年以上）</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sl-out" id="pay-out" aria-live="polite">
+        <div class="sl-kpis">
+          <div class="sl-kpi hi">
+            <span class="k">公司每月总支出</span>
+            <span class="v" id="pay-total-cost">–</span>
+            <span class="d" id="pay-total-cost-d">工资+雇主负担+遣散费累积</span>
+          </div>
+          <div class="sl-kpi accent">
+            <span class="k">员工实际工资/月</span>
+            <span class="v" id="pay-net">–</span>
+            <span class="d" id="pay-net-d">税前 - 4大保险从业人员 - 所得税</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">员工扣除总额</span>
+            <span class="v" id="pay-worker-deduct">–</span>
+            <span class="d" id="pay-worker-deduct-d">税前</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">企业主的总负担</span>
+            <span class="v" id="pay-employer-cost">–</span>
+            <span class="d" id="pay-employer-cost-d">工资之外的4大保险和遣散费</span>
+          </div>
+        </div>
+
+        <div class="sl-scroll">
+          <table class="sl-table" id="pay-table">
+            <caption>逐项细分 — 2027 年费率，按月计算。负数 (−) 是扣除项。</caption>
+            <thead>
+              <tr><th scope="col">项目</th><th scope="col">工人（扣除）</th><th scope="col">企业主（负担）</th></tr>
+            </thead>
+            <tbody id="pay-rows"></tbody>
+            <tfoot id="pay-foot"></tfoot>
+          </table>
+        </div>
+
+        <div class="sl-bars">
+          <h4>公司100%的钱都花到哪里去了？</h4>
+          <div class="sl-bar" id="pay-bar" role="img" aria-label="公司总支出构成栏"></div>
+          <div class="sl-legend">
+            <span><i class="b1"></i>工人错误订单 <b id="lg-net">–</b></span>
+            <span><i class="b2"></i>员工扣除（保险/税收） <b id="lg-deduct">–</b></span>
+            <span><i class="b3"></i>为企业主提供的4大保险 <b id="lg-ins">–</b></span>
+            <span><i class="b4"></i>遣散费储蓄 <b id="lg-sev">–</b></span>
+          </div>
+        </div>
+
+        <p class="sl-note" id="pay-note"></p>
+        <p class="sl-warn">
+          <b>费率状态因项目而异。</b> 10%的国民养老金由法律确认，7.19%的健康保险被决定冻结，13.90%的长期护理由委员会决定（施行条例修订前），就业保险的2.0%失业救济金是政府计划（施行条例修订前）。 2027年工伤保险费率尚未公布。 <b>2026 年通知费率</b>写 。这就是为什么与实际工资单可能存在1000韩元左右差异的原因。
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ② 연차유급휴가
+    ============================================================ -->
+    <section class="sl-sec" id="leave" aria-labelledby="leave-title">
+      <div class="sl-sec-head">
+        <h2 id="leave-title"><span>②</span>带薪年假天数</h2>
+        <span class="mono">劳动基准法第60条·以雇佣日为基准</span>
+      </div>
+      <p class="sl-lead">
+        只需输入加入日期。 <b>迄今为止累计的年假</b>哇 <b>今年发生的金额</b>通过除法计算。满1年以下，每月满出勤1天（最多11天），1年以上且出勤率80%以上，增加15天，满3年以上，每两年增加1天，最多25天。
+      </p>
+
+      <div class="sl-panel">
+        <div class="sl-panel-head">
+          <h3>就业日期和基准日期</h3>
+          <span class="mono">会计年度标准请参阅以下说明。</span>
+        </div>
+        <div class="sl-body">
+          <div class="sl-grid three">
+            <div class="sl-field">
+              <div class="lbl"><span>加入日期</span></div>
+              <input type="date" id="leave-join" value="2019-03-02" aria-label="加入日期">
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>基准日</span><span class="hint">今天</span></div>
+              <input type="date" id="leave-date" aria-label="基准日">
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>未使用年假津贴的计算</span><span class="hint">选择输入</span></div>
+              <div class="sl-grid two" style="gap:6px">
+                <div class="unit"><input type="number" id="leave-wage" inputmode="numeric" min="0" step="10" value="10700" aria-label="正常小时工资"><span style="right:8px;font-size:10px">韩元</span></div>
+                <div class="unit"><input type="number" id="leave-unused" inputmode="numeric" min="0" max="60" step="1" value="0" aria-label="未使用年假天数"><span style="right:8px;font-size:10px">天</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sl-out" id="leave-out" aria-live="polite">
+        <div class="sl-kpis">
+          <div class="sl-kpi hi">
+            <span class="k">当前应计年假</span>
+            <span class="v" id="leave-current">–</span>
+            <span class="d" id="leave-current-d">自本年假起</span>
+          </div>
+          <div class="sl-kpi accent">
+            <span class="k">出现总数</span>
+            <span class="v" id="leave-total">–</span>
+            <span class="d" id="leave-total-d">加入公司以来的整个期间</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">服务年限</span>
+            <span class="v" id="leave-tenure">–</span>
+            <span class="d" id="leave-tenure-d">截至基准日期</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">未使用的津贴</span>
+            <span class="v" id="leave-pay">–</span>
+            <span class="d" id="leave-pay-d">正常小时工资 × 8 小时 × 未使用天数</span>
+          </div>
+        </div>
+
+        <div class="sl-scroll">
+          <table class="sl-table" id="leave-table">
+            <caption>按工作年限划分的带薪年假天数</caption>
+            <thead>
+              <tr><th scope="col">长寿</th><th scope="col">发生天数</th><th scope="col">基本原理</th></tr>
+            </thead>
+            <tbody id="leave-rows"></tbody>
+          </table>
+        </div>
+
+        <div class="sl-steps">
+          <h4>计算公式</h4>
+          <ol id="leave-steps"></ol>
+        </div>
+        <p class="sl-note">
+          <b>基于财政年度</b>经营的公司以1月1日至12月31日为年休假年，按月划分受雇当年的应计部分。由于该方法遵循就业规则，因此数字可能与此计算器不同（基于就业日期）。
+将其另存为 <b>80% 出勤率</b>是年假年度内工作日占总工作日的比例，育儿假、工伤事故等法定原因均视为工作日。年假不满1年的员工 <b>自受雇之日起一年内</b> 必须使用，未使用的部分将被没收（工作1年以上的员工，如果1年不使用，有权申请福利）。
+        </p>
+      </div>
+    </section>
+
+    <aside class="ad sl-ad" data-slot="salary-mid" aria-label="广告位">
+      <span class="ad-label">ADVERTISEMENT</span>
+      <span class="ad-slot">人工计算器·文中广告</span>
+      <span class="ad-size">响应式 · 336 × 280</span>
+      <a class="ad-cta" href="contact.html#ad">此处投放广告</a>
+    </aside>
+
+    <!-- ============================================================
+         ③ 국민연금
+    ============================================================ -->
+    <section class="sl-sec" id="nps" aria-labelledby="nps-title">
+      <div class="sl-sec-head">
+        <h2 id="nps-title"><span>③</span>您的预期国民养老金</h2>
+        <span class="mono">国民年金法第51条公式·2026年通知A值</span>
+      </div>
+      <p class="sl-lead">
+        国民基本养老金金额为 <b>添加我的收入（B 值）和所有订阅者的平均收入（A 值）</b> 计算。因此，即使你的收入翻倍，你的养老金也不会翻倍，订阅期限也保持成比例。如果您在下面输入您的平均标准月收入和订阅期限，则将使用法定公式计算预计每月金额。
+      </p>
+
+      <div class="sl-panel">
+        <div class="sl-panel-head">
+          <h3>假设订阅历史</h3>
+          <span class="mono">仅反映 2026 年之后的认购期。</span>
+        </div>
+        <div class="sl-body">
+          <div class="sl-grid three">
+            <div class="sl-field">
+              <div class="lbl"><span>出生年份</span><span class="hint">开始领取福利的年龄</span></div>
+              <select id="nps-birth" aria-label="出生年份"></select>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>总订阅期</span><span class="hint">10年以下无养老金</span></div>
+              <div class="unit">
+                <input type="number" id="nps-term" inputmode="numeric" min="0" max="45" step="1" value="25">
+                <span>年</span>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>平均标准月收入（B值）</span><span class="hint">重估前的名义平均值</span></div>
+              <div class="unit">
+                <input type="number" id="nps-b" inputmode="numeric" min="0" max="7000000" step="10000" value="3193511">
+                <span>韩元</span>
+              </div>
+            </div>
+          </div>
+          <div class="sl-grid two" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>值A（所有订阅者的3年平均月收入）</span><span class="hint">2026 年公布值</span></div>
+              <div class="unit">
+                <input type="number" id="nps-a" inputmode="numeric" min="0" max="7000000" step="1000" value="3193511">
+                <span>韩元</span>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>家属养老金</span><span class="hint">配偶、子女、父母</span></div>
+              <div class="sl-seg small" role="group" aria-label="家属养老金">
+                <button type="button" data-fam="none" aria-pressed="true">无</button>
+                <button type="button" data-fam="spouse" aria-pressed="false">配偶</button>
+                <button type="button" data-fam="all" aria-pressed="false">配偶 + 1 个孩子</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sl-out" id="nps-out" aria-live="polite">
+        <div class="sl-kpis">
+          <div class="sl-kpi hi">
+            <span class="k">预计每月养老金金额</span>
+            <span class="v" id="nps-month">–</span>
+            <span class="d" id="nps-month-d">基本养老金+家属养老金</span>
+          </div>
+          <div class="sl-kpi accent">
+            <span class="k">预计年养老金金额</span>
+            <span class="v" id="nps-year">–</span>
+            <span class="d">每月金额 × 12</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">开始领取福利的年龄</span>
+            <span class="v" id="nps-age">–</span>
+            <span class="d" id="nps-age-d">基于出生年份</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">支付比率</span>
+            <span class="v" id="nps-rate">–</span>
+            <span class="d" id="nps-rate-d">包括超过 20 年的增加</span>
+          </div>
+        </div>
+
+        <div class="sl-steps">
+          <h4>计算过程</h4>
+          <ol id="nps-steps"></ol>
+        </div>
+
+        <div class="sl-scroll">
+          <table class="sl-table" id="nps-table">
+            <caption>按订阅期估计的每月养老金金额（基于相同的 B 值，不包括家属养老金） — 支付率包括 20 年以上的加额。</caption>
+            <thead>
+              <tr><th scope="col">认购期</th><th scope="col">支付比率</th><th scope="col">每月养老金金额</th><th scope="col">收入替代率</th></tr>
+            </thead>
+            <tbody id="nps-rows"></tbody>
+          </table>
+        </div>
+
+        <p class="sl-note" id="nps-note"></p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ④ 실업급여
+    ============================================================ -->
+    <section class="sl-sec" id="ui" aria-labelledby="ui-title">
+      <div class="sl-sec-head">
+        <h2 id="ui-title"><span>④</span>失业救济金（求职救济金）资格和预期金额</h2>
+        <span class="mono">2027年换工作标准·雇佣保险法第40条、第45条、第46条</span>
+      </div>
+      <p class="sl-lead">
+        求职福利是 <b>换岗前平均工资的60%</b>按日发放，但适用下限（最低工资的80%）和上限（2027年68,100韩元或改革计划中的指数金额）。资格是
+计算 <b>换工作的原因</b>哇 <b>18个月内受保单位期限超过180天</b>这是关键。
+      </p>
+
+      <div class="sl-panel">
+        <div class="sl-panel-head">
+          <h3>转让条件</h3>
+          <span class="mono">最终决定由就业中心做出。</span>
+        </div>
+        <div class="sl-body">
+          <div class="sl-grid two">
+            <div class="sl-field">
+              <div class="lbl"><span>换工作的原因</span></div>
+              <select id="ui-reason" aria-label="换工作的原因">
+                <option value="involuntary">建议辞职、解雇、合同期满、裁员（非自愿）</option>
+                <option value="justified">拖欠工资、性骚扰、通勤困难等正当理由。</option>
+                <option value="voluntary">因个人原因自愿辞职</option>
+              </select>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>受保单位期限18个月内</span><span class="hint">180 天或以上</span></div>
+              <div class="sl-seg" role="group" aria-label="参保单位期限是否为180天及以上">
+                <button type="button" data-days180="yes" aria-pressed="true">180 天或以上</button>
+                <button type="button" data-days180="no" aria-pressed="false">不到 180 天</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="sl-grid three" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>换工作之日起的年龄</span></div>
+              <div class="sl-seg small" role="group" aria-label="年龄">
+                <button type="button" data-age="under" aria-pressed="true">50岁以下</button>
+                <button type="button" data-age="over" aria-pressed="false">50岁以上/残疾人</button>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>总保险期</span><span class="hint">规定发薪天数的确定</span></div>
+              <select id="ui-years" aria-label="总保险期"></select>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>每日工作时间</span><span class="hint">计算下限</span></div>
+              <div class="unit">
+                <input type="number" id="ui-hpd" inputmode="numeric" min="1" max="8" step="0.5" value="8">
+                <span>小时</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sl-grid two" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>退休前3个月平均月薪</span><span class="hint">税前，不包括免税</span></div>
+              <div class="unit">
+                <input type="number" id="ui-pay" inputmode="numeric" min="0" step="10000" value="2236300">
+                <span>韩元</span>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>2027 年 1 天上限</span><span class="hint">机构改革是否得到体现</span></div>
+              <div class="sl-seg small" role="group" aria-label="基于每日最大金额">
+                <button type="button" data-cap="now" aria-pressed="true">现价 68,100 韩元</button>
+                <button type="button" data-cap="plan" aria-pressed="false">重组计划 70,534 韩元</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sl-out" id="ui-out" aria-live="polite">
+        <div class="sl-verdict" id="ui-verdict">
+          <span class="st hold" id="ui-st">计算</span>
+          <p id="ui-why"></p>
+        </div>
+
+        <ul class="sl-checklist" id="ui-checks"></ul>
+
+        <div class="sl-kpis" style="margin-top:14px">
+          <div class="sl-kpi hi">
+            <span class="k">每日求职福利金额</span>
+            <span class="v" id="ui-daily">–</span>
+            <span class="d" id="ui-daily-d">平均工资 60%，适用上限和下限</span>
+          </div>
+          <div class="sl-kpi accent">
+            <span class="k">规定工资天数</span>
+            <span class="v" id="ui-days">–</span>
+            <span class="d" id="ui-days-d">年龄×保险期限</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">预期收入总额</span>
+            <span class="v" id="ui-total">–</span>
+            <span class="d" id="ui-total-d">每日金额×付款天数</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">平均每月收入</span>
+            <span class="v" id="ui-first">–</span>
+            <span class="d" id="ui-first-d">每日金额×30天（不包括7天等待期）</span>
+          </div>
+        </div>
+
+        <div class="sl-steps">
+          <h4>计算过程</h4>
+          <ol id="ui-steps"></ol>
+        </div>
+
+        <div class="sl-scroll">
+          <table class="sl-table" id="ui-table">
+            <caption>规定给付天数表（就业保险法附录1）——根据换职日的年龄和保险期间</caption>
+            <thead>
+              <tr><th scope="col">保险期限</th><th scope="col">50岁以下</th><th scope="col">50岁以上/残疾人</th></tr>
+            </thead>
+            <tbody id="ui-table-body"></tbody>
+          </table>
+        </div>
+
+        <p class="sl-warn" id="ui-warn"></p>
+        <p class="sl-note">
+          失业救济金是 <b>免税</b>因此，上述金额将按原样存入。但到了2027年，情况将发生逆转，下限（68,480韩元）将大于目前的上限（68,100韩元），政府宣布修改执行条例，将上限与下限（计算值70,534韩元）的103%挂钩。这是一场恐怖战争，所以它同时满足了这两个条件。
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ⑤ 요율·근거
+    ============================================================ -->
+    <section class="sl-ref" id="basis" aria-labelledby="basis-title">
+      <h2 id="basis-title">2027年基线值和基础</h2>
+      <p>
+        该计算器上的数字是 <b>2026 年 11 月 22 日之前发布的通知、法律和新闻稿</b>。 2027 年费率根据机构的不同处于不同的确认阶段，因此分别显示为固定费率、政府计划费率和 2026 年通知费率（先前）。没有充满估计值的值。
+检查
+      </p>
+      <div class="sl-scroll">
+        <table class="sl-table" id="basis-table">
+          <thead>
+            <tr><th scope="col">项目</th><th scope="col">2027 年值</th><th scope="col">状态</th><th scope="col">基本原理</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>最低工资</td>
+              <td class="num">时薪 10,700 韩元<span class="sub">每月 2,236,300 韩元（209 小时）</span></td>
+              <td><span class="sl-tag fixed">已确认</span></td>
+              <td style="text-align:left">就业劳动部公告第2026-60号（2026年8月5日）</td>
+            </tr>
+            <tr>
+              <td>国民年金</td>
+              <td class="num">10.0%<span class="sub">工人5.0·雇主5.0</span></td>
+              <td><span class="sl-tag fixed">已确认</span></td>
+              <td style="text-align:left">国民年金法（法第20903号）补充规定——比2026年的9.5%增加0.5个百分点</td>
+            </tr>
+            <tr>
+              <td>健康保险</td>
+              <td class="num">7.19%<span class="sub">工人 3.595 · 雇主 3.595</span></td>
+              <td><span class="sl-tag fixed">已确认</span></td>
+              <td style="text-align:left">卫生福利部健康保险政策审议委员会2026.9.8。冻结分辨率</td>
+            </tr>
+            <tr>
+              <td>长期护理保险</td>
+              <td class="num">健康保险费的13.90%<span class="sub">收入的0.9994%</span></td>
+              <td><span class="sl-tag plan">修改程序</span></td>
+              <td style="text-align:left">长期护理委员会2026年10月30日。决议/执行条例修订前</td>
+            </tr>
+            <tr>
+              <td>就业保险（失业救济金）</td>
+              <td class="num">1.8% → 2.0%<span class="sub">各 0.9% → 各 1.0%</span></td>
+              <td><span class="sl-tag fixed">当前</span><span class="sl-tag plan">政府计划</span></td>
+              <td style="text-align:left">就业劳动部《就业保险制度改革方案》2026年9月1日。 · 施行条例修改前</td>
+            </tr>
+            <tr>
+              <td>就业稳定和职业技能发展</td>
+              <td class="num">0.25 / 0.45 / 0.65 / 0.85%<span class="sub">按企业主、规模划分的总金额</span></td>
+              <td><span class="sl-tag fixed">当前</span></td>
+              <td style="text-align:left">就业及工伤保险保费征收法施行令第12条</td>
+            </tr>
+            <tr>
+              <td>工伤保险</td>
+              <td class="num">0.5~18.5%（按行业）<span class="sub">+ 通勤事故 0.06%</span></td>
+              <td><span class="sl-tag prev">2026年通知</span></td>
+              <td style="text-align:left">就业劳动部公告第2025-91号·2027年计划于12月公布</td>
+            </tr>
+            <tr>
+              <td>求职福利下限</td>
+              <td class="num">每天 68,480 韩元<span class="sub">10,700韩元 × 8小时 × 80%</span></td>
+              <td><span class="sl-tag fixed">应用公式</span></td>
+              <td style="text-align:left">《就业保险法》第45条④、第46条——根据最低工资通知自动确定</td>
+            </tr>
+            <tr>
+              <td>求职福利最高金额</td>
+              <td class="num">每天 68,100 韩元 → 70,534 韩元<span class="sub">每日基本金额上限 113,500 韩元 × 60% / 下限 × 103%</span></td>
+              <td><span class="sl-tag fixed">当前</span><span class="sl-tag plan">修正案</span></td>
+              <td style="text-align:left">雇佣保险法施行令第68条·关于上限修正之立法公告（9.22.~11.2.）</td>
+            </tr>
+            <tr>
+              <td>国民年金A值</td>
+              <td class="num">3,193,511韩元<span class="sub">2027 年的价值将于 2027 年 1 月公布</span></td>
+              <td><span class="sl-tag prev">2026年通知</span></td>
+              <td style="text-align:left">卫生福利部关于《2026年国民养老金重新核定费率及养老金金额调整》的通知</td>
+            </tr>
+            <tr>
+              <td>劳动收入的简化税额表</td>
+              <td class="num">2026年2月27日。修订表<span class="sub">2027年表格于2027年2月进行了修订。</span></td>
+              <td><span class="sl-tag prev">2026 年表格</span></td>
+              <td style="text-align:left">所得税法实施令附录 2 — 按表值（非近似值）查询</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>计算公式</h3>
+      <dl>
+        <dt>每月换算工时及工资</dt>
+        <dd>将每周工作时间与每周休假时间相加（如果每周工作时间超过 15 小时，则每周工作时间 ÷ 5，最多 8 小时）并乘以 365/12/7。每周40小时为(40+8)×4.3452≒209小时，乘以小时工资即可得到月工资。</dd>
+        <dt>四大保费</dt>
+        <dd>国民年金是标准月收入（月补偿四舍五入到1000韩元以下，范围为41万至659万韩元）乘以5%。健康保险为月工资的3.595%（四舍五入至10韩元以下），长期护理保险为健康保险费的13.90%（四舍五入至10韩元以下）。就业保险将每月补偿金额乘以0.9%（重组时为1.0%），用人单位在此基础上按规模加上岗位保障和职业技能发展率。工伤保险由用人单位按月赔偿费率×（行业费率+0.06%）全额承担。</dd>
+        <dt>所得税</dt>
+        <dd>摘自国税厅劳动所得简易税额表（所得税法施行令附录2） <b>不含免税的月薪部分</b>和 <b>有资格扣除的家庭数量</b>相交处写下金额。地方所得税为所得税的10%。简易税表是预先反映劳动所得扣除额、基本扣除额、养老保险费扣除额和劳动所得税额抵免额的数值，因此是按年终纳税时的实际税额重新计算的。
+它从</dd>
+        <dt>遣散费</dt>
+        <dd>如果您继续工作超过一年，退休时您将获得日平均工资×30天×（工作天数÷365）。如果你看一下每月的储蓄，大约是月薪的1/12，所以这笔金额已包含在公司开支中（具有法定储蓄义务的DC型退休金超过月薪的1/12）。</dd>
+        <dt>带薪年假</dt>
+        <dd>不到 1 年：每月 1 天全勤（最多 11 天）。一年以上至少 80% 的出勤时间：15 天。 3年以上：第一年之后每连续工作2年增加1天，总计最多25天。未使用津贴为正常小时工资×8小时×未使用天数。</dd>
+        <dt>国民年金</dt>
+        <dd>基本养老金金额（每年）=1.29×（A+B）×（1+0.05×n/12）。 1.29是收入替代率43%对应的比例常数，n是超过20年的认购月数。如果认购期限为10年至20年，缴费率乘以50%至100%；如果认购期限不足10年，则一次性退还养老金，而不是领取养老金。每月金额等于年金额除以 12。</dd>
+        <dt>失业救济金</dt>
+        <dd>平均日工资 = 跳槽前 3 个月的工资总额 ÷ 该期间的天数（此计算器除以 91.25 天）。日基本工资超过113,500韩元时，采用上限乘以60%，低于下限（最低工资×80%×日工作时间）时，采用下限。将此乘以工资天数（120 至 270 天）即可得到总金额。</dd>
+      </dl>
+
+      <h3>已验证来源</h3>
+      <ul class="sl-src">
+        <li><b>2027年适用的最低工资通知</b> - 就业劳动部公告第2026-60号（2026年8月5日），每小时工资10,700韩元，月工资2,236,300韩元。 <a href="https://www.minimumwage.go.kr/customer/notice/view.do?bultnId=4774" target="_blank" rel="noopener">最低工资委员会通知</a></li>
+        <li><b>2027年四大保险费率</b> - 国民年金法（第20903号法）补充规定，厚生省2026年9月8日健康福利审查（健康保险7.19%冻结），长期护理委员会2026年10月30日（13.90%）</li>
+        <li><b>就业保险制度改革方案</b> — 就业和劳动部 2026.9.1。新闻稿（2.0%失业救济金，103%与上限和下限挂钩，每周支付6天）</li>
+        <li><b>2026年按业务类型划分的工伤保险费率</b> ——就业劳动部公告第2025-91号，各行业通勤事故率0.06%</li>
+        <li><b>就业保险法</b> 第40条（供给和需求要求）、第45条（每日基本金额）、第46条（每日求职补助）、附件1（规定的补助天数）、施行令第68条（每日基本金额上限113,500韩元）</li>
+        <li><b>国民年金法</b> 保健福祉部第51条（基本养老金金额）、第61条、第63条《2026年国民年金重新评估率及养老金金额调整》（价值3,193,511韩元）</li>
+        <li><b>劳动标准法</b> 雇员退休金保障法第60条（带薪年假）、第8条（遣散费）</li>
+        <li><b>所得税法实施令</b> 附录2（劳动所得简化税额表，2026年2月27日修订）— <a href="https://www.law.go.kr/" target="_blank" rel="noopener">国家立法信息中心</a></li>
+      </ul>
+
+      <p style="margin-top:16px">
+        适合使用的好工具： <a href="lotto.html">双色球·大乐透选号器</a> · <a href="saju.html">免费万能日历·2027年郑美年新年星座运势</a> · <a href="market.html">行情中心</a>
+      </p>
+    </section>
+
+    <!-- 인사·노무 실무 패키지 · 제휴 문의 -->
+    <section class="mo-sec" id="practice" aria-labelledby="practice-title">
+      <div class="mo-sec-head">
+        <h2 id="practice-title">人力资源/劳工实践包/税务/劳工伙伴关系</h2>
+        <span>表格制作和合作伙伴关系查询</span>
+      </div>
+      <div class="mo-split">
+        <div>
+          <div class="mo-panel">
+            <h3>工资台/劳动合同格式包</h3>
+            <p>上述计算器中的2027年费率（国民年金10%、健康保险7.19%、长期护理13.90%、就业保险1.8→2.0%（无论是否反映修订）均按原样输入。 <b>工资台账、4大保险明细、雇佣合同、年假台账</b> 我们根据您公司的规模创建 Excel 格式。请告诉我们全职员工和工资类型（月薪、小时薪、日薪）。</p>
+            <ul class="mo-list">
+              <li>工资账本+4大保险和所得税明细（根据人数）</li>
+              <li>雇佣/薪资合同、年假台账/年假使用推广通知</li>
+              <li>包括自动反映修订后的费率和最低工资的公式</li>
+            </ul>
+            <p style="margin-top:10px;font-size:11.5px;color:var(--muted)">这是一份表格制作和规定，而不是法律或税务建议。我们建议您与劳工律师或税务会计师进行最终审查。</p>
+          </div>
+          <div class="mo-mini">
+            <a href="links.html">
+              <b>推荐书籍和用品 →</b>
+              <span>劳工和税务实践书籍以及计算器和文具。我们通过 Coupang Partners 链接收取佣金。</span>
+            </a>
+            <a href="ad.html#rates">
+              <b>本页广告/赞助 →</b>
+              <span>接触到寻找劳工/税务服务和 HR SaaS 的读者。</span>
+            </a>
+            <a href="experts.html">
+              <b>专家匹配 · 免费报价比较 →</b>
+              <span>我们为您联系各个领域的专家，解决您自己难以处理的事务，例如劳工、四大保险、税务、簿记等。免费申请。</span>
+            </a>
+          </div>
+        </div>
+        <form class="mo-form mo-panel" data-ib-inquiry data-kind="b2b" data-source="salary.html" novalidate>
+          <div>
+            <label for="sal-inq-kind">查询分类 <span class="req">*</span></label>
+            <select id="sal-inq-kind" name="topic">
+              <option value="pkg">人力资源/劳工表格包</option>
+              <option value="partner">税务和劳工伙伴关系</option>
+              <option value="other">其他</option>
+            </select>
+          </div>
+          <div>
+            <label for="sal-inq-email">电子邮件 <span class="req">*</span></label>
+            <input type="email" id="sal-inq-email" name="email" autocomplete="email" placeholder="name@company.com" required>
+          </div>
+          <div>
+            <label for="sal-inq-phone">联系方式 <span style="color:var(--muted);font-weight:400">（可选）</span></label>
+            <input type="tel" id="sal-inq-phone" name="phone" autocomplete="tel" placeholder="010-0000-0000">
+          </div>
+          <div>
+            <label for="sal-inq-msg">内容 <span class="req">*</span></label>
+            <textarea id="sal-inq-msg" name="message" required placeholder="例）全职员工7人，月薪制。需要工资分类帐和雇佣合同表。"></textarea>
+          </div>
+          <p class="mo-note">您留下的联系信息将仅用于回复，一旦达到目的将被销毁。</p>
+          <p class="mo-msg" data-ib-msg role="status" aria-live="polite" hidden></p>
+          <button class="btn btn-accent" type="submit">询问接待</button>
+        </form>
+      </div>
+    </section>
+
+    <p class="sl-disclaimer">
+      <strong>该计算器是根据已发布的通知和法律创建的参考工具，并非法律、税务或劳工建议。</strong>
+      2027年的费率中，国民年金（10%）和健康保险（7.19%）已确定，但长期护理（13.90%）和就业保险（2.0%）是施行条例修订前的，工伤保险费率是2026年公布的值。国民养老金预估金额是​​一种简单的计算，仅反映2026年以后的缴费期，与反映过去缴费期的重估率、生育、兵役积分和未来缴费的NHIS查询值不同。所得税以2026年简化税表为基础，因此可能与2027年2月的修订表有所不同。有关实际工资单、退休金结算和资格确定，请咨询您的会计代表、雇佣劳动部客户服务中心（1350）、国民年金公团（1355）和韩国工人补偿和福利院。输入的工资、就业日期和订阅期限仅在浏览器内计算，不会传输或存储在服务器上。
+    </p>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>独立经济·调查报道研究网络杂志</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>Insight Brief 是一本独立研究网络杂志，通过数据和采访跟踪经济、金融、贸易、原材料以及人工智能和技术。它不是正式注册的互联网报纸，不符合注册要求，例如拥有5名以上的报道和编辑人员。</p>
+      </div>
+      <div class="f-col">
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">调查报道</a></li>
+          <li><a href="index.html?cat=economy">经济·金融</a></li>
+          <li><a href="index.html?cat=trade">贸易·原材料</a></li>
+          <li><a href="market.html">行情中心</a></li>
+          <li><a href="index.html?cat=ai">AI·科技</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>媒体</h4>
+        <ul>
+          <li><a href="about.html">关于·编辑原则</a></li>
+          <li><a href="contact.html#tip">读者线索</a></li>
+          <li><a href="ad.html">广告·赞助价目表</a></li>
+          <li><a href="ad.html#b2b">B2B 采购·成本咨询</a></li>
+          <li><a href="lotto.html">免费工具 · 选号器</a></li>
+          <li><a href="saju.html">免费工具 · 四柱与2027运势</a></li>
+          <li><a href="salary.html">免费工具 · 工资·劳务计算器</a></li>
+          <li><a href="tax.html">税务·结算</a></li>
+          <li><a href="biz.html">免费工具 · 个体经营者工具 9 种</a></li>
+          <li><a href="seller.html">免费工具 · 卖家·营销工具 4 种</a></li>
+          <li><a href="feed.xml">RSS 订阅</a></li>
+          <li><a href="sitemap.html">网站地图</a></li>
+          <li><a href="sitemap.xml">sitemap.xml</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>联系我们</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">举报 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">广告 hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">首尔·卷。 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>本网络杂志是一家独立媒体，未注册为互联网报纸。禁止未经授权复制或重新分发文章和照片。赞助/广告内容表示为“广告”。</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 独立经济·调查报道研究网络杂志</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="实时简报频道"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>实时简报频道</h3><p>通过 KakaoTalk 开放聊天和 Telegram 实时接收最新报道与行情。</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk 开放聊天</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram 频道</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+<script src="../assets/js/salary-data.js?v=20261122c" defer></script>
+<script src="../assets/js/monetize.js?v=20261123c" defer></script>
+<script src="../assets/js/salary.js?v=20261122c" defer></script>
+<script src="../assets/js/nav.js?v=20261124c"></script>
+<script src="data/i18n.fallback.js?v=20261124a"></script>
+<script src="../assets/js/i18n.js?v=20261124a"></script>
+<script src="../assets/js/intl-core.js?v=20261124a" defer></script>
+<script src="../assets/js/intl-salary.js?v=20261124a" defer></script>
+<!-- IB:SHARE-FLOAT -->
+<script src="../assets/js/share-float.js?v=20261124c" defer></script>
+<!-- /IB:SHARE-FLOAT -->
+<!-- IB:CHAT-FLOAT -->
+<script src="../assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

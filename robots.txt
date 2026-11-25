@@ -1,0 +1,89 @@
+# INSIGHT BRIEF — https://insightbriefnews.com
+# 한국어(/) · English(/en/) · 中文(/zh/) · 日本語(/ja/) 전 경로를 모든 크롤러에 허용합니다.
+
+User-agent: *
+Allow: /
+
+# 검색엔진·메신저 미리보기 봇 명시
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-News
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Video
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: Baiduspider-image
+Allow: /
+
+User-agent: Baiduspider-video
+Allow: /
+
+User-agent: Sogou web spider
+Allow: /
+
+User-agent: Sogou inst spider
+Allow: /
+
+User-agent: 360Spider
+Allow: /
+
+User-agent: YisouSpider
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: Daumoa
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+User-agent: SeznamBot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: DuckDuckGo-Favicons-Bot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: KakaoTalk-Scrap
+Allow: /
+
+User-agent: Line
+Allow: /
+
+Sitemap: https://insightbriefnews.com/sitemap.xml

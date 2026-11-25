@@ -1,0 +1,166 @@
+/* =========================================================
+   INSIGHT BRIEF — AI 음악 가사·프롬프트 생성기 (music.html)
+   편집 지면과 같은 종이·잉크·붉은 액센트를 쓰되, 조작부만 도구처럼 조밀하게.
+   ========================================================= */
+
+.mu-main{background:var(--paper)}
+.mu-wrap{max-width:1180px;margin:0 auto;padding:clamp(22px,3.4vw,38px) var(--pad) clamp(40px,5vw,64px)}
+
+/* ---------- 머리 ---------- */
+.mu-head{border-bottom:1px solid var(--rule);padding-bottom:clamp(16px,2.4vw,24px)}
+.mu-head .kicker{display:inline-block;font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.16em;color:var(--accent);text-transform:uppercase}
+.mu-head h1{font-family:var(--serif);font-size:clamp(30px,5.2vw,48px);line-height:1.12;font-weight:900;letter-spacing:-.04em;margin:9px 0 0}
+.mu-head .dek{max-width:760px;margin-top:12px;font-size:clamp(14px,1.5vw,15.5px);line-height:1.8;color:var(--ink-2);word-break:keep-all}
+.mu-head .dek b{font-weight:700;color:var(--ink)}
+.mu-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.mu-badges span{font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;color:var(--ink-3);border:1px solid var(--rule-2);background:var(--paper-2);padding:3px 8px}
+
+/* ---------- 2단 배치 ---------- */
+.mu-layout{display:grid;grid-template-columns:minmax(0,376px) minmax(0,1fr);gap:clamp(18px,2.4vw,30px);align-items:start;margin-top:clamp(20px,3vw,30px)}
+
+/* ---------- 설정 ---------- */
+.mu-builder{border:1px solid var(--rule-2);background:#fbfbfc;padding:16px 16px 18px;position:sticky;top:14px}
+.mu-builder-head h2{font-family:var(--serif);font-size:19px;font-weight:800;letter-spacing:-.03em}
+.mu-builder-head p{margin-top:5px;font-size:11.8px;line-height:1.7;color:var(--muted);word-break:keep-all}
+.mu-builder-head p b{color:var(--ink-2)}
+
+.mu-field{border-top:1px solid var(--rule);padding-top:11px;margin-top:13px}
+.mu-field:first-child{border-top:0;padding-top:0;margin-top:12px}
+.mu-field > .lb{display:flex;align-items:baseline;gap:7px;margin-bottom:7px}
+.mu-field > .lb .no{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.1em;color:var(--accent)}
+.mu-field > .lb .t{font-size:12.5px;font-weight:800;letter-spacing:-.02em;color:var(--ink)}
+.mu-field > .lb .h{margin-left:auto;font-size:10.5px;color:var(--muted)}
+
+.mu-field select{
+  width:100%;appearance:none;border:1px solid var(--rule-2);background:#fff;
+  font-family:var(--sans);font-size:13px;font-weight:600;color:var(--ink);
+  padding:8px 30px 8px 10px;letter-spacing:-.01em;cursor:pointer;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 6'><path d='M1 1.2 5 5l4-3.8' fill='none' stroke='%234f545b' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat:no-repeat;background-position:right 11px center;background-size:9px 6px;
+}
+.mu-field select:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.mu-field + .mu-field .pair{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+
+.mu-chips{display:flex;flex-wrap:wrap;gap:5px}
+.mu-chips button{
+  font-family:var(--sans);font-size:11.5px;font-weight:600;letter-spacing:-.01em;
+  border:1px solid var(--rule-2);background:#fff;color:var(--ink-3);
+  padding:4px 8px;cursor:pointer;transition:border-color .12s ease,background .12s ease,color .12s ease;
+}
+.mu-chips button:hover{border-color:var(--ink-3);color:var(--ink)}
+.mu-chips button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.mu-chips button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+
+.mu-range-row{display:flex;align-items:center;gap:10px}
+.mu-range-row input[type="range"]{flex:1;min-width:0;accent-color:var(--accent);height:22px}
+.mu-bpm{font-family:var(--mono);font-size:13px;font-weight:700;color:var(--ink);min-width:74px;text-align:right}
+.mu-bpm small{font-size:9.5px;color:var(--muted);font-weight:400}
+.mu-tempo-presets{display:flex;flex-wrap:wrap;gap:4px;margin-top:6px}
+.mu-tempo-presets button{font-family:var(--mono);font-size:10px;letter-spacing:.02em;border:1px solid var(--rule-2);background:#fff;color:var(--muted);padding:3px 6px;cursor:pointer}
+.mu-tempo-presets button:hover{color:var(--ink);border-color:var(--ink-3)}
+
+.mu-field input[type="text"]{
+  width:100%;border:1px solid var(--rule-2);background:#fff;padding:8px 10px;
+  font-family:var(--sans);font-size:13px;color:var(--ink);letter-spacing:-.01em;
+}
+.mu-field input[type="text"]::placeholder{color:#a4a8ae}
+.mu-field input[type="text"]:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+.mu-hint{margin-top:5px;font-size:10.5px;line-height:1.6;color:var(--muted)}
+
+.mu-actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.mu-btn{
+  font-family:var(--sans);font-size:12.5px;font-weight:800;letter-spacing:-.01em;
+  border:1px solid var(--ink);background:#fff;color:var(--ink);padding:9px 13px;cursor:pointer;
+  transition:background .14s ease,color .14s ease,border-color .14s ease;
+}
+.mu-btn:hover{background:var(--ink);color:#fff}
+.mu-btn-main{background:var(--accent);border-color:var(--accent);color:#fff;flex:1 1 100%}
+.mu-btn-main:hover{background:var(--accent-deep);border-color:var(--accent-deep)}
+.mu-btn-ghost{border-color:var(--rule-2);color:var(--muted);font-weight:600}
+.mu-btn-ghost:hover{background:transparent;color:var(--ink);border-color:var(--ink-3)}
+.mu-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mu-actions-note{margin-top:8px;font-size:10.5px;line-height:1.6;color:var(--muted)}
+.mu-noscript{margin-top:12px;padding:10px;border:1px solid var(--accent);background:#fff;font-size:12px;line-height:1.7}
+
+/* ---------- 결과 ---------- */
+.mu-out{min-width:0}
+.mu-out-head{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:8px}
+.mu-out-head h2{font-family:var(--serif);font-size:21px;font-weight:900;letter-spacing:-.03em}
+.mu-summary{font-size:11.5px;color:var(--muted);margin-left:auto;text-align:right}
+
+.mu-card{border:1px solid var(--rule-2);background:#fff;margin-top:12px}
+.mu-card-head{display:flex;align-items:center;gap:8px;padding:9px 12px;border-bottom:1px solid var(--rule);background:var(--paper-2)}
+.mu-card-head .tag{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.12em;color:#fff;background:var(--ink);padding:2px 5px}
+.mu-card-head h3{font-size:12.5px;font-weight:800;letter-spacing:-.02em}
+.mu-card-head .cnt{font-family:var(--mono);font-size:10px;color:var(--muted);margin-left:2px}
+.mu-copy{
+  margin-left:auto;font-family:var(--sans);font-size:11px;font-weight:700;letter-spacing:-.01em;
+  border:1px solid var(--ink);background:#fff;color:var(--ink);padding:4px 9px;cursor:pointer;white-space:nowrap;
+}
+.mu-copy:hover{background:var(--ink);color:#fff}
+.mu-copy:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.mu-card-body{padding:11px 12px}
+.mu-card-body.mono{font-family:var(--mono);font-size:11.8px;line-height:1.85;color:var(--ink-2);white-space:pre-wrap;word-break:break-word}
+.mu-card-body.lyrics{font-family:var(--serif);font-size:13.4px;line-height:1.95;color:var(--ink);white-space:pre-wrap;word-break:keep-all}
+.mu-card-body .sec{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--accent);font-weight:700}
+.mu-card-note{padding:0 12px 10px;font-size:10.5px;line-height:1.6;color:var(--muted)}
+.mu-titles{display:flex;flex-wrap:wrap;gap:5px;padding:11px 12px}
+.mu-titles span{border:1px solid var(--rule-2);background:var(--paper-2);font-size:12px;font-weight:700;letter-spacing:-.01em;padding:4px 9px}
+.mu-empty{padding:30px 14px;text-align:center;color:var(--muted);font-size:12.5px;border:1px dashed var(--rule-2);margin-top:12px}
+
+/* ---------- 쓰는 법 / FAQ ---------- */
+.mu-sec-head{display:flex;align-items:baseline;gap:10px;border-bottom:1px solid var(--rule);padding-bottom:7px;margin-bottom:14px}
+.mu-sec-head h2{font-family:var(--serif);font-size:19px;font-weight:800;letter-spacing:-.03em}
+.mu-sec-head span{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.08em}
+.mu-how{margin-top:clamp(28px,4vw,42px)}
+.mu-how-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.mu-how-card{border:1px solid var(--rule-2);background:#fff;padding:13px 14px}
+.mu-how-card .k{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.14em;color:var(--accent)}
+.mu-how-card h3{margin-top:5px;font-family:var(--serif);font-size:15px;font-weight:800;letter-spacing:-.02em;line-height:1.4}
+.mu-how-card p{margin-top:6px;font-size:11.8px;line-height:1.8;color:var(--ink-3);word-break:keep-all}
+.mu-how-card p b{color:var(--ink);font-weight:700}
+
+.mu-faq{margin-top:clamp(26px,3.6vw,38px)}
+.mu-faq dl{margin:0}
+.mu-faq dt{font-size:13px;font-weight:800;letter-spacing:-.02em;color:var(--ink);padding:11px 0 4px;border-top:1px solid var(--rule)}
+.mu-faq dt:first-child{border-top:0}
+.mu-faq dd{margin:0 0 4px;font-size:12.2px;line-height:1.85;color:var(--ink-3);word-break:keep-all}
+.mu-faq dd b{color:var(--ink);font-weight:700}
+
+.mu-xlink{margin-top:20px;font-size:12px;line-height:1.9;color:var(--ink-3)}
+.mu-xlink a{color:var(--accent);border-bottom:1px solid rgba(179,38,30,.3)}
+
+.mu-legal{margin-top:clamp(22px,3vw,30px);border:1px solid var(--rule-2);border-top:3px solid var(--ink);padding:15px 16px;background:#fff}
+.mu-legal h3{font-family:var(--serif);font-size:15px;font-weight:800;letter-spacing:-.02em;margin-bottom:8px}
+.mu-legal p{font-size:11.6px;line-height:1.85;color:var(--ink-3);word-break:keep-all}
+.mu-legal p + p{margin-top:7px}
+.mu-disclaimer{margin-top:14px;font-size:11.2px;line-height:1.8;color:var(--muted);border-top:1px solid var(--rule);padding-top:11px}
+
+/* ---------- 토스트 ---------- */
+.mu-toast{
+  position:fixed;left:50%;bottom:26px;transform:translate(-50%,14px);
+  background:var(--ink);color:#fff;font-size:12.5px;font-weight:700;letter-spacing:-.01em;
+  padding:9px 16px;border-radius:2px;opacity:0;pointer-events:none;transition:opacity .18s ease,transform .18s ease;z-index:80;
+}
+.mu-toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- 반응형 ---------- */
+@media (max-width:980px){
+  .mu-layout{grid-template-columns:1fr}
+  .mu-builder{position:static;order:1}
+  .mu-out{order:2}
+  .mu-how-grid{grid-template-columns:1fr}
+}
+@media (max-width:640px){
+  .mu-wrap{padding-left:16px;padding-right:16px}
+  .mu-head h1{font-size:31px}
+  .mu-actions{position:sticky;bottom:0;background:linear-gradient(to top,#fbfbfc 62%,rgba(251,251,252,0));padding:8px 0 4px;z-index:5}
+  .mu-btn-main{flex:1 1 100%}
+  .mu-card-head{flex-wrap:wrap;gap:6px}
+  .mu-summary{margin-left:0;text-align:left;width:100%}
+  .mu-titles span{font-size:11.5px}
+}
+@media print{
+  .mu-builder,.mu-actions,.mu-copy,.mu-toast,.site-header,.nav-wrap,.site-footer{display:none!important}
+  .mu-layout{grid-template-columns:1fr}
+}

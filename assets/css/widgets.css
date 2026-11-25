@@ -1,0 +1,330 @@
+/* =========================================================
+   INSIGHT BRIEF — 위젯 스타일
+   1) 플로팅 SNS 공유 바 (PC 세로 고정 / 좁은 화면 하단 슬림 바)
+   2) 기사 본문 하단 '연관 글 + 무료 툴' 카드
+   assets/js/share-float.js · assets/js/app.js 가 그리는 요소의 모양입니다.
+   ========================================================= */
+
+/* ---------- 1) 플로팅 공유 바 ---------- */
+.ib-fs {
+  position: fixed;
+  z-index: 70;
+  display: flex;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  box-shadow: 0 20px 44px -30px rgba(17, 19, 23, .55);
+}
+
+.ib-fs-btn,
+.ib-fs-close,
+.ib-fs-mini {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink-3);
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--sans);
+  transition: background .16s, color .16s, border-color .16s;
+}
+
+.ib-fs-btn:hover,
+.ib-fs-btn:focus-visible,
+.ib-fs-close:hover,
+.ib-fs-mini:hover {
+  background: var(--paper-2);
+  border-color: var(--rule-2);
+  color: var(--ink);
+}
+
+.ib-fs-btn svg {
+  width: 17px;
+  height: 17px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ib-fs-head {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.ib-fs-txt {
+  font-size: 11.5px;
+  letter-spacing: -.01em;
+  white-space: nowrap;
+}
+
+.ib-fs-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 26px;
+  transform: translateX(-50%);
+  max-width: min(92vw, 430px);
+  padding: 11px 16px;
+  background: #17140f;
+  color: #f6f2ea;
+  font-size: 12.5px;
+  line-height: 1.55;
+  text-align: center;
+  z-index: 9999;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+}
+
+.ib-fs-toast.is-on { opacity: 1; }
+
+.ib-fs-mini { display: none; }
+
+/* 넓은 화면 — 본문 왼쪽 여백에 세로 고정 (share-float.js 가 여백을 재서 붙입니다) */
+body.ib-fs-rail .ib-fs {
+  top: 50%;
+  transform: translateY(-50%);
+  flex-direction: column;
+  gap: 2px;
+  padding: 8px 6px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .25s;
+}
+
+body.ib-fs-rail.ib-fs-on .ib-fs {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body.ib-fs-rail .ib-fs-btn {
+  width: 40px;
+  height: 40px;
+  flex-direction: column;
+  gap: 2px;
+}
+
+body.ib-fs-rail .ib-fs-txt { display: none; }
+
+body.ib-fs-rail .ib-fs-head {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  padding: 8px 0 6px;
+  align-self: center;
+}
+
+body.ib-fs-rail .ib-fs-close { display: none; }
+
+/* 좁은 화면 — 본문을 가리지 않는 하단 슬림 바 (기본값) */
+body.ib-has-fs:not(.ib-fs-rail) { padding-bottom: 62px; }
+body.ib-has-fs:not(.ib-fs-rail) .to-top { bottom: calc(62px + 14px); }
+
+body:not(.ib-fs-rail) .ib-fs {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(2px, 1.8vw, 12px);
+  padding: 7px 10px calc(7px + env(safe-area-inset-bottom));
+  border-width: 1px 0 0;
+  flex-wrap: nowrap;
+  transform: translateY(110%);
+  transition: transform .25s ease;
+}
+
+body:not(.ib-fs-rail).ib-fs-on .ib-fs { transform: none; }
+
+body:not(.ib-fs-rail) .ib-fs-btn {
+  padding: 7px 10px;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 54px;
+}
+
+body:not(.ib-fs-rail) .ib-fs-head { display: none; }
+
+body:not(.ib-fs-rail) .ib-fs-close {
+  margin-left: auto;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+}
+
+body:not(.ib-fs-rail) .ib-fs-close svg {
+  width: 15px;
+  height: 15px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+}
+
+body:not(.ib-fs-rail).ib-fs-off .ib-fs { transform: translateY(110%); }
+
+body:not(.ib-fs-rail).ib-fs-off .ib-fs-mini {
+  display: inline-flex;
+  position: fixed;
+  left: 14px;
+  bottom: calc(14px + env(safe-area-inset-bottom));
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid var(--rule-2);
+  background: var(--paper);
+  box-shadow: 0 10px 24px -16px rgba(0, 0, 0, .5);
+  z-index: 70;
+}
+
+body:not(.ib-fs-rail).ib-fs-off .ib-fs-mini svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.7;
+}
+
+body:not(.ib-fs-rail) .ib-fs-toast { bottom: calc(74px + env(safe-area-inset-bottom)); }
+
+/* 좁은 화면 — 복사·WhatsApp·위챗·LINE·X·기기 공유 + 접기가 한 줄에 넘침 없이 들어가게 */
+@media (max-width: 720px) {
+  body:not(.ib-fs-rail) .ib-fs {
+    gap: 2px;
+    padding: 6px 8px calc(6px + env(safe-area-inset-bottom));
+  }
+
+  body:not(.ib-fs-rail) .ib-fs-btn {
+    flex: 0 1 auto;
+    min-width: 0;
+    padding: 6px 3px;
+    gap: 2px;
+  }
+
+  body:not(.ib-fs-rail) .ib-fs-btn svg { width: 15px; height: 15px; }
+
+  body:not(.ib-fs-rail) .ib-fs-txt {
+    min-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(9px, 2.55vw, 11px);
+    letter-spacing: -.03em;
+  }
+
+  body:not(.ib-fs-rail) .ib-fs-close {
+    width: 28px;
+    height: 30px;
+    margin-left: 2px;
+    flex: 0 0 28px;
+  }
+}
+
+/* 인쇄·화면 낭독 보조 */
+@media print {
+  .ib-fs, .ib-fs-mini, .ib-fs-toast { display: none !important; }
+}
+
+/* ---------- 2) 연관 글 + 무료 툴 카드 ---------- */
+.tool-strip {
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid var(--rule);
+}
+
+.tool-strip-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.tool-strip-head h3 {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 19px;
+  letter-spacing: -.02em;
+}
+
+.tool-strip-head p {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--muted);
+}
+
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.tool-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 16px 18px;
+  border: 1px solid var(--rule);
+  background: var(--paper);
+  text-decoration: none;
+  color: inherit;
+  transition: border-color .16s, background .16s, transform .16s;
+}
+
+.tool-card:hover,
+.tool-card:focus-visible {
+  border-color: var(--ink);
+  background: var(--paper-2);
+  transform: translateY(-1px);
+}
+
+.tool-mark {
+  flex: 0 0 auto;
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  background: var(--ink);
+  color: #f6f2ea;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .1em;
+}
+
+.tool-body { min-width: 0; }
+
+.tool-body h4 {
+  margin: 0 0 3px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -.02em;
+  color: var(--ink);
+}
+
+.tool-body p {
+  margin: 0;
+  font-size: 12.5px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.tool-cta {
+  display: inline-block;
+  margin-top: 7px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+@media (max-width: 720px) {
+  .tool-grid { grid-template-columns: 1fr; }
+  .tool-card { padding: 14px 15px; }
+}

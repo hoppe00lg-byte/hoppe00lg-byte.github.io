@@ -1,0 +1,4850 @@
+{
+ "_note": "인사이트 브리프 다국어 사전의 수동 번역(고정). 화면에 자주 보이는 UI 문구만 손으로 다듬고, 나머지는 tools/i18n_dict.py 가 기계번역해 data/i18n/{lang}.json 에 채웁니다. 여기 값이 있으면 항상 우선합니다.",
+ "patterns": [
+  {
+   "en": "$1 min read",
+   "ja": "$1分で読む",
+   "ko": "^(\\d+)분 읽기$",
+   "zh": "阅读 $1 分钟"
+  },
+  {
+   "en": "All $1 · newest first",
+   "ja": "全 $1 本・新着順",
+   "ko": "^전체 (\\d+)편 · 최신순$",
+   "zh": "共 $1 篇 · 最新优先"
+  },
+  {
+   "en": "As of $1-$2-$3",
+   "ja": "$1-$2-$3 時点",
+   "ko": "^(\\d{4})\\.(\\d{1,2})\\.(\\d{1,2}) 기준$",
+   "zh": "截至 $1-$2-$3"
+  },
+  {
+   "en": "weekday:$1-$2-$3",
+   "ja": "weekday:$1-$2-$3",
+   "ko": "^(\\d{4})년 (\\d{1,2})월 (\\d{1,2})일 (월|화|수|목|금|토|일)요일$",
+   "zh": "weekday:$1-$2-$3"
+  },
+  {
+   "en": "$1-$2-$3",
+   "ja": "$1-$2-$3",
+   "ko": "^(\\d{4})년 (\\d{1,2})월 (\\d{1,2})일$",
+   "zh": "$1-$2-$3"
+  },
+  {
+   "en": "Updated $1:$2",
+   "ja": "$1:$2 更新",
+   "ko": "^(\\d{1,2}):(\\d{2}) 갱신$",
+   "zh": "$1:$2 更新"
+  },
+  {
+   "en": "prev. $1",
+   "ja": "前日 $1",
+   "ko": "^전일 (.+)$",
+   "zh": "前一日 $1"
+  },
+  {
+   "en": "vs prev close $1",
+   "ja": "前日終値比 $1",
+   "ko": "^전일 종가 대비 (.+)$",
+   "zh": "较前收盘 $1"
+  },
+  {
+   "en": "vs prev fixing $1",
+   "ja": "前日公示比 $1",
+   "ko": "^전일 고시 대비 (.+)$",
+   "zh": "较前公示 $1"
+  },
+  {
+   "en": "vs last week $1",
+   "ja": "前週比 $1",
+   "ko": "^전주 대비 (.+)$",
+   "zh": "较上周 $1"
+  },
+  {
+   "en": "$1-month average",
+   "ja": "$1月平均",
+   "ko": "^(\\d{1,2})월 평균$",
+   "zh": "$1月平均"
+  },
+  {
+   "en": "vs $1-month average $2",
+   "ja": "$1月平均比 $2",
+   "ko": "^(\\d{1,2})월 평균 대비 (.+)$",
+   "zh": "较 $1 月平均 $2"
+  },
+  {
+   "en": "$1: $2",
+   "ja": "$1比 $2",
+   "ko": "^(.+?) 대비 (.+)$",
+   "zh": "较 $1：$2"
+  },
+  {
+   "en": "$1 months",
+   "ja": "$1か月",
+   "ko": "^(\\d+)개월$",
+   "zh": "$1个月"
+  },
+  {
+   "en": "$1 terms",
+   "ja": "$1 用語",
+   "ko": "^(\\d+)개 용어$",
+   "zh": "$1 个术语"
+  },
+  {
+   "en": "$1 items",
+   "ja": "$1 品目",
+   "ko": "^(\\d+)개 품목$",
+   "zh": "$1 个品种"
+  },
+  {
+   "en": "KRW",
+   "ja": "ウォン",
+   "ko": "^원$",
+   "zh": "韩元"
+  },
+  {
+   "en": "KRW/kg",
+   "ja": "ウォン/kg",
+   "ko": "^원/kg$",
+   "zh": "韩元/kg"
+  },
+  {
+   "en": "KRW/t",
+   "ja": "ウォン/t",
+   "ko": "^원/톤$",
+   "zh": "韩元/吨"
+  },
+  {
+   "en": "KRW/100 JPY",
+   "ja": "ウォン/100円",
+   "ko": "^원/100엔$",
+   "zh": "韩元/100日元"
+  },
+  {
+   "en": "KRW/CNY",
+   "ja": "ウォン/人民元",
+   "ko": "^원/위안$",
+   "zh": "韩元/人民币"
+  },
+  {
+   "en": "$1 — lead image",
+   "ja": "$1 メイン画像",
+   "ko": "^(.+) 대표 이미지$",
+   "zh": "$1 主图"
+  },
+  {
+   "en": "$1 — cover image",
+   "ja": "$1 表紙画像",
+   "ko": "^(.+) 표지 이미지$",
+   "zh": "$1 封面图"
+  },
+  {
+   "en": "$1 · $2-$3-$4",
+   "ja": "$1 · $2-$3-$4",
+   "ko": "^(.+) · (\\d{4})\\.(\\d{1,2})\\.(\\d{1,2})$",
+   "zh": "$1 · $2-$3-$4"
+  },
+  {
+   "en": "$1 · $2 views",
+   "ja": "$1 · $2 閲覧",
+   "ko": "^(.+) · 읽음 (\\d+)$",
+   "zh": "$1 · $2 阅读"
+  },
+  {
+   "en": "$1 — $2 report",
+   "ja": "$1 — $2 レポート",
+   "ko": "^(.+) — (.+) 리포트$",
+   "zh": "$1 — $2 报道"
+  },
+  {
+   "en": "Live · updated $1",
+   "ja": "リアルタイム更新 $1",
+   "ko": "^실시간 갱신 (.+)$",
+   "zh": "实时更新 $1"
+  },
+  {
+   "en": "Live · $1",
+   "ja": "リアルタイム · $1",
+   "ko": "^실시간 · (.+)$",
+   "zh": "实时 · $1"
+  },
+  {
+   "en": "Updated $1",
+   "ja": "更新 $1",
+   "ko": "^갱신 (.+)$",
+   "zh": "更新 $1"
+  },
+  {
+   "en": "until $1",
+   "ja": "$1 まで",
+   "ko": "^(.+) 까지$",
+   "zh": "截至 $1"
+  },
+  {
+   "en": "$1 views",
+   "ja": "$1 閲覧",
+   "ko": "^읽음 (\\d+)$",
+   "zh": "$2"
+  },
+  {
+   "en": "$1 views",
+   "ja": "$1 閲覧",
+   "ko": "^(\\d+) 읽음$",
+   "zh": "$1 阅读"
+  },
+  {
+   "en": "Live: $1 items",
+   "ja": "リアルタイム $1 品目",
+   "ko": "^실시간 (\\d+)종$",
+   "zh": "实时 $1 项"
+  },
+  {
+   "en": "$1 items",
+   "ja": "$1 品目",
+   "ko": "^(\\d+)종$",
+   "zh": "$1 项"
+  },
+  {
+   "en": "$1: $2",
+   "ja": "$1比 $2",
+   "ko": "^(.+?) 대비 (.+)$",
+   "zh": "较 $1：$2"
+  },
+  {
+   "en": "$1",
+   "ja": "$1",
+   "ko": "^(.+) 대비$",
+   "zh": "$1"
+  },
+  {
+   "en": "last week ($1)",
+   "ja": "先週（$1）",
+   "ko": "^전주\\((\\d+/\\d+)\\)$",
+   "zh": "上周（$1）"
+  },
+  {
+   "en": "end of $1",
+   "ja": "$1年末",
+   "ko": "^(\\d{4})년 말$",
+   "zh": "$1年底"
+  },
+  {
+   "en": "$1-$2",
+   "ja": "$1年$2月",
+   "ko": "^(\\d{4})년 (\\d{1,2})월$",
+   "zh": "$1年$2月"
+  },
+  {
+   "en": "$1",
+   "ja": "$1",
+   "ko": "^(.+) 기준$",
+   "zh": "$1"
+  },
+  {
+   "en": "$1 chars",
+   "ja": "$1 文字",
+   "ko": "^(\\d+)자$",
+   "zh": "$1 字"
+  },
+  {
+   "en": "$1 chars",
+   "ja": "$1 文字",
+   "ko": "^(.+)자$",
+   "zh": "$1 字"
+  },
+  {
+   "en": "compiled $1",
+   "ja": "$1 時点で整理",
+   "ko": "^정리 (.+)$",
+   "zh": "整理于 $1"
+  }
+ ],
+ "strings": {
+  "01 문서서식 · 23종": [
+   "01 Office documents · 23",
+   "01 文书表单 · 23 种",
+   "01 文書書式・23種"
+  ],
+  "0원 기준선": [
+   "Zero line",
+   "0 元基准线",
+   "0 の基準線"
+  ],
+  "138종": [
+   "138 items",
+   "138 种",
+   "138種"
+  ],
+  "1개월 차": [
+   "Month 1",
+   "第 1 个月",
+   "1 か月目"
+  ],
+  "1단위 = ? 원": [
+   "1 unit = ? KRW",
+   "1 单位 = ? 韩元",
+   "1 単位 = ? ウォン"
+  ],
+  "1인 사업자 전문가 매칭, 소상공인 무료 비교견적, 수출입 포워딩 견적, 폐기물 배출자 신고, 올바로시스템, EPR 분담금, 기장 세무사, 4대보험 취급, 정책자금 컨설팅, 수출바우처, 홈페이지 제작 견적, SNS 마케팅 대행, 창업 멘토링, 희망리턴패키지, 점포 철거 원상복구, 차량 렌탈, 지게차 렌탈, 미수금 내용증명, 파트너 입점": [
+   "solo business expert matching, free quotes for small business, freight forwarding quote, waste generator report, EPR fee, bookkeeping accountant, payroll and social insurance, government funding consulting, export voucher, website quote, social media marketing agency, startup mentoring, store closure restoration, vehicle rental, forklift rental, demand letter for unpaid invoices, partner onboarding",
+   "个体经营者专家匹配, 小微企业免费比价, 进出口货代报价, 废弃物排放者申报, EPR 分担金, 代理记账税务师, 四大保险办理, 政策资金咨询, 出口券, 网站制作报价, SNS 营销代理, 创业辅导, 门店拆除复原, 车辆租赁, 叉车租赁, 应收账款催告函, 合作伙伴入驻",
+   "個人事業主の専門家マッチング, 小規模事業者の無料見積比較, 輸出入フォワーディング見積, 廃棄物排出者届出, EPR 負担金, 記帳税理士, 社会保険手続, 政策資金コンサル, 輸出バウチャー, ホームページ制作見積, SNS マーケティング代行, 創業メンタリング, 店舗原状回復, 車両レンタル, フォークリフト レンタル, 未収金の内容証明, パートナー参入"
+  ],
+  "1인 사업자 툴 5종 →": [
+   "5 tools for solo businesses →",
+   "个体商户工具 5 种 →",
+   "個人事業者向けツール5種 →"
+  ],
+  "1인 사업자 툴 9종": [
+   "9 free tools for solo business owners",
+   "个体经营者工具 9 种",
+   "個人事業主ツール 9 種"
+  ],
+  "1인 사업자 툴 9종 — 견적서·마진·계약서·무역서식·원가·자금": [
+   "9 tools for solo business owners — quotes, margin, contracts, trade forms, cost and cash",
+   "个体经营者工具 9 种 — 报价单、毛利、合同、贸易单据、成本与资金",
+   "個人事業主ツール 9 種 — 見積書・粗利・契約書・貿易書式・コストと資金"
+  ],
+  "1인 사업자 툴 9종 — 견적서·마진·수입원가·계약서·무역서식·자금흐름 무료 계산기 | INSIGHT BRIEF": [
+   "9 tools for solo business owners — free calculators for quotes, margin, import cost, contracts, trade forms and cash flow | INSIGHT BRIEF",
+   "个体经营者工具 9 种 — 报价单、毛利、进口成本、合同、贸易单据、资金流免费计算器 | INSIGHT BRIEF",
+   "個人事業主ツール 9 種 — 見積書・粗利・輸入コスト・契約書・貿易書式・資金繰りの無料計算ツール | INSIGHT BRIEF"
+  ],
+  "1인 사업자 툴 9종 — 견적서부터 자금흐름까지 한 페이지에서": [
+   "9 tools for solo business owners — from quotations to cash flow on one page",
+   "个体经营者工具 9 种 — 从报价单到资金流，一页完成",
+   "個人事業主ツール 9 種 — 見積書から資金繰りまで 1 ページで"
+  ],
+  "1인 사업자 툴 9종 →": [
+   "9 tools for solo businesses →",
+   "个体经营者工具 9 种 →",
+   "個人事業主ツール 9 種 →"
+  ],
+  "1톤 생산에 투입": [
+   "Input per tonne",
+   "每吨生产投入",
+   "1トン生産当たり投入"
+  ],
+  "2026-11-24 접속 확인": [
+   "checked 2026-11-24",
+   "2026-11-24 已确认",
+   "2026-11-24 接続確認"
+  ],
+  "2026년 12월 ~ 2027년 11월": [
+   "Dec 2026 – Nov 2027",
+   "2026年12月～2027年11月",
+   "2026年12月〜2027年11月"
+  ],
+  "2026년 12월부터 2027년 11월까지 플라스틱·산업기계·IT·무역 분야 전시회 38건을 주최사 공식 사이트에서 확인해 한 페이지에 모았습니다. 월별 캘린더와 국가·산업별 목록, 구글 캘린더·ICS 일정 내보내기까지 무료로 씁니다.": [
+   "38 plastics, industry, IT and trade shows from December 2026 to November 2027, each checked on the organiser's official site. Month-by-month calendar, country and sector filters, and Google Calendar or ICS export — free.",
+   "2026年12月至2027年11月，塑料、工业机械、IT、贸易领域38场展会，全部在主办方官方网站核对后汇集于一页。提供月历、国家与行业筛选、Google日历与ICS导出，免费使用。",
+   "2026年12月から2027年11月まで、プラスチック・産業機械・IT・貿易分野の展示会38件を主催者の公式サイトで確認して1ページにまとめました。月別カレンダー、国・分野の絞り込み、GoogleカレンダーとICSの書き出しまで無料で使えます。"
+  ],
+  "2026년 12월부터 2027년 11월까지 플라스틱·산업기계·IT·의료·뷰티 분야 국제 전시회 61건을 주최사 공식 사이트와 KOTRA 글로벌 전시 플랫폼(GEP)에서 확인해 한 페이지에 모았습니다. 월별 캘린더와 국가·산업별 목록, 구글 캘린더·ICS 일정 내보내기까지 무료로 씁니다.": [
+   "61 international trade shows in plastics, machinery, IT, medical and beauty from December 2026 to November 2027, checked on organiser sites and KOTRA's Global Exhibition Platform (GEP), gathered on one page — monthly calendar, country and sector lists, Google Calendar and ICS export, free.",
+   "汇集2026年12月至2027年11月塑料、工业机械、IT、医疗、美容领域的61场国际展会，日程均经主办方官网与KOTRA全球展览平台(GEP)核对。可按月查看日历、按国家和行业筛选，并导出至Google日历或ICS文件，全部免费。",
+   "2026年12月から2027年11月までのプラスチック・産業機械・IT・医療・ビューティ分野の国際展示会61件を、主催者公式サイトとKOTRAグローバル展示プラットフォーム(GEP)で確認して1ページにまとめました。月別カレンダー、国・分野別リスト、Googleカレンダー・ICS書き出しまで無料で使えます。"
+  ],
+  "2026년 12월부터 2027년 11월까지, 수출입 현장에서 실제로 가는 국제 전시회 38건을 주최사 공식 사이트에서 확인해 모았습니다. 월별 캘린더로 날짜를 보고, 권역·국가·산업으로 걸러 목록에서 확인하고, 필요한 일정은 구글 캘린더나 ICS 파일로 바로 받으세요.": [
+   "From December 2026 to November 2027: 38 international trade shows that exporters actually attend, each checked against the organiser's official site. Browse the month-by-month calendar, filter the list by region, country or sector, and send any show to Google Calendar or an ICS file.",
+   "2026年12月至2027年11月，收录进出口一线实际参加的38场国际展会，全部在主办方官方网站核对。用月历查看日期，按地区、国家、行业筛选列表，需要的日程可直接添加到Google日历或下载ICS文件。",
+   "2026年12月から2027年11月まで、輸出入手の現場で実際に訪れる国際展示会38件を、主催者の公式サイトで確認してまとめました。月別カレンダーで日程を見て、地域・国・分野で絞り込み、必要な日程はGoogleカレンダーやICSファイルですぐに受け取れます。"
+  ],
+  "2026년 12월부터 2027년 11월까지, 수출입 현장에서 실제로 가는 국제 전시회 61건을 주최사 공식 사이트와 KOTRA 글로벌 전시 플랫폼(GEP)에서 확인해 모았습니다. 월별 캘린더로 날짜를 보고, 권역·국가·산업으로 걸러 목록에서 확인하고, 필요한 일정은 구글 캘린더나 ICS 파일로 바로 받으세요.": [
+   "From December 2026 to November 2027: 61 international trade shows that exporters actually attend, each checked against organiser sites and KOTRA's Global Exhibition Platform (GEP). Browse the monthly calendar, filter by region, country and sector, and send any show straight to Google Calendar or an ICS file.",
+   "汇集2026年12月至2027年11月出口一线真正参展的61场国际展会，日程经主办方官网与KOTRA全球展览平台(GEP)核对。可查看月历、按地区·国家·行业筛选，并把需要的日程直接加入Google日历或下载ICS文件。",
+   "2026年12月から2027年11月まで、輸出の現場で実際に足を運ぶ国際展示会61件を、主催者公式サイトとKOTRAグローバル展示プラットフォーム(GEP)で確認してまとめました。月別カレンダーで日程を見て、地域・国・分野で絞り込み、必要な日程はGoogleカレンダーやICSファイルですぐに受け取れます。"
+  ],
+  "2027 급여·4대보험·연차·국민연금·실업급여 계산기": [
+   "Take-home pay, minimum wage & overtime calculator",
+   "税后工资、最低工资与加班费计算器",
+   "年収手取り・最低賃金・残業代 計算機"
+  ],
+  "2027 급여·4대보험·연차·국민연금·실업급여 계산기 — 무료 노무 계산기 | INSIGHT BRIEF": [
+   "Take-home pay, minimum wage & overtime calculator — Free | INSIGHT BRIEF",
+   "税后工资、最低工资与加班费计算器 — 免费 | INSIGHT BRIEF",
+   "年収手取り・最低賃金・残業代 計算機 — 無料 | INSIGHT BRIEF"
+  ],
+  "2027 선적 휴무일": [
+   "2027 shipping holidays",
+   "2027年船期休市",
+   "2027年 船積み休業日"
+  ],
+  "2027 최저임금, 2027 4대보험 요율, 실수령액 계산기, 회사 인건비 계산, 연차 발생일수 계산, 연차휴가 계산기, 국민연금 예상수령액, 실업급여 계산기, 2027 실업급여 상한액, 퇴직금 계산": [
+   "2027 minimum wage, 2027 payroll tax rates, take-home pay calculator, employer labor cost, annual leave accrual, annual leave calculator, national pension estimate, unemployment benefit calculator, 2027 unemployment benefit cap, severance calculator",
+   "2027 最低工资, 2027 社保费率, 实发工资计算器, 企业人工成本计算, 年假天数计算, 年假计算器, 国民年金预计领取额, 失业金计算器, 2027 失业金上限, 退职金计算",
+   "2027年最低賃金, 2027年社会保険料率, 手取り計算機, 会社の人件費計算, 年次有給の付与日数, 年次有給計算機, 国民年金の受給見込額, 失業給付計算機, 2027年失業給付の上限, 退職金計算"
+  ],
+  "2027년 선적·은행 휴무일": [
+   "2027 shipping and bank holidays",
+   "2027年船期与银行休市",
+   "2027年 船積み・銀行休業日"
+  ],
+  "2027년 최저임금 10,700원 기준 회사 총지출·실수령액, 연차, 국민연금, 실업급여를 한 페이지에서. 회원가입 없음.": [
+   "US take-home pay, minimum wage and overtime in one page. No sign-up.",
+   "税后工资、最低工资与加班费，一页算完。无需注册。",
+   "手取り・最低賃金・残業代を1ページで。登録不要。"
+  ],
+  "2027년 최저임금 10,700원(월 2,236,300원)과 2027년 4대보험 요율로 회사 총지출과 실수령액, 연차유급휴가 발생일수, 국민연금 예상 수령액, 실업급여 수급자격과 예상 금액을 한 페이지에서 계산합니다. 회원가입 없이 브라우저에서만 계산합니다.": [
+   "Work out US take-home pay from a gross salary using the 2026 federal brackets, FICA (Social Security 6.2% up to $184,500, Medicare 1.45% + 0.9%), an approximate state rate, plus federal and state minimum wages with FLSA 1.5× overtime. No sign-up, calculated in your browser.",
+   "按 2026 年个税税率、五险一金比例估算税后工资，并按人社部公布的主要城市最低工资标准计算 150%/200%/300% 加班费。无需注册，全部在浏览器内计算。",
+   "2026年分の所得税・社会保険料率から年収の手取りを計算し、2026年度の地域別最低賃金と25%増しの残業代もあわせて出します。登録不要、計算はブラウザ内で完結。"
+  ],
+  "2027년 최저임금·4대보험 요율로 회사 총지출과 실수령액, 연차 발생일수, 국민연금 예상액, 실업급여 수급자격과 예상 금액을 계산합니다. 회원가입 없이 무료.": [
+   "US take-home pay with 2026 federal tax and FICA, plus minimum wage and FLSA overtime. Free, no sign-up.",
+   "按 2026 年税率与五险一金估算税后工资，并计算最低工资与加班费。免费无需注册。",
+   "2026年の税・社会保険料で手取りを、地域別最低賃金で残業代を計算。無料・登録不要。"
+  ],
+  "24절기 입절 시각으로 계산한 사주팔자 여덟 글자와 오행 균형, 그리고 2027 정미년(丁未年) 신년운세. 회원가입 없이 무료, 입력값은 브라우저 밖으로 나가지 않습니다.": [
+   "Four Pillars chart from the solar terms, with the ten gods, five-element balance and the 2027 outlook. Free, no sign-up.",
+   "按节气排出的四柱八字、十神与五行旺衰，以及 2027 丁未年走向。免费无需注册。",
+   "節気で立てた四柱と通変星・十二運・五行バランス、2027年の巡り。無料・登録不要。"
+  ],
+  "3.3%·플랫폼 수수료": [
+   "3.3% withholding · platform fees",
+   "3.3% 预扣 · 平台手续费",
+   "3.3% 源泉徴収・プラットフォーム手数料"
+  ],
+  "4개국어 · 복사 · 메일 앱 연결": [
+   "4 languages · copy · mail app",
+   "四种语言 · 复制 · 邮件应用",
+   "4か国語・コピー・メールアプリ"
+  ],
+  "4개국어 무역 이메일 9종, 출장비·면세·단위 변환, 7개국 기업 검증 포털, 2027 선적 휴무일. 무료.": [
+   "Nine trade emails in four languages, trip settlement with duty-free and units, company portals for seven countries, 2027 shipping holidays. Free.",
+   "四种语言九类贸易邮件、差旅结算与免税单位换算、七国企业核验门户、2027年船期休市。免费。",
+   "4か国語9種の貿易メール、出張精算と免税・単位、7か国の企業ポータル、2027年の船積み休業日。無料。"
+  ],
+  "4개국어 무역 이메일, 출장 정산, 기업 검증 포털, 선적 휴무일. 회원가입 없이 무료.": [
+   "Trade email in four languages, trip settlement, company portals and shipping holidays. Free, no sign-up.",
+   "四语种贸易邮件、差旅结算、企业核验门户与船期休市。免费，无需注册。",
+   "4か国語の貿易メール、出張精算、企業ポータル、船積み休業日。登録不要・無料。"
+  ],
+  "4개국어 이메일 9종": [
+   "9 emails in 4 languages",
+   "4 语种邮件 9 种",
+   "4か国語メール9種"
+  ],
+  "6개월 · 원": [
+   "6 months · KRW",
+   "6 个月 · 韩元",
+   "6 か月 · ウォン"
+  ],
+  "6개월 · 월 단위": [
+   "6 months · monthly",
+   "6 个月 · 按月",
+   "6 か月 · 月単位"
+  ],
+  "6개월 월별 자금흐름 — 붉은 줄은 잔액이 0원 아래로 내려가는 달입니다.": [
+   "Monthly cash flow for six months — rows in red are months where the balance drops below zero.",
+   "六个月每月资金流 — 红色行表示余额跌破 0 韩元的月份。",
+   "6 か月の月別資金繰り — 赤字の行は残高が 0 を下回る月です。"
+  ],
+  "6개월 자금흐름": [
+   "6-month cash flow",
+   "六个月资金流",
+   "6 か月の資金繰り"
+  ],
+  "6개월 중 가장 낮은 달": [
+   "Lowest month in the six",
+   "六个月中最低的月份",
+   "6 か月で最も低い月"
+  ],
+  "6개월 총 이자": [
+   "Total interest over 6 months",
+   "六个月利息合计",
+   "6 か月の利息合計"
+  ],
+  "6개월 후 현금": [
+   "Cash after 6 months",
+   "六个月后现金",
+   "6 か月後の現金"
+  ],
+  "7개국 + 글로벌 기업 조회": [
+   "7 countries + global registries",
+   "7 国＋全球企业查询",
+   "7か国＋グローバル企業照会"
+  ],
+  "9가지": [
+   "9 situations",
+   "9 种情况",
+   "9種類"
+  ],
+  "AI·테크": [
+   "AI & Tech",
+   "AI·科技",
+   "AI・テック"
+  ],
+  "B/L Instruction·선하증권부터 급여·재고·퇴직금 자동계산, 취업규칙·정관, 영문 인보이스·패킹리스트까지 138종을 브라우저에서 작성. 전자서명·도장·PDF 저장. 회원가입 없음.": [
+   "From B/L instructions and bills of lading to automatic payroll, inventory and severance, workplace rules, articles of association, English invoices and packing lists — 138 documents written in your browser. E-signature, stamps and PDF export. No sign-up.",
+   "从 B/L 装运指示、提单，到工资、库存、退职金自动计算，就业规则、公司章程、英文发票与装箱单，138 种表单均在浏览器中填写。电子签名、印章与 PDF 保存，无需注册。",
+   "B/L インストラクション・船荷証券から給与・在庫・退職金の自動計算、就業規則・定款、英文インボイス・パッキングリストまで138種をブラウザで作成。電子署名・印鑑・PDF保存。会員登録不要。"
+  ],
+  "B/L·선적지시": [
+   "B/L & shipping instruction",
+   "提单·装运指示",
+   "B/L・船積指示"
+  ],
+  "B2B 소싱·원가 의뢰": [
+   "B2B sourcing & cost inquiry",
+   "B2B 采购·成本咨询",
+   "B2B 調達・原価相談"
+  ],
+  "EUR — 유로": [
+   "EUR — Euro",
+   "EUR — 欧元",
+   "EUR — ユーロ"
+  ],
+  "FOB·CIF → 개당 원가": [
+   "FOB/CIF → unit cost",
+   "FOB/CIF → 单位成本",
+   "FOB・CIF → 1 個あたりコスト"
+  ],
+  "FOB·CIF 단가 → 도착원가 → 판매가": [
+   "FOB/CIF price → landed cost → selling price",
+   "FOB/CIF 单价 → 到岸成本 → 售价",
+   "FOB・CIF 単価 → 着荷コスト → 販売価格"
+  ],
+  "FREE TOOL · 서식 · 무역 B/L · 전자서명": [
+   "FREE TOOL · Forms · Trade B/L · E-signature",
+   "FREE TOOL · 表单 · 贸易 B/L · 电子签名",
+   "FREE TOOL · 書式 · 貿易 B/L · 電子署名"
+  ],
+  "FREE TOOL · 셀러": [
+   "FREE TOOL · Seller",
+   "FREE TOOL · 卖家",
+   "FREE TOOL · セラー"
+  ],
+  "FREE TOOL · 셀러 & 마케터": [
+   "FREE TOOL · Seller & marketer",
+   "FREE TOOL · 卖家与营销",
+   "FREE TOOL · セラー＆マーケター"
+  ],
+  "HS코드별": [
+   "By HS code",
+   "按 HS 编码",
+   "HS コード別"
+  ],
+  "INSIGHT BRIEF · 독립 경제·탐사 리서치 웹진": [
+   "INSIGHT BRIEF · Independent economics & investigative research magazine",
+   "INSIGHT BRIEF · 独立经济·调查报道研究网络杂志",
+   "INSIGHT BRIEF · 独立系・経済調査報道リサーチ誌"
+  ],
+  "INSIGHT BRIEF — 독립 경제·탐사 리서치 웹진": [
+   "INSIGHT BRIEF — Independent economics & investigative research magazine",
+   "INSIGHT BRIEF — 独立经济·调查报道研究网络杂志",
+   "INSIGHT BRIEF — 独立系・経済調査報道リサーチ誌"
+  ],
+  "INSIGHT BRIEF 홈으로": [
+   "INSIGHT BRIEF home",
+   "INSIGHT BRIEF 首页",
+   "INSIGHT BRIEF ホームへ"
+  ],
+  "INSIGHT BRIEF의 탐사보도·경제·무역·AI 리서치 리포트.": [
+   "Investigative, economy, trade and AI research reports from INSIGHT BRIEF.",
+   "INSIGHT BRIEF 的调查报道、经济、贸易与 AI 研究报告。",
+   "INSIGHT BRIEF の調査報道・経済・貿易・AIリサーチレポート。"
+  ],
+  "JPY — 엔": [
+   "JPY — Japanese yen",
+   "JPY — 日元",
+   "JPY — 円"
+  ],
+  "KOTRA GEP 교차 확인": [
+   "Cross-checked with KOTRA GEP",
+   "与KOTRA GEP交叉核对",
+   "KOTRA GEPと照合済み"
+  ],
+  "KOTRA 글로벌 전시 플랫폼 GEP": [
+   "KOTRA Global Exhibition Platform (GEP)",
+   "KOTRA全球展览平台 GEP",
+   "KOTRAグローバル展示プラットフォーム GEP"
+  ],
+  "Mar 5, 2027 형식 권장": [
+   "Mar 5, 2027 format",
+   "建议写成 Mar 5, 2027",
+   "Mar 5, 2027 形式を推奨"
+  ],
+  "PDF로 저장": [
+   "Save as PDF",
+   "保存为 PDF",
+   "PDF で保存"
+  ],
+  "PPT·보고서": [
+   "PPT & reports",
+   "PPT·报告",
+   "PPT・報告書"
+  ],
+  "PRINT": [
+   "PRINT",
+   "PRINT",
+   "PRINT"
+  ],
+  "RSS 피드": [
+   "RSS feed",
+   "RSS 订阅",
+   "RSS フィード"
+  ],
+  "X에 공유": [
+   "Share on X",
+   "分享到 X",
+   "X で共有"
+  ],
+  "gold-api 국제 현물": [
+   "gold-api international spot",
+   "gold-api 国际现货",
+   "gold-api 国際現物"
+  ],
+  "manana 환율(야후 기반) 분 단위 시세": [
+   "manana FX rate (Yahoo-based), minute-by-minute",
+   "manana 汇率（基于 Yahoo）每分钟报价",
+   "manana 為替（Yahoo ベース）分単位レート"
+  ],
+  "— 전시회 정보·개최 일정 확인. GEP에서 옮긴 전시회는 상세 카드의 ‘GEP 상세’ 링크로 해당 전시회 정보 페이지에 바로 갑니다.": [
+   "— exhibition information and dates. For shows taken from GEP, the 'GEP page' link in the detail card opens that show's record.",
+   "— 展会信息与举办日程。取自GEP的展会，可在详情卡片点击「GEP详情」直接打开该展会资料页。",
+   "— 展示会情報・開催日程の確認元。GEPから採録した展示会は、詳細カードの「GEP詳細」リンクから該当する展示会情報ページを開けます。"
+  ],
+  "가격": [
+   "Price",
+   "价格",
+   "価格"
+  ],
+  "가로: 판매량 · 세로: 금액": [
+   "X: units · Y: amount",
+   "横轴：销量 · 纵轴：金额",
+   "横：販売量 · 縦：金額"
+  ],
+  "간접비": [
+   "Overhead",
+   "间接费用",
+   "間接費"
+  ],
+  "갑": [
+   "Party A",
+   "甲方",
+   "甲"
+  ],
+  "값": [
+   "Value",
+   "数值",
+   "値"
+  ],
+  "값을 넣으면 도착원가·현금잔액·손익분기·시간당 단가가 바로 나옵니다. 네 계산기는 모두 브라우저 안에서만 돌아가고, 어떤 가정으로 계산했는지는 결과 아래에 그대로 적었습니다. 표와 그래프는 입력하는 즉시 다시 그려집니다.": [
+   "Enter your numbers and the landed cost, cash balance, break-even point and hourly rate come out at once. All four calculators run only in your browser, and the assumptions behind each result are written out below it. Tables and charts redraw as you type.",
+   "填入数字，到岸成本、现金余额、盈亏平衡与每小时单价立即算出。四款计算器都只在浏览器内运行，各结果下方的假设条件原样列出。表格与图表随输入即时重绘。",
+   "値を入れると着荷コスト・現金残高・損益分岐・時間単価がすぐに出ます。4 つの計算ツールはすべてブラウザ内だけで動き、どの前提で計算したかは結果の下にそのまま書いてあります。表とグラフは入力と同時に描き直されます。"
+  ],
+  "같은 내용을 텔레그램에서도 받습니다. 알림을 끄고 읽고 싶을 때 편합니다.": [
+   "The same updates on Telegram — handy when you prefer to read with notifications off.",
+   "同样内容也会发到 Telegram，适合关闭通知后慢慢阅读。",
+   "同じ内容を Telegram でも配信します。通知を切って読みたいときに便利です。"
+  ],
+  "개": [
+   "ea",
+   "个",
+   "個"
+  ],
+  "개 품목": [
+   "items",
+   "个品种",
+   "品目"
+  ],
+  "개당": [
+   "Per unit",
+   "每件",
+   "1 個あたり"
+  ],
+  "개당 실질 도착원가": [
+   "Net landed cost per unit",
+   "单位实际到岸成本",
+   "1 個あたり実質着荷コスト"
+  ],
+  "개당 실질 도착원가 = (총 도착원가 − 수입 부가세) ÷ 수량": [
+   "Net unit cost = (total landed cost − import VAT) ÷ quantity",
+   "单位实际到岸成本 =（总到岸成本 − 进口增值税）÷ 数量",
+   "1 個あたり実質コスト =（総着荷コスト − 輸入付加価値税）÷ 数量"
+  ],
+  "개당 예상 이익": [
+   "Profit per unit",
+   "每件预计利润",
+   "1 個あたり想定利益"
+  ],
+  "개월": [
+   "months",
+   "个月",
+   "か月"
+  ],
+  "개최 시기나 장소가 바뀐 전시회는 카드에 ‘참고’로 함께 적었습니다. NEPCON JAPAN 2027은 1월에서 2월로, Automate 2027은 시카고에서 라스베이거스로, SEMICON West 2027은 샌프란시스코에서 피닉스로 옮겨 열립니다.": [
+   "Where a show moved its dates or venue, the card notes it: NEPCON JAPAN 2027 moved from January to February, Automate 2027 from Chicago to Las Vegas, and SEMICON West 2027 from San Francisco to Phoenix.",
+   "更改举办时间或地点的展会，卡片中以「备注」标明：NEPCON JAPAN 2027 由1月改为2月，Automate 2027 由芝加哥改为拉斯维加斯，SEMICON West 2027 由旧金山改为菲尼克斯。",
+   "開催時期や会場が変わった展示会はカードに「備考」として記載しました。NEPCON JAPAN 2027 は1月から2月へ、Automate 2027 はシカゴからラスベガスへ、SEMICON West 2027 はサンフランシスコからフェニックスへ移ります。"
+  ],
+  "개최 시기나 장소가 바뀐 전시회는 카드에 ‘참고’로 함께 적었습니다. 예를 들어 NEPCON JAPAN 2027은 1월에서 2월로, Automate 2027은 시카고에서 라스베이거스로 옮겨 열립니다.": [
+   "Where a show moved its dates or venue, the card notes it — for example NEPCON JAPAN 2027 moved from January to February, and Automate 2027 from Chicago to Las Vegas.",
+   "举办时间或地点有变化的展会，会在卡片中以“备注”注明。例如 NEPCON JAPAN 2027 从1月改到2月，Automate 2027 从芝加哥改到拉斯维加斯。",
+   "開催時期や会場が変わった展示会は、カードに「備考」として記載しています。たとえば NEPCON JAPAN 2027 は1月から2月へ、Automate 2027 はシカゴからラスベガスへ移りました。"
+  ],
+  "갱신": [
+   "Updated",
+   "更新",
+   "更新"
+  ],
+  "거래 조건": [
+   "Deal terms",
+   "交易条件",
+   "取引条件"
+  ],
+  "거래일자": [
+   "Transaction date",
+   "交易日期",
+   "取引日"
+  ],
+  "검색 열기": [
+   "Open search",
+   "打开搜索",
+   "検索を開く"
+  ],
+  "검색 첫 화면으로 연결": [
+   "opens each search page",
+   "打开各站搜索首页",
+   "各サイトの検索トップへ"
+  ],
+  "견적 낼 작업": [
+   "Job you are quoting",
+   "要报价的工作",
+   "見積もる案件"
+  ],
+  "견적 유효기간": [
+   "Offer valid until",
+   "报价有效期",
+   "見積有効期限"
+  ],
+  "견적서·거래명세서 PDF, 마진·수수료·부가세, 수입 원가·관부가세, 계약서·내용증명, 무역서식, 도착원가·자금흐름·손익분기·외주 단가까지 무료로. 회원가입 없음.": [
+   "Quotations and statements as PDF, margin, fees and VAT, import cost and customs, contracts and demand letters, trade forms, and landed cost, cash flow, break-even and freelance rates — all free. No sign-up.",
+   "报价单与交易明细 PDF、毛利、手续费与增值税、进口成本与关税、合同与催款函、贸易单据，以及到岸成本、资金流、盈亏平衡、外包单价，全部免费。无需注册。",
+   "見積書・取引明細の PDF、粗利・手数料・付加価値税、輸入コストと関税、契約書・内容証明、貿易書式、さらに着荷コスト・資金繰り・損益分岐・外注単価まで無料。登録不要。"
+  ],
+  "견적서·거래명세서 PDF, 마진율·오픈마켓 수수료·부가세·3.3% 계산, 수입 원가·관부가세·CBM 적재율, 프리랜서 계약서·미수금 내용증명·NDA 초안, Proforma Invoice·Commercial Invoice·Packing List, 수입 도착원가·관세, 6개월 자금흐름·대출 상환, 손익분기 그래프, 외주 적정단가까지 한 페이지에서. 회원가입 없이 브라우저에서만 계산하고 인쇄·복사로 바로 씁니다.": [
+   "Quotations and statements as PDF, margin, marketplace fees, VAT and 3.3% withholding, import cost, customs and CBM utilization, freelance contracts, demand letters and NDA drafts, proforma and commercial invoices and packing lists, import landed cost and duty, six-month cash flow with loan repayment, a break-even chart and freelance rate floors — all on one page. No sign-up; everything is calculated in your browser and printed or copied straight away.",
+   "报价单与交易明细 PDF、毛利率、平台手续费、增值税与 3.3% 预扣、进口成本、关税与 CBM 装载率、自由职业合同、催款函与 NDA 草案、形式发票·商业发票·装箱单、进口到岸成本与关税、六个月资金流与贷款偿还、盈亏平衡图表、外包单价下限，全在一页。无需注册，只在浏览器内计算，可直接打印或复制。",
+   "見積書・取引明細の PDF、粗利率・モール手数料・付加価値税・3.3% 源泉徴収、輸入コスト・関税・CBM 積載率、フリーランス契約書・未収金内容証明・NDA 草案、Proforma Invoice・Commercial Invoice・Packing List、輸入着荷コストと関税、6 か月の資金繰りと借入返済、損益分岐グラフ、外注の適正単価まで 1 ページで。登録不要、ブラウザ内だけで計算し、印刷・コピーですぐ使えます。"
+  ],
+  "견적서·거래명세서 양식은 일반 거래 관행에 맞춘 서식이고, 세금계산서 발급·부가세 신고·종합소득세 신고는 홈택스와 세무대리인 안내를 따라야 합니다. 마켓 수수료율은 판매자 등급·카테고리에 따라 다르고, 관세율은 HS코드별로 다르며 FTA 세율은 원산지증명이 있어야 적용됩니다. 계약서·내용증명은 표준 조항을 참고한 초안으로, 효력과 문구는 사안에 따라 달라질 수 있습니다. 무역서식은 일반적인 수출입 관행에 맞춘 서식이며, 신용장 조건·HS코드·원산지 표시는 계약과 통관 규정에 맞는지 은행·관세사 확인이 필요합니다. 도착원가·자금흐름·손익분기·외주 단가는 입력한 가정으로 계산한 추정치이며, 실제 관세율·금리·상환 조건·세금은 계약과 고시에 따라 달라집니다. 대출 상환액과 자금 부족 여부는 은행 약정과 실제 입출금 시점에 따라 달라지므로 자금 계획의 참고로만 쓰세요. 계산에 넣은 값은 브라우저 안에서만 처리되고 서버로 전송되거나 저장되지 않습니다. 페이지를 닫으면 입력값은 남지 않습니다.": [
+   "The quotation and statement forms follow ordinary trade practice; tax invoices, VAT returns and income tax returns must follow the National Tax Service (Hometax) and your tax agent. Marketplace fee rates vary by seller grade and category, duty rates vary by HS code, and FTA rates apply only with a certificate of origin. Contracts and demand letters are drafts based on standard clauses, and their effect and wording depend on the case. Trade forms follow ordinary export and import practice; letter of credit terms, HS codes and origin marks should be checked with your bank and customs broker against the contract and customs rules. Landed cost, cash flow, break-even and freelance rates are estimates from the assumptions you enter; actual duty rates, interest, repayment terms and taxes depend on contracts and official notices. Loan repayment and any cash shortfall depend on your bank agreement and the actual timing of receipts and payments, so use them only as a reference for planning. Everything you enter is processed inside your browser and is never sent to or stored on a server. Closing the page leaves nothing behind.",
+   "报价单与交易明细按一般交易惯例制作；税务发票开具、增值税申报与综合所得税申报须遵循国税厅（Hometax）与税务代理的指引。平台手续费率因卖家等级与类目而异，关税税率因 HS 编码而异，FTA 税率须有原产地证明才适用。合同与催款函是参考标准条款的草案，其效力与措辞视具体情况而定。贸易单据按一般进出口惯例制作；信用证条件、HS 编码与原产地标识须由银行与报关行对照合同及通关规定确认。到岸成本、资金流、盈亏平衡与外包单价是按所填假设计算的估算值，实际关税税率、利率、还款条件与税金随合同与公告而异。贷款偿还额与资金缺口取决于银行约定与实际收付时点，请仅作资金计划参考。所有输入只在浏览器内处理，不会发送到服务器或保存；关闭页面后不留痕迹。",
+   "見積書・取引明細は一般的な商慣行に合わせた書式で、税務インボイスの発行・付加価値税申告・総合所得税申告は国税庁（ホームタックス）と税理士の案内に従う必要があります。モール手数料率は出品者ランクやカテゴリで異なり、関税率は HS コードごとに異なり、FTA 税率は原産地証明がある場合にのみ適用されます。契約書・内容証明は標準条項を参考にした草案で、効力と文言は事案により異なります。貿易書式は一般的な輸出入の慣行に合わせたもので、信用状条件・HS コード・原産地表示は契約と通関規則に合っているか銀行・通関士の確認が必要です。着荷コスト・資金繰り・損益分岐・外注単価は入力した前提による推計で、実際の関税率・金利・返済条件・税額は契約や告示により変わります。借入返済額と資金不足の有無は銀行の約定と実際の入出金時期によるため、資金計画の参考としてのみお使いください。入力した値はブラウザ内だけで処理され、サーバーへ送信・保存されません。ページを閉じれば入力値は残りません。"
+  ],
+  "견적서·거래명세서, 마진·부가세, 수입 원가, 계약서, 무역서식, 도착원가·자금흐름·손익분기·외주 단가. 브라우저에서만 계산하며 무료입니다.": [
+   "Quotes and statements, margin and VAT, import cost, contracts, trade forms, landed cost, cash flow, break-even and freelance rates. Calculated in your browser, free.",
+   "报价单与交易明细、毛利与增值税、进口成本、合同、贸易单据、到岸成本、资金流、盈亏平衡、外包单价。只在浏览器内计算，免费。",
+   "見積書・取引明細、粗利と付加価値税、輸入コスト、契約書、貿易書式、着荷コスト・資金繰り・損益分岐・外注単価。ブラウザ内だけで計算、無料です。"
+  ],
+  "견적서·거래명세서, 마진·수수료, 수입 원가, 계약서 초안, 원가·자금 계산": [
+   "Quotation/statement, margin and fees, import cost, contract draft, cost and cash",
+   "报价单与交易明细、毛利与手续费、进口成本、合同草案、成本与资金",
+   "見積書・取引明細、粗利と手数料、輸入コスト、契約書草案、コストと資金"
+  ],
+  "경제·금융": [
+   "Economy & Finance",
+   "经济·金融",
+   "経済・金融"
+  ],
+  "경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.": [
+   "An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.",
+   "一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。",
+   "経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。"
+  ],
+  "경조·감사": [
+   "Celebrations & thanks",
+   "祝贺·感谢",
+   "慶弔・感謝"
+  ],
+  "계산": [
+   "Calculate",
+   "计算",
+   "計算"
+  ],
+  "계산 근거 화면에 표시": [
+   "Calculation shown on screen",
+   "计算依据显示在页面上",
+   "計算根拠を画面に表示"
+  ],
+  "계산기 13종": [
+   "13 calculators",
+   "13 款计算器",
+   "計算ツール 13 種"
+  ],
+  "계약 전 5~10분 × 3": [
+   "5–10 min × 3 before signing",
+   "签约前 5~10 分钟 × 3",
+   "契約前 5〜10分 × 3"
+  ],
+  "계약·법률·회사": [
+   "Contract, law, company",
+   "合同·法律·公司",
+   "契約・法律・会社"
+  ],
+  "고정비": [
+   "Fixed cost",
+   "固定成本",
+   "固定費"
+  ],
+  "고정비 + 변동비": [
+   "Fixed + variable cost",
+   "固定成本 + 变动成本",
+   "固定費＋変動費"
+  ],
+  "고정비 · 변동비 · 판매 단가": [
+   "Fixed cost · variable cost · unit price",
+   "固定成本·变动成本·单价",
+   "固定費・変動費・販売単価"
+  ],
+  "고정비는 매출과 상관없이 매달 나가는 돈(임대료·인건비·구독료)이고, 변동비는 팔수록 늘어나는 돈 (원가·수수료·배송비)입니다. 그래프는 마우스나 손가락을 올린 지점의 매출·비용·이익을 보여 주고, 아래 슬라이더로 판매량을 직접 움직일 수 있습니다.": [
+   "Fixed cost is money that leaves every month regardless of sales (rent, payroll, subscriptions); variable cost grows with each sale (goods, fees, shipping). The chart shows revenue, cost and profit at the point you hover or touch, and the slider below moves the sales volume yourself.",
+   "固定成本是与营收无关、每月都要支出的钱（房租、人工、订阅费），变动成本是卖得越多越多的钱（成本、手续费、运费）。图表会显示鼠标或手指所指位置的营收、成本与利润，下方滑块可直接调整销量。",
+   "固定費は売上に関係なく毎月出ていくお金（家賃・人件費・サブスク）で、変動費は売るほど増えるお金（原価・手数料・送料）です。グラフはマウスや指を置いた位置の売上・費用・利益を示し、下のスライダーで販売量を直接動かせます。"
+  ],
+  "공개 출처": [
+   "public sources",
+   "公开来源",
+   "公開ソース"
+  ],
+  "공공조달·입찰 가이드": [
+   "Public procurement guide",
+   "公共采购·投标指南",
+   "公共調達・入札ガイド"
+  ],
+  "공무원 여비 규정 별표 4 기준값입니다. 회사 규정이 있으면 그 단가로 고쳐 쓰세요.": [
+   "Values follow Table 4 of the Korean public-officials travel rules. Replace them with your own company rates where you have them.",
+   "数值依据韩国《公务员旅费规定》附表4。公司有规定的，请按本公司标准修改。",
+   "韓国「公務員旅費規程」別表4の金額です。社内規程がある場合はその単価に置き換えてください。"
+  ],
+  "공식 사이트": [
+   "official site",
+   "官方网站",
+   "公式サイト"
+  ],
+  "공식 일정 최종 확인": [
+   "Dates last checked",
+   "日程最终核对",
+   "日程の最終確認"
+  ],
+  "공유하기": [
+   "Share",
+   "分享",
+   "共有"
+  ],
+  "과세가격 = 물품대금 + 국제운임 + 보험료 (CIF 조건이면 물품대금에 이미 포함)": [
+   "Customs value = goods + freight + insurance (already included in goods under CIF)",
+   "完税价格 = 货款 + 国际运费 + 保险费（CIF 条件下已含在货款中）",
+   "課税価格 = 商品代金＋国際運賃＋保険料（CIF 条件では商品代金に含まれます）"
+  ],
+  "관련 리포트": [
+   "Related reports",
+   "相关报道",
+   "関連レポート"
+  ],
+  "관세 = 과세가격 × 관세율": [
+   "Duty = customs value × duty rate",
+   "关税 = 完税价格 × 关税率",
+   "関税 = 課税価格 × 関税率"
+  ],
+  "관세·HS·통관·인증": [
+   "Customs, HS, clearance & certification",
+   "关税·HS·通关·认证",
+   "関税・HS・通関・認証"
+  ],
+  "관세·부가세": [
+   "Duty & VAT",
+   "关税与增值税",
+   "関税・付加価値税"
+  ],
+  "관세·부가세 ÷ 총 도착원가": [
+   "Duty & VAT ÷ total landed cost",
+   "关税与增值税 ÷ 总到岸成本",
+   "関税・付加価値税 ÷ 総着荷コスト"
+  ],
+  "관세사·창고": [
+   "Broker & warehouse",
+   "报关行·仓库",
+   "通関士・倉庫"
+  ],
+  "관세율": [
+   "Duty rate",
+   "关税率",
+   "関税率"
+  ],
+  "광고": [
+   "Ad",
+   "广告",
+   "広告"
+  ],
+  "광고 영역": [
+   "Advertisement",
+   "广告位",
+   "広告枠"
+  ],
+  "광고·스폰서 단가표": [
+   "Ad & sponsor rate card",
+   "广告·赞助价目表",
+   "広告・スポンサー料金表"
+  ],
+  "광고·스폰서 안내": [
+   "Advertising & sponsorship",
+   "广告·赞助说明",
+   "広告・スポンサーのご案内"
+  ],
+  "광고·스폰서 지면": [
+   "Ad & sponsor slots",
+   "广告·赞助版位",
+   "広告・スポンサー枠"
+  ],
+  "광고·제휴": [
+   "Advertise",
+   "广告·合作",
+   "広告・提携"
+  ],
+  "구글 캘린더 · ICS 내보내기": [
+   "Google Calendar · ICS export",
+   "Google 日历 · ICS 导出",
+   "Google カレンダー・ICS書き出し"
+  ],
+  "구독": [
+   "Subscribe",
+   "订阅",
+   "購読"
+  ],
+  "구독 · 도구 · 제휴": [
+   "Subscribe · tools · partners",
+   "订阅 · 工具 · 合作",
+   "購読・ツール・提携"
+  ],
+  "구독 신청": [
+   "Subscribe",
+   "申请订阅",
+   "購読申し込み"
+  ],
+  "구독할 이메일 주소": [
+   "Email address for the brief",
+   "订阅邮箱地址",
+   "購読用メールアドレス"
+  ],
+  "구독할 이메일 주소는 브리핑 발송에만 씁니다. 언제든 해지할 수 있습니다.": [
+   "We use your email only to send the brief. Unsubscribe any time.",
+   "邮箱仅用于发送简报，可随时退订。",
+   "メールアドレスはブリーフ配信にのみ使用し、いつでも解除できます。"
+  ],
+  "국가": [
+   "Country",
+   "国家",
+   "国"
+  ],
+  "국가별 조회": [
+   "By country",
+   "按国家查询",
+   "国別に調べる"
+  ],
+  "국제운임": [
+   "International freight",
+   "国际运费",
+   "国際運賃"
+  ],
+  "권장 견적": [
+   "Recommended quote",
+   "建议报价",
+   "推奨見積"
+  ],
+  "권장 단가 × 일 작업시간": [
+   "Recommended rate × hours per day",
+   "建议单价 × 每日工时",
+   "推奨単価 × 1 日の稼働時間"
+  ],
+  "권장 시간당 단가": [
+   "Recommended hourly rate",
+   "建议时薪报价",
+   "推奨時間単価"
+  ],
+  "권장 시간당 단가 = 최소 단가 × (1 + 버퍼)": [
+   "Recommended hourly rate = minimum rate × (1 + buffer)",
+   "建议时薪 = 最低单价 ×（1 + 缓冲）",
+   "推奨時間単価 = 最低単価 ×（1＋バッファ）"
+  ],
+  "권장 판매가": [
+   "Recommended price",
+   "建议售价",
+   "推奨販売価格"
+  ],
+  "권장 판매가 = 개당 실질 도착원가 ÷ (1 − 목표 마진율)": [
+   "Recommended price = net unit cost ÷ (1 − target margin)",
+   "建议售价 = 单位实际到岸成本 ÷（1 − 目标毛利率）",
+   "推奨販売価格 = 1 個あたり実質コスト ÷（1 − 目標マージン）"
+  ],
+  "권장 판매가 × (1 + 부가세율)": [
+   "Recommended price × (1 + VAT rate)",
+   "建议售价 ×（1 + 增值税率）",
+   "推奨販売価格 ×（1 + 付加価値税率）"
+  ],
+  "권장 판매가 기준": [
+   "Based on recommended price",
+   "按建议售价",
+   "推奨販売価格基準"
+  ],
+  "권장 판매가 역산": [
+   "Back-calculated from target margin",
+   "按目标毛利率反推",
+   "目標マージンから逆算"
+  ],
+  "규격·요구사항": [
+   "Specification",
+   "规格要求",
+   "仕様・要望"
+  ],
+  "규격까지 쓰면 좋습니다": [
+   "specification helps",
+   "写明规格更好",
+   "規格まで書くと確実"
+  ],
+  "근로·거래·증명": [
+   "Employment, trade, certificate",
+   "劳动·交易·证明",
+   "勤労・取引・証明"
+  ],
+  "근로계약서·사직서·발주서·거래명세서부터 B/L Instruction(선적지시서)·선하증권(B/L)·원산지증명, 급여·연차·가계부·재고·퇴직금 자동계산, 업종별 창업 사업계획서, NDA·MOU·정관·임대차계약서, 이력서·자소서·경조 카드·영문서식·PPT까지 10개 카테고리 138종을 회원가입 없이 작성. 손글씨 서명과 도장, A4 PDF 저장까지 한 페이지에서.": [
+   "From employment contracts, resignation letters, purchase orders and statements to B/L instructions, bills of lading and certificates of origin, plus automatic payroll, leave, household-budget, inventory and severance calculators, industry-specific business plans, NDAs, MOUs, articles of association, lease agreements, résumés, cover letters, greeting cards, English-language forms and slide decks: 138 documents in 10 categories, no sign-up. Handwritten signatures, stamps and A4 PDF export, all on one page.",
+   "从劳动合同、辞职书、采购单、对账单，到 B/L 装运指示、提单、原产地证明，以及工资、年假、家庭账本、库存、退职金的自动计算，各行业创业计划书、NDA、MOU、公司章程、租赁合同、简历、自我介绍、贺卡、英文表单与 PPT，10 个类别 138 种，无需注册即可填写。手写签名、印章与 A4 PDF 保存都在同一页完成。",
+   "雇用契約書・退職届・発注書・取引明細書から、B/L インストラクション・船荷証券・原産地証明、給与・年次有給・家計簿・在庫・退職金の自動計算、業種別の創業事業計画書、NDA・MOU・定款・賃貸契約書、履歴書・自己PR・慶弔カード・英文書式・PPT まで、10カテゴリー138種を会員登録なしで作成。手書き署名・印鑑、A4 PDF 保存までを1ページで。"
+  ],
+  "글로벌 무역·출장 툴 3종 — 4개국어 무역 이메일·출장비 정산·사업자 조회 | INSIGHT BRIEF": [
+   "Global trade & travel tools — trade email in 4 languages, trip settlement, company checks | INSIGHT BRIEF",
+   "全球贸易·出差工具 3 种 — 四语种贸易邮件、差旅结算、企业查询 | INSIGHT BRIEF",
+   "グローバル貿易・出張ツール3種 — 4か国語の貿易メール・出張精算・企業照会 | INSIGHT BRIEF"
+  ],
+  "글로벌 무역·출장 툴 3종 — 이메일·정산·사업자 조회": [
+   "Global trade & travel tools — email, settlement, company checks",
+   "全球贸易·出差工具 3 种 — 邮件·结算·企业查询",
+   "グローバル貿易・出張ツール3種 — メール・精算・企業照会"
+  ],
+  "글로벌 비즈니스 툴 3종": [
+   "Global business tools 3",
+   "全球商务工具 3 种",
+   "グローバルビジネスツール3種"
+  ],
+  "글로벌 비즈니스 툴 3종 — 무역 이메일·출장 정산·사업자 조회를 한 페이지에": [
+   "Three global business tools — trade email, trip settlement and company checks on one page",
+   "全球商务工具 3 种 — 贸易邮件、差旅结算与企业查询一页完成",
+   "グローバルビジネスツール3種 — 貿易メール・出張精算・企業照会を1ページに"
+  ],
+  "글로벌 비즈니스 툴 · 상단 광고": [
+   "Global business tools · top ad",
+   "全球商务工具 · 顶部广告",
+   "グローバルツール・上部広告"
+  ],
+  "글로벌 출장 허브": [
+   "Global trip hub",
+   "全球出差助手",
+   "グローバル出張ハブ"
+  ],
+  "금리": [
+   "Interest rate",
+   "利率",
+   "金利"
+  ],
+  "금액": [
+   "Amount",
+   "金额",
+   "金額"
+  ],
+  "금액이 큰 첫 거래나 선금을 보낼 때는 무료 조회로 부족합니다. 보고서를 사거나 보험 한도를 먼저 잡으세요.": [
+   "For a large first order or a deposit, free checks are not enough. Buy a report or secure an insurance limit first.",
+   "首单金额大或需预付时，免费查询不够。先购买报告或落实保险额度。",
+   "初回の大口取引や前払いの際は無料調査では足りません。レポート購入か保険限度の確保を先に。"
+  ],
+  "금요일 주간 브리핑": [
+   "Friday weekly brief",
+   "星期五每周简报",
+   "金曜の週刊ブリーフ"
+  ],
+  "급여 계산기": [
+   "Payroll calculator",
+   "工资计算器",
+   "給与計算ツール"
+  ],
+  "기간 고점": [
+   "Period high",
+   "区间高点",
+   "期間高値"
+  ],
+  "기간 저점": [
+   "Period low",
+   "区间低点",
+   "期間安値"
+  ],
+  "기말 잔액": [
+   "Closing balance",
+   "期末余额",
+   "期末残高"
+  ],
+  "기사 검색": [
+   "Search articles",
+   "搜索文章",
+   "記事を検索"
+  ],
+  "기사 댓글": [
+   "Article comments",
+   "文章评论",
+   "記事のコメント"
+  ],
+  "기사 목차": [
+   "Contents",
+   "文章目录",
+   "記事の目次"
+  ],
+  "기사 하단 리더보드": [
+   "Article bottom leaderboard",
+   "文章底部横幅",
+   "記事下部リーダーボード"
+  ],
+  "기사에 대한 정정 요청이나 추가 제보를 보내 주세요. 제보자의 신원은 공개하지 않습니다.": [
+   "Send us a correction request or further information. We never disclose a tipper's identity.",
+   "欢迎发送更正请求或补充线索。我们不会公开线索提供者的身份。",
+   "記事の訂正依頼や追加情報をお寄せください。情報提供者の身元は公開しません。"
+  ],
+  "기업 검증 포털 — 7개국 + 글로벌": [
+   "Company verification portals — 7 countries + global",
+   "企业核验门户 — 7 国＋全球",
+   "企業検証ポータル — 7か国＋グローバル"
+  ],
+  "기준": [
+   "as of",
+   "基准",
+   "基準"
+  ],
+  "기준·출처": [
+   "Basis & sources",
+   "基准·来源",
+   "基準・出典"
+  ],
+  "기준일": [
+   "As of",
+   "基准日",
+   "基準日"
+  ],
+  "기준점": [
+   "reference point",
+   "基准点",
+   "基準点"
+  ],
+  "기초 현금": [
+   "Opening cash",
+   "期初现金",
+   "期首現金"
+  ],
+  "나라마다 등기 체계가 다릅니다. 상대가 알려준 이름 그대로 검색해도 안 나오면 표기 차이를 먼저 의심하세요.": [
+   "Registration systems differ by country. If the name they gave you returns nothing, suspect a spelling difference first.",
+   "各国登记体系不同。按对方给的名字查不到时，先怀疑写法差异。",
+   "国ごとに登記制度が違います。相手が示した名前で出ないときは、まず表記の違いを疑ってください。"
+  ],
+  "날짜가 확정되지 않은 전시회는 싣지 않았습니다. GEP에 개최월만 적힌 전시회는 목록에서 뺐습니다. 추정 일정이나 지난 회차 날짜를 옮겨 적지 않습니다.": [
+   "Shows without confirmed dates are not listed, and shows that GEP gives only as a month were left out. We do not copy estimated dates or last year's dates.",
+   "未确定日程的展会不予收录，GEP仅标注月份的展会也已排除。我们不照搬推测日程或上一届的日期。",
+   "日程が確定していない展示会は掲載していません。GEPで開催月しか分からない展示会も一覧から外しました。推定日程や前回の日程を写すことはしません。"
+  ],
+  "날짜가 확정되지 않은 전시회는 싣지 않았습니다. 추정 일정이나 지난 회차 날짜를 옮겨 적지 않습니다.": [
+   "Shows without confirmed dates are not listed. We do not copy estimated dates or last year's dates.",
+   "未确定日期的展会不予收录，也不照搬推测日程或上一届的日期。",
+   "日程が確定していない展示会は掲載していません。推測や前回の日程を転記することもしません。"
+  ],
+  "내륙운송비": [
+   "Inland transport",
+   "内陆运输费",
+   "内陸輸送費"
+  ],
+  "농산품": [
+   "Agricultural products",
+   "农产品",
+   "農産物"
+  ],
+  "누가 누구에게": [
+   "Who writes to whom",
+   "谁写给谁",
+   "誰から誰へ"
+  ],
+  "님이 보낸": [
+   "sent by",
+   "发送人",
+   "送信者"
+  ],
+  "다음 주": [
+   "Next week",
+   "下周",
+   "来週"
+  ],
+  "단가": [
+   "Unit price",
+   "单价",
+   "単価"
+  ],
+  "단가표 보기 →": [
+   "View the rate card →",
+   "查看价目表 →",
+   "料金表を見る →"
+  ],
+  "단리 · 고정금리": [
+   "Simple interest · fixed rate",
+   "单利·固定利率",
+   "単利・固定金利"
+  ],
+  "단위": [
+   "Unit",
+   "单位",
+   "単位"
+  ],
+  "단위 공헌이익": [
+   "Contribution margin per unit",
+   "单位贡献毛益",
+   "1 個あたり限界利益"
+  ],
+  "단위 공헌이익 = 판매 단가 − 단위당 변동비": [
+   "Contribution margin per unit = unit price − variable cost per unit",
+   "单位贡献毛益 = 销售单价 − 单位变动成本",
+   "1 個あたり限界利益 = 販売単価 − 1 個あたり変動費"
+  ],
+  "단위 변환": [
+   "Unit converter",
+   "单位换算",
+   "単位換算"
+  ],
+  "단위당 변동비": [
+   "Variable cost per unit",
+   "单位变动成本",
+   "1 個あたり変動費"
+  ],
+  "닫기": [
+   "Close",
+   "关闭",
+   "閉じる"
+  ],
+  "달러": [
+   "USD",
+   "美元",
+   "ドル"
+  ],
+  "대괄호 [ ] 안은 채우지 않은 값입니다. 같은 문장을 그대로 보내기보다, 인사말과 마지막 한 줄은 상대와의 관계에 맞게 고쳐 쓰세요.": [
+   "Text in [ ] is a value you have not filled in. Rather than sending the wording as is, adjust the greeting and the closing line to your relationship with the reader.",
+   "方括号 [ ] 中是尚未填写的值。不要照搬全文，请按与对方的关系调整问候与结尾一句。",
+   "［ ］内は未入力の項目です。そのまま送らず、挨拶と結びの一文は相手との関係に合わせて直してください。"
+  ],
+  "대비": [
+   "vs",
+   "较",
+   "比"
+  ],
+  "대출 상환·잔액 경고": [
+   "Loan repayment · balance alerts",
+   "贷款偿还·余额预警",
+   "借入返済・残高警告"
+  ],
+  "대출 원금": [
+   "Loan principal",
+   "贷款本金",
+   "借入元金"
+  ],
+  "대출 이자 합계": [
+   "Total loan interest",
+   "贷款利息合计",
+   "借入利息の合計"
+  ],
+  "대표 이미지": [
+   "lead image",
+   "主图",
+   "メイン画像"
+  ],
+  "댓글": [
+   "Comments",
+   "评论",
+   "コメント"
+  ],
+  "댓글 등록": [
+   "Post comment",
+   "发表评论",
+   "コメントを投稿"
+  ],
+  "댓글을 불러오는 중입니다…": [
+   "Loading comments…",
+   "正在加载评论…",
+   "コメントを読み込み中…"
+  ],
+  "도장·서명·요청": [
+   "Seal, signature, request",
+   "印章·签名·请求",
+   "印鑑・署名・依頼"
+  ],
+  "도정": [
+   "Rice milling",
+   "大米加工",
+   "精米"
+  ],
+  "도착원가 구성": [
+   "Landed cost breakdown",
+   "到岸成本构成",
+   "着荷コストの内訳"
+  ],
+  "도착원가 구성 막대": [
+   "Landed cost composition bar",
+   "到岸成本构成条",
+   "着荷コスト構成バー"
+  ],
+  "도착원가 명세 — 과세가격은 CIF(물품대금 + 운임 + 보험료) 기준입니다.": [
+   "Landed cost statement — the customs value is CIF (goods + freight + insurance).",
+   "到岸成本明细 — 完税价格按 CIF（货款 + 运费 + 保险费）计算。",
+   "着荷コスト明細 — 課税価格は CIF（商品代金＋運賃＋保険料）基準です。"
+  ],
+  "도착원가·자금·BEP·단가": [
+   "Landed cost · cash · BEP · rate",
+   "到岸成本·资金·盈亏平衡·单价",
+   "着荷コスト・資金・BEP・単価"
+  ],
+  "도착항": [
+   "Port of discharge",
+   "目的港",
+   "仕向港"
+  ],
+  "독립 경제·탐사 리서치 웹진": [
+   "Independent economics & investigative research magazine",
+   "独立经济·调查报道研究网络杂志",
+   "独立系・経済調査報道リサーチ誌"
+  ],
+  "독립 리서치 웹진의 편집 원칙, 팩트체크, 광고·협찬 기준.": [
+   "Editorial policy, fact-checking and advertising standards of an independent research magazine.",
+   "独立研究网络杂志的编辑原则、事实核查与广告·赞助标准。",
+   "独立系リサーチ誌の編集方針・ファクトチェック・広告協賛基準。"
+  ],
+  "독자 제보": [
+   "Reader tips",
+   "读者线索",
+   "読者からの情報"
+  ],
+  "동방재부(eastmoney) 외환 실시간 호가": [
+   "Eastmoney live FX quotes",
+   "东方财富实时外汇报价",
+   "東方財富（eastmoney）為替リアルタイム気配"
+  ],
+  "동방재부(eastmoney) 호가": [
+   "Eastmoney quotes",
+   "东方财富报价",
+   "東方財富の気配"
+  ],
+  "동행복권 최신 회차 당첨번호와 1~1,251회 전 회차 통계로 1~5게임을 한 번에 만드는 무료 로또 6/45 번호 생성기. 최근 출현 빈도·미출현 번호·고정수·제외수 반영, 원터치 복사와 역대 1~5등 대조까지.": [
+   "Free number generator for the two big US jackpot games: Powerball (5/69 + 1/26) and Mega Millions (5/70 + 1/25). Real game rules, exact jackpot odds, 1–5 plays at a time, lock numbers, one-tap copy. No sign-up, nothing stored.",
+   "免费生成双色球（红球 6/33 ＋ 蓝球 1/16）和超级大乐透（前区 5/35 ＋ 后区 2/12）号码，一次 1–5 注，附官方玩法、中奖概率与 20% 偶然所得税说明。无需注册，号码不上传。",
+   "ロト6（6/43）・ロト7（7/37）・ミニロト（5/31）の数字を1〜5口まとめて生成。公式ルール、当せん確率、非課税の扱いまで掲載。登録不要で、数字はブラウザ内だけで作ります。"
+  ],
+  "동행복권 최신 회차 당첨번호와 전 회차 통계로 1~5게임을 한 번에. 고정수·제외수 반영, 원터치 복사, 역대 1~5등 대조. 회원가입 없이 무료.": [
+   "Powerball and Mega Millions numbers, 1–5 plays at a time, with the real game rules and exact jackpot odds. Lock numbers, one-tap copy. Free, no sign-up.",
+   "双色球与超级大乐透选号，一次 1–5 注，附官方玩法与中奖概率。可固定号码、一键复制，免费无需注册。",
+   "ロト6・ロト7・ミニロトの数字を1〜5口。公式ルールと当せん確率つき。固定数字・ワンタップコピー、登録不要。"
+  ],
+  "등급이 정해지면 단가가 채워집니다": [
+   "rates fill in once the grade is set",
+   "等级确定后自动填入标准",
+   "等級が決まると単価が入ります"
+  ],
+  "등락": [
+   "Change",
+   "涨跌",
+   "騰落"
+  ],
+  "등록·재무·선적 이력": [
+   "registry · financials · shipments",
+   "登记·财务·货运记录",
+   "登記・財務・船積み履歴"
+  ],
+  "로또 6/45": [
+   "Powerball · Mega Millions",
+   "双色球 · 大乐透",
+   "ロト6・ロト7・ミニロト"
+  ],
+  "로또 6/45 번호 생성기": [
+   "Powerball & Mega Millions generator",
+   "双色球·大乐透选号器",
+   "ロト6・ロト7・ミニロト 数字生成"
+  ],
+  "로또 6/45 번호 생성기 — 무료·회차 통계 반영": [
+   "Powerball & Mega Millions Number Generator — Free",
+   "双色球 · 超级大乐透 选号器 — 免费",
+   "ロト6・ロト7・ミニロト 数字生成 — 無料"
+  ],
+  "로또 6/45 번호 생성기 — 무료·회차 통계 반영 | INSIGHT BRIEF": [
+   "Powerball & Mega Millions Number Generator — Free | INSIGHT BRIEF",
+   "双色球 · 超级大乐透 选号器 — 免费 | INSIGHT BRIEF",
+   "ロト6・ロト7・ミニロト 数字生成 — 無料 | INSIGHT BRIEF"
+  ],
+  "로또 생성기": [
+   "Number generator",
+   "选号器",
+   "数字生成"
+  ],
+  "로또 생성기 · 상단 광고": [
+   "Number generator · top ad",
+   "选号器 · 顶部广告",
+   "数字生成 · 上部広告"
+  ],
+  "로또 생성기 · 하단 광고": [
+   "Number generator · bottom ad",
+   "选号器 · 底部广告",
+   "数字生成 · 下部広告"
+  ],
+  "리포트": [
+   "report",
+   "报道",
+   "レポート"
+  ],
+  "리포트를 찾을 수 없습니다": [
+   "Report not found",
+   "找不到该报道",
+   "レポートが見つかりません"
+  ],
+  "링크 복사": [
+   "Copy link",
+   "复制链接",
+   "リンクをコピー"
+  ],
+  "마지막 문단 앞에 들어갑니다": [
+   "inserted before the last paragraph",
+   "插入最后一段之前",
+   "最後の段落の前に入ります"
+  ],
+  "마케터": [
+   "marketer",
+   "营销",
+   "マーケター"
+  ],
+  "만기일시": [
+   "Bullet at maturity",
+   "到期一次还本",
+   "満期一括"
+  ],
+  "만기일시 = 이자만 납부, 만기에 원금 전액": [
+   "Bullet = interest only, principal repaid in full at maturity",
+   "到期一次还本 = 只付利息，到期偿还全部本金",
+   "満期一括 = 利息のみ支払い、満期に元金全額"
+  ],
+  "만세력": [
+   "BaZi chart",
+   "八字排盘",
+   "四柱推命"
+  ],
+  "만세력·2027 신년운세, 로또 6/45, 2027 급여·노무 계산기.": [
+   "BaZi chart, Powerball & Mega Millions numbers, US take-home pay calculator.",
+   "八字排盘、双色球·大乐透选号、税后工资计算器。",
+   "四柱推命、ロト数字生成、年収手取り計算。"
+  ],
+  "맛집·지도": [
+   "Restaurants & maps",
+   "餐厅·地图",
+   "飲食店・地図"
+  ],
+  "매달 고정 지출": [
+   "Fixed monthly cost",
+   "每月固定支出",
+   "毎月の固定支出"
+  ],
+  "매매기준율": [
+   "Base rate",
+   "基准汇率",
+   "売買基準率"
+  ],
+  "매체": [
+   "Publication",
+   "媒体",
+   "媒体"
+  ],
+  "매출": [
+   "Revenue",
+   "营收",
+   "売上"
+  ],
+  "매출 − 총비용": [
+   "Revenue − total cost",
+   "营收 − 总成本",
+   "売上 − 総費用"
+  ],
+  "매출 대비": [
+   "Of revenue",
+   "占营收比",
+   "売上比"
+  ],
+  "매출 성장률": [
+   "Revenue growth",
+   "营收增长率",
+   "売上成長率"
+  ],
+  "매출과 무관": [
+   "Independent of sales",
+   "与营收无关",
+   "売上に関係なし"
+  ],
+  "맨 위로": [
+   "Back to top",
+   "回到顶部",
+   "ページ上部へ"
+  ],
+  "메일 앱으로 열기": [
+   "Open in mail app",
+   "用邮件应用打开",
+   "メールアプリで開く"
+  ],
+  "면세": [
+   "duty-free",
+   "免税",
+   "免税"
+  ],
+  "면세 한도": [
+   "Duty-free allowance",
+   "免税额度",
+   "免税範囲"
+  ],
+  "모르면 비워 두세요": [
+   "leave blank if unknown",
+   "不清楚可留空",
+   "不明なら空欄で"
+  ],
+  "목표 마진 기준": [
+   "At target margin",
+   "按目标毛利率",
+   "目標マージン基準"
+  ],
+  "목표 마진율": [
+   "Target margin",
+   "目标毛利率",
+   "目標マージン率"
+  ],
+  "목표 순이익": [
+   "Target net profit",
+   "目标净利润",
+   "目標純利益"
+  ],
+  "목표 판매량": [
+   "Target units",
+   "目标销量",
+   "目標販売量"
+  ],
+  "목표 판매량 기준": [
+   "At target units",
+   "按目标销量",
+   "目標販売量基準"
+  ],
+  "목표와 조건": [
+   "Goals and terms",
+   "目标与条件",
+   "目標と条件"
+  ],
+  "무료": [
+   "Free",
+   "免费",
+   "無料"
+  ],
+  "무료 · 회원가입 없음": [
+   "Free · no sign-up",
+   "免费 · 无需注册",
+   "無料・会員登録不要"
+  ],
+  "무료 견적서 양식, 거래명세서 양식, 견적서 PDF, 마진율 계산기, 오픈마켓 수수료 계산, 스마트스토어 수수료, 쿠팡 수수료, 손익분기 판매가, ROAS 계산, 부가세 일반 간이 비교, 프리랜서 3.3% 계산, 종합소득세 계산, 수입 원가 계산, 관부가세 계산, CBM 계산, 컨테이너 적재율, 프리랜서 계약서 양식, 내용증명 양식, NDA 양식, Proforma Invoice 양식, Commercial Invoice 양식, Packing List 양식, PI CI PL, 수출 인보이스, 패킹리스트": [
+   "free quotation template, invoice template, quotation PDF, margin calculator, marketplace fee calculator, seller fee calculator, break-even price, ROAS calculator, VAT simplified vs general, freelance 3.3% withholding, income tax calculator, landed cost calculator, import duty and VAT, CBM calculator, container load factor, freelance contract template, demand letter template, NDA template, proforma invoice template, commercial invoice template, packing list template, PI CI PL, export invoice, packing list",
+   "免费报价单模板, 对账单模板, 报价单 PDF, 利润率计算器, 平台手续费计算, 网店手续费, 盈亏平衡售价, ROAS 计算, 增值税简易与一般比较, 自由职业者 3.3% 预扣, 综合所得税计算, 进口成本计算, 关税与增值税, CBM 计算, 集装箱装载率, 自由职业合同模板, 催告函模板, NDA 模板, 形式发票模板, 商业发票模板, 装箱单模板, PI CI PL, 出口发票, 装箱单",
+   "無料見積書 書式, 取引明細書 書式, 見積書 PDF, 粗利率計算機, ECモール手数料計算, ネットショップ手数料, 損益分岐販売価格, ROAS 計算, 消費税 簡易課税と原則課税の比較, フリーランス 3.3% 源泉, 所得税計算, 輸入原価計算, 関税と消費税, CBM 計算, コンテナ積載率, フリーランス契約書 書式, 内容証明 書式, NDA 書式, 形式請求書 書式, 商業請求書 書式, パッキングリスト 書式, PI CI PL, 輸出インボイス, パッキングリスト"
+  ],
+  "무료 견적서 양식, 거래명세서 양식, 견적서 PDF, 마진율 계산기, 오픈마켓 수수료 계산, 스마트스토어 수수료, 쿠팡 수수료, 손익분기 판매가, 손익분기점 계산, BEP 그래프, ROAS 계산, 부가세 일반 간이 비교, 프리랜서 3.3% 계산, 종합소득세 계산, 수입 원가 계산, 수입 도착원가 계산, 랜디드코스트, 관부가세 계산, CBM 계산, 컨테이너 적재율, 프리랜서 계약서 양식, 내용증명 양식, NDA 양식, Proforma Invoice 양식, Commercial Invoice 양식, Packing List 양식, PI CI PL, 수출 인보이스, 패킹리스트, 자금흐름표, 대출 상환 계산, 프리랜서 시간당 단가, 외주 견적 하한": [
+   "free quotation template, statement of transaction template, quotation PDF, margin calculator, marketplace fee calculator, Smart Store fees, Coupang fees, break-even price, break-even point calculator, BEP chart, ROAS calculator, VAT general vs simplified comparison, 3.3% withholding calculator, income tax calculator, import cost calculator, import landed cost calculator, landed cost, customs duty and VAT, CBM calculator, container utilization, freelance contract template, demand letter template, NDA template, proforma invoice template, commercial invoice template, packing list template, PI CI PL, export invoice, packing list, cash flow sheet, loan repayment calculator, freelance hourly rate, project quote floor",
+   "免费报价单模板、交易明细模板、报价单 PDF、毛利率计算器、平台手续费计算、Smart Store 手续费、Coupang 手续费、盈亏平衡售价、盈亏平衡点计算、BEP 图表、ROAS 计算、增值税一般与简易比较、3.3% 预扣计算、综合所得税计算、进口成本计算、进口到岸成本计算、landed cost、关税与增值税计算、CBM 计算、集装箱装载率、自由职业合同模板、催款函模板、NDA 模板、Proforma Invoice 模板、Commercial Invoice 模板、Packing List 模板、PI CI PL、出口发票、装箱单、资金流表、贷款偿还计算、自由职业时薪、外包报价下限",
+   "無料見積書テンプレート、取引明細テンプレート、見積書 PDF、粗利率計算、モール手数料計算、スマートストア手数料、クーパン手数料、損益分岐販売価格、損益分岐点計算、BEP グラフ、ROAS 計算、付加価値税（一般・簡易）比較、3.3% 源泉徴収計算、総合所得税計算、輸入コスト計算、輸入着荷コスト計算、ランデッドコスト、関税・付加価値税計算、CBM 計算、コンテナ積載率、フリーランス契約書テンプレート、内容証明テンプレート、NDA テンプレート、Proforma Invoice テンプレート、Commercial Invoice テンプレート、Packing List テンプレート、PI CI PL、輸出インボイス、パッキングリスト、資金繰り表、借入返済計算、フリーランス時間単価、外注見積の下限"
+  ],
+  "무료 도구 3종: 만세력·2027 신년운세, 로또 6/45 생성기, 2027 급여·노무 계산기": [
+   "Three free tools: BaZi chart, Powerball & Mega Millions generator, US take-home pay calculator",
+   "三款免费工具：八字排盘、双色球·大乐透选号器、税后工资计算器",
+   "無料ツール3種：四柱推命、ロト数字生成、年収手取り計算"
+  ],
+  "무료 도구 · 1인 사업자 툴 5종": [
+   "Free tools · 5 tools for solo businesses",
+   "免费工具 · 个体商户工具 5 种",
+   "無料ツール・個人事業者向け5種"
+  ],
+  "무료 도구 · 1인 사업자 툴 9종": [
+   "Free tool · 9 tools for solo business owners",
+   "免费工具 · 个体经营者工具 9 种",
+   "無料ツール · 個人事業主ツール 9 種"
+  ],
+  "무료 도구 · 2027 노무 계산기": [
+   "Free tool · payroll",
+   "免费工具 · 薪酬",
+   "無料ツール · 給与計算"
+  ],
+  "무료 도구 · 글로벌 무역·출장 툴 3종": [
+   "Free tools · global trade & travel (3)",
+   "免费工具 · 全球贸易·出差 3 种",
+   "無料ツール・グローバル貿易・出張3種"
+  ],
+  "무료 도구 · 급여·노무 계산기": [
+   "Free tool · Payroll & labour calculator",
+   "免费工具 · 工资·劳务计算器",
+   "無料ツール・給与・労務計算"
+  ],
+  "무료 도구 · 로또 번호 생성기": [
+   "Free tools · number generator",
+   "免费工具 · 选号器",
+   "無料ツール · 数字生成"
+  ],
+  "무료 도구 · 만세력·2027 신년운세": [
+   "Free tool · saju & 2027 forecast",
+   "免费工具 · 四柱与2027运势",
+   "無料ツール · 四柱推命・2027年運勢"
+  ],
+  "무료 도구 · 서식·전자서명 138종": [
+   "Free tools · 138 forms & e-signature",
+   "免费工具 · 表单·电子签名 138 种",
+   "無料ツール・書式・電子署名 138種"
+  ],
+  "무료 도구 · 셀러·마케터 툴 4종": [
+   "Free tools · 4 seller & marketer tools",
+   "免费工具 · 卖家·营销工具 4 种",
+   "無料ツール・セラー・マーケター向け4種"
+  ],
+  "무료 도구 · 전세계 전시회 캘린더": [
+   "Free tool · World exhibition calendar",
+   "免费工具 · 全球展会日历",
+   "無料ツール・世界の展示会カレンダー"
+  ],
+  "무료 만세력 · 2027 정미년 신년운세 — 사주팔자 계산": [
+   "Free BaZi chart — Four Pillars of Destiny",
+   "免费八字排盘 — 四柱八字·十神·五行",
+   "無料 四柱推命 — 命式・通変星・十二運"
+  ],
+  "무료 만세력 · 2027 정미년 신년운세 — 사주팔자 계산 | INSIGHT BRIEF": [
+   "Free BaZi chart — Four Pillars of Destiny & five elements | INSIGHT BRIEF",
+   "免费八字排盘 — 四柱八字·十神·五行喜用 | INSIGHT BRIEF",
+   "無料 四柱推命 — 命式・通変星・十二運 | INSIGHT BRIEF"
+  ],
+  "무료 만세력, 사주팔자, 사주풀이, 2027 신년운세, 정미년, 정미년 운세, 무료 사주, 만세력 계산, 오행, 십신": [
+   "free saju chart, four pillars, saju reading, 2027 new year fortune, Jeongmi year, free saju, saju calculator, five elements, ten gods",
+   "免费四柱推命, 生辰八字, 八字解读, 2027 新年运势, 丁未年, 丁未年运势, 免费八字, 命盘计算, 五行, 十神",
+   "無料四柱推命, 生辰八字, 四柱推命鑑定, 2027年新年運勢, 丁未年, 丁未年の運勢, 無料占い, 命式計算, 五行, 十神"
+  ],
+  "무료 만세력<br>2027 정미년 신년운세": [
+   "Four Pillars of Destiny<br>BaZi chart",
+   "四柱八字<br>命盘与五行喜用",
+   "四柱推命<br>命式と五行バランス"
+  ],
+  "무료 비교견적 →": [
+   "Free quotes →",
+   "免费报价比较 →",
+   "無料見積比較 →"
+  ],
+  "무료 사주": [
+   "Free saju reading",
+   "免费四柱算命",
+   "無料四柱推命"
+  ],
+  "무료 서식, B/L 양식, 비엘인스트럭션, 선하증권 양식, 선적지시서, shipping instruction, bill of lading, 근로계약서 양식, 사직서 양식, 시말서 양식, 인수인계서, 회의록 양식, 발주서 양식, 거래명세서 양식, 위임장 양식, 급여 계산기, 퇴직금 계산기, 재고관리표, 거래처원장, 가계부 양식, 마진 계산기, 견적서 자동계산, OKR 간트차트, 창업 사업계획서, 카페 창업, 음식점 창업, 취업규칙, 비밀유지계약서 NDA, 업무협약서 MOU, 정관, 임대차계약서, 채권양도합의서, 탄원서, 반성문, 개인정보 동의서, 잔액확인서, 추천서, 키워드 이력서, 경력기술서, 포트폴리오, 면접평가표, 청첩장, 부고, 영문 이력서, 영문 인보이스, 패킹리스트, commercial invoice, purchase order, 온라인 도장, 전자서명, 서명 요청 링크, A4 PDF": [
+   "free forms, B/L template, shipping instruction, bill of lading template, shipping instruction, shipping instruction, bill of lading, employment contract template, resignation letter template, incident report template, handover note, meeting minutes template, purchase order template, statement template, power of attorney template, payroll calculator, severance calculator, inventory sheet, customer ledger, household budget template, margin calculator, quotation auto-calculation, OKR gantt chart, startup business plan, cafe startup, restaurant startup, workplace rules, NDA, MOU, articles of association, lease agreement, assignment of receivables, petition, letter of reflection, privacy consent form, balance confirmation, reference letter, keyword resume, career description, portfolio, interview evaluation, wedding invitation, obituary, English resume, English invoice, packing list, commercial invoice, purchase order, online stamp, e-signature, signature request link, A4 PDF",
+   "免费表单, B/L 模板, 装运指示, 提单模板, 装运指示书, shipping instruction, bill of lading, 劳动合同模板, 辞职书模板, 事故经过书模板, 交接书, 会议纪要模板, 采购单模板, 对账单模板, 授权委托书模板, 工资计算器, 退职金计算器, 库存管理表, 客户台账, 家庭账本模板, 利润率计算器, 报价单自动计算, OKR 甘特图, 创业计划书, 咖啡店创业, 餐饮店创业, 就业规则, 保密协议 NDA, 业务合作协议 MOU, 公司章程, 租赁合同, 债权转让协议, 请愿书, 检讨书, 个人信息同意书, 余额确认书, 推荐信, 关键词简历, 经历描述, 作品集, 面试评价表, 请柬, 讣告, 英文简历, 英文发票, 装箱单, commercial invoice, purchase order, 在线印章, 电子签名, 签名请求链接, A4 PDF",
+   "無料書式, B/L 書式, 船積指図書, 船荷証券 書式, 船積指図書, shipping instruction, bill of lading, 雇用契約書 書式, 退職届 書式, 始末書 書式, 引継書, 議事録 書式, 発注書 書式, 取引明細書 書式, 委任状 書式, 給与計算機, 退職金計算機, 在庫管理表, 取引先台帳, 家計簿 書式, 粗利計算機, 見積書 自動計算, OKR ガントチャート, 創業事業計画書, カフェ創業, 飲食店創業, 就業規則, 秘密保持契約 NDA, 業務提携契約 MOU, 定款, 賃貸借契約書, 債権譲渡契約, 嘆願書, 反省文, 個人情報同意書, 残高確認書, 推薦状, キーワード履歴書, 職務経歴書, ポートフォリオ, 面接評価表, 結婚招待状, 訃報, 英文履歴書, 英文インボイス, パッキングリスト, commercial invoice, purchase order, オンライン印鑑, 電子署名, 署名依頼リンク, A4 PDF"
+  ],
+  "무료로 확인하는 3단계": [
+   "Three free checks",
+   "免费查询三步",
+   "無料で確認する3ステップ"
+  ],
+  "무역": [
+   "Trade",
+   "贸易",
+   "貿易"
+  ],
+  "무역 이메일": [
+   "Trade email",
+   "贸易邮件",
+   "貿易メール"
+  ],
+  "무역 이메일 영문, 인콰이어리 영문 메일, 견적 요청 메일, 선적 독촉 메일, 품질 클레임 메일, 미수금 독촉 메일, 중국어 비즈니스 메일, 일본어 비즈니스 메일, 출장비 정산, 일비 계산, 공무원 여비 규정, 면세 한도, 전압 플러그, 단위 변환, 사업자 조회, 기업 신용 조회, DART, EDGAR, gsxt, Companies House, MCA, ImportYeti, HS코드, 관세율, 춘절 선적, 골든위크, 추수감사절, 2027 공휴일": [
+   "trade email in English, inquiry email, RFQ email, shipment follow-up email, quality claim email, payment reminder, Chinese business email, Japanese business email, trip settlement, per diem, duty-free allowance, plug and voltage, unit converter, company registry search, credit check, DART, EDGAR, gsxt, Companies House, MCA, ImportYeti, HS code, tariff, Spring Festival shipping, Golden Week, Thanksgiving, 2027 holidays",
+   "英文贸易邮件, 询盘邮件, 询价邮件, 催装运邮件, 质量索赔邮件, 催款邮件, 中文商务邮件, 日文商务邮件, 差旅结算, 日补计算, 公务旅费规定, 免税额度, 电压插头, 单位换算, 企业查询, 企业信用查询, DART, EDGAR, gsxt, Companies House, MCA, ImportYeti, HS编码, 关税, 春节船期, 黄金周, 感恩节, 2027节假日",
+   "英文貿易メール, 問い合わせメール, 見積依頼メール, 船積み催促メール, 品質クレーム, 代金催促, 中国語ビジネスメール, 日本語ビジネスメール, 出張精算, 日当計算, 公務員旅費規程, 免税範囲, 電圧プラグ, 単位換算, 法人照会, 企業信用調査, DART, EDGAR, gsxt, Companies House, MCA, ImportYeti, HSコード, 関税率, 春節の船積み, ゴールデンウィーク, 感謝祭, 2027年祝日"
+  ],
+  "무역·물류": [
+   "Trade & logistics",
+   "贸易·物流",
+   "貿易・物流"
+  ],
+  "무역·비즈니스 이메일 자동 작성기": [
+   "Trade and business email writer",
+   "贸易·商务邮件自动生成器",
+   "貿易・ビジネスメール自動作成"
+  ],
+  "무역·원자재": [
+   "Trade & Commodities",
+   "贸易·原材料",
+   "貿易・原材料"
+  ],
+  "문서·인보이스 번호": [
+   "Document / invoice no.",
+   "单据/发票号",
+   "書類・請求書番号"
+  ],
+  "문서서식": [
+   "Document forms",
+   "文档格式",
+   "文書様式"
+  ],
+  "문서서식·무역(B/L·S/I·원산지증명)·자동계산·사업계획·계약·이력·인사말·영문·PPT·도장 10개 카테고리 138종. 손글씨 서명과 도장, 서명 요청 링크, A4 PDF까지 무료.": [
+   "Office documents, trade (B/L, S/I, certificate of origin), automatic calculators, business plans, contracts, résumés, greetings, English forms, slide decks and stamps: 138 documents in 10 categories. Handwritten signatures, stamps, signature request links and A4 PDF, all free.",
+   "文书表单、贸易（B/L、S/I、原产地证明）、自动计算、事业计划、合同、简历、问候、英文表单、PPT、印章，10 个类别 138 种。手写签名、印章、签名请求链接与 A4 PDF 全部免费。",
+   "文書書式・貿易（B/L・S/I・原産地証明）・自動計算・事業計画・契約・履歴・挨拶状・英文・PPT・印鑑の10カテゴリー138種。手書き署名・印鑑・署名依頼リンク・A4 PDF まで無料。"
+  ],
+  "문의": [
+   "Contact",
+   "联系我们",
+   "お問い合わせ"
+  ],
+  "물품대금+운임 기준": [
+   "On goods + freight",
+   "按货款+运费",
+   "商品代金＋運賃基準"
+  ],
+  "미 달러 기준 · 직접 수정 가능": [
+   "in USD · editable",
+   "按美元 · 可修改",
+   "米ドル基準・編集可"
+  ],
+  "미국": [
+   "US",
+   "美国",
+   "米国"
+  ],
+  "미팅·행정 제외": [
+   "Excl. meetings and admin",
+   "不含会议与事务",
+   "打合せ・事務を除く"
+  ],
+  "바로 접수서 작성": [
+   "Start a request",
+   "直接填写受理单",
+   "申込書を作成"
+  ],
+  "박": [
+   "nights",
+   "晚",
+   "泊"
+  ],
+  "버퍼": [
+   "Buffer",
+   "缓冲",
+   "バッファ"
+  ],
+  "버퍼 반영": [
+   "Buffer included",
+   "含缓冲",
+   "バッファ込み"
+  ],
+  "버퍼 포함": [
+   "Buffer included",
+   "含缓冲",
+   "バッファ込み"
+  ],
+  "법령 원문을 확인하는 4단 리포트": [
+   "A four-part report checked against statute text",
+   "以法条原文核验的四段式报告",
+   "条文で確認する4段レポート"
+  ],
+  "법률·판례": [
+   "Law reference",
+   "商事法律参考",
+   "企業法務"
+  ],
+  "법률·판례 리포트": [
+   "Law reference report",
+   "商事法律参考报告",
+   "企業法務リファレンス"
+  ],
+  "변동비": [
+   "Variable cost",
+   "变动成本",
+   "変動費"
+  ],
+  "변동비율": [
+   "Variable cost ratio",
+   "变动成本率",
+   "変動費率"
+  ],
+  "변환": [
+   "Convert",
+   "换算",
+   "換算"
+  ],
+  "보기 방식": [
+   "View mode",
+   "查看方式",
+   "表示方法"
+  ],
+  "보내는 사람": [
+   "From",
+   "发件人",
+   "差出人"
+  ],
+  "보험료율": [
+   "Insurance rate",
+   "保险费率",
+   "保険料率"
+  ],
+  "복사": [
+   "Copy",
+   "复制",
+   "コピー"
+  ],
+  "본문 바로가기": [
+   "Skip to content",
+   "跳至正文",
+   "本文へスキップ"
+  ],
+  "본문 복사": [
+   "Copy body",
+   "复制正文",
+   "本文をコピー"
+  ],
+  "본문 전체를 읽으려면 JavaScript를 켜 주세요.": [
+   "Turn on JavaScript to read the full article.",
+   "请开启 JavaScript 以阅读全文。",
+   "全文を読むには JavaScript を有効にしてください。"
+  ],
+  "부가세 공제 후 · 개당": [
+   "After VAT credit · per unit",
+   "扣除增值税后 · 每件",
+   "付加価値税控除後 · 1 個あたり"
+  ],
+  "부가세 포함 · 실제 지출": [
+   "Incl. VAT · actual outlay",
+   "含增值税 · 实际支出",
+   "付加価値税込み · 実際の支出"
+  ],
+  "부가세 포함 판매가": [
+   "Price incl. VAT",
+   "含增值税售价",
+   "付加価値税込み販売価格"
+  ],
+  "부가세율": [
+   "VAT rate",
+   "增值税率",
+   "付加価値税率"
+  ],
+  "분 전": [
+   "min ago",
+   "分钟前",
+   "分前"
+  ],
+  "블록 편집": [
+   "Block editor",
+   "区块编辑",
+   "ブロック編集"
+  ],
+  "비고": [
+   "Note",
+   "备注",
+   "備考"
+  ],
+  "비용": [
+   "Costs",
+   "费用",
+   "費用"
+  ],
+  "비워 둔 항목은 [ ]로 표시됩니다": [
+   "anything left blank stays in [ ]",
+   "未填项目以 [ ] 标示",
+   "未入力は [ ] で残ります"
+  ],
+  "비철금속": [
+   "Non-ferrous metals",
+   "有色金属",
+   "非鉄金属"
+  ],
+  "비트코인": [
+   "Bitcoin",
+   "比特币",
+   "ビットコイン"
+  ],
+  "사업계획·보고": [
+   "Business plan & report",
+   "商业计划·报告",
+   "事業計画・報告"
+  ],
+  "사업자 조회·관세·선적": [
+   "registries · customs · shipping",
+   "企业查询·关税·船期",
+   "登記・関税・船積み"
+  ],
+  "사업자 툴": [
+   "Business tools",
+   "商户工具",
+   "事業者ツール"
+  ],
+  "사이트맵": [
+   "Sitemap",
+   "网站地图",
+   "サイトマップ"
+  ],
+  "삭제": [
+   "Delete",
+   "删除",
+   "削除"
+  ],
+  "산업 계통도": [
+   "Industry flow",
+   "产业流程图",
+   "産業フロー図"
+  ],
+  "산업 분야 색상": [
+   "Sector colours",
+   "行业颜色",
+   "分野の色分け"
+  ],
+  "상대 국가": [
+   "Recipient country",
+   "对方国家",
+   "相手国"
+  ],
+  "상대 국가 (이메일 언어)": [
+   "Recipient country (email language)",
+   "对方国家（邮件语言）",
+   "相手国（メールの言語）"
+  ],
+  "상대 국가 언어 · 예절 반영": [
+   "their language and etiquette",
+   "对方语言与礼仪",
+   "相手の言語と作法"
+  ],
+  "상대 국가를 고르면 4개국어 무역 이메일이 바로 나오고, 출장지를 고르면 일비·숙박 상한·면세 한도·전압·단위가 정리됩니다. 미국·중국·일본·영국·인도·베트남 기업의 등록·재무·선적 이력을 공식 사이트에서 확인하고, 2027년 선적·은행 휴무일까지 한 페이지에서 봅니다. 회원가입 없이 무료.": [
+   "Pick the recipient country and a trade email appears in that language; pick a destination and per diem, hotel ceilings, duty-free limits, voltage and units are laid out. Check the registration, financials and shipment history of companies in the US, China, Japan, the UK, India and Vietnam on official sites, with 2027 shipping and bank holidays on the same page. Free, no sign-up.",
+   "选择对方国家即生成相应语言的贸易邮件；选择出差城市即整理日补、住宿上限、免税额度、电压与单位。可在官网查询美国、中国、日本、英国、印度、越南企业的登记、财务与货运记录，并查看2027年船期与银行休市。免费、无需注册。",
+   "相手国を選ぶとその言語の貿易メールができ、出張先を選ぶと日当・宿泊上限・免税範囲・電圧・単位が整理されます。米・中・日・英・印・ベトナム企業の登記・財務・船積み履歴を公式サイトで確認でき、2027年の船積み・銀行休業日も同じページに。無料・登録不要。"
+  ],
+  "상대 이름": [
+   "Their name",
+   "对方姓名",
+   "相手の氏名"
+  ],
+  "상대 회사": [
+   "Their company",
+   "对方公司",
+   "相手の会社"
+  ],
+  "상한까지만 인정": [
+   "up to the ceiling",
+   "仅限上限内",
+   "上限まで"
+  ],
+  "상환 기간": [
+   "Loan term",
+   "还款期限",
+   "返済期間"
+  ],
+  "상환 방식": [
+   "Repayment method",
+   "还款方式",
+   "返済方法"
+  ],
+  "상황": [
+   "Situation",
+   "场景",
+   "場面"
+  ],
+  "상황별 9종 · 4개국어 원어": [
+   "9 situations · native wording",
+   "9 种场景 · 母语措辞",
+   "9場面・現地語の文面"
+  ],
+  "상황을 바꾸면 같은 조건으로 문장만 새로 씁니다. 입력값은 그대로 남습니다.": [
+   "Changing the situation rewrites only the wording; your inputs stay.",
+   "换场景只重写措辞，输入值保留。",
+   "場面を変えても文言だけ書き換わり、入力値は残ります。"
+  ],
+  "새 글·시황을 실시간으로 받는 곳": [
+   "Where new reports and market data arrive in real time",
+   "实时接收最新文章与行情的地方",
+   "新着記事と市況をリアルタイムで受け取る場所"
+  ],
+  "새 기사·시황 알림을 카카오톡에서 바로 받습니다. 오픈채팅방에 입장만 하면 됩니다.": [
+   "New reports and market alerts straight to KakaoTalk. Just join the open chat room.",
+   "新文章与行情提醒直接发送到 KakaoTalk。进入开放聊天室即可。",
+   "新着記事と市況のお知らせを KakaoTalk で受け取れます。オープンチャットに参加するだけです。"
+  ],
+  "새 리포트와 시황을 카카오톡 오픈채팅과 텔레그램으로 실시간으로 받아 보세요.": [
+   "Get new reports and market updates in real time on KakaoTalk Open Chat and Telegram.",
+   "通过 KakaoTalk 开放聊天和 Telegram 实时接收最新报道与行情。",
+   "新しいレポートと市況を KakaoTalk オープンチャットと Telegram でリアルタイムに受け取れます。"
+  ],
+  "새 리포트와 원자재 시황을 카카오톡 오픈채팅과 텔레그램으로 실시간으로 받아 보세요. 가입 없이 링크로 바로 들어갈 수 있습니다.": [
+   "Get new reports and commodity market updates in real time on KakaoTalk Open Chat and Telegram. No sign-up — just open the link.",
+   "通过 KakaoTalk 开放聊天和 Telegram 实时接收最新报道与大宗商品行情。无需注册，点击链接即可进入。",
+   "新しいレポートと原材料市況を KakaoTalk オープンチャットと Telegram でリアルタイムに受け取れます。登録不要でリンクからすぐ入れます。"
+  ],
+  "새로고침": [
+   "Refresh",
+   "刷新",
+   "更新"
+  ],
+  "생년월일·태어난 시로 사주팔자 여덟 글자, 십신, 오행 균형과 2027 정미년 신년운세를 무료로. 회원가입 없음.": [
+   "Four Pillars, ten gods and five-element balance from your birth date. Free, no sign-up.",
+   "输入出生时间即可看四柱、十神与五行旺衰。免费无需注册。",
+   "生年月日から四柱・通変星・五行バランス。無料・登録不要。"
+  ],
+  "생년월일과 태어난 시만 넣으면 24절기 입절 시각으로 계산한 사주팔자 여덟 글자, 십신, 오행 균형과 2027 정미년(丁未年) 신년운세를 무료로 봅니다. 회원가입 없이, 입력한 정보는 서버로 보내지 않습니다.": [
+   "Enter a birth date and build a Four Pillars (BaZi) chart from the solar terms: the eight characters, the ten gods around your day master, the balance of the five elements, and what the 2027 Ding Wei year points to. Free, no sign-up, nothing leaves your browser.",
+   "输入出生日期，按节气排出四柱八字：八个字、以日主为中心的十神、五行旺衰与喜用，以及 2027 丁未年的走向。免费无需注册，输入内容不会上传。",
+   "生年月日を入れるだけで、節気を基準に四柱（年柱・月柱・日柱・時柱）を立て、日干から見た通変星、十二運、五行バランスと2027年丁未年の巡りを出します。無料・登録不要、入力はブラウザの外に出ません。"
+  ],
+  "서식 138종, B/L부터 사직서·정관까지": [
+   "138 forms — from B/L to resignation letters and articles of association",
+   "138 种表单 — 从 B/L 到辞职书、公司章程",
+   "書式138種 — B/L から退職届・定款まで"
+  ],
+  "서식 8종 무료": [
+   "8 document forms, free",
+   "8 种单据免费",
+   "書式 8 種 無料"
+  ],
+  "서식·전자서명": [
+   "Forms & e-signature",
+   "表单·电子签名",
+   "書式・電子署名"
+  ],
+  "서식·전자서명 — 무료 서식 138종 · B/L·자동계산": [
+   "Forms & E-signature — 138 free forms · B/L · auto-calc",
+   "表单·电子签名 — 138 种免费表单 · B/L · 自动计算",
+   "書式・電子署名 — 無料書式138種 · B/L・自動計算"
+  ],
+  "서식·전자서명 — 무료 서식 138종 · B/L·자동계산 · A4 PDF": [
+   "Forms & E-signature — 138 free forms · B/L · auto-calc · A4 PDF",
+   "表单·电子签名 — 138 种免费表单 · B/L · 自动计算 · A4 PDF",
+   "書式・電子署名 — 無料書式138種 · B/L・自動計算・A4 PDF"
+  ],
+  "서식·전자서명 — 무료 서식 138종 · B/L·자동계산 · A4 PDF | INSIGHT BRIEF": [
+   "Forms & E-signature — 138 free forms · B/L · auto-calc · A4 PDF | INSIGHT BRIEF",
+   "表单·电子签名 — 138 种免费表单 · B/L · 自动计算 · A4 PDF | INSIGHT BRIEF",
+   "書式・電子署名 — 無料書式138種 · B/L・自動計算 · A4 PDF | INSIGHT BRIEF"
+  ],
+  "서울외환시장 주간거래 종가": [
+   "Seoul FX market weekly close",
+   "首尔外汇市场周间收盘价",
+   "ソウル外国為替市場の週間取引終値"
+  ],
+  "석유화학": [
+   "Petrochemicals",
+   "石油化学",
+   "石油化学"
+  ],
+  "선적 일정 역산": [
+   "Working back from the holiday",
+   "船期倒推",
+   "船積み日程の逆算"
+  ],
+  "선적·납기일": [
+   "Shipment / delivery date",
+   "装运/交货日期",
+   "船積み・納期"
+  ],
+  "선적항": [
+   "Port of loading",
+   "装运港",
+   "積出港"
+  ],
+  "선택 판매량 매출": [
+   "Revenue at selected units",
+   "所选销量下的营收",
+   "選択した販売量の売上"
+  ],
+  "선택 판매량 이익": [
+   "Profit at selected units",
+   "所选销量下的利润",
+   "選択した販売量の利益"
+  ],
+  "선택 판매량 총비용": [
+   "Total cost at selected units",
+   "所选销量下的总成本",
+   "選択した販売量の総費用"
+  ],
+  "세금 합계": [
+   "Total tax",
+   "税金合计",
+   "税額合計"
+  ],
+  "세금·수수료": [
+   "Tax & fees",
+   "税费",
+   "税金・手数料"
+  ],
+  "세금·수수료율": [
+   "Tax & fee rate",
+   "税费率",
+   "税金・手数料率"
+  ],
+  "세금·수수료율에는 원천징수 3.3%, 플랫폼 중개 수수료, 결제 수수료를 합쳐 넣으세요. 간접비는 프로젝트와 상관없이 매달 나가는 돈입니다. 계산된 단가는 손해 보지 않는 하한선이지 시장 가격이 아니므로, 상대·난이도·긴급도에 따라 올려 부르는 판단은 따로 하셔야 합니다.": [
+   "Put the 3.3% withholding, platform commission and payment fees together in the tax and fee rate. Overhead is what leaves every month regardless of projects. The rate you get is the floor that keeps you from losing money, not a market price — deciding how much to add for the client, difficulty and urgency is your call.",
+   "税率与手续费率请把 3.3% 预扣、平台中介费与支付手续费合并填入。间接费用与项目无关、每月固定支出。算出的单价是不亏损的下限，并非市场价，按客户、难度与紧急程度加价需要自行判断。",
+   "税金・手数料率には 3.3% の源泉徴収、プラットフォーム手数料、決済手数料を合算して入れてください。間接費は案件と関係なく毎月出ていくお金です。算出された単価は損をしない下限であり市場価格ではないので、相手・難易度・緊急度に応じて上乗せする判断は別途必要です。"
+  ],
+  "세무·결산": [
+   "Tax & closing",
+   "税务·结算",
+   "税務·決算"
+  ],
+  "세전 · 목표 순이익 기준": [
+   "Pre-tax · at target net profit",
+   "税前 · 按目标净利润",
+   "税引前 · 目標純利益基準"
+  ],
+  "세전 기준": [
+   "Pre-tax",
+   "税前口径",
+   "税引前"
+  ],
+  "세후 목표": [
+   "After-tax target",
+   "税后目标",
+   "税引後目標"
+  ],
+  "섹션": [
+   "Sections",
+   "栏目",
+   "セクション"
+  ],
+  "셀러 툴": [
+   "Seller tools",
+   "卖家工具",
+   "セラーツール"
+  ],
+  "소개 · 편집 원칙 — INSIGHT BRIEF": [
+   "About & editorial policy — INSIGHT BRIEF",
+   "关于·编辑原则 — INSIGHT BRIEF",
+   "紹介・編集方針 — INSIGHT BRIEF"
+  ],
+  "소개·편집 원칙": [
+   "About & editorial policy",
+   "关于·编辑原则",
+   "紹介・編集方針"
+  ],
+  "소방 현장에서 보는 재난과 대응": [
+   "Disaster and response from the fire scene",
+   "从消防一线看灾难与应急",
+   "消防の現場から見る災害と対応"
+  ],
+  "소방·안전": [
+   "Fire & Safety",
+   "消防·安全",
+   "消防・安全"
+  ],
+  "손익분기 그래프": [
+   "Break-even chart",
+   "盈亏平衡图表",
+   "損益分岐グラフ"
+  ],
+  "손익분기 매출": [
+   "Break-even revenue",
+   "盈亏平衡营收",
+   "損益分岐売上"
+  ],
+  "손익분기 매출 = 손익분기 수량 × 판매 단가": [
+   "Break-even revenue = break-even units × unit price",
+   "盈亏平衡营收 = 盈亏平衡销量 × 销售单价",
+   "損益分岐売上 = 損益分岐数量 × 販売単価"
+  ],
+  "손익분기 수량": [
+   "Break-even units",
+   "盈亏平衡销量",
+   "損益分岐数量"
+  ],
+  "손익분기 수량 = 고정비 ÷ 단위 공헌이익": [
+   "Break-even units = fixed cost ÷ contribution margin per unit",
+   "盈亏平衡销量 = 固定成本 ÷ 单位贡献毛益",
+   "損益分岐数量 = 固定費 ÷ 1 個あたり限界利益"
+  ],
+  "손익분기 수량 × 판매 단가": [
+   "Break-even units × unit price",
+   "盈亏平衡销量 × 单价",
+   "損益分岐数量 × 販売単価"
+  ],
+  "손해 보지 않는 하한선부터": [
+   "Start from the floor that keeps you whole",
+   "从不会亏损的下限算起",
+   "損をしない下限から"
+  ],
+  "수량": [
+   "Quantity",
+   "数量",
+   "数量"
+  ],
+  "수량·매출·차트": [
+   "Units · revenue · chart",
+   "数量·营收·图表",
+   "数量・売上・グラフ"
+  ],
+  "수입 도착원가 · 6개월 자금흐름 · 손익분기 그래프 · 외주 적정단가": [
+   "Import landed cost · six-month cash flow · break-even chart · freelance rate",
+   "进口到岸成本 · 六个月资金流 · 盈亏平衡图表 · 外包单价",
+   "輸入着荷コスト · 6 か月資金繰り · 損益分岐グラフ · 外注単価"
+  ],
+  "수입 도착원가·관세": [
+   "Import landed cost & duty",
+   "进口到岸成本与关税",
+   "輸入着荷コストと関税"
+  ],
+  "수입 부가세 = (과세가격 + 관세) × 부가세율 — 매입세액으로 공제": [
+   "Import VAT = (customs value + duty) × VAT rate — credited as input VAT",
+   "进口增值税 =（完税价格 + 关税）× 增值税率 — 可作为进项税额抵扣",
+   "輸入付加価値税 =（課税価格＋関税）× 付加価値税率 — 仕入税額として控除"
+  ],
+  "수정·지연 대비": [
+   "For revisions and delays",
+   "应对修改与延期",
+   "修正・遅延に備える"
+  ],
+  "숙박 상한 (1박)": [
+   "Hotel ceiling (per night)",
+   "住宿上限（每晚）",
+   "宿泊上限（1泊）"
+  ],
+  "숙박 상한과 비교해 예약": [
+   "book against the hotel ceiling",
+   "对照住宿上限预订",
+   "宿泊上限と比べて予約"
+  ],
+  "숙박 일수": [
+   "Nights",
+   "住宿晚数",
+   "宿泊数"
+  ],
+  "순현금": [
+   "Net cash",
+   "净现金",
+   "純現金"
+  ],
+  "순현금 = 매출 − 변동비 − 고정비 − 이자 − 원금 상환": [
+   "Net cash = revenue − variable cost − fixed cost − interest − principal",
+   "净现金 = 营收 − 变动成本 − 固定成本 − 利息 − 本金偿还",
+   "純現金 = 売上 − 変動費 − 固定費 − 利息 − 元金返済"
+  ],
+  "숫자 뒤의 맥락을 읽습니다": [
+   "We read the context behind the numbers",
+   "解读数字背后的脉络",
+   "数字の向こうの文脈を読む"
+  ],
+  "스마트스토어 썸네일 만들기, 쿠팡 썸네일, 상품 이미지 1000x1000, 상세페이지 860, 상세페이지 만들기, 카드뉴스 만들기, 네이버 SEO 분석, 키워드 밀도, 해시태그 추천, QR코드 만들기, UTM 링크, 모바일 명함, 셀러 무료툴": [
+   "product thumbnail maker, marketplace thumbnail, product image 1000x1000, detail page 860, detail page builder, card news maker, marketplace SEO check, keyword density, hashtag suggestions, QR code generator, UTM link builder, mobile business card, free seller tools",
+   "商品主图制作, 电商缩略图, 商品图片 1000x1000, 详情页 860, 详情页制作, 图文卡片制作, 电商 SEO 分析, 关键词密度, 话题标签推荐, 二维码生成, UTM 链接, 手机名片, 卖家免费工具",
+   "商品サムネイル作成, ECサムネイル, 商品画像 1000x1000, 詳細ページ 860, 詳細ページ作成, カードニュース作成, EC SEO 分析, キーワード密度, ハッシュタグ提案, QRコード作成, UTMリンク, モバイル名刺, セラー向け無料ツール"
+  ],
+  "스폰서 배너 · 애드센스": [
+   "Sponsor banner · AdSense",
+   "赞助横幅 · AdSense",
+   "スポンサー枠・AdSense"
+  ],
+  "시간": [
+   "h",
+   "小时",
+   "時間"
+  ],
+  "시간 전": [
+   "hr ago",
+   "小时前",
+   "時間前"
+  ],
+  "시간당·프로젝트 하한": [
+   "Hourly · project floor",
+   "时薪·项目下限",
+   "時間単価・案件の下限"
+  ],
+  "시나파이낸스 NYMEX 실시간 시세": [
+   "Sina Finance NYMEX live quotes",
+   "新浪财经 NYMEX 实时行情",
+   "Sina Finance NYMEX リアルタイム"
+  ],
+  "시세": [
+   "Quote",
+   "行情",
+   "市況"
+  ],
+  "시연용 샘플 콘텐츠": [
+   "Sample content for demonstration",
+   "演示用示例内容",
+   "デモ用サンプル"
+  ],
+  "시점·주의": [
+   "Timing & caution",
+   "时点·注意事项",
+   "時点・注意"
+  ],
+  "시황표": [
+   "Market table",
+   "行情表",
+   "市況表"
+  ],
+  "식비 (1일)": [
+   "Meals (per day)",
+   "餐费（每日）",
+   "食事代（1日）"
+  ],
+  "실무 팁": [
+   "Field notes",
+   "实务提示",
+   "実務メモ"
+  ],
+  "실시간": [
+   "Live",
+   "实时",
+   "リアルタイム"
+  ],
+  "실시간 갱신": [
+   "Live update",
+   "实时更新",
+   "リアルタイム更新"
+  ],
+  "실시간 브리핑": [
+   "Live briefing",
+   "实时简报",
+   "リアルタイム・ブリーフィング"
+  ],
+  "실시간 브리핑 채널": [
+   "Live briefing channels",
+   "实时简报频道",
+   "リアルタイム・ブリーフィング"
+  ],
+  "실시간 연동": [
+   "Live data",
+   "实时数据",
+   "リアルタイム連携"
+  ],
+  "실제 숙박비 (1박)": [
+   "Actual hotel rate (per night)",
+   "实际住宿费（每晚）",
+   "実際の宿泊費（1泊）"
+  ],
+  "실제 집중 시간": [
+   "Actual focused hours",
+   "实际专注时间",
+   "実際に集中できる時間"
+  ],
+  "실측": [
+   "measured",
+   "实测",
+   "実測"
+  ],
+  "쓰고 · 서명하고 · 바로 PDF로": [
+   "Fill · Sign · Straight to PDF",
+   "填写 · 签名 · 直接导出 PDF",
+   "作成・署名・すぐPDF"
+  ],
+  "아직 댓글이 없습니다. 첫 번째 의견을 남겨 보세요.": [
+   "No comments yet. Be the first to share your view.",
+   "还没有评论，欢迎发表第一条意见。",
+   "まだコメントはありません。最初の意見をどうぞ。"
+  ],
+  "안전한계율": [
+   "Margin of safety",
+   "安全边际率",
+   "安全余裕率"
+  ],
+  "안전한계율 = (목표 판매량 − 손익분기 수량) ÷ 목표 판매량": [
+   "Margin of safety = (target units − break-even units) ÷ target units",
+   "安全边际率 =（目标销量 − 盈亏平衡销量）÷ 目标销量",
+   "安全余裕率 =（目標販売量 − 損益分岐数量）÷ 目標販売量"
+  ],
+  "어댑터·변압기": [
+   "adapter · transformer",
+   "转换插头·变压器",
+   "アダプター・変圧器"
+  ],
+  "어떻게 확인했나": [
+   "How we checked",
+   "我们如何核对",
+   "確認方法"
+  ],
+  "업비트 KRW 실시간": [
+   "Upbit KRW live",
+   "Upbit 韩元实时",
+   "Upbit KRW リアルタイム"
+  ],
+  "없으면 0": [
+   "0 if none",
+   "没有则填 0",
+   "なければ 0"
+  ],
+  "에너지": [
+   "Energy",
+   "能源",
+   "エネルギー"
+  ],
+  "엑셀·자동계산": [
+   "Excel & auto-calc",
+   "Excel·自动计算",
+   "エクセル・自動計算"
+  ],
+  "여행자 면세 한도": [
+   "Traveller duty-free allowance",
+   "旅客免税额度",
+   "旅行者の免税範囲"
+  ],
+  "연 단리·고정금리 가정입니다. 실제 상환액은 은행의 일수 계산, 거치기간, 중도상환수수료, 변동금리 재설정에 따라 달라집니다. 매출 성장률은 매달 같은 비율로 복리 적용했고, 변동비는 매출에 비례해 움직인다고 봤습니다. 세금(부가세·소득세)은 반영하지 않았으니 부가세 납부월은 따로 빼 두세요.": [
+   "This assumes simple interest at a fixed annual rate. Real repayments vary with the bank's day-count, grace periods, early repayment fees and floating-rate resets. Revenue growth compounds at the same monthly rate, and variable costs are assumed to move in proportion to revenue. Taxes (VAT and income tax) are not included, so set aside the months when VAT is due.",
+   "此处按单利与固定年利率假设。实际还款额取决于银行的计息天数、宽限期、提前还款手续费与浮动利率重设。营收按每月相同比率复利增长，变动成本按与营收成正比移动。未计入税金（增值税·所得税），请单独预留增值税缴纳月份的资金。",
+   "単利・固定金利を前提にしています。実際の返済額は銀行の日数計算・据置期間・繰上返済手数料・変動金利の見直しにより変わります。売上成長率は毎月同じ率で複利適用し、変動費は売上に比例して動くとみています。税金（付加価値税・所得税）は反映していないため、付加価値税の納付月は別に確保してください。"
+  ],
+  "연 이율": [
+   "Annual rate",
+   "年利率",
+   "年利率"
+  ],
+  "연간": [
+   "Yearly",
+   "年线",
+   "年次"
+  ],
+  "영문 표기 권장": [
+   "English name preferred",
+   "建议英文名称",
+   "英文表記を推奨"
+  ],
+  "영문서식": [
+   "English forms",
+   "英文格式",
+   "英文書式"
+  ],
+  "예약 링크는 각 사의 검색 첫 화면으로 연결됩니다. 사이트 안에서 날짜와 도시를 넣으면 실제 운임·요금이 나옵니다.": [
+   "Booking links open each site’s search page. Enter your dates and city there for live fares and rates.",
+   "预订链接指向各站搜索首页，在站内输入日期与城市即可看到实际运价。",
+   "予約リンクは各社の検索トップページです。サイト内で日付と都市を入れると実際の運賃・料金が出ます。"
+  ],
+  "예절·관행": [
+   "Etiquette & practice",
+   "礼仪与惯例",
+   "作法・慣行"
+  ],
+  "오늘의 핵심": [
+   "Today's highlights",
+   "今日要点",
+   "今日のポイント"
+  ],
+  "온라인도장": [
+   "Online seal",
+   "在线印章",
+   "オンライン印鑑"
+  ],
+  "올해": [
+   "this year",
+   "今年",
+   "今年"
+  ],
+  "외주 적정단가": [
+   "Freelance rate",
+   "外包合理单价",
+   "外注の適正単価"
+  ],
+  "용어·제품 상식": [
+   "Terms & product notes",
+   "术语·产品常识",
+   "用語・製品の基礎知識"
+  ],
+  "용어·제품 상식은 JavaScript가 있어야 표시됩니다.": [
+   "The glossary needs JavaScript to display.",
+   "术语与产品常识需要启用 JavaScript 才能显示。",
+   "用語・製品の基礎知識は JavaScript を有効にすると表示されます。"
+  ],
+  "운임·보험 별도": [
+   "Freight & insurance separate",
+   "运费与保险另计",
+   "運賃・保険は別建て"
+  ],
+  "원(KRW)": [
+   "KRW",
+   "韩元(KRW)",
+   "ウォン(KRW)"
+  ],
+  "원가 구조": [
+   "Cost structure",
+   "成本结构",
+   "コスト構造"
+  ],
+  "원가 중 세금 비중": [
+   "Tax share of cost",
+   "成本中税金占比",
+   "コストに占める税の割合"
+  ],
+  "원가·자금 계산기": [
+   "Cost & cash calculators",
+   "成本与资金计算器",
+   "コスト・資金計算ツール"
+  ],
+  "원가·자금 계산기 4종": [
+   "Four cost and cash calculators",
+   "成本与资金计算器 4 款",
+   "コスト・資金計算ツール 4 種"
+  ],
+  "원금": [
+   "Principal",
+   "本金",
+   "元金"
+  ],
+  "원금균등": [
+   "Equal principal",
+   "等额本金",
+   "元金均等"
+  ],
+  "원금균등 = 원금 ÷ n + 남은 원금 × r": [
+   "Equal principal = principal ÷ n + remaining principal × r",
+   "等额本金 = 本金 ÷ n + 剩余本金 × r",
+   "元金均等 = 元金 ÷ n ＋ 残りの元金 × r"
+  ],
+  "원단위": [
+   "Unit consumption",
+   "单位消耗",
+   "原単位"
+  ],
+  "원단위 표": [
+   "Unit consumption table",
+   "单位消耗表",
+   "原単位表"
+  ],
+  "원단위·원가": [
+   "Unit consumption & cost",
+   "单位消耗·成本",
+   "原単位・コスト"
+  ],
+  "원료": [
+   "Feedstock",
+   "原料",
+   "原料"
+  ],
+  "원리금균등": [
+   "Equal payment",
+   "等额本息",
+   "元利均等"
+  ],
+  "원리금균등 = 원금 × r ÷ (1 − (1 + r)의 −n승) (r = 연이율 ÷ 12, n = 기간)": [
+   "Equal payment = principal × r ÷ (1 − (1 + r)^−n)   (r = annual rate ÷ 12, n = term)",
+   "等额本息 = 本金 × r ÷（1 − (1 + r) 的 −n 次方）  （r = 年利率 ÷ 12，n = 期限）",
+   "元利均等 = 元金 × r ÷（1 − (1 + r) の −n 乗）  （r = 年利率 ÷ 12、n = 期間）"
+  ],
+  "원자재 시황": [
+   "Market board",
+   "行情中心",
+   "市況ボード"
+  ],
+  "원자재 시황 — 중국 선물·SCFI·재생원자재 공시·산업 계통도 4종·원단위": [
+   "Market board — US rates & indices, China futures, SCFI, industry flows",
+   "行情 — 人民币汇率·A股指数·中国期货·SCFI·产业流程",
+   "市況 — 円相場・日本株・中国先物・SCFI・産業フロー"
+  ],
+  "원자재 시황 — 중국 선물·SCFI·재생원자재(재활용가능자원 공시)·산업 계통도·원단위·용어 상식 | INSIGHT BRIEF": [
+   "Market board — US dollar rates, US indices, China futures, SCFI, industry flows | INSIGHT BRIEF",
+   "大宗商品行情 — 人民币汇率、A股指数、中国期货、SCFI、产业流程图 | INSIGHT BRIEF",
+   "商品市況 — 円相場・日本株指数・中国先物・SCFI・産業フロー | INSIGHT BRIEF"
+  ],
+  "원자재 시황·원단위 →": [
+   "Commodity dashboard · unit consumption →",
+   "大宗商品行情·单位消耗 →",
+   "原材料市況・原単位 →"
+  ],
+  "원화 환산": [
+   "KRW equivalent",
+   "韩元折算",
+   "ウォン換算"
+  ],
+  "월": [
+   "Mon",
+   "月",
+   "月"
+  ],
+  "월 · 선택": [
+   "Monthly · optional",
+   "每月 · 可选",
+   "月 · 任意"
+  ],
+  "월 · 세후": [
+   "Monthly · after tax",
+   "每月 · 税后",
+   "月 · 税引後"
+  ],
+  "월 간접비": [
+   "Monthly overhead",
+   "月间接费用",
+   "月間間接費"
+  ],
+  "월 고정비": [
+   "Monthly fixed cost",
+   "月固定成本",
+   "月間固定費"
+  ],
+  "월 매출": [
+   "Monthly revenue",
+   "月营收",
+   "月間売上"
+  ],
+  "월 복리": [
+   "Monthly compounding",
+   "按月复利",
+   "月次複利"
+  ],
+  "월 작업일": [
+   "Working days per month",
+   "每月工作日",
+   "月の稼働日"
+  ],
+  "월 청구 가능 시간": [
+   "Billable hours per month",
+   "每月可计费工时",
+   "月の請求可能時間"
+  ],
+  "월 청구 가능 시간 = 작업일 × 일 작업시간 × 청구 가능 비율": [
+   "Billable hours = working days × hours per day × billable ratio",
+   "可计费工时 = 工作日 × 每日工时 × 可计费比例",
+   "請求可能時間 = 稼働日 × 1 日の稼働時間 × 請求可能比率"
+  ],
+  "월 필요 매출": [
+   "Revenue needed per month",
+   "每月所需营收",
+   "月の必要売上"
+  ],
+  "월 필요 매출 = (목표 순이익 + 간접비) ÷ (1 − 세금·수수료율)": [
+   "Revenue needed = (target net profit + overhead) ÷ (1 − tax & fee rate)",
+   "所需营收 =（目标净利润 + 间接费用）÷（1 − 税费率）",
+   "必要売上 =（目標純利益＋間接費）÷（1 − 税金・手数料率）"
+  ],
+  "월 합계": [
+   "Monthly total",
+   "每月合计",
+   "月合計"
+  ],
+  "월별 캘린더와 국가·산업별 필터, 구글 캘린더·ICS 내보내기까지. 전시회 61건, 회원가입 없이 무료.": [
+   "Monthly calendar, country and sector filters, Google Calendar and ICS export. 61 shows, free without sign-up.",
+   "月历、国家与行业筛选、Google日历与ICS导出。61场展会，无需注册，免费使用。",
+   "月別カレンダー、国・分野フィルター、Googleカレンダー・ICS書き出し。展示会61件、会員登録なしで無料。"
+  ],
+  "월별 캘린더와 국가·산업별 필터, 구글 캘린더·ICS 내보내기까지. 회원가입 없이 무료.": [
+   "Monthly calendar, country and sector filters, Google Calendar and ICS export. Free, no sign-up.",
+   "月历与国家·行业筛选，Google日历·ICS导出。无需注册，免费使用。",
+   "月別カレンダーと国・分野の絞り込み、Googleカレンダー・ICS書き出し。登録不要で無料。"
+  ],
+  "월별 현금 잔액": [
+   "Monthly cash balance",
+   "每月现金余额",
+   "月別の現金残高"
+  ],
+  "월평균": [
+   "monthly average",
+   "月平均",
+   "月平均"
+  ],
+  "유가·환율, 중국 3대 선물거래소(SHFE·DCE·ZCE), SCFI·CCFI 해상운임, 비철금속·철강·농산품·에너지 원료, 국내 물가지표, 한국환경공단 재활용가능자원 가격조사(재생원자재·폐플라스틱 압축·플레이크·펠렛 월간 공시)와 석유화학·철강/비철·농산품·에너지 4개 산업 계통도, 원단위 표, 용어 상식을 한 페이지에 정리했습니다.": [
+   "US dollar rates and US indices first, then China's three futures exchanges (SHFE·DCE·ZCE), SCFI·CCFI freight, metals, steel, grains and energy, industry flow charts and unit-consumption tables — on one page, every figure with its date and source.",
+   "优先显示人民币汇率与A股指数，并汇总中国三大期货交易所（SHFE·DCE·ZCE）、SCFI·CCFI 运价、金属、钢铁、农产品与能源、产业流程图和单位耗用表，每个数字都标注日期与来源。",
+   "円相場と日本株指数を先頭に、中国3大先物取引所（SHFE·DCE·ZCE）、SCFI・CCFI运賃、非鉄金属・鉄鋼・農産物・エネルギー、産業フローと原単位表を1ページに。数字には基準日と出所を付けています。"
+  ],
+  "은": [
+   "Silver",
+   "银",
+   "銀"
+  ],
+  "은행 약정과 같게 고르세요": [
+   "Match your bank agreement",
+   "请与银行约定一致",
+   "銀行の約定と同じものを選んでください"
+  ],
+  "을": [
+   "Party B",
+   "乙方",
+   "乙"
+  ],
+  "의뢰·문의 하기": [
+   "Send an inquiry",
+   "提交咨询",
+   "依頼・問い合わせ"
+  ],
+  "이 나라와 일할 때": [
+   "Working with this country",
+   "与这个国家做生意",
+   "この国と仕事をするとき"
+  ],
+  "이 아래면 손해": [
+   "Below this you lose money",
+   "低于此价即亏损",
+   "これ以下は赤字"
+  ],
+  "이 자리에 광고하기": [
+   "Advertise here",
+   "此处投放广告",
+   "この枠に広告を出す"
+  ],
+  "이 페이지의 9가지 도구는 실무 참고용이며 법률·세무·관세·투자 자문이 아닙니다.": [
+   "The nine tools on this page are practical references, not legal, tax, customs or investment advice.",
+   "本页面的 9 款工具仅供参考，不构成法律、税务、海关或投资建议。",
+   "このページの 9 つのツールは実務の参考用であり、法律・税務・通関・投資の助言ではありません。"
+  ],
+  "이 품목이 들어가는 곳": [
+   "Used in",
+   "用于",
+   "使われ先"
+  ],
+  "이더리움": [
+   "Ethereum",
+   "以太坊",
+   "イーシャリアム"
+  ],
+  "이력·자소서": [
+   "Resume & cover letter",
+   "简历·求职信",
+   "履歴書・自己PR"
+  ],
+  "이름": [
+   "Your name",
+   "姓名",
+   "氏名"
+  ],
+  "이름과 회사만 채워도 초안이 됩니다": [
+   "a name and company is enough for a draft",
+   "只填姓名与公司即可成稿",
+   "氏名と会社だけで下書きができます"
+  ],
+  "이만큼 팔면 이익 0원": [
+   "Sell this many and profit is zero",
+   "卖到这个数量利润为 0",
+   "これだけ売れば利益は 0"
+  ],
+  "이메일 만들기": [
+   "Write the email",
+   "生成邮件",
+   "メールを作成"
+  ],
+  "이메일 언어가 정해집니다": [
+   "sets the email language",
+   "决定邮件语言",
+   "メールの言語が決まります"
+  ],
+  "이메일 주소": [
+   "Email address",
+   "邮箱地址",
+   "メールアドレス"
+  ],
+  "이미지 · AI 일러스트레이션": [
+   "Image · AI illustration",
+   "图片 · AI 插画",
+   "画像・AI イラスト"
+  ],
+  "이번 주": [
+   "This week",
+   "本周",
+   "今週"
+  ],
+  "이어서 볼 것": [
+   "Keep exploring",
+   "继续浏览",
+   "続けて見る"
+  ],
+  "이어지는 단서가 있나요?": [
+   "Have a lead for us?",
+   "还有后续线索吗？",
+   "続く手がかりはありますか？"
+  ],
+  "이자": [
+   "Interest",
+   "利息",
+   "利息"
+  ],
+  "이전": [
+   "Previous",
+   "上一步",
+   "前へ"
+  ],
+  "인기 리포트": [
+   "Popular reports",
+   "热门报道",
+   "人気レポート"
+  ],
+  "인기 리포트 및 광고": [
+   "Popular reports and advertising",
+   "热门报道与广告",
+   "人気レポートと広告"
+  ],
+  "인사말·카드": [
+   "Greetings & cards",
+   "问候·贺卡",
+   "挨拶・カード"
+  ],
+  "인사이트 브리프": [
+   "Insight Brief",
+   "洞察简报",
+   "インサイトブリーフ"
+  ],
+  "인사이트 브리프 편집실": [
+   "INSIGHT BRIEF Editorial Desk",
+   "《洞察简报》编辑部",
+   "INSIGHT BRIEF 編集部"
+  ],
+  "인쇄": [
+   "Print",
+   "打印",
+   "印刷"
+  ],
+  "인쇄·PDF A4 최적화": [
+   "Print/PDF optimised for A4",
+   "打印·PDF 适配 A4",
+   "印刷・PDF を A4 に最適化"
+  ],
+  "인수자": [
+   "Received by",
+   "接收方",
+   "受領者"
+  ],
+  "인치·파운드·화씨": [
+   "inch · pound · °F",
+   "英寸·磅·华氏度",
+   "インチ・ポンド・°F"
+  ],
+  "인코텀즈": [
+   "Incoterms",
+   "贸易术语",
+   "インコタームズ"
+  ],
+  "일 작업시간": [
+   "Hours per day",
+   "每日工时",
+   "1 日の稼働時間"
+  ],
+  "일 전": [
+   "days ago",
+   "天前",
+   "日前"
+  ],
+  "일간": [
+   "Daily",
+   "日线",
+   "日次"
+  ],
+  "일본": [
+   "Japan",
+   "日本",
+   "日本"
+  ],
+  "일부 실시간 연동": [
+   "Partly live",
+   "部分实时",
+   "一部リアルタイム"
+  ],
+  "일비 (1일)": [
+   "Per diem (per day)",
+   "日补（每日）",
+   "日当（1日）"
+  ],
+  "일비·면세·단위·예약": [
+   "per diem · duty-free · units",
+   "差旅费·免税·单位",
+   "日当・免税・単位"
+  ],
+  "일비·식비 기준": [
+   "per diem and meals",
+   "按日补与餐费",
+   "日当・食事代の基準"
+  ],
+  "일정과 장소는 각 전시회 주최사 공식 사이트의 개최 안내에서 2026년 11월 24일에 직접 확인했습니다. 확인한 주소는 카드마다 ‘공식 홈페이지’로 걸어 두었습니다.": [
+   "Dates and venues were checked on each organiser's official site on 24 November 2026. Every card links to the page we checked.",
+   "日程与地点于2026年11月24日在各展会主办方官方网站的举办信息中直接核对，核对过的网址已作为每张卡片的“官方网站”链接。",
+   "日程と会場は、各展示会の主催者公式サイトの開催案内で2026年11月24日に直接確認しました。確認したURLは各カードの「公式サイト」にリンクしています。"
+  ],
+  "일정과 장소는 각 전시회 주최사 공식 사이트의 개최 안내와 KOTRA 글로벌 전시 플랫폼(GEP)의 전시회 상세정보에서 2026년 11월 24일에 확인했습니다. 확인한 주소는 카드마다 ‘공식 홈페이지’로 걸어 두었고, GEP에서 옮긴 전시회는 ‘GEP 상세’ 링크를 함께 달았습니다.": [
+   "Dates and venues were checked on 24 November 2026 on each organiser's official site and in KOTRA's Global Exhibition Platform (GEP) exhibition records. Every card links to the page we checked; shows taken from GEP also carry a 'GEP page' link.",
+   "日程与场馆于2026年11月24日在各主办方官网和KOTRA全球展览平台(GEP)的展会资料中核对。每张卡片都链接到我们核对的页面，取自GEP的展会另附「GEP详情」链接。",
+   "日程と会場は2026年11月24日に、各主催者の公式サイトとKOTRAグローバル展示プラットフォーム(GEP)の展示会情報で確認しました。確認したページは各カードの「公式サイト」から開けます。GEPから採録した展示会には「GEP詳細」リンクも付けています。"
+  ],
+  "읽음": [
+   "views",
+   "阅读",
+   "閲覧"
+  ],
+  "임대·인건비·구독": [
+   "Rent · payroll · subscriptions",
+   "房租·人工·订阅",
+   "家賃・人件費・サブスク"
+  ],
+  "입국하는 나라 기준": [
+   "rules of the country you enter",
+   "按入境国标准",
+   "入国する国の基準"
+  ],
+  "입국하는 나라의 기준입니다. 주류·담배는 별도 한도가 있고, 초과분만 과세됩니다.": [
+   "Rules of the country you enter. Alcohol and tobacco have separate limits; only the excess is taxed.",
+   "按入境国标准。烟酒另有额度，仅对超出部分征税。",
+   "入国する国の基準です。酒・たばこは別枠で、超過分のみ課税されます。"
+  ],
+  "자": [
+   "chars",
+   "字",
+   "文字"
+  ],
+  "자금 부족 월": [
+   "Shortfall months",
+   "资金缺口月份",
+   "資金不足の月"
+  ],
+  "자동계산": [
+   "Auto-calc",
+   "自动计算",
+   "自動計算"
+  ],
+  "작년": [
+   "last year",
+   "去年",
+   "昨年"
+  ],
+  "작성": [
+   "Write",
+   "填写",
+   "作成"
+  ],
+  "작업일 × 시간 × 비율": [
+   "Days × hours × ratio",
+   "工作日 × 工时 × 比例",
+   "稼働日 × 時間 × 比率"
+  ],
+  "잔액이 0원 아래로 내려가는 달": [
+   "Months the balance falls below zero",
+   "余额低于 0 韩元的月份",
+   "残高が 0 を下回る月"
+  ],
+  "장비·구독·임대": [
+   "Equipment · subscriptions · rent",
+   "设备·订阅·房租",
+   "機材・サブスク・家賃"
+  ],
+  "재난·안전": [
+   "Disaster & Safety",
+   "灾难·安全",
+   "災害・安全"
+  ],
+  "재생원자재": [
+   "Recycled materials",
+   "再生原材料",
+   "再生原材料"
+  ],
+  "저장": [
+   "Save",
+   "保存",
+   "保存"
+  ],
+  "적용 환율 (원/달러)": [
+   "Exchange rate (KRW per USD)",
+   "汇率（韩元/美元）",
+   "適用為替（ウォン/ドル）"
+  ],
+  "전문가 매칭": [
+   "Expert matching",
+   "专家匹配",
+   "専門家マッチング"
+  ],
+  "전문가 매칭 · 무료 비교견적 →": [
+   "Expert matching · free quotes →",
+   "专家匹配 · 免费报价比较 →",
+   "専門家マッチング・無料見積比較 →"
+  ],
+  "전세계 전시회 캘린더 2027 — 플라스틱·산업·IT·무역 38개 일정": [
+   "World Exhibition Calendar 2027 — 38 industry and trade shows",
+   "全球展会日历 2027 — 38场工业与贸易展会",
+   "世界の展示会カレンダー 2027 — 産業・貿易展示会38件"
+  ],
+  "전세계 전시회 캘린더 2027 — 플라스틱·산업·IT·무역 38개 일정 | INSIGHT BRIEF": [
+   "World Exhibition Calendar 2027 — 38 Plastics, Industry, IT and Trade Shows | INSIGHT BRIEF",
+   "全球展会日历 2027 — 塑料·工业·IT·贸易 38场展会 | INSIGHT BRIEF",
+   "世界の展示会カレンダー 2027 — プラスチック・産業・IT・貿易 38件 | INSIGHT BRIEF"
+  ],
+  "전세계 전시회 캘린더 2027 — 플라스틱·산업·IT·뷰티 61개 일정": [
+   "World Exhibition Calendar 2027 — 61 Plastics, Industry, IT and Beauty Shows",
+   "全球展会日历 2027 — 塑料·工业·IT·美容 61 场展会",
+   "世界の展示会カレンダー 2027 — プラスチック・産業・IT・ビューティ 61件"
+  ],
+  "전세계 전시회 캘린더 2027 — 플라스틱·산업·IT·뷰티 61개 일정 | INSIGHT BRIEF": [
+   "World Exhibition Calendar 2027 — 61 Plastics, Industry, IT and Beauty Shows | INSIGHT BRIEF",
+   "全球展会日历 2027 — 塑料·工业·IT·美容 61 场展会 | INSIGHT BRIEF",
+   "世界の展示会カレンダー 2027 — プラスチック・産業・IT・ビューティ 61件 | INSIGHT BRIEF"
+  ],
+  "전세계 전시회 캘린더 · 상단 광고": [
+   "Exhibition calendar · top ad",
+   "全球展会日历 · 顶部广告",
+   "展示会カレンダー・上部広告"
+  ],
+  "전세계 전시회 캘린더 — 플라스틱·산업·IT·무역 일정을 한눈에": [
+   "World exhibition calendar — plastics, industry, IT and trade shows at a glance",
+   "全球展会日历 — 塑料·工业·IT·贸易日程一目了然",
+   "世界の展示会カレンダー — プラスチック・産業・IT・貿易の日程を一覧"
+  ],
+  "전시회 38개": [
+   "38 shows",
+   "38 场展会",
+   "展示会 38件"
+  ],
+  "전시회 61개": [
+   "61 shows",
+   "61 场展会",
+   "展示会61件"
+  ],
+  "전시회 일정, 2027 전시회, 국제 전시회 캘린더, KOPLAS 2027, 차이나플라스 2027, NPE 2027, CES 2027, 캔톤페어 2027, 하노버 메세 2027, MWC 2027, CMEF 2027, BIO USA 2027, NAB Show 2027, RSAC 2027, SEMICON West 2027, COSMOPROF 2027, GITEX 2026, Automotive World 2027, NRA Show 2027, FEIPLASTIC 2027, 코엑스 전시회, 킨텍스 전시회, 벡스코 전시회, 해외 전시회 일정, 무역 전시회, 플라스틱 전시회, ICS 캘린더": [
+   "exhibition calendar, trade show schedule 2027, international trade shows, KOPLAS 2027, CHINAPLAS 2027, NPE 2027, CES 2027, Canton Fair 2027, Hannover Messe 2027, MWC 2027, CMEF 2027, BIO USA 2027, NAB Show 2027, RSAC 2027, SEMICON West 2027, COSMOPROF 2027, GITEX 2026, Automotive World 2027, NRA Show 2027, FEIPLASTIC 2027, COEX, KINTEX, BEXCO, overseas trade shows, plastics exhibitions, ICS calendar",
+   "展会日程, 2027 展会, 国际展会日历, KOPLAS 2027, 中国国际塑料橡胶展 2027, NPE 2027, CES 2027, 广交会 2027, 汉诺威工业博览会 2027, MWC 2027, CMEF 2027, BIO USA 2027, NAB Show 2027, RSAC 2027, SEMICON West 2027, 博洛尼亚美容展 2027, GITEX 2026, 东京汽车技术展 2027, NRA Show 2027, FEIPLASTIC 2027, 海外展会, 塑料展会, ICS 日历",
+   "展示会日程, 2027 展示会, 国際展示会カレンダー, KOPLAS 2027, CHINAPLAS 2027, NPE 2027, CES 2027, 広州交易会 2027, ハノーバーメッセ 2027, MWC 2027, CMEF 2027, BIO USA 2027, NAB Show 2027, RSAC 2027, SEMICON West 2027, コスモプロフ 2027, GITEX 2026, オートモーティブワールド 2027, NRA Show 2027, FEIPLASTIC 2027, 海外展示会, プラスチック展示会, ICS カレンダー"
+  ],
+  "전시회 일정, 2027 전시회, 국제 전시회 캘린더, KOPLAS 2027, 차이나플라스 2027, NPE 2027, CES 2027, 캔톤페어 2027, 하노버 메세 2027, MWC 2027, 코엑스 전시회, 킨텍스 전시회, 벡스코 전시회, 해외 전시회 일정, 무역 전시회, 플라스틱 전시회, ICS 캘린더": [
+   "exhibition calendar, trade show calendar 2027, KOPLAS 2027, CHINAPLAS 2027, NPE 2027, CES 2027, Canton Fair 2027, Hannover Messe 2027, MWC 2027, COEX, KINTEX, BEXCO, overseas trade shows, plastics show, ICS calendar",
+   "展会日历, 2027展会, 国际展会日历, KOPLAS 2027, CHINAPLAS 2027, NPE 2027, CES 2027, 广交会 2027, 汉诺威工业博览会 2027, MWC 2027, COEX, KINTEX, BEXCO, 海外展会, 贸易展会, 塑料展, ICS日历",
+   "展示会カレンダー, 2027年 展示会, 国際展示会カレンダー, KOPLAS 2027, CHINAPLAS 2027, NPE 2027, CES 2027, 広州交易会 2027, ハノーバーメッセ 2027, MWC 2027, COEX, KINTEX, BEXCO, 海外展示会, 貿易展, プラスチック展, ICSカレンダー"
+  ],
+  "전시회 캘린더 도구": [
+   "Exhibition calendar tool",
+   "展会日历工具",
+   "展示会カレンダーツール"
+  ],
+  "전압·플러그": [
+   "Voltage & plugs",
+   "电压与插头",
+   "電圧・プラグ"
+  ],
+  "전일": [
+   "prev. day",
+   "前一日",
+   "前日"
+  ],
+  "전일 고시 대비": [
+   "vs previous fixing",
+   "较前一日公布价",
+   "前日公示比"
+  ],
+  "전일 종가 대비": [
+   "vs previous close",
+   "较前收盘",
+   "前日終値比"
+  ],
+  "전주": [
+   "last week",
+   "上周",
+   "先週"
+  ],
+  "전주 대비": [
+   "vs last week",
+   "较上周",
+   "前週比"
+  ],
+  "전체": [
+   "All",
+   "全部",
+   "すべて"
+  ],
+  "전체 리포트 목록": [
+   "All reports",
+   "全部报道",
+   "全レポート"
+  ],
+  "전체 보기": [
+   "View all",
+   "查看全部",
+   "すべて見る"
+  ],
+  "전체 보기 →": [
+   "View all →",
+   "查看全部 →",
+   "すべて見る →"
+  ],
+  "접대·저녁 식사": [
+   "client dinners",
+   "招待·晚餐",
+   "接待・夕食"
+  ],
+  "정밀 신용조회 (유료)": [
+   "Paid credit reports",
+   "付费信用报告",
+   "有料の信用調査"
+  ],
+  "정산 결과": [
+   "Settlement",
+   "结算结果",
+   "精算結果"
+  ],
+  "정산 내역 복사": [
+   "Copy the settlement",
+   "复制结算明细",
+   "精算明細をコピー"
+  ],
+  "정정·반론 요청": [
+   "Request a correction",
+   "更正·反驳请求",
+   "訂正・反論の依頼"
+  ],
+  "제보 보내기": [
+   "Send a tip",
+   "发送线索",
+   "情報を送る"
+  ],
+  "제보/협찬": [
+   "Tips & sponsorship",
+   "线索·赞助",
+   "情報提供・協賛"
+  ],
+  "제보하기": [
+   "Send a tip",
+   "提供线索",
+   "情報提供"
+  ],
+  "제품": [
+   "Product",
+   "产品",
+   "製品"
+  ],
+  "조달 물품·단가 사이트": [
+   "Procurement item and pricing sites",
+   "采购物品·单价网站",
+   "調達物品・単価サイト"
+  ],
+  "조달·단가 사이트": [
+   "Procurement and pricing sites",
+   "采购·单价查询网站",
+   "調達・単価サイト"
+  ],
+  "종": [
+   "",
+   "",
+   ""
+  ],
+  "주간": [
+   "Weekly",
+   "周",
+   "週次"
+  ],
+  "주간 브리핑": [
+   "Weekly brief",
+   "每周简报",
+   "週刊ブリーフ"
+  ],
+  "주간 브리핑 구독": [
+   "Subscribe to the weekly brief",
+   "订阅每周简报",
+   "週刊ブリーフを購読"
+  ],
+  "주류·담배": [
+   "Alcohol & tobacco",
+   "烟酒",
+   "酒・たばこ"
+  ],
+  "주소의 id가 정확한지 확인해 주세요. 아래 최신 리포트에서 이어서 읽을 수 있습니다.": [
+   "Check the id in the address. You can continue with the latest reports below.",
+   "请确认地址中的 id 是否正确。可在下方最新报道中继续阅读。",
+   "アドレスの id をご確認ください。下の最新レポートから続けて読めます。"
+  ],
+  "주최 측 사정으로 일정이 바뀔 수 있으니, 항공·숙소를 잡기 전에 공식 사이트에서 한 번 더 확인하세요.": [
+   "Organisers can change dates, so check the official site once more before booking flights or hotels.",
+   "主办方可能变更日程，预订机票和住宿前请再在官方网站确认一次。",
+   "主催者の都合で日程が変わる可能性があるため、航空券や宿泊の手配前に公式サイトでもう一度ご確認ください。"
+  ],
+  "주최사 공식 사이트에서 확인한 2026년 12월~2027년 11월 전시회 38건. 월별 캘린더·국가·산업별 필터·구글 캘린더와 ICS 내보내기.": [
+   "38 shows from December 2026 to November 2027, verified on organiser sites. Calendar, filters, Google Calendar and ICS export.",
+   "已核对主办方官网的2026年12月至2027年11月38场展会。月历、国家与行业筛选、Google日历与ICS导出。",
+   "主催者の公式サイトで確認した2026年12月〜2027年11月の展示会38件。月別カレンダー、絞り込み、Googleカレンダー・ICS書き出し。"
+  ],
+  "주최사 공식 사이트와 KOTRA 글로벌 전시 플랫폼(GEP)에서 확인한 2026년 12월~2027년 11월 전시회 61건. 월별 캘린더·국가·산업별 필터·구글 캘린더와 ICS 내보내기.": [
+   "61 shows from December 2026 to November 2027, checked on organiser sites and KOTRA's GEP. Monthly calendar, country and sector filters, Google Calendar and ICS export.",
+   "经主办方官网与KOTRA GEP核对的2026年12月至2027年11月共61场展会。月历、国家与行业筛选、Google日历与ICS导出。",
+   "主催者公式サイトとKOTRA GEPで確認した2026年12月〜2027年11月の展示会61件。月別カレンダー、国・分野フィルター、Googleカレンダー・ICS書き出し。"
+  ],
+  "주최사 공식 일정만": [
+   "Official dates only",
+   "仅收录官方日程",
+   "主催者の公式日程のみ"
+  ],
+  "주최사 공지와 GEP 표기가 다를 때는 주최사 기준으로 적고 차이를 ‘참고’에 남겼습니다. 예를 들어 BIO International Convention 2027은 주최사 공지로는 6월 10일까지입니다.": [
+   "Where the organiser and GEP differ, we follow the organiser and note the difference. BIO International Convention 2027, for example, runs to June 10 in the organiser's announcement.",
+   "主办方公告与GEP不一致时，以主办方为准，并在「备注」中说明差异。例如 BIO International Convention 2027 按主办方公告至6月10日。",
+   "主催者の告知とGEPの表記が異なる場合は主催者を基準にし、違いは「備考」に残しました。例えば BIO International Convention 2027 は主催者の告知では6月10日までです。"
+  ],
+  "중국": [
+   "China",
+   "中国",
+   "中国"
+  ],
+  "중국 2027년 설 연휴는 2월 5일~13일(9일)이고 1월 31일·2월 14일은 일요일 근무일입니다. 일본은 3월 22일이 대체휴일이며, 미국은 6월 18일·7월 5일·12월 24일이 대체일입니다.": [
+   "China’s 2027 Spring Festival runs 5–13 February (nine days), with 31 January and 14 February as working Sundays. Japan observes 22 March as a substitute holiday; the US moves Juneteenth to 18 June, Independence Day to 5 July and Christmas to 24 December.",
+   "中国2027年春节假期为2月5日至13日（9天），1月31日、2月14日为调休上班日。日本3月22日为补休，美国将六月节、独立日、圣诞节分别调至6月18日、7月5日、12月24日。",
+   "中国の2027年春節は2月5日〜13日（9日間）で、1月31日と2月14日は日曜出勤日です。日本は3月22日が振替休日、米国は6月18日・7月5日・12月24日が振替日です。"
+  ],
+  "중국 3대 선물거래소, SCFI·CCFI, 유가·금속·석유화학·농산품·에너지 원료, 재생원자재(폐플라스틱·폐지·폐금속 월간 공시), 국내 물가지표, 석유화학·철강/비철·농산품·에너지 계통도와 원단위 표. 공개 출처로": [
+   "China futures, SCFI·CCFI, metals, petrochemicals, grains and energy, with source and date on every quote.",
+   "中国期货、SCFI·CCFI、金属、石化、农产品与能源，每项标注来源与日期。",
+   "中国先物、SCFI・CCFI、金属、石油化学、農産物、エネルギー。出所と基準日を明記。"
+  ],
+  "중국 선물·SCFI·재생원자재 월간 공시·석유화학·철강/비철·농산품·에너지 계통도·원단위 90품목 검색. 기준일·출처 표기.": [
+   "China futures, SCFI, petrochemicals, steel and metals, grains and energy — with date and source on every number.",
+   "中国期货、SCFI、石化、钢铁与金属、农产品与能源，数字均标日期与来源。",
+   "中国先物、SCFI、石油化学、鉄鋼・非鉄、農産物、エネルギー。基準日と出所を表示。"
+  ],
+  "증명·인보이스": [
+   "Certificate & invoice",
+   "证明·发票",
+   "証明・インボイス"
+  ],
+  "지금 통장 잔액": [
+   "Balance in your account today",
+   "当前账户余额",
+   "今の口座残高"
+  ],
+  "지급 구분": [
+   "Pay grade",
+   "职级区分",
+   "支給区分"
+  ],
+  "지난 주": [
+   "Last week",
+   "上周",
+   "先週"
+  ],
+  "지난주": [
+   "last week",
+   "上周",
+   "先週"
+  ],
+  "직접 수정": [
+   "editable",
+   "可修改",
+   "編集可"
+  ],
+  "참고 환율": [
+   "Reference FX rate",
+   "参考汇率",
+   "参考為替"
+  ],
+  "창업·지원·실적": [
+   "Startup, grants, results",
+   "创业·扶持·业绩",
+   "創業・支援・実績"
+  ],
+  "철강": [
+   "Steel",
+   "钢铁",
+   "鉄鋼"
+  ],
+  "청구 가능 비율": [
+   "Billable ratio",
+   "可计费比例",
+   "請求可能比率"
+  ],
+  "청구 가능 시간": [
+   "Billable hours",
+   "可计费工时",
+   "請求可能時間"
+  ],
+  "초기화": [
+   "Reset",
+   "重置",
+   "リセット"
+  ],
+  "총 도착원가": [
+   "Total landed cost",
+   "总到岸成本",
+   "総着荷コスト"
+  ],
+  "총비용": [
+   "Total cost",
+   "总成本",
+   "総費用"
+  ],
+  "총액": [
+   "Total",
+   "总额",
+   "総額"
+  ],
+  "최근 1개월": [
+   "Last month",
+   "近1个月",
+   "直近1か月"
+  ],
+  "최근 1년": [
+   "Last year",
+   "近1年",
+   "直近1年"
+  ],
+  "최근 3개월": [
+   "Last 3 months",
+   "近3个月",
+   "直近3か月"
+  ],
+  "최소 단가 × 소요시간": [
+   "Minimum rate × hours",
+   "最低单价 × 工时",
+   "最低単価 × 所要時間"
+  ],
+  "최소 시간당 단가": [
+   "Minimum hourly rate",
+   "最低时薪报价",
+   "最低時間単価"
+  ],
+  "최소 시간당 단가 = 월 필요 매출 ÷ 월 청구 가능 시간": [
+   "Minimum hourly rate = revenue needed ÷ billable hours",
+   "最低时薪 = 所需营收 ÷ 可计费工时",
+   "最低時間単価 = 必要売上 ÷ 請求可能時間"
+  ],
+  "최신": [
+   "Latest",
+   "最新",
+   "最新"
+  ],
+  "최신 리포트": [
+   "Latest reports",
+   "最新报道",
+   "最新レポート"
+  ],
+  "최신 회차 당첨번호와 전 회차 통계로 1~5게임 한 번에. 고정수·제외수 반영, 원터치 복사, 역대 1~5등 대조.": [
+   "1–5 plays at a time with real game rules and exact odds. Lock numbers, one-tap copy.",
+   "一次 1–5 注，附官方玩法与中奖概率。可固定号码、一键复制。",
+   "1〜5口をまとめて。公式ルールと当せん確率つき。固定数字・ワンタップコピー。"
+  ],
+  "최저 잔액": [
+   "Lowest balance",
+   "最低余额",
+   "最低残高"
+  ],
+  "최종 확인 2026-11-24": [
+   "Checked 2026-11-24",
+   "最后确认 2026-11-24",
+   "最終確認 2026-11-24"
+  ],
+  "추가로 넣을 말": [
+   "Anything else to add",
+   "补充说明",
+   "追加で伝えたいこと"
+  ],
+  "추세": [
+   "trend",
+   "走势",
+   "推移"
+  ],
+  "추천 목록 보기 →": [
+   "View recommendations →",
+   "查看推荐列表 →",
+   "おすすめ一覧を見る →"
+  ],
+  "추천 상품·용품": [
+   "Recommended products",
+   "推荐商品·用品",
+   "おすすめ商品"
+  ],
+  "추천 상품·용품 (쿠팡 파트너스)": [
+   "Recommended products (Coupang Partners)",
+   "推荐商品·用品（Coupang Partners）",
+   "おすすめ商品・用品（Coupang Partners）"
+  ],
+  "출발 전 확인": [
+   "before departure",
+   "出发前确认",
+   "出発前の確認"
+  ],
+  "출장 일수": [
+   "Trip days",
+   "出差天数",
+   "出張日数"
+  ],
+  "출장 준비 체크리스트": [
+   "Trip preparation checklist",
+   "出差准备清单",
+   "出張準備チェックリスト"
+  ],
+  "출장 허브": [
+   "Trip hub",
+   "出差助手",
+   "出張ハブ"
+  ],
+  "출장비 정산 · 면세 · 전압 · 단위 · 예약": [
+   "settlement · duty-free · voltage · units",
+   "差旅费结算·免税·电压·单位",
+   "精算・免税・電圧・単位・予約"
+  ],
+  "출장지": [
+   "Destination",
+   "出差地",
+   "出張先"
+  ],
+  "출장지 13곳 정산": [
+   "13 destinations",
+   "13 个出差城市",
+   "13都市の精算"
+  ],
+  "출장지 기준": [
+   "for this destination",
+   "按出差地",
+   "出張先ごと"
+  ],
+  "출장지와 일정": [
+   "Destination and dates",
+   "出差地与日程",
+   "出張先と日程"
+  ],
+  "출처": [
+   "Source",
+   "来源",
+   "出典"
+  ],
+  "출처 · 기준일": [
+   "Source · as of",
+   "来源 · 基准日",
+   "出典・基準日"
+  ],
+  "출처:": [
+   "Source:",
+   "来源：",
+   "出典："
+  ],
+  "카카오톡 오픈채팅": [
+   "KakaoTalk Open Chat",
+   "KakaoTalk 开放聊天",
+   "KakaoTalk オープンチャット"
+  ],
+  "카카오톡 오픈채팅 · 텔레그램": [
+   "KakaoTalk Open Chat · Telegram",
+   "KakaoTalk 开放聊天 · Telegram",
+   "KakaoTalk オープンチャット・Telegram"
+  ],
+  "카카오톡 오픈채팅 — 인사이트브리핑": [
+   "KakaoTalk Open Chat — Insight Briefing",
+   "KakaoTalk 开放聊天 — Insight Briefing",
+   "KakaoTalk オープンチャット — Insight Briefing"
+  ],
+  "큰 거래·선금 지급 전": [
+   "before a big order or a deposit",
+   "大额交易·预付前",
+   "大口・前払いの前に"
+  ],
+  "키워드·경력": [
+   "Keywords & career",
+   "关键词·经历",
+   "キーワード・経歴"
+  ],
+  "키워드로 검색": [
+   "Search by keyword",
+   "输入关键词搜索",
+   "キーワードで検索"
+  ],
+  "탐사보도": [
+   "Investigation",
+   "调查报道",
+   "調査報道"
+  ],
+  "텔레그램": [
+   "Telegram",
+   "Telegram",
+   "Telegram"
+  ],
+  "텔레그램 채널": [
+   "Telegram channel",
+   "Telegram 频道",
+   "Telegram チャンネル"
+  ],
+  "텔레그램 채널 — blockbrief_kr": [
+   "Telegram channel — blockbrief_kr",
+   "Telegram 频道 — blockbrief_kr",
+   "Telegram チャンネル — blockbrief_kr"
+  ],
+  "통관비": [
+   "Customs clearance",
+   "清关费",
+   "通関費"
+  ],
+  "통화": [
+   "Currency",
+   "货币",
+   "通貨"
+  ],
+  "판매 단가": [
+   "Unit price",
+   "销售单价",
+   "販売単価"
+  ],
+  "판매 단가 − 변동비": [
+   "Price − variable cost",
+   "单价 − 变动成本",
+   "販売単価 − 変動費"
+  ],
+  "판매량": [
+   "Units sold",
+   "销量",
+   "販売量"
+  ],
+  "판매량 × 단가": [
+   "Units × price",
+   "销量 × 单价",
+   "販売量 × 単価"
+  ],
+  "팩트체크 & 출처": [
+   "Fact check & sources",
+   "事实核查与来源",
+   "ファクトチェックと出典"
+  ],
+  "편 · 최신순": [
+   "reports · newest first",
+   "篇 · 最新优先",
+   "本・新着順"
+  ],
+  "편집 독립성": [
+   "Editorial independence",
+   "编辑独立性",
+   "編集の独立性"
+  ],
+  "편집실": [
+   "Editorial Desk",
+   "编辑部",
+   "編集部"
+  ],
+  "평균": [
+   "average",
+   "平均",
+   "平均"
+  ],
+  "평일 기준": [
+   "Weekdays",
+   "按工作日",
+   "平日基準"
+  ],
+  "포인트": [
+   "pts",
+   "点",
+   "ポイント"
+  ],
+  "포털·휴무일": [
+   "Portals & holidays",
+   "企业门户·休市",
+   "ポータル・休業日"
+  ],
+  "포함": [
+   "included",
+   "包含",
+   "含む"
+  ],
+  "표지 이미지": [
+   "cover image",
+   "封面图",
+   "表紙画像"
+  ],
+  "품목": [
+   "Item",
+   "品种",
+   "品目"
+  ],
+  "품목 구분 범례": [
+   "Legend",
+   "图例",
+   "凡例"
+  ],
+  "품목·원료 검색": [
+   "Search item or feedstock",
+   "搜索品种·原料",
+   "品目・原料を検索"
+  ],
+  "프로젝트 견적 = 시간당 단가 × 소요시간": [
+   "Project quote = hourly rate × hours",
+   "项目报价 = 时薪 × 所需工时",
+   "案件見積 = 時間単価 × 所要時間"
+  ],
+  "프로젝트 소요시간": [
+   "Project hours",
+   "项目所需工时",
+   "案件の所要時間"
+  ],
+  "프로젝트 하한 견적": [
+   "Project floor quote",
+   "项目报价下限",
+   "案件の下限見積"
+  ],
+  "필요 매출": [
+   "Revenue required",
+   "所需营收",
+   "必要売上"
+  ],
+  "하루 벌이": [
+   "Daily earnings",
+   "每日收入",
+   "1 日の売上"
+  ],
+  "한 달 기준 — 목표 순이익과 간접비를 세금·수수료 위에 얹은 구조입니다.": [
+   "Monthly view — the target net profit and overhead are stacked on top of tax and fees.",
+   "以月为单位 — 在税费之上叠加目标净利润与间接费用。",
+   "1 か月ベース — 目標純利益と間接費を税金・手数料の上に積み上げた構造です。"
+  ],
+  "한국": [
+   "Korea",
+   "韩国",
+   "韓国"
+  ],
+  "한국·중국·일본·미국": [
+   "Korea · China · Japan · US",
+   "韩国·中国·日本·美国",
+   "韓国・中国・日本・米国"
+  ],
+  "한국어·영어·중국어·일본어": [
+   "Korean, English, Chinese, Japanese",
+   "韩语·英语·中文·日语",
+   "韓国語・英語・中国語・日本語"
+  ],
+  "한국은 220V 60Hz C·F형입니다. 110V 기기는 변압기가 필요합니다.": [
+   "Korea runs 220V 60Hz with type C and F. Appliances built for 110V need a transformer.",
+   "韩国为 220V 60Hz，C、F 型插头。110V 电器需变压器。",
+   "韓国は220V 60Hz、C・F型です。110V機器には変圧器が必要です。"
+  ],
+  "합계": [
+   "Total",
+   "合计",
+   "合計"
+  ],
+  "합계·CSV": [
+   "Totals & CSV",
+   "合计·CSV",
+   "合計・CSV"
+  ],
+  "합성수지": [
+   "Synthetic resins",
+   "合成树脂",
+   "合成樹脂"
+  ],
+  "합의·동의·추천": [
+   "Agreement, consent, reference",
+   "协议·同意·推荐",
+   "合意・同意・推薦"
+  ],
+  "항공·호텔·맛집 바로가기": [
+   "Flights, hotels and restaurants",
+   "机票·酒店·餐厅直达",
+   "航空・ホテル・飲食店リンク"
+  ],
+  "항공권 검색": [
+   "Flight search",
+   "机票搜索",
+   "航空券検索"
+  ],
+  "항공운임": [
+   "Airfare",
+   "机票",
+   "航空運賃"
+  ],
+  "항목": [
+   "Item",
+   "项目",
+   "項目"
+  ],
+  "해운": [
+   "Shipping",
+   "海运",
+   "海運"
+  ],
+  "핵심 요약": [
+   "Key points",
+   "核心摘要",
+   "要点まとめ"
+  ],
+  "핵심 지표 추세": [
+   "Key indicator trends",
+   "核心指标走势",
+   "主要指標の推移"
+  ],
+  "현금 · 매출 · 비용": [
+   "Cash · revenue · costs",
+   "现金·营收·成本",
+   "現金・売上・費用"
+  ],
+  "현금 잔액": [
+   "Cash balance",
+   "现金余额",
+   "現金残高"
+  ],
+  "현재": [
+   "Current",
+   "当前",
+   "現在"
+  ],
+  "현지 교통·기타": [
+   "Local transport & other",
+   "当地交通及其他",
+   "現地交通・その他"
+  ],
+  "호텔 검색": [
+   "Hotel search",
+   "酒店搜索",
+   "ホテル検索"
+  ],
+  "혼자 사업하면 서식 만들고, 마진 따지고, 관부가세 계산하고, 계약서 쓰고, 수출 서류 만들고, 자금 흐름까지 챙기는 일이 전부 내 몫입니다. 이 페이지는 그 여섯 가지를 탭 여섯 개로 묶었습니다. 견적서·거래명세서는 A4 인쇄·PDF로, 마진과 부가세는 숫자만 넣으면 바로, 수입 원가는 관세와 부가세까지, 계약서·내용증명은 복사해서 바로 쓸 수 있는 초안으로, 무역서식(PI·CI·PL)은 영문 A4 한 장으로 나옵니다. 마지막 탭에는 원가·자금 계산기 4종을 담았습니다. 회원가입 없이, 입력한 값은 브라우저 밖으로 나가지 않습니다.": [
+   "When you run a business alone, the forms, the margin math, the customs and tax bill, the contracts, the export paperwork and the cash flow are all yours. This page puts those six jobs into six tabs. Quotations and statements print straight to A4 or PDF; margin and VAT take only numbers; import cost runs through duty and VAT; contracts and demand letters come out as copy-ready drafts; and trade forms (PI, CI, PL) come out as one English A4 page. The last tab holds four cost and cash calculators. No sign-up, and nothing you type leaves your browser.",
+   "一个人做生意，单据、毛利、关税与增值税、合同、出口文件、资金流都得自己扛。这一页把六件事分成六个标签页：报价单与交易明细可直接打印 A4 或存 PDF；毛利与增值税只需输入数字；进口成本一路算到关税和增值税；合同与催款函可直接复制起草；贸易单据（PI、CI、PL）输出一页英文 A4。最后一个标签页放了四款成本与资金计算器。无需注册，输入的数据不会离开浏览器。",
+   "一人で事業をしていると、書式づくり、粗利の計算、関税と付加価値税、契約書、輸出書類、資金繰りまで全部自分の仕事です。このページはその 6 つを 6 つのタブにまとめました。見積書・取引明細は A4 印刷・PDF、粗利と付加価値税は数字を入れるだけ、輸入コストは関税と付加価値税まで、契約書・内容証明はコピーして使える草案、貿易書式（PI・CI・PL）は英文 A4 一枚で出ます。最後のタブにはコスト・資金の計算ツールを 4 つ用意しました。会員登録は不要で、入力した値はブラウザの外に出ません。"
+  ],
+  "화면에 표시": [
+   "Shown on screen",
+   "在画面显示",
+   "画面に表示"
+  ],
+  "화씨(℉)는 (℉−32)×5/9로 섭씨가 됩니다. 아래 표의 값을 직접 넣어 보세요.": [
+   "Fahrenheit converts as (℉ − 32) × 5/9. Try any value from the table above.",
+   "华氏度换算为（℉−32）×5/9，可用上表数值试算。",
+   "華氏は（℉−32）×5/9で摂氏になります。上の表の値で試してみてください。"
+  ],
+  "환율": [
+   "Exchange rate",
+   "汇率",
+   "為替"
+  ],
+  "환율 기본값은 2026-11-20 서울외환시장 종가(원·달러 1,330.8)입니다. 부가세는 매입세액 공제로 돌려받는 돈이라 실질 원가에서 뺐습니다. CIF 단가는 운임·보험료가 단가에 포함된 조건이므로 운임·보험료 입력칸이 잠깁니다. 실제 세율은 HS코드·원산지증명(FTA)·할당관세에 따라 달라지니 관세사 확인값을 넣으세요.": [
+   "The default exchange rate is the Seoul FX market close on 20 November 2026 (KRW/USD 1,330.8). Import VAT is money you recover as input VAT, so it is excluded from the net cost. Under CIF the freight and insurance are already inside the unit price, so those fields lock. Real rates depend on the HS code, a certificate of origin (FTA) and tariff quotas — enter the figure your customs broker confirms.",
+   "默认汇率为 2026 年 11 月 20 日首尔外汇市场收盘价（韩元兑美元 1,330.8）。进口增值税可作为进项税额抵扣，因此已从实际成本中扣除。CIF 单价已包含运费与保险费，因此相关输入框会锁定。实际税率随 HS 编码、原产地证明（FTA）与关税配额而异，请填入报关行确认的数值。",
+   "既定の為替レートは 2026 年 11 月 20 日のソウル外国為替市場の終値（ウォン・ドル 1,330.8）です。輸入付加価値税は仕入税額控除で戻るお金なので実質コストから除きました。CIF 単価は運賃・保険料が単価に含まれる条件のため、運賃・保険料の入力欄はロックされます。実際の税率は HS コード・原産地証明（FTA）・関税割当により異なるので、通関士が確認した値を入れてください。"
+  ],
+  "환율·금리": [
+   "FX & rates",
+   "汇率·利率",
+   "為替・金利"
+  ],
+  "회사": [
+   "Your company",
+   "公司",
+   "会社名"
+  ],
+  "회신 기한": [
+   "Reply by",
+   "回复期限",
+   "返信期限"
+  ],
+  "회원가입 없음": [
+   "No sign-up",
+   "无需注册",
+   "会員登録不要"
+  ],
+  "휴무 6주 전에 움직이세요": [
+   "move six weeks before a holiday",
+   "休市前 6 周动手",
+   "休みの6週間前に動く"
+  ],
+  "휴무 기간과 공장 조기 휴무를 감안한 권장 일정입니다. 실제 마감은 포워더·선사에 확인하세요.": [
+   "Suggested schedule allowing for the holiday and early factory closures. Confirm the real cut-off with your forwarder or carrier.",
+   "考虑休市与工厂提前放假的建议日程。实际截止日请与货代、船公司确认。",
+   "休業期間と工場の早期休みを考慮した推奨日程です。実際の締切はフォワーダー・船社にご確認ください。"
+  ],
+  "보험 계산기 3종": [
+   "Three insurance calculators",
+   "保险计算器三合一",
+   "保険計算機3種"
+  ],
+  "실손 4·5세대 전환 · 청구 서류 · 자차 vs 자비": [
+   "4th/5th-gen indemnity switch · claim documents · own damage vs cash",
+   "实损第四·五代转换 · 理赔材料 · 车损险与自费",
+   "実損の第4・5世代切替 · 請求書類 · 車両保険と自費"
+  ],
+  "실손 유지 vs 4세대 vs 5세대 전환": [
+   "Keep your plan vs 4th vs 5th generation",
+   "实损：维持 vs 第四代 vs 第五代转换",
+   "実損：維持 vs 第4世代 vs 第5世代"
+  ],
+  "실손·자동차보험 청구 서류 체크리스트": [
+   "Indemnity and car insurance claim checklist",
+   "实损·汽车保险理赔材料清单",
+   "実損・自動車保険の請求書類チェックリスト"
+  ],
+  "자차 처리 vs 자비 처리": [
+   "Own-damage claim vs paying yourself",
+   "车损险 vs 自费修理",
+   "車両保険 vs 自費修理"
+  ],
+  "2026년 5월 6일 5세대 실손 출시 — 4세대 신규 가입·전환은 끝났습니다": [
+   "The 5th-generation plan arrived on 6 May 2026 — new 4th-generation sign-ups and switches have ended",
+   "2026年5月6日第五代实损上市 — 第四代新保与转换已结束",
+   "2026年5月6日 第5世代実損が発売 — 第4世代の新規加入・切替は終了"
+  ],
+  "A. 지금 가진 계약": [
+   "A. Your current policy",
+   "A. 现有保单",
+   "A. 現在の契約"
+  ],
+  "B. 4세대": [
+   "B. 4th generation",
+   "B. 第四代",
+   "B. 第4世代"
+  ],
+  "C. 5세대": [
+   "C. 5th generation",
+   "C. 第五代",
+   "C. 第5世代"
+  ],
+  "D. 연간 의료비": [
+   "D. Annual medical costs",
+   "D. 年度医疗费",
+   "D. 年間医療費"
+  ],
+  "내 계약과 의료비 입력": [
+   "Your policy and medical costs",
+   "输入保单与医疗费",
+   "契約と医療費の入力"
+  ],
+  "연간 총지출 비교": [
+   "Annual cost comparison",
+   "年度总支出比较",
+   "年間総支出の比較"
+  ],
+  "상황 선택": [
+   "Choose your situation",
+   "选择情形",
+   "状況を選ぶ"
+  ],
+  "사고 조건 입력": [
+   "Accident details",
+   "输入事故条件",
+   "事故条件の入力"
+  ],
+  "3년 총비용 비교": [
+   "Three-year cost comparison",
+   "三年总费用比较",
+   "3年総費用の比較"
+  ],
+  "참고용 시뮬레이터입니다": [
+   "This is a reference simulator",
+   "仅供参考的模拟器",
+   "参考用シミュレーターです"
+  ],
+  "공식 기준에 따른 참고용 시뮬레이터이며 개별 보험 모집·설계·약관 유권해석을 대신하지 않습니다. 정확한 조건은 가입 보험사 약관·고객센터를 통해 확인하세요.": [
+   "A reference simulator built on official criteria. It does not replace individual sales advice, plan design or an authoritative reading of policy terms. Check your own insurer's policy and help desk for the exact conditions.",
+   "本模拟器依据官方标准制作，仅供参考，不能代替个别保险的销售、设计或条款解释。具体条件请以所投保公司的条款和客服确认为准。",
+   "本シミュレーターは公的基準に基づく参考用であり、個別の保険募集・設計・約款の解釈に代わるものではありません。正確な条件は加入先の保険会社の約款・窓口でご確認ください。"
+  ],
+  "실손 전환 손익": [
+   "Switch gain or loss",
+   "转换损益",
+   "切替損益"
+  ],
+  "청구 서류 체크리스트": [
+   "Claim checklist",
+   "理赔材料清单",
+   "請求書類チェック"
+  ],
+  "자차 vs 자비": [
+   "Own damage vs cash",
+   "车损险 vs 自费",
+   "車両保険 vs 自費"
+  ],
+  "원무과·접수 창구에 이렇게 말하세요": [
+   "Say this at the hospital desk",
+   "请对医院窗口这样说",
+   "病院窓口ではこう伝えてください"
+  ],
+  "놓치기 쉬운 것": [
+   "Easy to miss",
+   "容易遗漏",
+   "見落としやすい点"
+  ],
+  "체크리스트 전체 복사": [
+   "Copy the whole checklist",
+   "复制全部清单",
+   "チェックリストをすべてコピー"
+  ],
+  "인쇄하기": [
+   "Print",
+   "打印",
+   "印刷する"
+  ],
+  "체크 초기화": [
+   "Clear checks",
+   "清除勾选",
+   "チェックを初期化"
+  ],
+  "계산에 넣은 것과 넣지 않은 것": [
+   "What is included and what is not",
+   "计算包含与未包含的内容",
+   "計算に含めたもの・含めていないもの"
+  ],
+  "할증은 이렇게 정해집니다": [
+   "How the surcharge is determined",
+   "加收是如何确定的",
+   "増額の決まり方"
+  ],
+  "실손 1~5세대 자기부담 한눈에": [
+   "Indemnity deductibles by generation (1–5)",
+   "实损第1~5代自付一览",
+   "実損 第1〜5世代の自己負担一覧"
+  ],
+  "근거 자료": [
+   "Sources",
+   "依据资料",
+   "根拠資料"
+  ],
+  "4세대 비급여 보험료 유지": [
+   "4th-gen non-covered premium unchanged",
+   "第四代非医保保费维持",
+   "第4世代 非保険料は据置"
+  ],
+  "5세대 비중증 보험료 유지": [
+   "5th-gen mild non-covered premium unchanged",
+   "第五代非重症非医保保费维持",
+   "第5世代 非重症非保険料は据置"
+  ],
+  "유지": [
+   "Keep",
+   "维持",
+   "維持"
+  ],
+  "초과": [
+   "above",
+   "超过",
+   "超"
+  ],
+  "급여 의료비": [
+   "Covered medical costs",
+   "医保医疗费",
+   "保険診療の医療費"
+  ],
+  "비급여 의료비": [
+   "Non-covered medical costs",
+   "非医保医疗费",
+   "保険外診療費"
+  ],
+  "급여 자기부담률": [
+   "Deductible rate on covered care",
+   "医保自付比例",
+   "保険診療の自己負担率"
+  ],
+  "비급여 자기부담률": [
+   "Deductible rate on non-covered care",
+   "非医保自付比例",
+   "保険外診療の自己負担率"
+  ],
+  "급여 자기부담금": [
+   "Deductible on covered care",
+   "医保自付额",
+   "保険診療の自己負担額"
+  ],
+  "비급여 자기부담금": [
+   "Deductible on non-covered care",
+   "非医保自付额",
+   "保険外診療の自己負担額"
+  ],
+  "그중 중증 비급여": [
+   "Severe non-covered, of which",
+   "其中重症非医保",
+   "うち重症の保険外"
+  ],
+  "그중 보장제외 항목": [
+   "Excluded items, of which",
+   "其中不保项目",
+   "うち保障対象外"
+  ],
+  "비급여 보험료 할인·할증": [
+   "Non-covered premium discount or surcharge",
+   "非医保保费折扣·加收",
+   "保険外保険料の割引・増額"
+  ],
+  "연간 받는 보험금": [
+   "Insurance payout per year",
+   "年度获赔金额",
+   "年間の保険金"
+  ],
+  "월 보험료": [
+   "Monthly premium",
+   "月保费",
+   "月額保険料"
+  ],
+  "연 보험료": [
+   "Annual premium",
+   "年保费",
+   "年間保険料"
+  ],
+  "연 총지출": [
+   "Annual total cost",
+   "年度总支出",
+   "年間総支出"
+  ],
+  "지금 월 보험료": [
+   "Current monthly premium",
+   "当前月保费",
+   "現在の月額保険料"
+  ],
+  "4세대 월 보험료 (총액)": [
+   "4th-gen monthly premium (total)",
+   "第四代月保费（合计）",
+   "第4世代の月額保険料（合計）"
+  ],
+  "5세대 월 보험료 (총액)": [
+   "5th-gen monthly premium (total)",
+   "第五代月保费（合计）",
+   "第5世代の月額保険料（合計）"
+  ],
+  "현재 실손 세대": [
+   "Your indemnity generation",
+   "当前实损代数",
+   "現在の実損世代"
+  ],
+  "수리비 (손해액)": [
+   "Repair cost (loss amount)",
+   "修理费（损失额）",
+   "修理費（損害額）"
+  ],
+  "자기부담금": [
+   "Deductible",
+   "自付额",
+   "自己負担金"
+  ],
+  "보험사 지급액": [
+   "Insurer payout",
+   "保险公司赔付额",
+   "保険会社の支払額"
+  ],
+  "3년 추가 보험료": [
+   "Extra premiums over three years",
+   "三年追加保费",
+   "3年の追加保険料"
+  ],
+  "할증 판정": [
+   "Surcharge decision",
+   "加收判定",
+   "増額の判定"
+  ],
+  "자차 처리 총비용": [
+   "Total cost of claiming",
+   "走车损险总费用",
+   "車両保険利用の総費用"
+  ],
+  "현재 연간 보험료": [
+   "Current annual premium",
+   "当前年保费",
+   "現在の年間保険料"
+  ],
+  "최소 자기부담금": [
+   "Minimum deductible",
+   "最低自付额",
+   "最低自己負担金"
+  ],
+  "최대 자기부담금": [
+   "Maximum deductible",
+   "最高自付额",
+   "最高自己負担金"
+  ],
+  "최근 3년 물적사고": [
+   "Property claims in the last 3 years",
+   "近三年物损事故",
+   "過去3年の物損事故"
+  ],
+  "가정 할증률 (연)": [
+   "Assumed surcharge rate (per year)",
+   "假设加收率（年）",
+   "想定増額率（年）"
+  ],
+  "그중 비급여 특약": [
+   "Of which non-covered rider",
+   "其中非医保特约",
+   "うち非保険特約"
+  ],
+  "그중 비중증 비급여 특약": [
+   "Of which mild non-covered rider",
+   "其中非重症非医保特约",
+   "うち非重症の非保険特約"
+  ],
+  "5세대 급여 자기부담률 가정": [
+   "Assumed 5th-gen covered-care deductible",
+   "第五代医保自付比例假设",
+   "第5世代 保険診療の自己負担率（想定）"
+  ],
+  "직전 1년 비급여 보험금 수령액": [
+   "Non-covered payout received in the past year",
+   "过去一年领取的非医保保险金",
+   "直近1年の非保険保険金"
+  ],
+  "영수금액대": [
+   "Amount band",
+   "金额区间",
+   "金額帯"
+  ],
+  "해당되는 것 (복수 선택)": [
+   "Applies to you (multiple)",
+   "适用项目（可多选）",
+   "該当するもの（複数可）"
+  ],
+  "자기부담률": [
+   "Deductible rate",
+   "自付比例",
+   "自己負担率"
+  ],
+  "물적사고 할증기준금액": [
+   "Property-claim surcharge threshold",
+   "物损加收基准金额",
+   "物損事故の増額基準額"
+  ],
+  "원": [
+   "won",
+   "韩元",
+   "ウォン"
+  ],
+  "비급여": [
+   "Non-covered care",
+   "非医保",
+   "保険外診療"
+  ],
+  "보험료만 보면 뒤 세대가 싸지만, 병원비를 쓰는 해에는 자기부담금과 비급여 보험료 할증이 붙습니다. 세 계약의 연간 실제 총지출(보험료 + 자기부담금)을 나란히 놓고 차액을 계산합니다.": [
+   "Later generations look cheaper on premium alone, but in a year with hospital bills you also pay deductibles and a surcharge on the non-covered premium. The three contracts are lined up by actual annual cost — premium plus deductible — and the gap is calculated.",
+   "只看保费时后一代更便宜，但产生医疗费的年份还要承担自付额和非医保保费加收。把三份合同的年度实际总支出（保费+自付额）并排比较并计算差额。",
+   "保険料だけを見れば後の世代が安いのですが、医療費を使う年には自己負担金と保険外診療の保険料増額が加わります。3つの契約の年間実質総支出（保険料＋自己負担金）を並べて差額を計算します。"
+  ],
+  "보험료 — 5세대는 4세대보다 약 30%, 1·2세대보다 50% 이상 낮습니다. 급여와 중증 비급여만 고르면 절반 수준까지 내려갑니다.": [
+   "Premium — the 5th generation is about 30% cheaper than the 4th and at least 50% cheaper than the 1st and 2nd. Covering only standard care and severe non-covered care can halve it.",
+   "保费 — 第五代比第四代低约30%，比第一、二代低50%以上。只投保医保给付和重症非医保时，保费可降到一半。",
+   "保険料 — 第5世代は第4世代より約30%、第1・2世代より50%以上安いです。保険診療と重症の保険外診療だけを選べば半分程度まで下がります。"
+  ],
+  "급여 — 입원은 20% 그대로, 통원은 건강보험 본인부담률과 연동해 20%보다 높아질 수 있습니다.": [
+   "Standard care — admission stays at 20%; outpatient care is linked to the national health insurance co-payment and can exceed 20%.",
+   "医保给付 — 住院仍为20%，门诊与国家医保自付率联动，可能高于20%。",
+   "保険診療 — 入院は20%のまま、通院は健康保険の本人負担率と連動して20%より高くなることがあります。"
+  ],
+  "5세대 급여 통원은 건강보험 본인부담률(의원 30%·병원 40%·상급종합 60%), 20%, 최소 1~2만원 중 큰 금액을 뺍니다. 통원이 많으면 30%보다 높게 잡으세요.": [
+   "For 5th-generation outpatient standard care the deductible is the largest of the national health insurance co-payment rate (30% at clinics, 40% at hospitals, 60% at tertiary hospitals), 20%, and the minimum 10,000–20,000 won. If you visit often, assume more than 30%.",
+   "第五代门诊医保给付取国家医保自付率（诊所30%·医院40%·上级综合60%）、20%、最低1~2万韩元中的较大值。门诊较多时请按高于30%估算。",
+   "第5世代の通院（保険診療）は、健康保険の本人負担率（医院30%・病院40%・上級総合60%）、20%、最低1〜2万ウォンのうち最も高い額を差し引きます。通院が多い場合は30%より高めに見てください。"
+  ],
+  "비급여 — 중증(산정특례 대상)은 자기부담 30%·연 5,000만원, 비중증은 자기부담 50%·연 1,000만원입니다.": [
+   "Non-covered care — severe cases (those under the special calculation scheme) have a 30% deductible and a 50 million won annual limit; mild cases have a 50% deductible and a 10 million won limit.",
+   "非医保 — 重症（适用算定特例）自付30%、年限额5,000万韩元；非重症自付50%、年限额1,000万韩元。",
+   "保険外診療 — 重症（算定特例の対象）は自己負担30%・年5,000万ウォン、非重症は自己負担50%・年1,000万ウォンです。"
+  ],
+  "보장 제외 — 도수치료·체외충격파·비급여 주사제·미등재 신의료기술은 비중증 특약에서 보장하지 않습니다.": [
+   "Excluded — manual therapy, extracorporeal shockwave, non-covered injections and unlisted new medical technology are not covered by the mild non-covered rider.",
+   "不保项目 — 徒手治疗、体外冲击波、非医保注射剂、未列入的新医疗技术，非重症特约不予承保。",
+   "保障対象外 — 度数治療・体外衝撃波・保険外注射剤・未登載の新医療技術は非重症特約では保障しません。"
+  ],
+  "무역서식 3종 한 묶음": [
+   "Three trade documents in one bundle",
+   "贸易单据 3 种，一组搞定",
+   "貿易書式 3 種をひとまとめ"
+  ],
+  "PI · CI · PL — 고르면 아래 A4 양식이 바로 바뀝니다": [
+   "PI · CI · PL — pick one and the A4 form below switches instantly",
+   "PI · CI · PL — 选择后下方 A4 表单立即切换",
+   "PI · CI · PL — 選ぶと下のA4書式がすぐ切り替わります"
+  ],
+  "무역서식 3종 — 서식 고르기": [
+   "Three trade documents — choose a form",
+   "贸易单据 3 种 — 选择表单",
+   "貿易書式 3 種 — 書式を選ぶ"
+  ],
+  "견적송장 — 가격·거래조건·은행 정보": [
+   "Quotation invoice — prices, terms and bank details",
+   "形式发票 — 价格、交易条件、银行信息",
+   "見積送り状 — 価格・取引条件・銀行情報"
+  ],
+  "상업송장 — 선적 물품 대금 청구": [
+   "Commercial invoice — billing for the shipped goods",
+   "商业发票 — 装运货物的货款结算",
+   "商業送り状 — 船積み品の代金請求"
+  ],
+  "포장명세서 — 카톤·중량·용적": [
+   "Packing list — cartons, weight and volume",
+   "装箱单 — 箱数、重量、体积",
+   "パッキングリスト — カートン・重量・容積"
+  ],
+  "세 서식은 조건이 이어집니다 — PI에서 잡은 거래 조건을 CI로, CI의 선적 내역을 PL로 그대로 넘겨 쓸 수 있습니다.": [
+   "The three forms follow one another: terms set in the PI carry into the CI, and the shipment details in the CI carry into the PL.",
+   "三份单据前后衔接：PI 中确定的条件延续到 CI，CI 的装运明细直接带入 PL。",
+   "3つの書式は条件がつながります。PIで決めた取引条件はCIへ、CIの船積み明細はPLへそのまま引き継げます。"
+  ],
+  "무역서식 3종 · 한 묶음": [
+   "Trade documents · 3 in one bundle",
+   "贸易单据 3 种 · 一组",
+   "貿易書式 3 種 · まとめ"
+  ],
+  "무역서식 3종 — 한 묶음": [
+   "Three trade documents — one bundle",
+   "贸易单据 3 种 — 一组",
+   "貿易書式 3 種 — まとめ"
+  ],
+  "수출입 서류 3종은 사업자 툴의 ⑤ 무역서식에서 영문 A4 한 장으로 만듭니다. 서식마다 그 서식 탭이 바로 열리고, 이 페이지의 B/L 서식과 품명·수량·금액을 그대로 맞춰 쓰면 됩니다.": [
+   "The three export and import documents are made as one-page English A4 forms in the business tools, tab ⑤ Trade documents. Each link opens its form directly; keep the description, quantity and amount the same as on the B/L forms on this page.",
+   "三种进出口单据可在「经营者工具」的 ⑤ 贸易单据中生成英文 A4 单页。点击链接即打开对应表单，品名、数量、金额请与本页的 B/L 表单保持一致。",
+   "輸出入書類3種は「事業者ツール」の⑤貿易書式で英文A4 1枚として作成できます。各リンクでその書式が直接開き、このページのB/L書式と品名・数量・金額を揃えてお使いください。"
+  ],
+  "견적송장": [
+   "Quotation invoice",
+   "形式发票",
+   "見積送り状"
+  ],
+  "상업송장": [
+   "Commercial invoice",
+   "商业发票",
+   "商業送り状"
+  ],
+  "포장명세서": [
+   "Packing list",
+   "装箱单",
+   "パッキングリスト"
+  ],
+  "PI(견적송장)": [
+   "PI (Proforma Invoice) ",
+   "PI（形式发票）",
+   "PI (見積請求書)"
+  ],
+  "CI(상업송장)": [
+   "CI (Commercial Invoice) ",
+   "CI（商业发票）",
+   "CI（商業請求書）"
+  ],
+  "PL(포장명세서)": [
+   "PL (packing list) ",
+   "PL（装箱单）",
+   "PL（梱包仕様書）"
+  ],
+  "아래 A4 양식이 바로 완성": [
+   "The A4 form below is completed instantly",
+   "下方的 A4 表格立即生成",
+   "下のA4フォームがすぐに完成"
+  ],
+  "되고, 인쇄 화면에서 PDF로 저장할 수 있습니다.": [
+   ", and you can save it as a PDF from the print screen.",
+   "，并可在打印界面保存为 PDF。",
+   "し、印刷画面からPDFとして保存できます。"
+  ],
+  "D. 계약전환 할인": [
+   "D. Switch discount",
+   "D. 转换折扣",
+   "D. 切替割引"
+  ],
+  "2026-11-23 시행": [
+   "in force 2026-11-23",
+   "2026-11-23 施行",
+   "2026-11-23 施行"
+  ],
+  "계약전환 3년 50% 할인 적용": [
+   "Apply the 3-year 50% switch discount",
+   "适用转换折扣（3年保费减半）",
+   "切替割引（3年間50%）を適用"
+  ],
+  "2026-11-23~2027-05-22 신청 시 5세대 보험료 50%를 3년간 할인": [
+   "Apply between 2026-11-23 and 2027-05-22: 50% off the 5th-generation premium for three years",
+   "2026-11-23~2027-05-22 申请，第五代保费三年减半",
+   "2026-11-23〜2027-05-22 の申請で第5世代保険料を3年間50%割引"
+  ],
+  "대상은 2013년 3월 이전에 가입한 1·2세대(재가입 조건 없음)입니다. 할인은 1~3년차 5세대 보험료에만 붙고 4년차부터는 전액을 냅니다. 같은 증권번호의 주계약·특약을 해지·감액하면 할인이 끝나고, 보험사별 시행일이 다릅니다(일부 2027-02-01).": [
+   "It applies to generation 1 and 2 policies taken out before March 2013 with no re-enrolment condition. The 50% comes off the 5th-generation premium in years 1–3 only; from year 4 you pay in full. Cancelling or reducing the main contract or a rider on the same policy number ends the discount, and start dates differ by insurer (some 2027-02-01).",
+   "仅限2013年3月以前投保且无重新投保条件的第1、2代保单。折扣仅适用于第1~3年的第五代保费，第4年起全额缴纳。同一保单号的主契约或特约解约、减额时折扣终止，各保险公司施行日期不同（部分为2027-02-01）。",
+   "対象は2013年3月以前に契約し、再契約条件のない第1・2世代です。割引は1〜3年目の第5世代保険料のみに適用され、4年目からは全額になります。同一証券番号の主契約・特約を解約・減額すると割引は終了し、施行日は保険会社ごとに異なります（一部は2027-02-01）。"
+  ],
+  "E. 연간 의료비": [
+   "E. Annual medical costs",
+   "E. 年度医疗费",
+   "E. 年間医療費"
+  ],
+  "전환 할인 3년 · 4년차 복귀 · 5년 누적": [
+   "Discount 3 years · back to full in year 4 · 5-year total",
+   "折扣3年 · 第4年恢复 · 5年累计",
+   "割引3年・4年目に復帰・5年累計"
+  ],
+  "5세대 보험료 50% · 1~3년차": [
+   "50% off the 5th-gen premium · years 1–3",
+   "第五代保费50% · 第1~3年",
+   "第5世代保険料50%・1〜3年目"
+  ],
+  "전환 할인": [
+   "Switch discount",
+   "转换折扣",
+   "切替割引"
+  ],
+  "구간": [
+   "Period",
+   "区间",
+   "期間"
+  ],
+  "5세대 전환": [
+   "Switch to 5th gen",
+   "转投第五代",
+   "第5世代へ切替"
+  ],
+  "차액 (유지−전환)": [
+   "Difference (keep − switch)",
+   "差额（维持−转投）",
+   "差額（維持−切替）"
+  ],
+  "1~3년차 연 지출": [
+   "Yearly spend, years 1–3",
+   "第1~3年每年支出",
+   "1〜3年目の年間支出"
+  ],
+  "4~5년차 연 지출": [
+   "Yearly spend, years 4–5",
+   "第4~5年每年支出",
+   "4〜5年目の年間支出"
+  ],
+  "3년 누적": [
+   "3-year total",
+   "3年累计",
+   "3年累計"
+  ],
+  "5년 누적": [
+   "5-year total",
+   "5年累计",
+   "5年累計"
+  ],
+  "전환 할인을 켰을 때 구간별 연 지출과 누적 비교": [
+   "Yearly spend by period and cumulative totals with the switch discount on",
+   "开启转换折扣后各区间的年度支出与累计比较",
+   "切替割引をオンにした場合の期間別年間支出と累計比較"
+  ],
+  "3년 −50%": [
+   "−50% · 3y",
+   "−50% · 3年",
+   "−50% · 3年"
+  ],
+  "지금 고른 세대는 전환 할인 대상이 아닙니다. 세대를 1·2세대로 바꾸면 켤 수 있습니다.": [
+   "The generation you picked does not qualify for the switch discount. Choose generation 1 or 2 to turn it on.",
+   "所选世代不符合转换折扣条件。改为第1、2代后即可开启。",
+   "選択した世代は切替割引の対象外です。第1・2世代に変えるとオンにできます。"
+  ],
+  "차액": [
+   "Difference",
+   "差额",
+   "差額"
+  ],
+  "AI 음악·가사 생성기": [
+   "AI music & lyrics",
+   "AI 音乐·歌词",
+   "AI音楽・歌詞"
+  ],
+  "AI 음악": [
+   "AI music",
+   "AI 音乐",
+   "AI音楽"
+  ],
+  "가사·프롬프트 생성기": [
+   "lyric & prompt generator",
+   "歌词·提示词生成器",
+   "歌詞・プロンプト生成"
+  ],
+  "장르와 분위기, 템포, 보컬만 고르면 Suno AI·Google Flow Music의 스타일 칸에 그대로 붙여 넣을 영문 태그와, Verse·Chorus·Bridge 구조를 갖춘 가사가 한 번에 나옵니다. 한국어·영어·일본어 가사, 원클릭 복사.": [
+   "Pick a genre, mood, tempo and vocal, and you get English style tags to paste straight into Suno AI or Google Flow Music, plus lyrics built on Verse, Chorus and Bridge sections. Korean, English and Japanese lyrics, one-click copy.",
+   "选好曲风、氛围、速度和唱腔，就能一次得到可直接粘贴到 Suno AI、Google Flow Music 风格栏的英文标签，以及按 Verse、Chorus、Bridge 结构写好的歌词。支持韩语、英语、日语歌词，一键复制。",
+   "ジャンル・雰囲気・テンポ・ボーカルを選ぶだけで、Suno AI や Google Flow Music のスタイル欄にそのまま貼れる英語タグと、Verse・Chorus・Bridge の構成を持つ歌詞が一度に出ます。韓国語・英語・日本語の歌詞、ワンクリックコピー。"
+  ],
+  "한·영·일 가사": [
+   "KO · EN · JA lyrics",
+   "韩·英·日歌词",
+   "韓・英・日歌詞"
+  ],
+  "입력값 서버 전송 없음": [
+   "Nothing sent to a server",
+   "输入不上传服务器",
+   "入力はサーバー送信なし"
+  ],
+  "곡 설정": [
+   "Song setup",
+   "歌曲设置",
+   "曲の設定"
+  ],
+  "고른 값은 결과에 바로 반영됩니다. 같은 설정에서 다시 생성을 누르면 다른 가사가 나옵니다.": [
+   "Your choices apply to the result right away. Press Generate again to get different lyrics from the same setup.",
+   "所选设置会立即反映在结果中。在同一设置下点“重新生成”，会得到另一版歌词。",
+   "選んだ内容はすぐ結果に反映されます。同じ設定で「もう一度」を押すと別の歌詞が出ます。"
+  ],
+  "프롬프트·가사 생성": [
+   "Generate prompt & lyrics",
+   "生成提示词与歌词",
+   "プロンプトと歌詞を生成"
+  ],
+  "다시 생성": [
+   "Generate again",
+   "重新生成",
+   "もう一度"
+  ],
+  "입력한 주제·키워드는 이 브라우저 안에서만 쓰이고 어디에도 저장·전송되지 않습니다.": [
+   "Your theme and keywords stay in this browser. Nothing is stored or sent anywhere.",
+   "输入的主题与关键词只在这个浏览器里使用，不会保存或上传到任何地方。",
+   "入力したテーマとキーワードはこのブラウザ内だけで使われ、保存も送信もされません。"
+  ],
+  "결과": [
+   "Result",
+   "结果",
+   "結果"
+  ],
+  "Suno·Flow Music에 붙이는 법": [
+   "How to paste into Suno & Flow Music",
+   "如何粘贴到 Suno、Flow Music",
+   "Suno・Flow Music への貼り方"
+  ],
+  "3단계": [
+   "3 steps",
+   "三步",
+   "3ステップ"
+  ],
+  "스타일 칸에는 영문 태그만": [
+   "Style field: English tags only",
+   "风格栏只放英文标签",
+   "スタイル欄は英語タグだけ"
+  ],
+  "Suno의 Style of Music 칸은 길이 제한이 있어 짧은 태그가 유리합니다. 위 결과의 Suno 스타일 200자를 그대로 붙여 넣으세요. 장르·BPM·분위기·보컬이 한 줄로 들어 있습니다.": [
+   "Suno's Style of Music field is length-limited, so short tags work better. Paste the Suno style line above (under 200 characters) as it is — genre, BPM, mood and vocal are already in one line.",
+   "Suno 的 Style of Music 栏有字数限制，短标签更有利。把上面 200 字以内的 Suno 风格那一行原样粘贴即可，曲风、BPM、氛围、人声都在一行里。",
+   "Suno の Style of Music 欄は文字数制限があるので短いタグが有利です。上の「Sunoスタイル（200文字以内）」をそのまま貼ってください。ジャンル・BPM・雰囲気・ボーカルが一行に入っています。"
+  ],
+  "가사 칸에는 구조 표기까지": [
+   "Lyrics field: keep the section tags",
+   "歌词栏要保留段落标记",
+   "歌詞欄は構成タグまで"
+  ],
+  "Custom Mode의 가사 칸에는 [Verse 1]·[Chorus] 같은 구간 표기를 함께 붙여 넣어야 곡이 무너지지 않습니다. 대괄호 표기는 노래로 불리지 않습니다.": [
+   "In Custom Mode, paste the section tags such as [Verse 1] and [Chorus] along with the lines — without them the song tends to fall apart. Bracketed tags are not sung.",
+   "在 Custom Mode 的歌词栏里，要连 [Verse 1]、[Chorus] 这样的段落标记一起粘贴，歌曲才不会散。方括号里的标记不会被唱出来。",
+   "Custom Mode の歌詞欄には [Verse 1]・[Chorus] などのセクション表記も一緒に貼ってください。ないと曲が崩れます。大括弧の表記は歌われません。"
+  ],
+  "마음에 안 들면 한 줄만 고치기": [
+   "Fix one line, not the whole song",
+   "不满意就只改一行",
+   "気に入らなければ一行だけ直す"
+  ],
+  "같은 가사로 다시 만들면 멜로디가 달라집니다. 특정 구간만 바꾸고 싶다면 ChatGPT·Gemini 프롬프트를 복사해 AI에게 “2절만 다시 써 줘”라고 요청하는 편이 빠릅니다.": [
+   "Regenerating the same lyrics changes the melody. To change one section only, copy the ChatGPT / Gemini prompt and ask the model to “rewrite verse 2”.",
+   "用同样的歌词重新生成，旋律会变。只想改某一段时，复制 ChatGPT / Gemini 提示词，让 AI “只重写第二段”更快。",
+   "同じ歌詞で作り直すとメロディが変わります。一部だけ変えたいときは ChatGPT / Gemini プロンプトをコピーして「2番だけ書き直して」と頼むのが早いです。"
+  ],
+  "6문항": [
+   "6 questions",
+   "6 个问题",
+   "6問"
+  ],
+  "이 도구가 만든 가사는 저작권이 있나요?": [
+   "Do I own the lyrics this tool makes?",
+   "这个工具生成的歌词有版权吗？",
+   "この道具が作った歌詞に著作権はある？"
+  ],
+  "이 페이지가 만드는 가사는 정해진 문장 틀과 단어 묶음을 조합한 창작 보조 자료입니다. 그대로 쓰기보다 한두 줄을 직접 고쳐 쓰면 훨씬 나은 결과가 나옵니다. AI로 만든 곡의 저작권과 수익 배분은 Suno·Flow Music 등 각 서비스의 이용약관이 정합니다. 상업적 사용 가능 여부는 플랫폼의 유료 플랜 조건을 먼저 확인하세요.": [
+   "The lyrics are a writing aid assembled from fixed sentence frames and word banks — editing a line or two yourself will always read better than using them as they are. Copyright and revenue sharing for AI-generated songs are set by each service's terms (Suno, Flow Music and others). Before any commercial use, check the paid-plan terms of that platform.",
+   "本工具生成的歌词，是把固定句式与词库组合而成的创作辅助材料。与其原样使用，不如自己改一两行，效果会好得多。AI 生成歌曲的版权与收益分配由 Suno、Flow Music 等服务的使用条款决定。能否商用，请先确认该平台付费方案的条件。",
+   "この道具が作る歌詞は、決まった文型と語句の組み合わせで作る執筆補助です。そのまま使うより、一、二行を自分で直したほうが仕上がりは良くなります。AIで作った曲の著作権と収益配分は Suno・Flow Music など各サービスの利用規約が定めます。商用利用の可否は、有料プランの条件を先に確認してください。"
+  ],
+  "Suno 스타일 칸에 태그를 얼마나 넣어야 하나요?": [
+   "How many tags should go into the Suno style field?",
+   "Suno 风格栏应该放多少标签？",
+   "Suno のスタイル欄にタグはどれくらい入れる？"
+  ],
+  "짧고 구체적인 편이 좋습니다. 장르 → BPM → 분위기 → 보컬 → 악기 순으로 5~8개면 충분합니다. 이 도구는 그 순서로 200자 이내 태그를 만들고, 길게 쓸 수 있는 도구(Flow Music 등)를 위해 확장 태그도 함께 보여 줍니다.": [
+   "Short and specific works best — five to eight tags in the order genre, BPM, mood, vocal, instruments. This tool builds the under-200-character line in that order and also shows an extended version for tools that allow longer prompts, such as Flow Music.",
+   "短而具体最好，按曲风、BPM、氛围、人声、乐器的顺序放 5~8 个就够。本工具按这个顺序生成 200 字以内的标签，同时给出适合 Flow Music 等可写长文的扩展标签。",
+   "短く具体的なほど効きます。ジャンル→BPM→雰囲気→ボーカル→楽器の順に5〜8個で十分です。この道具はその順で200文字以内のタグを作り、Flow Music など長く書けるツール向けに拡張タグも表示します。"
+  ],
+  "한국어 가사가 뭉개지지 않게 하려면?": [
+   "How do I keep Korean lyrics from slurring?",
+   "怎样让韩语歌词不被唱糊？",
+   "韓国語の歌詞が潰れないようにするには？"
+  ],
+  "가사 언어를 한국어로 고르고, 스타일 태그에 korean lyrics가 들어 있는지 확인하세요. 영어 태그에 한국어 가사를 넣을 때는 발음이 긴 단어를 피하고, 한 줄을 12~16자 안쪽으로 유지하는 편이 알아듣기 좋습니다.": [
+   "Choose Korean as the lyrics language and check that the style line contains korean lyrics. When Korean sits under English tags, avoid long words and keep each line within roughly 12 to 16 characters — it is easier to make out.",
+   "把歌词语言选为韩语，并确认风格标签里有 korean lyrics。在英文标签下放韩语歌词时，避开过长的词、每行控制在 12~16 字以内，更容易听清。",
+   "歌詞の言語を韓国語にして、スタイルタグに korean lyrics が入っているか確認してください。英語タグに韓国語を載せるときは長い単語を避け、一行12〜16文字以内にすると聞き取りやすいです。"
+  ],
+  "일본어·영어 가사도 되나요?": [
+   "Can I write lyrics in Japanese or English?",
+   "可以用日语或英语写歌词吗？",
+   "日本語や英語の歌詞もできる？"
+  ],
+  "됩니다. 가사 언어를 일본어나 영어로 고르면 그 언어의 문장 틀로 가사가 나옵니다. 스타일 태그는 어떤 언어를 고르든 영문으로 나옵니다(Suno·Flow Music의 스타일 칸이 영문 기준이기 때문입니다).": [
+   "Yes. Choose Japanese or English and the lyrics come out in that language's sentence frames. Style tags stay in English whichever lyrics language you pick, because the style fields on Suno and Flow Music are built around English.",
+   "可以。把歌词语言选为日语或英语，歌词就会用该语言的句式生成。无论选哪种语言，风格标签都是英文，因为 Suno、Flow Music 的风格栏以英文为准。",
+   "できます。歌詞の言語を日本語か英語にすると、その言語の文型で歌詞が出ます。スタイルタグはどの言語を選んでも英語です（Suno・Flow Music のスタイル欄が英語基準のため）。"
+  ],
+  "연주곡(보컬 없음)도 만들 수 있나요?": [
+   "Can I make an instrumental with no vocals?",
+   "可以做成纯音乐吗？",
+   "ボーカルなしのインストも作れる？"
+  ],
+  "보컬에서 연주곡을 고르면 가사 대신 [Intro]·[Main Theme]·[Instrumental Break]·[Outro] 구조의 연주곡 프롬프트가 나옵니다. 배경음악·숏폼용으로 쓰기 좋습니다.": [
+   "Pick Instrumental under Vocal and you get a structure prompt with [Intro], [Main Theme], [Instrumental Break] and [Outro] instead of lyrics — handy for background music or short-form video.",
+   "在人声里选“纯音乐”，就会得到 [Intro]、[Main Theme]、[Instrumental Break]、[Outro] 结构的纯音乐提示词，适合背景音乐和短视频。",
+   "ボーカルで「インスト」を選ぶと、歌詞の代わりに [Intro]・[Main Theme]・[Instrumental Break]・[Outro] の構成プロンプトが出ます。BGMやショート動画に向いています。"
+  ],
+  "입력한 내용이 저장되나요?": [
+   "Is anything I type saved?",
+   "输入的内容会被保存吗？",
+   "入力した内容は保存される？"
+  ],
+  "아니요. 모든 계산은 이 브라우저에서만 실행되며 서버로 보내지 않습니다. 새로고침하면 입력값과 결과가 사라집니다. 필요한 결과는 복사해 두세요.": [
+   "No. Everything runs in this browser and is never sent to a server. Reloading the page clears your inputs and results, so copy anything you want to keep.",
+   "不会。所有计算都在这个浏览器里完成，不会发送到服务器。刷新页面后输入与结果都会消失，需要的内容请先复制。",
+   "いいえ。すべてこのブラウザ内で動き、サーバーには送りません。再読み込みすると入力と結果は消えるので、必要なものはコピーしておいてください。"
+  ],
+  "저작권·개인정보 안내": [
+   "Copyright & privacy",
+   "版权与个人信息",
+   "著作権・個人情報の案内"
+  ],
+  "가사·프롬프트의 성격": [
+   "What the lyrics and prompts are",
+   "歌词与提示词的性质",
+   "歌詞・プロンプトの性質"
+  ],
+  "— 이 페이지의 문장 틀·단어 묶음·화면 구성은 인사이트 브리프가 직접 작성한 자체 자료입니다. 다른 작사 서비스나 곡의 가사를 복제하지 않았습니다. 결과물은 창작의 출발점이며, 완성곡의 저작권·수익·유통 조건은 사용하는 AI 음악 서비스의 약관을 따릅니다.": [
+   "— The sentence frames, word banks and layout on this page were written by INSIGHT BRIEF; no other lyric service or song was copied. Treat the output as a starting point: copyright, revenue and distribution of the finished track follow the terms of the AI music service you use.",
+   "— 本页的句式、词库与画面构成由 INSIGHT BRIEF 自行编写，没有复制其他作词服务或歌曲的歌词。结果只是创作的起点，成品曲的版权、收益与发行条件按所用 AI 音乐服务的条款执行。",
+   "— このページの文型・語句・画面構成は INSIGHT BRIEF が独自に書いたものです。他の作詞サービスや曲の歌詞は複製していません。結果は創作の出発点であり、完成曲の著作権・収益・配信条件は利用するAI音楽サービスの規約に従います。"
+  ],
+  "— 주제·키워드·설정값은 브라우저 안에서만 처리되고 서버에 저장되지 않습니다. 실명·연락처·주소처럼 공개되면 곤란한 내용은 키워드에 넣지 마세요. 결과를 공유할 때도 같은 점을 확인해 주세요.": [
+   "— Theme, keywords and settings are processed only in your browser and are not stored on any server. Please don't put real names, phone numbers or addresses into the keyword field, and check the same before sharing a result.",
+   "— 主题、关键词与设置只在浏览器内处理，不会保存到服务器。请勿把真实姓名、电话、地址等一旦公开就麻烦的内容填进关键词，分享结果前也请再确认一次。",
+   "— テーマ・キーワード・設定はブラウザ内だけで処理され、サーバーに保存されません。実名・連絡先・住所など、公開されると困る内容はキーワードに入れないでください。結果を共有するときも同じ点をご確認ください。"
+  ],
+  "저작권 있는 소재": [
+   "Copyrighted material",
+   "受版权保护的素材",
+   "著作権のある素材"
+  ],
+  "— 특정 가수의 이름, 실제 곡 제목, 상표를 프롬프트에 넣어 “그 가수 목소리로” 만들면 초상권·상표권 문제가 생길 수 있습니다. 스타일은 장르와 분위기로 설명하는 편이 안전합니다.": [
+   "— Putting a particular singer's name, a real song title or a trademark into a prompt to make it “in that singer's voice” can raise publicity-right and trademark issues. Describing the style through genre and mood is safer.",
+   "— 在提示词里写某位歌手的名字、真实歌名或商标，要求“用那位歌手的声音”来做，可能引发肖像权、商标权问题。用曲风和氛围来描述风格更安全。",
+   "— 特定の歌手名・実在の曲名・商標をプロンプトに入れて「その歌手の声で」作ると、肖像権・商標権の問題が起きることがあります。スタイルはジャンルと雰囲気で説明するほうが安全です。"
+  ],
+  "플랫폼 약관": [
+   "Platform terms",
+   "平台条款",
+   "プラットフォーム規約"
+  ],
+  "— Suno·Google Flow Music·Udio 등은 요금제에 따라 상업적 이용 범위가 다릅니다. 수익화(유튜브·틱톡·스트리밍) 전에 해당 서비스의 최신 약관을 확인하세요. 이 도구는 어떤 플랫폼과도 제휴 관계가 없습니다.": [
+   "— Suno, Google Flow Music, Udio and similar services allow different levels of commercial use depending on the plan. Before monetising on YouTube, TikTok or a streaming service, read that platform's current terms. This tool has no partnership with any of them.",
+   "— Suno、Google Flow Music、Udio 等平台按套餐不同，商用范围也不同。在 YouTube、TikTok 或流媒体上变现之前，请先确认该服务的最新条款。本工具与任何平台都没有合作关系。",
+   "— Suno・Google Flow Music・Udio などは料金プランによって商用利用の範囲が異なります。YouTube・TikTok・ストリーミングで収益化する前に、そのサービスの最新規約を確認してください。この道具はいずれのプラットフォームとも提携していません。"
+  ],
+  "이 도구는 창작 편의를 위한 문장 조합기이며, 완성곡의 품질·저작권·수익을 보장하지 않습니다. 결과에 나오는 인물·곡명·상호는 모두 예시이며 실제와 무관합니다.": [
+   "This is a phrase assembler for creative convenience. It does not guarantee the quality, copyright status or earnings of any finished song. Any names in the output are examples, unrelated to real people or works.",
+   "本工具是为创作便利而设的句式组合器，不保证成品曲的质量、版权与收益。结果中出现的人名、曲名、商号均为示例，与真实无关。",
+   "この道具は創作の便宜のための文句の組み合わせ機であり、完成曲の品質・著作権・収益を保証しません。結果に出る人名・曲名・屋号はすべて例示で、実在のものとは関係ありません。"
+  ],
+  "무료 도구 · AI 음악 가사·프롬프트 생성기": [
+   "Free tool · AI music & lyric prompt generator",
+   "免费工具 · AI 音乐歌词提示词生成器",
+   "無料ツール · AI音楽 歌詞・プロンプト生成"
+  ],
+  "무역서식 (PI·CI·PL)": [
+   "Trade documents (PI · CI · PL)",
+   "贸易单据（PI·CI·PL）",
+   "貿易書式（PI・CI・PL）"
+  ],
+  "다른 무료 도구 ·": [
+   "Other free tools ·",
+   "其他免费工具 ·",
+   "ほかの無料ツール ·"
+  ],
+  "(상세페이지·광고 문구) ·": [
+   " (product pages & ad copy) ·",
+   "（详情页·广告文案）·",
+   "（詳細ページ・広告コピー）・"
+  ],
+  "선사 서너 곳에서 받은 견적을 그대로 넣으면, 해상운임(O/F)부터 유류·통화할증료, 도착지 부대비용, 국내 내륙운송·통관수수료까지 더한 총 수입물류비를 원화와 달러로 나란히 보여 줍니다. 최저가 선사와 1위 대비 차액, 톤·kg당 단가까지 자동으로 계산합니다.": [
+   "Paste the quotes you got from three or four carriers and this page adds ocean freight, BAF/CAF surcharges, destination charges, inland haulage and customs fees into one total landing cost, shown in your currency and in USD. It also ranks the cheapest carrier, the gap to the lowest and the cost per tonne and per kg.",
+   "把三四家船公司的报价照原样填入，就会把海运费、燃油·货币附加费、目的港费用、国内陆运与报关费加总，用本币和美元并排显示总进口物流成本，并自动算出最低价船公司、与最低价的差额以及每吨、每公斤成本。",
+   "船社3〜4社からもらった見積をそのまま入れると、海上運賃から燃料・通貨割増、仕向地諸費用、国内陸送・通関手数料までを合計した総輸入物流コストを現地通貨とドルで並べて表示します。最安の船社と最安との差額、トン・kg当たり単価も自動計算します。"
+  ],
+  "출발항(부산항·인천항 등)과 컨테이너 규격, 환율·중량은 모든 선사에 같은 값으로 적용됩니다.": [
+   "The port of loading, container type, exchange rate and cargo weight apply to every carrier the same way.",
+   "起运港、集装箱规格、汇率与重量对所有船公司同样适用。",
+   "積出港・コンテナ規格・為替・重量はすべての船社に同じ条件で適用されます。"
+  ],
+  "주요 선사 공식 견적·스케줄 바로가기": [
+   "Official quote and schedule links",
+   "主要船公司官方报价·船期入口",
+   "主要船社の公式見積・スケジュール"
+  ],
+  "선사 계정이 없어도 운항 스케줄은 대부분 열람할 수 있습니다. 스팟 견적(즉시 견적)은 회원가입이나 로그인이 필요한 경우가 많고, 한국계·대만계 선사는 대리점·포워더를 통해 견적을 받는 편이 빠를 때도 있습니다. 각 카드의 링크는 선사 공식 홈페이지입니다.": [
+   "Schedules are mostly public even without a carrier account. Instant (spot) quotes often need a sign-in, and for Korean and Taiwanese carriers it can be faster to ask a local agent or forwarder. Each card links to the carrier's official website.",
+   "即使没有船公司账号，大多也能查看船期。即时报价往往需要注册或登录；韩国、台湾船公司通过代理或货代询价有时更快。卡片链接均为船公司官网。",
+   "船社アカウントがなくても運航スケジュールはほとんど見られます。即時見積はログインが必要なことが多く、韓国系・台湾系は代理店やフォワーダーに聞いたほうが早い場合もあります。各カードのリンクは船社の公式サイトです。"
+  ],
+  "선사명·주소는 2026년 11월 기준 공식 홈페이지이며, 사정에 따라 접속이 막히거나 주소가 바뀔 수 있습니다. 이 페이지는 어떤 선사와도 제휴·광고 관계가 없습니다.": [
+   "Carrier names and addresses are their official websites as of November 2026; access can be blocked or addresses may change. This page has no partnership or advertising relationship with any carrier.",
+   "船公司名称与地址为 2026 年 11 月的官方网站，可能因访问限制或改版而变化。本页与任何船公司均无合作或广告关系。",
+   "船社名・アドレスは2026年11月時点の公式サイトです。アクセス制限や移転で変わることがあります。このページはいずれの船社とも提携・広告関係がありません。"
+  ],
+  "총 물류비, 이렇게 읽습니다": [
+   "Reading the total cost",
+   "这样看总物流成本",
+   "総物流費の読み方"
+  ],
+  "해상운임(O/F)이 싸도 BAF·CAF와 도착지 D/THC·D/O·서류비가 크면 총액은 뒤집힙니다. 실제로 견적을 비교할 때는": [
+   "A low O/F can still lose on total once BAF/CAF and destination D/THC, D/O and document fees are added. When comparing quotes, include the money that leaves at the destination.",
+   "海运费再便宜，若 BAF/CAF 与目的港 D/THC、D/O、单证费很高，总价也会被反超。比较报价时，要把目的港产生的费用一并算进去。",
+   "海上運賃が安くても、BAF・CAFと仕向地のD/THC・D/O・書類費が大きければ総額は逆転します。見積を比べるときは仕向地で出ていく費用まで入れてください。"
+  ],
+  "도착지 비용은 통화가 섞입니다": [
+   "Destination charges mix currencies",
+   "目的港费用常混用币种",
+   "仕向地費用は通貨が混ざる"
+  ],
+  "D/THC는 USD로, 내륙운송과 통관수수료는 원화로 오는 경우가 흔합니다. 이 계산기는 통화를 골라 넣으면 환율로 한 번에 환산합니다.": [
+   "D/THC often arrives in USD while inland haulage and customs fees are quoted locally. Pick the currency for each line and this calculator converts everything at one rate.",
+   "D/THC 常以美元报价，陆运与报关费则用本币。为每一项选好币种，本工具会按同一汇率一次换算。",
+   "D/THCはドル、陸送や通関は現地通貨ということがよくあります。各行の通貨を選べば、同じレートで一度に換算します。"
+  ],
+  "컨테이너 한 대에 실리는 중량이 다르면 총액 비교가 왜곡됩니다. 톤(MT)·kg당 단가를 함께 보면 어느 선사가 실제로 유리한지 드러납니다.": [
+   "If each container carries a different weight, comparing totals alone misleads. The cost per tonne and per kg shows which carrier is really cheaper.",
+   "一箱实际装载的重量不同，单看总价会失真。同时看每吨、每公斤成本，才能看出哪家真正划算。",
+   "1本あたりの重量が違うと総額比較は歪みます。トン・kg当たり単価を並べると、どの船社が本当に有利かが見えます。"
+  ],
+  "스팟 운임은 며칠 만에 바뀝니다. 견적서의 유효기간과 적용 항로·선복을 확인하고, 최종 금액은 선사나 포워더에게 다시 확인하세요.": [
+   "Spot rates move within days. Check the quote's validity, routing and space, then confirm the final amount with the carrier or forwarder.",
+   "即期运价几天就会变。请确认报价有效期、适用航线与舱位，最终金额再向船公司或货代核实。",
+   "スポット運賃は数日で変わります。見積の有効期限・適用航路・スペースを確認し、最終金額は船社かフォワーダーに再確認してください。"
+  ],
+  "어떤 비용을 넣어야 하나요?": [
+   "Which costs should I enter?",
+   "应该填哪些费用？",
+   "どの費用を入れる？"
+  ],
+  "선사 견적서에 있는 항목을 그대로 옮기면 됩니다. 보통 해상운임(O/F), 유류할증료(BAF)·통화할증료(CAF), 도착지 D/THC·D/O·서류비, 국내 내륙운송비, 통관수수료가 들어갑니다. 부가세와 관세는 별도이므로 이 표에는 넣지 않습니다.": [
+   "Copy the lines from the carrier's quote: ocean freight, BAF and CAF, destination D/THC, D/O and document fees, inland haulage and the customs fee. VAT and duty are separate and are not included here.",
+   "照抄船公司报价单上的项目：海运费、BAF/CAF、目的港 D/THC、D/O、单证费、国内陆运费与报关费。增值税和关税另计，不在此表内。",
+   "船社の見積書の項目をそのまま移してください。海上運賃、BAF・CAF、仕向地のD/THC・D/O・書類費、国内陸送費、通関手数料が一般的です。消費税と関税は別なのでこの表には入れません。"
+  ],
+  "LCL도 비교할 수 있나요?": [
+   "Can I compare LCL shipments?",
+   "拼箱（LCL）也能比较吗？",
+   "LCLも比較できる？"
+  ],
+  "됩니다. 컨테이너 규격에서 LCL을 고르면 총액과 톤·kg당 단가로 비교하세요. LCL은 CBM(용적) 기준 운임이 흔하므로, 선사 견적의 운임 기준이 중량인지 용적인지 확인해 주세요.": [
+   "Yes. Choose LCL as the container type and compare totals plus cost per tonne and per kg. LCL rates are often per CBM, so check whether the quote is based on volume or weight.",
+   "可以。把规格选为 LCL，用总额与每吨、每公斤成本比较。拼箱运价常按立方米计，请确认报价是按体积还是按重量。",
+   "できます。規格でLCLを選び、総額とトン・kg当たり単価で比べてください。LCLはCBM建てが一般的なので、見積が容積基準か重量基準かを確認してください。"
+  ],
+  "환율은 어디서 가져오나요?": [
+   "Where does the exchange rate come from?",
+   "汇率从哪里来？",
+   "為替はどこから取っている？"
+  ],
+  "이 사이트의 원자재·환율 시황판에 있는 원·달러 고시를 불러와 기본값으로 넣습니다. 시황판 갱신 시점의 값이므로, 결제 환율이나 선사 적용 환율과 다를 수 있습니다. 직접 고쳐 넣으면 그 값으로 계산합니다.": [
+   "The default comes from the dollar rate on this site's commodities and FX board. It is the board's latest value, so it can differ from your bank's settlement rate or the carrier's rate. Edit the field and the calculation uses your number.",
+   "默认值取自本站原材料·汇率行情板的美元汇率。那是行情板更新时的数值，可能与结汇汇率或船公司适用汇率不同。直接修改后即按你的数值计算。",
+   "このサイトの市況板にあるドルレートを初期値にしています。更新時点の値なので、決済レートや船社適用レートとは異なることがあります。書き換えればその値で計算します。"
+  ],
+  "선사 계정이 없어도 견적을 볼 수 있나요?": [
+   "Can I get quotes without a carrier account?",
+   "没有船公司账号也能查报价吗？",
+   "船社アカウントがなくても見積は見られる？"
+  ],
+  "운항 스케줄과 운임표는 대부분 공개되어 있습니다. 다만 즉시 견적(스팟) 기능은 로그인이 필요할 수 있습니다. 한국계·대만계 선사는 공식 홈페이지의 스케줄을 확인한 뒤 대리점이나 포워더에 운임을 문의하는 방법이 현실적입니다.": [
+   "Schedules and tariff tables are mostly public; instant (spot) quoting may require a login. With Korean and Taiwanese carriers, the practical route is to check the schedule on the official site and then ask a local agent or forwarder for the rate.",
+   "船期与运价表大多公开，即时报价功能可能需要登录。韩国、台湾船公司更现实的做法是：先在官网确认船期，再向代理或货代询价。",
+   "運航スケジュールや運賃表はほとんど公開されています。即時見積はログインが必要な場合があります。韓国系・台湾系は公式サイトでスケジュールを見たうえで、代理店やフォワーダーに運賃を聞くのが現実的です。"
+  ],
+  "계산 결과가 실제 청구서와 다른데요?": [
+   "The result differs from the invoice — why?",
+   "计算结果和实际账单不一样？",
+   "計算結果が請求書と違うのはなぜ？"
+  ],
+  "이 도구는 입력한 값의 합계만 계산합니다. 할증료 적용 기간, 선복 상황, 환율 적용일, 터미널별 부대비용에 따라 실제 청구서는 달라집니다. 최종 금액은 선사·포워더의 견적서와 청구서로 확인하세요.": [
+   "This tool only totals the figures you enter. Surcharge periods, space availability, the rate date and terminal-specific charges all change the real invoice. Confirm the final amount with the carrier's or forwarder's quote and invoice.",
+   "本工具只合计你填入的数值。附加费适用期、舱位情况、汇率适用日、码头费用都会让实际账单不同。最终金额请以船公司、货代的报价与账单为准。",
+   "この道具は入力した値の合計を出すだけです。割増の適用期間、スペース、レート適用日、ターミナル費用で実際の請求は変わります。最終金額は船社・フォワーダーの見積と請求書で確認してください。"
+  ],
+  "계산 기준과 개인정보 안내": [
+   "Basis of calculation & privacy",
+   "计算依据与个人信息",
+   "計算基準と個人情報"
+  ],
+  "— 이 도구는 입력한 운임·할증료·부대비용을 환율로 환산해 더하는 계산기입니다. 관세·부가세·보험료·검사비는 포함하지 않으며, 선사의 실제 청구와 다를 수 있습니다. 견적의 유효기간과 적용 조건은 선사·포워더에 확인하세요.": [
+   "— This is a calculator that converts and adds the freight, surcharges and charges you enter. Duty, VAT, insurance and inspection fees are not included and the total can differ from the carrier's invoice. Check the quote's validity and conditions with the carrier or forwarder.",
+   "— 本工具只是把输入的运价、附加费和费用按汇率换算后相加，不含关税、增值税、保险费与检验费，可能与船公司实际账单不同。报价有效期与适用条件请向船公司或货代确认。",
+   "— この道具は入力した運賃・割増・諸費用を為替で換算して足すだけです。関税・消費税・保険料・検査費は含まず、船社の実際の請求と異なることがあります。見積の有効期限と適用条件は船社・フォワーダーに確認してください。"
+  ],
+  "— 입력한 선사명·금액·환율은 브라우저 안에서만 계산되고 서버에 저장되지 않습니다. 새로고침하면 사라지므로 필요한 표는 화면 인쇄나 PDF 저장으로 남겨 두세요.": [
+   "— Carrier names, amounts and rates are calculated only in your browser and are not stored on any server. Reloading clears them, so print or save the table as a PDF if you need it.",
+   "— 填入的船公司、金额与汇率只在浏览器内计算，不会保存到服务器。刷新即消失，需要的表格请打印或存为 PDF。",
+   "— 入力した船社名・金額・為替はブラウザ内だけで計算され、サーバーに保存されません。再読み込みで消えるので、必要な表は印刷かPDF保存で残してください。"
+  ],
+  "— 각 선사의 상호·상표는 해당 회사의 자산이며, 링크는 이용자의 편의를 위해 공식 홈페이지로 연결한 것입니다. 이 페이지는 선사와 제휴하거나 운임을 중개하지 않습니다.": [
+   "— Carrier names and trademarks belong to their owners; the links simply point to official websites for convenience. This page does not partner with carriers or broker freight.",
+   "— 各船公司名称与商标归其所有，链接只是为方便访问官网。本页不与船公司合作，也不代理运价。",
+   "— 各船社の名称・商標は各社の資産で、リンクは利便のため公式サイトへつないでいるだけです。このページは船社と提携したり運賃を仲介したりしません。"
+  ],
+  "본 계산기는 일반적인 수입 물류비 비교를 돕는 참고 도구이며, 운임·스케줄·통관에 대한 법적·상업적 판단을 대신하지 않습니다. 표시된 예시 금액은 실제 시세와 무관한 예시입니다.": [
+   "This calculator is a reference for comparing import logistics costs. It is not a substitute for commercial or legal judgment on freight, schedules or customs, and the sample figures are unrelated to real market rates.",
+   "本计算器只是比较进口物流成本的参考工具，不能替代对运价、船期与报关的商业或法律判断。示例金额与真实行情无关。",
+   "この計算機は輸入物流コスト比較の参考ツールであり、運賃・スケジュール・通関に関する商業的・法的判断の代わりにはなりません。表示の例示金額は実際の相場とは無関係です。"
+  ],
+  "무료 도구 · 해상운임·물류비 비교": [
+   "Free tool · freight & landing cost",
+   "免费工具 · 海运运价与物流成本",
+   "無料ツール · 海上運賃・物流コスト"
+  ],
+  "해상운임·수입물류비 비교": [
+   "Freight & landing cost",
+   "海运运价·进口物流成本",
+   "海上運賃・輸入物流コスト"
+  ],
+  "해상운임·물류비 비교": [
+   "Freight & landing cost",
+   "海运运价·物流成本",
+   "海上運賃・物流コスト"
+  ],
+  "수입 원가·관부가세 계산기": [
+   "Landed cost & duty calculator",
+   "进口成本·关税计算",
+   "輸入原価・関税計算"
+  ],
+  "자주 묻는 질문": [
+   "Frequently asked questions",
+   "常见问题",
+   "よくある質問"
+  ],
+  "선사별 견적 입력": [
+   "Enter each carrier's quote",
+   "输入各家船公司报价",
+   "船社ごとの見積を入力"
+  ],
+  "한국계 · 대만계 우선": [
+   "Global carriers first",
+   "全球·亚洲船公司优先",
+   "グローバル・アジア系を優先"
+  ],
+  "해상운임·수입물류비": [
+   "Freight & landing",
+   "海运运价·进口",
+   "海上運賃・輸入"
+  ],
+  "비교 계산기": [
+   "cost calculator",
+   "成本比较计算器",
+   "コスト比較計算"
+  ],
+  "부산·인천 출발": [
+   "Ex. Los Angeles / Long Beach",
+   "如：洛杉矶·长滩",
+   "東京・横浜発"
+  ],
+  "선사 4곳까지 비교": [
+   "Compare up to 4 carriers",
+   "最多比较4家船公司",
+   "最大4社を比較"
+  ],
+  "환율 자동 반영": [
+   "FX filled automatically",
+   "自动填入汇率",
+   "為替を自動反映"
+  ],
+  "4가지": [
+   "4 points",
+   "4个要点",
+   "4つのポイント"
+  ],
+  "금액은 부가세 제외 기준으로 넣으세요. 도착지 부대비용은 USD·KRW 중에서 고를 수 있습니다.": [
+   "Enter amounts excluding VAT. Destination charges can be entered in USD or your local currency.",
+   "金额请按不含增值税填写。目的港费用可选美元或本币。",
+   "金額は消費税抜きで入れてください。仕向地諸費用はUSDか現地通貨を選べます。"
+  ],
+  "이 도구는 JavaScript로 동작합니다. 브라우저에서 JavaScript를 켜면 스타일 태그와 가사를 만들 수 있습니다.": [
+   "This tool runs on JavaScript. Turn it on in your browser to generate style tags and lyrics.",
+   "本工具需要 JavaScript。在浏览器中开启后即可生成风格标签与歌词。",
+   "この道具はJavaScriptで動きます。ブラウザで有効にするとスタイルタグと歌詞を作れます。"
+  ],
+  "무료 만세력·신년운세": [
+   "Free saju chart & new-year forecast",
+   "免费四柱·新年运势",
+   "無料の四柱推命・新年占い"
+  ],
+  "선사별 해상운임과 수입물류비 비교표": [
+   "Sea freight and landing cost by carrier",
+   "按船公司比较海运费与进口物流成本",
+   "船社別の海上運賃・輸入物流費の比較表"
+  ],
+  "선사 추가": [
+   "Add carrier",
+   "添加船公司",
+   "船社を追加"
+  ],
+  "선사별 총 수입물류비 비교 결과": [
+   "Total landing cost by carrier",
+   "各船公司总物流成本比较结果",
+   "船社別の総物流コスト比較結果"
+  ],
+  "이 선사 빼기": [
+   "Remove this carrier",
+   "移除此船公司",
+   "この船社を外す"
+  ],
+  "도착지 비용 통화": [
+   "Destination charge currency",
+   "目的港费用币种",
+   "仕向地費用の通貨"
+  ],
+  "선사 링크": [
+   "Carrier links",
+   "船公司链接",
+   "船社リンク"
+  ],
+  "선사 계정": [
+   "Carrier account",
+   "船公司账号",
+   "船社アカウント"
+  ],
+  "해상운임·수입물류비(Landing Cost) 비교 계산기 — 선사 3~4곳 한눈에 | INSIGHT BRIEF": [
+   "Freight & landing cost calculator — compare 3–4 carriers | INSIGHT BRIEF",
+   "海运运价·进口物流成本计算器 — 3~4家船公司一次比完 | INSIGHT BRIEF",
+   "海上運賃・輸入物流コスト計算機 — 船社3〜4社を一度に比較 | INSIGHT BRIEF"
+  ],
+  "선사별 해상운임(O/F)·유류할증료(BAF/CAF)·도착지 부대비용·내륙운송·통관수수료를 넣으면 총 수입물류비(Landing Cost)를 원화·달러로 비교합니다. 최저가 선사와 차액, 톤·kg당 단가까지 자동 계산. HMM·KMTC·장금상선·흥아·남성·SM상선·에버그린·양밍·완하이 견적·스케줄 바로가기.": [
+   "Enter ocean freight, BAF/CAF, destination charges, inland haulage and customs fees to compare total landing cost across carriers in USD and your currency. The cheapest carrier, the gap and the cost per tonne and kg are calculated for you. Official quote and schedule links for Maersk, MSC, CMA CGM, Hapag-Lloyd, ONE, Evergreen, COSCO, OOCL, SITC, HMM, KMTC, Sinokor and more.",
+   "填入海运费、BAF/CAF、目的港费用、陆运与报关费，即可按美元与本币比较各家船公司的总进口物流成本，自动算出最低价、差额与每吨、每公斤成本。附马士基、MSC、达飞、赫伯罗特、ONE、长荣、中远、东方海外、海丰、HMM、高丽海运、长锦商船等官方报价与船期入口。",
+   "海上運賃・BAF/CAF・仕向地諸費用・陸送・通関手数料を入れると、船社ごとの総輸入物流コストを通貨とドルで比較。最安値・差額・トン/ kg当たり単価も自動計算します。マースク・MSC・CMA CGM・ハパックロイド・ONE・エバーグリーン・COSCO・OOCL・SITC・HMM・高麗海運・長錦商船などの公式見積・スケジュールへのリンク付き。"
+  ],
+  "해상운임·수입물류비(Landing Cost) 비교 계산기 — 선사 3~4곳 한눈에": [
+   "Freight & landing cost calculator — compare 3–4 carriers | INSIGHT BRIEF",
+   "海运运价·进口物流成本计算器 — 3~4家船公司一次比完 | INSIGHT BRIEF",
+   "海上運賃・輸入物流コスト計算機 — 船社3〜4社を一度に比較 | INSIGHT BRIEF"
+  ],
+  "O/F만 보면 절반": [
+   "O/F is only half the story",
+   "只看海运费等于只看一半",
+   "O/Fだけでは半分"
+  ],
+  "톤당 단가로 다시 보기": [
+   "Look again per tonne",
+   "再用每吨成本看一遍",
+   "トン当たりで見直す"
+  ],
+  "견적 유효기간 확인": [
+   "Check the quote's validity",
+   "确认报价有效期",
+   "見積の有効期限を確認"
+  ],
+  "해상운임(O/F)이 싸도 BAF·CAF와 도착지 D/THC·D/O·서류비가 크면 총액은 뒤집힙니다. 실제로 견적을 비교할 때는 도착지에서 나가는 돈까지 넣어야 합니다.": [
+   "A low O/F can still lose on total once BAF/CAF and destination D/THC, D/O and document fees are added. When comparing quotes, include the money that leaves at the destination.",
+   "海运费再便宜，若 BAF/CAF 与目的港 D/THC、D/O、单证费很高，总价也会被反超。比较报价时要把目的港产生的费用一并算进去。",
+   "海上運賃が安くても、BAF・CAFと仕向地のD/THC・D/O・書類費が大きければ総額は逆転します。見積を比べるときは仕向地で出ていく費用まで入れてください。"
+  ],
+  "AI 음악 가사·프롬프트 생성기 — Suno·Flow Music용 무료 | INSIGHT BRIEF": [
+   "AI music & lyric prompt generator — free for Suno & Flow Music | INSIGHT BRIEF",
+   "AI 音乐歌词·提示词生成器 — 免费用于 Suno、Flow Music | INSIGHT BRIEF",
+   "AI音楽 歌詞・プロンプト生成 — Suno・Flow Music 向け無料 | INSIGHT BRIEF"
+  ],
+  "장르·분위기·템포·보컬·주제를 고르면 Suno AI·Google Flow Music에 그대로 붙여 넣을 영문 스타일 태그(200자)와 Verse/Chorus/Bridge 가사, ChatGPT·Gemini용 작사 프롬프트를 만들어 주는 무료 도구. 한국어·영어·일본어 가사, 회원가입 없이 브라우저에서만 동작합니다.": [
+   "Pick genre, mood, tempo, vocal and theme to get English style tags (under 200 characters) ready for Suno AI and Google Flow Music, Verse/Chorus/Bridge lyrics, and a ChatGPT or Gemini lyric prompt. Korean, English and Japanese lyrics; runs only in your browser, no sign-up.",
+   "选好曲风、氛围、速度、人声与主题，即可得到可直接粘贴到 Suno AI、Google Flow Music 的英文风格标签（200字以内）、Verse/Chorus/Bridge 歌词，以及 ChatGPT、Gemini 作词提示词。支持韩语、英语、日语歌词，无需注册，仅在浏览器内运行。",
+   "ジャンル・雰囲気・テンポ・ボーカル・テーマを選ぶと、Suno AI や Google Flow Music にそのまま貼れる英語スタイルタグ（200文字以内）、Verse/Chorus/Bridge の歌詞、ChatGPT・Gemini 用の作詞プロンプトを作ります。韓国語・英語・日本語の歌詞、登録不要でブラウザ内だけで動作します。"
+  ],
+  "AI 음악 가사·프롬프트 생성기 — Suno·Flow Music용 무료": [
+   "AI music & lyric prompt generator — free for Suno & Flow Music",
+   "AI 音乐歌词·提示词生成器 — 免费用于 Suno、Flow Music",
+   "AI音楽 歌詞・プロンプト生成 — Suno・Flow Music 向け無料"
+  ],
+  "장르·분위기·템포·보컬·주제만 고르면 스타일 태그와 곡 구조 가사가 바로 나옵니다. 한국어·영어·일본어, 1클릭 복사, 서버 전송 없음.": [
+   "Pick a genre, mood, tempo, vocal and theme and get style tags plus structured lyrics right away. Korean, English and Japanese, one-click copy, nothing sent to a server.",
+   "只选曲风、氛围、速度、人声与主题，风格标签和分段歌词立刻生成。韩语、英语、日语，一键复制，不上传服务器。",
+   "ジャンル・雰囲気・テンポ・ボーカル・テーマを選ぶだけで、スタイルタグと構成付きの歌詞がすぐ出ます。韓国語・英語・日本語、ワンクリックコピー、サーバー送信なし。"
+  ],
+  "장르·분위기·템포·보컬·주제만 고르면 스타일 태그와 곡 구조 가사가 바로. 한국어·영어·일본어 1클릭 복사.": [
+   "Pick genre, mood, tempo, vocal and theme for style tags and structured lyrics. Korean, English and Japanese, one-click copy.",
+   "选好曲风、氛围、速度、人声与主题，立即得到风格标签与分段歌词。韩语、英语、日语一键复制。",
+   "ジャンル・雰囲気・テンポ・ボーカル・テーマを選ぶと、スタイルタグと構成付き歌詞がすぐに。韓国語・英語・日本語をワンクリックコピー。"
+  ],
+  "5문항": [
+   "5 questions",
+   "5 个问题",
+   "5つの質問"
+  ]
+ }
+}

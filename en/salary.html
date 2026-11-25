@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>Take-home pay, minimum wage & overtime calculator — Free | INSIGHT BRIEF</title>
+<meta name="description" content="Work out US take-home pay from a gross salary using the 2026 federal brackets, FICA (Social Security 6.2% up to $184,500, Medicare 1.45% + 0.9%), an approximate state rate, plus federal and state minimum wages with FLSA 1.5× overtime. No sign-up, calculated in your browser.">
+<meta name="keywords" content="2027 minimum wage, 2027 payroll tax rates, take-home pay calculator, employer labor cost, annual leave accrual, annual leave calculator, national pension estimate, unemployment benefit calculator, 2027 unemployment benefit cap, severance calculator">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/en/salary.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Take-home pay, minimum wage &amp; overtime calculator">
+<meta property="og:description" content="US take-home pay with 2026 federal tax and FICA, plus minimum wage and FLSA overtime. Free, no sign-up.">
+<meta property="og:url" content="https://insightbriefnews.com/en/salary.html">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Take-home pay, minimum wage &amp; overtime calculator">
+<meta name="twitter:description" content="US take-home pay, minimum wage and overtime in one page. No sign-up.">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
+<link rel="stylesheet" href="../assets/css/salary.css?v=20261123m">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "2027 급여·4대보험·연차·국민연금·실업급여 계산기",
+  "url": "https://insightbriefnews.com/salary.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "2027년 최저임금 고시와 2027년 4대보험 요율을 반영해 회사 총지출과 근로자 실수령액, 연차유급휴가 발생일수, 국민연금 예상 수령액, 실업급여 수급자격과 예상 금액을 계산하는 무료 도구. 입력값은 서버로 전송하지 않습니다.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "2027년 최저임금은 얼마인가요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "2027년 적용 최저임금은 시간급 10,700원입니다. 주 소정근로 40시간, 월 환산 기준시간 209시간(주휴 8시간 포함)으로 계산한 월 환산액은 2,236,300원입니다. 고용노동부고시 제2026-60호(2026년 8월 5일)로 확정되었습니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "2027년 4대보험 요율은 근로자와 사업주가 각각 얼마인가요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "2027년 국민연금은 10%(근로자 5%·사업주 5%)로 확정됐고, 건강보험은 7.19%(각 3.595%)로 동결됐습니다. 장기요양보험은 건강보험료의 13.90%로 인상이 의결됐습니다. 고용보험 실업급여분은 현행 1.8%(각 0.9%)이고 2.0%(각 1.0%) 인상은 정부안으로 시행령 개정 전입니다. 산재보험은 사업주가 전액 부담하며 업종별 요율에 출퇴근재해 0.06%가 더해집니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "2027년 실업급여 하한액과 상한액은 얼마인가요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "2027년 1월 1일 이후 이직자의 구직급여 하한액은 1일 68,480원입니다(최저임금 10,700원 × 8시간 × 80%). 상한액은 현행 시행령대로면 1일 68,100원이지만, 정부는 상한액을 하한액의 103%로 연동하는 개정안을 입법예고했습니다. 이 계산기는 두 기준을 모두 보여 줍니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "연차유급휴가는 1년에 며칠 발생하나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "근로기준법 제60조에 따라 1년 미만 근로자는 1개월 개근마다 1일(최대 11일)이 발생하고, 1년 이상 80% 이상 출근하면 15일이 발생합니다. 3년 이상 계속 근로하면 최초 1년을 초과하는 매 2년마다 1일이 가산되어 최대 25일까지 늘어납니다." }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/salary.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/salary.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/salary.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/salary.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/salary.html">
+<link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="../assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="salary">
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">November 26, 2026 (Thursday)</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="../salary.html" hreflang="ko" lang="ko">KO</a><a href="salary.html" hreflang="en" lang="en" class="is-on" aria-current="true">EN</a><a href="../zh/salary.html" hreflang="zh-Hans" lang="zh-Hans">ZH</a><a href="../ja/salary.html" hreflang="ja" lang="ja">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">Independent economics & investigative research magazine</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF home">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>Insight Brief</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>We read the context behind the numbers</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">Send a tip</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">Subscribe to the weekly brief</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">News<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="News">
+          <a href="index.html" data-nav-key="all">All stories</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI &amp; Tech</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">Economy &amp; Finance</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">Trade &amp; Commodities</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">Disaster &amp; Safety</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">Weekly investigations</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">Trade &amp; Procurement<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="Trade &amp; Procurement">
+          <a href="biz.html#trade" data-nav-key="tdoc">Trade documents (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">Freight &amp; landing cost</a>
+          <a href="market.html" data-nav-key="market">Commodities &amp; FX board</a>
+          <a href="global.html#portal" data-nav-key="portal">Procurement &amp; company checks</a>
+          <a href="global.html#email" data-nav-key="email">Trade email writer</a>
+          <a href="global.html#trip" data-nav-key="trip">Business trip hub</a>
+          <a href="biz.html#cost" data-nav-key="cost">Margin, cost &amp; cash calculator</a>
+          <a href="seller.html" data-nav-key="seller">Seller &amp; marketer tools</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">Global exhibition calendar</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">Tax, Law &amp; Life<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="Tax, Law &amp; Life">
+          <a href="tax.html" data-nav-key="tax">Tax, salary &amp; health insurance</a>
+          <a href="salary.html" data-nav-key="salary" class="is-active" aria-current="page">Payroll, minimum wage &amp; insurance</a>
+          <a href="insurance.html" data-nav-key="insurance">Indemnity &amp; car insurance</a>
+          <a href="law.html" data-nav-key="law">Contracts &amp; demand letters</a>
+          <a href="forms.html" data-nav-key="forms">Forms &amp; e-signature (138)</a>
+          <a href="saju.html" data-nav-key="saju">Saju &amp; new-year fortune</a>
+          <a href="lotto.html" data-nav-key="lotto">Lotto number generator</a>
+          <a href="music.html" data-nav-key="music">AI music &amp; lyric writer</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">Guide &amp; Sitemap<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="Guide &amp; Sitemap">
+          <a href="sitemap.html" data-nav-key="sitemap">Sitemap</a>
+          <a href="about.html" data-nav-key="about">About us</a>
+          <a href="ad.html" data-nav-key="ad">Advertise &amp; partner</a>
+          <a href="contact.html" data-nav-key="contact">Tips &amp; contact</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="Search by keyword" aria-label="Search articles" autocomplete="off">
+    </form>
+  </div>
+</div>
+
+<main id="main" class="sl-main">
+  <div class="container sl-wrap">
+
+    <div class="sl-head">
+      <span class="kicker">FREE TOOL · 2027 Labor Calculator</span>
+      <h1>2027 Salary, Four Major Insurances, Annual Leave, Pension, and Unemployment Benefits Calculator</h1>
+      <p class="dek">
+        The minimum wage in 2027 will be hourly wage. <b>10,700 won</b>(2,236,300 won per month) was announced, the national pension was increased to 10%, and the health insurance was frozen to 7.19%. This page has those numbers <b>Money actually spent by the company and money held by workers</b>, calculates the number of days of annual leave, expected national pension amount, and whether unemployment benefits are received at once. Calculations are performed only within the browser, and the entered salary and employment date are not sent to the server.
+      </p>
+      <div class="sl-badges">
+        <span>2027 Minimum Wage <b>10,700 won</b> Reflection of notice</span>
+        <span>per rate <b>Confirmed/Government Plan</b> Separator mark</span>
+        <span>No sign-up</span>
+        <span>Nothing sent to a server</span>
+      </div>
+    </div>
+
+    <aside class="ad sl-ad" data-slot="salary-top" aria-label="Advertisement">
+      <span class="ad-label">ADVERTISEMENT</span>
+      <span class="ad-slot">Labor Calculator · Top Ad</span>
+      <span class="ad-size">Responsive · 970 × 90</span>
+      <a class="ad-cta" href="contact.html#ad">Advertise here</a>
+    </aside>
+
+    <nav class="sl-jump" aria-label="Go to calculator">
+      <a href="#pay"><b>①</b>Company Costs vs. Actual Income</a>
+      <a href="#leave"><b>②</b>Annual paid leave</a>
+      <a href="#nps"><b>③</b>Estimated National Pension Amount</a>
+      <a href="#ui"><b>④</b>Unemployment benefits</a>
+      <a href="#basis"><b>⑤</b>Rate and basis</a>
+    </nav>
+
+    <!-- ============================================================
+         ① 회사 비용 vs 실수령액
+    ============================================================ -->
+    <section class="sl-sec" id="pay" aria-labelledby="pay-title">
+      <div class="sl-sec-head">
+        <h2 id="pay-title"><span>①</span>Company Expenditures vs. Employee Earned Income</h2>
+        <span class="mono">As of March 2027 · 4 major insurance + income tax + severance pay</span>
+      </div>
+      <p class="sl-lead">
+        The default is <b>Minimum wage in 2027</b>(10,700 won per hour, 40 hours per week, 209 hours per month = 2,236,300 won). If you change the type of salary, size of business, or industrial accident insurance industry, the total amount the company spends on one person and the amount that person receives in their bank account also change.
+      </p>
+
+      <div class="sl-panel">
+        <div class="sl-panel-head">
+          <h3>Salary and workplace conditions</h3>
+          <span class="mono">If you change it, it will be recalculated immediately</span>
+        </div>
+        <div class="sl-body">
+          <div class="sl-grid two">
+            <div class="sl-field">
+              <div class="lbl"><span>Form of salary</span><span class="hint">Hourly wage ↔ Salary</span></div>
+              <div class="sl-seg" role="group" aria-label="Form of salary">
+                <button type="button" data-paymode="hourly" aria-pressed="true">Hourly rate</button>
+                <button type="button" data-paymode="monthly" aria-pressed="false">Salary</button>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span id="pay-rate-label">Hourly rate</span><span class="hint" id="pay-rate-hint">Minimum wage 10,700 won in 2027</span></div>
+              <div class="unit">
+                <input type="number" id="pay-rate" inputmode="numeric" min="0" step="10" value="10700" aria-describedby="pay-rate-hint">
+                <span>won</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sl-grid three" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>Weekly working hours</span><span class="hint">Calculation including weekly holidays</span></div>
+              <div class="unit">
+                <input type="number" id="pay-hours" inputmode="numeric" min="1" max="52" step="0.5" value="40">
+                <span>h</span>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>Business size</span><span class="hint">Employment stability and job rates</span></div>
+              <select id="pay-size" aria-label="Business size"></select>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>Number of families eligible for deduction</span><span class="hint">Including myself</span></div>
+              <select id="pay-family" aria-label="Number of families eligible for deduction"></select>
+            </div>
+          </div>
+
+          <div class="sl-grid two" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>Industrial Accident Insurance Industry</span><span class="hint">Employer pays the full amount</span></div>
+              <select id="pay-industry" aria-label="Industrial Accident Insurance Industry"></select>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>Enter industrial accident insurance premium rate directly</span><span class="hint">Automatically when selecting industry</span></div>
+              <div class="unit">
+                <input type="number" id="pay-injury" inputmode="decimal" min="0" max="20" step="0.01" value="0.86">
+                <span>%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sl-grid two" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>Employment insurance premium rate in 2027</span><span class="hint">Unemployment benefits</span></div>
+              <div class="sl-seg small" role="group" aria-label="Employment insurance premium rate">
+                <button type="button" data-emp="now" aria-pressed="true">Current 1.8% (confirmed)</button>
+                <button type="button" data-emp="plan" aria-pressed="false">Government plan 2.0%</button>
+              </div>
+            </div>
+            <div class="sl-field" style="display:flex;align-items:flex-end">
+              <label class="sl-check" for="pay-severance">
+                <input type="checkbox" id="pay-severance" checked>
+                <span><b>Including severance pay accumulation</b><br>1/12 of monthly salary is added to company expenses (for more than 1 year of continuous employment)</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sl-out" id="pay-out" aria-live="polite">
+        <div class="sl-kpis">
+          <div class="sl-kpi hi">
+            <span class="k">Total Company Expenditure/Month</span>
+            <span class="v" id="pay-total-cost">–</span>
+            <span class="d" id="pay-total-cost-d">Salary + employer burden + severance pay accumulation</span>
+          </div>
+          <div class="sl-kpi accent">
+            <span class="k">Employee's actual salary / month</span>
+            <span class="v" id="pay-net">–</span>
+            <span class="d" id="pay-net-d">Before tax − 4 major insurance workers − income tax</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">Total Employee Deductions</span>
+            <span class="v" id="pay-worker-deduct">–</span>
+            <span class="d" id="pay-worker-deduct-d">Before tax</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">Total burden on the employer</span>
+            <span class="v" id="pay-employer-cost">–</span>
+            <span class="d" id="pay-employer-cost-d">4 major insurances and severance pay in addition to salary</span>
+          </div>
+        </div>
+
+        <div class="sl-scroll">
+          <table class="sl-table" id="pay-table">
+            <caption>Itemized breakdown — 2027 rates, on a monthly basis. Negative numbers (−) are deductions.</caption>
+            <thead>
+              <tr><th scope="col">Item</th><th scope="col">Workers (deduction)</th><th scope="col">Business owner (burden)</th></tr>
+            </thead>
+            <tbody id="pay-rows"></tbody>
+            <tfoot id="pay-foot"></tfoot>
+          </table>
+        </div>
+
+        <div class="sl-bars">
+          <h4>Where does 100% of the money the company spends go?</h4>
+          <div class="sl-bar" id="pay-bar" role="img" aria-label="Company Total Expenditure Composition Bar"></div>
+          <div class="sl-legend">
+            <span><i class="b1"></i>Worker Error Order <b id="lg-net">–</b></span>
+            <span><i class="b2"></i>Employee deduction (insurance/tax) <b id="lg-deduct">–</b></span>
+            <span><i class="b3"></i>4 major insurance policies for business owners <b id="lg-ins">–</b></span>
+            <span><i class="b4"></i>Savings for severance pay <b id="lg-sev">–</b></span>
+          </div>
+        </div>
+
+        <p class="sl-note" id="pay-note"></p>
+        <p class="sl-warn">
+          <b>The status of rates varies from item to item.</b> The 10% national pension was confirmed by law, the 7.19% health insurance was decided to be frozen, the 13.90% for long-term care was decided by the committee (before the revision of the enforcement ordinance), and the 2.0% unemployment benefit for employment insurance was a government plan (before the revision of the enforcement ordinance). The industrial accident insurance premium rate for 2027 has not yet been announced. <b>Notified rates for 2026</b>. This is why there may be a difference of about 1,000 won from the actual pay stub.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ② 연차유급휴가
+    ============================================================ -->
+    <section class="sl-sec" id="leave" aria-labelledby="leave-title">
+      <div class="sl-sec-head">
+        <h2 id="leave-title"><span>②</span>Number of days of annual paid leave</h2>
+        <span class="mono">Article 60 of the Labor Standards Act · Based on the date of employment</span>
+      </div>
+      <p class="sl-lead">
+        Just enter the joining date. <b>Annual leave accrued so far</b>Wow <b>Amount incurred this year</b>. For less than 1 year, 1 day (maximum 11 days) for every month of perfect attendance, 15 days for more than 1 year and 80% attendance or more, and for 3 years or more, 1 additional day every two years, up to 25 days.
+Enter
+      </p>
+
+      <div class="sl-panel">
+        <div class="sl-panel-head">
+          <h3>Date of employment and base date</h3>
+          <span class="mono">Refer to the explanation below for fiscal year standards.</span>
+        </div>
+        <div class="sl-body">
+          <div class="sl-grid three">
+            <div class="sl-field">
+              <div class="lbl"><span>Date of joining</span></div>
+              <input type="date" id="leave-join" value="2019-03-02" aria-label="Date of joining">
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>As of</span><span class="hint">Today</span></div>
+              <input type="date" id="leave-date" aria-label="As of">
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>Calculation of unused annual leave allowance</span><span class="hint">Select input</span></div>
+              <div class="sl-grid two" style="gap:6px">
+                <div class="unit"><input type="number" id="leave-wage" inputmode="numeric" min="0" step="10" value="10700" aria-label="Regular hourly wage"><span style="right:8px;font-size:10px">won</span></div>
+                <div class="unit"><input type="number" id="leave-unused" inputmode="numeric" min="0" max="60" step="1" value="0" aria-label="Number of unused annual leave days"><span style="right:8px;font-size:10px">days</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sl-out" id="leave-out" aria-live="polite">
+        <div class="sl-kpis">
+          <div class="sl-kpi hi">
+            <span class="k">Current annual leave accrued</span>
+            <span class="v" id="leave-current">–</span>
+            <span class="d" id="leave-current-d">As of this annual leave year</span>
+          </div>
+          <div class="sl-kpi accent">
+            <span class="k">Total number of occurrences</span>
+            <span class="v" id="leave-total">–</span>
+            <span class="d" id="leave-total-d">Entire period since joining the company</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">length of service</span>
+            <span class="v" id="leave-tenure">–</span>
+            <span class="d" id="leave-tenure-d">As of base date</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">Unused Allowance</span>
+            <span class="v" id="leave-pay">–</span>
+            <span class="d" id="leave-pay-d">Regular hourly wage × 8 hours × number of unused days</span>
+          </div>
+        </div>
+
+        <div class="sl-scroll">
+          <table class="sl-table" id="leave-table">
+            <caption>Number of days of annual paid leave by length of service</caption>
+            <thead>
+              <tr><th scope="col">longevity</th><th scope="col">Number of occurrence days</th><th scope="col">Rationale</th></tr>
+            </thead>
+            <tbody id="leave-rows"></tbody>
+          </table>
+        </div>
+
+        <div class="sl-steps">
+          <h4>Calculation formula</h4>
+          <ol id="leave-steps"></ol>
+        </div>
+        <p class="sl-note">
+          <b>Based on fiscal year</b>uses January 1 to December 31 as its annual leave year and divides the accrued portion of the year of employment on a monthly basis. Since the method follows employment rules, the numbers may differ from this calculator (based on the date of employment).
+Save it as <b>80% attendance rate</b>is the ratio of work days out of the total number of working days in the annual leave year, and legal reasons such as childcare leave and work-related accidents are considered work days. Annual leave for employees less than 1 year <b>Within one year from the date of employment</b> It must be used, and any unused portion will be forfeited (employees who have been working for more than 1 year have the right to claim benefits if they do not use it for 1 year).
+        </p>
+      </div>
+    </section>
+
+    <aside class="ad sl-ad" data-slot="salary-mid" aria-label="Advertisement">
+      <span class="ad-label">ADVERTISEMENT</span>
+      <span class="ad-slot">Labor calculator · Advertisement in the middle of the text</span>
+      <span class="ad-size">Responsive · 336 × 280</span>
+      <a class="ad-cta" href="contact.html#ad">Advertise here</a>
+    </aside>
+
+    <!-- ============================================================
+         ③ 국민연금
+    ============================================================ -->
+    <section class="sl-sec" id="nps" aria-labelledby="nps-title">
+      <div class="sl-sec-head">
+        <h2 id="nps-title"><span>③</span>Your expected national pension</h2>
+        <span class="mono">National Pension Act Article 51 Formula · 2026 Notification A Value</span>
+      </div>
+      <p class="sl-lead">
+        The basic national pension amount is <b>Add my income (B value) and the average income of all subscribers (A value)</b> calculates. So, even if your income doubles, your pension does not double, and the subscription period remains proportional. If you enter your average standard monthly income and subscription period below, the expected monthly amount will be calculated using the legal formula.
+      </p>
+
+      <div class="sl-panel">
+        <div class="sl-panel-head">
+          <h3>Assume subscription history</h3>
+          <span class="mono">Only the subscription period after 2026 is reflected.</span>
+        </div>
+        <div class="sl-body">
+          <div class="sl-grid three">
+            <div class="sl-field">
+              <div class="lbl"><span>Year of birth</span><span class="hint">Age at which benefits begin</span></div>
+              <select id="nps-birth" aria-label="Year of birth"></select>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>Total subscription period</span><span class="hint">No pension for less than 10 years</span></div>
+              <div class="unit">
+                <input type="number" id="nps-term" inputmode="numeric" min="0" max="45" step="1" value="25">
+                <span>years</span>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>Average standard monthly income (B value)</span><span class="hint">Nominal average before revaluation</span></div>
+              <div class="unit">
+                <input type="number" id="nps-b" inputmode="numeric" min="0" max="7000000" step="10000" value="3193511">
+                <span>won</span>
+              </div>
+            </div>
+          </div>
+          <div class="sl-grid two" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>Value A (3-year average monthly income of all subscribers)</span><span class="hint">Notified value in 2026</span></div>
+              <div class="unit">
+                <input type="number" id="nps-a" inputmode="numeric" min="0" max="7000000" step="1000" value="3193511">
+                <span>won</span>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>Dependent family pension</span><span class="hint">Spouse, Children, Parents</span></div>
+              <div class="sl-seg small" role="group" aria-label="Dependent family pension">
+                <button type="button" data-fam="none" aria-pressed="true">None</button>
+                <button type="button" data-fam="spouse" aria-pressed="false">Spouse</button>
+                <button type="button" data-fam="all" aria-pressed="false">Spouse + 1 child</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sl-out" id="nps-out" aria-live="polite">
+        <div class="sl-kpis">
+          <div class="sl-kpi hi">
+            <span class="k">Expected monthly pension amount</span>
+            <span class="v" id="nps-month">–</span>
+            <span class="d" id="nps-month-d">Basic pension + dependent pension</span>
+          </div>
+          <div class="sl-kpi accent">
+            <span class="k">Expected annual pension amount</span>
+            <span class="v" id="nps-year">–</span>
+            <span class="d">Monthly amount × 12</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">Age at which benefits begin</span>
+            <span class="v" id="nps-age">–</span>
+            <span class="d" id="nps-age-d">Based on year of birth</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">Payout ratio</span>
+            <span class="v" id="nps-rate">–</span>
+            <span class="d" id="nps-rate-d">Including additions exceeding 20 years</span>
+          </div>
+        </div>
+
+        <div class="sl-steps">
+          <h4>Calculation process</h4>
+          <ol id="nps-steps"></ol>
+        </div>
+
+        <div class="sl-scroll">
+          <table class="sl-table" id="nps-table">
+            <caption>Estimated monthly pension amount by subscription period (based on the same B value, excluding dependent pension) — The payment rate includes additions for over 20 years.</caption>
+            <thead>
+              <tr><th scope="col">Subscription period</th><th scope="col">Payout ratio</th><th scope="col">Monthly pension amount</th><th scope="col">Income replacement rate</th></tr>
+            </thead>
+            <tbody id="nps-rows"></tbody>
+          </table>
+        </div>
+
+        <p class="sl-note" id="nps-note"></p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ④ 실업급여
+    ============================================================ -->
+    <section class="sl-sec" id="ui" aria-labelledby="ui-title">
+      <div class="sl-sec-head">
+        <h2 id="ui-title"><span>④</span>Unemployment benefit (job-seeking benefit) eligibility and expected amount</h2>
+        <span class="mono">Standard for job changers in 2027 · Articles 40, 45, and 46 of the Employment Insurance Act</span>
+      </div>
+      <p class="sl-lead">
+        Job-seeking benefits are <b>60% of average wage before job change</b>is given on a daily basis, but the lower limit (80% of the minimum wage) and upper limit (68,100 won in 2027 or the indexed amount in the reform plan) are applied. The eligibility is
+Computes <b>Reason for job change</b>Wow <b>Insured unit period of more than 180 days within 18 months</b>This is the key.
+      </p>
+
+      <div class="sl-panel">
+        <div class="sl-panel-head">
+          <h3>Conditions for transfer</h3>
+          <span class="mono">The final decision is made by the Employment Center.</span>
+        </div>
+        <div class="sl-body">
+          <div class="sl-grid two">
+            <div class="sl-field">
+              <div class="lbl"><span>Reason for job change</span></div>
+              <select id="ui-reason" aria-label="Reason for job change">
+                <option value="involuntary">Recommended resignation, dismissal, expiration of contract period, layoff (involuntary)</option>
+                <option value="justified">Justifiable reasons such as non-payment of wages, sexual harassment, difficulty commuting, etc.</option>
+                <option value="voluntary">Voluntary resignation due to personal reasons</option>
+              </select>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>Insured unit period within 18 months</span><span class="hint">180 days or more</span></div>
+              <div class="sl-seg" role="group" aria-label="Whether the insured unit period is 180 days or more">
+                <button type="button" data-days180="yes" aria-pressed="true">180 days or more</button>
+                <button type="button" data-days180="no" aria-pressed="false">Less than 180 days</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="sl-grid three" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>Age as of date of job change</span></div>
+              <div class="sl-seg small" role="group" aria-label="Age">
+                <button type="button" data-age="under" aria-pressed="true">Under 50 years of age</button>
+                <button type="button" data-age="over" aria-pressed="false">Over 50 years old/disabled</button>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>Total insured period</span><span class="hint">Determination of prescribed number of days of benefit</span></div>
+              <select id="ui-years" aria-label="Total insured period"></select>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>Daily working hours</span><span class="hint">Calculate the lower limit</span></div>
+              <div class="unit">
+                <input type="number" id="ui-hpd" inputmode="numeric" min="1" max="8" step="0.5" value="8">
+                <span>h</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="sl-grid two" style="margin-top:12px">
+            <div class="sl-field">
+              <div class="lbl"><span>Average monthly salary for 3 months before retirement</span><span class="hint">Before tax, excluding tax exemption</span></div>
+              <div class="unit">
+                <input type="number" id="ui-pay" inputmode="numeric" min="0" step="10000" value="2236300">
+                <span>won</span>
+              </div>
+            </div>
+            <div class="sl-field">
+              <div class="lbl"><span>1-day cap in 2027</span><span class="hint">Whether institutional reform is reflected or not</span></div>
+              <div class="sl-seg small" role="group" aria-label="Based on daily maximum amount">
+                <button type="button" data-cap="now" aria-pressed="true">Current price 68,100 won</button>
+                <button type="button" data-cap="plan" aria-pressed="false">Reorganization plan 70,534 won</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sl-out" id="ui-out" aria-live="polite">
+        <div class="sl-verdict" id="ui-verdict">
+          <span class="st hold" id="ui-st">Calculating</span>
+          <p id="ui-why"></p>
+        </div>
+
+        <ul class="sl-checklist" id="ui-checks"></ul>
+
+        <div class="sl-kpis" style="margin-top:14px">
+          <div class="sl-kpi hi">
+            <span class="k">Daily job search benefit amount</span>
+            <span class="v" id="ui-daily">–</span>
+            <span class="d" id="ui-daily-d">Average wage 60%, upper and lower limits applied</span>
+          </div>
+          <div class="sl-kpi accent">
+            <span class="k">Number of prescribed salary days</span>
+            <span class="v" id="ui-days">–</span>
+            <span class="d" id="ui-days-d">Age × Insured Period</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">Total expected receipts</span>
+            <span class="v" id="ui-total">–</span>
+            <span class="d" id="ui-total-d">Daily amount × Number of payment days</span>
+          </div>
+          <div class="sl-kpi">
+            <span class="k">Average monthly receipt</span>
+            <span class="v" id="ui-first">–</span>
+            <span class="d" id="ui-first-d">Daily amount × 30 days (excluding 7-day waiting period)</span>
+          </div>
+        </div>
+
+        <div class="sl-steps">
+          <h4>Calculation process</h4>
+          <ol id="ui-steps"></ol>
+        </div>
+
+        <div class="sl-scroll">
+          <table class="sl-table" id="ui-table">
+            <caption>Table of prescribed benefit days (Appendix 1 of the Employment Insurance Act) — Based on age as of the date of job change and insured period</caption>
+            <thead>
+              <tr><th scope="col">Insured period</th><th scope="col">Under 50 years of age</th><th scope="col">Over 50 years old/disabled</th></tr>
+            </thead>
+            <tbody id="ui-table-body"></tbody>
+          </table>
+        </div>
+
+        <p class="sl-warn" id="ui-warn"></p>
+        <p class="sl-note">
+          Unemployment benefits are <b>Tax exemption</b>Therefore, the above amount will be deposited as is. However, in 2027, there will be a reversal in which the lower limit (KRW 68,480) will be larger than the current upper limit (KRW 68,100), and the government announced the revision of the enforcement ordinance to link the upper limit to 103% of the lower limit (calculated value of KRW 70,534). It's a horror war, so it ticks both boxes.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ⑤ 요율·근거
+    ============================================================ -->
+    <section class="sl-ref" id="basis" aria-labelledby="basis-title">
+      <h2 id="basis-title">2027 baseline values and basis</h2>
+      <p>
+        The numbers on this calculator are <b>Notices, laws, and press releases published until November 22, 2026</b>. The 2027 rates are at different stages of confirmation depending on the institution, so they are displayed separately as fixed, government plan, and 2026 notified rate (prev). There are no values ​​filled with estimates.
+Check the value in
+      </p>
+      <div class="sl-scroll">
+        <table class="sl-table" id="basis-table">
+          <thead>
+            <tr><th scope="col">Item</th><th scope="col">2027 values</th><th scope="col">Status</th><th scope="col">Rationale</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Minimum Wage</td>
+              <td class="num">Hourly wage 10,700 won<span class="sub">KRW 2,236,300 per month (209 hours)</span></td>
+              <td><span class="sl-tag fixed">Confirmed</span></td>
+              <td style="text-align:left">Ministry of Employment and Labor Notice No. 2026-60 (August 5, 2026)</td>
+            </tr>
+            <tr>
+              <td>National Pension</td>
+              <td class="num">10.0%<span class="sub">Workers 5.0 · Employers 5.0</span></td>
+              <td><span class="sl-tag fixed">Confirmed</span></td>
+              <td style="text-align:left">Supplementary Provisions of the National Pension Act (Law No. 20903) — 0.5% point increase from 9.5% in 2026</td>
+            </tr>
+            <tr>
+              <td>Health Insurance</td>
+              <td class="num">7.19%<span class="sub">Workers 3.595 · Employers 3.595</span></td>
+              <td><span class="sl-tag fixed">Confirmed</span></td>
+              <td style="text-align:left">Ministry of Health and Welfare Health Insurance Policy Deliberation Committee 2026.9.8. Freeze resolution</td>
+            </tr>
+            <tr>
+              <td>Long-term care insurance</td>
+              <td class="num">13.90% of health insurance premiums<span class="sub">0.9994% of income</span></td>
+              <td><span class="sl-tag plan">Amendment Procedure</span></td>
+              <td style="text-align:left">Long-Term Care Committee 2026.10.30. Before revision of resolution/enforcement ordinance</td>
+            </tr>
+            <tr>
+              <td>Employment Insurance (Unemployment Benefits)</td>
+              <td class="num">1.8% → 2.0%<span class="sub">0.9% each → 1.0% each</span></td>
+              <td><span class="sl-tag fixed">Current</span><span class="sl-tag plan">Government plan</span></td>
+              <td style="text-align:left">Ministry of Employment and Labor 「Employment Insurance System Reform Plan」 2026.9.1. · Before enforcement ordinance revision</td>
+            </tr>
+            <tr>
+              <td>Employment stability and vocational skills development</td>
+              <td class="num">0.25 / 0.45 / 0.65 / 0.85%<span class="sub">Total amount by business owner, by size</span></td>
+              <td><span class="sl-tag fixed">Current</span></td>
+              <td style="text-align:left">Article 12 of the Enforcement Decree of the Employment and Industrial Accident Insurance Premium Collection Act</td>
+            </tr>
+            <tr>
+              <td>Industrial Accident Insurance</td>
+              <td class="num">0.5~18.5% by industry<span class="sub">+ Commute accidents 0.06%</span></td>
+              <td><span class="sl-tag prev">Notification of 2026</span></td>
+              <td style="text-align:left">Ministry of Employment and Labor Notice No. 2025-91 · Scheduled to be announced in December for 2027</td>
+            </tr>
+            <tr>
+              <td>Lower limit of job-seeking benefits</td>
+              <td class="num">68,480 won per day<span class="sub">10,700 won × 8 hours × 80%</span></td>
+              <td><span class="sl-tag fixed">Apply formula</span></td>
+              <td style="text-align:left">Article 45④ and Article 46 of the Employment Insurance Act — Automatically determined by minimum wage notice</td>
+            </tr>
+            <tr>
+              <td>Maximum amount of job-seeking benefits</td>
+              <td class="num">68,100 won per day → 70,534 won<span class="sub">Basic daily amount upper limit 113,500 won × 60% / lower limit × 103%</span></td>
+              <td><span class="sl-tag fixed">Current</span><span class="sl-tag plan">Amendment</span></td>
+              <td style="text-align:left">Article 68 of the Enforcement Decree of the Employment Insurance Act · Legislative notice on the amendment to the upper limit (9.22.~11.2.)</td>
+            </tr>
+            <tr>
+              <td>National pension A value</td>
+              <td class="num">3,193,511 won<span class="sub">A value for 2027 will be announced in January 2027</span></td>
+              <td><span class="sl-tag prev">Notification of 2026</span></td>
+              <td style="text-align:left">Ministry of Health and Welfare Notice “2026 National Pension Reassessment Rate and Pension Amount Adjustment”</td>
+            </tr>
+            <tr>
+              <td>Simplified tax amount table for earned income</td>
+              <td class="num">2026.2.27. revision table<span class="sub">The 2027 table was revised in February 2027.</span></td>
+              <td><span class="sl-tag prev">Table for 2026</span></td>
+              <td style="text-align:left">Appendix 2 of the Enforcement Decree of the Income Tax Act — Inquire as is the table value (not an approximation)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h3>Calculation formula</h3>
+      <dl>
+        <dt>Monthly conversion working hours and salary</dt>
+        <dd>Add the weekly working hours to the weekly vacation time (if the weekly working hours are more than 15 hours, weekly working hours ÷ 5, maximum 8 hours) and multiply by 365/12/7. 40 hours a week is (40+8) × 4.3452 ≒ 209 hours, and multiply this by the hourly wage to get the monthly salary.</dd>
+        <dt>Four major insurance premiums</dt>
+        <dd>The national pension multiplies the standard monthly income (monthly compensation rounded off to less than 1,000 won, range from 410,000 to 6.59 million won) by 5%. Health insurance is 3.595% of the monthly salary (rounded down to 10 won or less), and long-term care is 13.90% of the health insurance premium (rounded down to 10 won or less). Employment insurance multiplies the monthly compensation amount by 0.9% (1.0% when reorganized), and the employer adds the job security and vocational skills development rate by size to this. Industrial accident insurance is fully borne by the employer at the rate of monthly compensation × (industry rate + 0.06%).</dd>
+        <dt>Earned income tax</dt>
+        <dd>From the National Tax Service’s Simplified Tax Amount Table on Earned Income (Appendix 2 of the Enforcement Decree of the Income Tax Act) <b>Monthly salary section excluding tax exemption</b>and <b>Number of families eligible for deduction</b>meets. Local income tax is 10% of income tax. The simplified tax table is a value that reflects the earned income deduction, basic deduction, pension insurance premium deduction, and earned income tax credit in advance, so it is recalculated with the actual tax at the year-end tax settlement.
+It starts at the moment</dd>
+        <dt>Severance pay</dt>
+        <dd>If you continue to work for more than one year, upon retirement you will receive the average daily wage × 30 days × (number of days of employment ÷ 365). If you look at the monthly savings, it is about 1/12 of the monthly salary, so that amount was included in the company expenses (DC type retirement pension with a statutory saving obligation is more than 1/12 of the monthly salary).</dd>
+        <dt>Annual paid leave</dt>
+        <dd>Less than 1 year: 1 day per month of perfect attendance (up to 11 days). Attendance at least 80% of the time for more than one year: 15 days. Over 3 years: 1 day added for every 2 years of continuous employment beyond the first year, up to a total of 25 days. Unused allowance is the regular hourly wage × 8 hours × the number of unused days.</dd>
+        <dt>National Pension</dt>
+        <dd>Basic pension amount (per year) = 1.29 × (A + B) × (1 + 0.05 × n/12). 1.29 is the proportionality constant corresponding to an income replacement rate of 43%, and n is the number of months of subscription exceeding 20 years. If the subscription period is 10 to 20 years, the payment rate is multiplied by 50 to 100%, and if the subscription period is less than 10 years, a lump sum refund is received instead of a pension. The monthly amount is the annual amount divided by 12.</dd>
+        <dt>Unemployment benefits</dt>
+        <dd>Average daily wage = Total wages for the 3 months before changing jobs ÷ Number of days in that period (This calculator divides by 91.25 days). If the basic daily wage exceeds 113,500 won, the upper limit is applied, multiplied by 60%, and if it is lower than the lower limit (minimum wage × 80% × daily working hours), the lower limit is used. Multiply this by the number of salary days (120 to 270 days) to get the total amount.</dd>
+      </dl>
+
+      <h3>Verified Source</h3>
+      <ul class="sl-src">
+        <li><b>Minimum wage notice to apply in 2027</b> — Ministry of Employment and Labor Notice No. 2026-60 (August 5, 2026), hourly wage 10,700 won, monthly wage 2,236,300 won. <a href="https://www.minimumwage.go.kr/customer/notice/view.do?bultnId=4774" target="_blank" rel="noopener">Minimum Wage Committee Notice</a></li>
+        <li><b>Four major insurance rates in 2027</b> — Supplementary Provisions of the National Pension Act (Law No. 20903), Ministry of Health and Welfare Health and Welfare Review on September 8, 2026 (Health Insurance 7.19% freeze), Long-Term Care Committee on October 30, 2026 (13.90%)</li>
+        <li><b>Employment insurance system reform plan</b> — Ministry of Employment and Labor 2026.9.1. Press release (2.0% unemployment benefit, 103% linked to upper and lower limits, paid 6 days a week)</li>
+        <li><b>Industrial accident insurance premium rates by business type in 2026</b> — Ministry of Employment and Labor Notice No. 2025-91, commuting accidents in all industries 0.06%</li>
+        <li><b>Employment Insurance Act</b> Article 40 (Supply and Demand Requirements), Article 45 (Basic Daily Amount), Article 46 (Daily Job-Seeking Benefit), Annex 1 (Number of Prescribed Benefit Days), Enforcement Decree Article 68 (Basic Daily Amount Upper Limit 113,500 Won)</li>
+        <li><b>National Pension Act</b> Article 51 (Basic Pension Amount), Article 61, Article 63, Ministry of Health and Welfare “2026 National Pension Reassessment Rate and Pension Amount Adjustment” (A value 3,193,511 won)</li>
+        <li><b>Labor Standards Act</b> Article 60 (Annual Paid Leave), Article 8 (Severance Pay) of the Employee Retirement Benefit Security Act</li>
+        <li><b>Enforcement Decree of the Income Tax Act</b> Appendix 2 (Simplified Tax Amount Table on Earned Income, Revised on February 27, 2026) — <a href="https://www.law.go.kr/" target="_blank" rel="noopener">National Legislation Information Center</a></li>
+      </ul>
+
+      <p style="margin-top:16px">
+        Good tools to use with: <a href="lotto.html">Powerball & Mega Millions generator</a> · <a href="saju.html">Free All Powers Calendar · 2027 Jeong Mi-nyeon New Year’s Horoscope</a> · <a href="market.html">Market board</a>
+      </p>
+    </section>
+
+    <!-- 인사·노무 실무 패키지 · 제휴 문의 -->
+    <section class="mo-sec" id="practice" aria-labelledby="practice-title">
+      <div class="mo-sec-head">
+        <h2 id="practice-title">Human Resources/Labor Practice Package/Tax/Labor Partnership</h2>
+        <span>Form production and partnership inquiries</span>
+      </div>
+      <div class="mo-split">
+        <div>
+          <div class="mo-panel">
+            <h3>Salary ledger/employment contract format package</h3>
+            <p>The 2027 rates (national pension 10%, health insurance 7.19%, long-term care 13.90%, employment insurance 1.8→2.0% whether or not the revision is reflected) in the calculator above are entered as is. <b>Salary ledger, 4 major insurance details, employment contract, annual leave ledger</b> We create Excel formats tailored to the size of your company. Please tell us the full-time staff and salary type (monthly, hourly, daily).</p>
+            <ul class="mo-list">
+              <li>Salary ledger + 4 major insurance and income tax details (based on number of people)</li>
+              <li>Employment/salary contract, annual leave ledger/annual leave use promotion notice</li>
+              <li>Includes formula to automatically reflect revised rates and minimum wages</li>
+            </ul>
+            <p style="margin-top:10px;font-size:11.5px;color:var(--muted)">This is a form production and provision, not legal or tax advice. We recommend that you conduct a final review with a labor attorney or tax accountant.</p>
+          </div>
+          <div class="mo-mini">
+            <a href="links.html">
+              <b>Recommended books and supplies →</b>
+              <span>Labor and tax practice books and calculators and stationery. We receive commissions through Coupang Partners links.</span>
+            </a>
+            <a href="ad.html#rates">
+              <b>This page advertisement/sponsorship →</b>
+              <span>Exposure to readers looking for labor/tax services and HR SaaS.</span>
+            </a>
+            <a href="experts.html">
+              <b>Expert matching · free quotes →</b>
+              <span>We connect you to experts in each field for matters that are difficult to handle on your own, such as labor, four major insurances, taxes, and bookkeeping. Free to apply.</span>
+            </a>
+          </div>
+        </div>
+        <form class="mo-form mo-panel" data-ib-inquiry data-kind="b2b" data-source="salary.html" novalidate>
+          <div>
+            <label for="sal-inq-kind">Inquiry classification <span class="req">*</span></label>
+            <select id="sal-inq-kind" name="topic">
+              <option value="pkg">Human Resources/Labor Form Package</option>
+              <option value="partner">Tax and labor partnership</option>
+              <option value="other">Others</option>
+            </select>
+          </div>
+          <div>
+            <label for="sal-inq-email">Email <span class="req">*</span></label>
+            <input type="email" id="sal-inq-email" name="email" autocomplete="email" placeholder="name@company.com" required>
+          </div>
+          <div>
+            <label for="sal-inq-phone">Contact <span style="color:var(--muted);font-weight:400">(optional)</span></label>
+            <input type="tel" id="sal-inq-phone" name="phone" autocomplete="tel" placeholder="010-0000-0000">
+          </div>
+          <div>
+            <label for="sal-inq-msg">Contents <span class="req">*</span></label>
+            <textarea id="sal-inq-msg" name="message" required placeholder="Example) 7 full-time employees, monthly salary system. A salary ledger and employment contract form are required."></textarea>
+          </div>
+          <p class="mo-note">The contact information you leave will be used only for replies and will be destroyed once the purpose has been achieved.</p>
+          <p class="mo-msg" data-ib-msg role="status" aria-live="polite" hidden></p>
+          <button class="btn btn-accent" type="submit">Inquiry reception</button>
+        </form>
+      </div>
+    </section>
+
+    <p class="sl-disclaimer">
+      <strong>This calculator is a reference tool created by incorporating publicly available notices and laws, and is not legal, tax, or labor advice.</strong>
+      Among the rates for 2027, the national pension (10%) and health insurance (7.19%) are confirmed, but long-term care (13.90%) and employment insurance (2.0%) are before the revision of the enforcement ordinance, and the industrial accident insurance premium rate is the 2026 announced value. The estimated national pension amount is a simple calculation that reflects only the subscription period after 2026, and is different from the NHIS inquiry value that reflects the reassessment rate, childbirth, military service credit, and future payment of the past subscription period. Income tax is based on the 2026 simplified tax table, so it may differ from the revised table in February 2027. For actual pay stubs, retirement settlement, and eligibility determination, please check with your accounting representative, the Ministry of Employment and Labor's Customer Service Center (1350), the National Pension Service (1355), and the Korea Workers' Compensation and Welfare Service. The entered salary, employment date, and subscription period are calculated only within the browser and are not transmitted or stored on the server.
+    </p>
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>Independent economics & investigative research magazine</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>Insight Brief is an independent research webzine that tracks the economy, finance, trade, raw materials, and AI and tech through data and interviews. It is not an officially registered Internet newspaper and does not meet the registration requirements, such as having more than 5 reporting and editing staff.</p>
+      </div>
+      <div class="f-col">
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">Investigation</a></li>
+          <li><a href="index.html?cat=economy">Economy & Finance</a></li>
+          <li><a href="index.html?cat=trade">Trade & Commodities</a></li>
+          <li><a href="market.html">Market board</a></li>
+          <li><a href="index.html?cat=ai">AI & Tech</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Publication</h4>
+        <ul>
+          <li><a href="about.html">About & editorial policy</a></li>
+          <li><a href="contact.html#tip">Reader tips</a></li>
+          <li><a href="ad.html">Ad & sponsor rate card</a></li>
+          <li><a href="ad.html#b2b">B2B sourcing & cost inquiry</a></li>
+          <li><a href="lotto.html">Free tools · number generator</a></li>
+          <li><a href="saju.html">Free tool · saju & 2027 forecast</a></li>
+          <li><a href="salary.html">Free tool · Payroll & labour calculator</a></li>
+          <li><a href="tax.html">Tax & closing</a></li>
+          <li><a href="biz.html">Free tool · 9 tools for solo business owners</a></li>
+          <li><a href="seller.html">Free tools · 4 seller & marketer tools</a></li>
+          <li><a href="feed.xml">RSS feed</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+          <li><a href="sitemap.xml">sitemap.xml</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">Report hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">Advertising hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">Seoul · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>This webzine is an independent media that is not registered as an internet newspaper. Unauthorized reproduction or redistribution of articles and photos is prohibited. Sponsorship/advertising content is indicated as ‘advertisement’.</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · Independent economics & investigative research magazine</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="Live briefing channels"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>Live briefing channels</h3><p>Get new reports and market updates in real time on KakaoTalk Open Chat and Telegram.</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk Open Chat</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram channel</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+<script src="../assets/js/salary-data.js?v=20261122c" defer></script>
+<script src="../assets/js/monetize.js?v=20261123c" defer></script>
+<script src="../assets/js/salary.js?v=20261122c" defer></script>
+<script src="../assets/js/nav.js?v=20261124c"></script>
+<script src="data/i18n.fallback.js?v=20261124a"></script>
+<script src="../assets/js/i18n.js?v=20261124a"></script>
+<script src="../assets/js/intl-core.js?v=20261124a" defer></script>
+<script src="../assets/js/intl-salary.js?v=20261124a" defer></script>
+<!-- IB:SHARE-FLOAT -->
+<script src="../assets/js/share-float.js?v=20261124c" defer></script>
+<!-- /IB:SHARE-FLOAT -->
+<!-- IB:CHAT-FLOAT -->
+<script src="../assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

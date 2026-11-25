@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<title>세무·결산 자체처리 툴 — 1인 기업·중소 법인 부가세·원천세·결산 | INSIGHT BRIEF</title>
+<meta name="description" content="통장·홈택스 CSV를 올리면 증빙 자동 매칭과 분개, 부가세·원천세·외환차손익·기말재고·결산 요약까지 브라우저에서 처리하는 무료 세무·결산 도구. 입력값은 서버로 전송되지 않고 내 브라우저에만 저장됩니다.">
+<meta name="keywords" content="세무 결산 프로그램, 부가세 계산, 원천징수이행상황신고서, 급여대장, 4대보험 계산, 외환차손익, 외화환산손익, 수출실적명세서, 기말재고, 증빙불비가산세, 가지급금 인정이자, 홈택스 CSV">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/tax.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:title" content="세무·결산 자체처리 툴 — 1인 기업·중소 법인">
+<meta property="og:description" content="통장·홈택스 CSV 업로드로 증빙 자동 매칭·분개, 급여대장·원천세, 수출입 외환 정산, 기말재고와 결산 요약까지 한 페이지에서. 회원가입 없이 브라우저에서만 계산합니다.">
+<meta property="og:url" content="https://insightbriefnews.com/tax.html">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="세무·결산 자체처리 툴 — 부가세·원천세·외환·결산">
+<meta name="twitter:description" content="통장·홈택스 CSV를 올리면 증빙 매칭·분개·부가세·원천세·외환차손익·결산 요약까지 브라우저에서. 입력값 서버 전송 없음.">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/tax.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/tax.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/tax.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/tax.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/tax.html">
+<link rel="stylesheet" href="assets/css/i18n.css">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="assets/css/tax.css?v=20261124c">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "세무·결산 자체처리 툴",
+  "url": "https://insightbriefnews.com/tax.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "1인 기업과 중소 법인을 위한 자체 세무·결산 도구. 통장·홈택스 CSV 업로드, 금액·날짜 기반 증빙 자동 매칭과 분개, 급여대장·원천징수이행상황신고서 요약, 수출입 외환차손익·외화환산손익, 기말재고와 결산 요약, 부가세·원천세 집계표 인쇄를 브라우저에서 처리합니다. 파일과 입력값은 서버로 전송하지 않습니다.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "홈택스·은행 자료를 자동으로 가져오나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "아닙니다. 이 페이지는 정적 웹앱이라 홈택스·은행·유니패스를 직접 조회하지 않습니다. 홈택스에서 내려받은 전자세금계산서·사업용카드·현금영수증 CSV와 인터넷뱅킹 거래내역 CSV를 올리거나 직접 입력합니다. 모든 처리는 브라우저 안에서만 이뤄지고 파일은 서버로 전송되지 않습니다." }
+    },
+    {
+      "@type": "Question",
+      "name": "여기서 만든 집계표로 바로 신고할 수 있나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "집계표와 CSV는 홈택스 직접 입력·전자신고를 할 때 참고하는 보조 자료입니다. 부가세 신고서나 원천징수이행상황신고서를 대신 제출하지 않습니다. 금액과 계정 구분은 실제 증빙·계약과 대조해 확인한 뒤 사용하세요." }
+    },
+    {
+      "@type": "Question",
+      "name": "입력한 자료는 어디에 저장되나요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "사용자 브라우저의 localStorage에만 저장됩니다. 서버 전송이나 계정 로그인이 없고, 브라우저 데이터를 지우면 함께 사라집니다. 다른 기기와 공유되지 않으므로 필요하면 CSV로 내려받아 보관하세요." }
+    },
+    {
+      "@type": "Question",
+      "name": "법인세·종합소득세 계산은 얼마나 정확한가요?",
+      "acceptedAnswer": { "@type": "Answer", "text": "영업이익을 과세표준으로 보고 법인세·종합소득세 구간 세율을 그대로 적용한 간이 계산입니다. 세무조정, 이월결손금, 감면, 공제 항목은 반영하지 않으므로 실제 신고 세액과 차이가 있습니다. 참고용으로만 쓰고 확정 세액은 세무대리인이나 국세청 신고 도우미로 확인하세요." }
+    }
+  ]
+}
+</script>
+<link rel="stylesheet" href="assets/css/nav.css?v=20261125a">
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tax">
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026년 11월 24일 화요일</span>
+      </div>
+      <div class="tb-right">
+        <div class="lang-switch" role="group" aria-label="Language"><a href="tax.html" hreflang="ko" lang="ko" class="is-on" aria-current="true">KO</a><a href="en/tax.html" hreflang="en" lang="en">EN</a><a href="zh/tax.html" hreflang="zh-Hans" lang="zh-Hans">ZH</a><a href="ja/tax.html" hreflang="ja" lang="ja">JA</a></div>
+        <span class="opt">독립 경제·탐사 리서치 웹진</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF 홈으로">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>인사이트 브리프</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>숫자 뒤의 맥락을 읽습니다</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">제보하기</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">주간 브리핑 구독</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">뉴스·리포트<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="뉴스·리포트">
+          <a href="index.html" data-nav-key="all">전체 기사</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI·테크</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">경제·금융</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">무역·원자재</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">재난·안전</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">주간 탐사보도</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">무역·조달·시황<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="무역·조달·시황">
+          <a href="biz.html#trade" data-nav-key="tdoc">무역서식 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">해상운임·물류비 비교</a>
+          <a href="market.html" data-nav-key="market">원자재·환율 시황판</a>
+          <a href="global.html#portal" data-nav-key="portal">조달청·기업검증 포털</a>
+          <a href="global.html#email" data-nav-key="email">무역 이메일</a>
+          <a href="global.html#trip" data-nav-key="trip">출장 허브</a>
+          <a href="biz.html#cost" data-nav-key="cost">마진·원가·자금 계산기</a>
+          <a href="seller.html" data-nav-key="seller">셀러·마케터 툴</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">글로벌 전시회 캘린더</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">세무·법률·생활<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="세무·법률·생활">
+          <a href="tax.html" data-nav-key="tax" class="is-active" aria-current="page">세금·연봉·건보 계산기</a>
+          <a href="salary.html" data-nav-key="salary">급여·최저임금·4대보험</a>
+          <a href="insurance.html" data-nav-key="insurance">실손·자동차보험 계산기</a>
+          <a href="law.html" data-nav-key="law">법률·계약서·내용증명</a>
+          <a href="forms.html" data-nav-key="forms">서식·전자서명 138종</a>
+          <a href="saju.html" data-nav-key="saju">무료 만세력·신년운세</a>
+          <a href="lotto.html" data-nav-key="lotto">로또 번호 생성기</a>
+          <a href="music.html" data-nav-key="music">AI 음악·가사 생성기</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">안내·사이트맵<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="안내·사이트맵">
+          <a href="sitemap.html" data-nav-key="sitemap">사이트맵</a>
+          <a href="about.html" data-nav-key="about">매체 소개</a>
+          <a href="ad.html" data-nav-key="ad">광고·제휴</a>
+          <a href="contact.html" data-nav-key="contact">제보·문의</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="키워드로 검색" aria-label="기사 검색" autocomplete="off">
+    </form>
+  </div>
+</div>
+
+<main id="main" class="tx-main">
+  <div class="container tx-wrap">
+
+    <div class="tx-head">
+      <span class="kicker">FREE TOOL · 세무·결산 자체처리</span>
+      <h1>세무·결산 자체처리 툴</h1>
+      <p class="dek">
+        1인 기업과 중소 법인이 <b>통장과 홈택스 자료를 올려</b> 증빙 매칭·분개부터 부가세, 급여대장·원천세, 수출입 외환차손익, 기말재고와 결산 요약까지 한 페이지에서 정리합니다.
+        회원가입 없이 <b>내 브라우저에서만</b> 계산·저장하고, 산출물은 CSV와 인쇄용 집계표로 내려받습니다.
+      </p>
+      <div class="tx-badges">
+        <span>입력값 <b>서버 전송 없음</b></span>
+        <span><b>localStorage</b> 자동 저장</span>
+        <span>부가세·원천세·외환·결산 <b>6개 모듈</b></span>
+        <span>홈택스·은행 <b>CSV 업로드</b> 방식</span>
+      </div>
+
+      <div class="tx-toolbar">
+        <button class="btn btn-accent btn-sm" type="button" id="tx-sample">샘플 법인 데이터 불러오기</button>
+        <button class="btn btn-ghost btn-sm" type="button" id="tx-reset">전체 초기화</button>
+        <button class="btn btn-ghost btn-sm" type="button" id="tx-export-all">전체 CSV 내려받기</button>
+        <span class="tx-save" id="tx-save">브라우저에 자동 저장됩니다</span>
+        <p class="tx-msg" id="tx-msg" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="tx-notice">
+        <b>정직한 안내 — 이 페이지가 하는 일과 하지 않는 일</b>
+        <ul>
+          <li>홈택스·은행·유니패스를 <b>직접 조회(스크래핑)하지 않습니다.</b> 홈택스에서 내려받은 전자세금계산서·사업용카드·현금영수증 CSV와 인터넷뱅킹 거래내역 CSV를 올리거나 직접 입력합니다.</li>
+          <li>여기서 나온 집계표·CSV는 <b>홈택스 직접 입력과 전자신고의 참고 자료</b>입니다. 신고서를 대신 제출하지 않습니다.</li>
+          <li>모든 자료는 <b>내 브라우저 localStorage</b>에만 남고 서버로 보내지 않습니다. 브라우저 데이터를 지우면 함께 사라지니 필요하면 CSV로 내려받으세요.</li>
+          <li>세율·보험료율은 공개 고시값을 넣은 <b>간이 계산</b>입니다. 세무조정·감면·이월결손금은 반영하지 않습니다.</li>
+        </ul>
+      </div>
+    </div>
+
+    <nav class="tx-jump" aria-label="모듈 바로가기">
+      <a href="#tx-dash"><b>01</b>대시보드·체크리스트</a>
+      <a href="#tx-ledger"><b>02</b>증빙·통장·분개</a>
+      <a href="#tx-payroll"><b>03</b>급여·원천세</a>
+      <a href="#tx-fx"><b>04</b>수출입·외환</a>
+      <a href="#tx-close"><b>05</b>결산 마법사</a>
+      <a href="#tx-export"><b>06</b>내보내기·인쇄</a>
+    </nav>
+
+    <!-- ============================================================ 01 -->
+    <section class="tx-sec" id="tx-dash">
+      <div class="tx-sec-head">
+        <h2><span>01</span>실시간 세무 대시보드</h2>
+        <span class="mono">LIVE TAX BOARD</span>
+      </div>
+      <p class="tx-lead">통장과 증빙을 올리면 <b>예상 부가세·영업이익·법인세(종합소득세)</b>가 바로 다시 계산됩니다. 사업자 형태를 바꾸면 세목과 세율 구간이 함께 바뀝니다.</p>
+
+      <div class="tx-actions" style="margin-top:0;margin-bottom:10px">
+        <div class="tx-seg" id="tx-entity" role="group" aria-label="사업자 형태">
+          <button type="button" data-entity="corp" aria-pressed="true">법인사업자</button>
+          <button type="button" data-entity="sole" aria-pressed="false">개인사업자</button>
+        </div>
+        <div class="tx-field" style="min-width:150px">
+          <select id="tx-fy" class="tx-select" aria-label="과세기간">
+            <option value="2026">2026년 과세기간</option>
+            <option value="2025">2025년 과세기간</option>
+            <option value="2027">2027년 과세기간</option>
+          </select>
+        </div>
+        <span class="tx-chip mut" id="tx-entity-note">법인 · 법인세 9~19% 구간</span>
+      </div>
+
+      <div class="tx-kpis" id="tx-kpis">
+        <div class="tx-kpi hi">
+          <span class="k">예상 부가가치세 (납부·환급)</span>
+          <span class="v tx-num" id="tx-kpi-vat">0원</span>
+          <span class="d" id="tx-kpi-vat-d">매출세액 − 매입세액 − 영세율 공제</span>
+        </div>
+        <div class="tx-kpi">
+          <span class="k">이번 달 영업이익</span>
+          <span class="v tx-num" id="tx-kpi-month">0원</span>
+          <span class="d" id="tx-kpi-month-d">이번 달 매출 − 비용</span>
+        </div>
+        <div class="tx-kpi">
+          <span class="k">연간 영업이익</span>
+          <span class="v tx-num" id="tx-kpi-year">0원</span>
+          <span class="d" id="tx-kpi-year-d">과세기간 누적</span>
+        </div>
+        <div class="tx-kpi">
+          <span class="k" id="tx-kpi-taxtitle">예상 법인세</span>
+          <span class="v tx-num" id="tx-kpi-incometax">0원</span>
+          <span class="d" id="tx-kpi-incometax-d">간이세율 · 지방세 포함</span>
+        </div>
+      </div>
+
+      <div class="tx-grid two" style="margin-top:12px">
+        <div class="tx-panel">
+          <div class="tx-panel-head"><h3>매출·매입·세액 요약</h3><span class="mono">VAT SUMMARY</span></div>
+          <div class="tx-scroll">
+            <table class="tx-table compact"><tbody id="tx-summary"></tbody></table>
+          </div>
+        </div>
+        <div class="tx-panel">
+          <div class="tx-panel-head"><h3>세금 계산 근거</h3><span class="mono">TAX BASIS</span></div>
+          <div class="tx-scroll">
+            <table class="tx-table compact"><tbody id="tx-basis"></tbody></table>
+          </div>
+        </div>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head">
+          <h3>주기별 결산 체크리스트</h3>
+          <span class="mono">DAILY · MONTHLY · QUARTERLY · ANNUAL</span>
+        </div>
+        <div class="tx-body">
+          <p class="tx-hint" style="margin-bottom:10px">각 항목을 누르면 체크가 저장되고 진행률이 함께 바뀝니다. <b>증빙·양식</b>은 그 주기에 맞춰 준비할 서류와 작성 양식입니다.</p>
+          <div class="tx-checks" id="tx-checks"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ 02 -->
+    <section class="tx-sec" id="tx-ledger">
+      <div class="tx-sec-head">
+        <h2><span>02</span>증빙·통장 업로드 &amp; 자동 매칭·분개</h2>
+        <span class="mono">EVIDENCE &amp; BANK</span>
+      </div>
+      <p class="tx-lead">통장 내역과 홈택스 증빙을 올리면 <b>금액과 날짜</b>로 서로 짝을 찾아 외상매출금 회수·외상매입금 결제로 분개합니다. 짝이 없거나 적요가 빈 내역은 <b>미확인 목록</b>에 모아 원클릭으로 정리합니다.</p>
+
+      <div class="tx-grid two">
+        <div class="tx-panel">
+          <div class="tx-panel-head"><h3>① 은행 통장 CSV</h3><span class="mono">BANK STATEMENT</span></div>
+          <div class="tx-body">
+            <p class="tx-hint">인터넷뱅킹 → 거래내역 조회 → <b>CSV·엑셀 저장</b> 파일을 그대로 올리세요. 열 이름이 달라도 <b>거래일·적요·입금·출금</b>을 찾아 읽습니다.</p>
+            <div class="tx-field">
+              <label class="lbl" for="tx-bank-file">파일 선택 <span class="hint">CSV · UTF-8/EUC-KR</span></label>
+              <input type="file" id="tx-bank-file" accept=".csv,.txt,text/csv" class="tx-input">
+            </div>
+            <div class="tx-actions">
+              <button class="tx-btn-xs" type="button" id="tx-bm-toggle">＋ 통장 내역 직접 추가</button>
+              <span class="tx-hint" id="tx-bank-msg" style="margin:0"></span>
+            </div>
+            <form id="tx-bm-form" hidden style="margin-top:10px">
+              <div class="tx-grid three">
+                <div class="tx-field"><label class="lbl" for="tx-bm-date">거래일</label><input type="date" id="tx-bm-date"></div>
+                <div class="tx-field"><label class="lbl" for="tx-bm-in">입금액</label><div class="unit"><input type="number" id="tx-bm-in" min="0" step="1" placeholder="0"><span>원</span></div></div>
+                <div class="tx-field"><label class="lbl" for="tx-bm-out">출금액</label><div class="unit"><input type="number" id="tx-bm-out" min="0" step="1" placeholder="0"><span>원</span></div></div>
+              </div>
+              <div class="tx-field" style="margin-top:8px"><label class="lbl" for="tx-bm-desc">적요·거래내용</label><input type="text" id="tx-bm-desc" placeholder="예) (주)대성상사 외상대금 입금"></div>
+              <div class="tx-actions"><button class="btn btn-accent btn-sm" type="submit">통장 내역 추가</button></div>
+            </form>
+          </div>
+        </div>
+
+        <div class="tx-panel">
+          <div class="tx-panel-head"><h3>② 홈택스 증빙 CSV</h3><span class="mono">HOMETAX EVIDENCE</span></div>
+          <div class="tx-body">
+            <p class="tx-hint">홈택스 → 전자세금계산서(매출·매입) / 사업용카드 / 현금영수증 조회 → <b>CSV 다운로드</b>. 종류를 고르고 파일을 올리면 공급가액·세액을 나눠 읽습니다.</p>
+            <div class="tx-field">
+              <label class="lbl" for="tx-ev-type">증빙 종류</label>
+              <select id="tx-ev-type" class="tx-select">
+                <option value="sales_invoice">전자세금계산서 · 매출</option>
+                <option value="purchase_invoice">전자세금계산서 · 매입</option>
+                <option value="card">사업용카드</option>
+                <option value="cash">현금영수증</option>
+              </select>
+            </div>
+            <div class="tx-field" style="margin-top:8px">
+              <label class="lbl" for="tx-ev-file">파일 선택 <span class="hint">CSV · 최대 2,000행</span></label>
+              <input type="file" id="tx-ev-file" accept=".csv,.txt,text/csv" class="tx-input">
+            </div>
+            <div class="tx-actions">
+              <button class="tx-btn-xs" type="button" id="tx-em-toggle">＋ 증빙 직접 추가</button>
+              <span class="tx-hint" id="tx-ev-msg" style="margin:0"></span>
+            </div>
+            <form id="tx-em-form" hidden style="margin-top:10px">
+              <div class="tx-grid two">
+                <div class="tx-field"><label class="lbl" for="tx-em-date">작성일</label><input type="date" id="tx-em-date"></div>
+                <div class="tx-field"><label class="lbl" for="tx-em-type">종류</label>
+                  <select id="tx-em-type" class="tx-select">
+                    <option value="sales_invoice">전자세금계산서 · 매출</option>
+                    <option value="purchase_invoice">전자세금계산서 · 매입</option>
+                    <option value="card">사업용카드</option>
+                    <option value="cash">현금영수증</option>
+                  </select>
+                </div>
+              </div>
+              <div class="tx-field" style="margin-top:8px"><label class="lbl" for="tx-em-partner">거래처·가맹점</label><input type="text" id="tx-em-partner" placeholder="예) (주)대성상사"></div>
+              <div class="tx-grid two" style="margin-top:8px">
+                <div class="tx-field"><label class="lbl" for="tx-em-supply">공급가액</label><div class="unit"><input type="number" id="tx-em-supply" min="0" step="1" placeholder="0"><span>원</span></div></div>
+                <div class="tx-field"><label class="lbl" for="tx-em-vat">부가세</label><div class="unit"><input type="number" id="tx-em-vat" min="0" step="1" placeholder="0"><span>원</span></div></div>
+              </div>
+              <label class="tx-hint" style="display:flex;gap:6px;align-items:center;margin-top:8px">
+                <input type="checkbox" id="tx-em-zero" style="accent-color:var(--accent)"> 영세율(수출) 대응 매입 — 부가세 환급 대상으로 표시
+              </label>
+              <div class="tx-actions"><button class="btn btn-accent btn-sm" type="submit">증빙 추가</button></div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="tx-actions">
+        <button class="btn btn-accent btn-sm" type="button" id="tx-match">금액·날짜로 자동 매칭 실행</button>
+        <button class="btn btn-ghost btn-sm" type="button" id="tx-suggest">계정과목 자동 추천 적용</button>
+        <span class="tx-hint" id="tx-match-msg" style="margin:0"></span>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head">
+          <h3>통장 거래 <span class="tx-chip mut" id="tx-bank-count">0건</span></h3>
+          <span class="mono">BANK LEDGER</span>
+        </div>
+        <div class="tx-scroll">
+          <table class="tx-table">
+            <thead>
+              <tr><th>거래일</th><th>적요</th><th>입금</th><th>출금</th><th>계정과목</th><th>증빙 매칭</th><th>분개</th><th class="c">관리</th></tr>
+            </thead>
+            <tbody id="tx-bank-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tx-panel tx-warn" id="tx-unmatched-panel" style="margin-top:12px">
+        <div class="tx-panel-head">
+          <h3>미확인 내역 <span class="tx-chip bad" id="tx-unm-count">0건</span></h3>
+          <span class="mono">UNCLASSIFIED — 원클릭 분개</span>
+        </div>
+        <div class="tx-body">
+          <p class="tx-hint">증빙과 짝이 없거나 적요가 비어 있는 내역입니다. 아래 버튼을 누르면 계정과목과 분개가 바로 채워집니다.</p>
+          <div class="tx-unm" id="tx-unm"></div>
+        </div>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head">
+          <h3>증빙 내역 <span class="tx-chip mut" id="tx-ev-count">0건</span></h3>
+          <span class="mono">TAX EVIDENCE</span>
+        </div>
+        <div class="tx-scroll">
+          <table class="tx-table">
+            <thead>
+              <tr><th>작성일</th><th>종류</th><th>거래처·가맹점</th><th>공급가액</th><th>부가세</th><th>합계</th><th>계정과목</th><th class="c">관리</th></tr>
+            </thead>
+            <tbody id="tx-ev-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head"><h3>분개장 (자동 생성)</h3><span class="mono">JOURNAL</span></div>
+        <div class="tx-scroll">
+          <table class="tx-table compact">
+            <thead><tr><th>날짜</th><th>적요</th><th>차변 계정</th><th>차변</th><th>대변 계정</th><th>대변</th></tr></thead>
+            <tbody id="tx-journal-body"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head"><h3>자동 분개에 쓰는 계정과목</h3><span class="mono">ACCOUNT CATALOG</span></div>
+        <div class="tx-body">
+          <div class="tx-grid two">
+            <div>
+              <p class="tx-hint"><b>매출·매입</b></p>
+              <div class="tx-related" id="tx-acct-rev"></div>
+              <p class="tx-hint" style="margin-top:12px"><b>비용</b></p>
+              <div class="tx-related" id="tx-acct-exp"></div>
+            </div>
+            <div>
+              <p class="tx-hint"><b>자산·부채</b></p>
+              <div class="tx-related" id="tx-acct-bal"></div>
+              <p class="tx-hint" style="margin-top:12px"><b>기타</b></p>
+              <div class="tx-related" id="tx-acct-etc"></div>
+            </div>
+          </div>
+          <div class="tx-print-note">적요 키워드로 계정을 추천합니다. 예) 주유·GS칼텍스 → 차량유지비, 식당·김밥 → 복리후생비, 골프·접대 → 접대비, 택배·운임 → 운반비, 관세·유니패스 → 수입부대비용.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ 03 -->
+    <section class="tx-sec" id="tx-payroll">
+      <div class="tx-sec-head">
+        <h2><span>03</span>원클릭 급여대장 &amp; 원천세·4대보험</h2>
+        <span class="mono">PAYROLL &amp; WITHHOLDING</span>
+      </div>
+      <p class="tx-lead">직원과 대표자를 등록하면 <b>4대보험·근로소득세·지방소득세</b>를 계산해 실수령액과 회사 부담금을 냅니다. 결과는 그대로 <b>급여대장 CSV</b>와 <b>원천징수이행상황신고서 요약표</b>로 나옵니다.</p>
+
+      <div class="tx-panel">
+        <div class="tx-panel-head"><h3>사업장 기준</h3><span class="mono">RATES</span></div>
+        <div class="tx-body">
+          <div class="tx-grid three">
+            <div class="tx-field">
+              <label class="lbl" for="tx-injury">산재보험 업종 <span class="hint">사업주 전액 부담</span></label>
+              <select id="tx-injury" class="tx-select"></select>
+            </div>
+            <div class="tx-field">
+              <label class="lbl" for="tx-size">고용보험 사업장 규모</label>
+              <select id="tx-size" class="tx-select"></select>
+            </div>
+            <div class="tx-field">
+              <label class="lbl" for="tx-pay-month">귀속 월 <span class="hint">신고서 기준</span></label>
+              <input type="month" id="tx-pay-month" class="tx-input">
+            </div>
+          </div>
+          <p class="tx-hint" style="margin-top:9px">국민연금 4.5%·건강보험 3.545%·장기요양(건강보험료의 12.95%)·고용보험 0.9%는 근로자 부담분이며, 회사가 같은 금액(고용보험은 고용안정분 추가)을 더 냅니다. 비과세(식대 월 20만 원, 자가운전보조금 월 20만 원)는 한도 안에서 과세 대상에서 뺍니다.</p>
+        </div>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head">
+          <h3>직원·대표자 등록 <span class="tx-chip mut" id="tx-emp-count">0명</span></h3>
+          <div class="tx-tools"><button class="tx-btn-xs dark" type="button" id="tx-emp-add">＋ 직원 추가</button></div>
+        </div>
+        <div class="tx-scroll">
+          <table class="tx-table compact">
+            <thead>
+              <tr><th>이름</th><th>구분</th><th>기본급</th><th>과세 수당</th><th>식대(비과세)</th><th>자가운전(비과세)</th><th>부양가족</th><th class="c">관리</th></tr>
+            </thead>
+            <tbody id="tx-emp-body"></tbody>
+          </table>
+        </div>
+        <div class="tx-body" style="border-top:1px solid var(--rule)">
+          <p class="tx-hint" style="margin:0">금액은 월 기준입니다. 비과세는 한도(식대 20만 원·자가운전 20만 원)까지만 반영합니다.</p>
+        </div>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head"><h3>급여대장 (자동 계산)</h3><span class="mono">PAYROLL LEDGER</span></div>
+        <div class="tx-scroll">
+          <table class="tx-table compact">
+            <thead id="tx-pay-head">
+              <tr><th>이름</th><th>지급 총액</th><th>국민연금</th><th>건강보험</th><th>장기요양</th><th>고용보험</th><th>소득세</th><th>지방소득세</th><th>실수령액</th><th>회사 부담</th></tr>
+            </thead>
+            <tbody id="tx-pay-body"></tbody>
+            <tfoot id="tx-pay-foot"></tfoot>
+          </table>
+        </div>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head">
+          <h3>원천징수이행상황신고서 요약표</h3>
+          <div class="tx-tools">
+            <button class="tx-btn-xs" type="button" data-export="wh">CSV 내려받기</button>
+            <button class="tx-btn-xs dark" type="button" data-print="wh">인쇄 · PDF</button>
+          </div>
+        </div>
+        <div class="tx-scroll">
+          <table class="tx-table compact">
+            <thead id="tx-wh-head">
+              <tr><th>소득 구분</th><th>인원</th><th>총지급액</th><th>과세표준</th><th>소득세</th><th>지방소득세</th><th>차인지급액</th></tr>
+            </thead>
+            <tbody id="tx-wh-body"></tbody>
+            <tfoot id="tx-wh-foot"></tfoot>
+          </table>
+        </div>
+        <div class="tx-body" style="border-top:1px solid var(--rule)">
+          <p class="tx-hint" style="margin:0">매월 10일까지 신고하는 근로소득 원천징수분 요약입니다. 신고서 제출은 홈택스 → 원천세 신고에서 직접 하세요.</p>
+        </div>
+      </div>
+
+      <div class="tx-actions">
+        <button class="btn btn-ghost btn-sm" type="button" data-export="payroll">급여대장 CSV</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-print="wh">원천징수 신고서 인쇄</button>
+        <a class="btn btn-ghost btn-sm" href="salary.html">급여·4대보험 계산기로 자세히</a>
+      </div>
+    </section>
+
+    <!-- ============================================================ 04 -->
+    <section class="tx-sec" id="tx-fx">
+      <div class="tx-sec-head">
+        <h2><span>04</span>수출입·외환 정산</h2>
+        <span class="mono">IMPORT EXPORT FX</span>
+      </div>
+      <p class="tx-lead">수출신고필증·B/L의 <b>선적일 환율</b>과 외화 입금일 환율이 다르면 그 차이가 외환차손익입니다. 12월 31일 잔액은 <b>기말 환율로 다시 평가</b>해 외화환산손익을 냅니다. 영세율 신고용 <b>수출실적명세서</b>도 여기서 집계합니다.</p>
+
+      <div class="tx-panel">
+        <div class="tx-panel-head">
+          <h3>수출 건별 외환차손익</h3>
+          <div class="tx-tools"><button class="tx-btn-xs dark" type="button" id="tx-fx-add">＋ 수출 건 추가</button></div>
+        </div>
+        <div class="tx-scroll">
+          <table class="tx-table compact">
+            <thead>
+              <tr><th>신고번호</th><th>선적일</th><th>통화</th><th>외화금액</th><th>선적일 환율</th><th>입금일</th><th>입금 환율</th><th>외환차손익(원)</th><th class="c">관리</th></tr>
+            </thead>
+            <tbody id="tx-fx-body"></tbody>
+            <tfoot id="tx-fx-foot"></tfoot>
+          </table>
+        </div>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head">
+          <h3>12월 31일 외화 잔액 — 외화환산손익</h3>
+          <div class="tx-tools"><button class="tx-btn-xs dark" type="button" id="tx-fxbal-add">＋ 통화 잔액 추가</button></div>
+        </div>
+        <div class="tx-scroll">
+          <table class="tx-table compact">
+            <thead>
+              <tr><th>구분</th><th>통화</th><th>외화금액</th><th>장부 환율</th><th>12.31 환율</th><th>장부가액(원)</th><th>평가액(원)</th><th>외화환산손익</th><th class="c">관리</th></tr>
+            </thead>
+            <tbody id="tx-fxbal-body"></tbody>
+            <tfoot id="tx-fxbal-foot"></tfoot>
+          </table>
+        </div>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head">
+          <h3>수출실적명세서 (영세율 신고용)</h3>
+          <div class="tx-tools"><button class="tx-btn-xs" type="button" data-export="export">CSV 내려받기</button></div>
+        </div>
+        <div class="tx-scroll">
+          <table class="tx-table compact">
+            <thead><tr><th>신고번호</th><th>선적일</th><th>거래처</th><th>통화</th><th>외화금액</th><th>환율</th><th>원화환산</th></tr></thead>
+            <tbody id="tx-exps-body"></tbody>
+            <tfoot id="tx-exps-foot"></tfoot>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================ 05 -->
+    <section class="tx-sec" id="tx-close">
+      <div class="tx-sec-head">
+        <h2><span>05</span>년마감 결산 마법사 &amp; 세무 리스크</h2>
+        <span class="mono">YEAR-END CLOSING</span>
+      </div>
+      <p class="tx-lead">세 단계만 거치면 <b>손익계산서와 재무상태표 요약</b>이 나옵니다. 동시에 가지급금 인정이자와 3만 원 초과 증빙 누락을 <b>증빙불비가산세</b>로 경고합니다.</p>
+
+      <div class="tx-steps" role="tablist" id="tx-steps">
+        <button type="button" role="tab" aria-selected="true" data-step="1"><span class="n">STEP 01</span><span class="t">기말 재고자산</span></button>
+        <button type="button" role="tab" aria-selected="false" data-step="2"><span class="n">STEP 02</span><span class="t">외상 잔액 확정</span></button>
+        <button type="button" role="tab" aria-selected="false" data-step="3"><span class="n">STEP 03</span><span class="t">외화평가 반영</span></button>
+      </div>
+
+      <div class="tx-step-panel" data-panel="1">
+        <div class="tx-panel">
+          <div class="tx-panel-head">
+            <h3>기말 재고자산 명세서</h3>
+            <div class="tx-tools"><button class="tx-btn-xs dark" type="button" id="tx-inv-add">＋ 품목 추가</button></div>
+          </div>
+          <div class="tx-body" style="padding-bottom:0">
+            <div class="tx-grid three">
+              <div class="tx-field"><label class="lbl" for="tx-inv-open">기초 재고액</label><div class="unit"><input type="number" id="tx-inv-open" min="0" step="1" value="0"><span>원</span></div></div>
+              <div class="tx-field"><label class="lbl" for="tx-inv-buy">당기 매입액 <span class="hint">증빙 합계 자동</span></label><div class="unit"><input type="number" id="tx-inv-buy" min="0" step="1" value="0" readonly><span>원</span></div></div>
+              <div class="tx-field"><label class="lbl" for="tx-inv-end">기말 재고액 <span class="hint">품목 합산</span></label><div class="unit"><input type="number" id="tx-inv-end" min="0" step="1" value="0" readonly><span>원</span></div></div>
+            </div>
+          </div>
+          <div class="tx-scroll" style="margin-top:10px">
+            <table class="tx-table compact">
+              <thead><tr><th>품목</th><th>규격</th><th>수량</th><th>단가</th><th>금액</th><th class="c">관리</th></tr></thead>
+              <tbody id="tx-inv-body"></tbody>
+              <tfoot id="tx-inv-foot"></tfoot>
+            </table>
+          </div>
+          <div class="tx-body" style="border-top:1px solid var(--rule)">
+            <p class="tx-hint" style="margin:0">매출원가 = 기초재고 + 당기매입 − 기말재고. 아래 결산 요약에 그대로 반영됩니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tx-step-panel" data-panel="2" hidden>
+        <div class="tx-panel">
+          <div class="tx-panel-head"><h3>외상매출·외상매입 잔액 확정</h3><span class="mono">AR / AP</span></div>
+          <div class="tx-body" style="padding-bottom:0">
+            <div class="tx-grid three">
+              <div class="tx-field"><label class="lbl" for="tx-cash-open">기초 현금·예금</label><div class="unit"><input type="number" id="tx-cash-open" min="0" step="1" value="0"><span>원</span></div></div>
+              <div class="tx-field"><label class="lbl" for="tx-capital">자본금</label><div class="unit"><input type="number" id="tx-capital" min="0" step="1" value="0"><span>원</span></div></div>
+              <div class="tx-field"><label class="lbl">계산 방식 <span class="hint">자본 = 자산 − 부채</span></label><input type="text" value="이익잉여금 자동 도출" readonly></div>
+            </div>
+          </div>
+          <div class="tx-scroll" style="margin-top:10px">
+            <table class="tx-table compact">
+              <thead><tr><th>구분</th><th>거래처</th><th>발생액</th><th>회수·결제액</th><th>잔액</th><th>확정</th></tr></thead>
+              <tbody id="tx-ap-body"></tbody>
+              <tfoot id="tx-ap-foot"></tfoot>
+            </table>
+          </div>
+          <div class="tx-body" style="border-top:1px solid var(--rule)">
+            <p class="tx-hint" style="margin:0">증빙과 통장 매칭 결과로 자동 계산합니다. 잔액이 실제 거래처 원장과 다르면 ② 증빙·통장에서 매칭을 고쳐 주세요.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tx-step-panel" data-panel="3" hidden>
+        <div class="tx-panel">
+          <div class="tx-panel-head"><h3>외화평가 반영</h3><span class="mono">FX REVALUATION</span></div>
+          <div class="tx-body">
+            <div id="tx-close-fx" class="tx-print-note" style="border-top:0;padding-top:0"></div>
+            <div class="tx-actions">
+              <button class="btn btn-accent btn-sm" type="button" id="tx-close-run">결산 확정 · 요약표 만들기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tx-grid two" style="margin-top:12px">
+        <div class="tx-panel">
+          <div class="tx-panel-head"><h3>손익계산서 (요약)</h3><span class="mono">INCOME STATEMENT</span></div>
+          <div class="tx-scroll"><table class="tx-table compact"><tbody id="tx-is-body"></tbody></table></div>
+        </div>
+        <div class="tx-panel">
+          <div class="tx-panel-head"><h3>재무상태표 (요약)</h3><span class="mono">BALANCE SHEET</span></div>
+          <div class="tx-scroll"><table class="tx-table compact"><tbody id="tx-bs-body"></tbody></table></div>
+        </div>
+      </div>
+
+      <div class="tx-risks" id="tx-risks"></div>
+
+      <div class="tx-actions">
+        <button class="btn btn-ghost btn-sm" type="button" data-export="close">결산 요약 CSV</button>
+        <button class="btn btn-ghost btn-sm" type="button" data-print="close">결산 요약표 인쇄 · PDF</button>
+      </div>
+    </section>
+
+    <!-- ============================================================ 06 -->
+    <section class="tx-sec" id="tx-export">
+      <div class="tx-sec-head">
+        <h2><span>06</span>내보내기 &amp; 인쇄</h2>
+        <span class="mono">EXPORT &amp; PRINT</span>
+      </div>
+      <p class="tx-lead">모든 CSV는 엑셀에서 바로 열리도록 <b>UTF-8(BOM)</b>로 저장합니다. 인쇄·PDF는 A4 한 장에 맞춘 서식으로 브라우저 인쇄 대화상자에서 <b>PDF로 저장</b>을 고르면 됩니다.</p>
+
+      <div class="tx-grid three">
+        <div class="tx-panel">
+          <div class="tx-panel-head"><h3>장부·증빙</h3><span class="mono">LEDGER</span></div>
+          <div class="tx-body">
+            <div class="tx-actions" style="margin-top:0">
+              <button class="btn btn-ghost btn-sm" type="button" data-export="bank">통장 적요 내역서 CSV</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-export="journal">분개장 CSV</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-export="evidence">증빙 집계 CSV</button>
+            </div>
+          </div>
+        </div>
+        <div class="tx-panel">
+          <div class="tx-panel-head"><h3>급여·재고·수출</h3><span class="mono">PAYROLL · STOCK · EXPORT</span></div>
+          <div class="tx-body">
+            <div class="tx-actions" style="margin-top:0">
+              <button class="btn btn-ghost btn-sm" type="button" data-export="payroll">급여대장 CSV</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-export="inventory">기말 재고자산 명세서 CSV</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-export="export">수출실적명세서 CSV</button>
+            </div>
+          </div>
+        </div>
+        <div class="tx-panel">
+          <div class="tx-panel-head"><h3>A4 인쇄 · PDF</h3><span class="mono">PRINT</span></div>
+          <div class="tx-body">
+            <div class="tx-actions" style="margin-top:0">
+              <button class="btn btn-ghost btn-sm" type="button" data-print="vat">부가세 집계표</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-print="wh">원천징수 신고서 요약</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-print="close">결산 요약표</button>
+              <button class="btn btn-ghost btn-sm" type="button" data-print="voucher">전표 묶음</button>
+            </div>
+            <p class="tx-print-note">인쇄 대화상자에서 대상을 <b>PDF로 저장</b>으로 고르면 A4 PDF가 됩니다.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head"><h3>자료 백업</h3><span class="mono">BACKUP</span></div>
+        <div class="tx-body">
+          <div class="tx-actions" style="margin-top:0">
+            <button class="btn btn-accent btn-sm" type="button" id="tx-backup">전체 자료 JSON으로 백업</button>
+            <label class="btn btn-ghost btn-sm" for="tx-restore-file" style="cursor:pointer">백업 불러오기</label>
+            <input type="file" id="tx-restore-file" accept=".json,application/json" hidden>
+          </div>
+          <p class="tx-hint" style="margin:10px 0 0">브라우저를 바꾸거나 저장 데이터를 지우기 전에 JSON으로 백업해 두면 그대로 복원됩니다. 백업 파일에는 입력한 거래처·급여가 들어 있으니 공유하지 마세요.</p>
+        </div>
+      </div>
+
+      <div class="tx-panel" style="margin-top:12px">
+        <div class="tx-panel-head"><h3>함께 쓰는 도구</h3><span class="mono">RELATED</span></div>
+        <div class="tx-body">
+          <div class="tx-related">
+            <a href="salary.html"><b>급여 계산기</b> · 4대보험·연차·퇴직금</a>
+            <a href="biz.html"><b>사업자 툴</b> · 견적·원가·자금 9종</a>
+            <a href="forms.html"><b>서식·전자서명</b> · 계약서·확인서</a>
+            <a href="experts.html"><b>전문가 매칭</b> · 세무·노무 상담</a>
+          </div>
+        </div>
+      </div>
+
+      <p class="tx-disclaimer">
+        <strong>이 도구는 공개된 세율·보험료율과 사용자가 올린 자료로 계산하는 참고용 프로그램이며, 세무·회계 자문이 아닙니다.</strong>
+        신고 세액과 결산 수치는 세무조정, 이월결손금, 감면·공제, 자산 평가 방법에 따라 달라집니다.
+        부가세·법인세·원천세 신고는 홈택스에서 직접 제출해야 하며, 이 페이지는 신고서를 대신 제출하지 않습니다.
+        가지급금 인정이자와 증빙불비가산세 경고는 단순 규칙으로 계산한 것으로, 실제 과세 여부는 세무서 판단과 다를 수 있습니다.
+        입력한 통장·증빙·급여 자료는 사용자의 브라우저에만 저장되고 서버로 전송되지 않습니다.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>독립 경제·탐사 리서치 웹진</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>인사이트 브리프는 경제·금융, 무역·원자재, AI·테크 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진입니다. 정식 인터넷신문 등록 언론사가 아니며, 취재·편집 인력 5인 이상 등 등록 요건을 갖추지 않았습니다.</p>
+      </div>
+      <div class="f-col">
+        <h4>섹션</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">탐사보도</a></li>
+          <li><a href="index.html?cat=economy">경제·금융</a></li>
+          <li><a href="index.html?cat=trade">무역·원자재</a></li>
+          <li><a href="market.html">원자재 시황</a></li>
+          <li><a href="index.html?cat=ai">AI·테크</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>매체</h4>
+        <ul>
+          <li><a href="about.html">소개·편집 원칙</a></li>
+          <li><a href="contact.html#tip">독자 제보</a></li>
+          <li><a href="ad.html">광고·스폰서 단가표</a></li>
+          <li><a href="ad.html#b2b">B2B 소싱·원가 의뢰</a></li>
+          <li><a href="lotto.html">무료 도구 · 로또 번호 생성기</a></li>
+          <li><a href="saju.html">무료 도구 · 만세력·2027 신년운세</a></li>
+          <li><a href="salary.html">무료 도구 · 급여·노무 계산기</a></li>
+          <li><a href="tax.html">무료 도구 · 세무·결산 자체처리 툴</a></li>
+          <li><a href="biz.html">무료 도구 · 1인 사업자 툴 9종</a></li>
+          <li><a href="seller.html">무료 도구 · 셀러·마케터 툴 4종</a></li>
+          <li><a href="feed.xml">RSS 피드</a></li>
+          <li><a href="sitemap.html">사이트맵</a></li>
+          <li><a href="sitemap.xml">sitemap.xml</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>문의</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">제보 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">광고 hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">서울 · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>본 웹진은 인터넷신문 등록을 하지 않은 독립 미디어입니다. 기사와 사진의 무단 전재·재배포를 금합니다. 협찬·광고 콘텐츠는 ‘광고’로 표기합니다.</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 독립 경제·탐사 리서치 웹진</span></div>
+    </div>
+  </div>
+</footer>
+
+<!-- 인쇄 전용 출력 -->
+<div class="tx-print" id="tx-print-root">
+  <div class="tx-print-page" data-print="vat" id="tx-print-vat"></div>
+  <div class="tx-print-page" data-print="wh" id="tx-print-wh"></div>
+  <div class="tx-print-page" data-print="close" id="tx-print-close"></div>
+  <div class="tx-print-page" data-print="voucher" id="tx-print-voucher"></div>
+</div>
+
+<script src="assets/js/salary-data.js?v=20261122c" defer></script>
+<script src="assets/js/tax.js?v=20261124d" defer></script>
+<script src="assets/js/nav.js?v=20261124c"></script>
+<!-- IB:SHARE-FLOAT -->
+<script src="assets/js/share-float.js?v=20261124c" defer></script>
+<!-- /IB:SHARE-FLOAT -->
+<!-- IB:CHAT-FLOAT -->
+<script src="assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

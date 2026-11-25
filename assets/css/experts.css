@@ -1,0 +1,179 @@
+/* =========================================================
+   INSIGHT BRIEF — 전문가 매칭 (experts.html)
+   style.css · monetize.css 의 토큰을 그대로 쓰고
+   이 페이지 전용 규칙만 담습니다.
+   ========================================================= */
+
+.ex-main{padding:clamp(24px,3.6vw,40px) 0 0;background:var(--paper)}
+.ex-wrap{max-width:1080px;margin:0 auto}
+
+/* ---------- 머리 ---------- */
+.ex-head{padding-bottom:clamp(18px,3vw,26px);border-bottom:1px solid var(--rule)}
+.ex-head h1{
+  font-family:var(--serif);font-weight:900;letter-spacing:-.04em;line-height:1.18;
+  font-size:clamp(26px,4.2vw,40px);margin:14px 0 12px;word-break:keep-all;text-wrap:balance;
+}
+.ex-head .dek{font-size:clamp(14px,1.5vw,16px);line-height:1.78;color:var(--ink-3);max-width:66ch;word-break:keep-all}
+.ex-head .dek b{color:var(--ink);font-weight:600}
+.ex-badges{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
+.ex-badges span{
+  font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:var(--ink-3);
+  border:1px solid var(--rule-2);padding:4px 8px;background:var(--paper-2);
+}
+.ex-badges span b{color:var(--accent);font-weight:700}
+.ex-ad{margin:clamp(16px,2.6vw,22px) 0;min-height:92px;padding:16px}
+
+/* ---------- 섹션 ---------- */
+.ex-sec{margin-top:clamp(30px,4.2vw,48px)}
+.ex-sec-head{
+  display:flex;align-items:baseline;justify-content:space-between;gap:14px;
+  padding-bottom:10px;border-bottom:2px solid var(--ink);margin-bottom:16px;
+}
+.ex-sec-head h2{font-family:var(--serif);font-size:clamp(19px,2.3vw,25px);font-weight:800;letter-spacing:-.025em;line-height:1.3;word-break:keep-all}
+.ex-sec-head .note{font-family:var(--mono);font-size:10px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase;white-space:nowrap}
+.ex-lead{font-size:13.5px;line-height:1.8;color:var(--ink-3);max-width:72ch;margin-bottom:14px;word-break:keep-all}
+.ex-lead b{color:var(--ink);font-weight:700}
+
+/* ---------- 분야 카드 11 ---------- */
+.ex-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ex-card{
+  display:flex;flex-direction:column;gap:6px;text-align:left;align-items:stretch;
+  padding:14px 15px 12px;background:#f8f9fa;border:1px solid var(--rule-2);border-radius:2px;
+  cursor:pointer;font:inherit;color:inherit;
+  transition:border-color .16s ease,box-shadow .16s ease,transform .16s ease,background .16s ease;
+}
+.ex-card:hover{border-color:var(--ink);transform:translateY(-1px);box-shadow:0 10px 22px -20px rgba(23,20,15,.9)}
+.ex-card[aria-pressed="true"]{border-color:var(--accent);background:#fdf3f2;box-shadow:inset 0 0 0 1px var(--accent)}
+.ex-card .n{font-family:var(--mono);font-size:9px;letter-spacing:.16em;color:var(--accent);font-weight:700}
+.ex-card .t{
+  font-family:var(--serif);font-size:14.5px;font-weight:800;line-height:1.38;
+  letter-spacing:-.02em;word-break:keep-all;display:block;
+}
+.ex-card .d{font-size:12px;line-height:1.62;color:var(--ink-3);word-break:keep-all;display:block}
+.ex-card .li{position:relative;padding-left:10px;font-size:11.5px;line-height:1.55;color:var(--muted);display:block;word-break:keep-all}
+.ex-card .li::before{content:"";position:absolute;left:0;top:.6em;width:3px;height:3px;background:var(--rule-2);display:block}
+.ex-card .when{
+  display:block;margin-top:auto;padding-top:7px;border-top:1px dashed var(--rule);
+  font-size:10.5px;line-height:1.5;color:var(--accent-deep);word-break:keep-all;
+}
+.ex-card .go{
+  display:block;margin-top:6px;font-family:var(--mono);font-size:9px;letter-spacing:.12em;
+  color:var(--muted);text-transform:uppercase;
+}
+.ex-card[aria-pressed="true"] .go{color:var(--accent)}
+@media (max-width:900px){.ex-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.ex-fields{grid-template-columns:1fr}}
+
+/* ---------- 절차 ---------- */
+.ex-flow{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;counter-reset:exf}
+.ex-step{position:relative;padding:14px 15px;background:var(--paper-2);border:1px solid var(--rule);border-radius:2px}
+.ex-step b{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.16em;color:var(--accent);margin-bottom:6px}
+.ex-step h3{font-family:var(--serif);font-size:14px;font-weight:800;letter-spacing:-.02em;line-height:1.4;word-break:keep-all}
+.ex-step p{margin-top:5px;font-size:11.5px;line-height:1.6;color:var(--muted);word-break:keep-all}
+@media (max-width:840px){.ex-flow{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:460px){.ex-flow{grid-template-columns:1fr}}
+
+/* ---------- 접수 탭 ---------- */
+.ex-tabs{
+  display:grid;grid-template-columns:1fr 1fr;margin:0 0 clamp(14px,2vw,18px);
+  border:1px solid var(--rule-2);border-bottom:3px solid var(--ink);background:#fff;
+}
+.ex-tabs button{
+  position:relative;display:flex;flex-direction:column;gap:3px;align-items:flex-start;text-align:left;
+  padding:12px 15px;border:0;border-right:1px solid var(--rule);background:#fff;cursor:pointer;
+  font-family:var(--sans);font-size:13px;font-weight:700;color:var(--ink-3);letter-spacing:-.01em;
+  transition:background .16s ease,color .16s ease;
+}
+.ex-tabs button:last-child{border-right:0}
+.ex-tabs button b{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:var(--muted);font-weight:600}
+.ex-tabs button span{font-size:10.5px;font-weight:400;color:var(--muted);line-height:1.35}
+.ex-tabs button:hover{background:var(--paper-2);color:var(--ink)}
+.ex-tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+.ex-tabs button[aria-selected="true"] b{color:#e7a49b}
+.ex-tabs button[aria-selected="true"] span{color:rgba(255,255,255,.62)}
+.ex-tabs button[aria-selected="true"]::after{content:"";position:absolute;left:0;right:0;bottom:-3px;height:3px;background:var(--accent)}
+@media (max-width:620px){
+  .ex-tabs{grid-template-columns:1fr;border-bottom-width:1px}
+  .ex-tabs button{border-right:0;border-bottom:1px solid var(--rule)}
+  .ex-tabs button[aria-selected="true"]::after{bottom:0}
+}
+
+.ex-panel[hidden]{display:none!important}
+.ex-panel{animation:exFade .2s ease}
+@keyframes exFade{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:none}}
+.ex-panel-head{margin-bottom:14px}
+.ex-panel-head h3{font-family:var(--serif);font-size:18px;font-weight:800;letter-spacing:-.02em;margin-bottom:6px;word-break:keep-all}
+.ex-panel-head p{font-size:12.5px;line-height:1.7;color:var(--ink-3);max-width:70ch;word-break:keep-all}
+.ex-panel-head p b{color:var(--ink);font-weight:700}
+
+/* ---------- 폼 ---------- */
+.ex-form{max-width:760px}
+.ex-form .mo-form-lab{display:block;font-size:12px;font-weight:700;color:var(--ink-2);margin-bottom:5px}
+.ex-form .mo-form-lab .req{color:var(--accent)}
+.ex-form .ex-hint{display:block;font-size:11px;font-weight:400;color:var(--muted);margin-top:3px;line-height:1.5}
+.ex-choices{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:6px}
+.ex-choices label{
+  display:flex;align-items:center;gap:7px;margin:0;padding:9px 10px;
+  border:1px solid var(--rule-2);background:#f8f9fa;border-radius:2px;
+  font-size:12.5px;font-weight:600;color:var(--ink-2);cursor:pointer;
+}
+.ex-choices label:hover{border-color:var(--ink)}
+.ex-choices input{width:auto;margin:0;flex:none;accent-color:var(--accent)}
+.ex-choices label.is-on{border-color:var(--accent);background:#fdf3f2}
+.ex-checks{display:flex;flex-wrap:wrap;gap:6px}
+.ex-checks label{
+  display:inline-flex;align-items:center;gap:6px;margin:0;padding:7px 10px;
+  border:1px solid var(--rule-2);background:#f8f9fa;border-radius:2px;
+  font-size:12px;font-weight:600;color:var(--ink-2);cursor:pointer;
+}
+.ex-checks input{width:auto;margin:0;flex:none;accent-color:var(--accent)}
+.ex-checks label.is-on{border-color:var(--accent);background:#fdf3f2;color:var(--accent-deep)}
+.ex-picked{
+  display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:0 0 12px;
+  padding:9px 12px;border:1px dashed var(--rule-2);background:var(--paper-2);
+  font-size:12px;color:var(--ink-3);border-radius:2px;
+}
+.ex-picked b{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;color:var(--muted);text-transform:uppercase}
+.ex-picked[hidden]{display:none!important}
+.ex-picked strong{color:var(--accent-deep);font-weight:800;font-size:12.5px}
+.ex-form fieldset{border:0;padding:0;margin:0;min-width:0}
+.ex-form legend{padding:0}
+
+/* ---------- FAQ ---------- */
+.ex-faq{display:grid;gap:0;border-top:1px solid var(--rule-2)}
+.ex-faq details{border-bottom:1px solid var(--rule)}
+.ex-faq summary{
+  display:flex;align-items:flex-start;gap:10px;padding:13px 4px;cursor:pointer;
+  font-family:var(--serif);font-size:14.5px;font-weight:800;letter-spacing:-.02em;line-height:1.45;
+  color:var(--ink);list-style:none;word-break:keep-all;
+}
+.ex-faq summary::-webkit-details-marker{display:none}
+.ex-faq summary::before{
+  content:"Q";flex:none;font-family:var(--mono);font-size:11px;font-weight:700;
+  color:var(--accent);letter-spacing:.04em;padding-top:2px;
+}
+.ex-faq summary:hover{color:var(--accent-deep)}
+.ex-faq details[open] summary{color:var(--accent-deep)}
+.ex-faq .a{padding:0 4px 15px 22px;font-size:13px;line-height:1.8;color:var(--ink-3);max-width:76ch;word-break:keep-all}
+.ex-faq .a b{color:var(--ink);font-weight:700}
+
+/* ---------- 연결 카드 ---------- */
+.ex-links{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.ex-links a{
+  display:block;padding:15px 16px;background:#f8f9fa;border:1px solid var(--rule);border-radius:2px;
+  color:inherit;text-decoration:none;transition:border-color .16s ease,transform .16s ease;
+}
+.ex-links a:hover{border-color:var(--accent);transform:translateY(-1px)}
+.ex-links b{display:block;font-family:var(--serif);font-size:14px;font-weight:800;letter-spacing:-.02em;word-break:keep-all}
+.ex-links span{display:block;margin-top:5px;font-size:11.5px;line-height:1.6;color:var(--muted);word-break:keep-all}
+
+.ex-disclaimer{
+  margin-top:clamp(26px,3.6vw,40px);padding-top:14px;border-top:1px solid var(--rule);
+  font-size:11.5px;line-height:1.75;color:var(--muted);word-break:keep-all;
+}
+.ex-disclaimer strong{color:var(--ink-2)}
+
+@media (max-width:560px){
+  .ex-head h1{font-size:clamp(24px,7.4vw,30px)}
+  .ex-sec-head{flex-direction:column;align-items:flex-start;gap:4px}
+}

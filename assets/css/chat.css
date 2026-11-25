@@ -1,0 +1,391 @@
+/* =========================================================
+   INSIGHT BRIEF — 플로팅 상담 위젯 (chat-float.js)
+   · 우측 하단 접이식 버튼 + 5개 메신저 패널 + 위챗 QR 모달
+   · 기존 플로팅 공유 바(.ib-fs) · 맨 위로(.to-top)와 겹치지 않게 배치합니다.
+     - 넓은 화면 : 오른쪽 아래 버튼, 맨 위로 버튼은 그 위로 올림
+     - 좁은 화면 : 공유 바(높이 62px) 위에 버튼, 맨 위로 버튼은 버튼 왼쪽으로 비켜 놓음
+   ========================================================= */
+
+.ib-cf {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 80;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 12px;
+  pointer-events: none;
+  font-family: var(--sans);
+}
+
+.ib-cf > * { pointer-events: auto; }
+
+/* ---------- 런처 버튼 — 아이콘 + 짧은 라벨의 알약(pill) ---------- */
+.ib-cf-launch {
+  min-width: 56px;
+  height: 56px;
+  padding: 0 20px 0 16px;
+  gap: 8px;
+  border: 0;
+  border-radius: 999px;
+  background: var(--ink);
+  color: #f8f6f2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer;
+  box-shadow: 0 16px 30px -14px rgba(17, 19, 23, .55);
+  transition: background .18s, transform .18s, box-shadow .18s;
+}
+
+.ib-cf-launch svg {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 auto;
+  margin-top: -1px;
+}
+
+.ib-cf-launch-txt {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  line-height: 1;
+}
+
+.ib-cf-launch:hover,
+.ib-cf-launch:focus-visible {
+  background: var(--accent);
+  transform: translateY(-1px);
+  box-shadow: 0 18px 34px -14px rgba(179, 38, 30, .5);
+}
+
+.ib-cf.is-open .ib-cf-launch { background: var(--accent); }
+
+/* ---------- 패널 ---------- */
+.ib-cf-panel {
+  width: min(320px, calc(100vw - 28px));
+  max-height: min(70vh, 540px);
+  display: flex;
+  flex-direction: column;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  box-shadow: 0 28px 54px -26px rgba(17, 19, 23, .5);
+  overflow: hidden;
+  animation: ib-cf-in .18s ease both;
+}
+
+.ib-cf-panel[hidden] { display: none; }
+
+@keyframes ib-cf-in {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.ib-cf-head {
+  position: relative;
+  padding: 18px 18px 14px;
+  border-bottom: 1px solid var(--rule);
+  background: var(--paper-2);
+}
+
+.ib-cf-kicker {
+  display: block;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.ib-cf-head h3 {
+  margin: 6px 0 3px;
+  font-family: var(--serif);
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: -.03em;
+  color: var(--ink);
+}
+
+.ib-cf-head p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.6;
+  color: var(--muted);
+  padding-right: 26px;
+  word-break: keep-all;
+}
+
+.ib-cf-x {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: background .16s, color .16s;
+}
+
+.ib-cf-x:hover,
+.ib-cf-x:focus-visible { background: var(--paper-3); color: var(--ink); }
+.ib-cf-x svg { width: 15px; height: 15px; }
+
+.ib-cf-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+}
+
+.ib-cf-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 16px;
+  border: 0;
+  border-bottom: 1px solid var(--rule);
+  background: transparent;
+  text-align: left;
+  text-decoration: none;
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+  transition: background .16s;
+}
+
+.ib-cf-row:last-child { border-bottom: 0; }
+.ib-cf-row:hover,
+.ib-cf-row:focus-visible { background: var(--paper-2); }
+
+.ib-cf-ic {
+  flex: 0 0 auto;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--ink-3);
+}
+
+.ib-cf-ic svg { width: 19px; height: 19px; }
+.ib-cf-ic.is-wa { background: #25d366; }
+.ib-cf-ic.is-line { background: #06c755; }
+.ib-cf-ic.is-wechat { background: #07c160; }
+.ib-cf-ic.is-tg { background: #229ed9; }
+.ib-cf-ic.is-kakao { background: #fee500; color: #3c1e1e; }
+
+.ib-cf-txt {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.ib-cf-txt b {
+  font-size: 13.5px;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  color: var(--ink);
+}
+
+.ib-cf-txt em {
+  font-style: normal;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: 0;
+}
+
+.ib-cf-go {
+  margin-left: auto;
+  flex: 0 0 auto;
+  color: var(--rule-2);
+}
+
+.ib-cf-go svg { width: 15px; height: 15px; }
+.ib-cf-row:hover .ib-cf-go,
+.ib-cf-row:focus-visible .ib-cf-go { color: var(--accent); }
+
+/* ---------- 위챗 QR 모달 ---------- */
+.ib-cf-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+}
+
+.ib-cf-modal[hidden] { display: none; }
+
+.ib-cf-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(12, 13, 15, .58);
+  animation: ib-cf-fade .18s ease both;
+}
+
+@keyframes ib-cf-fade { from { opacity: 0; } to { opacity: 1; } }
+
+.ib-cf-card {
+  position: relative;
+  width: min(360px, 100%);
+  max-height: calc(100vh - 36px);
+  overflow-y: auto;
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  padding: 22px 22px 20px;
+  text-align: center;
+  box-shadow: 0 30px 60px -20px rgba(0, 0, 0, .5);
+  animation: ib-cf-in .2s ease both;
+}
+
+.ib-cf-card h3 {
+  margin: 6px 0 14px;
+  font-family: var(--serif);
+  font-size: 19px;
+  font-weight: 800;
+  letter-spacing: -.03em;
+  color: var(--ink);
+}
+
+.ib-cf-card .ib-cf-x { top: 8px; right: 8px; }
+
+.ib-cf-qr {
+  width: 232px;
+  max-width: 100%;
+  margin: 0 auto 14px;
+  padding: 10px;
+  border: 1px solid var(--rule);
+  background: #fff;
+}
+
+.ib-cf-qr img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.ib-cf-hint {
+  margin: 0 0 12px;
+  font-size: 12.5px;
+  line-height: 1.65;
+  color: var(--ink-3);
+  word-break: keep-all;
+}
+
+.ib-cf-link {
+  margin: 0 0 10px;
+  padding: 8px 10px;
+  background: var(--paper-2);
+  border: 1px solid var(--rule);
+  font-family: var(--mono);
+  font-size: 10.5px;
+  line-height: 1.5;
+  word-break: break-all;
+}
+
+.ib-cf-link a { color: var(--ink-3); text-decoration: underline; text-underline-offset: 2px; }
+.ib-cf-link a:hover { color: var(--accent); }
+
+.ib-cf-copy {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  min-height: 38px;
+  padding: 0 18px;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .16s, border-color .16s;
+}
+
+.ib-cf-copy svg { width: 15px; height: 15px; }
+.ib-cf-copy:hover,
+.ib-cf-copy:focus-visible { background: var(--accent); border-color: var(--accent); }
+
+.ib-cf-toast {
+  position: fixed;
+  left: 50%;
+  bottom: calc(90px + env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  max-width: min(92vw, 430px);
+  padding: 11px 16px;
+  background: #17140f;
+  color: #f6f2ea;
+  font-size: 12.5px;
+  line-height: 1.55;
+  text-align: center;
+  z-index: 9999;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .3);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity .2s;
+}
+
+.ib-cf-toast.is-on { opacity: 1; }
+
+body.ib-cf-modal-on { overflow: hidden; }
+
+/* ---------- 기존 플로팅 요소와의 자리 배분 ---------- */
+
+/* 넓은 화면(공유 바가 왼쪽 세로 레일일 때): 맨 위로 버튼을 상담 버튼 위로 */
+body.ib-has-chat .to-top { bottom: 88px; }
+
+/* 좁은 화면(공유 바가 아래 고정 바일 때): 상담 버튼을 바 위로, 맨 위로 버튼은 상담 버튼 위로 */
+body.ib-has-fs:not(.ib-fs-rail) .ib-cf {
+  bottom: calc(62px + 14px + env(safe-area-inset-bottom));
+}
+
+body.ib-has-fs:not(.ib-fs-rail).ib-has-chat .to-top {
+  right: 22px;
+  bottom: calc(62px + 14px + 56px + 10px + env(safe-area-inset-bottom));
+}
+
+@media (max-width: 720px) {
+  .ib-cf { right: 14px; bottom: 14px; gap: 10px; }
+
+  .ib-cf-launch {
+    min-width: 52px;
+    height: 52px;
+    padding: 0 17px 0 14px;
+    gap: 7px;
+  }
+  .ib-cf-launch svg { width: 22px; height: 22px; }
+  .ib-cf-launch-txt { font-size: 12.5px; }
+
+  body.ib-has-chat .to-top { right: 14px; bottom: calc(14px + 52px + 10px); }
+
+  body.ib-has-fs:not(.ib-fs-rail).ib-has-chat .to-top {
+    right: 14px;
+    bottom: calc(62px + 14px + env(safe-area-inset-bottom) + 52px + 10px);
+  }
+
+  .ib-cf-panel { width: min(318px, calc(100vw - 28px)); }
+  .ib-cf-toast { bottom: calc(84px + env(safe-area-inset-bottom)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ib-cf-panel, .ib-cf-card, .ib-cf-backdrop { animation: none; }
+  .ib-cf-launch { transition: none; }
+}
+
+@media print {
+  .ib-cf, .ib-cf-toast { display: none !important; }
+}

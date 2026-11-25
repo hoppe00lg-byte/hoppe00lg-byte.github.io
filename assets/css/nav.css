@@ -1,0 +1,165 @@
+/* =========================================================
+   INSIGHT BRIEF — 상단 내비게이션 (4개 대표 메뉴 드롭다운)
+   · 한국어 · /en/ · /zh/ · /ja/ · 기사 페이지 공통
+   · style.css 의 .nav 규칙 위에 덮어씁니다. (이 파일이 가장 나중에 로드)
+   · 기본은 CSS 만으로도 열립니다(:hover · :focus-within).
+     assets/js/nav.js 가 클릭 토글·현재 페이지 표시·모바일 동작을 맡습니다.
+   ========================================================= */
+
+/* ---- 바 전체: 드롭다운 패널이 잘리지 않도록 overflow 를 열어 둡니다 ---- */
+.nav-wrap{overflow:visible}
+.nav-wrap .container{overflow:visible}
+.nav#site-nav,
+.nav{
+  display:flex;align-items:center;gap:clamp(10px,1.05vw,18px);
+  overflow:visible;scrollbar-width:none;-ms-overflow-style:none;
+  position:relative;
+}
+
+/* ---- 그룹 ---- */
+.nav-group{position:relative;display:flex;align-items:center;min-width:0}
+
+/* ---- 상위 항목(버튼/링크 공통 모양) ---- */
+.nav .nav-top{
+  position:relative;display:inline-flex;align-items:center;gap:5px;
+  white-space:nowrap;padding:14px 1px 13px;
+  font-family:inherit;font-size:13px;font-weight:600;line-height:1.2;
+  color:var(--ink-2);letter-spacing:-.015em;
+  background:none;border:0;cursor:pointer;-webkit-appearance:none;appearance:none;
+  text-decoration:none;
+}
+.nav .nav-top::after{
+  content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;
+  background:var(--accent);transform:scaleX(0);transform-origin:left;
+  transition:transform .22s ease;
+}
+.nav .nav-top:hover{color:var(--ink)}
+.nav .nav-top:hover::after,
+.nav .nav-top.is-active::after,
+.nav-group.is-open > .nav-top::after{transform:scaleX(1)}
+.nav .nav-top.is-active{color:var(--ink);font-weight:700}
+
+/* ---- 캐럿 ---- */
+.nav-caret{width:9px;height:6px;flex:0 0 auto;opacity:.55;transition:transform .2s ease;margin-top:1px}
+.nav .nav-top:hover .nav-caret{opacity:.8}
+.nav-group.is-open > .nav-top .nav-caret{transform:rotate(180deg)}
+@media (hover:hover) and (pointer:fine){
+  .nav-group:hover > .nav-top .nav-caret{transform:rotate(180deg)}
+}
+
+/* ---- 드롭다운 패널 ---- */
+.nav-panel{
+  position:absolute;top:100%;left:-14px;z-index:60;
+  min-width:214px;max-width:min(320px,88vw);
+  padding:7px 0;margin:0;
+  background:var(--paper,#fbf9f4);
+  border:1px solid var(--rule-2,#ddd9cf);
+  border-top:2px solid var(--ink,#17140f);
+  box-shadow:0 18px 38px rgba(23,20,15,.14);
+  opacity:0;visibility:hidden;transform:translateY(-4px);pointer-events:none;
+  transition:opacity .16s ease,transform .16s ease,visibility .16s ease;
+}
+/* 열림: 클릭(.is-open) · 키보드 포커스 · (마우스가 있는 기기에서만) 호버.
+   터치 기기의 sticky hover 로 패널이 제멋대로 열린 채 남지 않도록
+   호버 규칙은 (hover:hover) 기기에서만 씁니다. */
+.nav-group:focus-within > .nav-panel,
+.nav-group.is-open > .nav-panel{
+  opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto;
+}
+@media (hover:hover) and (pointer:fine) and (min-width:901px){
+  .nav-group:hover > .nav-panel{
+    opacity:1;visibility:visible;transform:translateY(0);pointer-events:auto;
+  }
+  /* 클릭으로 닫았을 때(마우스가 아직 위에 있어도) 확실히 닫히도록 */
+  .nav-group.is-closed:hover > .nav-panel{
+    opacity:0;visibility:hidden;transform:translateY(-4px);pointer-events:none;
+  }
+}
+.nav-group.is-closed > .nav-panel,
+.nav-group.is-closed:focus-within > .nav-panel{
+  opacity:0;visibility:hidden;transform:translateY(-4px);pointer-events:none;
+}
+
+.nav-panel a{
+  display:block;padding:9px 16px 9px 15px;
+  font-size:12.5px;font-weight:500;line-height:1.35;color:var(--ink-2);
+  letter-spacing:-.01em;white-space:nowrap;text-decoration:none;
+  border-left:3px solid transparent;
+}
+.nav-panel a::after{display:none}
+.nav-panel a:hover{background:rgba(23,20,15,.045);color:var(--ink);border-left-color:var(--rule-2,#ddd9cf)}
+.nav-panel a.is-active{color:var(--ink);font-weight:700;background:rgba(179,38,30,.06);border-left-color:var(--accent)}
+
+/* 하위 항목 구분선(첫 항목은 위 여백만) */
+.nav-panel a + a{border-top:1px solid rgba(23,20,15,.055)}
+
+/* ---- 무역서식 3종 '한 묶음' 묶음 머리글 + 코드 배지(PI·CI·PL) ---- */
+.nav-panel .nav-head{
+  display:block;padding:10px 16px 6px;margin-top:2px;
+  font-family:var(--mono,ui-monospace,monospace);font-size:9px;font-weight:700;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--muted,#7a7364);
+  border-top:1px solid rgba(23,20,15,.055);
+}
+.nav-panel .nav-head:first-child{border-top:0;padding-top:8px}
+.nav-badge{
+  display:inline-block;min-width:23px;margin-right:7px;padding:1px 4px 0;
+  border:1px solid var(--rule-2,#ddd9cf);background:var(--paper,#fff);
+  font-family:var(--mono,ui-monospace,monospace);font-size:9.5px;font-weight:700;
+  letter-spacing:.06em;line-height:1.5;text-align:center;color:var(--ink-3,#5b5445);
+}
+.nav-panel a:hover .nav-badge{border-color:var(--ink,#17140f);color:var(--ink,#17140f)}
+.nav-panel a.is-active .nav-badge{border-color:var(--accent);color:var(--accent)}
+
+/* ---- 언어별 글자 크기(i18n.css 규칙을 그대로 따릅니다) ---- */
+html[lang="en"] .nav .nav-top{font-size:12px;letter-spacing:0}
+html[lang="zh-Hans"] .nav .nav-top,
+html[lang="zh"] .nav .nav-top,
+html[lang="ja"] .nav .nav-top{font-size:12.5px;letter-spacing:0}
+html[lang="en"] .nav-panel a{font-size:12px;letter-spacing:0}
+html[lang="zh-Hans"] .nav-panel a,
+html[lang="zh"] .nav-panel a,
+html[lang="ja"] .nav-panel a{font-size:12.5px;letter-spacing:0}
+
+/* ---- 좁은 화면: 가로 스크롤 없이 4칸 그리드, 패널은 바 전체 폭 ---- */
+@media (max-width:900px){
+  .nav-wrap .container{padding-right:var(--pad,18px)}
+  .nav#site-nav,
+  .nav{
+    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+    width:100%;gap:0;padding-right:0;overflow:visible;
+  }
+  .nav-group{position:static;display:block}
+  .nav .nav-top{
+    width:100%;height:100%;justify-content:center;gap:4px;
+    padding:11px 3px 10px;font-size:12px;letter-spacing:-.03em;
+  }
+  .nav .nav-top::after{left:4px;right:4px;height:2px}
+  .nav-caret{width:8px;height:5px}
+  .nav-panel{
+    left:0;right:0;top:100%;min-width:0;max-width:none;
+    padding:4px 0 8px;border-top:1px solid var(--rule-2,#ddd9cf);
+    box-shadow:0 22px 34px rgba(23,20,15,.16);
+    max-height:min(72vh,520px);overflow:auto;
+    transform:translateY(-6px);
+    -webkit-overflow-scrolling:touch;
+  }
+  .nav-panel a{
+    padding:12px 20px;font-size:13.5px;white-space:normal;
+    border-left:0;border-top:1px solid rgba(23,20,15,.06);
+  }
+  .nav-panel .nav-head{padding:13px 20px 5px;font-size:9.5px}
+  .nav-panel a:first-child{border-top:0}
+  .nav-panel a.is-active{border-left:0;box-shadow:inset 3px 0 0 var(--accent)}
+  .nav-panel a + a{border-top:1px solid rgba(23,20,15,.06)}
+}
+/* 아주 좁은 화면(390px 등): 2+2 두 줄로 나눠 긴 라벨이 잘리지 않게 */
+@media (max-width:520px){
+  .nav#site-nav,
+  .nav{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .nav-group{grid-column:auto}
+  .nav .nav-top{font-size:12.5px;padding:10px 3px 9px;justify-content:center}
+}
+@media (max-width:360px){
+  .nav .nav-top{font-size:11px;letter-spacing:-.05em}
+  .nav-caret{display:none}
+}

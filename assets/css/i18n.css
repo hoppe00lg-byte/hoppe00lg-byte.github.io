@@ -1,0 +1,79 @@
+/* =========================================================
+   INSIGHT BRIEF — 다국어(KO·EN·ZH·JA) 보조 스타일
+   · 상단 언어 전환기
+   · 언어별 서체(한글 Noto Serif KR / 라틴 Noto Serif / 중국어 SC / 일본어 JP)
+   ========================================================= */
+
+.lang-switch{
+  display:inline-flex;align-items:center;gap:0;
+  border:1px solid var(--rule-2,#ddd);border-radius:2px;overflow:hidden;
+  vertical-align:middle;
+}
+.lang-switch a{
+  font-family:var(--mono,monospace);font-size:9.5px;line-height:1;
+  letter-spacing:.1em;padding:4px 7px;text-decoration:none;
+  color:var(--ink-3,#6b6459);background:transparent;white-space:nowrap;
+}
+.lang-switch a + a{border-left:1px solid var(--rule-2,#ddd)}
+.lang-switch a:hover{color:var(--ink,#17140f);background:rgba(23,20,15,.05)}
+.lang-switch a.is-on{background:var(--ink,#17140f);color:var(--paper,#fbf9f4)}
+.lang-switch a:focus-visible{outline:2px solid var(--accent,#b3261e);outline-offset:-2px}
+
+@media (max-width:720px){
+  .lang-switch a{padding:4px 5px;font-size:9px;letter-spacing:.06em}
+  .topbar .tb-right .opt{display:none}
+}
+
+/* ---- 언어별 서체 ---- */
+html[lang="en"]{
+  --serif:"Noto Serif","Source Serif 4",Georgia,"Times New Roman",serif;
+  --sans:"Inter","Helvetica Neue",Arial,system-ui,-apple-system,sans-serif;
+}
+html[lang="zh-Hans"],html[lang="zh"]{
+  --serif:"Noto Serif SC","Source Han Serif SC","Songti SC",STSong,serif;
+  --sans:"Noto Sans SC","Source Han Sans SC","PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+}
+html[lang="ja"]{
+  --serif:"Noto Serif JP","Source Han Serif JP","Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:"Noto Sans JP","Source Han Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+}
+html[lang="en"] body{letter-spacing:0}
+html[lang="zh-Hans"] body,html[lang="zh"] body,html[lang="ja"] body{letter-spacing:0;line-height:1.8}
+html[lang="zh-Hans"] .card h3,html[lang="zh"] .card h3,html[lang="ja"] .card h3{word-break:normal;line-height:1.5}
+html[lang="zh-Hans"] .hero h1,html[lang="zh"] .hero-title,html[lang="ja"] .hero h1,html[lang="ja"] .hero-title{line-height:1.25}
+html[lang="en"] .article-body p,html[lang="zh-Hans"] .article-body p,html[lang="ja"] .article-body p{word-break:normal}
+
+/* ---- 중국어·일본어: 한글용 keep-all 은 띄어쓰기가 없는 문장을 자르지 못합니다 ---- */
+html[lang="zh-Hans"] :where(p,h1,h2,h3,h4,li,figcaption,blockquote,span,a,div,td,th,em,b,strong),
+html[lang="zh"] :where(p,h1,h2,h3,h4,li,figcaption,blockquote,span,a,div,td,th,em,b,strong),
+html[lang="ja"] :where(p,h1,h2,h3,h4,li,figcaption,blockquote,span,a,div,td,th,em,b,strong){
+  word-break:normal;overflow-wrap:break-word;
+}
+html[lang="zh-Hans"] .hero-deck,html[lang="ja"] .hero-deck{max-width:46ch}
+
+/* ---- 영어·중국어·일본어 내비게이션: 라벨이 길어 한 줄에 더 담기도록 ---- */
+html[lang="en"] .nav a{font-size:11.5px;letter-spacing:0}
+html[lang="zh-Hans"] .nav a,html[lang="ja"] .nav a{font-size:12px;letter-spacing:0}
+
+/* ---- 실시간 브리핑 채널 (카카오톡 오픈채팅 · 텔레그램) ----
+   페이지마다 CSS 변수·버튼 클래스가 달라서(메인 템플릿 / links 페이지) 색은 상속만 씁니다. */
+.ib-ch{
+  display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px;
+  margin:26px 0;padding:18px 20px;border:1px solid rgba(128,128,128,.32);
+  border-radius:2px;background:rgba(179,38,30,.05);color:inherit;
+}
+.ib-ch--article{margin:30px 0 26px}
+.ib-ch--footer{margin:22px 0;background:transparent}
+.ib-ch-main{min-width:0;flex:1 1 320px}
+.ib-ch-kicker{display:block;font-family:var(--mono,monospace);font-size:9.5px;letter-spacing:.18em;color:#b3261e}
+.ib-ch h3{margin:6px 0 4px;font-family:var(--serif,serif);font-size:17px;font-weight:800;letter-spacing:-.02em;color:inherit}
+.ib-ch p{margin:0;font-size:12.5px;line-height:1.6;color:inherit;opacity:.78}
+.ib-ch-act{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ib-ch-act a{
+  display:inline-block;padding:9px 15px;font-size:12.5px;font-weight:700;line-height:1.2;
+  text-decoration:none;border:1px solid currentColor;border-radius:1px;white-space:nowrap;
+}
+.ib-ch-act a:first-child{background:#b3261e;border-color:#b3261e;color:#ffffff}
+.ib-ch-act a:last-child{color:inherit;background:transparent}
+.ib-ch-act a:hover{opacity:.85}
+@media (max-width:640px){.ib-ch{padding:15px 16px}.ib-ch-act{width:100%}.ib-ch-act a{flex:1 1 auto;text-align:center}}

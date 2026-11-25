@@ -1,0 +1,200 @@
+/* 자동 생성 파일입니다. data/site.json 을 고친 뒤 tools/build.py 를 실행하세요. */
+window.__SITE__ = {
+ "brand": {
+  "name": "INSIGHT BRIEF",
+  "nameKo": "인사이트 브리프",
+  "tagline": "독립 경제·탐사 리서치 웹진",
+  "slogan": "숫자 뒤의 맥락을 읽습니다",
+  "description": "경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.",
+  "email": "hoppe00lg@gmail.com",
+  "tipEmail": "hoppe00lg@gmail.com",
+  "adEmail": "hoppe00lg@gmail.com",
+  "editor": "인사이트 브리프 편집실",
+  "location": "서울",
+  "since": "2026",
+  "issue": "VOL. 01"
+ },
+ "baseUrl": "https://insightbriefnews.com",
+ "forms": {
+  "endpoint": "",
+  "note": "Formspree 주소를 넣으면 mailto 대신 서버로 전송됩니다."
+ },
+ "demo": false,
+ "demoNotice": "이 사이트의 기사는 화면 구성과 기능을 보여 주기 위한 샘플 콘텐츠입니다. 등장하는 회사·인물·수치는 실제 사실과 무관합니다. 실제 발행 전 data/articles.json을 실제 기사로 교체하고 data/site.json의 demo를 false로 바꾸세요.",
+ "categories": [
+  {
+   "id": "investigative",
+   "label": "탐사보도",
+   "en": "INVESTIGATION",
+   "desc": "현장과 기록으로 확인한 것"
+  },
+  {
+   "id": "economy",
+   "label": "경제·금융",
+   "en": "ECONOMY",
+   "desc": "금리·물가·가계의 숫자"
+  },
+  {
+   "id": "trade",
+   "label": "무역·원자재",
+   "en": "TRADE",
+   "desc": "원료와 공급망의 흐름"
+  },
+  {
+   "id": "ai",
+   "label": "AI·테크",
+   "en": "TECH",
+   "desc": "기술이 바꾸는 일의 방식"
+  },
+  {
+   "id": "fire",
+   "label": "재난·안전",
+   "en": "DISASTER & SAFETY",
+   "desc": "소방 현장에서 보는 재난과 대응"
+  }
+ ],
+ "ticker": [
+  {
+   "text": "EU 포장규정 시행 100일 — 재생원료 셈법은 12월 31일 기한인데 아직 없다",
+   "articleId": "eu-ppwr-100days-recycled-content"
+  },
+  {
+   "text": "500m 이상 터널엔 비상조명 의무, 정작 들고 탈출할 휴대용 조명은 목록에 없다",
+   "articleId": "tunnel-portable-emergency-light-gap"
+  },
+  {
+   "text": "'빨간 소화기' 조문은 없다 — 규격은 일본에서, 색은 최저가 입찰이 정했다",
+   "articleId": "fire-rules-japan-lineage-old-design"
+  },
+  {
+   "text": "구리 선물 한 주에 12% 급락, 현물 프리미엄은 사상 최고 — 종이와 창고가 갈라졌다",
+   "articleId": "weekly-commodities-2026-11-23"
+  }
+ ],
+ "editorNote": {
+  "label": "EDITOR'S NOTE",
+  "title": "우리가 숫자를 읽는 방식",
+  "text": "빠른 소식보다 확인된 맥락을, 단정보다 검증 가능한 기록을 우선합니다. 원료가 어디서 오고, 가격이 어느 단계에서 붙고, 규제가 서류와 현장 사이에서 어떻게 번역되는지를 추적합니다. 취재의 출발점은 늘 현장의 문장입니다.",
+  "linkText": "편집 원칙 보기",
+  "linkUrl": "about.html"
+ },
+ "newsletter": {
+  "title": "주간 브리핑",
+  "desc": "매주 금요일, 한 주의 리서치와 숫자를 한 통에 정리해 보냅니다.",
+  "cta": "구독 신청",
+  "email": "hoppe00lg@gmail.com",
+  "note": "이메일 주소는 브리핑 발송에만 쓰고, 언제든 한 번의 회신으로 해지할 수 있습니다.",
+  "done": "구독 신청이 접수되었습니다. 다음 금요일 브리핑부터 보내 드립니다."
+ },
+ "monetize": {
+  "updated": "2026-11-23",
+  "inquiryEmail": "hoppe00lg@gmail.com",
+  "response": "영업일 기준 1~2일",
+  "note": "2026년 론칭 스타터 단가입니다. VAT 별도, 게재 기간·소재에 따라 협의로 조정합니다.",
+  "banners": [
+   {
+    "slot": "sideA",
+    "name": "사이드 배너 A",
+    "size": "300 × 250",
+    "where": "홈·기사 사이드바",
+    "month": "월 10만원",
+    "week": "주 3만원",
+    "note": "PC·모바일 동일 노출"
+   },
+   {
+    "slot": "sideB",
+    "name": "하프페이지 B",
+    "size": "300 × 600",
+    "where": "홈 사이드바",
+    "month": "월 15만원",
+    "week": "주 4만 5천원",
+    "note": "브랜드 이미지·캠페인용"
+   },
+   {
+    "slot": "articleBottom",
+    "name": "기사 하단 리더보드",
+    "size": "970 × 90",
+    "where": "모든 기사 본문 하단",
+    "month": "월 20만원",
+    "week": "주 6만원",
+    "note": "발행 기사 전체에 노출"
+   }
+  ],
+  "newsletterSponsor": {
+   "name": "주간 브리핑 스폰서",
+   "where": "매주 금요일 발송 메일 상단",
+   "once": "1회 15만원",
+   "month": "4회 50만원",
+   "note": "텍스트 3~4줄 + 로고 1개, 발송 전 소재 확인"
+  },
+  "packages": [
+   {
+    "kind": "ad",
+    "name": "스폰서드 리포트",
+    "price": "40만원~",
+    "desc": "브랜드·제품·전시회를 공개 자료와 인터뷰로 푼 기획 기사 1편. 제목과 본문 첫머리에 ‘광고’를 표기합니다."
+   },
+   {
+    "kind": "b2b",
+    "name": "원자재 소싱 대행",
+    "price": "30만원~",
+    "desc": "품목·규격·수량을 주시면 중국·동남아 공급 후보 3곳, FOB/CIF 견적, MOQ·리드타임·결제조건을 표로 정리합니다."
+   },
+   {
+    "kind": "b2b",
+    "name": "수입 원가·검수 분석",
+    "price": "80만원~",
+    "desc": "원료가·원단위·운임·환율·관세를 얹은 착지 원가와 손익분기 판가, 검수 항목·샘플 기준을 문서로 드립니다."
+   },
+   {
+    "kind": "b2b",
+    "name": "주간 맞춤 시황 PDF",
+    "price": "월 30만원~",
+    "desc": "보고 싶은 품목(3개까지)의 주간 가격·원료 흐름·공급 뉴스를 매주 금요일 PDF 한 장으로 정리합니다."
+   },
+   {
+    "kind": "saju",
+    "name": "2027 정미년 사주 PDF",
+    "price": "1.9만~4.9만원",
+    "desc": "사주팔자·십신·오행과 2027년 세운을 12~30쪽 PDF로. 사전 신청을 받아 순서대로 제작·발송합니다."
+   }
+  ]
+ },
+ "ads": {
+  "sideA": {
+   "slot": "side-a",
+   "size": "300 × 250",
+   "label": "SPONSOR",
+   "note": "스폰서 배너 · 애드센스",
+   "adsense": {
+    "client": "ca-pub-7853253075143438",
+    "slot": ""
+   }
+  },
+  "sideB": {
+   "slot": "side-b",
+   "size": "300 × 600",
+   "label": "ADVERTISEMENT",
+   "note": "하프페이지 배너",
+   "adsense": {
+    "client": "ca-pub-7853253075143438",
+    "slot": ""
+   }
+  },
+  "articleBottom": {
+   "slot": "article-bottom",
+   "size": "970 × 90",
+   "label": "ADVERTISEMENT",
+   "note": "기사 하단 리더보드",
+   "adsense": {
+    "client": "ca-pub-7853253075143438",
+    "slot": ""
+   }
+  }
+ },
+ "footer": {
+  "about": "인사이트 브리프는 경제·금융, 무역·원자재, AI·테크 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진입니다. 정식 인터넷신문 등록 언론사가 아니며, 취재·편집 인력 5인 이상 등 등록 요건을 갖추지 않았습니다.",
+  "copyright": "© 2026 INSIGHT BRIEF. All rights reserved.",
+  "notice": "본 웹진은 인터넷신문 등록을 하지 않은 독립 미디어입니다. 기사와 사진의 무단 전재·재배포를 금합니다. 협찬·광고 콘텐츠는 ‘광고’로 표기합니다."
+ }
+};

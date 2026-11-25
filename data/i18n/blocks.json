@@ -1,0 +1,63 @@
+{
+ "_note": "HTML 요소 단위 번역 — 문장이 <b>·<a> 로 쪼개져 사전 한 줄로 자연스럽게 옮길 수 없는 문단만 담습니다. 한국어 원본 요소에 data-ib-block=\"키\" 를 달면 /en/ /zh/ /ja/ 페이지에서 아래 HTML 로 통째로 바뀝니다. 안쪽 href 는 언어 폴더 기준으로 자동 변환됩니다.",
+ "article.noscript": {
+  "ko": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>이 리포트를 읽으려면 JavaScript가 필요합니다. <a href=\"index.html\">전체 리포트 목록</a>으로 돌아가세요.</p>\n    </div>",
+  "en": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>This report needs JavaScript. <a href=\"index.html\">Back to all reports</a>.</p>\n    </div>",
+  "zh": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>阅读本报道需要启用 JavaScript。<a href=\"index.html\">返回全部报道</a>。</p>\n    </div>",
+  "ja": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>このレポートを読むには JavaScript が必要です。<a href=\"index.html\">レポート一覧に戻る</a>。</p>\n    </div>"
+ },
+ "forms.dek": {
+  "ko": "근로계약서·사직서·회의록 같은 실무 서식부터 <b>B/L Instruction(선적지시서)·선하증권(B/L)·원산지증명</b>, 급여·재고·퇴직금 <b>자동계산</b>, 업종별 창업 사업계획서, NDA·MOU·정관·임대차계약서, 이력서·자소서·경조 카드·영문 인보이스·PPT까지 <b>10개 카테고리 138종</b>을 한 페이지에 모았습니다. 카드의 미리보기에서 서식을 고르고 <b>바로 편집하기</b>를 누르면, 왼쪽 입력란과 오른쪽 A4 문서가 함께 열립니다. <b>손글씨 서명과 도장</b>을 넣어 인쇄·PDF로 저장하거나 <b>서명 요청 링크</b>로 상대방 서명을 받을 수 있습니다.",
+  "en": "Everything from everyday HR documents — employment contracts, resignation letters, meeting minutes — to <b>B/L instructions, bills of lading and certificates of origin</b>, <b>automatic calculation</b> of payroll, inventory and severance, industry-specific business plans, NDAs, MOUs, articles of association and lease agreements, résumés, cover letters, greeting cards, English invoices and slide decks: <b>138 documents in 10 categories</b> on a single page. Pick a form from the card preview and hit <b>Edit now</b> — the input panel on the left and the A4 document on the right open together. Add a <b>handwritten signature and stamp</b> and print or save as PDF, or collect the other party's signature with a <b>signature request link</b>.",
+  "zh": "从劳动合同、辞职书、会议纪要等实务表单，到 <b>B/L 装运指示、提单（B/L）与原产地证明</b>，以及工资、库存、退职金的<b>自动计算</b>、各行业创业计划书、NDA、MOU、公司章程、租赁合同、简历、自我介绍、贺卡、英文发票与 PPT，<b>10 个类别 138 种</b>表单集中在一页。在卡片的预览中选择表单并点击<b>立即编辑</b>，左侧输入栏与右侧 A4 文档会同时打开。可加入<b>手写签名与印章</b>打印或保存为 PDF，也可通过<b>签名请求链接</b>收取对方签名。",
+  "ja": "雇用契約書・退職届・議事録といった実務書式から、<b>B/L インストラクション（船積指図書）・船荷証券（B/L）・原産地証明</b>、給与・在庫・退職金の<b>自動計算</b>、業種別の創業事業計画書、NDA・MOU・定款・賃貸契約書、履歴書・自己PR・慶弔カード・英文インボイス・PPT まで、<b>10カテゴリー138種</b>を1ページにまとめました。カードのプレビューで書式を選び<b>すぐ編集</b>を押すと、左の入力欄と右のA4文書が同時に開きます。<b>手書き署名と印鑑</b>を入れて印刷・PDF保存、または<b>署名依頼リンク</b>で相手の署名を受け取れます。"
+ },
+ "forms.xlink": {
+  "ko": "<b>이미 있는 도구와 겹치지 않게 나눴습니다.</b> 견적서·마진·수입 원가 계산과 <b>무역서식(PI·CI·PL)</b>은 <a href=\"biz.html\">사업자 툴</a>에서 만들고, 이 페이지의 <b>02 무역·물류</b>는 <b>B/L Instruction(선적지시서)·선하증권(B/L)·원산지증명·패킹리스트·적하보험 요청</b>을 맡습니다. 용역·비밀유지(NDA)·임대차 계약서와 급여 실수령액·퇴직금 계산은 각각 사업자 툴·급여 계산기로 이어집니다. B/L의 품명·수량·금액은 PI·CI·PL과 같아야 하므로, 두 페이지를 나란히 열어 놓고 쓰면 편합니다.",
+  "en": "<b>The work is split so nothing overlaps.</b> Quotations, margin and import-cost calculators and the <b>trade documents (PI · CI · PL)</b> live in <a href=\"biz.html\">Business tools</a>; the <b>02 Trade &amp; logistics</b> section here covers <b>B/L instructions, bills of lading, certificates of origin, packing lists and cargo insurance requests</b>. Service, NDA and lease agreements, take-home pay and severance continue in Business tools and the pay calculator. Because the description, quantity and value on a B/L must match the PI, CI and PL, it helps to keep both pages open side by side.",
+  "zh": "<b>与已有工具做了不重叠的分工。</b>报价单、利润率、进口成本计算与<b>贸易表单（PI · CI · PL）</b>在<a href=\"biz.html\">经营者工具</a>中制作，本页的 <b>02 贸易·物流</b> 负责<b>B/L 装运指示、提单、原产地证明、装箱单与货物保险申请</b>。服务合同、保密协议（NDA）、租赁合同以及实发工资、退职金计算分别接到经营者工具与工资计算器。B/L 的品名、数量、金额应与 PI、CI、PL 一致，两页并排使用更方便。",
+  "ja": "<b>既存ツールと重ならないように分けています。</b>見積書・粗利・輸入原価の計算と<b>貿易書式（PI・CI・PL）</b>は<a href=\"biz.html\">事業者ツール</a>で作成し、このページの<b>02 貿易・物流</b>は<b>B/L インストラクション・船荷証券・原産地証明・パッキングリスト・貨物保険依頼</b>を担当します。業務委託・秘密保持（NDA）・賃貸契約書、手取り額・退職金の計算はそれぞれ事業者ツールと給与計算機につながります。B/L の品名・数量・金額は PI・CI・PL と一致させる必要があるため、2ページを並べて使うと便利です。"
+ },
+ "forms.noscript": {
+  "ko": "<p style=\"font-size:14px;line-height:1.8\"><b>이 페이지의 서식 생성기는 JavaScript로 동작합니다.</b> JavaScript를 켜면 문서서식 23종(근로계약서·사직서·휴직·시말서·경위서·인수인계서·회의록·견적의뢰서·납품확인서 등), 무역·물류 8종(B/L Instruction·선하증권·원산지증명·패킹리스트·적하보험·검수확인서), 자동계산 19종(급여·연차·가계부·마진·재고·거래처원장·퇴직금·자금일보), 사업계획·보고 16종, 계약·법률 26종(NDA·MOU·정관·의사록·임대차), 이력·자소서 10종, 인사말·카드 8종, 영문서식 16종, PPT 10종, 온라인 도장 2종을 이용할 수 있습니다.</p>\n        <p style=\"margin-top:10px;font-size:13px\">무역서식(PI·CI·PL)은 <a href=\"biz.html\">사업자 툴</a>, 급여 계산은 <a href=\"salary.html\">급여 계산기</a>에서 이용하세요.</p>",
+  "en": "<p style=\"font-size:14px;line-height:1.8\"><b>The form generator on this page runs on JavaScript.</b> With JavaScript on you can use 23 office documents (employment contracts, resignation letters, leave requests, incident reports, handover notes, meeting minutes, quotation requests, delivery confirmations and more), 8 trade and logistics forms (B/L instruction, bill of lading, certificate of origin, packing list, cargo insurance, inspection certificate), 19 automatic calculators (payroll, annual leave, household budget, margin, inventory, customer ledger, severance, daily cash), 16 business plan and report templates, 26 contract and legal documents (NDA, MOU, articles of association, minutes, lease), 10 résumé and cover-letter templates, 8 greeting cards, 16 English-language forms, 10 slide decks and 2 online stamps.</p>\n        <p style=\"margin-top:10px;font-size:13px\">Trade documents (PI · CI · PL) are in <a href=\"biz.html\">Business tools</a>; payroll runs in the <a href=\"salary.html\">pay calculator</a>.</p>",
+  "zh": "<p style=\"font-size:14px;line-height:1.8\"><b>本页的表单生成器需要 JavaScript 才能运行。</b>启用 JavaScript 后，可使用 23 种文书表单（劳动合同、辞职书、休假申请、事故经过书、交接书、会议纪要、报价申请、交货确认等）、8 种贸易物流表单（B/L 装运指示、提单、原产地证明、装箱单、货物保险、检验确认）、19 种自动计算（工资、年假、家庭账本、利润率、库存、客户台账、退职金、资金日报）、16 种事业计划与报告、26 种合同法律文书（NDA、MOU、公司章程、会议记录、租赁）、10 种简历与自我介绍、8 种贺卡、16 种英文表单、10 种 PPT 与 2 种在线印章。</p>\n        <p style=\"margin-top:10px;font-size:13px\">贸易表单（PI · CI · PL）请到<a href=\"biz.html\">经营者工具</a>，工资计算请到<a href=\"salary.html\">工资计算器</a>。</p>",
+  "ja": "<p style=\"font-size:14px;line-height:1.8\"><b>このページの書式ジェネレーターは JavaScript で動作します。</b>JavaScript を有効にすると、文書書式23種（雇用契約書・退職届・休職願・始末書・経緯書・引継書・議事録・見積依頼書・納品確認書など）、貿易・物流8種（B/L インストラクション・船荷証券・原産地証明・パッキングリスト・貨物保険・検収確認書）、自動計算19種（給与・年次有給・家計簿・粗利・在庫・取引先台帳・退職金・資金日報）、事業計画・報告16種、契約・法務26種（NDA・MOU・定款・議事録・賃貸）、履歴書・自己PR10種、挨拶状・カード8種、英文書式16種、PPT10種、オンライン印鑑2種が使えます。</p>\n        <p style=\"margin-top:10px;font-size:13px\">貿易書式（PI・CI・PL）は<a href=\"biz.html\">事業者ツール</a>、給与計算は<a href=\"salary.html\">給与計算機</a>をご利用ください。</p>"
+ },
+ "market.noscript": {
+  "ko": "<p>시황표를 보려면 JavaScript가 필요합니다. <a href=\"index.html\">전체 리포트 목록</a>으로 돌아가세요.</p>",
+  "en": "<p>The market board needs JavaScript. <a href=\"index.html\">Back to all reports</a>.</p>",
+  "zh": "<p>查看行情表需要启用 JavaScript。<a href=\"index.html\">返回全部报道</a>。</p>",
+  "ja": "<p>市況表を見るには JavaScript が必要です。<a href=\"index.html\">レポート一覧に戻る</a>。</p>"
+ },
+ "global.dek": {
+  "ko": "수출입하며 실제로 매일 쓰는 세 가지를 한 페이지에 모았습니다. <b>상대 국가를 고르면 그 나라 말과 예절로 쓴 무역 이메일</b>이 바로 나오고, <b>출장지를 고르면 일비·숙박 상한·면세 한도·전압·단위</b>가 한 번에 정리되며, <b>미국·중국·일본·영국·인도·베트남 기업의 등록·재무·선적 이력</b>을 공식 사이트에서 확인할 수 있습니다. 회원가입 없이 브라우저에서만 동작하고, 입력한 값은 서버로 전송되지 않습니다.",
+  "en": "Three things a trader actually uses every day, on one page. <b>Pick the recipient country and a trade email written in that language and to its etiquette</b> comes out; <b>pick a destination and per diem, hotel ceilings, duty-free limits, voltage and units</b> are laid out together; and you can check <b>the registration, financials and shipment history of companies in the US, China, Japan, the UK, India and Vietnam</b> on their official sites. No sign-up, everything runs in your browser, and nothing you type leaves it.",
+  "zh": "把做进出口时每天真正用到的三件事集中在一页。<b>选择对方国家，即可生成用该国语言、符合当地礼仪的贸易邮件</b>；<b>选择出差城市，日补、住宿上限、免税额度、电压与单位</b>一次整理；还可在官网核对<b>美国、中国、日本、英国、印度、越南企业的登记、财务与货运记录</b>。无需注册，全部在浏览器内运行，输入内容不会上传。",
+  "ja": "輸出入の仕事で毎日使う3つを1ページにまとめました。<b>相手国を選べば、その国の言語と作法に合わせた貿易メール</b>がすぐでき、<b>出張先を選べば日当・宿泊上限・免税範囲・電圧・単位</b>が一度に整理されます。さらに<b>米・中・日・英・印・ベトナム企業の登記・財務・船積み履歴</b>を公式サイトで確認できます。登録不要、すべてブラウザ内で動き、入力内容は送信されません。"
+ },
+ "global.mail.lead": {
+  "ko": "인콰이어리부터 견적 요청·단가 협상·선적 독촉·품질 클레임·미수금 안내까지 <b>9가지 상황</b>을 골라 쓰면 됩니다. 상대 국가를 <b>미국·중국·일본·한국</b> 중에서 고르면 그 나라 언어와 비즈니스 예절에 맞춘 원어 이메일이 만들어지고, 값을 채우지 않은 곳은 대괄호로 남아 어디를 손봐야 하는지 바로 보입니다.",
+  "en": "Nine situations from a first inquiry through quotation, price negotiation, shipment follow-up, quality claims and payment reminders. Choose the recipient country — <b>the US, China, Japan or Korea</b> — and the email is written in that language and to that market’s business etiquette; anything you leave empty stays in brackets so you can see exactly what still needs filling in.",
+  "zh": "从首次询盘到报价、价格谈判、催装运、质量索赔、催款，共 <b>9 种场景</b>。选择对方国家（<b>美国、中国、日本、韩国</b>），即生成该国语言并符合当地商务礼仪的邮件，未填写的部分保留方括号，一眼看出还需补什么。",
+  "ja": "初回の問い合わせから見積・価格交渉・船積み催促・品質クレーム・代金催促まで<b>9つの場面</b>。相手国（<b>米国・中国・日本・韓国</b>）を選ぶと、その言語と商習慣に合わせた文面になり、未入力の箇所は括弧で残るので何を埋めるべきかすぐ分かります。"
+ },
+ "global.trip.lead": {
+  "ko": "출장지를 고르면 <b>공무원 여비 규정 별표 4</b>의 국가 등급에 맞는 일비·숙박 상한·식비가 자동으로 들어갑니다. 회사 규정이 있으면 그 단가로 고쳐 쓰면 되고, 일수와 실제 숙박비만 넣으면 <b>달러 합계와 원화 환산</b>이 바로 나옵니다. 같은 화면 아래에 면세 한도, 전압과 플러그, 인치·파운드·화씨 변환, 항공·호텔·맛집 링크를 함께 두었습니다.",
+  "en": "Choose a destination and the per diem, hotel ceiling and meal rate for its grade in <b>Table 4 of the Korean public-officials travel rules</b> are filled in. Replace them with your own company rates if you have them, enter the days and the actual hotel rate, and <b>the USD total and its KRW equivalent</b> appear. Duty-free limits, voltage and plugs, inch–pound–Fahrenheit conversion and flight, hotel and restaurant links sit just below.",
+  "zh": "选择出差城市，即按<b>韩国《公务员旅费规定》附表4</b>的等级填入日补、住宿上限与餐费。公司有规定的可改为本公司标准，填入天数与实际住宿费后，<b>美元合计与韩元折算</b>立即显示。下方还有免税额度、电压与插头、英寸·磅·华氏换算以及机票、酒店、餐厅链接。",
+  "ja": "出張先を選ぶと、<b>韓国「公務員旅費規程」別表4</b>の等級に応じた日当・宿泊上限・食事代が入ります。社内規程があればその単価に変え、日数と実際の宿泊費を入れるだけで<b>ドル合計とウォン換算</b>が出ます。免税範囲、電圧とプラグ、インチ・ポンド・華氏の換算、航空券・ホテル・飲食店リンクも同じ画面にまとめました。"
+ },
+ "global.portal.lead": {
+  "ko": "미국·중국·일본·영국·인도·베트남에 거래처를 두고 일할 때 실제로 여는 공식 사이트만 모았습니다. 사이트마다 <b>무료로 볼 수 있는 항목</b>과 <b>볼 수 없는 항목</b>을 함께 적었고, 링크는 2026년 11월 24일에 직접 접속해 확인했습니다.",
+  "en": "Only the official sites actually opened when working with counterparties in the US, China, Japan, the UK, India and Vietnam. For each one we note <b>what is free to check</b> and <b>what it cannot tell you</b>, and every link was opened and verified on 24 November 2026.",
+  "zh": "只收录与美国、中国、日本、英国、印度、越南客户往来时真正会打开的官方网站。每个站点都标明<b>可免费查看的内容</b>与<b>看不到的内容</b>，链接已于 2026 年 11 月 24 日逐一打开确认。",
+  "ja": "米・中・日・英・印・ベトナムの取引先と仕事をするとき実際に開く公式サイトだけを集めました。各サイトについて<b>無料で見られる項目</b>と<b>見られない項目</b>を書き、リンクは2026年11月24日に実際に開いて確認しています。"
+ },
+ "global.portal.hollead": {
+  "ko": "중국은 <b>국무원 공고</b>, 일본은 <b>내각부·국립천문대</b>, 미국은 <b>OPM</b>, 한국은 <b>우주항공청 월력요항</b>을 기준으로 정리했습니다. 빨간 날짜는 휴무, 회색은 혼잡·부분 휴무(일요일 근무, 은행 휴무, 블랙프라이데이)입니다.",
+  "en": "Compiled from China’s <b>State Council notice</b>, Japan’s <b>Cabinet Office and NAOJ</b>, the US <b>OPM</b> and Korea’s <b>Space and Astronomy Agency calendar</b>. Red dates are closures; grey marks peak or partial closures (working Sundays, bank holidays, Black Friday).",
+  "zh": "依据中国<b>国务院公告</b>、日本<b>内阁府与国立天文台</b>、美国<b>OPM</b>、韩国<b>宇宙航空厅历书</b>整理。红色为休市，灰色为高峰或部分休市（调休上班、银行休业、黑五）。",
+  "ja": "中国の<b>国務院公告</b>、日本の<b>内閣府・国立天文台</b>、米国の<b>OPM</b>、韓国の<b>宇宙航空庁暦要項</b>に基づいています。赤字は休業、灰色は混雑・部分休業（日曜出勤、銀行休業、ブラックフライデー）です。"
+ }
+}
