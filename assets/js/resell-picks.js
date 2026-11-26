@@ -116,7 +116,7 @@
     return (v < 0 ? '\u2212' : '') + SYM.KRW + nf(Math.abs(v));
   }
   function money(n, cur) {
-    if (cur === 'USD') return SYM.USD + nf(n, n < 100 ? 2 : 0);
+    if (cur === 'USD') return SYM.USD + nf(n, 2);
     if (cur === 'EUR') return SYM.EUR + nf(n, 2);
     if (cur === 'CNY') return SYM.CNY + nf(n, 2);
     if (cur === 'JPY') return SYM.JPY + nf(Math.round(n));
@@ -175,7 +175,7 @@
         '<div><dt>' + esc(T.colFrom) + '</dt><dd>' + money(it.usd, cur) + '</dd></div>' +
         '<div><dt>' + esc(T.colDom) + '</dt><dd>' + krw(it.domestic) + '</dd></div>' +
         '<div><dt>' + esc(T.colCost) + '</dt><dd>' + krw(it.invested) + '</dd></div>' +
-        '<div><dt>' + esc(T.colTax) + '</dt><dd>' + (it.customs ? krw(it.customs) : '0') + '</dd></div>' +
+        '<div><dt>' + esc(T.colTax) + '</dt><dd>' + krw(it.customs || 0) + '</dd></div>' +
       '</dl>' +
       '<div class="rs-pk-margin ' + cls + '">' +
         '<span class="k">' + esc(T.colMargin) + '</span>' +
