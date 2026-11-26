@@ -1,5 +1,131 @@
 [
  {
+  "id": "fcbga-equipment-lead-time-30-months-2026",
+  "category": "ai",
+  "title": "Ten weeks become thirty, six months become thirty — the AI build-out queues in three layers",
+  "deck": "In the 2026 semiconductor supply chain survey by SEMI and McKinsey, substrate material lead times went from 10 weeks to 30 and assembly and packaging equipment from 23 weeks to 37. In the substrate chain some processing equipment now takes 30 months after a purchase order instead of six, and the Japanese precision parts inside that equipment take half a year. Samsung Electro-Mechanics' new Sejong line, backed by 6.78 trillion won, starts mass production in September 2028.",
+  "date": "2026-11-26",
+  "sample": false,
+  "author": "Insight Brief Editorial Room",
+  "authorRole": "AI·Tech Team",
+  "publishedAt": "2026-11-26T16:45:00+09:00",
+  "readMinutes": 8,
+  "tags": [
+   "FC-BGA",
+   "substrate materials",
+   "equipment lead times",
+   "SEMI-McKinsey survey",
+   "Samsung Electro-Mechanics",
+   "LG Innotek",
+   "Japanese components",
+   "ABF substrate",
+   "AI infrastructure",
+   "semiconductor supply chain"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "TECH FILE 35",
+   "word": "LEAD TIME"
+  },
+  "coverImage": "/assets/img/articles/fcbga-equipment-lead-time-30-months-2026.jpg",
+  "summary": [
+   "In the semiconductor supply chain survey SEMI and McKinsey presented on November 17, 2026, average lead times ran 16.4 weeks, 27% above normal. Substrate materials that were normal a year earlier went from 10 weeks to 30, assembly and packaging equipment from 23 to 37 weeks (61%), and chemicals and process materials from 10 to 17 weeks (70%).",
+   "In the substrate industry, lead times for some FC-BGA bonding, cutting and metallization equipment have stretched from about six months after a purchase order to 30 months (not the average across all such equipment), and the Japanese precision motors, servos and drivers inside it take half a year. Samsung Electro-Mechanics' CCL and PPG purchase prices rose 26.0% in the first nine months and its substrate selling prices 28.1%.",
+   "Samsung Electro-Mechanics will start its new Sejong line in September 2028 and its Vietnam plant in June 2030 on a 6.78 trillion won investment. Intel has committed $5.3bn to $6.1bn to secure substrates, Counterpoint sees a 20% shortfall around 2027, and order backlogs at Korean PCB makers rose 22% to 115% quarter on quarter."
+  ],
+  "body": "In September 2026 Samsung Electro-Mechanics decided to put 4.27 trillion won into its Sejong plant and 2.51 trillion won into its Vietnam subsidiary, 6.78 trillion won in all, into FC-BGA substrates. The new Sejong line starts mass production in September 2028 and Vietnam in June 2030. The numbers that make that timetable worth reading again came out on November 25 and 26.\n\n![At the end of a production line stacked with substrates, a robotic arm is handed a single small motor, and behind it a calendar unrolls toward 2028](/assets/img/articles/fcbga-equipment-lead-time-30-months-2026.jpg)\n\n## The clock on materials — ten weeks become thirty\n\nThe 2026 semiconductor supply chain survey that SEMI and McKinsey presented in a webinar on November 17 drew more than 200 responses from materials and equipment suppliers, device makers and OSATs. Average lead times across the global chain run 16.4 weeks, 27% above normal. Substrates stand out. Substrate material lead times, normal in last year's survey, tripled from 10 weeks to 30. Assembly and packaging equipment went from 23 weeks to 37 (61%), and chemicals and process materials from 10 to 17 (70%). 82% of respondents said demand rose year on year, and 42% of materials suppliers and 38% of equipment suppliers reported longer lead times than in the previous quarter. In the same survey 88% of suppliers expect revenue growth over the next 12 months. Demand has come back broadly, yet only leading-edge capacity is stretched to its limit while inventories pile up downstream. Substrates jam first for a structural reason. A substrate carries electrical signals between the chip and the mainboard, and the ones inside AI accelerators and server CPUs are larger and carry more circuit layers than those for ordinary IT gear, so the same plant yields fewer of them.\n\n## The clock on equipment — six months become thirty\n\nThe front-page story Electronic Times ran on November 26 shows the bottleneck moving one layer further in. Some of the bonding, cutting and metallization equipment for FC-BGA substrates that arrived six months after a purchase order now takes 30 months. Large substrate makers are paying in advance to ask for faster delivery, and some send letters of intent before a formal order to hold capacity. Equipment makers say that even with more orders they lack the parts to ship on time. The stretch began with semiconductor manufacturing equipment, where deliveries now run as long as three years, and spread to substrates. The 30 months applies to some equipment, not to FC-BGA equipment as a whole.\n\n## The end of the queue — a Japanese motor that takes six months\n\nThe companies that build the equipment stand in the same line. The more advanced the tool, the more it depends on Japanese parts, and capacity is short for precision stage motors, servo motors, drivers and controllers. A Japanese part that used to be available immediately now takes about half a year, according to the head of an FC-BGA bonding equipment maker. The FC-BGA market is led by Japan's Ibiden and Shinko Electric and Taiwan's Unimicron, with Samsung Electro-Mechanics, Daeduck Electronics and LG Innotek pushing in from Korea. Materials are not far away either: the CCL and PPG supply lines named in Samsung Electro-Mechanics' third-quarter report are Japan's Resonac and Mitsubishi.\n\n## The numbers that reached the cost sheet first\n\nPrice has already reached the cost sheet. Samsung Electro-Mechanics' average CCL and PPG purchase price for the first nine months of 2026 is up 26.0% from a year earlier, while the average selling price of its semiconductor package substrates rose 28.1%. LG Innotek's substrate material purchase price rose 13.7%, after 15.0% last year. Substrate raw material inventory grew 53.2% at Samsung Electro-Mechanics, from 66.7 billion won to 102.2 billion won, and 14.6% at LG Innotek, from 34.6 billion to 39.6 billion won. TrendForce put the lead time for ABF substrates in the second week of November at 48 to 56 weeks, up to 4.7 times the balanced level of 12 weeks. Samsung Electro-Mechanics says it is negotiating selling prices to reflect higher material costs and tight supply, and some customers are helping fund substrate makers' capacity and guaranteeing long-term volumes.\n\n## Not the money announced but the date the tools arrive\n\nSamsung Electro-Mechanics' package solution division posted 2.4357 trillion won in sales for the first nine months, up 47% from a year earlier, and its operating margin rose from 5.3% to 15.2%. Even so, the company said this on its third-quarter earnings call.\n\n> \"Even with this large expansion it is hard to meet all customer demand, and requests for more volume keep coming.\" — Samsung Electro-Mechanics, third-quarter earnings call\n\nIntel said in its third-quarter filing that it cannot adequately meet data-center CPU demand because packaging substrates are scarce, and it has signed two substrate supply contracts since the quarter closed. Expected spending is $5.3bn to $6.1bn, 7.1 to 8.2 trillion won. Counterpoint Research expects the shortfall in high-performance substrates to reach 20% around 2027. Order backlogs at Korean PCB makers rose 22% to 115% quarter on quarter, according to Hana Securities; the list includes Simmtech, Daeduck Electronics, Korea Circuit and Isu Petasys. LG Innotek's package solution sales came to 481.8 billion won in the third quarter, up 10.1%, and the industry expects it to close long-term supply agreements with three North American chipmakers as it moves into high-end AI accelerator and server substrates by 2028. Demand is arriving in Korea, but the calendar for the tools and parts that would serve it points at 2028 and 2030. The two to four years between the start of that capacity and the 2027 peak of the shortfall belong to these companies. What separates results in the next cycle is not the size of the investment announced but the schedule for when the equipment comes in.\n",
+  "sources": [
+   {
+    "name": "SEMI — 「2026 Semiconductor Supply Chain Survey」 결과 웨비나 (2026-11-17)",
+    "url": "https://www.semi.org/en/event/demand-back-your-supply-chain-ready",
+    "note": "SEMI·맥킨지 공동 조사, 200곳 이상 응답, 납기가 역사적 정상보다 27% 길다, 공급업체 88%가 향후 12개월 매출 성장 전망, 최첨단 생산능력은 한계까지 밀리고 하류 재고는 쌓이는 분화"
+   },
+   {
+    "name": "SEMI — Supply Chain Management Survey 개요",
+    "url": "https://www.semi.org/en/industry-groups/supply-chain-management-survey",
+    "note": "제5차 연례 조사, 소재·장비·IDM·팹리스·파운드리·OSAT·OEM·서비스 포함, 2026년 Q4 펄스 조사는 2026-10-27~11-20"
+   },
+   {
+    "name": "뉴스토마토 — AI 반도체 공급망 곳곳서 병목…기판 소재 납기 3배 (2026-11-25)",
+    "url": "https://www.newstomato.com/ReadNews.aspx?no=1321802",
+    "note": "SEMI·맥킨지 조사의 항목별 납기(평균 16.4주·기판 소재 10→30주·조립·패키징 장비 23→37주·화학·공정 소재 10→17주), 82% 수요 증가, 소재 42%·장비 38% 납기 연장, 삼성전기·LG이노텍 원재료 단가와 재고, 6조7,800억 원 투자, 3분기 컨퍼런스콜 발언"
+   },
+   {
+    "name": "전자신문 — AI발 장비 수급난, 반도체 이어 기판 제조 현장까지 덮쳤다 (2026-11-25 16:15, 지면 2026-11-26 1면)",
+    "url": "https://www.etnews.com/20261125000352",
+    "note": "FC-BGA 일부 가공 장비 PO 후 6개월→약 30개월, 대형 기판사 선수금·구매의향서, 일본산 정밀모터·서보모터·드라이버·컨트롤러 반년 대기, 반도체 제조 장비는 최대 3년 이상, 이비덴·신코전기·유니마이크론·삼성전기·대덕전자·LG이노텍"
+   },
+   {
+    "name": "Electronic Times (영문판) — AI-Driven Equipment Shortages Spread From Chipmakers to Substrate Makers (2026-11-26)",
+    "url": "https://en.etnews.com/20261126200009",
+    "note": "같은 보도의 영문판으로 30개월·평시 대비 5배·일본산 부품 반년·주요 기판사 목록을 교차 확인"
+   },
+   {
+    "name": "토큰포스트 — 일부 FC-BGA 장비 납기 30개월…AI 증설에 주문 몰려 (2026-11-25)",
+    "url": "https://www.tokenpost.kr/news/tech/444221",
+    "note": "30개월은 일부 장비에 해당하며 FC-BGA 장비 전체 평균이 아님, 부품 반년 납기와 완성 장비 30개월은 대상이 다름"
+   },
+   {
+    "name": "중앙일보 — AI 반도체 기판 품귀…수조원대 선점 경쟁 (2026-11-04)",
+    "url": "https://www.joongang.co.kr/article/25475715",
+    "note": "인텔 3분기 보고서의 기판 부족·계약 2건 53억~61억 달러(33억 달러는 2027년 말까지), 삼성전기 6조7,800억 원(세종 4조2,700억·2028년 9월 양산, 베트남 2조5,100억·2030년 6월), 3분기 패키지솔루션 매출 9,390억 원(+58%)"
+   },
+   {
+    "name": "뉴시스 — 인텔도 못 피한 반도체 기판난…삼성전기·LG이노텍 증설 '속도' (2026-11-03)",
+    "url": "https://www.newsis.com/view/NISX20261103_0003852673",
+    "note": "카운터포인트리서치, 2027년께 고성능 반도체 기판 공급 부족률 20% 전망"
+   },
+   {
+    "name": "삼성전기 — 제54기 3분기 분기보고서 (2026-11-16 공시)",
+    "url": "https://samara.kr/disclosure/20261116001915",
+    "note": "CCL/PPG 평균 매입단가 전년 대비 26.0% 상승, 반도체패키지기판 평균판매가격 28.1% 상승, CCL/PPG 매입처 RESONAC·MITSUBISHI, 패키지솔루션 3분기 누계 매출 2조4,357억 원"
+   },
+   {
+    "name": "녹색경제신문 — 삼성전기, 9월 말 선수금 작년 말 대비 52%↑ (2026-11-18)",
+    "url": "https://www.greened.kr/news/articleView.html?idxno=354958",
+    "note": "패키지솔루션 3분기 누계 매출 2조4,357억 원(전년 동기 1조6,572억 원 대비 47%↑), 영업이익 875억→3,694억 원, 영업이익률 5.3%→15.2%, 기판 ASP 28.1%, CCL·PPG 매입단가 26%대"
+   },
+   {
+    "name": "LG이노텍 — 2026년 3분기 경영실적 보도자료 (2026-10-27)",
+    "url": "https://www.lg.co.kr/media/release/30719",
+    "note": "패키지솔루션 3분기 매출 4,818억 원(전년 동기 대비 10.1%↑), FC-BGA 생산공장 증설과 국내·외 추가 투자 검토"
+   },
+   {
+    "name": "디지털타임스 — D램은 숨통 트였는데…GPU 등은 '병목' 여전 (2026-11-10)",
+    "url": "https://www.dt.co.kr/article/12094159",
+    "note": "트렌드포스 11월 둘째 주 ABF 기판 리드타임 48~56주(균형 12주의 최대 4.7배), HDD 50주, CPU 25~30주, eSSD 16주"
+   },
+   {
+    "name": "연합뉴스 — 하나증권 \"PCB 업종 업사이클 내년까지 지속\" (2026-11-25)",
+    "url": "https://www.yna.co.kr/view/AKR20261125030500008",
+    "note": "메모리 패키지 기판 판가 인상, 3분기 심텍·대덕전자·코리아써키트·이수페타시스 수주잔고 전 분기 대비 22~115% 증가"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check & sources",
+   "note": "The 30 months refers to some, not all, of the bonding, cutting and metallization equipment for FC-BGA substrates: Electronic Times called it 'nearly five times the usual level', and TokenPost noted that it is not the average across FC-BGA equipment. This article keeps that limit. The 30 months for finished equipment and the half year for the Japanese parts inside it are different measurements of different things. The item-level lead times (16.4 weeks on average, substrate materials 10 to 30 weeks, assembly and packaging equipment 23 to 37 weeks, chemicals and process materials 10 to 17 weeks, 82% seeing higher demand, 42% of materials and 38% of equipment suppliers reporting longer lead times) are News Tomato's reading of the SEMI and McKinsey 2026 semiconductor supply chain survey; what SEMI's own survey page states directly is 200-plus respondents, lead times 27% above historical norms, 88% of suppliers expecting revenue growth over 12 months, and leading-edge capacity at its limit while downstream inventories pile up. The full survey report was not examined. Samsung Electro-Mechanics' 26.0% (CCL and PPG purchase price), 28.1% (package substrate selling price) and 2.4357 trillion won in nine-month package solution sales were read from the published quarterly report, while LG Innotek's 13.7% and the raw material inventory figures (Samsung Electro-Mechanics 66.7bn to 102.2bn won, LG Innotek 34.6bn to 39.6bn won) are as News Tomato cited them from both companies' quarterly reports and were not checked against the originals. Intel's $5.3bn to $6.1bn is the expected outlay for two substrate supply contracts signed after the third quarter closed, of which $3.3bn is due by the end of 2027. Counterpoint's 20% is a forecast for around 2027. The September 2028 start at Sejong and June 2030 at Vietnam follow the JoongAng Ilbo report; News Tomato writes 'gradual mass production from next year', so the timing is reported differently. Hana Securities' 22% to 115% backlog growth is as reported by Yonhap from the brokerage note.",
+   "sources": [
+    {
+     "name": "Supply chain lead times and demand",
+     "note": "SEMI and McKinsey 2026 semiconductor supply chain survey webinar (Nov 17, 2026) and SEMI survey page; News Tomato, Nov 25, 2026"
+    },
+    {
+     "name": "Substrate equipment and component lead times",
+     "note": "Electronic Times, Nov 25, 2026 (print Nov 26, page 1) and its English edition, Nov 26, 2026; TokenPost, Nov 25, 2026 (on the limits of the figure)"
+    },
+    {
+     "name": "Company results and investment",
+     "note": "Samsung Electro-Mechanics Q3 quarterly report (Nov 16, 2026); Green Economy, Nov 18, 2026; LG Innotek Q3 release (Oct 27, 2026); JoongAng Ilbo, Nov 4, 2026"
+    },
+    {
+     "name": "Forecasts and market data",
+     "note": "Newsis, Nov 3, 2026 (Counterpoint Research); Digital Times, Nov 10, 2026 (TrendForce); Yonhap, Nov 25, 2026 (Hana Securities)"
+    }
+   ]
+  }
+ },
+ {
   "id": "nickel-quota-2027-korea-warehouse-2026",
   "category": "trade",
   "title": "The application says 500 million tonnes. The announcement has no number — what holds nickel at $15,000 is 79,266 tonnes in Busan and Gwangyang",
@@ -2782,7 +2908,7 @@
    "Antropic negotiated to purchase the same assets entirely in stock for about $6 billion in August, but withdrew in early September. Amazon will sell Tranium outside of AWS starting in late 2027. In the performance announcement on October 29, it was revealed that sales commitments for Tranium and Graviton each increased more than 20 times in one year. The competitor is NVIDIA (86% share of data center AI chips), which has built the CUDA ecosystem.",
    "Korea's semiconductor exports from January to October reached a record high of $396.8 billion (42.7% of the total, +193.1%), but the total sales of Rebellion (sales of 32 billion won, operating loss of 120.5 billion won) and Furiosa AI (sales of 5.7 billion won, operating loss of 62.5 billion won) in 2025 are KRW 37.7 billion. It is won (about 28 million dollars). The place where the value is attached is not the chip, but the software layer that allows the chip to be replaced."
   ],
-  "body": "On November 23, 2026, what Amazon bought was not a company, but a set of technologies. Amazon announced, “We are purchasing the proprietary technology of the Decart Optimization Stack (DOS) and welcoming three co-founders and a team of AI researchers and engineers.” The amount was not disclosed. Bloomberg and Calcalist put it at $7.5 billion. As of November 24, the base selling rate was 1,346.60 won, which is about 10.1 trillion won, and with about 100 employees, it is 101 billion won per person.\n\n> \"Every leap forward in AI starts with getting more out of every chip.\"\n> — Peter DeSantis, Amazon Senior Vice President of Basic AI Models, Custom Semiconductors, and Quantum Computing, November 23, 2026\n\n![Above a canyon where two huge chips stand facing each other like buildings, a golden box of code blocks is being transported by a glass bridge. Below, people in work clothes walk in a line down the server rack hallway. Image · AI Illustration](/assets/img/articles/amazon-decart-chip-switching-cost-2026.jpg)\n\n## Two months when 6 billion became 7.5 billion\n\nThese assets did not originally belong to Amazon. Bloomberg reported in August that Antropic negotiated to purchase Decart entirely in stock for $6 billion and completed due diligence. The words of Calcalist, which announced its withdrawal on September 8, were, “After reviewing the business and technology, we decided not to purchase.” Globes reported that Antropic made the offer conditional on closing its development center in Israel and relocating to San Francisco, which Descart rejected. The reasons vary depending on the report. The value went from 6 billion to 7.5 billion dollars in two months. Globes reported that the transaction will be completed in January 2027 after regulatory approval, and that the three founders will receive a significant portion of the payment after five years. There is no completion date for Amazon's announcement.\n\n## What did you buy and what did you not buy?\n\nThe object of Amazon’s announcement is not the company. It is “the proprietary technology behind DOS.” Videos and world models (Oasis 3, Lucy) are not mentioned. What lives is the code and people, and what remains is the company and its sales. DOS is not software tied to a specific chip in the first place. Reuters described DOS as “a software engine that makes AI systems run faster and move more easily between Nvidia, Amazon, and Google chips.” Nvidia also participated in Decart's $300 million round in May.\n\nHowever, the only chips mentioned in Amazon's announcement are Tranium and Graviton. There is no word on whether DOS will continue to support competing chips. The test method for the 1,600 tokens per second (200 in the industry) proposed by Decart is not disclosed.\n\n## The day Amazon sells chips\n\nThe reason for buying was revealed in the performance announcement on October 29th. “Customers continue to ask us to make Tranium available outside of AWS, and we plan to do so by the end of 2027,” CEO Andy Jassy said. The chip business grew by triple digits, and Tranium and Graviton contracts each increased more than 20 times in one year. Torch Neuron, an open source tool that runs on Tranium without modifying the existing PyTorch code, was also released. In his April shareholder letter, Jassy wrote that the externally sold chip business could be worth $50 billion a year.\n\nThe market still belongs to NVIDIA. According to Visual Capitalist estimates, the data center AI chip market share in the fourth quarter of 2025 is 86% for Nvidia, 10% for AMD, and 4% for Intel. The line of defense is not only about performance. This is the CUDA ecosystem that has been built since 2006. The Software Policy Research Institute analyzed that “even if competing chips offer similar performance, they increase switching costs and entrench dependency.” Those who want to sell chips must pay the customer's moving costs first. 10 trillion won is considered the moving cost.\n\n## Two numbers in Korea: 42.7% and 37.7 billion won\n\nKorea achieved a record high in hardware. According to the Ministry of Trade, Industry and Energy, semiconductor exports from January to October amounted to $396.8 billion, up 193.1% from a year ago and accounting for 42.7% of total exports. Annual exports exceeded 1 trillion dollars for the first time on November 19. High bandwidth memory (HBM) market share is 83.0% (2nd quarter), DRAM 65.6% (1st half).\n\nDomestic companies on the same floor are small. Rebellion has 2025 sales of 32 billion won, operating loss of 120.5 billion won, and corporate value of 3.4 trillion won (March). Furiosa AI has sales of 5.7 billion won and an operating loss of 62.5 billion won. The combined sales of the two companies, 37.7 billion won, is just over $28 million, or 1/268th of the $7.5 billion that Amazon spent on Decart. It is precisely this layer that both companies make. Rebellion boasts a torch.compile support SDK, and FuriosaAI boasts its own compiler. The Export-Import Bank's Overseas Economic Research Institute assessed that there is a gap of more than three years between them and leading companies in terms of capital, commercialization experience, and ecosystem.\n\n## place with value\n\nThe place where the value was attached was not the wafer or HBM. It was the cost for the customer to change chips. Some things remain unconfirmed. $7.5 billion is not a number disclosed by Amazon. When Tranium begins to move out of AWS in late 2027, the next question is who sets the price of the software running on the chip.\n",
+  "body": "On November 23, 2026, what Amazon bought was not a company, but a set of technologies. Amazon announced, “We are purchasing the proprietary technology of the Decart Optimization Stack (DOS) and welcoming three co-founders and a team of AI researchers and engineers.” The amount was not disclosed. Bloomberg and Calcalist put it at $7.5 billion. As of November 24, the base selling rate was 1,346.60 won, which is about 10.1 trillion won, and with about 100 employees, it is 101 billion won per person.\n\n> \"Every leap forward in AI starts with getting more out of every chip.\"\n> — Peter DeSantis, Amazon Senior Vice President of Basic AI Models, Custom Semiconductors, and Quantum Computing, November 23, 2026\n\n![Above a canyon where two huge chips stand facing each other like buildings, a golden box of code blocks is being transported by a glass bridge. Below, people in work clothes walk in a line down the server rack hallway. Image · AI Illustration](/assets/img/articles/amazon-decart-chip-switching-cost-2026.jpg)\n\n## Two months when 6 billion became 7.5 billion\n\nThese assets did not originally belong to Amazon. Bloomberg reported in August that Antropic had negotiated to purchase Decart entirely in stock for $6 billion and completed due diligence. The expression of Calcalist, which announced its withdrawal on September 8, was, “After reviewing the business and technology, we decided not to purchase.” Globes reported that Antropic made the offer conditional on closing its development center in Israel and relocating to San Francisco, which Descartes rejected. The reasons vary depending on the report. The value went from 6 billion to 7.5 billion dollars in two months. Globes reported that the transaction will be completed in January 2027 after regulatory approval, and that the three founders will receive a significant portion of the payment after five years. There is no completion date for Amazon's announcement.\n\n## What did you buy and what did you not buy?\n\nThe object of Amazon’s announcement is not the company. It is “the proprietary technology behind DOS.” Videos and world models (Oasis 3, Lucy) are not mentioned. What lives is the code and people, and what remains is the company and its sales. DOS is not software tied to a specific chip in the first place. Reuters described DOS as “a software engine that makes AI systems run faster and move more easily between Nvidia, Amazon, and Google chips.” Nvidia also participated in Decart's $300 million round in May.\n\nHowever, the only chips mentioned in Amazon's announcement are Tranium and Graviton. There is no word on whether DOS will continue to support competing chips. The test method for the 1,600 tokens per second (200 in the industry) proposed by Decart is not disclosed.\n\n## The day Amazon sells chips\n\nThe reason for buying was revealed in the performance announcement on October 29th. “Customers continue to ask us to make Tranium available outside of AWS, and we plan to do so by the end of 2027,” CEO Andy Jassy said. The chip business grew by triple digits, and Tranium and Graviton contracts each increased more than 20 times in one year. Torch Neuron, an open source tool that runs on Tranium without modifying the existing PyTorch code, was also released. In his April shareholder letter, Jassy wrote that the externally sold chip business could be worth $50 billion a year.\n\nThe market still belongs to NVIDIA. According to Visual Capitalist estimates, the data center AI chip market share in the fourth quarter of 2025 is 86% for Nvidia, 10% for AMD, and 4% for Intel. The line of defense is not only about performance. This is the CUDA ecosystem that has been built since 2006. The Software Policy Research Institute analyzed that “even if competing chips offer similar performance, they increase switching costs and entrench dependency.” Those who want to sell chips must pay the customer's moving costs first. 10 trillion won is considered the moving cost.\n\n## Two numbers in Korea: 42.7% and 37.7 billion won\n\nKorea achieved a record high in hardware. According to the Ministry of Trade, Industry and Energy, semiconductor exports from January to October amounted to $396.8 billion, up 193.1% from a year ago and accounting for 42.7% of total exports. Annual exports exceeded 1 trillion dollars for the first time on November 19. High bandwidth memory (HBM) market share is 83.0% (2nd quarter), DRAM 65.6% (1st half).\n\nDomestic companies on the same floor are small. Rebellion has 2025 sales of 32 billion won, operating loss of 120.5 billion won, and corporate value of 3.4 trillion won (March). Furiosa AI has sales of 5.7 billion won and an operating loss of 62.5 billion won. The combined sales of the two companies, 37.7 billion won, is just over $28 million, or 1/268th of the $7.5 billion that Amazon spent on Decart. It is precisely this layer that both companies make. Rebellion boasts a torch.compile support SDK, and FuriosaAI boasts its own compiler. The Export-Import Bank's Overseas Economic Research Institute assessed that there is a gap of more than three years between them and leading companies in terms of capital, commercialization experience, and ecosystem.\n\n## place with value\n\nThe place where the value was attached was not the wafer or HBM. It was the cost for the customer to change chips. Some things remain unconfirmed. $7.5 billion is not a number disclosed by Amazon. When Tranium begins to move out of AWS in late 2027, the next question is who sets the price of the software running on the chip.\n",
   "sources": [
    {
     "name": "Amazon — Amazon to purchase Decart's AI optimization technology to advance chip and model innovation for customers",

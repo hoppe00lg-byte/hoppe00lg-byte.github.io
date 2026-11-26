@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 26 Nov 2026 16:29:46 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 16:56:03 +0900</lastBuildDate>
+    <item>
+      <title>从10周到30周，从6个月到30个月——AI扩产的队伍排了三层</title>
+      <link>https://insightbriefnews.com/zh/a/fcbga-equipment-lead-time-30-months-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/fcbga-equipment-lead-time-30-months-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 16:45:00 +0900</pubDate>
+      <category>AI·科技</category>
+      <description>在SEMI与麦肯锡的2026年半导体供应链调查中，基板材料交期从10周拉长到30周，封装组装设备从23周拉长到37周。在基板链条上，部分加工设备下单后的交期从6个月变成30个月，而这些设备里的日本精密零件要等半年。三星电机投入6.78万亿韩元建设的新世宗生产线，要到2028年9月才量产。</description>
+    </item>
     <item>
       <title>申请书上是5亿吨，公告里没有数字——把镍价按在1万5,000美元的是釜山和光阳的7万9,266吨</title>
       <link>https://insightbriefnews.com/zh/a/nickel-quota-2027-korea-warehouse-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 09:00:00 +0900</pubDate>
       <category>经济·金融</category>
       <description>金融委员会于2026年11月19日公布并于23日实施的实损合同转换折扣，为2013年3月之前签订1代和2代合同的1630万人提供3年50%的5代保险费折扣。以60多岁女性为例，3年减少559万韩元，但从第4年，全额，非关键自付费用从30%上升到50%。截至10月底，自行更换的第一代和第二代合约数量为40,323份。</description>
-    </item>
-    <item>
-      <title>生活费保障高达250万韩元，但3年未观察——15万个个人康复案例</title>
-      <link>https://insightbriefnews.com/zh/a/personal-rehabilitation-44914-dropout-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/personal-rehabilitation-44914-dropout-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 07:00:00 +0900</pubDate>
-      <category>调查报道</category>
-      <description>2026年1月至9月，个人康复申请124,703件。仅从去年办理的案件来看，驳回、撤销、废止的案件就有44,914件。批准前取消率由10.1%上升至15.2%，批准案件平均报销率下降至42.2%。 17.6% 的分数因管辖法院而异。</description>
     </item>
   </channel>
 </rss>

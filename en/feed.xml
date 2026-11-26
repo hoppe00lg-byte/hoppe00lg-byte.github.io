@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 16:29:42 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 16:55:36 +0900</lastBuildDate>
+    <item>
+      <title>Ten weeks become thirty, six months become thirty — the AI build-out queues in three layers</title>
+      <link>https://insightbriefnews.com/en/a/fcbga-equipment-lead-time-30-months-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/fcbga-equipment-lead-time-30-months-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 16:45:00 +0900</pubDate>
+      <category>AI &amp; Tech</category>
+      <description>In the 2026 semiconductor supply chain survey by SEMI and McKinsey, substrate material lead times went from 10 weeks to 30 and assembly and packaging equipment from 23 weeks to 37. In the substrate chain some processing equipment now takes 30 months after a purchase order instead of six, and the Japanese precision parts inside that equipment take half a year. Samsung Electro-Mechanics&#x27; new Sejong line, backed by 6.78 trillion won, starts mass production in September 2028.</description>
+    </item>
     <item>
       <title>The application says 500 million tonnes. The announcement has no number — what holds nickel at $15,000 is 79,266 tonnes in Busan and Gwangyang</title>
       <link>https://insightbriefnews.com/en/a/nickel-quota-2027-korea-warehouse-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 09:20:00 +0900</pubDate>
       <category>Economy &amp; Finance</category>
       <description>Year-end tax settlement for 2026 will be made in January 2027. However, the irreversible date is December 31st. The basic credit card income deduction limit is 3 to 4 million won depending on the number of children, pension savings and IRP are 9 million won, and the marriage tax credit is the last this year.</description>
-    </item>
-    <item>
-      <title>Only 40,323 of 16.3 Million Switched — What Three Years at Half Price Changes, and What It Doesn&#x27;t</title>
-      <link>https://insightbriefnews.com/en/a/silson-gen5-switch-50-percent-3years-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/silson-gen5-switch-50-percent-3years-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 09:00:00 +0900</pubDate>
-      <category>Economy &amp; Finance</category>
-      <description>The indemnity contract conversion discount announced by the Financial Services Commission on November 19, 2026 and implemented on the 23rd, provides a 50% discount on 5th generation insurance premiums for 3 years to 16.3 million people who signed 1st and 2nd generation contracts before March 2013. In the example of a woman in her 60s, the amount will be reduced by 5.59 million won for 3 years, but from the 4th year, it will be the full amount, and the non-critical out-of-pocket cost will rise from 30% to 50%. As of the end of October, there were 40,323 1st and 2nd generation contracts that were replaced on their own.</description>
     </item>
   </channel>
 </rss>

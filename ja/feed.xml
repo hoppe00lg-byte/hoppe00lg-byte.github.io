@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 16:29:49 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 16:57:25 +0900</lastBuildDate>
+    <item>
+      <title>10週が30週に、6か月が30か月に——AI増設の列は三層になっている</title>
+      <link>https://insightbriefnews.com/ja/a/fcbga-equipment-lead-time-30-months-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/fcbga-equipment-lead-time-30-months-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 16:45:00 +0900</pubDate>
+      <category>AI・テック</category>
+      <description>SEMIとマッキンゼーが2026年にまとめた半導体サプライチェーン調査では、基板材料の納期が10週から30週へ、組立・パッケージング装置が23週から37週へ延びた。基板の現場では一部の加工装置が発注後6か月から30か月待ちとなり、その装置に入る日本製の精密部品は半年待ちになっている。サムスン電機が6兆7,800億ウォンを投じて建てる世宗の新ラインの量産開始は2028年9月だ。</description>
+    </item>
     <item>
       <title>申請書には5億トン、発表文には数字がない — ニッケルを1万5,000ドルに縛るのは釜山・光陽の7万9,266トンだ</title>
       <link>https://insightbriefnews.com/ja/a/nickel-quota-2027-korea-warehouse-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 09:00:00 +0900</pubDate>
       <category>経済・金融</category>
       <description>金融委員会が2026年11月19日発表し、23日に施行した失損契約転換割引は、2013年3月以前の1・2世代契約1,630万人に5世代保険料の50%を3年間削ってくれる。 ６０代の女性の例で３年５５９万ウォンが減るが、４年目からは全額であり、比重症の非給与自己負担は３０％から５０％に上がる。 １０月末まで自ら乗り換え１・２世代契約は４万３２３件だった。</description>
-    </item>
-    <item>
-      <title>生計費は250万ウォンまで守られたが、3年は守られなかった - 個人回生15万件</title>
-      <link>https://insightbriefnews.com/ja/a/personal-rehabilitation-44914-dropout-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/personal-rehabilitation-44914-dropout-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 07:00:00 +0900</pubDate>
-      <category>調査報道</category>
-      <description>2026年1～9月の個人回生受付は12万4,703件。昨年処理された事件だけ見ても4万4,914人が棄却・取消・廃止に出た。認可前廃止率は10.1％から15.2％に上昇し、認可された事件の平均弁済率は42.2％に下がった。管轄裁判所によって17.6％ポイントが分かれる。</description>
     </item>
   </channel>
 </rss>
