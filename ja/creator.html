@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>ブログ・YouTube コンテンツスタジオ — 高RPM記事・ショート生成とBlogger・YouTube投稿 | INSIGHT BRIEF</title>
+<meta name="description" content="テーマ1行で、タイトルフック・目次・比較表・チェックリスト・FAQを備えたブログHTMLと、1080×1920の縦型ショート動画（.webm）・字幕（.srt）をブラウザで作れます。Gemini APIキーを入れるとAIが本文を書き、キーがなくてもテンプレートですぐ生成できます。自分のGoogleアカウントで、Bloggerへの下書き・公開投稿と、YouTubeへの非公開・限定公開・公開アップロードまでを1画面で。会員登録なし、入力内容はサーバーに送信しません。">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/ja/creator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:title" content="ブログ・YouTube コンテンツスタジオ — 記事・ショートを生成してすぐ公開">
+<meta property="og:description" content="高RPM構成のブログHTML、縦型ショート動画、字幕ファイルを無料で作り、自分のBlogger・YouTubeアカウントへそのまま公開できます。サーバーも会員登録も不要で、ブラウザだけで動きます。">
+<meta property="og:url" content="https://insightbriefnews.com/ja/creator.html">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ブログ・YouTube コンテンツスタジオ — 記事・ショートを生成してすぐ公開">
+<meta name="twitter:description" content="高RPM構成のブログHTML、縦型ショート動画、字幕ファイルを無料で作り、自分のBlogger・YouTubeアカウントへそのまま公開できます。サーバーも会員登録も不要で、ブラウザだけで動きます。">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://accounts.google.com">
+<link rel="preconnect" href="https://generativelanguage.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
+<link rel="stylesheet" href="../assets/css/creator.css?v=20261126a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "블로그·유튜브 콘텐츠 스튜디오",
+  "url": "https://insightbriefnews.com/creator.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "주제 한 줄로 제목 훅·목차·비교표·체크리스트·FAQ를 갖춘 블로그 HTML과 1080×1920 세로 쇼츠 영상(.webm)·자막(.srt)을 브라우저에서 바로 만듭니다. Gemini API 키를 넣으면 AI가 문장을 직접 쓰고, 키가 없어도 템플릿으로 즉시 생성됩니다. 내 Google 계정으로 Blogger 초안·공개 게시와 YouTube 비공개·일부공개·공개 업로드까지 한 화면에서. 회원가입 없음, 입력값 서버 전송 없음.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/creator.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/creator.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/creator.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/creator.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/creator.html">
+<link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<!-- Google Analytics 4 (insightbriefnews.com 웹 스트림) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXYJ52M3GC"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-GXYJ52M3GC");</script>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="../assets/js/vendors.js?v=20261126a" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tool">
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026年11月26日(木曜日)</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="../creator.html" hreflang="ko" lang="ko">KO</a><a href="../en/creator.html" hreflang="en" lang="en">EN</a><a href="../zh/creator.html" hreflang="zh-Hans" lang="zh-Hans">ZH</a><a href="creator.html" hreflang="ja" lang="ja" class="is-on" aria-current="true">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">独立系・経済調査報道リサーチ誌</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF ホームへ">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>インサイトブリーフ</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>数字の向こうの文脈を読む</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">情報提供</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">週刊ブリーフを購読</a>
+        <button class="icon-btn search-toggle" type="button" aria-label="検索を開く" aria-expanded="false" aria-controls="search-mobile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">ニュース<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="ニュース">
+          <a href="index.html" data-nav-key="all">すべての記事</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI・テック</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">経済・金融</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">貿易・原材料</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">災害・安全</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">週刊調査報道</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">貿易・調達・市況<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="貿易・調達・市況">
+          <a href="biz.html#trade" data-nav-key="tdoc">貿易書式 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">海上運賃・物流コスト</a>
+          <a href="sourcing.html" data-nav-key="sourcing">グローバル調達・着地原価計算</a>
+          <a href="market.html" data-nav-key="market">原材料・為替市況板</a>
+          <a href="global.html#portal" data-nav-key="portal">調達庁・企業審査ポータル</a>
+          <a href="global.html#email" data-nav-key="email">貿易メール作成</a>
+          <a href="global.html#trip" data-nav-key="trip">出張ハブ</a>
+          <a href="biz.html#cost" data-nav-key="cost">粗利・原価・資金計算</a>
+          <a href="mfg-cost.html" data-nav-key="mfgcost">内製・外注 原価計算</a>
+          <a href="resell.html" data-nav-key="resell">海外購入・中古リセール粗利計算</a>
+          <a href="seller.html" data-nav-key="seller">セラー・マーケター向けツール</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">世界の展示会カレンダー</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税務・法律・ツール<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税務・法律・ツール">
+          <a href="tax.html" data-nav-key="tax">税金・年収・社会保険</a>
+          <a href="salary.html" data-nav-key="salary">給与・最低賃金・社会保険</a>
+          <a href="insurance.html" data-nav-key="insurance">実損・自動車保険計算</a>
+          <a href="law.html" data-nav-key="law">法律・契約書・内容証明</a>
+          <a href="forms.html" data-nav-key="forms">書式・電子署名 138種</a>
+          <span class="nav-head">生活・ユーティリティツール</span>
+          <a href="saju.html" data-nav-key="saju">四柱推命・新年占い</a>
+          <a href="lotto.html" data-nav-key="lotto">ロト番号生成器</a>
+          <a href="music.html" data-nav-key="music">AI音楽・歌詞生成</a>
+          <a href="creator.html" data-nav-key="creator">ブログ・ショート制作</a>
+          <a href="style.html" data-nav-key="style">ファッション・スタイル提案</a>
+          <a href="links.html" data-nav-key="links">おすすめ商品・用品</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">案内・サイトマップ<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="案内・サイトマップ">
+          <a href="sitemap.html" data-nav-key="sitemap">サイトマップ</a>
+          <a href="about.html" data-nav-key="about">媒体紹介</a>
+          <a href="ad.html" data-nav-key="ad">広告・提携</a>
+          <a href="contact.html" data-nav-key="contact">情報提供・お問い合わせ</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="キーワードで検索" aria-label="記事を検索" autocomplete="off">
+    </form>
+  </div>
+</div>
+<div class="search-mobile" id="search-mobile" hidden>
+  <form class="search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+    <input type="search" name="q" placeholder="キーワードで検索" aria-label="記事を検索" autocomplete="off">
+  </form>
+</div>
+
+<main id="main" class="cs-main">
+  <div class="container cs-wrap">
+
+    <div class="cs-head">
+      <span class="kicker">FREE CREATOR STUDIO · FREE TOOL</span>
+      <h1>ブログ・YouTube<br>コンテンツスタジオ</h1>
+      <p class="dek">テーマを1行入れるだけで、このブラウザが高RPM構成のブログ記事と縦型ショート動画を作ります。タイトルフック・目次・比較表・チェックリスト・FAQを備えたHTML、シーンごとの字幕カードとBGMが入った1080×1920の動画、そして自分のGoogleアカウントでのBlogger投稿とYouTubeアップロードまで、1画面で終わります。サーバーも会員登録もなく、入力内容はブラウザの外に出ません。</p>
+      <div class="cs-badges">
+        <span>無料</span><span>会員登録不要</span><span>サーバー転送なし</span><span>ブログHTML</span><span>ショーツ.webm・字幕.srt</span><span>Blogger・YouTube 連携</span><span>韓・英・中・日</span>
+      </div>
+    </div>
+
+    <!-- 원클릭 예시 3종 -->
+    <section class="cs-ex" aria-labelledby="cs-ex-title">
+      <div class="cs-ex-head">
+        <h2 id="cs-ex-title">ワンクリック例 3 種</h2>
+        <p>ボタンを1回押すとテーマが入り、結果まで作られます。気に入ったらそのままコピーして使ってください。</p>
+      </div>
+      <div class="cs-ex-grid">
+        <button type="button" class="cs-ex-card" id="cs-ex1" data-tab="blog" data-cat="money" data-lang="ko"
+          data-topic="환율 1,400원 시대, 직구 비용 줄이는 세 가지 방법" data-keywords="환율, 직구, 관부가세, 배송대행">
+          <span class="k">例 01 · ブログ</span>
+          <strong>1ドル1,400ウォン時代、海外通販のコストを下げる3つの方法</strong>
+          <em>経済・資産運用 · 比較表 + チェックリスト</em>
+        </button>
+        <button type="button" class="cs-ex-card" id="cs-ex2" data-tab="shorts" data-cat="health" data-lang="ko"
+          data-topic="겨울철 실내 습도 40~60% 맞추는 법" data-keywords="실내 습도, 가습기, 환기, 결로">
+          <span class="k">例 02 · ショート</span>
+          <strong>冬の室内湿度を40〜60%に保つ方法</strong>
+          <em>健康・暮らし · 25秒の縦動画 + 字幕</em>
+        </button>
+        <button type="button" class="cs-ex-card" id="cs-ex3" data-tab="blog" data-cat="it" data-lang="ko"
+          data-topic="중고 노트북 살 때 확인할 일곱 가지" data-keywords="중고 노트북, 배터리 성능, 보증 이전, 초기불량">
+          <span class="k">例 03 · ブログ</span>
+          <strong>中古ノートPCを買う前に確認する7つ</strong>
+          <em>IT・テック · 表 + FAQ</em>
+        </button>
+      </div>
+    </section>
+
+    <!-- 탭 -->
+    <div class="cs-tabs" role="tablist" aria-label="クリエイタースタジオタブ">
+      <button type="button" class="cs-tab is-on" id="tab-blog" role="tab" aria-selected="true" aria-controls="panel-blog" data-panel="blog">① ブログ記事</button>
+      <button type="button" class="cs-tab" id="tab-shorts" role="tab" aria-selected="false" aria-controls="panel-shorts" data-panel="shorts" tabindex="-1">② YouTube ショート・動画</button>
+      <button type="button" class="cs-tab" id="tab-upload" role="tab" aria-selected="false" aria-controls="panel-upload" data-panel="upload" tabindex="-1">③ 自分のアカウントへ</button>
+    </div>
+
+    <!-- ① 블로그 -->
+    <section class="cs-panel is-on" id="panel-blog" role="tabpanel" aria-labelledby="tab-blog">
+      <div class="cs-layout">
+        <div class="cs-form">
+          <div class="cs-form-head">
+            <h2>ブログ投稿を作成</h2>
+            <p>テーマとターゲットを選ぶとタイトルフック・目次・比較表・チェックリスト・FAQが入ったHTMLが出ます。同じ設定で再生成すると、別の文が表示されます。</p>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">01</span><span class="t">トピック</span><span class="h">1行で十分です</span></div>
+            <input type="text" id="cb-topic" placeholder="例：冬の室内湿度の調整方法" autocomplete="off">
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">02</span><span class="t">キーワード</span><span class="h">カンマ区切り</span></div>
+            <input type="text" id="cb-keywords" placeholder="例: 室内湿度、加湿器、換気" autocomplete="off">
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">03</span><span class="t">ターゲット読者</span></div>
+            <select id="cb-cat">
+              <option value="info">情報・ノウハウ — 検索流入の多い生活情報</option>
+              <option value="money">経済・財テク - 広告単価の高い金融・消費</option>
+              <option value="health">健康・生活 — 滞在時間が長い習慣・健康</option>
+              <option value="it">IT・テク — レビュー・比較需要の多い機器</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">04</span><span class="t">結果言語</span><span class="h">サイトの表示言語とは別</span></div>
+            <select id="cb-lang">
+              <option value="ko">韓国語</option>
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+
+          <div class="cs-actions">
+            <button type="button" class="cs-btn cs-btn-main" id="cb-gen">生成</button>
+            <button type="button" class="cs-btn" id="cb-again">もう一度</button>
+          </div>
+
+          <details class="cs-ai">
+            <summary>Gemini API キーで AI に書かせる（任意）</summary>
+            <p>キーを入れると、上のテーマに合わせてGeminiが本文を書きます。キーがなくても上の生成ボタンはそのまま動きます。</p>
+            <input type="password" id="cb-key" placeholder="AIza..." autocomplete="off" spellcheck="false">
+            <button type="button" class="cs-btn cs-btn-ai" id="cb-ai">AI で書く</button>
+            <small id="cb-keynote">キーはこのブラウザメモリにのみあり、保存または送信しません（リクエストはGoogleに直接行きます）。</small>
+          </details>
+
+          <p class="cs-note">入力したトピック・キーワードはこのブラウザ内でのみ使われ、どこにも保存されません。公開されたら困った内容は入れないでください。</p>
+        </div>
+
+        <div class="cs-out" id="cb-out" aria-live="polite">
+          <div class="cs-out-head">
+            <h2>結果</h2>
+            <p id="cb-summary">まだ作成した投稿はありません。左側にトピックを追加し、[作成]ボタンを押します。</p>
+          </div>
+
+          <div class="cs-metabox" id="cb-metabox" hidden>
+            <div class="cs-meta-row"><span class="k">タイトル</span><b id="cb-title-out"></b></div>
+            <div class="cs-meta-row"><span class="k">メタ説明</span><span id="cb-desc-out"></span></div>
+            <div class="cs-meta-row"><span class="k">タグ</span><span id="cb-tags-out" class="cs-taglist"></span></div>
+          </div>
+
+          <div class="cs-preview" id="cb-preview" hidden>
+            <div class="cs-preview-head"><span>プレビュー</span><span class="cs-preview-hint">ブログでの見え方</span></div>
+            <article class="cs-article" id="cb-article"></article>
+          </div>
+
+          <details class="cs-code" id="cb-codedetails" hidden>
+            <summary>HTMLコードを見る</summary>
+            <textarea id="cb-code" readonly spellcheck="false" aria-label="生成されたHTMLコード"></textarea>
+          </details>
+
+          <div class="cs-dl" id="cb-buttons" hidden>
+            <button type="button" class="cs-btn" id="cb-copy">HTML コピー</button>
+            <button type="button" class="cs-btn" id="cb-dl">.html ダウンロード</button>
+            <button type="button" class="cs-btn cs-btn-ghost" id="cb-toblogger">Blogger に送信</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② 쇼츠 -->
+    <section class="cs-panel" id="panel-shorts" role="tabpanel" aria-labelledby="tab-shorts" hidden>
+      <div class="cs-layout">
+        <div class="cs-form">
+          <div class="cs-form-head">
+            <h2>ショート・動画作り</h2>
+            <p>トピックを挿入すると、シーン別の字幕カードが作成されます。プレビューで確認し、録画を押すと、背景音が入った.webmファイルが保存されます。</p>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">01</span><span class="t">トピック</span><span class="h">ビデオの最初のシーンになります</span></div>
+            <input type="text" id="cs-topic" placeholder="例: 冬場の室内湿度40～60%の合わせ方" autocomplete="off">
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">02</span><span class="t">スクリプト（選択）</span><span class="h">1行に1シーン</span></div>
+            <textarea id="cs-script" rows="3" placeholder="空欄ならテーマから自動で書きます。自分で書くときは1行に「見出し | 字幕」の形で入れてください。"></textarea>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">03</span><span class="t">ターゲット読者</span></div>
+            <select id="cs-cat">
+              <option value="info">情報・ノウハウ</option>
+              <option value="money">経済・資産運用</option>
+              <option value="health">健康・暮らし</option>
+              <option value="it">IT・テク</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">04</span><span class="t">アスペクト比</span></div>
+            <select id="cs-ratio">
+              <option value="9:16">9:16 縦 — ショート・リール・TikTok</option>
+              <option value="16:9">16:9 横 — YouTube 一般映像</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">05</span><span class="t">シーン数</span></div>
+            <select id="cs-count">
+              <option value="5">5 シーン — 約18秒</option>
+              <option value="6" selected>6 シーン — 約22秒</option>
+              <option value="7">7 シーン — 約26秒</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">06</span><span class="t">背景音</span><span class="h">ブラウザ内で合成</span></div>
+            <select id="cs-bgm">
+              <option value="lofi">ローファイ — 穏やかなビット</option>
+              <option value="piano">ピアノ — 澄んだアルペジオ</option>
+              <option value="ambient">アンビエント — ワイドパッド</option>
+              <option value="none">無音</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">07</span><span class="t">カラーテーマ</span></div>
+            <select id="cs-theme">
+              <option value="ink">インク — 黒地 · 赤のアクセント</option>
+              <option value="paper">紙 — 白地 · 黒文字</option>
+              <option value="navy">ネイビー — 濃紺地 · 空色のアクセント</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">08</span><span class="t">透かし</span></div>
+            <label class="cs-check"><input type="checkbox" id="cs-mark"> 画面下部に INSIGHT BRIEF を表示</label>
+          </div>
+
+          <div class="cs-actions">
+            <button type="button" class="cs-btn cs-btn-main" id="cs-gen">シーンを作成</button>
+            <button type="button" class="cs-btn" id="cs-play">再生</button>
+            <button type="button" class="cs-btn" id="cs-tts">音声プレビュー</button>
+          </div>
+          <p class="cs-note" id="cs-voice-note">音声はブラウザが読み取るプレビューです（ファイルには保存されません）。ビデオファイルには背景音と字幕が一緒に入ります。</p>
+        </div>
+
+        <div class="cs-out">
+          <div class="cs-out-head">
+            <h2>プレビュー</h2>
+            <p id="cs-summary">トピックを挿入してシーンを作成ボタンを押します。</p>
+          </div>
+          <div class="cs-canvas-wrap" id="cs-canvas-wrap">
+            <canvas id="cs-canvas" width="1080" height="1920" aria-label="ショートのプレビュー画面"></canvas>
+          </div>
+          <div class="cs-dl" id="cs-buttons" hidden>
+            <button type="button" class="cs-btn" id="cs-record">ビデオ録画（.webm）</button>
+            <button type="button" class="cs-btn" id="cs-dl-srt">字幕のダウンロード (.srt)</button>
+            <button type="button" class="cs-btn cs-btn-ghost" id="cs-toyt">YouTube に送信</button>
+          </div>
+          <details class="cs-code" id="cs-srtbox" hidden>
+            <summary>シーン・字幕を見る</summary>
+            <textarea id="cs-srt" readonly spellcheck="false" aria-label="シーンと字幕"></textarea>
+          </details>
+          <p class="cs-note" id="cs-rec-note" hidden></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ③ 업로드 -->
+    <section class="cs-panel" id="panel-upload" role="tabpanel" aria-labelledby="tab-upload" hidden>
+      <div class="cs-up">
+        <div class="cs-up-head">
+          <h2>あなたの Google アカウントで投稿</h2>
+          <p>ブラウザからGoogleに直接ログインし、選択した権限のみを受け取り、Bloggerの投稿とYouTubeのアップロードを実行します。このサイトはパスワードを受け取らず、アクセストークンも保存しません（タブを閉じると消えます）。</p>
+        </div>
+
+        <div class="cs-up-connect">
+          <div class="cs-up-status" id="up-status" role="status" aria-live="polite">まだ接続されていません。</div>
+          <div class="cs-up-actions">
+            <button type="button" class="cs-btn cs-btn-main" id="up-signin">Google アカウントにリンク</button>
+            <button type="button" class="cs-btn cs-btn-ghost" id="up-signout" hidden>切断</button>
+          </div>
+        </div>
+
+        <details class="cs-client">
+          <summary>OAuth クライアント ID を直接挿入 (選択)</summary>
+          <p>このスタジオを別のサイトに移す場合や、自分のGoogle Cloudプロジェクトを使う場合は、ここにウェブアプリケーションのクライアントIDを入れてください。空欄ならこのサイトの既定値を使います。</p>
+          <input type="text" id="up-client" placeholder="000000000000-xxxxxxxx.apps.googleusercontent.com" autocomplete="off" spellcheck="false">
+          <p class="cs-small">Google Cloudコンソール→APIとサービス→ユーザー認証情報→OAuthクライアントID（Webアプリケーション）で作成し、承認されたJavaScriptソースにこのサイトアドレスを追加する必要があります。 YouTube Data API v3とBlogger API v3を有効にしてアップロードする必要があります。</p>
+        </details>
+
+        <p class="cs-testmode">このサイトの既定クライアントはテストモードです。登録したテストユーザーだけが公開できます。他の訪問者は自分のクライアントIDを入れて自分のアカウントで使えます。アプリがGoogleの審査を通過すれば、誰でも自分のアカウントで使えます。</p>
+
+        <div class="cs-up-grid">
+          <section class="cs-up-card" aria-labelledby="up-blogger-title">
+            <h3 id="up-blogger-title">Blogger に投稿</h3>
+            <p>① タブで作成した文をそのまま送ります。ドラフトで先に保存し、確認してから公開する順番をお勧めします。</p>
+            <label class="cs-lb" for="up-blogs">ブログ</label>
+            <select id="up-blogs"><option value="">接続するとリストが表示されます</option></select>
+            <div class="cs-up-btns">
+              <button type="button" class="cs-btn" id="up-blogger-draft">下書きとして保存</button>
+              <button type="button" class="cs-btn cs-btn-ghost" id="up-blogger-publish">すぐに公開</button>
+            </div>
+            <p class="cs-up-note" id="up-blog-note"></p>
+          </section>
+
+          <section class="cs-up-card" aria-labelledby="up-yt-title">
+            <h3 id="up-yt-title">YouTube にアップロード</h3>
+            <p>② タブで録画した.webm 映像を上げます。公開範囲は基本が非公開です。</p>
+            <label class="cs-lb" for="up-yt-title-in">タイトル</label>
+            <input type="text" id="up-yt-title-in" placeholder="ビデオタイトル">
+            <label class="cs-lb" for="up-yt-desc">説明</label>
+            <textarea id="up-yt-desc" rows="4" placeholder="説明とリンク"></textarea>
+            <label class="cs-lb" for="up-yt-tags">タグ</label>
+            <input type="text" id="up-yt-tags" placeholder="カンマ区切り">
+            <label class="cs-lb" for="up-yt-privacy">公開範囲</label>
+            <select id="up-yt-privacy">
+              <option value="private" selected>非公開 — 自分のみ</option>
+              <option value="unlisted">限定公開 — リンクを知っている人</option>
+              <option value="public">公開 — すぐ公開</option>
+            </select>
+            <div class="cs-up-btns">
+              <button type="button" class="cs-btn cs-btn-main" id="up-yt-upload">アップロード</button>
+            </div>
+            <p class="cs-up-note" id="up-yt-note"></p>
+            <div class="cs-bar" id="up-yt-bar" hidden><i id="up-yt-barfill"></i></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- 쓰는 법 -->
+    <section class="cs-how" aria-labelledby="cs-how-title">
+      <div class="cs-sec-head">
+        <h2 id="cs-how-title">使い方</h2>
+        <span>3ステップ</span>
+      </div>
+      <div class="cs-how-grid">
+        <div class="cs-how-card">
+          <span class="k">STEP 01</span>
+          <h3>まず下書き、手直しは少しだけ</h3>
+          <p>生成された HTML はタイトルフック・目次・比較表・チェックリスト・FAQ・構造化データまで備えたスケルトンです。そのままアップロードしても読みますが、最初の段落と表の数字だけを実際の経験に変えるとはるかに良くなります。 Bloggerドラフトに送っておき、修正する方法をお勧めします。</p>
+        </div>
+        <div class="cs-how-card">
+          <span class="k">STEP 02</span>
+          <h3>ショートは3秒で結論から</h3>
+          <p>最初のシーンがフックです。テーマをそのまま書かず、「知らないで始めれば損」のように、結果を先に話してください。シーン数を6個にしておくと20秒内だから最後まで見る割合が高いです。字幕は1行14文字の内側がモバイルでよく読まれます。</p>
+        </div>
+        <div class="cs-how-card">
+          <span class="k">STEP 03</span>
+          <h3>アップロードする前に一度だけ確認</h3>
+          <p>YouTube アップロードはデフォルトで非公開です。まず非公開で上げて再生してみて、音・字幕・サムネイルが合ったら公開に変えてください。 Bloggerは、ドラフトの保存後に予約発行を書くと、訪問者が集まる時間に合わせてアップロードできます。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="cs-faq" aria-labelledby="cs-faq-title">
+      <div class="cs-sec-head">
+        <h2 id="cs-faq-title">よくある質問</h2>
+        <span>7質問</span>
+      </div>
+      <dl>
+        <dt>本当に無料ですか？会員登録は必要？</dt>
+        <dd>無料で会員登録もありません。作成、プレビュー、ダウンロードはこのブラウザでのみ実行され、サーバーの費用はかかりません。 Googleアカウントのリンクとアップロードも訪問者自身のアカウントで行われているため、このサイトの費用はかかりません。</dd>
+
+        <dt>入力したトピックと結果はサーバーに保存されますか？</dt>
+        <dd>いいえ。書き込みとビデオレンダリングは、ブラウザのJavaScriptによって処理され、どこにも送信されません。更新すると消えるので、必要な結果をコピーするかファイルにダウンロードしてください。 Gemini API キーを入れた場合のみ、リクエストは Google に直接送信されます。</dd>
+
+        <dt>Gemini API キーは必須ですか？</dt>
+        <dd>なくても構いません。キーなしで構造化されたテンプレートとリアルタイムの組み合わせで、文章とスクリプトが作成されます。キーを入れると、同じトピックに合わせて文章をAIが直接書き、数字やケースをより具体的に埋めます。キーは入力したタブのメモリにのみあり、保存しません。</dd>
+
+        <dt>YouTube・Bloggerアップロードできない時は？</dt>
+        <dd>主に3つのうちの1つです。 ①Google CloudプロジェクトでYouTube Data API v3・Blogger API v3が有効になっていない②承認されたJavaScriptソースにこのサイトアドレスがない③テストモードで登録されていないアカウントでログイン。下の「マイアカウントアップロード」タブの手順を順番に確認してください。</dd>
+
+        <dt>アップロードしたビデオは誰のアカウントに上がりますか？</dt>
+        <dd>ログインした訪問者自身のアカウント。このサイトはアカウント情報を受け取らず、アクセストークンも保存しません。基本公開範囲は非公開なので、まず確認してから直接公開に変更してください。</dd>
+
+        <dt>動画はどの形式で保存されますか？</dt>
+        <dd>ブラウザがサポートするコーデックを選び、WebM(VP9/Opus)として保存します。縦9:16はショーツ・リールス・ティックトーク、横16:9は一般映像用です。録画はリアルタイムなので、22秒映像であれば22秒かかり、その間タップを閉じるか、別のタップに進むとフレームが切れます。</dd>
+
+        <dt>作った文・映像の著作権は誰にありますか？</dt>
+        <dd>結果は訪問者です。自由に書いて修正して販売してもいいです。ただし、テンプレートが作成した文章はスケルトンなので、事実確認と固有の経験を加えなければ検索でも不利ではありません。背景音は、このページがWeb Audioに直接合成した独自の作品です。</dd>
+      </dl>
+    </section>
+
+    <p class="cs-xlink">
+      ほかの無料ツール · <a href="music.html">AI音楽・BGM生成</a> · <a href="seller.html">セラー・マーケター向けツール</a> · <a href="mfg-cost.html">内製・外注 原価計算</a> · <a href="resell.html">リセール粗利計算</a> · <a href="forms.html">書式・電子署名 138種</a>
+    </p>
+
+    <section class="cs-legal" aria-labelledby="cs-legal-title">
+      <h3 id="cs-legal-title">著作権・個人情報の案内</h3>
+      <p><b>結果の性格</b> - このページの文章と画面構成は、Insight Briefが直接作成した独自の資料です。他のサービスの投稿を複製していません。結果はドラフトであり、発行前の事実の確認と独自の経験の追加はユーザーの役割です。</p>
+      <p><b>個人情報</b> — トピック、キーワード、スクリプトはブラウザ内でのみ処理されます。 Googleアカウントに接続すると、受信したアクセストークンはメモリにのみ存在し、保存せず、サイトサーバーに送信しません（サーバーはありません）。</p>
+      <p><b>Google 権限</b> — 接続時に要求する権限は 2 つだけです。ビデオアップロード（youtube.upload）とブログ投稿（blogger）です。他のデータにはアクセスせず、リンク解除ボタンはGoogleに付与した権限をただちにキャンセルします。</p>
+      <p><b>プラットフォーム規約</b> — YouTube・Blogger のスパム・重複コンテンツポリシーはユーザーが守らなければなりません。同じ投稿を複数のブログに掲載すると、検索で不利になる可能性があります。このツールは Google と提携していません。</p>
+    </section>
+
+    <p class="cs-disclaimer">
+      このツールは創作の便宜のためのドラフトジェネレータであり、検索順位・照会数・収益を保証しません。表と数値は例示であり、実際の条件と異なる場合がありますので、発行前に直接確認してください。
+    </p>
+
+  </div>
+</main>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>独立系・経済調査報道リサーチ誌</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>INSIGHT BRIEF は経済・金融、貿易・原材料、AI・テックの現場をデータと取材で追う独立系リサーチ媒体です。正式なインターネット新聞の登録媒体ではなく、取材・編集5人以上などの登録要件を満たしていません。</p>
+      </div>
+      <div class="f-col">
+        <h4>セクション</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">調査報道</a></li>
+          <li><a href="index.html?cat=economy">経済・金融</a></li>
+          <li><a href="index.html?cat=trade">貿易・原材料</a></li>
+          <li><a href="market.html">市況ボード</a></li>
+          <li><a href="index.html?cat=ai">AI・テック</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>媒体</h4>
+        <ul>
+          <li><a href="about.html">紹介・編集方針</a></li>
+          <li><a href="contact.html#tip">読者からの情報</a></li>
+          <li><a href="ad.html">広告・スポンサー料金表</a></li>
+          <li><a href="ad.html#b2b">B2B 調達・原価相談</a></li>
+          <li><a href="lotto.html">無料ツール · 数字生成</a></li>
+          <li><a href="saju.html">無料ツール · 四柱推命・2027年運勢</a></li>
+          <li><a href="music.html">無料ツール · AI音楽 歌詞・プロンプト生成</a></li>
+          <li><a href="biz.html">無料ツール · 個人事業主ツール 9 種</a></li>
+          <li><a href="seller.html">無料ツール・セラー・マーケター向け4種</a></li>
+          <li><a href="style.html">無料ツール・スタイル提案</a></li>
+          <li><a href="feed.xml">RSS フィード</a></li>
+          <li><a href="sitemap.html">サイトマップ</a></li>
+          <li><a href="sitemap.xml">sitemap.xml</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">情報提供 contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">広告 contact@insightbriefnews.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">ソウル · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>本媒体はインターネット新聞の登録をしていない独立メディアです。記事・写真の無断転載・再配布を禁じます。協賛・広告コンテンツは「広告」と明記します。</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 独立系・経済調査報道リサーチ誌</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="リアルタイム・ブリーフィング"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>リアルタイム・ブリーフィング</h3><p>新しいレポートと市況を KakaoTalk オープンチャットと Telegram でリアルタイムに受け取れます。</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk オープンチャット</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram チャンネル</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+
+<script src="../assets/js/monetize.js?v=20261126a" defer></script>
+<script src="../assets/js/creator-config.js?v=20261126a" defer></script>
+<script src="../assets/js/creator-data.js?v=20261126a" defer></script>
+<script src="../assets/js/creator.js?v=20261126a" defer></script>
+<script src="../assets/js/creator-shorts.js?v=20261126a" defer></script>
+<script src="../assets/js/creator-oauth.js?v=20261126a" defer></script>
+<script src="../assets/js/nav.js?v=20261124c"></script>
+<script src="data/i18n.fallback.js?v=20261124a"></script>
+<script src="../assets/js/i18n.js?v=20261124a"></script>
+<!-- IB:CHAT-FLOAT -->
+<script src="../assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

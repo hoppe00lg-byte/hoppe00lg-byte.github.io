@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>博客·YouTube 内容工作室 — 高 RPM 文章·短视频生成与 Blogger·YouTube 上传 | INSIGHT BRIEF</title>
+<meta name="description" content="只需一行主题，就能在浏览器中生成带标题钩子、目录、对比表、清单和 FAQ 的博客 HTML，以及 1080×1920 竖屏短视频（.webm）和字幕（.srt）。填入 Gemini API 密钥后由 AI 直接撰写，没有密钥也可用模板立即生成。用你自己的 Google 账号，在同一页面把文章以草稿或公开形式发布到 Blogger，并把视频以私享、不公开或公开方式上传到 YouTube。无需注册，输入内容不会发送到服务器。">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/zh/creator.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:title" content="博客·YouTube 内容工作室 — 生成文章·短视频并直接发布">
+<meta property="og:description" content="免费生成高 RPM 博客 HTML、竖屏短视频和字幕文件，并直接上传到自己的 Blogger、YouTube 账号。无需服务器与注册，全部在浏览器中运行。">
+<meta property="og:url" content="https://insightbriefnews.com/zh/creator.html">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="博客·YouTube 内容工作室 — 生成文章·短视频并直接发布">
+<meta name="twitter:description" content="免费生成高 RPM 博客 HTML、竖屏短视频和字幕文件，并直接上传到自己的 Blogger、YouTube 账号。无需服务器与注册，全部在浏览器中运行。">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://accounts.google.com">
+<link rel="preconnect" href="https://generativelanguage.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
+<link rel="stylesheet" href="../assets/css/creator.css?v=20261126a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "블로그·유튜브 콘텐츠 스튜디오",
+  "url": "https://insightbriefnews.com/creator.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "주제 한 줄로 제목 훅·목차·비교표·체크리스트·FAQ를 갖춘 블로그 HTML과 1080×1920 세로 쇼츠 영상(.webm)·자막(.srt)을 브라우저에서 바로 만듭니다. Gemini API 키를 넣으면 AI가 문장을 직접 쓰고, 키가 없어도 템플릿으로 즉시 생성됩니다. 내 Google 계정으로 Blogger 초안·공개 게시와 YouTube 비공개·일부공개·공개 업로드까지 한 화면에서. 회원가입 없음, 입력값 서버 전송 없음.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/creator.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/creator.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/creator.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/creator.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/creator.html">
+<link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<!-- Google Analytics 4 (insightbriefnews.com 웹 스트림) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXYJ52M3GC"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-GXYJ52M3GC");</script>
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="../assets/js/vendors.js?v=20261126a" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tool">
+<a class="skip" href="#main">跳至正文</a>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026年11月26日 星期四</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="../creator.html" hreflang="ko" lang="ko">KO</a><a href="../en/creator.html" hreflang="en" lang="en">EN</a><a href="creator.html" hreflang="zh-Hans" lang="zh-Hans" class="is-on" aria-current="true">ZH</a><a href="../ja/creator.html" hreflang="ja" lang="ja">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">独立经济·调查报道研究网络杂志</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF 首页">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>洞察简报</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>解读数字背后的脉络</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">提供线索</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">订阅每周简报</a>
+        <button class="icon-btn search-toggle" type="button" aria-label="打开搜索" aria-expanded="false" aria-controls="search-mobile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">新闻·报告<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="新闻·报告">
+          <a href="index.html" data-nav-key="all">全部报道</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI·科技</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">经济·金融</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">贸易·原材料</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">灾难·安全</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">每周调查报道</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">贸易·采购·行情<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="贸易·采购·行情">
+          <a href="biz.html#trade" data-nav-key="tdoc">贸易单据 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">海运运价·物流成本</a>
+          <a href="sourcing.html" data-nav-key="sourcing">全球采购·到岸成本计算</a>
+          <a href="market.html" data-nav-key="market">原材料·汇率行情板</a>
+          <a href="global.html#portal" data-nav-key="portal">采购厅·企业验证门户</a>
+          <a href="global.html#email" data-nav-key="email">贸易邮件撰写</a>
+          <a href="global.html#trip" data-nav-key="trip">出差中心</a>
+          <a href="biz.html#cost" data-nav-key="cost">利润·成本·资金计算器</a>
+          <a href="mfg-cost.html" data-nav-key="mfgcost">自制·外协成本计算</a>
+          <a href="resell.html" data-nav-key="resell">海淘·二手转售利润计算</a>
+          <a href="seller.html" data-nav-key="seller">卖家·营销工具</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">全球展会日历</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税务·法律·工具<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税务·法律·工具">
+          <a href="tax.html" data-nav-key="tax">税金·年薪·健康保险</a>
+          <a href="salary.html" data-nav-key="salary">工资·最低工资·四大保险</a>
+          <a href="insurance.html" data-nav-key="insurance">实损·车险计算器</a>
+          <a href="law.html" data-nav-key="law">法律·合同·催告书</a>
+          <a href="forms.html" data-nav-key="forms">表单·电子签名 138种</a>
+          <span class="nav-head">生活·实用工具</span>
+          <a href="saju.html" data-nav-key="saju">四柱·新年运势</a>
+          <a href="lotto.html" data-nav-key="lotto">彩票号码生成器</a>
+          <a href="music.html" data-nav-key="music">AI 音乐·歌词生成器</a>
+          <a href="creator.html" data-nav-key="creator">博客·短视频工作室</a>
+          <a href="style.html" data-nav-key="style">穿搭·风格推荐</a>
+          <a href="links.html" data-nav-key="links">推荐商品·用品</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">介绍·网站地图<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="介绍·网站地图">
+          <a href="sitemap.html" data-nav-key="sitemap">网站地图</a>
+          <a href="about.html" data-nav-key="about">媒体介绍</a>
+          <a href="ad.html" data-nav-key="ad">广告·合作</a>
+          <a href="contact.html" data-nav-key="contact">爆料·咨询</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="输入关键词搜索" aria-label="搜索文章" autocomplete="off">
+    </form>
+  </div>
+</div>
+<div class="search-mobile" id="search-mobile" hidden>
+  <form class="search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+    <input type="search" name="q" placeholder="输入关键词搜索" aria-label="搜索文章" autocomplete="off">
+  </form>
+</div>
+
+<main id="main" class="cs-main">
+  <div class="container cs-wrap">
+
+    <div class="cs-head">
+      <span class="kicker">FREE CREATOR STUDIO · FREE TOOL</span>
+      <h1>博客 · YouTube<br>内容工作室</h1>
+      <p class="dek">只需一行主题，这个浏览器就会生成高 RPM 博客文章和竖屏短视频。包含标题钩子、目录、对比表、清单与 FAQ 的 HTML，带分镜字幕卡和背景音乐的 1080×1920 视频，以及用你自己的 Google 账号发布到 Blogger 或上传到 YouTube，都在同一页面完成。没有服务器，不需要注册，输入的内容不会离开浏览器。</p>
+      <div class="cs-badges">
+        <span>免费</span><span>无需注册</span><span>无服务器传输</span><span>博客 HTML</span><span>短片 .webm · 字幕 .srt</span><span>Blogger · YouTube 已接通</span><span>韩·英·中·日</span>
+      </div>
+    </div>
+
+    <!-- 원클릭 예시 3종 -->
+    <section class="cs-ex" aria-labelledby="cs-ex-title">
+      <div class="cs-ex-head">
+        <h2 id="cs-ex-title">3 个一键示例</h2>
+        <p>一键填好主题并直接生成结果。满意的话可以原样复制使用。</p>
+      </div>
+      <div class="cs-ex-grid">
+        <button type="button" class="cs-ex-card" id="cs-ex1" data-tab="blog" data-cat="money" data-lang="ko"
+          data-topic="환율 1,400원 시대, 직구 비용 줄이는 세 가지 방법" data-keywords="환율, 직구, 관부가세, 배송대행">
+          <span class="k">示例 01 · 博客</span>
+          <strong>汇率 1,400 韩元时代，降低海淘成本的三个方法</strong>
+          <em>经济·理财 · 对比表 + 清单</em>
+        </button>
+        <button type="button" class="cs-ex-card" id="cs-ex2" data-tab="shorts" data-cat="health" data-lang="ko"
+          data-topic="겨울철 실내 습도 40~60% 맞추는 법" data-keywords="실내 습도, 가습기, 환기, 결로">
+          <span class="k">示例 02 · 短视频</span>
+          <strong>冬季把室内湿度保持在 40~60% 的方法</strong>
+          <em>健康·生活 · 25 秒竖屏视频 + 字幕</em>
+        </button>
+        <button type="button" class="cs-ex-card" id="cs-ex3" data-tab="blog" data-cat="it" data-lang="ko"
+          data-topic="중고 노트북 살 때 확인할 일곱 가지" data-keywords="중고 노트북, 배터리 성능, 보증 이전, 초기불량">
+          <span class="k">示例 03 · 博客</span>
+          <strong>买二手笔记本前要确认的七件事</strong>
+          <em>IT·科技 · 表格 + FAQ</em>
+        </button>
+      </div>
+    </section>
+
+    <!-- 탭 -->
+    <div class="cs-tabs" role="tablist" aria-label="创作者工作室选项卡">
+      <button type="button" class="cs-tab is-on" id="tab-blog" role="tab" aria-selected="true" aria-controls="panel-blog" data-panel="blog">① 博客文章</button>
+      <button type="button" class="cs-tab" id="tab-shorts" role="tab" aria-selected="false" aria-controls="panel-shorts" data-panel="shorts" tabindex="-1">② YouTube 短视频与视频</button>
+      <button type="button" class="cs-tab" id="tab-upload" role="tab" aria-selected="false" aria-controls="panel-upload" data-panel="upload" tabindex="-1">③ 上传到我的账号</button>
+    </div>
+
+    <!-- ① 블로그 -->
+    <section class="cs-panel is-on" id="panel-blog" role="tabpanel" aria-labelledby="tab-blog">
+      <div class="cs-layout">
+        <div class="cs-form">
+          <div class="cs-form-head">
+            <h2>创建博客文章</h2>
+            <p>当您选择主题和目标时，将显示包含标题挂钩、目录、比较表、清单和常见问题解答的 HTML。如果使用相同的设置再次创建它，则会出现不同的句子。</p>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">01</span><span class="t">主题</span><span class="h">一行就够了</span></div>
+            <input type="text" id="cb-topic" placeholder="举例：冬季如何调节室内湿度" autocomplete="off">
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">02</span><span class="t">关键字</span><span class="h">以逗号分隔</span></div>
+            <input type="text" id="cb-keywords" placeholder="示例：室内湿度、加湿器、通风" autocomplete="off">
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">03</span><span class="t">目标受众</span></div>
+            <select id="cb-cat">
+              <option value="info">信息/知识 — 搜索流量高的生活方式信息</option>
+              <option value="money">经济与金融——广告成本高的金融与消费</option>
+              <option value="health">健康/生活方式——长时间停留习惯/健康</option>
+              <option value="it">IT/技术 — 需求量大的评论/比较设备</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">04</span><span class="t">结果语言</span><span class="h">与页面语言无关</span></div>
+            <select id="cb-lang">
+              <option value="ko">韩语</option>
+              <option value="en">English</option>
+              <option value="zh">中文</option>
+              <option value="ja">日本語</option>
+            </select>
+          </div>
+
+          <div class="cs-actions">
+            <button type="button" class="cs-btn cs-btn-main" id="cb-gen">生成</button>
+            <button type="button" class="cs-btn" id="cb-again">重新生成</button>
+          </div>
+
+          <details class="cs-ai">
+            <summary>用 Gemini API 密钥由 AI 撰写（可选）</summary>
+            <p>填入密钥后，Gemini 会按上面的主题直接撰写内容。没有密钥时，上面的生成按钮同样可用。</p>
+            <input type="password" id="cb-key" placeholder="AIza..." autocomplete="off" spellcheck="false">
+            <button type="button" class="cs-btn cs-btn-ai" id="cb-ai">AI 生成</button>
+            <small id="cb-keynote">密钥仅存在于该浏览器的内存中，并且从不存储或传输（请求直接发送至 Google）。</small>
+          </details>
+
+          <p class="cs-note">您输入的主题和关键字仅在此浏览器中使用，不会存储在任何地方。请不要包含公开后会令人尴尬的信息。</p>
+        </div>
+
+        <div class="cs-out" id="cb-out" aria-live="polite">
+          <div class="cs-out-head">
+            <h2>结果</h2>
+            <p id="cb-summary">尚未创建帖子。在左侧输入主题，然后单击“创建帖子”按钮。</p>
+          </div>
+
+          <div class="cs-metabox" id="cb-metabox" hidden>
+            <div class="cs-meta-row"><span class="k">标题</span><b id="cb-title-out"></b></div>
+            <div class="cs-meta-row"><span class="k">元描述</span><span id="cb-desc-out"></span></div>
+            <div class="cs-meta-row"><span class="k">标签</span><span id="cb-tags-out" class="cs-taglist"></span></div>
+          </div>
+
+          <div class="cs-preview" id="cb-preview" hidden>
+            <div class="cs-preview-head"><span>预览</span><span class="cs-preview-hint">在博客上的显示效果</span></div>
+            <article class="cs-article" id="cb-article"></article>
+          </div>
+
+          <details class="cs-code" id="cb-codedetails" hidden>
+            <summary>查看 HTML 代码</summary>
+            <textarea id="cb-code" readonly spellcheck="false" aria-label="生成的 HTML 代码"></textarea>
+          </details>
+
+          <div class="cs-dl" id="cb-buttons" hidden>
+            <button type="button" class="cs-btn" id="cb-copy">复制 HTML</button>
+            <button type="button" class="cs-btn" id="cb-dl">下载.html</button>
+            <button type="button" class="cs-btn cs-btn-ghost" id="cb-toblogger">发送至 Blogger</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ② 쇼츠 -->
+    <section class="cs-panel" id="panel-shorts" role="tabpanel" aria-labelledby="tab-shorts" hidden>
+      <div class="cs-layout">
+        <div class="cs-form">
+          <div class="cs-form-head">
+            <h2>短视频·视频</h2>
+            <p>如果您输入主题，将为每个场景创建一个字幕卡。确认预览并按录制以保存带有背景声音的 .webm 文件。</p>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">01</span><span class="t">主题</span><span class="h">这将是视频的第一个场景</span></div>
+            <input type="text" id="cs-topic" placeholder="示例：冬季如何调节室内湿度至40-60%" autocomplete="off">
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">02</span><span class="t">Transcript (optional)</span><span class="h">One scene per line</span></div>
+            <textarea id="cs-script" rows="3" placeholder="留空则按主题自动撰写。自己写时，每行一个场景，格式为“标题 | 字幕”。"></textarea>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">03</span><span class="t">目标受众</span></div>
+            <select id="cs-cat">
+              <option value="info">信息·经验</option>
+              <option value="money">经济·理财</option>
+              <option value="health">健康·日常生活</option>
+              <option value="it">IT·科技</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">04</span><span class="t">纵横比</span></div>
+            <select id="cs-ratio">
+              <option value="9:16">9:16 竖屏 — Shorts、Reels、TikTok</option>
+              <option value="16:9">16:9 landscape — YouTube standard video</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">05</span><span class="t">场景数</span></div>
+            <select id="cs-count">
+              <option value="5">5 个场景 — 约 18 秒</option>
+              <option value="6" selected>6 个场景 — 约 22 秒</option>
+              <option value="7">7 个场景 — 约 26 秒</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">06</span><span class="t">背景声音</span><span class="h">在浏览器中直接合成</span></div>
+            <select id="cs-bgm">
+              <option value="lofi">Lo-fi — 平静的节拍</option>
+              <option value="piano">钢琴 — 清澈的琶音</option>
+              <option value="ambient">环境 — 宽垫</option>
+              <option value="none">静音</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">07</span><span class="t">颜色主题</span></div>
+            <select id="cs-theme">
+              <option value="ink">墨色 — 黑底 · 红色点缀</option>
+              <option value="paper">纸白 — 白底 · 黑色文字</option>
+              <option value="navy">海军蓝 — 深蓝底 · 天蓝点缀</option>
+            </select>
+          </div>
+
+          <div class="cs-field">
+            <div class="lb"><span class="no">08</span><span class="t">水印</span></div>
+            <label class="cs-check"><input type="checkbox" id="cs-mark"> 在画面底部显示 INSIGHT BRIEF</label>
+          </div>
+
+          <div class="cs-actions">
+            <button type="button" class="cs-btn cs-btn-main" id="cs-gen">生成场景</button>
+            <button type="button" class="cs-btn" id="cs-play">播放</button>
+            <button type="button" class="cs-btn" id="cs-tts">预览音频</button>
+          </div>
+          <p class="cs-note" id="cs-voice-note">音频是浏览器读取的预览（未保存到文件中）。视频文件包括背景声音和字幕。</p>
+        </div>
+
+        <div class="cs-out">
+          <div class="cs-out-head">
+            <h2>预览</h2>
+            <p id="cs-summary">输入主题并按创建场景按钮。</p>
+          </div>
+          <div class="cs-canvas-wrap" id="cs-canvas-wrap">
+            <canvas id="cs-canvas" width="1080" height="1920" aria-label="短视频预览画面"></canvas>
+          </div>
+          <div class="cs-dl" id="cs-buttons" hidden>
+            <button type="button" class="cs-btn" id="cs-record">视频录制 (.webm)</button>
+            <button type="button" class="cs-btn" id="cs-dl-srt">下载字幕 (.srt)</button>
+            <button type="button" class="cs-btn cs-btn-ghost" id="cs-toyt">发送到 YouTube</button>
+          </div>
+          <details class="cs-code" id="cs-srtbox" hidden>
+            <summary>查看场景/字幕</summary>
+            <textarea id="cs-srt" readonly spellcheck="false" aria-label="场景和字幕"></textarea>
+          </details>
+          <p class="cs-note" id="cs-rec-note" hidden></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ③ 업로드 -->
+    <section class="cs-panel" id="panel-upload" role="tabpanel" aria-labelledby="tab-upload" hidden>
+      <div class="cs-up">
+        <div class="cs-up-head">
+          <h2>使用我的 Google 帐户发帖</h2>
+          <p>在浏览器中直接登录 Google，接收选定的权限，然后发布到 Blogger 并上传到 YouTube。该网站不接受密码，也不存储访问令牌（当您关闭选项卡时它们会消失）。</p>
+        </div>
+
+        <div class="cs-up-connect">
+          <div class="cs-up-status" id="up-status" role="status" aria-live="polite">尚未连接。</div>
+          <div class="cs-up-actions">
+            <button type="button" class="cs-btn cs-btn-main" id="up-signin">连接 Google 帐户</button>
+            <button type="button" class="cs-btn cs-btn-ghost" id="up-signout" hidden>断开连接</button>
+          </div>
+        </div>
+
+        <details class="cs-client">
+          <summary>直接输入 OAuth 客户端 ID（可选）</summary>
+          <p>如果要把这个工作室复制到别的网站，或使用自己的 Google Cloud 项目，请在这里填入 Web 应用的客户端 ID。留空则使用本站默认值。</p>
+          <input type="text" id="up-client" placeholder="000000000000-xxxxxxxx.apps.googleusercontent.com" autocomplete="off" spellcheck="false">
+          <p class="cs-small">您必须在 Google Cloud Console → API 和服务 → 凭据 → OAuth 客户端 ID（Web 应用程序）中创建此站点，并将此站点地址添加到授权 JavaScript 来源。您必须启用 YouTube Data API v3 和 Blogger API v3 才能上传。</p>
+        </details>
+
+        <p class="cs-testmode">本站默认客户端处于测试模式，只有登记的测试用户可以发布。其他访客填入自己的客户端 ID 后即可用自己账号发布。应用通过 Google 审核后，任何人都能用自己的账号使用。</p>
+
+        <div class="cs-up-grid">
+          <section class="cs-up-card" aria-labelledby="up-blogger-title">
+            <h3 id="up-blogger-title">发布到 Blogger</h3>
+            <p>① 按原样发送在选项卡中创建的文本。我们建议您先将其保存为草稿，检查后再公开。</p>
+            <label class="cs-lb" for="up-blogs">博客</label>
+            <select id="up-blogs"><option value="">连接后，会出现一个列表</option></select>
+            <div class="cs-up-btns">
+              <button type="button" class="cs-btn" id="up-blogger-draft">另存为草稿</button>
+              <button type="button" class="cs-btn cs-btn-ghost" id="up-blogger-publish">立即发布</button>
+            </div>
+            <p class="cs-up-note" id="up-blog-note"></p>
+          </section>
+
+          <section class="cs-up-card" aria-labelledby="up-yt-title">
+            <h3 id="up-yt-title">上传至 YouTube</h3>
+            <p>② 在选项卡中上传录制的.webm视频。默认公共范围是私有的。</p>
+            <label class="cs-lb" for="up-yt-title-in">标题</label>
+            <input type="text" id="up-yt-title-in" placeholder="视频标题">
+            <label class="cs-lb" for="up-yt-desc">说明</label>
+            <textarea id="up-yt-desc" rows="4" placeholder="描述和链接"></textarea>
+            <label class="cs-lb" for="up-yt-tags">标签</label>
+            <input type="text" id="up-yt-tags" placeholder="以逗号分隔">
+            <label class="cs-lb" for="up-yt-privacy">公开范围</label>
+            <select id="up-yt-privacy">
+              <option value="private" selected>私享 — 仅自己可见</option>
+              <option value="unlisted">不公开 — 仅有链接的人</option>
+              <option value="public">公开 — 立即公开</option>
+            </select>
+            <div class="cs-up-btns">
+              <button type="button" class="cs-btn cs-btn-main" id="up-yt-upload">上传</button>
+            </div>
+            <p class="cs-up-note" id="up-yt-note"></p>
+            <div class="cs-bar" id="up-yt-bar" hidden><i id="up-yt-barfill"></i></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- 쓰는 법 -->
+    <section class="cs-how" aria-labelledby="cs-how-title">
+      <div class="cs-sec-head">
+        <h2 id="cs-how-title">使用方法</h2>
+        <span>三步</span>
+      </div>
+      <div class="cs-how-grid">
+        <div class="cs-how-card">
+          <span class="k">STEP 01</span>
+          <h3>先存草稿，稍作修改</h3>
+          <p>生成的 HTML 是一个框架，包括标题挂钩、目录、比较表、清单、常见问题解答和结构化数据。如果按原样上传就可以阅读，但是如果将第一段和表中的数字替换为实际经验，效果会更好。我们建议将其作为草稿发送给 Blogger，然后进行修复。</p>
+        </div>
+        <div class="cs-how-card">
+          <span class="k">STEP 02</span>
+          <h3>短视频：前三秒先给结论</h3>
+          <p>The first scene is the hook.不要照原样写主题，而要先陈述结果，例如“如果你不知道就开始，你就会赔钱”。如果将场景数设置为6，则观看完的速率很高，因为不到20秒。每行 14 个字符以内的字幕可以在移动设备上轻松阅读。</p>
+        </div>
+        <div class="cs-how-card">
+          <span class="k">STEP 03</span>
+          <h3>Just check once before uploading</h3>
+          <p>YouTube 上传默认为私有。首先，上传并私下播放，如果声音、字幕和缩略图匹配，则将其更改为公开。使用Blogger，您可以保存草稿，并根据访问者较多的时间使用定时发布来上传。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="cs-faq" aria-labelledby="cs-faq-title">
+      <div class="cs-sec-head">
+        <h2 id="cs-faq-title">常见问题</h2>
+        <span>7 个问题</span>
+      </div>
+      <dl>
+        <dt>真的免费吗？需要注册吗？</dt>
+        <dd>它是免费的，无需注册会员。创建、预览和下载仅在该浏览器中运行，并且没有服务器成本。链接和上传Google帐户也是通过访问者自己的帐户完成的，因此该网站不收取任何费用。</dd>
+
+        <dt>输入的主题和结果是否存储在服务器上？</dt>
+        <dd>不会。文本生成和视频渲染由浏览器中的 JavaScript 处理，不会传输到任何地方。当您刷新时它会消失，因此请复制或下载您需要的结果作为文件。仅当您输入 Gemini API 密钥时，请求才会直接发送至 Google。</dd>
+
+        <dt>一定要有 Gemini API 密钥吗？</dt>
+        <dd>It is not necessary.文本和脚本是使用结构化模板和实时组合创建的，无需任何密钥。当你输入一个键时，AI会直接根据同一主题写出一个句子，并更详细地填写数字和示例。该密钥仅存在于您输入的选项卡的内存中，并且不会被存储。</dd>
+
+        <dt>如果无法上传到 YouTube/Blogger 怎么办？</dt>
+        <dd>最常见的是以下三种情况之一： ① YouTube Data API v3·Blogger API v3 未在您的 Google Cloud 项目中启用。 ② 该网站地址在已批准的 JavaScript 来源中不存在。 ③ 在测试模式下使用未注册的帐户登录。请按顺序按照下面“我的帐户上传”选项卡中的说明进行操作。</dd>
+
+        <dt>上传的视频会发送到谁的帐户？</dt>
+        <dd>这是登录的访客自己的帐户。该网站不接受帐户信息或存储访问令牌。默认隐私范围是私有的，所以先检查一下，然后手动将其更改为公开。</dd>
+
+        <dt>视频保存为什么格式？</dt>
+        <dd>选择浏览器支持的编解码器并将其另存为 WebM (VP9/Opus)。垂直 9:16 适用于短片、reels 和 TikTok，水平 16:9 适用于一般视频。录制是实时的，因此 22 秒的视频需要 22 秒，如果您在此期间关闭选项卡或移至另一个选项卡，帧将会中断。</dd>
+
+        <dt>谁拥有所创作的文字或视频的版权？</dt>
+        <dd>输出属于访问者。您可以自由编写、编辑和出售它。然而，由于模板创建的句子只是一个骨架，因此您需要检查事实并添加独特的经验，以避免在搜索中处于不利地位。背景音为本页面自产，直接用Web Audio合成。</dd>
+      </dl>
+    </section>
+
+    <p class="cs-xlink">
+      其他免费工具 · <a href="music.html">AI 音乐·BGM 生成器</a> · <a href="seller.html">卖家·营销工具</a> · <a href="mfg-cost.html">自制·外协成本计算</a> · <a href="resell.html">转售利润计算器</a> · <a href="forms.html">表单·电子签名 138种</a>
+    </p>
+
+    <section class="cs-legal" aria-labelledby="cs-legal-title">
+      <h3 id="cs-legal-title">版权与个人信息</h3>
+      <p><b>结果的性质</b> — 本页的句子框架和屏幕构成是 Insight Brief 自己的材料。我们没有复制其他服务的文章。输出是草稿，您可以在发布之前进行事实检查并添加您自己的经验。</p>
+      <p><b>个人信息</b> — 主题、关键字和脚本仅在浏览器内处理。您在连接 Google 帐户时收到的访问令牌仅存在于内存中，我们不会存储它，也不会将其发送到站点服务器（没有服务器）。</p>
+      <p><b>谷歌权限</b> — 连接时仅请求两个权限：上传视频 (youtube.upload) 和撰写博客文章 (blogger)。不会访问任何其他数据，并且断开连接按钮会立即撤销您授予 Google 的权限。</p>
+      <p><b>平台条款</b> — 用户必须遵守 YouTube·Blogger 的垃圾邮件和重复内容政策。在多个博客上发布同一篇文章可能会让您在搜索中处于不利地位。该工具不隶属于 Google。</p>
+    </section>
+
+    <p class="cs-disclaimer">
+      该工具是一个草稿生成器，旨在方便创作，不保证搜索排名、浏览量或收入。表格和图表仅供参考，可能与实际情况有所不同，因此请在发布前直接检查。
+    </p>
+
+  </div>
+</main>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>独立经济·调查报道研究网络杂志</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>INSIGHT BRIEF 是以数据与访谈追踪经济金融、贸易原材料、AI 科技现场的独立研究媒体。并非正式注册的互联网新闻机构，也不具备五名以上采编人员等注册条件。</p>
+      </div>
+      <div class="f-col">
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">调查报道</a></li>
+          <li><a href="index.html?cat=economy">经济·金融</a></li>
+          <li><a href="index.html?cat=trade">贸易·原材料</a></li>
+          <li><a href="market.html">行情中心</a></li>
+          <li><a href="index.html?cat=ai">AI·科技</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>媒体</h4>
+        <ul>
+          <li><a href="about.html">关于·编辑原则</a></li>
+          <li><a href="contact.html#tip">读者线索</a></li>
+          <li><a href="ad.html">广告·赞助价目表</a></li>
+          <li><a href="ad.html#b2b">B2B 采购·成本咨询</a></li>
+          <li><a href="lotto.html">免费工具 · 选号器</a></li>
+          <li><a href="saju.html">免费工具 · 四柱与2027运势</a></li>
+          <li><a href="music.html">免费工具 · AI 音乐歌词提示词生成器</a></li>
+          <li><a href="biz.html">免费工具 · 个体经营者工具 9 种</a></li>
+          <li><a href="seller.html">免费工具 · 卖家·营销工具 4 种</a></li>
+          <li><a href="style.html">免费工具 · 穿搭推荐</a></li>
+          <li><a href="feed.xml">RSS 订阅</a></li>
+          <li><a href="sitemap.html">网站地图</a></li>
+          <li><a href="sitemap.xml">sitemap.xml</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>联系我们</h4>
+        <ul>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">爆料 contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">广告 contact@insightbriefnews.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">首尔 · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>本媒体为未注册的独立媒体。禁止擅自转载、再分发文章与照片。赞助与广告内容标注为“广告”。</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 独立经济·调查报道研究网络杂志</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="实时简报频道"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>实时简报频道</h3><p>通过 KakaoTalk 开放聊天和 Telegram 实时接收最新报道与行情。</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk 开放聊天</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram 频道</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+
+<script src="../assets/js/monetize.js?v=20261126a" defer></script>
+<script src="../assets/js/creator-config.js?v=20261126a" defer></script>
+<script src="../assets/js/creator-data.js?v=20261126a" defer></script>
+<script src="../assets/js/creator.js?v=20261126a" defer></script>
+<script src="../assets/js/creator-shorts.js?v=20261126a" defer></script>
+<script src="../assets/js/creator-oauth.js?v=20261126a" defer></script>
+<script src="../assets/js/nav.js?v=20261124c"></script>
+<script src="data/i18n.fallback.js?v=20261124a"></script>
+<script src="../assets/js/i18n.js?v=20261124a"></script>
+<!-- IB:CHAT-FLOAT -->
+<script src="../assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>
