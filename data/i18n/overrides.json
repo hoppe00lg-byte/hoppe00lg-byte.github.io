@@ -4985,6 +4985,11 @@
    "— the background music on this page is synthesised by JavaScript with the Web Audio API, and the cover image and video are drawn with Canvas. No sample recordings or third-party artwork are used, so the results are free to use (CC0). Do not put a real person's name or a trademark in the title or lyrics.",
    "— 本页背景音乐由 JavaScript 通过 Web Audio API 直接合成，封面图与视频用 Canvas 绘制，没有使用任何采样音频或他人画作，因此结果可按 CC0 自由使用。请不要在曲名或歌词里写入真实姓名或商标。",
    "— BGMセクションの音はこのページのJavaScriptがWeb Audio APIで直接合成し、カバー画像と動画はCanvasで描いています。サンプル音源や他人の絵は使っていないため、結果は自由に(CC0)使えます。曲名や歌詞に実在の人名や商標を入れないでください。"
+  ],
+  "9문항": [
+   "9 questions",
+   "9 个问题",
+   "9つの質問"
   ]
  }
 }

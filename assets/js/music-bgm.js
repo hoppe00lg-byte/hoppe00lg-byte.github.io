@@ -995,13 +995,13 @@
     g.fillText(o.meta || '', margin, metaY);
     g.globalAlpha = 1;
 
-    /* 브랜드 */
-    var brandY = o.video ? metaY + unit * 0.075 : H - margin * 0.65;
+    /* 브랜드 — 영상에서는 스펙트럼 자리를 피해 맨 위에 작게 */
+    var brandY = o.video ? margin * 0.95 : H - margin * 0.65;
     g.font = '700 ' + Math.round(unit * 0.026) + 'px Pretendard,system-ui,sans-serif';
-    g.globalAlpha = 0.72;
+    g.globalAlpha = o.video ? 0.55 : 0.72;
     g.fillText('INSIGHT BRIEF', margin, brandY);
     g.textAlign = 'right';
-    g.globalAlpha = 0.55;
+    g.globalAlpha = o.video ? 0.45 : 0.55;
     g.fillText('insightbriefnews.com/music.html', W - margin, brandY);
     g.textAlign = 'left';
     g.globalAlpha = 1;
