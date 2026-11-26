@@ -2,15 +2,21 @@ name: IndexNow Daily Ping
 
 on:
   schedule:
-      - cron: '5 14 * * *'
-        workflow_dispatch:
+    # 매일 23:05 KST (14:05 UTC)
+    - cron: '5 14 * * *'
+  workflow_dispatch:
 
-        jobs:
-          ping:
-              runs-on: ubuntu-latest
-                  steps:
-                        - uses: actions/checkout@v4
-                              - uses: actions/setup-python@v5
-                                      with:
-                                                python-version: '3.11'
-                                                      - run: python3 tools/indexnow_ping.py --days 1 --no-core --json
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run IndexNow ping for recent pages
+        run: python3 tools/indexnow_ping.py --days 1 --no-core --json
