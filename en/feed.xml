@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 09:03:54 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 09:12:53 +0900</lastBuildDate>
+    <item>
+      <title>Ten days of leave expire on Dec 31 — one letter sent in July decides whether they are worth 1,148,320 won</title>
+      <link>https://insightbriefnews.com/en/a/annual-leave-dec31-unused-pay-3years-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/annual-leave-dec31-unused-pay-3years-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 09:40:00 +0900</pubDate>
+      <category>Economy &amp; Finance</category>
+      <description>The leave accrued this year expires in 35 days. If the employer did not send a written demand inside the window set by Article 61 of the Labor Standards Act — the ten days after the six-month mark, July 1-10 this year — the unused days are not leave the company extinguished but wages the worker can claim for three years. Since Oct 8, 2026, the statutory penalty for unpaid wages has risen to up to five years in prison or a 50 million won fine.</description>
+    </item>
     <item>
       <title>Coin taxation pushed to January 2029, all that remains is December 9 and ‘Is it 3 or 5 years?’</title>
       <link>https://insightbriefnews.com/en/a/virtual-asset-tax-2029-deferral-dec9-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 15:15:00 +0900</pubDate>
       <category>Trade &amp; Commodities</category>
       <description>Guinea said it would release a document to regulate bauxite production later this month. The upper limit expected in the market by a country that sold 165 million tons between January and September of this year is 150 million tons. However, the price did not move from 70 to 72 yuan throughout the second half of the year. This is because Chinese refineries hold 95 days worth of inventory.</description>
-    </item>
-    <item>
-      <title>National pension extra payment, November 30th is the last 9.5% of this year — 300,000 won more in December for the same 60 months</title>
-      <link>https://insightbriefnews.com/en/a/nps-back-payment-nov30-rate-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/nps-back-payment-nov30-rate-2026.html</guid>
-      <pubDate>Tue, 24 Nov 2026 14:30:00 +0900</pubDate>
-      <category>Economy &amp; Finance</category>
-      <description>The additional premium is calculated at the rate of the month in which the payment is due, not the month of application. For applications filed in November, 9.5% must be paid by December 31, and for applications filed in December, 10% must be paid by January 31, 2027. If the standard monthly income is 1 million won for 60 months, it is 5.7 million won and 6 million won. Up to 119 months, required document is marriage certificate (detailed).</description>
     </item>
   </channel>
 </rss>

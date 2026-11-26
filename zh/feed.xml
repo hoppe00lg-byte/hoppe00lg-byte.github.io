@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 26 Nov 2026 09:04:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 09:12:59 +0900</lastBuildDate>
+    <item>
+      <title>12月31日作废的10天年假 —— 7月寄来的一纸书面通知，决定它值114万8,320韩元还是零</title>
+      <link>https://insightbriefnews.com/zh/a/annual-leave-dec31-unused-pay-3years-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/annual-leave-dec31-unused-pay-3years-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 09:40:00 +0900</pubDate>
+      <category>经济·金融</category>
+      <description>今年产生的年假使用期限还剩35天。如果公司没有在《劳动基准法》第61条规定的时点——使用期限结束前6个月、即今年7月1日至10日——以书面形式催促，未休的年假就不是被公司作废的假期，而是3年内可以主张的工资。自2026年10月8日起，拖欠工资的法定刑已提高至5年以下有期徒刑或5,000万韩元以下罚金。</description>
+    </item>
     <item>
       <title>硬币税推迟到 2029 年 1 月，剩下的就是 12 月 9 日，“是 3 年还是 5 年？”</title>
       <link>https://insightbriefnews.com/zh/a/virtual-asset-tax-2029-deferral-dec9-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 15:15:00 +0900</pubDate>
       <category>贸易·原材料</category>
       <description>几内亚表示将于本月晚些时候发布一份规范铝土矿生产的文件。市场预计今年1月至9月销售1.65亿吨的国家的上限为1.5亿吨。但整个下半年价格并没有从70元涨到72元。这是因为中国炼油厂持有相当于 95 天的库存。</description>
-    </item>
-    <item>
-      <title>国民年金额外缴纳，11月30日是今年最后的9.5%——同样60个月，12月多了30万韩元</title>
-      <link>https://insightbriefnews.com/zh/a/nps-back-payment-nov30-rate-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/nps-back-payment-nov30-rate-2026.html</guid>
-      <pubDate>Tue, 24 Nov 2026 14:30:00 +0900</pubDate>
-      <category>经济·金融</category>
-      <description>额外保费是按照付款到期月份而非申请月份的费率计算的。对于11月提交的申请，必须在12月31日之前缴纳9.5%，对于12月提交的申请，必须在2027年1月31日之前缴纳10%。如果标准月收入为100万韩元，持续60个月，则为570万韩元和600万韩元。最长 119 个月，所需文件是结婚证（详细）。</description>
     </item>
   </channel>
 </rss>
