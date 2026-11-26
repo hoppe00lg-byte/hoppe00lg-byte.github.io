@@ -55,7 +55,7 @@
       tPrompt: 'ChatGPT / Gemini prompt', tPromptDesc: 'Paste to refine further',
       tTitles: 'Title ideas',
       copy: 'Copy', copied: 'Copied', copyFail: 'Copy was blocked. Select the text and copy manually.',
-      chars: 'chars', lines: 'lines',
+      chars: ' chars', lines: 'lines',
       empty: 'Press Generate to see style tags, lyrics and a prompt here.',
       keyboard: 'Instrumental — structure tags only',
       moodMax: 'Pick up to 3 moods.',
@@ -82,7 +82,7 @@
       tPrompt: 'ChatGPT / Gemini プロンプト', tPromptDesc: 'さらに推敲したいとき',
       tTitles: '曲名の候補',
       copy: 'コピー', copied: 'コピーしました', copyFail: 'コピーできませんでした。選択してコピーしてください。',
-      chars: '文字', lines: '行',
+      chars: ' 文字', lines: '行',
       empty: '「生成」を押すと、スタイルタグ・歌詞・プロンプトがここに出ます。',
       keyboard: 'インスト — 構成タグのみ',
       moodMax: '雰囲気は3つまで選べます。',
@@ -109,7 +109,7 @@
       tPrompt: 'ChatGPT / Gemini 提示词', tPromptDesc: '想继续打磨时粘贴',
       tTitles: '歌名候选',
       copy: '复制', copied: '已复制', copyFail: '复制被阻止，请手动选择文本。',
-      chars: '字符', lines: '行',
+      chars: ' 字符', lines: '行',
       empty: '点击生成后，风格标签、歌词与提示词会显示在这里。',
       keyboard: '纯音乐 — 只输出结构标签',
       moodMax: '氛围最多可选3个。',
@@ -815,7 +815,7 @@
 
     h += '<div class="mu-field"><div class="lb"><span class="no">' + UI.step[7] + '</span><span class="t">' + UI.kw + '</span><span class="h">' + UI.kwHint + '</span></div>' +
       '<input type="text" id="mu-kw" value="' + esc(state.kw) + '" placeholder="' + esc(UI.kwPlaceholder) + '" autocomplete="off" maxlength="80">' +
-      '<p class="mu-hint">' + (state.lang === 'ko' ? '넣은 단어는 2절과 제목 후보에 반영됩니다.' : LANG === 'ja' ? '入れた言葉は2番と曲名候補に反映されます。' : LANG === 'zh' ? '输入的词会进入第二段和歌名候选。' : 'Your words go into verse 2 and the title ideas.') + '</p></div>';
+      '<p class="mu-hint">' + (LANG === 'ko' ? '넣은 단어는 2절과 제목 후보에 반영됩니다.' : LANG === 'ja' ? '入れた言葉は2番と曲名候補に反映されます。' : LANG === 'zh' ? '输入的词会进入第二段和歌名候选。' : 'Your words go into verse 2 and the title ideas.') + '</p></div>';
 
     h += '<div class="mu-field"><div class="lb"><span class="no">' + UI.step[8] + '</span><span class="t">' + UI.len + '</span></div>' +
       '<div class="mu-chips" id="mu-len">' + LENGTHS.map(function (l) {
