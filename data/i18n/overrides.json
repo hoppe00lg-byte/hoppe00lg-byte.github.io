@@ -4761,6 +4761,11 @@
 "上传",
 "アップロード"
 ],
+"업로드는 연결한 Google 계정의 기본 채널로 올라갑니다. 다른 채널에 올리려면 YouTube에서 그 채널로 전환한 뒤 다시 연결하세요.": [
+"Uploads go to the default channel of the connected Google account. To publish on another channel, switch to it on YouTube and connect again.",
+"上传会发布到所连接 Google 账号的默认频道。若要发布到其他频道，请先在 YouTube 切换到该频道再重新连接。",
+"アップロードは接続したGoogleアカウントの既定チャンネルに上がります。別のチャンネルに上げるには、YouTubeでそのチャンネルに切り替えてから接続し直してください。"
+],
 "업로드한 영상은 누구 계정으로 올라가나요?": [
 "Whose account does the uploaded video go to?",
 "上传的视频会发送到谁的帐户？",

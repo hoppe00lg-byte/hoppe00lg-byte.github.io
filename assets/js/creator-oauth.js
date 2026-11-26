@@ -145,7 +145,7 @@
     oauth.pendingPromise = null;
     setStatus(t('connected') + ' · Google', 'ok');
     if ($('up-signout')) $('up-signout').hidden = false;
-    if ($('up-signin')) $('up-signin').textContent = t('signIn');
+    if ($('up-signin')) $('up-signin').hidden = true;
     loadBlogs();
     if (oauth.pendingBlog) {
       oauth.pendingBlog = false;
@@ -159,6 +159,7 @@
     }
     oauth.token = null; oauth.expiresAt = 0; oauth.blogs = [];
     if ($('up-signout')) $('up-signout').hidden = true;
+    if ($('up-signin')) $('up-signin').hidden = false;
     if ($('up-blogs')) $('up-blogs').innerHTML = '<option value="">연결 후 목록이 나타납니다</option>';
     setStatus('연결을 해제했습니다. Google에 부여한 권한도 취소했습니다.');
   }

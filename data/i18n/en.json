@@ -4639,6 +4639,7 @@
 "언제든 해지할 수 있고, 주소는 발송에만 씁니다.": "You can cancel at any time, and the address is only used for shipping.",
 "얼굴이 크게 나온 사진은 피부 톤을, 전신 사진은 어깨와 힙의 비율을 읽습니다. 사진은 기기 안 캔버스에서만 처리되고 전송되지 않으며, 새로고침하면 사라집니다.": "A close face shot gives skin tone; a full-body shot gives the shoulder-to-hip ratio. The image is processed only in an on-device canvas, never sent, and disappears on reload.",
 "업로드": "Upload",
+"업로드는 연결한 Google 계정의 기본 채널로 올라갑니다. 다른 채널에 올리려면 YouTube에서 그 채널로 전환한 뒤 다시 연결하세요.": "Uploads go to the default channel of the connected Google account. To publish on another channel, switch to it on YouTube and connect again.",
 "업로드한 영상은 누구 계정으로 올라가나요?": "Whose account does the uploaded video go to?",
 "업무 인수인계서": "Business handover letter",
 "업무 착수일 부터 완료일 까지로 한다. 상호 서면 합의로 기간을 연장할 수 있다.": "It shall be from the date of commencement of work to the date of completion. The period may be extended by mutual written agreement.",
