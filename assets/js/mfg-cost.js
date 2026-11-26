@@ -640,6 +640,7 @@ function fill(p) {
 function read() {
   return {
     item: $("item").value.trim(), qty: Math.max(0, num("qty")), cur: $("cur").value, fx: Math.max(1, num("fx")),
+    resinPreset: $("resinPreset").value,
     resinName: $("resinName").value.trim(), resinPrice: Math.max(0, num("resinPrice")),
     weight: Math.max(0, num("weight")), loss: clamp(num("loss"), 0, 99),
     mbPct: clamp(num("mbPct"), 0, 100), mbPrice: Math.max(0, num("mbPrice")),
@@ -1285,9 +1286,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   var saved = loadSaved();
   fill(saved || EXAMPLE);
-  if (saved && saved.resinPreset) setPreset(saved.resinPreset);
-  else if (!saved) setPreset("ABS");
-  else $("resinSrc").textContent = t("srcIdle");
+  if (!saved) {
+    setPreset("ABS");
+  } else if (!saved.resinPreset) {
+    /* 저장된 값이 프리셋을 고르지 않은 상태면 안내 문구만 되돌립니다. */
+    $("resinSrc").textContent = t("srcIdle");
+  }
 
   var form = $("mfg-tool");
   form.addEventListener("input", function (e) {
