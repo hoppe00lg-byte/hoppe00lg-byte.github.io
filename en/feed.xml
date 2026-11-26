@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 12:03:26 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 14:32:29 +0900</lastBuildDate>
+    <item>
+      <title>3.25% does not arrive today — December 15 at 3 p.m., and then your own reset date</title>
+      <link>https://insightbriefnews.com/en/a/bok-325-loan-reset-date-dec15-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/bok-325-loan-reset-date-dec15-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 14:25:00 +0900</pubDate>
+      <category>Economy &amp; Finance</category>
+      <description>The Bank of Korea raised its policy rate from 3.00% to 3.25%. But the day an existing variable-rate borrower feels that decision is not today. The bank&#x27;s funding cost enters the benchmark index through a Dec 15 disclosure, and a borrower&#x27;s rate is recalculated only when the reset date written into the contract comes around. In the meantime, the five-year fixed rate has fallen below the variable rate.</description>
+    </item>
     <item>
       <title>Section 301 Overcapacity Tariffs: What the 14-Economy Rate Card Adds, and Where It Does Not</title>
       <link>https://insightbriefnews.com/en/a/section-301-overcapacity-tariffs-14-economies-2027.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 05:10:00 +0900</pubDate>
       <category>Economy &amp; Finance</category>
       <description>Korea broke two records six weeks apart in late 2026: a record number of people signed up to be tested on their Korean, and a record number of foreigners showed up to spend money in the country. The link between them is real — but smaller, and messier, than the headline numbers suggest.</description>
-    </item>
-    <item>
-      <title>38 companies in 28 months — from March 9, AI training data goes through the review room</title>
-      <link>https://insightbriefnews.com/en/a/ai-training-data-exception-review-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/ai-training-data-exception-review-2027.html</guid>
-      <pubDate>Tue, 24 Nov 2026 22:15:00 +0900</pubDate>
-      <category>AI &amp; Tech</category>
-      <description>The Personal Information Protection Commission gave notice of the enforcement decree for the AI training data exception on November 23, 2026; it takes effect March 9, 2027. Three legal conditions become five checkpoints and a review, and processing stops entirely if the work does not begin within six months of approval. The regulatory sandbox that has handled this so far approved 38 companies in about 28 and a half months.</description>
     </item>
   </channel>
 </rss>

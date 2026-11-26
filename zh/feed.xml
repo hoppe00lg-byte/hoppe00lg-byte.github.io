@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 26 Nov 2026 12:03:30 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 14:32:33 +0900</lastBuildDate>
+    <item>
+      <title>3.25%不会在今天到来 —— 12月15日下午3点，以及各自的重新定价日</title>
+      <link>https://insightbriefnews.com/zh/a/bok-325-loan-reset-date-dec15-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/bok-325-loan-reset-date-dec15-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 14:25:00 +0900</pubDate>
+      <category>经济·金融</category>
+      <description>韩国银行将基准利率从3.00%上调至3.25%。但对已经贷款的浮动利率借款人来说，感受到这一决定的日子并不是今天。银行的资金成本要经过12月15日的公布才进入指标利率，个人的贷款利率要等项目约定的利率变动周期到来才重新计算。在此期间，5年期固定利率已经低于浮动利率。</description>
+    </item>
     <item>
       <title>97.8%与63.0% —— 一次答对的AI，和十六次都答对的AI</title>
       <link>https://insightbriefnews.com/zh/a/hfe-reliability-floor-544-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 22:15:00 +0900</pubDate>
       <category>AI·科技</category>
       <description>韩国个人信息保护委员会于2026年11月23日就AI学习用个人信息特例的施行令修正案进行立法预告，2027年3月9日施行。三项法律要件变成五道关口和一次审议；批准后6个月内未开始处理，处理将全部停止。此前承担这项工作的监管沙盒，在约28个半月里批准了38家企业。</description>
-    </item>
-    <item>
-      <title>价格定在82.32欧元，但证书现在还买不到——12月31日封账的那一年</title>
-      <link>https://insightbriefnews.com/zh/a/cbam-verification-first-bill-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/cbam-verification-first-bill-2027.html</guid>
-      <pubDate>Tue, 24 Nov 2026 21:15:00 +0900</pubDate>
-      <category>贸易·原材料</category>
-      <description>欧盟已将第三季度CBAM（碳边境调节机制）证书价格确定为每吨82.32欧元。但证书要到2027年2月1日才开始销售，首次申报在同年9月30日。韩国产热轧卷每吨的账单约合12万韩元，而国内验证机构直到11月5日才开门。</description>
     </item>
   </channel>
 </rss>

@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-26T11:34:14+09:00",
+ "generatedAt": "2026-11-26T12:38:58+09:00",
  "windowDays": 400,
  "note": "This is the actual daily closing price used in the market graph. For US futures, exchange rates, and crypto, Yahoo Finance and China's three major futures exchanges, Sina Finance, are the daily closing prices of the K line, and there are no interpolated or estimated values. Domestic, monthly, and single-shot indicators that do not have a free daily time series are not included in this file, and only the actual measurement reference point in market.json and the cumulative snapshot in market-history.json are displayed on the screen.",
  "series": {
@@ -1117,7 +1117,7 @@
     ],
     [
      "2026-11-25",
-     83.93
+     84.4
     ]
    ]
   },
@@ -2234,7 +2234,7 @@
     ],
     [
      "2026-11-25",
-     90.7
+     91.08
     ]
    ]
   },
@@ -3387,7 +3387,7 @@
     ],
     [
      "2026-11-26",
-     1340.08
+     1343.97
     ]
    ]
   },
@@ -5000,7 +5000,7 @@
     ],
     [
      "2026-11-26",
-     60808.4883
+     60622.7891
     ]
    ]
   },
@@ -6613,7 +6613,7 @@
     ],
     [
      "2026-11-26",
-     1700.1
+     1694.24
     ]
    ]
   },
@@ -7730,7 +7730,7 @@
     ],
     [
      "2026-11-25",
-     3613.0
+     3607.1001
     ]
    ]
   },
@@ -8847,7 +8847,7 @@
     ],
     [
      "2026-11-25",
-     41.875
+     41.945
     ]
    ]
   },
@@ -9964,7 +9964,7 @@
     ],
     [
      "2026-11-25",
-     12149.6756
+     12114.4011
     ]
    ]
   },
@@ -15585,7 +15585,7 @@
     ],
     [
      "2026-11-26",
-     841.8857
+     844.2765
     ]
    ]
   },
@@ -16738,7 +16738,7 @@
     ],
     [
      "2026-11-26",
-     201.1437
+     201.6974
     ]
    ]
   },
