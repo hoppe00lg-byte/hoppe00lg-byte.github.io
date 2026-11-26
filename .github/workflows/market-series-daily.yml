@@ -12,6 +12,9 @@ permissions:
 jobs:
   update-market-series:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      TZ: Asia/Seoul
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -24,14 +27,19 @@ jobs:
       - name: Fetch market series data
         run: python3 tools/fetch_market_series.py
 
+      - name: Sync en·zh·ja copies
+        run: python3 tools/sync_market_series_locales.py
+
       - name: Commit and push if updated
         run: |
-          if [ -n "$(git status --porcelain data/market-series.json)" ]; then
-            git config user.name "github-actions[bot]"
-            git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add data/market-series.json
-            git commit -m "chore(market): daily market-series update"
-            git push
-          else
-            echo "No changes in data/market-series.json"
+          FILES="data/market-series.json en/data/market-series.json zh/data/market-series.json ja/data/market-series.json"
+          if [ -z "$(git status --porcelain $FILES)" ]; then
+            echo "No changes in market series"
+            exit 0
           fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add $FILES
+          git commit -m "chore(market): daily market-series update ($(date +%F))"
+          git pull --rebase --autostash origin main || true
+          git push
