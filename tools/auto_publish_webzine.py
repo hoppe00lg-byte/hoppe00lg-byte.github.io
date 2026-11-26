@@ -965,8 +965,10 @@ def main() -> int:
         due = due_slots(state, now)
         if not due:
             log(f"· {now:%Y-%m-%d %H:%M} KST — 지금 발행할 슬롯이 없습니다.")
-            log(f"  다음 슬롯: " + ", ".join(f"{h} KST" for h, c in SLOTS
-                                           if datetime.strptime(f"{now:%Y-%m-%d} {h}", "%Y-%m-%d %H:%M").replace(tzinfo=KST) > now)[:1])
+            nxt = [h for h, c in SLOTS
+                   if f"{now:%Y-%m-%d}#{h}" not in (state.get("done") or {})
+                   and datetime.strptime(f"{now:%Y-%m-%d} {h}", "%Y-%m-%d %H:%M").replace(tzinfo=KST) > now]
+            log(f"  다음 슬롯: {nxt[0]} KST" if nxt else "  오늘 슬롯은 모두 지났습니다(내일 06:30부터)")
             return 0
         limit = args.count or int(os.environ.get("AUTO_PUBLISH_MAX", "3"))
         queue = due[:max(1, min(limit, 6))]
