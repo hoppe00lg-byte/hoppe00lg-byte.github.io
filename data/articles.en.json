@@ -1,5 +1,96 @@
 [
  {
+  "id": "btc-dominance-58-altseason-index-2026",
+  "category": "economy",
+  "title": "Anatomy of Dominance 58.8% — The space left by Bitcoin was filled by the dollar, not alts",
+  "deck": "Bitcoin dominance fell from 60.61% on November 12 to 58.76% on the 26th. During the same period, the altcoin season index rose from 49 to 58, but is 17 points short of the baseline of 75. If you follow where the proportion has shifted, you will find stablecoins, not Ethereum or altcoins.",
+  "date": "2026-11-26",
+  "sample": false,
+  "author": "Insight Brief Editorial Room",
+  "authorRole": "Economy and Finance Team",
+  "publishedAt": "2026-11-26T20:15:00+09:00",
+  "readMinutes": 6,
+  "tags": [
+   "Bitcoin Dominance",
+   "Altcoin Season Index",
+   "Stablecoins",
+   "USDT Dominance",
+   "Bitcoin Spot ETF",
+   "Glassnode",
+   "Kimchi Premium",
+   "Crypto asset market capitalization"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "MARKET FILE 41",
+   "word": "DOMINANCE"
+  },
+  "coverImage": "/assets/img/articles/btc-dominance-58-altseason-index-2026.jpg",
+  "summary": [
+   "Bitcoin dominance fell from 60.61% on November 12 to 58.76% on the 26th. Based on CoinMarketCap, it was 59.3% on November 17th, 58.6% on the 24th, and 58.5% on the 25th. Depending on the provider, the 26th value varies from 57.3 to 58.8%.",
+   "The altcoin season index is 49 on the 17th, 58 on the 24th, 52 on the 25th, and 58 on the 26th. Above 75 is alt season and below 25 is Bitcoin season, so 58 is a neutral range. The highest this year was 64 on September 27th.",
+   "During the same period, the 0.7% point decrease in the proportion of Bitcoin went not to Ethereum (10.1% → 10.0%) but to others, including stablecoins (30.6% → 31.4%). On the 24th, there was a net outflow of $521.5 million from the U.S. Bitcoin and Ethereum spot ETF."
+  ],
+  "body": "On the evening of November 26, the most cited number in the virtual asset market was not the price of Bitcoin, but its share. Bitcoin dominance fell to the 58% range, and the altcoin season index pointed to 58. If you put the two numbers side by side, it reads like a textbook signal of an ‘altcoin market turn’. However, the fund flow at the same time tells a different story.\n\n![Bitcoin dominance fell from 60.61% on November 12 to 58.76% on the 26th, and the alt season index fell below 75.](/assets/img/articles/btc-dominance-58-altseason-index-2026.jpg)\n\n## From 60.61% to 58.76%\n\nBitcoin dominance is the proportion of Bitcoin in the total virtual asset market capitalization. Crypto Briefing reported on November 25 that Dominance peaked at 60.61% on November 12 and then fell below 60%, and that the aggregate figure on the 25th was 57.3-58.5% depending on the provider. Token Post's weekly values ​​citing CoinMarketCap statistics are 59.3% on the 17th (60.3% the previous week), 58.6% on the 24th (59.4% the previous week), and 58.5% on the 25th.\n\nShare moves differently from price. If other assets decrease faster in the overall market capitalization, which is the denominator, the proportion of Bitcoin will increase even if it remains in place, and if Bitcoin falls first, the proportion will fall. November was the latter. Bitcoin fell 51.8% from its all-time high of $126,198 on October 6, 2025, to $60,800 on the 26th, and the 4th quarter return was -29.3% as of the 25th, the second worst quarter after the 4th quarter of 2018 (-43.51%). Ethereum -5.6% and Solana -4.7% also fell (7-day return as of the 26th).\n\n## Alt season index 58, baseline 75\n\nThe Altcoin Season Index is the percentage of assets that have yielded higher returns than Bitcoin among the top 100 altcoins (excluding stablecoins) by market capitalization over the past 90 days. If it is above 75, it is classified as alt season, and if it is below 25, it is classified as Bitcoin season. According to Token Post, it was 49 on November 17th, 58 on the 24th, 52 on the 25th, and 58 on the 26th. The highest in 2026 was 64 on September 27, and the lowest was 14 on December 19, 2025.\n\nThe number refers to ‘neutral’ rather than ‘all-time high’. An index of 58 does not mean that 58% of altcoins have risen, but that more than half of them have surpassed Bitcoin in a 90-day return comparison.\n\n## Where the importance has shifted\n\nThe weekly composition reported by Token Post as compiled by CoinMarketCap is as follows. It changed from Bitcoin 59.3%, Ethereum 10.1%, and other 30.6% on November 17 to Bitcoin 58.6%, Ethereum 10.0%, and other 31.4% on the 24th. Ethereum did not take the 0.7% point that Bitcoin gave. The ones that have increased are others, including stable coins.\n\nIn the same report, Crypto Briefing explained that Tether (USDT) dominance moved in the 8-14% range, and that the proportion of dollar-linked assets naturally increases when the price is falling. According to the Glassnode tally reported by Block Media on November 19, stablecoin supply decreased by $14.2 billion in the 30 days ending November 9, recording the largest decrease since June 2022. This means that the proportion has increased but the supply has decreased, which is far from the picture of new funds flowing into altcoins.\n\n|Classification|November 17|November 24|Altjang conditions|Judgment|\n|---|---|---|---|---|\n|Bitcoin Dominance|59.3%|58.6%|Downtrend|meets|\n|Ethereum Dominance|10.1%|10.0%|Rise|Not met|\n|Others (including stablecoins)|30.6%|31.4%|Expanding focus on altcoins|Not met|\n|Alt Season Index|49|58|75 or higher|Not met|\n\n## Confirmed and unconfirmed\n\nThere are three confirmed facts. First, dominance peaked in mid-November and the difference between providers is around 1%p. Second, the alt-season index remains in the neutral range. Third, funds continued to flow out of the U.S. Bitcoin and Ethereum spot ETFs. The daily net outflow on the 24th, reported by Block Media as compiled by Farside Investors on November 26, was $453 million for Bitcoin and $521.5 million including Ethereum, and the Bitcoin ETF was in negative territory for 7 consecutive trading days.\n\nWhat has not been confirmed is the direction of next month. The Federal Reserve will decide interest rates at its meeting on December 10. On November 23, The Bull Signal reported that the CME futures market was 100% reflecting the December hike, but this was a market expectation and not a decision. In its report on November 25, Galaxy Research maintained its previous judgment that if the June low (closing price of $58,525) breaks, it will go to a lower low.\n\nThe judgment of determining the proportion of altcoins based on dominance alone has little basis. When looking at Bitcoin dominance, USDT dominance, alt season index, stablecoin supply, and ETF funds together, as of November 26, only one of the five items met the 'alt market' condition.\n",
+  "sources": [
+   {
+    "name": "토큰포스트 — 「[알트장 오나요] 알트코인 시즌 지수 58까지 반등…비트코인 도미넌스 58.6%로 하락」 (2026-11-24)",
+    "url": "https://www.tokenpost.kr/news/cryptocurrency/443225",
+    "note": "코인마켓캡 집계. 24일 알트시즌 지수 58(전일 57, 지난주 53, 지난달 48), 도미넌스 58.6%(지난주 59.4%), 기타 알트 비중 30.4→31.4%, 이더리움 도미넌스 10.0%, 연간 최고 64(9월 27일)·최저 14(2025년 12월 19일)"
+   },
+   {
+    "name": "토큰포스트 — 「[알트장 오나요] 알트코인 시즌 지수 49까지 반등…비트코인 도미넌스 59.3%로 하락」 (2026-11-17)",
+    "url": "https://www.tokenpost.kr/news/cryptocurrency/439559",
+    "note": "17일 알트시즌 지수 49(지난주 42, 지난달 55), 도미넌스 59.3%(지난주 60.3%), 이더리움 10.1%, 기타 알트 29.2→30.6%"
+   },
+   {
+    "name": "TradingView·Crypto Briefing — 「Bitcoin dominance slips below 60%, but altcoin season is not arriving」 (2026-11-25)",
+    "url": "https://www.tradingview.com/news/cryptobriefing:48b5662f6094b:0-bitcoin-dominance-slips-below-60-but-altcoin-season-is-not-arriving/",
+    "note": "도미넌스 11월 12일 60.61% 정점, 25일 57.3~58.5%, USDT 도미넌스 8~14% 이동, 알트시즌 지수 45~56, 전체 시총 약 2조달러"
+   },
+   {
+    "name": "블록미디어 — 「[퇴근길시황] 코스피 4700선 회복⋯비트코인 6만달러 탈환에도 ETF 5.2억달러 이탈」 (2026-11-26 18:00)",
+    "url": "https://www.blockmedia.co.kr/archives/1171085",
+    "note": "비트코인 6만618달러(+2.84%), 전체 시총 2조700억달러, 공포탐욕 10, 알트시즌 지수 58, 파사이드 인베스터스 기준 24시간 비트코인 ETF 4억5,300만달러·7거래일 연속 순유출, 비트코인+이더리움 5억2,150만달러"
+   },
+   {
+    "name": "블록미디어 — 「비트코인 점유율 하락에도 알트코인 안 오른다…돈 몰리는 곳은」 (2026-11-19)",
+    "url": "https://www.blockmedia.co.kr/archives/1167924",
+    "note": "글래스노드: 11월 9일까지 30일간 스테이블코인 공급 142억달러 감소(2022년 6월 이후 최대), USDT 도미넌스 8.25% 수준, 분석가 돈 웨지 'BTC와 USDT 도미넌스가 동시에 하락해야 알트로 자금 이동'"
+   },
+   {
+    "name": "BeInCrypto — 「Bitcoin Is on Track for Its Second-Worst Q4 Ever, and One Signal Points to 2027」 (2026-11-25)",
+    "url": "https://beincrypto.com/bitcoin-worst-q4-returns-2027-outlook/",
+    "note": "4분기 -29.3%, 2018년 4분기 -43.51%가 유일하게 더 깊은 분기, 연초 이후 -32.5%, 사상 최고가 대비 -53%"
+   },
+   {
+    "name": "Galaxy — 「BTC Looks Directionless After 7 Weeks of Losses」 (2026-11-25)",
+    "url": "https://www.galaxy.com/insights/research/bitcoin-bear-market-7-weekly-losses-50-week-moving-average-break-2026",
+    "note": "6월 종가 저점 5만8,525달러, 200주 이동평균 하회, 실현가격 5만3,205달러, 지지 클러스터 4만8,400~5만3,200달러"
+   },
+   {
+    "name": "The Bull Signal — 「Bitcoin's Worst Fourth Quarter Since 2018 Is Getting Closer as the Fed Turns Hawkish」 (2026-11-23)",
+    "url": "https://thebullsignal.com/news/bitcoins-worst-fourth-quarter-since-2018-is-getting-closer-as-the-fed-turns-hawkish/",
+    "note": "10월 FOMC 의사록, 12월 10일 회의, CME 12월 인상 확률 100%(0.25%p 92.7%·0.5%p 7.3%)"
+   },
+   {
+    "name": "워뇨띠뷰 — 「2026년 11월 26일 비트코인·김프·청산·펀딩비 시황」 (2026-11-26 19:21 기준)",
+    "url": "https://wonyoview.com/daily/2026-11-26",
+    "note": "BTC 6만836달러(+3.20%), ETH 1,701달러(-5.55%, 7일), SOL 70.97달러(-4.67%, 7일), 도미넌스 58.76%, 전체 시총 2,080억달러, 업비트 김프 +0.85%, 공포탐욕 11"
+   },
+   {
+    "name": "CoinGlass — Bitcoin(BTC) 시세 (2026-11-26 18:32 UTC+8 기준)",
+    "url": "https://www.coinglass.com/ko/currencies/BTC",
+    "note": "사상 최고가 12만6,198.1달러(2025-10-06), 현재가 최고가 대비 51.8% 낮음, 시총 약 1.22조달러"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check & sources",
+   "note": "Dominance varies by about 1%p depending on the provider and time of aggregation (57.3-58.8% on the 26th). The main text separates the Coin Market Cap series (Token Post report) and the Crypto Briefing citation range, and does not compare the values ​​of different providers as one continuous time series. The interpretation that 'dominance decline = alt market' is based on the definition that dominance is a relative ratio and the three indicators of USDT dominance, stablecoin supply, and ETF funds, and does not recommend buying or selling specific altcoins. The FOMC results on December 10th and the timing of the alt market switch have not been confirmed."
+  }
+ },
+ {
   "id": "fcbga-equipment-lead-time-30-months-2026",
   "category": "ai",
   "title": "Ten weeks become thirty, six months become thirty — the AI build-out queues in three layers",
