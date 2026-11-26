@@ -311,7 +311,8 @@
       out.lab = { L: Math.round(lab.L), a: Math.round(lab.a * 10) / 10, b: Math.round(lab.b * 10) / 10, warmth: Math.round(warmth * 10) / 10 };
       out.tone = warmth >= 7 ? 'warm' : (warmth <= 2.5 ? 'cool' : 'neutral');
       out.light = lab.L >= 62 ? 'light' : 'deep';
-      out.conf = Math.min(95, Math.round(30 + Math.min(1, skinRatio / 0.12) * 60));
+      /* 신뢰도는 '피부색 픽셀을 얼마나 확보했는지'로 봅니다(전신 사진은 비율이 작아도 정확) */
+      out.conf = Math.min(95, Math.round(30 + Math.min(1, acc.n / 3000) * 60));
     }
     return out;
   }
