@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 26 Nov 2026 09:12:59 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 10:03:47 +0900</lastBuildDate>
+    <item>
+      <title>铁矿石跌至86.9美元，四年新低——重新推高高炉原料成本的是273美元的原料煤</title>
+      <link>https://insightbriefnews.com/zh/a/iron-ore-four-year-low-coking-coal-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/iron-ore-four-year-low-coking-coal-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 09:45:00 +0900</pubDate>
+      <category>贸易·原材料</category>
+      <description>11月17日，新加坡铁矿石跌至每吨86.9美元，为近四年最低。中国港口堆积1亿5,375万吨，盈利的高炉只有10%，几内亚已超过南非和加拿大成为第三大出口国。然而浦项制铁第三季度铁矿石价格下跌11%至85美元，原料煤却上涨4%至248美元。正在谈判的2027年基准，也是韩国高炉的计价基准。</description>
+    </item>
     <item>
       <title>12月31日作废的10天年假 —— 7月寄来的一纸书面通知，决定它值114万8,320韩元还是零</title>
       <link>https://insightbriefnews.com/zh/a/annual-leave-dec31-unused-pay-3years-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 16:45:00 +0900</pubDate>
       <category>AI·科技</category>
       <description>亚马逊决定收购Decart的优化软件DOS及其创始人和研究人员。亚马逊没有透露具体金额，但彭博社和 Calcalist 报道称其金额为 75 亿美元（约合 10.1 万亿韩元）。按100名员工计算，人均收入为1010亿韩元。亚马逊将于2027年底在AWS之外销售Tranium。要销售芯片，你必须先支付客户的搬家费用。</description>
-    </item>
-    <item>
-      <title>配额已推迟三倍，库存为 95 天——本周到期的几内亚铝土矿文件中的数据</title>
-      <link>https://insightbriefnews.com/zh/a/guinea-bauxite-quota-alumina-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/guinea-bauxite-quota-alumina-2027.html</guid>
-      <pubDate>Tue, 24 Nov 2026 15:15:00 +0900</pubDate>
-      <category>贸易·原材料</category>
-      <description>几内亚表示将于本月晚些时候发布一份规范铝土矿生产的文件。市场预计今年1月至9月销售1.65亿吨的国家的上限为1.5亿吨。但整个下半年价格并没有从70元涨到72元。这是因为中国炼油厂持有相当于 95 天的库存。</description>
     </item>
   </channel>
 </rss>

@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 09:13:04 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 10:03:51 +0900</lastBuildDate>
+    <item>
+      <title>鉄鉱石は86.9ドルで4年ぶり安値 — 高炉の原料費を再び押し上げたのは273ドルの原料炭だ</title>
+      <link>https://insightbriefnews.com/ja/a/iron-ore-four-year-low-coking-coal-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/iron-ore-four-year-low-coking-coal-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 09:45:00 +0900</pubDate>
+      <category>貿易・原材料</category>
+      <description>11月17日、シンガポールの鉄鉱石は1トン86.9ドルとほぼ4年ぶりの安値をつけた。中国の港には1億5,375万トンが積まれ、利益を出す高炉は10％しかなく、ギニアは南アフリカとカナダを抜いて世界3位の輸出国になった。それでもポスコの第3四半期の鉄鉱石単価は11％下がって85ドル、原料炭は4％上がって248ドルだった。2027年に向けて交渉中の基準値は、韓国の高炉の基準値でもある。</description>
+    </item>
     <item>
       <title>12月31日に消える年休10日 —— 7月に届いた書面一枚が114万8,320ウォンを分ける</title>
       <link>https://insightbriefnews.com/ja/a/annual-leave-dec31-unused-pay-3years-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 16:45:00 +0900</pubDate>
       <category>AI・テック</category>
       <description>Amazonがデカートの最適化ソフトウェアDOSと創業者・研究陣を買うことにした。アマゾンは金額を公開せず、ブルームバーグ・カルカリストは75億ドル（約10兆1,000億ウォン）と伝えた。従業員100人基準の1人当たり1,010億ウォンだ。アマゾンは2027年末のトレニアムをAWSの外に売る。チップを販売するには、顧客の取締役の費用を最初に支払う必要があります。</description>
-    </item>
-    <item>
-      <title>クォーターは3回延ばされ、在庫は95日です。</title>
-      <link>https://insightbriefnews.com/ja/a/guinea-bauxite-quota-alumina-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/guinea-bauxite-quota-alumina-2027.html</guid>
-      <pubDate>Tue, 24 Nov 2026 15:15:00 +0900</pubDate>
-      <category>貿易・原材料</category>
-      <description>モルモットが今月末にボクサイト生産規制文書を出すとした。今年1～9月に1億6,500万トンを売った国が市場で期待される上限は1億5,000万トンだ。ところが、値は下半期を通して慰安70～72で動かなかった。中国精製所が９５一致在庫を握っている。</description>
     </item>
   </channel>
 </rss>

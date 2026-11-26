@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 26 Nov 2026 09:12:25 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 10:02:57 +0900</lastBuildDate>
+    <item>
+      <title>철광석은 86.9달러로 4년 만의 최저인데 — 고로의 원료비를 다시 올린 것은 273달러짜리 원료탄이다</title>
+      <link>https://insightbriefnews.com/a/iron-ore-four-year-low-coking-coal-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/iron-ore-four-year-low-coking-coal-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 09:45:00 +0900</pubDate>
+      <category>무역·원자재</category>
+      <description>11월 17일 싱가포르 철광석이 톤당 86.9달러로 거의 4년 만의 최저를 찍었다. 중국 항구에는 1억5,375만톤이 쌓였고 이익을 내는 고로는 10%뿐이며, 기니는 남아공과 캐나다를 제치고 세계 3위 수출국이 됐다. 그런데 포스코의 3분기 철광석 단가는 전분기보다 11% 내린 85달러였는데 원료탄은 4% 오른 248달러였다. 2027년 계약을 협상하는 쪽의 기준값이 한국 고로의 기준값이기도 하다.</description>
+    </item>
     <item>
       <title>12월 31일에 사라지는 연차 10일 — 7월에 온 서면 한 장이 114만8,320원을 가른다</title>
       <link>https://insightbriefnews.com/a/annual-leave-dec31-unused-pay-3years-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 15:15:00 +0900</pubDate>
       <category>무역·원자재</category>
       <description>기니가 이번 달 말 보크사이트 생산 규제 문서를 내놓겠다고 했다. 올해 1~9월 1억6,500만 톤을 판 나라가 시장에서 기대받는 상한은 1억5,000만 톤이다. 그런데 값은 하반기 내내 위안 70~72에서 움직이지 않았다. 중국 정제소가 95일치 재고를 쥐고 있어서다.</description>
-    </item>
-    <item>
-      <title>국민연금 추납, 11월 30일이 올해 마지막 9.5% — 같은 60개월이 12월엔 30만 원 더</title>
-      <link>https://insightbriefnews.com/a/nps-back-payment-nov30-rate-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/nps-back-payment-nov30-rate-2026.html</guid>
-      <pubDate>Tue, 24 Nov 2026 14:30:00 +0900</pubDate>
-      <category>경제·금융</category>
-      <description>추납보험료는 신청한 달이 아니라 납부기한이 속한 달의 요율로 계산된다. 11월 접수는 12월 31일 납부로 9.5%, 12월 접수는 2027년 1월 31일 납부로 10%. 기준소득월액 100만 원·60개월이면 570만 원과 600만 원이다. 최대 119개월, 필수 서류는 혼인관계증명서(상세)다.</description>
     </item>
   </channel>
 </rss>

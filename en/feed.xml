@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 09:12:53 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 10:03:44 +0900</lastBuildDate>
+    <item>
+      <title>Iron ore is at $86.9, a four-year low — but coking coal at $273 is what pushed the blast furnace&#x27;s raw-material bill back up</title>
+      <link>https://insightbriefnews.com/en/a/iron-ore-four-year-low-coking-coal-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/iron-ore-four-year-low-coking-coal-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 09:45:00 +0900</pubDate>
+      <category>Trade &amp; Commodities</category>
+      <description>On 17 November Singapore iron ore fell to $86.9 a tonne, its lowest in almost four years. Chinese ports hold 153.75 million tonnes, only 10% of blast furnaces are profitable, and Guinea has overtaken South Africa and Canada as the third-largest exporter. Yet POSCO&#x27;s third-quarter iron ore price fell 11% to $85 while coking coal rose 4% to $248. The benchmark being negotiated for 2027 is the same one Korean blast furnaces price against.</description>
+    </item>
     <item>
       <title>Ten days of leave expire on Dec 31 — one letter sent in July decides whether they are worth 1,148,320 won</title>
       <link>https://insightbriefnews.com/en/a/annual-leave-dec31-unused-pay-3years-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 16:45:00 +0900</pubDate>
       <category>AI &amp; Tech</category>
       <description>Amazon decided to buy Decart&#x27;s optimization software DOS and its founder and researchers. Amazon did not disclose the amount, but Bloomberg and Calcalist reported it as $7.5 billion (approximately 10.1 trillion won). Based on 100 employees, it is 101 billion won per person. Amazon will sell Tranium outside of AWS at the end of 2027. To sell chips, you have to pay the customer&#x27;s moving costs first.</description>
-    </item>
-    <item>
-      <title>Quotas have been pushed back three times and stocks are at 95 days — figures in Guinea bauxite document due this week</title>
-      <link>https://insightbriefnews.com/en/a/guinea-bauxite-quota-alumina-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/guinea-bauxite-quota-alumina-2027.html</guid>
-      <pubDate>Tue, 24 Nov 2026 15:15:00 +0900</pubDate>
-      <category>Trade &amp; Commodities</category>
-      <description>Guinea said it would release a document to regulate bauxite production later this month. The upper limit expected in the market by a country that sold 165 million tons between January and September of this year is 150 million tons. However, the price did not move from 70 to 72 yuan throughout the second half of the year. This is because Chinese refineries hold 95 days worth of inventory.</description>
     </item>
   </channel>
 </rss>
