@@ -44,6 +44,7 @@
       skinLow: '피부색 픽셀이 적어 톤 판단이 어렵습니다. 얼굴이 크게 나온 사진이 좋습니다.',
       metal: '어울리는 금속', seasonLabel: '계절', weekOf: '기준일',
       colorBase: '기본', colorSub: '보조', colorPoint: '포인트', colorExtra: '여유색',
+      trendShort: '트렌드', tipShort: '팁',
       bodyAutoNote: 'BMI(와 사진)로 자동 계산했습니다. 다르면 직접 고르세요.',
       bodyManualNote: '직접 고른 체형으로 추천합니다.',
       trendNote: '데이터 파일 기준', shopTip: '검색어를 그대로 붙여 넣으면 비슷한 상품이 나옵니다.',
@@ -75,6 +76,7 @@
       skinLow: 'Too few skin pixels to judge tone — a closer face shot works better.',
       metal: 'Metal that suits you', seasonLabel: 'Season', weekOf: 'Data as of',
       colorBase: 'base', colorSub: 'secondary', colorPoint: 'accent', colorExtra: 'extra',
+      trendShort: 'Trend', tipShort: 'Tips',
       bodyAutoNote: 'Calculated from BMI and, if given, your photo. Pick another if it feels off.',
       bodyManualNote: 'Using the body type you selected.',
       trendNote: 'From the data file', shopTip: 'Paste the keyword into a shop search box as it is.',
@@ -106,6 +108,7 @@
       skinLow: '肤色像素太少，难以判断色调。建议用面部较大的照片。',
       metal: '适合的金属', seasonLabel: '季节', weekOf: '数据基准日',
       colorBase: '主色', colorSub: '辅色', colorPoint: '点缀', colorExtra: '备用',
+      trendShort: '趋势', tipShort: '建议',
       bodyAutoNote: '已根据 BMI（与照片）自动计算，不合适可自行选择。',
       bodyManualNote: '按你选择的体型推荐。',
       trendNote: '依据数据文件', shopTip: '把关键词原样粘贴到购物搜索框即可。',
@@ -137,6 +140,7 @@
       skinLow: '肌色のピクセルが少なく色味を判定しづらいです。顔が大きく写った写真が向いています。',
       metal: '似合う金属', seasonLabel: '季節', weekOf: 'データ基準日',
       colorBase: 'ベース', colorSub: 'サブ', colorPoint: 'アクセント', colorExtra: '予備',
+      trendShort: '流行', tipShort: 'ヒント',
       bodyAutoNote: 'BMI（と写真）から自動計算しました。違う場合は選び直してください。',
       bodyManualNote: '選んだ体型で提案しています。',
       trendNote: 'データファイル基準', shopTip: 'キーワードをそのままショップの検索窓に貼ってください。',
@@ -543,8 +547,8 @@
       '<dl class="fs-list">' +
       '<dt>' + esc(T.seasonLabel) + '</dt><dd>' + esc(L(r.sea.temp)) + ' · ' + esc(L(r.sea.layers[0])) + '</dd>' +
       '<dt>' + esc(T.occasion) + '</dt><dd>' + esc(L(r.occ.code)) + '</dd>' +
-      (t0 ? '<dt>' + esc(T.rTrend) + '</dt><dd><b>' + esc(L(t0.name)) + '</b> — ' + esc(L(t0.line)) + '</dd>' : '') +
-      '<dt>' + esc(T.tips) + '</dt><dd>' + b.tips.map(function (s) { return esc(L(s)); }).join(' · ') + '</dd>' +
+      (t0 ? '<dt>' + esc(T.trendShort) + '</dt><dd><b>' + esc(L(t0.name)) + '</b> — ' + esc(L(t0.line)) + '</dd>' : '') +
+      '<dt>' + esc(T.tipShort) + '</dt><dd>' + b.tips.map(function (s) { return esc(L(s)); }).join(' · ') + '</dd>' +
       '</dl>'));
 
     /* 코디 3세트 */

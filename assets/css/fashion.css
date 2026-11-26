@@ -112,8 +112,8 @@
 .fs-card-head h3{font-family:var(--serif);font-size:16.5px;font-weight:800;letter-spacing:-.02em;word-break:keep-all}
 .fs-lead{font-size:13px;line-height:1.78;color:var(--ink-2);word-break:keep-all}
 
-.fs-list{margin:10px 0 0;display:grid;grid-template-columns:64px 1fr;gap:7px 10px;font-size:12.5px;line-height:1.72;color:var(--ink-2)}
-.fs-list dt{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:var(--accent);padding-top:3px;text-transform:uppercase}
+.fs-list{margin:10px 0 0;display:grid;grid-template-columns:56px 1fr;gap:7px 12px;font-size:12.5px;line-height:1.72;color:var(--ink-2)}
+.fs-list dt{font-family:var(--mono);font-size:10px;letter-spacing:.04em;color:var(--accent);padding-top:3px;word-break:keep-all}
 .fs-list dd{margin:0;word-break:keep-all}
 
 .fs-palette{list-style:none;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:12px 0 0;padding:0}
