@@ -50,24 +50,54 @@
    "label": "災害・安全",
    "en": "DISASTER & SAFETY",
    "desc": "災害・安全の現場から見る予防と対応"
+  },
+  {
+   "id": "world",
+   "label": "国際・地政学",
+   "en": "WORLD & GEOPOLITICS",
+   "desc": "米中欧の政策・関税・安全保障"
+  },
+  {
+   "id": "property",
+   "label": "不動産・税金",
+   "en": "PROPERTY & TAX",
+   "desc": "金利・請約・譲渡税"
+  },
+  {
+   "id": "energy",
+   "label": "エネルギー・気候",
+   "en": "ENERGY & CLIMATE",
+   "desc": "AI電力需要・原発・炭素規制"
+  },
+  {
+   "id": "health",
+   "label": "バイオ・健康",
+   "en": "HEALTH & BIO",
+   "desc": "肥満治療薬・実損保険・健診"
+  },
+  {
+   "id": "culture",
+   "label": "Kカルチャー",
+   "en": "K-CULTURE",
+   "desc": "K-POP・ドラマ・ウェブトゥーン・バーチャルアーティスト"
   }
  ],
  "ticker": [
   {
-   "text": "規制は8月12日に始まり、計算法はまだありません - EU包装規定100日",
-   "articleId": "eu-ppwr-100days-recycled-content"
+   "text": "2025年の米国エネルギーの60％消失、電力網効率の物理的限界とコスト構造",
+   "articleId": "us-energy-loss-and-efficiency-analysis-20261127"
   },
   {
-   "text": "トンネルに閉じ込められると、手には光がありません - 消防用品32品目と道路トンネル防災指針の間",
-   "articleId": "tunnel-portable-emergency-light-gap"
+   "text": "EU長期予算案1.78兆ユーロ調整、ウクラ支援分担難航",
+   "articleId": "eu-budget-ukraine-funding-crisis-20261127"
   },
   {
-   "text": "規格は日本から来て色は入札が定めた — 消火器・感知器・非常灯がそのままな理由",
-   "articleId": "fire-rules-japan-lineage-old-design"
+   "text": "水原政策セミナー、ソウル・京畿不動産規制解法分析",
+   "articleId": "seoul-gyeonggi-real-estate-policy-seminar-2026-20261127"
   },
   {
-   "text": "プレゼントは12％落ちたが、現物プレミアムは史上最高 - 紙と倉庫が分かれた週",
-   "articleId": "weekly-commodities-2026-11-23"
+   "text": "イギリス病院インフルエンザ入院率ファンデミック後の最高値記録",
+   "articleId": "england-hospitals-flu-surge-nov-2026-20261127"
   }
  ],
  "editorNote": {

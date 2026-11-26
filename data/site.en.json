@@ -50,24 +50,54 @@
    "label": "Disaster & Safety",
    "en": "DISASTER & SAFETY",
    "desc": "Prevention and response seen from the disaster and safety desk"
+  },
+  {
+   "id": "world",
+   "label": "World & Geopolitics",
+   "en": "WORLD & GEOPOLITICS",
+   "desc": "US, China and Europe — policy, tariffs, security"
+  },
+  {
+   "id": "property",
+   "label": "Property & Tax",
+   "en": "PROPERTY & TAX",
+   "desc": "Rates, subscriptions and capital gains tax"
+  },
+  {
+   "id": "energy",
+   "label": "Energy & Climate",
+   "en": "ENERGY & CLIMATE",
+   "desc": "AI power demand, nuclear and carbon rules"
+  },
+  {
+   "id": "health",
+   "label": "Health & Bio",
+   "en": "HEALTH & BIO",
+   "desc": "Obesity drugs, indemnity cover, screenings"
+  },
+  {
+   "id": "culture",
+   "label": "K-Culture",
+   "en": "K-CULTURE",
+   "desc": "K-pop, drama, webtoon and virtual artist business"
   }
  ],
  "ticker": [
   {
-   "text": "Regulations started on August 12, no calculations yet — 100 days into EU packaging regulations",
-   "articleId": "eu-ppwr-100days-recycled-content"
+   "text": "60% of US energy lost by 2025, physical limits to grid efficiency and cost structure",
+   "articleId": "us-energy-loss-and-efficiency-analysis-20261127"
   },
   {
-   "text": "If you are trapped in a tunnel, there is no light in your hand — Between 32 items of firefighting supplies and road tunnel disaster prevention guidelines",
-   "articleId": "tunnel-portable-emergency-light-gap"
+   "text": "EU long-term budget adjustment of 1.78 trillion euros, difficulties in sharing support for Ukraine",
+   "articleId": "eu-budget-ukraine-funding-crisis-20261127"
   },
   {
-   "text": "The specifications came from Japan and the colors were determined by the bidder — the reason why the fire extinguishers, detectors, and emergency lights remain the same.",
-   "articleId": "fire-rules-japan-lineage-old-design"
+   "text": "Suwon Policy Seminar, Analysis of Real Estate Regulation Solutions in Seoul and Gyeonggi Province",
+   "articleId": "seoul-gyeonggi-real-estate-policy-seminar-2026-20261127"
   },
   {
-   "text": "Futures fell 12%, while spot premiums are at record highs — a split week for paper and warehouses",
-   "articleId": "weekly-commodities-2026-11-23"
+   "text": "UK hospital flu admissions hit highest since pandemic",
+   "articleId": "england-hospitals-flu-surge-nov-2026-20261127"
   }
  ],
  "editorNote": {

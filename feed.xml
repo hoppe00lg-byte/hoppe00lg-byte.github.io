@@ -6,7 +6,47 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 26 Nov 2026 23:51:20 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 06:54:11 +0900</lastBuildDate>
+    <item>
+      <title>2025년 미국 에너지의 60% 소실, 전력망 효율의 물리적 한계와 비용 구조</title>
+      <link>https://insightbriefnews.com/a/us-energy-loss-and-efficiency-analysis-20261127.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/us-energy-loss-and-efficiency-analysis-20261127.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:48:27 +0900</pubDate>
+      <category>에너지·전력·기후</category>
+      <description>미 에너지정보청(EIA) 데이터에 따르면 2025년 미국은 34쿼드의 1차 에너지를 투입했으나 실질 전력 판매량은 14쿼드에 그쳤다. 에너지 손실의 95%가 발전 과정의 열 방출에서 기인하며 이는 전력 요금의 구조적 원가에 직결된다.</description>
+    </item>
+    <item>
+      <title>영국 병원 독감 입원율 팬데믹 이후 최고치 기록</title>
+      <link>https://insightbriefnews.com/a/england-hospitals-flu-surge-nov-2026-20261127.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/england-hospitals-flu-surge-nov-2026-20261127.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:38:52 +0900</pubDate>
+      <category>바이오·헬스</category>
+      <description>영국 NHS 병원들의 독감 입원율이 코로나19 이전 수준을 넘어선 것으로 나타났다. 보건 당국은 의료진과 방문객의 마스크 착용을 권고하며 겨울철 병원 과부하에 대비하고 있다.</description>
+    </item>
+    <item>
+      <title>수원 정책 세미나, 서울·경기 부동산 규제 해법 분석</title>
+      <link>https://insightbriefnews.com/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:37:24 +0900</pubDate>
+      <category>부동산·생활세금</category>
+      <description>오세훈 서울시장과 김은혜 의원이 12월 1일 수원에서 정책 공조를 선언했다. 수도권 주거 사다리 복원을 위한 규제 완화와 공급 대책의 실질적 효용성을 짚어본다.</description>
+    </item>
+    <item>
+      <title>EU 장기 예산안 1.78조 유로 조정, 우크라 지원 분담 난항</title>
+      <link>https://insightbriefnews.com/a/eu-budget-ukraine-funding-crisis-20261127.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/eu-budget-ukraine-funding-crisis-20261127.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:29:13 +0900</pubDate>
+      <category>국제·지정학</category>
+      <description>EU 27개국이 2028년부터 7년간 적용될 1조 7,800억 유로 규모의 장기 예산안 합의를 위해 브뤼셀에서 긴급 회의에 돌입했다. 프랑스 대선을 앞둔 마린 르펜 의원의 부상과 우크라이나 지원 조건이 협상의 주요 변수로 작용하고 있다.</description>
+    </item>
+    <item>
+      <title>다카하시 요코 서울 단독 콘서트 수익 구조의 이면</title>
+      <link>https://insightbriefnews.com/a/takahashi-yoko-seoul-concert-analysis-20261127.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/takahashi-yoko-seoul-concert-analysis-20261127.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:28:14 +0900</pubDate>
+      <category>K-컬쳐·엔터</category>
+      <description>애니메이션 &#x27;신세기 에반게리온&#x27; 주제가로 30년 넘게 수익을 창출해 온 다카하시 요코가 국내 첫 단독 공연을 연다. 티켓 파워와 IP 활용 전략을 중심으로 K-팝 시장 속 재팬 콘텐츠의 수익성을 분석했다.</description>
+    </item>
     <item>
       <title>1,000만 다운로드, 8일, 그리고 거절 1건 — AI 에이전트의 첫 국경</title>
       <link>https://insightbriefnews.com/a/muse-uk-launch-pre-approval-gap-2026.html</link>
@@ -126,46 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 16:45:00 +0900</pubDate>
       <category>AI·테크</category>
       <description>행정안전부가 11월 25일 공공기관에 「공공 AI 서비스 UI/UX 가이드라인」을 배포했다. 설계기준 29개와 요구사항 99개(필수 80), 점검항목 148개가 붙었지만 버튼 설명·키보드 조작 같은 접근성 기준은 2027년 2월에 더해진다. 같은 문장을 유럽은 8월 2일부터 법으로 집행하고 있다.</description>
-    </item>
-    <item>
-      <title>창고에는 나흘치가 남았는데 값은 19% 빠졌다 — 주석을 움직인 것은 광산이 아니라 나스닥이다</title>
-      <link>https://insightbriefnews.com/a/tin-below-40k-four-days-stock-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/tin-below-40k-four-days-stock-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 15:15:00 +0900</pubDate>
-      <category>무역·원자재</category>
-      <description>11월 13일 LME 주석 현물은 3개월물보다 톤당 790달러 비쌌다. 11월 24일에는 75달러 쌌다. 그사이 1kg 값은 6만5,000원에서 5만5,000원이 됐고, 창고에는 세계 소비 나흘치가 남았다. 중국 제련소가 돌아오자 스프레드가 먼저 꺼졌고, 값은 AI 주식과 함께 내려갔다.</description>
-    </item>
-    <item>
-      <title>한국판 점도표 21개 점 — 3.75%가 세 개 찍히면 2027년 대출금리가 바뀐다</title>
-      <link>https://insightbriefnews.com/a/bok-dotplot-375-nov26-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/bok-dotplot-375-nov26-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 15:05:00 +0900</pubDate>
-      <category>경제·금융</category>
-      <description>2026년 11월 26일 금통위는 기준금리 3.00%를 3.25%로 올릴지와 함께 6개월 후 전망을 담은 점도표를 새로 낸다. 8월엔 21개 점 가운데 3.25%가 10개로 가장 많았다. 이번에 3.75%가 몇 개 찍히고 중간값이 어디로 가는지가 2027년 국고채와 변동형 대출금리의 상단을 정한다.</description>
-    </item>
-    <item>
-      <title>대출 5.02%, 예금 3.62% — 틈이 0.10%포인트 좁아진 달에 벌어진 일</title>
-      <link>https://insightbriefnews.com/a/loan-rate-502-deposit-362-gap-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/loan-rate-502-deposit-362-gap-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 14:15:00 +0900</pubDate>
-      <category>경제·금융</category>
-      <description>2026년 10월 은행 가계대출 금리는 연 5.02%로 2023년 11월 이후 2년 11개월 만에 5%를 넘었다. 주택담보대출은 4.98%로 2012년 3월 이후 최고다. 그런데 같은 달 예금금리가 대출금리보다 빠르게 올라 신규 예대금리차는 1.02%포인트로 좁혀졌다. 대출은 오르는데 틈이 줄었다는 것은 무엇을 뜻할까.</description>
-    </item>
-    <item>
-      <title>‘저는 AI 비서입니다’까지는 말했다 — 20만 명이 맡긴 전화에 빠진 위임장</title>
-      <link>https://insightbriefnews.com/a/ai-agent-call-mandate-gap-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/ai-agent-call-mandate-gap-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 10:45:00 +0900</pubDate>
-      <category>AI·테크</category>
-      <description>SK텔레콤·KT·LG유플러스와 네이버가 11월 23일 AI 에이전트의 고객센터 전화 상담을 받지 않기로 했다. 출시 한 달 만에 20만 명이 쓴 서비스의 전화가 본인확인 단계에서 멈추는 동안, 결제 시장은 2025년 9월 암호로 서명한 위임장을 내놓았다.</description>
-    </item>
-    <item>
-      <title>같은 61일이 열일곱 날 어긋나 있다 — 1월 10일과 1월 27일, 미뤄진 두 유예의 끝</title>
-      <link>https://insightbriefnews.com/a/gallium-rare-earth-two-deadlines-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/gallium-rare-earth-two-deadlines-2027.html</guid>
-      <pubDate>Wed, 25 Nov 2026 09:45:00 +0900</pubDate>
-      <category>무역·원자재</category>
-      <description>중국 상무부는 11월 24일 갈륨·게르마늄·안티몬의 대미 수출 금지를 2027년 1월 27일까지 다시 미뤘다. 2주 전에 미룬 희토류 유예는 1월 10일에 끝난다. 두 유예는 모두 61일인데 시작일이 열일곱 날 달라 끝도 열일곱 날 벌어졌고, 그 사이에서 유럽 디스프로슘 값은 중국 내수의 15~19배가 됐다.</description>
     </item>
   </channel>
 </rss>

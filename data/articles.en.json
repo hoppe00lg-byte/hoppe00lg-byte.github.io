@@ -1,5 +1,411 @@
 [
  {
+  "id": "us-energy-loss-and-efficiency-analysis-20261127",
+  "category": "energy",
+  "title": "60% of US energy lost by 2025, physical limits to grid efficiency and cost structure",
+  "deck": "According to data from the U.S. Energy Information Administration (EIA), in 2025, the United States invested 34 quads of primary energy, but actual electricity sales amounted to only 14 quads. 95% of energy loss results from heat emissions during the power generation process, which is directly related to the structural cost of electricity bills.",
+  "date": "2026-11-27",
+  "sample": false,
+  "author": "Insight Brief Editorial Room",
+  "authorRole": "Energy and Climate Team",
+  "publishedAt": "2026-11-27T06:48:27+09:00",
+  "readMinutes": 7,
+  "tags": [
+   "EIA",
+   "Energy efficiency",
+   "Electricity supply and demand",
+   "Carbon regulation",
+   "Thermodynamic losses",
+   "Colorado River",
+   "Hydroelectric power generation",
+   "Energy Mix"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "ENERGY & CLIMATE FILE 27",
+   "word": "EFFICIENCY"
+  },
+  "coverImage": "/assets/img/articles/us-energy-loss-and-efficiency-analysis-20261127.jpg",
+  "summary": [
+   "In 2025, the United States invested 34 quads of primary energy, but only 14 quads of power reached the final consumer, resulting in a loss of about 60%.",
+   "95% of energy loss comes from heat release during the combustion process of fossil fuels, and the remaining 5% is lost through resistance in transmission and distribution infrastructure.",
+   "Natural variables, such as a sharp decline in hydroelectric power generation due to drought in the Colorado River Basin, are imposing additional economic costs on energy efficiency management."
+  ],
+  "body": "## Current State of U.S. Energy Efficiency in 2025 and 60% Loss\n\nData from the U.S. electricity market in 2025 clearly shows the physical limitations of the energy conversion process. According to an analysis by the U.S. Energy Information Administration (EIA), the United States invested a total of 34 quads of primary energy and succeeded in delivering 14 quads of power to end users. Here, primary energy is calculated based on the British thermal unit (Btu), a unit that measures the heat content of combustible fuels such as oil, natural gas, and coal. Calculating the input-to-output ratio, only about 41% of the energy was converted into effective power, and the remaining 60% of the energy was lost during the supply process. This loss structure is used as an indicator to prove the technical criticality of the modern power grid.\n\n![Image taken from above of the complex energy supply chain of power plants and transmission towers](/assets/img/articles/us-energy-loss-and-efficiency-analysis-20261127.jpg)\n\n## 95% of heat loss inside the power plant\n\nAn overwhelming 95% of total energy loss occurs during the power generation process of generating electricity. The main cause is heat release generated during the thermodynamic process of burning coal and natural gas to create steam and turning a turbine. Statistics for 2025 confirm that even if fossil fuel generators maintain a high level of efficiency, physical heat loss cannot be avoided. This figure, in which energy is not converted into electricity within a power plant and is dissipated as waste heat, is directly linked to the cost of power production. This is because the cost of purchasing fuel is paid for all 34 quads, but actual revenue-generating power sales are only generated for 14 quads.\n\n## 5% additional losses from transmission and distribution infrastructure\n\nAdditional losses occur when the power leaves the power plant and reaches the final consumer. According to data compiled by EIA, approximately 5% of total energy loss is lost during distribution through the power grid infrastructure. This loss refers to heat loss due to resistance occurring through substations, transmission lines, distribution networks, etc. Although this is a small figure compared to the 95% loss in the power generation stage, this is a scale that cannot be ignored when considering the cost of maintaining a large nationwide power grid. In a situation where electricity demand is rapidly increasing, the efficiency of this infrastructure is evaluated as a key technical challenge to achieve the carbon neutrality goal.\n\n## Decreased efficiency triggered by drought in the Colorado River Basin\n\nIn the summer of 2026, electricity supply and demand in the southwestern United States entered a new phase due to changes in the natural environment. The prolonged drought in the Colorado River Basin has led to record levels of hydroelectric generation in the Southwest, according to EIA's Form EIA-923 survey. Hydroelectric power generation from April to August 2026 decreased by 19% compared to the same period last year, and was 28% lower than the average over the past 10 years. Hydroelectric power is a carbon-free energy source without a combustion process, but the instability of relying on natural water quantity shows the impact on power efficiency and supply stability. This suggests that diversification of the energy mix is ​​essential along with energy loss management.\n\n## Consistency of primary energy measurement and efficiency judgment criteria\n\nEIA uses the British thermal unit (Btu) as a consistent unit for comparison between different energy sources. Fossil fuels such as coal and natural gas are measured based on the heat content generated during combustion, but non-combustible resources such as hydro, wind, solar and geothermal energy use a fixed conversion factor based on the heat content of the electricity. This calculation method quantifies the high conversion efficiency of solar or wind power and allows comparison with the heat loss of fossil fuel-based energy systems. Policy makers and investors use this standardized data to determine the choice of future energy sources and the scale of facility investment.\n\n## The real cost burden of energy loss on the electricity tariff system\n\nEnergy loss figures are the key to interpreting the cost structure of the power supply industry. As of 2025, 34 quads of fuel have been input and only 14 quads have been sold, which means that 60% of energy costs lost in the power generation stage are being passed on to consumers. Unless the thermal efficiency of power plants is improved, rising fuel costs will cause an asymmetric increase in electricity bills. In addition, the 5% loss in the transmission network, coupled with the investment cost of power grid upgrading facilities, acts as an upward pressure on the rate system. Aging infrastructure and unstable supply and demand due to climate change make these loss rates more variable, proving that improving efficiency is an economic survival strategy rather than a simple environmental goal when establishing energy policy.\n\n## Changing energy mix and re-evaluating efficiency limits\n\nFossil fuel-based power generation suffers from a fundamental limitation of thermodynamic waste heat loss. On the other hand, the 28% decrease in hydroelectric power generation confirmed in 2026 shows that even if it is a carbon-free energy source, the efficiency of the energy mix can rapidly decline depending on the climate environment. As a result, in order to minimize energy loss, not only improving power generation efficiency but also diversifying the supply chain according to regional characteristics must be done. The physical distance of the power grid and the resistance of the transmission process are areas that can be improved through infrastructure design, but the heat loss inherent in the power generation stage is a fixed cost that must be taken into account in advance when planning power supply and demand. To directly calculate and check the energy market flow and input costs, please refer to [Raw Materials and Exchange Rate Market Status](https://insightbriefnews.com/market.html).\n",
+  "sources": [
+   {
+    "name": "미 에너지정보청(EIA)",
+    "date": "미상",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68504"
+   },
+   {
+    "name": "미 에너지정보청(EIA)",
+    "date": "미상",
+    "url": "https://www.eia.gov/todayinenergy/detail.php?id=68445"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check",
+   "confirmed": [
+    "2025년 미국은 34쿼드의 1차 에너지를 투입해 14쿼드의 전력을 판매함",
+    "에너지 손실의 95%는 발전 과정의 열 방출에서 발생함",
+    "나머지 5%는 송전 및 배전망에서 발생함",
+    "2026년 4~8월 미국 남서부 수력 발전량은 전년 대비 19% 감소함",
+    "해당 수치는 10년 평균 대비 28% 낮은 수치임"
+   ],
+   "unconfirmed": [
+    "열 손실이 전력 요금의 비대칭적 상승에 미치는 정확한 가중치"
+   ],
+   "sources": [
+    {
+     "name": "U.S. Energy Information Administration (EIA)",
+     "date": "미상",
+     "url": "https://www.eia.gov/todayinenergy/detail.php?id=68504",
+     "note": ""
+    },
+    {
+     "name": "U.S. Energy Information Administration (EIA)",
+     "date": "미상",
+     "url": "https://www.eia.gov/todayinenergy/detail.php?id=68445",
+     "note": ""
+    }
+   ]
+  },
+  "_slot": "2026-11-27#energy"
+ },
+ {
+  "id": "takahashi-yoko-seoul-concert-analysis-20261127",
+  "category": "culture",
+  "title": "The other side of Yoko Takahashi’s Seoul solo concert profit structure",
+  "deck": "Yoko Takahashi, who has been making money with the theme song for the animation ‘Neon Genesis Evangelion’ for over 30 years, will hold her first solo performance in Korea. We analyzed the profitability of Japanese content in the K-pop market, focusing on ticket power and IP utilization strategies.",
+  "date": "2026-11-27",
+  "sample": false,
+  "author": "Insight Brief Editorial Room",
+  "authorRole": "K-Culture·Entertainment Team",
+  "publishedAt": "2026-11-27T06:28:14+09:00",
+  "readMinutes": 7,
+  "tags": [
+   "Yoko Takahashi",
+   "Evangelion",
+   "Performance in Korea",
+   "Ast",
+   "Music industry",
+   "IP Business",
+   "Ticket sales",
+   "Entertainment"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "K-CULTURE FILE 27",
+   "word": "MUSIC"
+  },
+  "coverImage": "/assets/img/articles/takahashi-yoko-seoul-concert-analysis-20261127.jpg",
+  "summary": [
+   "Yoko Takahashi will hold a performance in Korea at the main auditorium of Ewha Womans University on February 27, 2027.",
+   "'Cruel Angel's Thesis', published in 1995, maintains strong IP value even after 30 years.",
+   "This performance will be a test of the ticket purchasing power of the domestic fandom as part of an Asian tour connecting Singapore and Hong Kong."
+  ],
+  "body": "## On February 27, 2027, Yoko Takahashi's first solo performance in Seoul.\n\nAccording to an announcement by organizer AST on November 26, 2026, Yoko Takahashi will hold her first solo concert under her name at the main auditorium of Ewha Womans University in Seoul on February 27, 2027. 'Cruel Angel's Thesis', released in 1995, has generated enormous copyright revenue and derivative value both inside and outside of Japan for over 30 years. This performance is not just an event, but a key base for the Asian tour (Singapore in December, Hong Kong in January, Korea in February), and will be an indicator of the scale of ticket sales that Japanese animation IP can achieve in the Asian market.\n\n![Promotional image of Yoko Takahashi's Evangelion theme song performance](/assets/img/articles/takahashi-yoko-seoul-concert-analysis-20261127.jpg)\n\n## The economics of the ‘Cruel Angel Thesis’, which was in power for 30 years\n\nThis song, represented by the lyrics ‘Boy, become a myth,’ is a steady seller that spans generations. In Korea, it recently proved its popularity once again through a remake by singer-songwriter Han Ro-ro. By possessing such a strong OST IP, the Japanese music industry has completed a multifaceted monetization structure through performances, music streaming, and broadcast appearances (TV Chosun's 'Trot Death Match Golden Friday', 'Mr. Trot 3', etc.). Animation OSTs with a solid fan base guarantee a high return on marketing costs, and this performance is also an extension of that.\n\n## Holiday season revenue model in the global music market\n\nLooking at the US Billboard chart and industry status on November 26 and 27, 2026, live content targeting the Thanksgiving season is pouring in. The Goo Goo Dolls, Wu-Tang Clan, and Miranda Lambert, who appear in the NFL halftime show, combine with large-scale sporting events to maximize entertainment profits. This is also connected to the strategic significance of Yoko Takahashi's performance in Korea. Live tours by global stars focused on specific seasons are operating as a standardized model that increases brand awareness and generates long-term sales when combined with video content.\n\n## Acceptance and limitations of Japanese IP in the K-culture market\n\nIt was a strategic choice for Yoko Takahashi to build public familiarity by directly appearing on domestic broadcast programs. Rather than simply relying on the influence of the IP called 'Evangelion', it expanded its reach with viewers through domestic terrestrial and cable entertainment. This is a calculated strategy by entertainment companies to go beyond fandom-based ticket sales and lure the general public to the concert hall. In contrast, unlike the case of the rejection of the DDP Relic Exhibition Hall relocation (announced on November 27, 2026), where public domain preservation policies conflict with practical damage prevention measures, the cultural performance market pursues flexible management for efficient profit generation.\n\n## Combination of digital platform and reward data\n\nThe post-saving service introduced by Lotte Members on the Toss app in conjunction with 7-Eleven is an example of how customers' daily consumption data is connected to business profits. Performance ticket reservation systems similarly collect personal preference data and use it for target marketing. It is highly likely that the organizers of Yoko Takahashi's concert in Korea also set the target audience by combining past ticket reservation data and streaming indicators. In this way, data-based decision-making is an essential element that ensures the success of a performance.\n\n## Evolution of artificial intelligence music generation technology and democratization of composition\n\nTechnological change in the music industry is rapid. Now, an era has arrived where anyone can use AI to produce the style of music they want. While professional musicians' copyright revenues are becoming more sophisticated, technology is expanding into the realm of new vocal creation. The landscape of the music industry is changing as AI artists who have learned their own voices appear in the market. By using [AI Music/Lyrics Generator](https://insightbriefnews.com/music.html), which allows you to compose music without a complicated composition process, anyone can create their own song and explore the potential of their creation through a direct calculation and verification process. See more: You can check out the latest AI vocal technology through YouTube AI singer SEA's city pop and ballad songs.\n\nSee more: [YouTube · AI singer SEA — AI vocal song made by city pop ballad](https://www.youtube.com/@SEA-citypop)\n",
+  "sources": [
+   {
+    "name": "연합뉴스 문화",
+    "date": "2026-11-26",
+    "url": "https://www.yna.co.kr/view/AKR20261126175200005"
+   },
+   {
+    "name": "연합뉴스 문화",
+    "date": "2026-11-27",
+    "url": "https://www.yna.co.kr/view/AKR20261126164000004"
+   },
+   {
+    "name": "연합뉴스 문화",
+    "date": "2026-11-27",
+    "url": "https://www.yna.co.kr/view/AKR20261126176200030"
+   },
+   {
+    "name": "Billboard",
+    "date": "2026-11-27",
+    "url": "https://www.billboard.com/culture/product-recommendations/goo-goo-dolls-halftime-chiefs-bills-thanksgiving-watch-free-1236389230/"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check",
+   "confirmed": [
+    "다카하시 요코가 2027년 2월 27일 이화여대 대강당에서 공연함",
+    "공연 주관사는 아스트임",
+    "1995년 '잔혹한 천사의 테제' 발매",
+    "DDP 유구전시장 이전안이 국가유산위원회에서 부결됨"
+   ],
+   "unconfirmed": [
+    "이번 공연의 구체적인 티켓 매출 예상액",
+    "주최 측의 정확한 마케팅 데이터 활용 방식"
+   ],
+   "sources": [
+    {
+     "name": "Yonhap News Culture",
+     "date": "2026-11-26",
+     "url": "https://www.yna.co.kr/view/AKR20261126175200005",
+     "note": ""
+    },
+    {
+     "name": "Yonhap News Culture",
+     "date": "2026-11-27",
+     "url": "https://www.yna.co.kr/view/AKR20261126164000004",
+     "note": ""
+    },
+    {
+     "name": "Yonhap News Culture",
+     "date": "2026-11-27",
+     "url": "https://www.yna.co.kr/view/AKR20261126176200030",
+     "note": ""
+    },
+    {
+     "name": "Billboard",
+     "date": "2026-11-27",
+     "url": "https://www.billboard.com/culture/product-recommendations/goo-goo-dolls-halftime-chiefs-bills-thanksgiving-watch-free-1236389230/",
+     "note": ""
+    }
+   ]
+  },
+  "_slot": "2026-11-27#culture"
+ },
+ {
+  "id": "england-hospitals-flu-surge-nov-2026-20261127",
+  "category": "health",
+  "title": "UK hospital flu admissions hit highest since pandemic",
+  "deck": "Flu hospitalization rates in UK NHS hospitals have exceeded pre-COVID-19 levels. Health authorities are preparing for hospital overload in the winter by recommending that medical staff and visitors wear masks.",
+  "date": "2026-11-27",
+  "sample": false,
+  "author": "Insight Brief Editorial Room",
+  "authorRole": "Bio·Health Team",
+  "publishedAt": "2026-11-27T06:38:52+09:00",
+  "readMinutes": 7,
+  "tags": [
+   "NHS",
+   "Flu",
+   "Public Health England",
+   "National Pension",
+   "Health Insurance",
+   "Hospitalization Rate",
+   "Respiratory diseases",
+   "Health Policy"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "HEALTH & BIO FILE",
+   "word": "FLU"
+  },
+  "coverImage": "/assets/img/articles/england-hospitals-flu-surge-nov-2026-20261127.jpg",
+  "summary": [
+   "As of November 27, 2026, the flu hospitalization rate in the UK reached its highest level, exceeding pre-pandemic levels.",
+   "NHS health chiefs are considering mandating the wearing of masks in hospitals to prevent the spread of respiratory diseases in winter.",
+   "In addition to integrating data from the complex medical system, it is necessary to verify appropriate insurance coverage for patients."
+  ],
+  "body": "## Current status of hospital admission rates in England as of 27 November 2026\n\nOn November 27, 2026, the UK's National Health Service (NHS) officially announced that the rate of hospital admissions for flu patients had reached its highest level since the pre-pandemic period before the COVID-19 incident. As winter begins in earnest, the spread of the flu virus is accelerating, which is putting a serious burden on hospital operations. Health authorities are strengthening preventive measures, predicting that this winter will be a time of a “horrible flu spike.” The medical system on site went into emergency operation mode to handle the rapidly increasing number of patients.\n\n![Medical staff and patients in British hospitals are on high alert to prevent influenza.](/assets/img/articles/england-hospitals-flu-surge-nov-2026-20261127.jpg)\n\n## Background to the recommendation to wear masks by NHS health chiefs\n\nThe NHS's Jim Mackey warned that the spread of flu and other winter viruses in hospitals is now at a very serious stage. He asked hospital executives to consider strongly recommending or mandating the wearing of masks for staff and visitors. This is because not only the flu but also complex respiratory diseases, including COVID-19, are spreading simultaneously and depleting hospital resources. The infectious disease quarantine rules required of patients are evaluated as essential measures to prevent secondary infections within hospitals.\n\n## Technological changes from the 1970s billing system to the latest platforms\n\nAlthough the British NHS possesses a vast amount of data, efficient treatment has been limited due to the unstructured environment where information is disconnected. A variety of technologies are operating in a mixture, ranging from insurance claim systems introduced in the 1970s to cutting-edge data platforms introduced recently. According to Professor Stephen Childs, the integrated data platform currently introduced provides tailored solutions that reflect the complex structure of the NHS and the needs of each healthcare trust. This plays a key role in analyzing the prevalence patterns of seasonal diseases such as flu and optimizing hospital bed allocation.\n\n## Correlation between winter respiratory diseases and management costs\n\nHospitals must maximize the efficiency of resource management in preparation for a surge in hospitalization rates in winter. Patients need to check in advance the scope of coverage of their actual loss insurance or personal health insurance when visiting the hospital. In particular, the difference between inpatient treatment costs and outpatient treatment costs results in a substantial out-of-pocket difference depending on the insurance company's salary standards. In the current situation where mask wearing in hospitals is being strengthened, whether hospitalization is for the purpose of treating infectious diseases can be an important criterion in determining compensation. If the treatment period is prolonged depending on the clinical results, you must check whether non-covered items other than covered items occur.\n\n## Realistic limitations on social insurance arrears and medical entitlement\n\nRecently, the problem of nonpayment of social insurance such as national pension has emerged as a social issue, but social safety nets such as health insurance have a structure in which workers' right to receive benefits is protected even if employers default on insurance premiums. It is significant that as of September 2026, there are 134,616 workers whose subscription period is not recognized due to employer arrears. In order to fully receive health insurance benefits when receiving hospital treatment, you must regularly check your insurance premium payment status. In particular, it is important for patients with chronic diseases or respiratory diseases to check coverage items in advance in preparation for unexpected hospitalization situations.\n\n## Contrast analysis of salary-based notice and clinical costs\n\nPatients need to compare the salary standards in the health insurance notice with the actual medical expenses charged at the hospital. For infectious diseases such as the flu, the scope of coverage may vary depending on the treatment, and the out-of-pocket rate varies depending on the specific antiviral drug or type of hospital room. For example, the process of verifying whether a hospital provides care that meets the notification standards is key to determining the actual economic burden on patients. If costs exceed the notified standard amount, it must be calculated to what extent private insurance's actual loss coverage offsets these costs. In order to calculate and confirm directly, the process of carefully comparing the expected medical expenses and insurance coverage using the [Actual Loss/Car Insurance Calculator](https://insightbriefnews.com/insurance.html) is required.\n",
+  "sources": [
+   {
+    "name": "The Guardian Health",
+    "date": "2026-11-27",
+    "url": "https://www.theguardian.com/society/2026/nov/26/nhs-hospitals-england-flu-spike-masks"
+   },
+   {
+    "name": "연합뉴스 사회",
+    "date": "2026-11-27",
+    "url": "https://www.yna.co.kr/view/AKR20261126160600530"
+   },
+   {
+    "name": "The Guardian Health",
+    "date": "2026-11-27",
+    "url": "https://www.theguardian.com/technology/2026/nov/26/palantir-has-created-bespoke-tech-solutions-for-the-nhs"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check",
+   "confirmed": [
+    "2026년 11월 27일 기준, 영국 NHS 병원의 독감 입원율이 팬데믹 이전 수준 이후 최고치임",
+    "NHS 보건 수장 짐 매키가 마스크 착용 권고를 검토 중임",
+    "2026년 9월 기준 국민연금 체납으로 가입 기간을 인정받지 못한 근로자가 13만 4,616명임",
+    "건강보험은 사업주 체납 시에도 근로자 혜택이 보장되는 구조임"
+   ],
+   "unconfirmed": [
+    "특정 환자의 구체적인 진료비 산정액",
+    "NHS 통합 데이터 플랫폼 도입으로 인한 독감 사망률의 직접적 감소치"
+   ],
+   "sources": [
+    {
+     "name": "The Guardian Health",
+     "date": "2026-11-27",
+     "url": "https://www.theguardian.com/society/2026/nov/26/nhs-hospitals-england-flu-spike-masks",
+     "note": ""
+    },
+    {
+     "name": "Yonhap News Society",
+     "date": "2026-11-27",
+     "url": "https://www.yna.co.kr/view/AKR20261126160600530",
+     "note": ""
+    },
+    {
+     "name": "The Guardian Health",
+     "date": "2026-11-27",
+     "url": "https://www.theguardian.com/technology/2026/nov/26/palantir-has-created-bespoke-tech-solutions-for-the-nhs",
+     "note": ""
+    }
+   ]
+  },
+  "_slot": "2026-11-27#health"
+ },
+ {
+  "id": "seoul-gyeonggi-real-estate-policy-seminar-2026-20261127",
+  "category": "property",
+  "title": "Suwon Policy Seminar, Analysis of Real Estate Regulation Solutions in Seoul and Gyeonggi Province",
+  "deck": "Seoul Mayor Oh Se-hoon and Rep. Kim Eun-hye declared policy cooperation in Suwon on December 1. We look at the practical effectiveness of deregulation and supply measures to restore the housing ladder in the metropolitan area.",
+  "date": "2026-11-27",
+  "sample": false,
+  "author": "Insight Brief Editorial Room",
+  "authorRole": "Real Estate and Tax Team",
+  "publishedAt": "2026-11-27T06:37:24+09:00",
+  "readMinutes": 7,
+  "tags": [
+   "Sehun Oh",
+   "Eunhye Kim",
+   "Real estate supply",
+   "Rapid integrated planning",
+   "Land, Infrastructure and Transport Committee",
+   "Housing stability in the metropolitan area",
+   "Private maintenance project",
+   "People Power Party"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "PROPERTY & TAX FILE 26",
+   "word": "URBAN"
+  },
+  "coverImage": "/assets/img/articles/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.jpg",
+  "summary": [
+   "Seoul Mayor Oh Se-hoon and People Power Party Gyeonggi Provincial Party Chairman Kim Eun-hye will hold a joint policy seminar on December 1, 2026 at the Suwon Convention Center on the topic of solutions to housing stability in the metropolitan area.",
+   "This seminar will discuss supply measures beyond the administrative boundaries of Seoul and Gyeonggi, focusing on normalizing urban supply through rapid integrated planning and Gyeonggi-do customized deregulation measures.",
+   "Mayor Oh held a dinner with members of the Land, Infrastructure and Transport Committee of the National Assembly on November 30 to strengthen legislative cooperation and seek practical system improvements to restore the housing ladder."
+  ],
+  "body": "## December 1, 2026, a turning point in housing policy in the metropolitan area\n\nAccording to the information announced on November 26, 2026, a policy seminar will be held at the Suwon Convention Center on December 1 to diagnose the real estate market in the metropolitan area and find solutions for housing stability. This seminar was jointly prepared by Representative Kim Eun-hye, Chairman of the Gyeonggi Provincial Party Committee of the People Power Party, and Seoul Mayor Oh Se-hoon. Both sides reached a consensus that Seoul and Gyeonggi are a community with a shared destiny that transcends administrative boundaries and shares the pain of supply shortages and regulations. In particular, the key agenda of this event is how to apply the results of revitalizing private maintenance projects to Gyeonggi-do, beyond the simple exchange of opinions.\n\n![Panoramic view of Suwon Convention Center and preparations for the real estate policy meeting](/assets/img/articles/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.jpg)\n\n## Mayor Oh Se-hoon’s rapid integrated planning achievements and urban supply\n\nSeoul Mayor Oh Se-hoon will be the main presenter at the seminar and reveal the specific results of the rapid integration plan. Rapid integrated planning is a key strategy to accelerate the supply of housing in the city center by shortening the approval period for maintenance projects. So far, Seoul City has significantly shortened the period until project implementation is approved through this method. In this presentation, a specific methodology is expected to be presented on how this model can be transplanted into the maintenance of old residential areas in Gyeonggi-do. This serves as an opportunity for the Seoul Metropolitan Government's policy stance, which aims to normalize urban supply, to spread throughout the metropolitan area.\n\n## Gyeonggi-do customized regulatory solution presented by Rep. Kim Eun-hye\n\nRepresentative Kim Eun-hye is a co-presenter of this seminar and diagnoses the complex regulatory status of Gyeonggi-do. Gyeonggi-do requires a different approach from Seoul as development restriction zones and maintenance project regulations are mixed in each region. Rep. Kim plans to come up with customized supply measures that reflect the regional characteristics of Gyeonggi-do. This focuses on breaking regulations to provide actual consumers in Gyeonggi-do who have lost their housing ladder the opportunity to purchase their own home. Practical discussions to resolve regulatory pain in Seoul and Gyeonggi are held in this section.\n\n## November 30, National Land, Infrastructure and Transport Committee Dinner and Strengthening Policy Cooperation\n\nOn November 30, a day before the policy seminar, Mayor Oh Se-hoon held a dinner with People Power Party members of the National Assembly's Land, Infrastructure and Transport Committee at the official residence in Hannam-dong, Seoul. The meeting is scheduled to be attended by Land, Infrastructure and Transport Committee Chairman Yu Yu-dong, as well as opposition party secretaries Rep. Jeong Dong-man and Rep. Kim Eun-hye. This can be interpreted as an intention to build a solid cooperation system between the legislature and metropolitan local governments. Mayor Oh personally expressed his gratitude for the active support given to the Seoul Metropolitan Government by opposition party members of the Land, Infrastructure and Transport Committee during the last National Assembly audit, and is seeking to secure political momentum for revising real estate laws and improving the system in the metropolitan area in the future.\n\n## Deriving practical solutions for restoring housing ladders\n\nThe core goal of this policy cooperation is to restore the broken housing ladder. Rep. Kim Eun-hye emphasized that Seoul and Gyeonggi are a community with a shared destiny, and announced that she would focus on abolishing unreasonable supply regulations that occurred due to administrative boundaries. At the seminar, practical measures to stabilize housing linked to tax and loan regulations will be discussed, going beyond policies to simply increase supply. Restoring the housing ladder is premised on the establishment of a systematic system that guarantees the right of movement for single-home owners and supports those without a home in purchasing their first home. This practical solution is expected to have a significant impact on the future legislative process of the Land, Infrastructure and Transport Committee.\n\n## Analysis of actual profit and loss structure of revitalization of private maintenance business\n\nWhen private maintenance projects become active, changes occur in the contribution structure and tax burden of union members. If the project period is shortened by 2 to 3 years through rapid integration planning, the financial cost savings are estimated to be approximately 5 to 10% of the total project cost. This will lead to a reduction in contributions from tens of millions of won to more than hundreds of millions of won per union member. In the case of multiple homeowners, a significant portion of the profits may be recovered as taxes according to the reconstruction excess profit recovery system or heavy capital gains tax regulations, so taxation standards must be carefully checked at each stage of project implementation. In particular, it is necessary to check the acquisition tax rate and comprehensive real estate tax calculation method that change at each stage of the maintenance project.\n\n## The need for individual tax and financial calculations due to policy changes\n\nReal estate policy is closely linked to taxation. It is highly likely that the revitalization of the maintenance business and expansion of supply will ultimately result in changes in ownership and transaction taxes such as acquisition tax, property tax, and comprehensive real estate tax. Whenever policy changes are announced, it is important to understand in advance the changes in tax amount according to one's annual salary and asset size. Changes in property taxes due to policy implementation or financing plans due to loan regulations require individual analysis. Please calculate and check your expected tax amount directly through the tax, salary, health insurance calculator (https://insightbriefnews.com/tax.html) that reflects changes in the government's policy stance.\n",
+  "sources": [
+   {
+    "name": "연합뉴스 경제",
+    "date": "2026-11-26",
+    "url": "https://www.yna.co.kr/view/AKR20261126122651001"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check",
+   "confirmed": [
+    "2026년 12월 1일 수원컨벤션센터에서 부동산 정책 세미나가 개최됨",
+    "오세훈 서울시장과 김은혜 의원이 공동으로 정책을 논의함",
+    "11월 30일 오세훈 시장과 국회 국토위 소속 의원들의 만찬 예정",
+    "김은혜 의원이 국민의힘 경기도당위원장직을 수행 중임"
+   ],
+   "unconfirmed": [
+    "정비사업 기간 단축에 따른 구체적인 조합원 분담금 경감액(일반적 예시로 서술됨)"
+   ],
+   "sources": [
+    {
+     "name": "Yonhap News Economy",
+     "date": "2026-11-26",
+     "url": "https://www.yna.co.kr/view/AKR20261126122651001",
+     "note": ""
+    }
+   ]
+  },
+  "_slot": "2026-11-27#property"
+ },
+ {
+  "id": "eu-budget-ukraine-funding-crisis-20261127",
+  "category": "world",
+  "title": "EU long-term budget adjustment of 1.78 trillion euros, difficulties in sharing support for Ukraine",
+  "deck": "The 27 EU countries have entered an emergency meeting in Brussels to agree on a long-term budget plan worth 1.78 trillion euros, which will apply for 7 years from 2028. The rise of lawmaker Marine Le Pen ahead of the French presidential election and the conditions for support to Ukraine are acting as major variables in the negotiations.",
+  "date": "2026-11-27",
+  "sample": false,
+  "author": "Insight Brief Editorial Room",
+  "authorRole": "International and Geopolitics Team",
+  "publishedAt": "2026-11-27T06:29:13+09:00",
+  "readMinutes": 7,
+  "tags": [
+   "EU",
+   "Long-term budget plan",
+   "Ukraine Support",
+   "Marine Le Pen",
+   "European Union",
+   "Brussels",
+   "Geopolitics",
+   "Fiscal policy"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "WORLD & GEOPOLITICS FILE 27",
+   "word": "EUROPE"
+  },
+  "coverImage": "/assets/img/articles/eu-budget-ukraine-funding-crisis-20261127.jpg",
+  "summary": [
+   "Leaders of 27 EU member states gathered in Brussels on November 26, 2026 to discuss the long-term budget for 2028-2034 and 45 billion euros in support for Ukraine.",
+   "Chairman Costa proposed a compromise of 1.78 trillion euros, which was a 200 billion euro cut from the original budget, and strongly urged an agreement within the year.",
+   "While there is a wide gap between austerity groups, such as Germany, and countries demanding increased financial support, the possibility of extreme right-wing forces taking power in France is adding to the urgency of negotiations."
+  ],
+  "body": "## Key agenda of the Brussels Special Summit on November 26, 2026\n\nLeaders of 27 European Union (EU) countries gathered in Brussels, Belgium. This is to confirm the next long-term budget plan, which will be applied for seven years from 2028 to 2034, and to conclude the issue of sharing new loan support worth 45 billion euros to Ukraine. Antonio Costa, permanent chairman of the EU Summit, made it clear that this negotiation must be concluded by the end of this year. The EU Commission's original budget proposal of 2 trillion euros became inevitable due to conflict of interest among member states. The conflict between the six countries, including Germany, the Netherlands, Sweden, Denmark, Finland, and Austria, who are currently advocating for austerity, and the 17 member countries demanding an increase in the budget for agriculture and regional development, is a key factor preventing the passage of the budget.\n\n![At the EU Summit in Brussels, Belgium, leaders of each country are having a heated debate over Ukraine support and budget proposals.](/assets/img/articles/eu-budget-ukraine-funding-crisis-20261127.jpg)\n\n## Structure of the budget compromise, adjusted to 1.78 trillion euros\n\nIn order to conclude the negotiations, Chairman Costa presented an amendment worth 1.78 trillion euros, which was 200 billion euros less than the original Commission proposal. This compromise includes covering the shortfall in tax revenue through taxation of big tech companies. This is evaluated as a desperate measure to fill the financial gap caused by the reduction in the size of the budget. However, financial contributing countries, led by Germany, are placing the participation of 27 member countries without exception as a precondition for supporting Ukraine. This linkage strategy serves as a factor that increases the complexity of the budget agreement. Korean exporters will need to closely monitor changes in local market demand and volatility in tariff barriers if the EU's budget structure is reorganized to focus on agricultural and regional development subsidies.\n\n## French presidential election variables and Le Pen’s shadow\n\nThe French presidential election scheduled for next spring is the biggest external variable that determines the deadline for EU budget negotiations. Marine Le Pen, a member of the National Coalition (RN), who is currently leading the approval ratings, has pledged to cut EU contributions and stop financial support to Ukraine when she takes office. Considering France's economic weight within the EU, Le Pen's rise to power is a risk factor that could shake the foundation of the EU budget system. President Macron made a bold statement, saying he would withdraw from negotiations if an agreement is not reached within the year. This shows why the EU leadership is obsessed with reaching an agreement before the end of the year. From the perspective of Korean companies that need to manage import costs and develop supply chain strategies, changes in the EU's fiscal policy following the French presidential election result increase uncertainty in export strategies to Europe.\n\n## Linkage of support to Ukraine and war of nerves between member states\n\nGerman Chancellor Friedrich Merz said he had secured significant support for linking aid to Ukraine with a long-term budget plan. However, inside the conference hall, divisions among member states over participation in new loan support for Ukraine were exposed. This goes beyond a simple discussion of financial sharing and is becoming a test of the EU's external security policy and internal cohesion. If the EU confirms the support plan for Ukraine at 45 billion euros, it may affect the supply of liquidity and prices in the European market depending on each country's financial burden ratio and execution method. Korean companies must understand the flow of their budget to check the financial status of local partners and the possibility of participating in the project.\n\n## Schedule for member state elections pending in 2027\n\nIn addition to France, elections are scheduled for next year in a total of seven member countries, including Poland, Italy, Greece, Estonia, Finland, and Slovakia. As the political situation within each country clashes with the grand discourse of the EU budget plan, there is always a possibility that the momentum for negotiations will decline. The EU leadership is trying to secure policy stability by finalizing a long-term budget plan ahead of this period of political upheaval. In times of frequent policy changes, costs incurred in the process of importing raw materials and exporting finished products must be managed more strictly. A strategy is needed to continuously check whether political instability in each country will lead to changes in tariff rates or strengthening customs procedures.\n\n## The importance of data analytics for supply chain strategy\n\nRapid changes in the international situation are immediately reflected in the cost structure of the global supply chain. Major policy changes, such as the EU budget, have a direct impact on companies' arrival cost calculations. In particular, the taxation of big tech, which is discussed as a way to secure tax revenue in Europe, is a sensitive issue that can change the calculation standards for logistics and distribution costs. Corporate executives must quantify these geopolitical risks based on data. Please calculate and check the global sourcing and arrival cost calculator directly, reflecting the EU's budget execution direction and changes in tariff policy.\n\nCalculate/check directly: [Global sourcing/arrival cost calculator](https://insightbriefnews.com/sourcing.html)\n",
+  "sources": [
+   {
+    "name": "연합뉴스",
+    "date": "2026-11-27",
+    "url": "https://www.yna.co.kr/view/AKR20261126193352098"
+   },
+   {
+    "name": "BBC World",
+    "date": "2026-11-26",
+    "url": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&at_campaign=rss"
+   },
+   {
+    "name": "연합뉴스 국제",
+    "date": "2026-11-27",
+    "url": "https://www.yna.co.kr/view/AKR20261127003400071"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check",
+   "confirmed": [
+    "EU 27개국이 2028~2034년 장기 예산안과 우크라이나 450억 유로 지원안을 논의 중임",
+    "코스타 의장이 제시한 절충안의 예산 규모는 1조 7,800억 유로임",
+    "마린 르펜 의원은 우크라이나 재정 지원 중단을 주장하고 있음",
+    "내년 프랑스, 폴란드, 이탈리아, 그리스, 에스토니아, 핀란드, 슬로바키아 등 7개국 선거 예정"
+   ],
+   "unconfirmed": [
+    "절충안에 포함된 빅테크 세금이 한국 기업의 유럽 수출입 비용에 미치는 구체적인 영향 수치"
+   ],
+   "sources": [
+    {
+     "name": "Yonhap News",
+     "date": "2026-11-27",
+     "url": "https://www.yna.co.kr/view/AKR20261126193352098",
+     "note": ""
+    },
+    {
+     "name": "BBC World",
+     "date": "2026-11-26",
+     "url": "https://www.bbc.co.uk/news/articles/cmlyd76kyx44o?at_medium=RSS&at_campaign=rss",
+     "note": ""
+    },
+    {
+     "name": "Yonhap News International",
+     "date": "2026-11-27",
+     "url": "https://www.yna.co.kr/view/AKR20261127003400071",
+     "note": ""
+    }
+   ]
+  },
+  "_slot": "2026-11-27#world"
+ },
+ {
   "id": "muse-uk-launch-pre-approval-gap-2026",
   "category": "ai",
   "title": "Ten million downloads, eight days, one refusal — the first border for AI agents",
@@ -1169,7 +1575,7 @@
    "leave-use promotion",
    "Labor Standards Act Article 61",
    "three-year limitation period",
-   "Supreme Court en banc 2020다247190",
+   "Ordinary wage en banc body",
    "regular bonus as ordinary wage",
    "stiffer penalty for unpaid wages",
    "Dec 31 leave expiry",
@@ -1188,7 +1594,7 @@
    "To avoid paying for unused leave, an employer must follow the promotion procedure in Article 61: a written demand within ten days of the six-month mark, then, if the worker does not answer within ten days, a written notice designating the dates by two months before the period ends. On a calendar-year cycle that window this year was July 1-10.",
    "Without that procedure the unused days become a wage claim with a three-year limitation period. The amount is one day's ordinary wage times the unused days, and an en banc Supreme Court ruling on Dec 19, 2024 brought regular bonuses conditional on continued employment into the ordinary wage. From Oct 8, 2026, the penalty for unpaid wages rose to up to five years or 50 million won."
   ],
-  "body": "Thirty-five days remain until Dec 31, 2026. At workplaces that run annual leave on a calendar-year basis, the period for using this year's leave ends that day. Article 60(7) of the Labor Standards Act provides that leave not taken within a year expires. What disappears that day is the leave; whether the leave had already become wages is decided by other provisions.\n\n![A desk calendar with the last day circled in red pen, a stack of unsigned leave-request forms, an unsealed envelope and a pay slip blurred out. Image · AI illustration](/assets/img/articles/annual-leave-dec31-unused-pay-3years-2026.jpg)\n\n## What disappears on Dec 31\n\nArticle 60(1) gives 15 days of paid leave to a worker who attends at least 80% of the year. Paragraph 2 gives one day for each full month to a worker with less than a year of service, or less than 80% attendance. Paragraph 4 adds one day for every two years of continuous service beyond the first year to a worker of three years or more, capped at 25 days in total including the added days.\n\nParagraph 7 says the leave expires if not used within a year, then adds that this does not apply where the worker could not use it for reasons attributable to the employer. That sentence, which carves out an exception to expiry, is where the calculation that follows begins.\n\nThe reach of these provisions is defined too. Articles 60 and 61 do not apply to workplaces with four or fewer regular employees (Table 1 of the Enforcement Decree). At a workplace under five employees, the employment contract and the rules of employment are the standard.\n\n## Did the company send a letter in July?\n\nAn employer that wants to avoid paying for unused leave must follow the promotion procedure in Article 61. For a worker with a year or more of service, the employer must notify the worker of the remaining days and demand in writing, within ten days of the six-month mark before the period ends, that the worker set the dates. On a calendar-year cycle, that window this year was July 1 to 10.\n\nIf the worker does not answer within ten days of the demand, the employer must designate the dates and notify in writing again by two months before the period ends, which was Oct 31. Both steps must be in writing, and a step taken after the deadline has no effect. A verbal request, a company notice or an alert in the HR system is hard to count as completing the procedure.\n\nEven a proper procedure has an exception. If the worker came to work on the day the company designated and the company assigned work without clearly stating that it would not accept the labour, the obligation to pay for that day remains (Supreme Court, Feb 27, 2020, 2019다279283).\n\nWithout the letter in July, the remaining leave is not leave the company extinguished but leave the worker could not use. From the day after the period ends, those days become a claim for wages.\n\n## The money left behind lasts three years\n\nPay for unused annual leave is wages. Article 49 of the Labor Standards Act applies a three-year limitation period, which runs from the day after it is settled that the leave was not taken within a year of the right arising. For 2026 leave the claim arises on Jan 1, 2027, and the limitation period is complete once Dec 31, 2029 passes.\n\nThe calculation differs for a worker who leaves. The employer must settle wages and other payments within 14 days of the date of resignation (Article 36), and the claim for leave accrued in the final year arises the day after the employment relationship ends. The labour ministry's counselling service gives the same guidance: payment within 14 days of resignation, and a three-year limitation period from the day the claim arises.\n\n## Why the same ten days is worth more\n\nThe amount is one day's ordinary wage multiplied by the unused days. For a 40-hour week, the monthly ordinary wage is divided by 209 hours, including paid weekly rest, to get an hourly rate, which is multiplied by the eight contractual hours of a day. On a monthly ordinary wage of 3 million won, the hourly rate is 14,354 won, a day is 114,832 won and ten days are 1,148,320 won (rounded to the won).\n\nWhat changes the amount is what goes into the numerator, the monthly ordinary wage. In an en banc ruling on Dec 19, 2024 (2020다247190), the Supreme Court removed 'fixedness' from the test for ordinary wage. A regular bonus paid only to those employed on the payment date also counts as ordinary wage if it is agreed to be paid regularly and uniformly as consideration for the work contracted.\n\nFor a worker receiving a regular bonus of 3 million won a year, the monthly ordinary wage rises to 3.25 million won. The hourly rate becomes 15,550 won, a day 124,401 won and ten days 1,244,010 won. The same ten days is 95,690 won more expensive. Overtime, night and holiday premiums and notice pay use the same hourly rate, so they rise together.\n\nThe scope is not wide. The new rule applies to statutory allowances for work performed after the ruling, and work up to Dec 18, 2024 is calculated under the old standard. Of performance pay, only a minimum amount guaranteed regardless of grade enters the ordinary wage; the part that varies with results does not.\n\n## The penalty that changed on Oct 8\n\nThe amended Labor Standards Act (Act No. 21533), in force since Oct 8, 2026, raised the statutory penalty for unpaid wages from up to three years in prison or a 30 million won fine to up to five years or 50 million won. The provision also moved from Article 109 to Article 107, which now carries a clause barring prosecution against the victim's explicit wish, with an exception for employers whose names have been published as repeat offenders.\n\nNot paying leave pay violates the duty to pay wages (Article 43) and to settle payments on resignation (Article 36), so it falls under this provision. Penalties follow the law in force when the act was done, and wages are breached only once the payment date passes, so the higher penalty applies to wages whose payment date fell after Oct 8. Failing to grant the leave itself is handled separately under Article 110, at up to two years or 20 million won.\n\n## Three things to check first\n\nStart with how many days you have. The number differs: one day a month below a year of service, 15 days at a year, and added days from three years. Enter your hire date and a reference date in section 2 of Insight Brief's [payroll and labour calculator](https://insightbriefnews.com/salary.html) and it returns the days accrued.\n\nThen three things: whether your workplace runs leave on a calendar year or from the hire date, whether you received a written demand in July, and whether the hourly rate on your pay slip was worked out from base pay alone. What disappears on Dec 31 is ten days on a calendar; these three decide whether those ten days became wages.\n",
+  "body": "Thirty-five days remain until Dec 31, 2026. At workplaces that run annual leave on a calendar-year basis, the period for using this year's leave ends that day. Article 60(7) of the Labor Standards Act provides that leave not taken within a year expires. What disappears that day is the leave; whether the leave had already become wages is decided by other provisions.\n\n![A desk calendar with the last day circled in red pen, a stack of unsigned leave-request forms, an unsealed envelope and a pay slip blurred out. Image · AI illustration](/assets/img/articles/annual-leave-dec31-unused-pay-3years-2026.jpg)\n\n## What disappears on Dec 31\n\nArticle 60(1) gives 15 days of paid leave to a worker who attends at least 80% of the year. Paragraph 2 gives one day for each full month to a worker with less than a year of service, or less than 80% attendance. Paragraph 4 adds one day for every two years of continuous service beyond the first year to a worker of three years or more, capped at 25 days in total including the added days.\n\nParagraph 7 says the leave expires if not used within a year, then adds that this does not apply where the worker could not use it for reasons attributable to the employer. That sentence, which carves out an exception to expiry, is where the calculation that follows begins.\n\nThe reach of these provisions is defined too. Articles 60 and 61 do not apply to workplaces with four or fewer regular employees (Table 1 of the Enforcement Decree). At a workplace under five employees, the employment contract and the rules of employment are the standard.\n\n## Did the company send a letter in July?\n\nAn employer that wants to avoid paying for unused leave must follow the promotion procedure in Article 61. For a worker with a year or more of service, the employer must notify the worker of the remaining days and demand in writing, within ten days of the six-month mark before the period ends, that the worker set the dates. On a calendar-year cycle, that window this year was July 1 to 10.\n\nIf the worker does not answer within ten days of the demand, the employer must designate the dates and notify in writing again by two months before the period ends, which was Oct 31. Both steps must be in writing, and a step taken after the deadline has no effect. A verbal request, a company notice or an alert in the HR system is hard to count as completing the procedure.\n\nEven if the procedures are followed, there are exceptions. If an employee comes to work on a vacation day designated by the company, but the company orders work without clearly stating its intention to refuse to receive labor, the obligation to pay allowances for that day remains (Supreme Court decision 2019Da279283, February 27, 2020).\n\nWithout the letter in July, the remaining leave is not leave the company extinguished but leave the worker could not use. From the day after the period ends, those days become a claim for wages.\n\n## The money left behind lasts three years\n\nPay for unused annual leave is wages. Article 49 of the Labor Standards Act applies a three-year limitation period, which runs from the day after it is settled that the leave was not taken within a year of the right arising. For 2026 leave the claim arises on Jan 1, 2027, and the limitation period is complete once Dec 31, 2029 passes.\n\nThe calculation differs for a worker who leaves. The employer must settle wages and other payments within 14 days of the date of resignation (Article 36), and the claim for leave accrued in the final year arises the day after the employment relationship ends. The labour ministry's counselling service gives the same guidance: payment within 14 days of resignation, and a three-year limitation period from the day the claim arises.\n\n## Why the same ten days is worth more\n\nThe amount is one day's ordinary wage multiplied by the unused days. For a 40-hour week, the monthly ordinary wage is divided by 209 hours, including paid weekly rest, to get an hourly rate, which is multiplied by the eight contractual hours of a day. On a monthly ordinary wage of 3 million won, the hourly rate is 14,354 won, a day is 114,832 won and ten days are 1,148,320 won (rounded to the won).\n\nWhat changes the amount is what is included in the numerator, the regular monthly wage. The Supreme Court removed ‘fixity’ from the standard for determining ordinary wages in a unanimous decision (2020da247190) on December 19, 2024. Regular bonuses paid only to those who are employed on the payment date are included in ordinary wages if they are paid regularly and uniformly in return for regular work.\n\nFor a worker receiving a regular bonus of 3 million won a year, the monthly ordinary wage rises to 3.25 million won. The hourly rate becomes 15,550 won, a day 124,401 won and ten days 1,244,010 won. The same ten days is 95,690 won more expensive. Overtime, night and holiday premiums and notice pay use the same hourly rate, so they rise together.\n\nThe scope is not wide. The new rule applies to statutory allowances for work performed after the ruling, and work up to Dec 18, 2024 is calculated under the old standard. Of performance pay, only a minimum amount guaranteed regardless of grade enters the ordinary wage; the part that varies with results does not.\n\n## The penalty that changed on Oct 8\n\nThe amended Labor Standards Act (Act No. 21533), in force since Oct 8, 2026, raised the statutory penalty for unpaid wages from up to three years in prison or a 30 million won fine to up to five years or 50 million won. The provision also moved from Article 109 to Article 107, which now carries a clause barring prosecution against the victim's explicit wish, with an exception for employers whose names have been published as repeat offenders.\n\nNot paying leave pay violates the duty to pay wages (Article 43) and to settle payments on resignation (Article 36), so it falls under this provision. Penalties follow the law in force when the act was done, and wages are breached only once the payment date passes, so the higher penalty applies to wages whose payment date fell after Oct 8. Failing to grant the leave itself is handled separately under Article 110, at up to two years or 20 million won.\n\n## Three things to check first\n\nStart with how many days you have. The number differs: one day a month below a year of service, 15 days at a year, and added days from three years. Enter your hire date and a reference date in section 2 of Insight Brief's [payroll and labour calculator](https://insightbriefnews.com/salary.html) and it returns the days accrued.\n\nThen three things: whether your workplace runs leave on a calendar year or from the hire date, whether you received a written demand in July, and whether the hourly rate on your pay slip was worked out from base pay alone. What disappears on Dec 31 is ten days on a calendar; these three decide whether those ten days became wages.\n",
   "sources": [
    {
     "name": "국가법령정보센터 — 근로기준법 [시행 2026. 10. 8.] [법률 제21533호, 2026. 4. 7. 일부개정] 제36조·제43조·제49조·제60조·제61조·제107조·제110조",
@@ -2376,7 +2782,7 @@
      "note": "Hankyoreh 2026-11-17, The Korea Economic Daily 2026-11-15"
     },
     {
-     "name": "전화 응대 현장 사례",
+     "name": "Case study on phone response",
      "note": "JoongAng Ilbo 2026-11-10, The Korea Economic Daily 2026-11-23"
     },
     {
@@ -3369,7 +3775,7 @@
    "Antropic negotiated to purchase the same assets entirely in stock for about $6 billion in August, but withdrew in early September. Amazon will sell Tranium outside of AWS starting in late 2027. In the performance announcement on October 29, it was revealed that sales commitments for Tranium and Graviton each increased more than 20 times in one year. The competitor is NVIDIA (86% share of data center AI chips), which has built the CUDA ecosystem.",
    "Korea's semiconductor exports from January to October reached a record high of $396.8 billion (42.7% of the total, +193.1%), but the total sales of Rebellion (sales of 32 billion won, operating loss of 120.5 billion won) and Furiosa AI (sales of 5.7 billion won, operating loss of 62.5 billion won) in 2025 are KRW 37.7 billion. It is won (about 28 million dollars). The place where the value is attached is not the chip, but the software layer that allows the chip to be replaced."
   ],
-  "body": "On November 23, 2026, what Amazon bought was not a company, but a set of technologies. 아마존은 \"데카트 옵티마이제이션 스택(DOS)의 독점 기술을 구매하고, 공동창업자 3명과 AI 연구진·엔지니어 팀을 맞아들인다\"고 발표했다. The amount was not disclosed. Bloomberg and Calcalist put it at $7.5 billion. As of November 24, the base selling rate was 1,346.60 won, which is about 10.1 trillion won, and with about 100 employees, it is 101 billion won per person.\n\n> \"Every leap forward in AI starts with getting more out of every chip.\"\n> — Peter DeSantis, Amazon Senior Vice President of Basic AI Models, Custom Semiconductors, and Quantum Computing, November 23, 2026\n\n![두 개의 거대한 칩이 건물처럼 마주 선 협곡 위, 유리 다리로 황금빛으로 빛나는 코드 블록 상자가 옮겨지고 있다. Below, people in work clothes walk in a line down the server rack hallway. Image · AI illustration](/assets/img/articles/amazon-decart-chip-switching-cost-2026.jpg)\n\n## Two months when 6 billion became 7.5 billion\n\nThese assets did not originally belong to Amazon. 블룸버그는 8월 앤트로픽이 데카트를 60억 달러에 전액 주식으로 사는 협상을 하고 실사까지 마쳤다고 전했다. The words of Calcalist, which announced its withdrawal on September 8, were, “After reviewing the business and technology, we decided not to purchase.” 글로브스는 앤트로픽이 이스라엘 개발센터 폐쇄와 샌프란시스코 이전을 조건으로 걸어 데카트가 거절했다고 전했다. The reasons vary depending on the report. The value went from 6 billion to 7.5 billion dollars in two months. 글로브스는 거래가 규제 승인을 거쳐 2027년 1월 마무리되고, 창업자 3명이 5년을 채워야 대금 상당 부분을 받는다고 보도했다. There is no completion date for Amazon's announcement.\n\n## What did you buy and what did you not buy?\n\nThe object of Amazon’s announcement is not the company. It is “the proprietary technology behind DOS.” Videos and world models (Oasis 3, Lucy) are not mentioned. What lives is the code and people, and what remains is the company and its sales. DOS is not software tied to a specific chip in the first place. 로이터는 DOS를 \"AI 시스템을 더 빠르게 돌리고 엔비디아·아마존·구글 칩 사이를 더 쉽게 옮겨 다니게 하는 소프트웨어 엔진\"으로 설명했다. Nvidia also participated in Decart's $300 million round in May.\n\nHowever, the only chips mentioned in Amazon's announcement are Tranium and Graviton. There is no word on whether DOS will continue to support competing chips. The test method for the 1,600 tokens per second (200 in the industry) proposed by Decart is not disclosed.\n\n## The day Amazon sells chips\n\nThe reason for buying was revealed in the performance announcement on October 29th. 앤디 재시 최고경영자는 \"고객들이 트레이니엄을 AWS 밖에서도 쓸 수 있게 해달라고 계속 요청한다. 2027년 말에 그렇게 할 계획\"이라고 말했다. The chip business grew by triple digits, and Tranium and Graviton contracts each increased more than 20 times in one year. Torch Neuron, an open source tool that runs on Tranium without modifying the existing PyTorch code, was also released. In his April shareholder letter, Jassy wrote that the externally sold chip business could be worth $50 billion a year.\n\nThe market still belongs to NVIDIA. According to Visual Capitalist estimates, the data center AI chip market share in the fourth quarter of 2025 is 86% for Nvidia, 10% for AMD, and 4% for Intel. The line of defense is not only about performance. This is the CUDA ecosystem that has been built since 2006. The Software Policy Research Institute analyzed that “even if competing chips offer similar performance, they increase switching costs and entrench dependency.” Those who want to sell chips must pay the customer's moving costs first. 10 trillion won is considered the moving cost.\n\n## Two numbers in Korea: 42.7% and 37.7 billion won\n\nKorea achieved a record high in hardware. According to the Ministry of Trade, Industry and Energy, semiconductor exports from January to October amounted to $396.8 billion, up 193.1% from a year ago and accounting for 42.7% of total exports. Annual exports exceeded 1 trillion dollars for the first time on November 19. High bandwidth memory (HBM) market share is 83.0% (2nd quarter), DRAM 65.6% (1st half).\n\nDomestic companies on the same floor are small. Rebellion has 2025 sales of 32 billion won, operating loss of 120.5 billion won, and corporate value of 3.4 trillion won (March). Furiosa AI has sales of 5.7 billion won and an operating loss of 62.5 billion won. The combined sales of the two companies, 37.7 billion won, is just over $28 million, or 1/268th of the $7.5 billion that Amazon spent on Decart. It is precisely this layer that both companies make. Rebellion boasts a torch.compile support SDK, and FuriosaAI boasts its own compiler. 수출입은행 해외경제연구소는 이들이 자본·상용화 경험·생태계에서 선도기업과 3년 이상 격차가 있다고 평가했다.\n\n## place with value\n\nThe place where the value was attached was neither the wafer nor HBM. It was the cost for the customer to change chips. Some things remain unconfirmed. $7.5 billion is not a number disclosed by Amazon. 2027년 말 트레이니엄이 AWS 밖으로 나가기 시작할 때, 그 칩 위에서 도는 소프트웨어의 값을 누가 정하는지가 다음 질문이다.\n",
+  "body": "On November 23, 2026, what Amazon bought was not a company, but a set of technologies. Amazon announced, “We are purchasing the proprietary technology of the Decart Optimization Stack (DOS) and welcoming three co-founders and a team of AI researchers and engineers.” The amount was not disclosed. Bloomberg and Calcalist put it at $7.5 billion. As of November 24, the base selling rate was 1,346.60 won, which is about 10.1 trillion won, and with about 100 employees, it is 101 billion won per person.\n\n> \"Every leap forward in AI starts with getting more out of every chip.\"\n> — Peter DeSantis, Amazon Senior Vice President of Basic AI Models, Custom Semiconductors, and Quantum Computing, November 23, 2026\n\n![Above a canyon where two huge chips stand facing each other like buildings, a golden box of code blocks is being transported by a glass bridge. Below, people in work clothes walk in a line down the server rack hallway. Image · AI Illustration](/assets/img/articles/amazon-decart-chip-switching-cost-2026.jpg)\n\n## Two months when 6 billion became 7.5 billion\n\nThese assets did not originally belong to Amazon. Bloomberg reported in August that Antropic had negotiated to purchase Decart entirely in stock for $6 billion and completed due diligence. The expression of Calcalist, which announced its withdrawal on September 8, was, “After reviewing the business and technology, we decided not to purchase.” Globes reported that Antropic made the offer conditional on closing its development center in Israel and relocating to San Francisco, which Descartes rejected. The reasons vary depending on the report. The value went from 6 billion to 7.5 billion dollars in two months. Globes reported that the transaction will be completed in January 2027 after regulatory approval, and that the three founders will receive a significant portion of the payment after five years. There is no completion date for Amazon's announcement.\n\n## What did you buy and what did you not buy?\n\nThe object of Amazon’s announcement is not the company. It is “the proprietary technology behind DOS.” Videos and world models (Oasis 3, Lucy) are not mentioned. What lives is the code and people, and what remains is the company and its sales. DOS is not software tied to a specific chip in the first place. Reuters described DOS as “a software engine that makes AI systems run faster and move more easily between Nvidia, Amazon, and Google chips.” Nvidia also participated in Decart's $300 million round in May.\n\nHowever, the only chips mentioned in Amazon's announcement are Tranium and Graviton. There is no word on whether DOS will continue to support competing chips. The test method for the 1,600 tokens per second (200 in the industry) proposed by Decart is not disclosed.\n\n## The day Amazon sells chips\n\nThe reason for buying was revealed in the performance announcement on October 29th. “Customers continue to ask us to make Tranium available outside of AWS, and we plan to do so by the end of 2027,” CEO Andy Jassy said. The chip business grew by triple digits, and Tranium and Graviton contracts each increased more than 20 times in one year. Torch Neuron, an open source tool that runs on Tranium without modifying the existing PyTorch code, was also released. In his April shareholder letter, Jassy wrote that the externally sold chip business could be worth $50 billion a year.\n\nThe market still belongs to NVIDIA. According to Visual Capitalist estimates, the data center AI chip market share in the fourth quarter of 2025 is 86% for Nvidia, 10% for AMD, and 4% for Intel. The line of defense is not only about performance. This is the CUDA ecosystem that has been built since 2006. The Software Policy Research Institute analyzed that “even if competing chips offer similar performance, they increase switching costs and entrench dependency.” Those who want to sell chips must pay the customer's moving costs first. 10 trillion won is considered the moving cost.\n\n## Two numbers in Korea: 42.7% and 37.7 billion won\n\nKorea achieved a record high in hardware. According to the Ministry of Trade, Industry and Energy, semiconductor exports from January to October amounted to $396.8 billion, up 193.1% from a year ago and accounting for 42.7% of total exports. Annual exports exceeded 1 trillion dollars for the first time on November 19. High bandwidth memory (HBM) market share is 83.0% (2nd quarter), DRAM 65.6% (1st half).\n\nDomestic companies on the same floor are small. Rebellion has 2025 sales of 32 billion won, operating loss of 120.5 billion won, and corporate value of 3.4 trillion won (March). Furiosa AI has sales of 5.7 billion won and an operating loss of 62.5 billion won. The combined sales of the two companies, 37.7 billion won, is just over $28 million, or 1/268th of the $7.5 billion that Amazon spent on Decart. It is precisely this layer that both companies make. Rebellion boasts a torch.compile support SDK, and FuriosaAI boasts its own compiler. The Export-Import Bank's Overseas Economic Research Institute assessed that there is a gap of more than three years between them and leading companies in terms of capital, commercialization experience, and ecosystem.\n\n## place with value\n\nThe place where the value was attached was not the wafer or HBM. It was the cost for the customer to change chips. Some things remain unconfirmed. $7.5 billion is not a number disclosed by Amazon. When Tranium begins to move out of AWS in late 2027, the next question is who sets the price of the software running on the chip.\n",
   "sources": [
    {
     "name": "Amazon — Amazon to purchase Decart's AI optimization technology to advance chip and model innovation for customers",
@@ -3827,8 +4233,8 @@
   "publishedAt": "2026-11-24T10:45:00+09:00",
   "readMinutes": 8,
   "tags": [
-   "정보보호 공시",
-   "정보보호산업법",
+   "Information protection disclosure",
+   "Information Protection Industry Act",
    "ISMS",
    "CISO",
    "Ministry of Science and ICT",
@@ -4133,7 +4539,7 @@
      "note": "Longjung Information Weekly (11/12~18), 2026-11-19"
     },
     {
-     "name": "프로필렌 FOB 한국 1,280달러, CFR 중국 1,300달러",
+     "name": "Propylene FOB Korea $1,280, CFR China $1,300",
      "note": "Longjung Information, 2026-11-18 Evaluation"
     },
     {

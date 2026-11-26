@@ -50,24 +50,54 @@
    "label": "灾难·安全",
    "en": "DISASTER & SAFETY",
    "desc": "从灾难·安全现场看预防与应对"
+  },
+  {
+   "id": "world",
+   "label": "国际·地缘",
+   "en": "WORLD & GEOPOLITICS",
+   "desc": "美中欧政策、关税与安全"
+  },
+  {
+   "id": "property",
+   "label": "房产·个税",
+   "en": "PROPERTY & TAX",
+   "desc": "利率、认购与转让税"
+  },
+  {
+   "id": "energy",
+   "label": "能源·气候",
+   "en": "ENERGY & CLIMATE",
+   "desc": "AI 用电、核电与碳规制"
+  },
+  {
+   "id": "health",
+   "label": "生物·健康",
+   "en": "HEALTH & BIO",
+   "desc": "减肥药、实损保险、体检"
+  },
+  {
+   "id": "culture",
+   "label": "韩流·文化",
+   "en": "K-CULTURE",
+   "desc": "K-pop、韩剧、网漫与虚拟艺人产业"
   }
  ],
  "ticker": [
   {
-   "text": "法规于 8 月 12 日开始实施，尚未计算 — 欧盟包装法规实施 100 天",
-   "articleId": "eu-ppwr-100days-recycled-content"
+   "text": "到 2025 年，美国将损失 60% 的能源，电网效率和成本结构受到物理限制",
+   "articleId": "us-energy-loss-and-efficiency-analysis-20261127"
   },
   {
-   "text": "如果你被困在隧道里，你的手上没有光——32种消防用品与公路隧道防灾指南之间",
-   "articleId": "tunnel-portable-emergency-light-gap"
+   "text": "欧盟长期预算调整1.78万亿欧元，分摊支持乌克兰困难重重",
+   "articleId": "eu-budget-ukraine-funding-crisis-20261127"
   },
   {
-   "text": "规格来自日本，颜色由投标人决定——这就是灭火器、探测器和应急灯保持不变的原因。",
-   "articleId": "fire-rules-japan-lineage-old-design"
+   "text": "水原政策研讨会，首尔和京畿道房地产调控解决方案分析",
+   "articleId": "seoul-gyeonggi-real-estate-policy-seminar-2026-20261127"
   },
   {
-   "text": "期货下跌 12%，而现货溢价创历史新高——纸张和仓库的一周分差",
-   "articleId": "weekly-commodities-2026-11-23"
+   "text": "英国医院流感入院人数创大流行以来最高",
+   "articleId": "england-hospitals-flu-surge-nov-2026-20261127"
   }
  ],
  "editorNote": {

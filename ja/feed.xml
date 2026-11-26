@@ -6,7 +6,47 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 23:51:34 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 06:54:40 +0900</lastBuildDate>
+    <item>
+      <title>2025年の米国エネルギーの60％消失、電力網効率の物理的限界とコスト構造</title>
+      <link>https://insightbriefnews.com/ja/a/us-energy-loss-and-efficiency-analysis-20261127.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/us-energy-loss-and-efficiency-analysis-20261127.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:48:27 +0900</pubDate>
+      <category>エネルギー・気候</category>
+      <description>米エネルギー情報庁（EIA）データによると、2025年に米国は34クォードの1次エネルギーを投入したが、実質電力販売量は14クォードにとどまった。エネルギー損失の95％が発電プロセスの熱放出に起因し、これは電力料金の構造的コストに直結します。</description>
+    </item>
+    <item>
+      <title>イギリス病院インフルエンザ入院率ファンデミック後の最高値記録</title>
+      <link>https://insightbriefnews.com/ja/a/england-hospitals-flu-surge-nov-2026-20261127.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/england-hospitals-flu-surge-nov-2026-20261127.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:38:52 +0900</pubDate>
+      <category>バイオ・健康</category>
+      <description>英国NHS病院のインフルエンザ入院率がコロナ19以前のレベルを超えたことが分かった。保健当局は医療スタッフと訪問者のマスク着用を勧告し、冬季病院の過負荷に備えている。</description>
+    </item>
+    <item>
+      <title>水原政策セミナー、ソウル・京畿不動産規制解法分析</title>
+      <link>https://insightbriefnews.com/ja/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:37:24 +0900</pubDate>
+      <category>不動産・税金</category>
+      <description>オ・セフンソウル市場とキム・ウンヘ議員が12月1日水原で政策共助を宣言した。首都圏住宅梯子復元のための規制緩和と供給対策の実質的な効用性を見てみる。</description>
+    </item>
+    <item>
+      <title>EU長期予算案1.78兆ユーロ調整、ウクラ支援分担難航</title>
+      <link>https://insightbriefnews.com/ja/a/eu-budget-ukraine-funding-crisis-20261127.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/eu-budget-ukraine-funding-crisis-20261127.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:29:13 +0900</pubDate>
+      <category>国際・地政学</category>
+      <description>EU 27カ国が2028年から7年間適用される1兆7,800億ユーロ規模の長期予算案合意のため、ブリュッセルで緊急会議に突入した。フランス大統領を控えたマリン・ルペン議員の負傷とウクライナの支援条件が交渉の主な変数として作用している。</description>
+    </item>
+    <item>
+      <title>高橋洋子ソウル単独コンサート収益構造の裏面</title>
+      <link>https://insightbriefnews.com/ja/a/takahashi-yoko-seoul-concert-analysis-20261127.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/takahashi-yoko-seoul-concert-analysis-20261127.html</guid>
+      <pubDate>Fri, 27 Nov 2026 06:28:14 +0900</pubDate>
+      <category>Kカルチャー</category>
+      <description>アニメ『新世紀エヴァンゲリオン』主題歌で30年以上収益を創出してきた高橋洋子が国内初の単独公演を開く。チケットパワーとIP活用戦略を中心にKポップ市場の中のジャパンコンテンツの収益性を分析した。</description>
+    </item>
     <item>
       <title>1000万ダウンロード、8日、そして拒否1件——AIエージェントの最初の国境</title>
       <link>https://insightbriefnews.com/ja/a/muse-uk-launch-pre-approval-gap-2026.html</link>
@@ -126,46 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 16:45:00 +0900</pubDate>
       <category>AI・テック</category>
       <description>行政安全部が11月25日、中央行政機関と地方政府、公共機関に「公共AIサービスUI/UXガイドライン」を配布した。設計基準29項目、細部要求99項目（必須80）、チェック項目148項目を備えるが、ボタンの説明やキーボード操作といったアクセシビリティ基準は2027年2月に加わる。同じ一文を、欧州は8月2日から法律として執行している。</description>
-    </item>
-    <item>
-      <title>倉庫には4日分しか残っていないのに、値は19％下がった — 錫を動かしたのは鉱山ではなくナスダックだ</title>
-      <link>https://insightbriefnews.com/ja/a/tin-below-40k-four-days-stock-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/tin-below-40k-four-days-stock-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 15:15:00 +0900</pubDate>
-      <category>貿易・原材料</category>
-      <description>11月13日、LME錫の現物は3か月物よりトン当たり790ドル高かった。11月24日には75ドル安い。その間に1kgの値は6万5,000ウォンから5万5,000ウォンになり、倉庫には世界消費のおよそ4日分が残っていた。中国の製錬所が戻ると、先にスプレッドが縮み、値はAI株とともに下がった。</description>
-    </item>
-    <item>
-      <title>韓国版粘度表21点 - 3.75％が3つ撮れば、2027年の貸出金利が変わる</title>
-      <link>https://insightbriefnews.com/ja/a/bok-dotplot-375-nov26-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/bok-dotplot-375-nov26-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 15:05:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>2026年11月26日、金通委は基準金利3.00%を3.25%に上げるかと6ヶ月後の展望を盛り込んだ粘度表を新たに出す。 8月には21店舗のうち3.25％が10店舗で最も多かった。今回3.75％が何個撮られ、中間値がどこに行くかが2027年国庫債と変動型貸出金利の上段を定める。</description>
-    </item>
-    <item>
-      <title>ローン5.02％、預金3.62％ - 隙間が0.10％ポイント狭くなった月</title>
-      <link>https://insightbriefnews.com/ja/a/loan-rate-502-deposit-362-gap-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/loan-rate-502-deposit-362-gap-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 14:15:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>2026年10月の銀行家計ローン金利は年5.02％で、2023年11月以降2年11ヶ月ぶりに5％を超えた。住宅担保ローンは４．９８％で、２０１２年３月以降最高だ。ところが、同月預金金利が貸出金利より早く上がり、新規預貸金利差は1.02%ポイントに絞られた。ローンは上がるのに隙が減ったということは何を意味するだろうか。</description>
-    </item>
-    <item>
-      <title>「私はAIアシスタントです」までは言った —— 20万人が託した電話に欠けていた委任状</title>
-      <link>https://insightbriefnews.com/ja/a/ai-agent-call-mandate-gap-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/ai-agent-call-mandate-gap-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 10:45:00 +0900</pubDate>
-      <category>AI・テック</category>
-      <description>SKテレコム・KT・LGユープラス・ネイバーは11月23日、AIエージェントがかけてくるカスタマーセンターの電話を受けない方針を決めた。開始1か月で20万人が使うサービスの電話が本人確認の段階で止まる一方、決済市場は2025年9月に暗号署名された委任状を打ち出した。</description>
-    </item>
-    <item>
-      <title>同じ61日が17日ずれている — 1月10日と1月27日、二つの猶予の終わり</title>
-      <link>https://insightbriefnews.com/ja/a/gallium-rare-earth-two-deadlines-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/gallium-rare-earth-two-deadlines-2027.html</guid>
-      <pubDate>Wed, 25 Nov 2026 09:45:00 +0900</pubDate>
-      <category>貿易・原材料</category>
-      <description>中国商務省は11月24日、ガリウム・ゲルマニウム・アンチモンの対米輸出禁止を2027年1月27日まで再び延期した。2週間前に延長した希土類の猶予は1月10日に終わる。どちらも61日だが、開始日が17日違うため終わる日も17日ずれる。その間に欧州のジスプロシウム価格は中国国内の15〜19倍になった。</description>
     </item>
   </channel>
 </rss>

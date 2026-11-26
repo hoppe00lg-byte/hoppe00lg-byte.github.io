@@ -51,24 +51,54 @@ window.__SITE__ = {
    "label": "재난·안전",
    "en": "DISASTER & SAFETY",
    "desc": "재난·안전 현장에서 보는 예방과 대응"
+  },
+  {
+   "id": "world",
+   "label": "국제·지정학",
+   "en": "WORLD & GEOPOLITICS",
+   "desc": "미·중·유럽 정책·관세·안보"
+  },
+  {
+   "id": "property",
+   "label": "부동산·생활세금",
+   "en": "PROPERTY & TAX",
+   "desc": "금리·청약·양도/상속세"
+  },
+  {
+   "id": "energy",
+   "label": "에너지·전력·기후",
+   "en": "ENERGY & CLIMATE",
+   "desc": "AI 전력난·원전·탄소규제"
+  },
+  {
+   "id": "health",
+   "label": "바이오·헬스",
+   "en": "HEALTH & BIO",
+   "desc": "비만치료제·실손·건강검진"
+  },
+  {
+   "id": "culture",
+   "label": "K-컬쳐·엔터",
+   "en": "K-CULTURE",
+   "desc": "K-팝·드라마·웹툰·버추얼 아티스트 산업"
   }
  ],
  "ticker": [
   {
-   "text": "EU 포장규정 시행 100일 — 재생원료 셈법은 12월 31일 기한인데 아직 없다",
-   "articleId": "eu-ppwr-100days-recycled-content"
+   "text": "2025년 미국 에너지의 60% 소실, 전력망 효율의 물리적 한계와 비용 구조",
+   "articleId": "us-energy-loss-and-efficiency-analysis-20261127"
   },
   {
-   "text": "500m 이상 터널엔 비상조명 의무, 정작 들고 탈출할 휴대용 조명은 목록에 없다",
-   "articleId": "tunnel-portable-emergency-light-gap"
+   "text": "2026-11-27 EU 장기 예산안 1.78조 유로 조정, 우크라 지원 분담 난항",
+   "articleId": "eu-budget-ukraine-funding-crisis-20261127"
   },
   {
-   "text": "'빨간 소화기' 조문은 없다 — 규격은 일본에서, 색은 최저가 입찰이 정했다",
-   "articleId": "fire-rules-japan-lineage-old-design"
+   "text": "2026년 12월 1일 수원 정책 세미나, 서울·경기 부동산 규제 해법 분석",
+   "articleId": "seoul-gyeonggi-real-estate-policy-seminar-2026-20261127"
   },
   {
-   "text": "구리 선물 한 주에 12% 급락, 현물 프리미엄은 사상 최고 — 종이와 창고가 갈라졌다",
-   "articleId": "weekly-commodities-2026-11-23"
+   "text": "2026년 11월 27일, 영국 병원 독감 입원율 팬데믹 이후 최고치 기록",
+   "articleId": "england-hospitals-flu-surge-nov-2026-20261127"
   }
  ],
  "editorNote": {

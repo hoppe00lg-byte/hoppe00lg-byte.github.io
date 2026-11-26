@@ -1,0 +1,69 @@
+{
+ "_note": "카테고리 이름·설명의 언어별 확정 표기. 사이트 i18n 이 이 값을 기계번역보다 우선한다.",
+ "en": {
+  "world": {
+   "label": "World & Geopolitics",
+   "desc": "US, China and Europe — policy, tariffs, security"
+  },
+  "property": {
+   "label": "Property & Tax",
+   "desc": "Rates, subscriptions and capital gains tax"
+  },
+  "energy": {
+   "label": "Energy & Climate",
+   "desc": "AI power demand, nuclear and carbon rules"
+  },
+  "health": {
+   "label": "Health & Bio",
+   "desc": "Obesity drugs, indemnity cover, screenings"
+  },
+  "culture": {
+   "label": "K-Culture",
+   "desc": "K-pop, drama, webtoon and virtual artist business"
+  }
+ },
+ "zh": {
+  "world": {
+   "label": "国际·地缘",
+   "desc": "美中欧政策、关税与安全"
+  },
+  "property": {
+   "label": "房产·个税",
+   "desc": "利率、认购与转让税"
+  },
+  "energy": {
+   "label": "能源·气候",
+   "desc": "AI 用电、核电与碳规制"
+  },
+  "health": {
+   "label": "生物·健康",
+   "desc": "减肥药、实损保险、体检"
+  },
+  "culture": {
+   "label": "韩流·文化",
+   "desc": "K-pop、韩剧、网漫与虚拟艺人产业"
+  }
+ },
+ "ja": {
+  "world": {
+   "label": "国際・地政学",
+   "desc": "米中欧の政策・関税・安全保障"
+  },
+  "property": {
+   "label": "不動産・税金",
+   "desc": "金利・請約・譲渡税"
+  },
+  "energy": {
+   "label": "エネルギー・気候",
+   "desc": "AI電力需要・原発・炭素規制"
+  },
+  "health": {
+   "label": "バイオ・健康",
+   "desc": "肥満治療薬・実損保険・健診"
+  },
+  "culture": {
+   "label": "Kカルチャー",
+   "desc": "K-POP・ドラマ・ウェブトゥーン・バーチャルアーティスト"
+  }
+ }
+}
