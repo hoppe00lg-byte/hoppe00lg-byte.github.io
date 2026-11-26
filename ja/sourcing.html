@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>B2B·B2C·C2C グローバル調達・着地原価計算 | INSIGHT BRIEF</title>
+<meta name="description" content="原料・部品 大量輸入(B2B)、海外織口(B2C)、中古・限定版直取引(C2C)を一画面で。品目・数量・運送方式のみ入れると関税・税金・通関手数料・国内運送まで加えた家の前到着原価を原画で計算します。リスト通関150ドル（米国200ドル）免税判定、LookChem・ChemSrc・Alibaba・1688・Amazon・タオバオ・eBay・メルカリ検索ショートカット含む。">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/ja/sourcing.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:title" content="B2B・B2C・C2Cグローバルソーシング・家前到着原価計算機">
+<meta property="og:description" content="品目・数量・運送方式だけ入れると関税・付加税・通関・内陸輸送まで加えた到着原価が出ます。海外職口リスト通関150ドル（米国200ドル）判定とグローバルソーシング検索ショートカットを一緒に。">
+<meta property="og:url" content="https://insightbriefnews.com/ja/sourcing.html">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="B2B・B2C・C2Cグローバルソーシング・到着原価計算機">
+<meta name="twitter:description" content="関税・付加税・通関・内陸輸送まで加えた家の前到着原価。リスト通関150ドル（米国200ドル）の判定を含む。">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
+<link rel="stylesheet" href="../assets/css/sourcing.css?v=20261126a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Global sourcing and landed cost calculator (B2B, B2C, C2C)",
+  "url": "https://insightbriefnews.com/sourcing.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "Free landed cost calculator for bulk imports (B2B), overseas direct purchases (B2C) and second-hand or limited-edition trades (C2C). Enter item, quantity and transport mode to get duty, VAT, customs fees and inland haulage added into one delivered cost in KRW, with Korea's 150 USD (200 USD from the US) list-clearance duty-free check and shortcuts to chemical, sourcing and marketplace search.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/sourcing.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/sourcing.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/sourcing.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/sourcing.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/sourcing.html">
+<link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="../assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tool">
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026年11月26日(木曜日)</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="../sourcing.html" hreflang="ko" lang="ko">KO</a><a href="../en/sourcing.html" hreflang="en" lang="en">EN</a><a href="../zh/sourcing.html" hreflang="zh-Hans" lang="zh-Hans">ZH</a><a href="sourcing.html" hreflang="ja" lang="ja" class="is-on" aria-current="true">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">独立系・経済調査報道リサーチ誌</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF ホームへ">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>インサイトブリーフ</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>数字の向こうの文脈を読む</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">情報提供</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">週刊ブリーフを購読</a>
+        <button class="icon-btn search-toggle" type="button" aria-label="検索を開く" aria-expanded="false" aria-controls="search-mobile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">ニュース<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="ニュース">
+          <a href="index.html" data-nav-key="all">すべての記事</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI・テック</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">経済・金融</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">貿易・原材料</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">災害・安全</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">週刊調査報道</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">貿易・調達・市況<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="貿易・調達・市況">
+          <a href="biz.html#trade" data-nav-key="tdoc">貿易書式 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">海上運賃・物流コスト</a>
+          <a href="sourcing.html" data-nav-key="sourcing" class="is-active" aria-current="page">グローバル調達・着地原価計算</a>
+          <a href="market.html" data-nav-key="market">原材料・為替市況板</a>
+          <a href="global.html#portal" data-nav-key="portal">調達庁・企業審査ポータル</a>
+          <a href="global.html#email" data-nav-key="email">貿易メール作成</a>
+          <a href="global.html#trip" data-nav-key="trip">出張ハブ</a>
+          <a href="biz.html#cost" data-nav-key="cost">粗利・原価・資金計算</a>
+          <a href="seller.html" data-nav-key="seller">セラー・マーケター向けツール</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">世界の展示会カレンダー</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税務・法律・生活<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税務・法律・生活">
+          <a href="tax.html" data-nav-key="tax">税金・年収・社会保険</a>
+          <a href="salary.html" data-nav-key="salary">給与・最低賃金・社会保険</a>
+          <a href="insurance.html" data-nav-key="insurance">実損・自動車保険計算</a>
+          <a href="law.html" data-nav-key="law">法律・契約書・内容証明</a>
+          <a href="forms.html" data-nav-key="forms">書式・電子署名 138種</a>
+          <a href="saju.html" data-nav-key="saju">四柱推命・新年占い</a>
+          <a href="lotto.html" data-nav-key="lotto">ロト番号生成器</a>
+          <a href="music.html" data-nav-key="music">AI音楽・歌詞生成</a>
+          <a href="style.html" data-nav-key="style">ファッション・スタイル提案</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">案内・サイトマップ<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="案内・サイトマップ">
+          <a href="sitemap.html" data-nav-key="sitemap">サイトマップ</a>
+          <a href="about.html" data-nav-key="about">媒体紹介</a>
+          <a href="ad.html" data-nav-key="ad">広告・提携</a>
+          <a href="contact.html" data-nav-key="contact">情報提供・お問い合わせ</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="キーワードで検索" aria-label="記事を検索" autocomplete="off">
+    </form>
+  </div>
+</div>
+<div class="search-mobile" id="search-mobile" hidden>
+  <form class="search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+    <input type="search" name="q" placeholder="キーワードで検索" aria-label="記事を検索" autocomplete="off">
+  </form>
+</div>
+
+<main id="main" class="sc-main">
+  <div class="container sc-wrap">
+
+    <div class="sc-head">
+      <span class="kicker">FREE TOOL · GLOBAL SOURCING</span>
+      <h1>B2B · B2C · C2C<br>グローバル調達・着地原価</h1>
+      <p class="dek">原材料・部品をコンテナで仕入れる場合も、海外通販で1点買う場合も、中古品を個人間で取引する場合も、出発点は同じ問いです。「自宅まで全部でいくらか」。品名・数量・輸送方式を入れるだけで、商品代に国際輸送費・保険・関税・付加価値税・通関手数料・国内輸送を足した着地原価をウォンで表示します。海外通貨購入は150ドル（米国発は200ドル）のリスト通関基準で免税・課税を自動判定します。</p>
+      <div class="sc-badges">
+        <span>無料</span><span>会員登録不要</span><span>入力はサーバー送信なし</span><span>写真はブラウザ内でのみ</span><span>3種類の取引タイプ</span><span>為替を自動反映</span>
+      </div>
+    </div>
+
+    <div class="sc-tabs" role="tablist" aria-label="取引タイプ">
+      <button class="sc-tab" type="button" role="tab" id="sc-tab-b2b" data-tab="b2b" aria-selected="true" aria-controls="sc-panel-b2b" tabindex="0">
+        <span class="t-code">B2B · BULK IMPORT</span>
+        <span class="t-name">原材料・部品・大口輸入</span>
+        <span class="t-desc">FCL・LCL・航空で仕入れる原材料・部品の着地原価</span>
+      </button>
+      <button class="sc-tab" type="button" role="tab" id="sc-tab-b2c" data-tab="b2c" aria-selected="false" aria-controls="sc-panel-b2c" tabindex="-1">
+        <span class="t-code">B2C · DIRECT PURCHASE</span>
+        <span class="t-name">海外通販・少額購入</span>
+        <span class="t-desc">リスト通関の免税判定と転送費まで含めた自宅までの金額</span>
+      </button>
+      <button class="sc-tab" type="button" role="tab" id="sc-tab-c2c" data-tab="c2c" aria-selected="false" aria-controls="sc-panel-c2c" tabindex="-1">
+        <span class="t-code">C2C · SECOND-HAND</span>
+        <span class="t-name">中古・限定品・個人間取引</span>
+        <span class="t-desc">安全決済・代行手数料、国際配送、関税を合算</span>
+      </button>
+    </div>
+
+    <!-- ===== B2B ===== -->
+    <section class="sc-panel" id="sc-panel-b2b" role="tabpanel" aria-labelledby="sc-tab-b2b">
+      <p class="sc-panel-lead">原材料・部品・素材をコンテナ（FCL）、少量（LCL）、航空で仕入れるときに使います。単価と数量、総重量・CBM、輸送方式を入れると、商品代（FOB）に国際輸送費・保険料を足したCIFを作り、そこに関税・付加価値税・通関手数料・国内陸送を乗せて自宅までの着地原価を出します。</p>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>商品情報</h3><span>CAS・HSコードは検索と関税率確認に書き込みます</span></div>
+        <div class="sc-grid wide">
+          <div class="sc-field full"><label for="sc-b-name">アイテム名</label>
+            <input id="sc-b-name" type="text" placeholder="例：ポリカーボネート（PC）再生ペレット" autocomplete="off">
+            <span class="hint">検索カードの検索語としても使用されます。英文品名を一緒に書くと海外供給先検索がうまくいきます。</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-cas">CAS番号 <i>を選択</i></label>
+            <input id="sc-b-cas" type="text" placeholder="例: 9003-53-6" autocomplete="off" spellcheck="false">
+            <span class="hint">化学物質の場合、CASは最も正確なクエリです。</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-hs">HSコード <i>を選択</i></label>
+            <input id="sc-b-hs" type="text" placeholder="例: 3907.40-0000" autocomplete="off" spellcheck="false">
+            <span class="hint">関税率はHS 10桁に分けられます。</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-duty">関税率(%)</label>
+            <input id="sc-b-duty" class="num" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="6.5">
+            <span class="hint">基本税率・FTA協定税率のうち実際に適用される税率を入れてください。</span>
+          </div>
+          <div class="sc-field full"><label for="sc-b-memo">仕様・用途メモ <i>計算を除外</i></label>
+            <textarea id="sc-b-memo" placeholder="例：PC再生ペレット、MFI 12、グレードA、射出用。 MSDS・TDS確認が必要。サンプル25キロ別。"></textarea>
+            <span class="hint">メモは計算に使われておらず、クエリにも入らない。見積もり依頼書に移して、適度に残してください。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>価格・数量</h3><span>単価基準単位と総重量・CBMを別に入れます</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-b-price">単価</label>
+            <input id="sc-b-price" class="num" type="text" inputmode="decimal" value="2.15">
+          </div>
+          <div class="sc-field"><label for="sc-b-cur">通貨</label>
+            <select id="sc-b-cur">
+              <option value="USD" selected>USD・米ドル</option>
+              <option value="CNY">CNY・中国元</option>
+              <option value="JPY">JPY・日本円</option>
+              <option value="KRW">KRW・ウォン</option>
+            </select>
+          </div>
+          <div class="sc-field"><label for="sc-b-basis">単価基準</label>
+            <select id="sc-b-basis">
+              <option value="kg" selected>1 kg</option>
+              <option value="mt">1トン（MT）</option>
+              <option value="ea">1個(EA)</option>
+              <option value="pkg">1包装(bag・drum)</option>
+            </select>
+          </div>
+          <div class="sc-field"><label for="sc-b-qty">数量 <i>入力した単価基準単位</i></label>
+            <input id="sc-b-qty" class="num" type="text" inputmode="numeric" value="20000">
+          </div>
+          <div class="sc-field"><label for="sc-b-weight">総重量（kg）</label>
+            <input id="sc-b-weight" class="num" type="text" inputmode="decimal" value="20000">
+          </div>
+          <div class="sc-field"><label for="sc-b-cbm">総容積（CBM）</label>
+            <input id="sc-b-cbm" class="num" type="text" inputmode="decimal" value="32">
+            <span class="hint">コンテナ台数・LCL運賃・航空容積換算に使われます。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>輸送・保険</h3><span>輸送方法を変更すると、運賃の計算基準が変わります。</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-b-mode">輸送方法</label>
+            <select id="sc-b-mode">
+              <option value="fcl20" selected>FCL 20ft (28 CBM)</option>
+              <option value="fcl40">FCL 40ft (58 CBM)</option>
+              <option value="lcl">LCL (CBM·W/M)</option>
+              <option value="air">航空 (容積換算 167kg/CBM)</option>
+            </select>
+          </div>
+          <div class="sc-field"><label for="sc-b-freight">運賃 <i>USD / コンテナ・CBM・kg</i></label>
+            <input id="sc-b-freight" class="num" type="text" inputmode="decimal" value="2400">
+            <span class="hint" id="sc-b-freight-hint">選んだ配送方法の単位あたりの運賃です。 FCL 20ft・40ftはコンテナ1台基準。</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-ins">保険料率（％）</label>
+            <input id="sc-b-ins" class="num" type="number" inputmode="decimal" min="0" step="0.05" value="0.3">
+            <span class="hint">物品代金＋送料の0.2～0.5％が一般的です。ない場合は0。</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>為替レート・通関・国内輸送</h3><span>到着地から出るお金まで入れなければ総額が正しい</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-b-fx">適用為替レート <i>1単位通貨=？円</i></label>
+            <input id="sc-b-fx" class="num" type="text" inputmode="decimal" value="1343.9">
+            <span class="hint" id="sc-b-fx-hint">市販の為替レートをデフォルト値にします。直接修正することもできます。</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-fee">通関手数料（ウォン）</label>
+            <input id="sc-b-fee" class="num" type="text" inputmode="numeric" value="44000">
+            <span class="hint">関税士・通関代行手数料。 1件あたり3～7万ウォンが一般的です。</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-inland">国内内陸輸送（ウォン）</label>
+            <input id="sc-b-inland" class="num" type="text" inputmode="numeric" value="250000">
+            <span class="hint">釜山・仁川→倉庫。コンテナ一対基準の例です。</span>
+          </div>
+        </div>
+        <div class="sc-row-actions" style="display:flex;gap:8px;align-items:center;margin-top:11px;flex-wrap:wrap">
+          <button class="fr-btn" id="sc-b-reset" type="button" style="font-family:var(--sans);font-size:12px;font-weight:800;border:1px solid var(--ink);background:#fff;padding:7px 12px;cursor:pointer">例に戻す</button>
+          <span class="sc-table-note" style="margin:0">税は、（課税価格+関税）の10％で計算されます。個別消費税・酒税がつく品目は結果が実際と異なります。</span>
+        </div>
+      </div>
+
+      <section class="sc-out" id="sc-b-out" translate="no" aria-live="polite">
+        <div class="sc-sec-head"><h2>到着原価のまとめ</h2></div>
+        <p class="sc-table-note">金額と数量を入れるとすぐに計算されます。</p>
+      </section>
+
+      <section class="sc-hub" aria-labelledby="sc-b-hub-title">
+        <div class="sc-sec-head"><h2 id="sc-b-hub-title">供給先・物性・関税検索のショートカット</h2><span>入力した品目・CASで連結</span></div>
+        <p class="sc-hub-lead">アイテム名またはCAS番号を入れると、下のカードがその検索語で開きます。海外供給先は同じ物質も等級・包装単位が異なり単価比較が難しいため、CAS番号で先に物質を確定した後、供給先を狭める方が速いです。関税率はHS 10桁に分かれますので、UNI-PASSで直接確認してください。</p>
+        <div class="sc-qbox" id="sc-b-query"><span class="qk">クエリ</span><span class="qh">アイテム名またはCAS番号を入力すると、このクエリに直接リンクされます。</span></div>
+        <div class="sc-cards">
+          <a class="sc-link" id="sc-b-lookchem" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">LookChem</span><span class="e">Chemical suppliers</span>
+            <span class="t">CAS・品名で化学物質供給会社と規格リスト。中国系サプライヤーの割合が大きい。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-b-chemsrc" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">ChemSrc (化源网)</span><span class="e">Properties · MSDS</span>
+            <span class="t">物性・MSDS・メーカー情報。 CASで物質を確定するときに最も速いです。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-b-alibaba" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Alibaba</span><span class="e">B2B marketplace</span>
+            <span class="t">英文見積・MOQ・FOB単価確認。輸出経験のあるサプライヤーを選ぶことをお勧めします。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-b-1688" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">1688 (阿里巴巴)</span><span class="e">China domestic</span>
+            <span class="t">中国の内需卸売業者。 Alibabaより安い代わりに輸出・通関は代行が必要です。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-b-mic" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Made-in-China</span><span class="e">Chinese makers</span>
+            <span class="t">メーカーの直接取引中心。工場認証・生産能力表示が比較的詳細です。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link plain" id="sc-b-unipass" href="https://unipass.customs.go.kr/clip/index.do" target="_blank" rel="noopener noreferrer">
+            <span class="n">UNI-PASS関税法令情報ポータル</span><span class="e">HS · tariff</span>
+            <span class="t">3回・商品検索にHSコードを入れると基本税率・FTA協定税率が出ます。</span>
+            <span class="go">サイトを開く →</span>
+          </a>
+        </div>
+        <p class="sc-hub-note">各サイトの検索結果・価格は該当サイトのものであり、このページは提携や仲介なしで検索アドレスのみ連結します。サイトの構造が変わると検索できない場合がありますので、サイト内で直接検索してください。</p>
+      </section>
+
+      <aside class="sc-cta" aria-labelledby="sc-b-cta-title">
+        <span class="k">NEXT STEP · SOURCING SUPPORT</span>
+        <h3 id="sc-b-cta-title">工場交渉・サンプル検品・輸入通関の代行が必要ですか？</h3>
+        <p>この計算機で候補単価を絞ったら、次は人が実際に確かめる番です。同じ見積書でも等級・梱包・船積条件で実際の支払額は変わり、サンプル検品と書類確認で結論が分かれることが多くあります。以下はKmongで提供される有料サービスです。</p>
+        <div class="sc-cta-acts">
+          <a class="sc-cta-btn" href="https://kmong.com/gig/873859" target="_blank" rel="noopener noreferrer">
+            <span class="b1">輸入調達の単価・リスク一次診断</span>
+            <span class="b2">30万ウォンから・5日以内・Kmong</span>
+          </a>
+          <a class="sc-cta-btn" href="https://kmong.com/gig/873880" target="_blank" rel="noopener noreferrer">
+            <span class="b1">輸入契約・船積み・品質検品の一括代行</span>
+            <span class="b2">80万ウォンから・7日以内・Kmong</span>
+          </a>
+        </div>
+        <p class="sc-cta-note">価格・期間は2026年11月時点のKmong掲載内容で、変更される場合があります。このページは計算結果を根拠に相談窓口を案内するだけで、決済や契約を代行しません。</p>
+      </aside>
+    </section>
+
+    <!-- ===== B2C ===== -->
+    <section class="sc-panel" id="sc-panel-b2c" role="tabpanel" aria-labelledby="sc-tab-b2c" hidden>
+      <p class="sc-panel-lead">海外ショップで1〜2点買うときに使います。商品価格が150ドル（米国発送は200ドル）以下で自家使用の範囲なら、リスト通関となり関税・付加価値税はかかりません。超えると課税対象となり、国際配送料と保険料も課税価格に含まれます。転送手数料と韓国内の配送料を足して自宅までの金額を出します。</p>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>商品情報</h3><span>写真はプレビューのみ、サーバーに送信されません</span></div>
+        <div class="sc-grid wide">
+          <div class="sc-field full"><label for="sc-c-name">品目名・モデル名</label>
+            <input id="sc-c-name" type="text" placeholder="例：ワイヤレスイヤホン（モデル名）" autocomplete="off">
+            <span class="hint">検索カードの検索語としても使用されます。モデル名を正確に入れるほど検索が正確になります。</span>
+          </div>
+          <div class="sc-field full">
+            <span class="lbl">写真 <i>選択・ローカルプレビュー</i></span>
+            <div class="sc-photo">
+              <div class="sc-photo-drop" id="sc-c-prev"><span>写真なし</span></div>
+              <div class="sc-photo-body">
+                <input id="sc-c-photo" type="file" accept="image/*" aria-label="商品写真を選択">
+                <button class="sc-photo-clear" id="sc-c-clear" type="button">写真を消去</button>
+                <p class="sc-photo-note">写真はサーバーに送信されず、このブラウザ内でのみプレビューとして表示されます。リフレッシュすると消えます。商品を確認する必要がある場合にのみ使用してください。</p>
+              </div>
+            </div>
+          </div>
+          <div class="sc-field full"><label for="sc-c-use">用途メモ <i>計算を除外</i></label>
+            <textarea id="sc-c-use" placeholder="例: 個人使用。同モデル2本、アクセサリー付き。国内A/S可否確認。"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>価格・配送</h3><span>発送国の中から出るお金と国際送料を分けて入れる</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-c-origin">発送国</label>
+            <select id="sc-c-origin">
+              <option value="us" selected>アメリカ（免税限度200ドル）</option>
+              <option value="cn">中国・香港（150ドル）</option>
+              <option value="jp">日本（150ドル）</option>
+              <option value="eu">ヨーロッパ（150ドル）</option>
+              <option value="etc">その他（150ドル）</option>
+            </select>
+          </div>
+          <div class="sc-field"><label for="sc-c-price">商品価格</label>
+            <input id="sc-c-price" class="num" type="text" inputmode="decimal" value="89">
+          </div>
+          <div class="sc-field"><label for="sc-c-cur">通貨</label>
+            <select id="sc-c-cur">
+              <option value="USD" selected>USD・米ドル</option>
+              <option value="CNY">CNY・中国元</option>
+              <option value="JPY">JPY・日本円</option>
+              <option value="KRW">KRW・ウォン</option>
+            </select>
+          </div>
+          <div class="sc-field"><label for="sc-c-localship">現地送料</label>
+            <input id="sc-c-localship" class="num" type="text" inputmode="decimal" value="0">
+            <span class="hint">ショッピングモール→配帯地区間。物品価格に含めて判定します。</span>
+          </div>
+          <div class="sc-field"><label for="sc-c-intl">国際送料</label>
+            <input id="sc-c-intl" class="num" type="text" inputmode="decimal" value="18">
+            <span class="hint">韓国まで。免税判定では抜け、課税時に課税価格に入ります。</span>
+          </div>
+          <div class="sc-field"><label for="sc-c-ins">保険料</label>
+            <input id="sc-c-ins" class="num" type="text" inputmode="decimal" value="0">
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>配帯地・国内配送・税</h3><span>手数料と最後の区間まで入れなければ家の前の金額です</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-c-forward">排隊地・代行手数料（ウォン）</label>
+            <input id="sc-c-forward" class="num" type="text" inputmode="numeric" value="8000">
+          </div>
+          <div class="sc-field"><label for="sc-c-domestic">国内送料（ウォン）</label>
+            <input id="sc-c-domestic" class="num" type="text" inputmode="numeric" value="4000">
+          </div>
+          <div class="sc-field"><label for="sc-c-duty">関税率(%)</label>
+            <input id="sc-c-duty" class="num" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="8">
+            <span class="hint">衣類13%、靴・バッグ8%など品目によって異なります。</span>
+          </div>
+          <div class="sc-field"><label for="sc-c-fx">適用為替レート <i>1単位通貨=？円</i></label>
+            <input id="sc-c-fx" class="num" type="text" inputmode="decimal" value="1343.9">
+            <span class="hint" id="sc-c-fx-hint">市販の為替レートをデフォルト値にします。</span>
+          </div>
+          <div class="sc-field"><label for="sc-c-region">配送先市・道</label>
+            <select id="sc-c-region">
+              <option value="">選択しない</option>
+              <option value="seoul">ソウル</option>
+              <option value="busan">釜山</option>
+              <option value="daegu">大邱</option>
+              <option value="incheon">仁川</option>
+              <option value="gwangju">光州</option>
+              <option value="daejeon">大田</option>
+              <option value="ulsan">蔚山</option>
+              <option value="sejong">世宗</option>
+              <option value="gyeonggi">試合</option>
+              <option value="gangwon">江原</option>
+              <option value="chungbuk">忠北</option>
+              <option value="chungnam">忠南</option>
+              <option value="jeonbuk">全北</option>
+              <option value="jeonnam">全南</option>
+              <option value="gyeongbuk">慶北</option>
+              <option value="gyeongnam">慶南</option>
+              <option value="jeju">済州</option>
+            </select>
+            <span class="hint">通関・配送参考用です。保存しません。</span>
+          </div>
+          <div class="sc-field"><label for="sc-c-code">個人通関固有のコード <i>を選択</i></label>
+            <input id="sc-c-code" type="text" inputmode="text" placeholder="P123456789012" maxlength="13" autocomplete="off" spellcheck="false">
+            <span class="hint" id="sc-c-code-badge"><span class="sc-badge" style="display:none"></span></span>
+          </div>
+          <div class="sc-field full">
+            <div class="sc-checks">
+              <label class="sc-check"><input type="checkbox" id="sc-c-excluded">
+                <span><b>リスト通関排除品目</b> — 健康機能食品・医薬品・食品・酒類・タバコ・機能性化粧品・検疫対象農水産物・無線機器などは金額に関係なく輸入申告対象です。チェックすると課税で計算します。</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="sc-row-actions" style="display:flex;gap:8px;align-items:center;margin-top:11px;flex-wrap:wrap">
+          <button class="fr-btn" id="sc-c-reset" type="button" style="font-family:var(--sans);font-size:12px;font-weight:800;border:1px solid var(--ink);background:#fff;padding:7px 12px;cursor:pointer">例に戻す</button>
+          <span class="sc-table-note" style="margin:0">個人通関告知符号は画面内で形式のみ確認し、どこにも保存・送信しません。</span>
+        </div>
+      </div>
+
+      <section class="sc-out" id="sc-c-out" translate="no" aria-live="polite">
+        <div class="sc-sec-head"><h2>到着原価のまとめ</h2></div>
+        <p class="sc-table-note">金額を入れると免税・課税判定とともに計算されます。</p>
+      </section>
+
+      <section class="sc-hub" aria-labelledby="sc-c-hub-title">
+        <div class="sc-sec-head"><h2 id="sc-c-hub-title">海外ショッピングモール・通関確認ショートカット</h2><span>入力した商品名にリンク</span></div>
+        <p class="sc-hub-lead">のようなものも販売先によって価格と配送条件が大きく異なります。以下のカードで検索した後、支払い前に税関の見積税額を表示してもう一度税金を確認してください。免税限度は物品価格基準であり、合算課税（同日同じ販売先など）が適用されれば限度を超えることができます。</p>
+        <div class="sc-qbox" id="sc-c-query"><span class="qk">クエリ</span><span class="qh">アイテム名またはCAS番号を入力すると、このクエリに直接リンクされます。</span></div>
+        <div class="sc-cards">
+          <a class="sc-link" id="sc-c-amazon" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Amazon</span><span class="e">US · global</span>
+            <span class="t">米国発送なら免税限度が200ドル。販売者・配送国を確認してください。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-c-taobao" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Taobao (淘宝)</span><span class="e">China</span>
+            <span class="t">中国の内需価格。海外配送は代行・配帯を経なければなりません。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-c-aliexpress" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">AliExpress</span><span class="e">Global</span>
+            <span class="t">少量・単品。配送国と少曜日が商品によって異なります。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-c-rakuten" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Rakuten (楽天)</span><span class="e">Japan</span>
+            <span class="t">日本発送。円換算で為替レートによって体感価が変わります。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-c-iherb" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">iHerb</span><span class="e">Supplements</span>
+            <span class="t">健康機能食品はリスト通関排除対象であり、金額に関係なく輸入申告対象です。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link plain" href="https://www.customs.go.kr/kcs/ad/tax/BuyTaxCalculation.do" target="_blank" rel="noopener noreferrer">
+            <span class="n">関税庁の予想税額の照会</span><span class="e">Customs service</span>
+            <span class="t">お支払い前に関税庁の公式電卓で税額を再確認してください。</span>
+            <span class="go">サイトを開く →</span>
+          </a>
+          <a class="sc-link plain" href="https://unipass.customs.go.kr/csp/persIndex.do" target="_blank" rel="noopener noreferrer">
+            <span class="n">個人通関告知符号発行</span><span class="e">UNI-PASS</span>
+            <span class="t">特送リスト通関に必要です。 2026年から有効期間1年。</span>
+            <span class="go">サイトを開く →</span>
+          </a>
+        </div>
+        <p class="sc-hub-note">免税限度・排除品目は関税庁告示に変更することができます。 2026年11月時点で150ドル（米国200ドル）で、決済前に関税庁のご案内をご確認ください。</p>
+      </section>
+    </section>
+
+    <!-- ===== C2C ===== -->
+    <section class="sc-panel" id="sc-panel-c2c" role="tabpanel" aria-labelledby="sc-tab-c2c" hidden>
+      <p class="sc-panel-lead">中古・限定品・個人間取引で海外から取り寄せるときに使います。商品価格に国際配送・保険、安全決済や購入代行の手数料、韓国内の配送を足し、関税・付加価値税を計算します。自家使用の少額（150ドル、米国200ドル）は免税、転売・業務用は金額にかかわらず課税されます。</p>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>商品情報</h3><span>年式・状態は価格判断の基準となります</span></div>
+        <div class="sc-grid wide">
+          <div class="sc-field full"><label for="sc-d-name">モデル名</label>
+            <input id="sc-d-name" type="text" placeholder="例：限定版スニーカー（モデル名・カラー）" autocomplete="off">
+            <span class="hint">検索カードの検索語としても使用されます。</span>
+          </div>
+          <div class="sc-field"><label for="sc-d-cond">年式・状態</label>
+            <select id="sc-d-cond">
+              <option value="sealed" selected>未開封（箱開封前）</option>
+              <option value="new">新商品（タック・タグあり）</option>
+              <option value="used-hi">中古賞（使用感が少ない）</option>
+              <option value="used-mid">中古中</option>
+              <option value="used-low">中古ハ（使用感が大きい）</option>
+              <option value="as-is">部品・修理用</option>
+            </select>
+          </div>
+          <div class="sc-field full">
+            <span class="lbl">写真 <i>選択・ローカルプレビュー</i></span>
+            <div class="sc-photo">
+              <div class="sc-photo-drop" id="sc-d-prev"><span>写真なし</span></div>
+              <div class="sc-photo-body">
+                <input id="sc-d-photo" type="file" accept="image/*" aria-label="商品写真を選択">
+                <button class="sc-photo-clear" id="sc-d-clear" type="button">写真を消去</button>
+                <p class="sc-photo-note">写真はサーバーに送信されません。状態を記録しておきたいときだけ書いてください。</p>
+              </div>
+            </div>
+          </div>
+          <div class="sc-field full"><label for="sc-d-memo">仕様・状態メモ <i>計算を除外</i></label>
+            <textarea id="sc-d-memo" placeholder="例: 2024 年モデル、ボックスあり、未着用。サイズ270。ライセンス認証タグ付き。"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>価格・手数料</h3><span>プラットフォームごとに手数料構造が異なります</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-d-price">商品価格</label>
+            <input id="sc-d-price" class="num" type="text" inputmode="decimal" value="180">
+          </div>
+          <div class="sc-field"><label for="sc-d-cur">通貨</label>
+            <select id="sc-d-cur">
+              <option value="USD" selected>USD・米ドル</option>
+              <option value="JPY">JPY・日本円</option>
+              <option value="CNY">CNY・中国元</option>
+              <option value="KRW">KRW・ウォン</option>
+            </select>
+            <span class="hint">USDの場合は、米国の出荷として見て、免税限度200ドルを適用します。</span>
+          </div>
+          <div class="sc-field"><label for="sc-d-safe">安全決済手数料（％）</label>
+            <input id="sc-d-safe" class="num" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="0">
+            <span class="hint">エスクロー・保護決済手数料。プラットフォームが負担した場合 0.</span>
+          </div>
+          <div class="sc-field"><label for="sc-d-agency">購入代行手数料（％）</label>
+            <input id="sc-d-agency" class="num" type="number" inputmode="decimal" min="0" max="50" step="0.5" value="10">
+            <span class="hint">メルカリ・ヤフーオークションなど代行利用時。直接お支払いの場合は0.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>配送・税</h3><span>国際配送と国内配送を分割します</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-d-intl">国際送料</label>
+            <input id="sc-d-intl" class="num" type="text" inputmode="decimal" value="25">
+          </div>
+          <div class="sc-field"><label for="sc-d-ins">保険料</label>
+            <input id="sc-d-ins" class="num" type="text" inputmode="decimal" value="0">
+          </div>
+          <div class="sc-field"><label for="sc-d-domestic">国内送料（ウォン）</label>
+            <input id="sc-d-domestic" class="num" type="text" inputmode="numeric" value="4000">
+          </div>
+          <div class="sc-field"><label for="sc-d-duty">関税率(%)</label>
+            <input id="sc-d-duty" class="num" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="8">
+          </div>
+          <div class="sc-field"><label for="sc-d-fx">適用為替レート <i>1単位通貨=？円</i></label>
+            <input id="sc-d-fx" class="num" type="text" inputmode="decimal" value="1343.9">
+            <span class="hint" id="sc-d-fx-hint">市販の為替レートをデフォルト値にします。</span>
+          </div>
+          <div class="sc-field full">
+            <div class="sc-checks">
+              <label class="sc-check"><input type="checkbox" id="sc-d-business">
+                <span><b>販売・事業用（自己使用ではない）</b> - 再帰目的または事業目的の場合、少額免税は適用されません。チェックすると課税で計算します。</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="sc-row-actions" style="display:flex;gap:8px;align-items:center;margin-top:11px;flex-wrap:wrap">
+          <button class="fr-btn" id="sc-d-reset" type="button" style="font-family:var(--sans);font-size:12px;font-weight:800;border:1px solid var(--ink);background:#fff;padding:7px 12px;cursor:pointer">例に戻す</button>
+          <span class="sc-table-note" style="margin:0">中古品も輸入品ですので関税税対象です。ただし、自己使用の少額は免除される場合があります。</span>
+        </div>
+      </div>
+
+      <section class="sc-out" id="sc-d-out" translate="no" aria-live="polite">
+        <div class="sc-sec-head"><h2>到着原価のまとめ</h2></div>
+        <p class="sc-table-note">金額を入れると手数料・関税税とともに計算されます。</p>
+      </section>
+
+      <section class="sc-hub" aria-labelledby="sc-d-hub-title">
+        <div class="sc-sec-head"><h2 id="sc-d-hub-title">中古・限定版マーケット検索ショートカット</h2><span>入力したモデル名で接続</span></div>
+        <p class="sc-hub-lead">同じモデルでも状態・サイズ・構成品によって価格差が大きいです。売り手の評価と返品ポリシーを最初に見て、代理を書くときは手数料率と送料負担主体を確認してください。にんじん・稲妻会場は国内取引で関税がつきませんが、海外から持ち込んだものを取り戻す場合は異なります。</p>
+        <div class="sc-qbox" id="sc-d-query"><span class="qk">クエリ</span><span class="qh">アイテム名またはCAS番号を入力すると、このクエリに直接リンクされます。</span></div>
+        <div class="sc-cards">
+          <a class="sc-link" id="sc-d-ebay" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">eBay</span><span class="e">Global C2C</span>
+            <span class="t">アメリカ・ヨーロッパ個人販売者。配送プログラムの選択により、関税税の処理方法が異なります。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-d-mercari" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Mercari (メルカリ)</span><span class="e">Japan</span>
+            <span class="t">日本の個人間取引。海外配送は代行が必要です。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-d-stockx" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">StockX</span><span class="e">Sneakers · watches</span>
+            <span class="t">本物の検収後発送。表示価格に料金が含まれる仕組みです。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-d-daangn" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">にんじん（Daangn）</span><span class="e">Korea · local</span>
+            <span class="t">国内直取引。関税はなく、海外配送もありません。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+          <a class="sc-link" id="sc-d-bunjang" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">雷の場</span><span class="e">Korea · resale</span>
+            <span class="t">国内中古・限定版。安全決済手数料は販売者負担が一般的です。</span>
+            <span class="go">検索を開く →</span>
+          </a>
+        </div>
+        <p class="sc-hub-note">プラットフォーム手数料・配送政策は2026年11月基準の一般的な構造を書いたものであり、実際の請求はプラットフォーム案内に従います。</p>
+      </section>
+    </section>
+
+    <!-- how to read -->
+    <section class="sc-how" aria-labelledby="sc-how-title">
+      <div class="sc-sec-head"><h2 id="sc-how-title">到着原価、こう読みます</h2><span>4つのポイント</span></div>
+      <div class="sc-how-grid">
+        <div class="sc-how-card">
+          <span class="k">01</span>
+          <h3>FOBと到着コストは異なります</h3>
+          <p>FOBは、船に乗る瞬間までの価格です。ここに国際輸送・保険・関税・税金・通関・内陸輸送がついてこそ倉庫に届く実際原価となります。単価だけを比較すると、国内到着基準で順位が反転することがよくあります。</p>
+        </div>
+        <div class="sc-how-card">
+          <span class="k">02</span>
+          <h3>関税はCIFに添付されます</h3>
+          <p>課税価格は、商品代金に国際送料と保険料を加えたCIFです。運賃を低く申告すると税金は減りますが、実際と異なると過怠料・追徴リスクがあります。運賃は実際の支払額に入れてください。</p>
+        </div>
+        <div class="sc-how-card">
+          <span class="k">03</span>
+          <h3>税金は関税の上にもう一度</h3>
+          <p>税は（課税価格+関税）の10％です。関税がつくと付加税の基準金額も一緒に上がります。そのため、関税率8％の品目の実効細部談は約18.8％になります。</p>
+        </div>
+        <div class="sc-how-card">
+          <span class="k">04</span>
+          <h3>少額免税は商品価格基準</h3>
+          <p>海外直球免税判定は国際送料を差し引いた物品価格とします（発送国内の税金・内陸運賃は含む）。限度を超えると逆に国際送料・保険料まで課税価格に入ります。限度のすぐ下とすぐ上の差が大きい理由です。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sc-faq" aria-labelledby="sc-faq-title">
+      <div class="sc-sec-head"><h2 id="sc-faq-title">よくある質問</h2><span>6問</span></div>
+      <dl>
+        <dt>B2Bの計算にどのような費用を入れるべきですか？</dt>
+        <dd>供給会社見積の物品代金（FOB）、国際送料、保険料、関税率、通関手数料、国内内陸輸送です。付加税はこの電卓が自動的に貼り付けます。個別消費税・酒税・農漁村特別税がつく品目（酒類・タバコ・自動車など）は税率が上がるため、結果が実際と異なります。</dd>
+
+        <dt>リスト通関150ドル、米国200ドルは正確に何ですか？</dt>
+        <dd>自家用品が米ドル150ドル（米国から送られた物品は200ドル）以下であれば、輸入申告なくリスト通関に通関され、関税・付加税が免除されます。健康機能食品・医薬品・食品・酒類・タバコ・機能性化粧品・検疫対象農水産物・無線機器などはリスト通関排除対象であり、金額にかかわらず輸入申告を経て、この時免税限度は国家区分なく150ドルです。</dd>
+
+        <dt>個人通関告知符号を必ず入れなければなりませんか？</dt>
+        <dd>このページでは選択です。実際の特送リスト通関には必要な場合が多く、2020年12月から使用が義務化され、2026年からは有効期間1年が適用されます。入力した記号はフォーマットのみ画面で確認し、サーバーに送信または保存しません。</dd>
+
+        <dt>写真をアップロードするとどこに行きますか？</dt>
+        <dd>どこにも行きません。ブラウザ内でのみプレビューとして表示し、ページを更新すると消えます。サーバー・データベースに保存しません。</dd>
+
+        <dt>関税率はどこで確認できますか？</dt>
+        <dd>関税法令情報ポータル（UNI-PASS CLIP）の世界HS→関税率表でHSコードで確認します。同じ品目も基本税率・WTO協定税率・FTA協定税率が異なりますので、実際の適用税率を入れなければ計算が合います。品目分類が曖昧な場合は、関税士または品目分類事前審査をご利用ください。</dd>
+
+        <dt>中古・限定版も税金を払いますか？</dt>
+        <dd>輸入品であれば中古も関税税対象です。ただし、自己使用少額であれば免税することができ、販売・事業用であれば金額にかかわらず課税されます。海外プラットフォームが配送・通関を代行して税金を事前に受け取る場合には、請求書に既に含まれている可能性があるため、重複として計算しないでください。</dd>
+      </dl>
+    </section>
+
+    <p class="sc-xlink">
+      一緒に書く貿易ツール · <a href="freight.html">海上運賃・物流コスト</a> ·
+      <a href="biz.html#cost">輸入原価・関税計算</a> ·
+      <a href="biz.html#trade">貿易書式（PI・CI・PL）</a> ·
+      <a href="market.html">原材料・為替レート 市況版</a> ·
+      <a href="global.html#email">取引メールを書く</a> ·
+      <a href="ad.html#b2b">B2B 調達・原価相談</a>
+    </p>
+
+    <section class="sc-legal" aria-labelledby="sc-legal-title">
+      <h3 id="sc-legal-title">計算基準と個人情報</h3>
+      <p><b>計算範囲</b> — 入力した金額と為替レートで関税・付加税・付帯費用を加算する参考用計算機です。実際の税額は、輸入申告日の課税為替レート、確定されたHSコード、FTA適用可否、税関判断に依存します。個別消費税・住税・農漁村特別税と検査・検疫費用は含みません。</p>
+      <p><b>個人情報</b> — 入力した品目・金額・為替レート・市・道・個人通関告示符号はブラウザ内でのみ計算に使われ、サーバに転送または保存されません。写真も同様にローカルプレビュー専用で、アップロードされません。更新するとすべて消えます。</p>
+      <p><b>外部リンク</b> — 各サイトの相互・商標は当該会社の資産であり、リンクは利用者の便宜のため公式検索アドレスに連結したものです。このページはどのショッピングモール・供給先・プラットフォームとも提携したり取引を仲介しません。</p>
+    </section>
+
+    <p class="sc-disclaimer">
+      本計算機は一般的な輸入原価比較を支援する参考ツールであり、関税・通関・契約に対する法的・商業的判断に代わるものではありません。示されている例の金額は実際の価格とは無関係です。税率・免税限度・通関規定は関税庁告示に変更することができますので、決済・契約前に公式案内をご確認ください。
+    </p>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>独立系・経済調査報道リサーチ誌</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>INSIGHT BRIEF は経済・金融、貿易・原材料、AI・テックの現場をデータと取材で追う独立系リサーチ媒体です。正式なインターネット新聞の登録媒体ではなく、取材・編集5人以上などの登録要件を満たしていません。</p>
+      </div>
+      <div class="f-col">
+        <h4>セクション</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">調査報道</a></li>
+          <li><a href="index.html?cat=economy">経済・金融</a></li>
+          <li><a href="index.html?cat=trade">貿易・原材料</a></li>
+          <li><a href="market.html">市況ボード</a></li>
+          <li><a href="index.html?cat=ai">AI・テック</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>媒体</h4>
+        <ul>
+          <li><a href="about.html">紹介・編集方針</a></li>
+          <li><a href="contact.html#tip">読者からの情報</a></li>
+          <li><a href="ad.html">広告・スポンサー料金表</a></li>
+          <li><a href="ad.html#b2b">B2B 調達・原価相談</a></li>
+          <li><a href="sourcing.html">無料ツール・グローバルソーシング・到着原価計算機</a></li>
+          <li><a href="freight.html">無料ツール · 海上運賃・物流コスト</a></li>
+          <li><a href="biz.html">無料ツール · 個人事業主ツール 9 種</a></li>
+          <li><a href="market.html">無料ツール・原材料・為替相場</a></li>
+          <li><a href="feed.xml">RSS フィード</a></li>
+          <li><a href="sitemap.html">サイトマップ</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">情報提供 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">広告 hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">ソウル · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>本媒体はインターネット新聞の登録をしていない独立メディアです。記事・写真の無断転載・再配布を禁じます。協賛・広告コンテンツは「広告」と明記します。</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 独立系・経済調査報道リサーチ誌</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="リアルタイム・ブリーフィング"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>リアルタイム・ブリーフィング</h3><p>新しいレポートと市況を KakaoTalk オープンチャットと Telegram でリアルタイムに受け取れます。</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk オープンチャット</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram チャンネル</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+<div class="sc-toast" id="sc-toast" role="status" aria-live="polite"></div>
+<script src="../assets/js/monetize.js?v=20261123c" defer></script>
+<script src="../assets/js/sourcing.js?v=20261126a" defer></script>
+<script src="../assets/js/nav.js?v=20261124c"></script>
+<script src="data/i18n.fallback.js?v=20261124a"></script>
+<script src="../assets/js/i18n.js?v=20261124a"></script>
+<!-- IB:CHAT-FLOAT -->
+<script src="../assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

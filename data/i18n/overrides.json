@@ -5335,6 +5335,101 @@
    "and adds a personal-colour and silhouette reference. Trend data from the 2026 winter to 2027 early-spring runways then produces three outfits, a colour palette, fits to avoid, shopping keywords and a lookbook image — all on one screen.",
    "读出，给出个人色彩与轮廓的参考值。再用 2026 冬到 2027 初春的秀场趋势数据，在一屏内给出三套搭配、色板、应避免的版型、购物关键词和造型卡图片。",
    "読み取り、パーソナルカラーとシルエットの参考値を足します。2026年冬から2027年初春のランウェイトレンドをまとめたデータで、コーデ3セット、カラーパレット、避けたいフィット、ショッピングキーワード、ルックブック画像までを1画面で出します。"
+  ],
+  "글로벌 소싱·집 앞 도착원가": [
+   "Global sourcing & landed cost",
+   "全球采购·到手成本",
+   "グローバル調達・着地原価"
+  ],
+  "B2B·B2C·C2C 글로벌 소싱·집 앞 도착원가 계산기 | INSIGHT BRIEF": [
+   "B2B · B2C · C2C global sourcing & landed cost calculator | INSIGHT BRIEF",
+   "B2B·B2C·C2C 全球采购·到手成本计算器 | INSIGHT BRIEF",
+   "B2B·B2C·C2C グローバル調達・着地原価計算 | INSIGHT BRIEF"
+  ],
+  "원료·부품을 컨테이너로 들여오는 일부터 해외직구 한 건, 중고 거래 한 건까지 같은 질문으로 시작합니다. “집 앞까지 다 해서 얼마인가.” 품목과 수량, 운송방식만 넣으면 물품대금에 국제운송·보험·관세·부가세·통관수수료·국내운송을 더한 도착원가가 원화로 나옵니다. 해외직구는 목록통관 150달러(미국 200달러) 기준으로 면세·과세를 자동 판정합니다.": [
+   "It starts with the same question whether you are shipping raw materials in containers, buying one item overseas or trading a second-hand piece: what does it cost, all the way to my door? Enter the item, quantity and transport mode, and you get the goods value plus international freight, insurance, duty, VAT, customs fees and inland haulage as one landed cost in Korean won. For direct purchases the page also decides duty-free or taxable under Korea's 150 USD list-clearance limit (200 USD from the US).",
+   "无论是用集装箱进口原料与零部件，还是海淘一件商品、私下交易一件二手货，起点都是同一个问题：「全部送到家门口要多少钱？」填入品名、数量和运输方式，就会把货款加上国际运费、保险、关税、增值税、报关费与国内运输，折算成韩元的到手成本。海淘部分按 150 美元（美国 200 美元）目录通关限额自动判定免税或课税。",
+   "原材料・部品をコンテナで仕入れる場合も、海外通販で1点買う場合も、中古品を個人間で取引する場合も、出発点は同じ問いです。「自宅まで全部でいくらか」。品名・数量・輸送方式を入れるだけで、商品代に国際輸送費・保険・関税・付加価値税・通関手数料・国内輸送を足した着地原価をウォンで表示します。海外通貨購入は150ドル（米国発は200ドル）のリスト通関基準で免税・課税を自動判定します。"
+  ],
+  "실제 공장 협상·샘플 검수·수입 통관 대행이 필요하신가요?": [
+   "Need factory talks, sample checks or customs clearance handled for you?",
+   "需要真正与工厂谈判、验样、代办进口清关吗？",
+   "工場交渉・サンプル検品・輸入通関の代行が必要ですか？"
+  ],
+  "이 계산기로 후보 단가를 좁혔다면, 다음은 사람이 직접 확인할 차례입니다. 같은 견적서라도 등급·포장·선적 조건에 따라 실제 지불액이 달라지고, 샘플 검수와 서류 확인에서 갈리는 경우가 많습니다. 아래는 크몽에서 진행하는 유료 서비스입니다.": [
+   "Once this calculator has narrowed the candidate prices, the next step is a person checking them. Even on the same quotation the amount you actually pay moves with grade, packing and shipping terms, and sample checks and document review are where deals usually turn. The two services below run on Kmong and are paid.",
+   "用这个计算器缩小候选单价之后，下一步需要有人实地核实。同一份报价，也会因等级、包装和装运条件而改变实际付款额，验样与单证核对往往是分水岭。以下是在 Kmong 上进行的付费服务。",
+   "この計算機で候補単価を絞ったら、次は人が実際に確かめる番です。同じ見積書でも等級・梱包・船積条件で実際の支払額は変わり、サンプル検品と書類確認で結論が分かれることが多くあります。以下はKmongで提供される有料サービスです。"
+  ],
+  "수입 소싱 단가·리스크 1차 진단": [
+   "Import sourcing: unit price and risk check",
+   "进口采购单价·风险初步诊断",
+   "輸入調達の単価・リスク一次診断"
+  ],
+  "30만 원부터 · 5일 이내 · 크몽": [
+   "From ₩300,000 · within 5 days · Kmong",
+   "30 万韩元起 · 5 天内 · Kmong",
+   "30万ウォンから・5日以内・Kmong"
+  ],
+  "수입 계약·선적·품질 검수 풀 대행": [
+   "Import contract, shipping and quality inspection, end to end",
+   "进口合同·装运·质量检验全程代办",
+   "輸入契約・船積み・品質検品の一括代行"
+  ],
+  "80만 원부터 · 7일 이내 · 크몽": [
+   "From ₩800,000 · within 7 days · Kmong",
+   "80 万韩元起 · 7 天内 · Kmong",
+   "80万ウォンから・7日以内・Kmong"
+  ],
+  "가격·기간은 2026년 11월 크몽 등록 기준이며 바뀔 수 있습니다. 이 페이지는 계산 결과를 근거로 상담 창구를 연결할 뿐, 결제·계약을 대신하지 않습니다.": [
+   "Prices and turnaround are as listed on Kmong in November 2026 and may change. This page only points to a place to ask, based on your calculation; it does not take payment or make contracts.",
+   "价格与周期以 2026 年 11 月 Kmong 刊登内容为准，可能变动。本页仅依据计算结果提供咨询入口，不代为付款或签约。",
+   "価格・期間は2026年11月時点のKmong掲載内容で、変更される場合があります。このページは計算結果を根拠に相談窓口を案内するだけで、決済や契約を代行しません。"
+  ],
+  "원료·부품·대량 수입": [
+   "Raw materials, parts, bulk import",
+   "原料·零部件·大宗进口",
+   "原材料・部品・大口輸入"
+  ],
+  "해외직구·소량 구매": [
+   "Direct purchase, small orders",
+   "海淘直购·小量购买",
+   "海外通販・少額購入"
+  ],
+  "중고·한정판·개인 거래": [
+   "Second-hand, limited edition, person to person",
+   "二手·限量·个人交易",
+   "中古・限定品・個人間取引"
+  ],
+  "원료·부품·소재를 컨테이너(FCL)나 소량(LCL), 항공으로 들여올 때 씁니다. 단가와 수량, 총중량·CBM, 운송방식을 넣으면 물품대금(FOB)에 국제운송료·보험료를 더한 CIF를 만들고, 여기에 관세·부가세·통관수수료·국내 내륙운송을 얹어 집 앞 도착원가를 냅니다.": [
+   "For raw materials, parts and materials coming in by container (FCL), in small lots (LCL) or by air. Enter the unit price, quantity, gross weight, CBM and transport mode and it builds the CIF from goods value (FOB) plus international freight and insurance, then adds duty, VAT, customs fees and inland haulage to give the landed cost at your door.",
+   "用于以集装箱（FCL）、少量（LCL）或空运进口原料、零部件和材料。填入单价、数量、毛重、CBM 与运输方式，就会用货款（FOB）加上国际运费和保险费算出 CIF，再加上关税、增值税、报关费和国内内陆运输，得出到手成本。",
+   "原材料・部品・素材をコンテナ（FCL）、少量（LCL）、航空で仕入れるときに使います。単価と数量、総重量・CBM、輸送方式を入れると、商品代（FOB）に国際輸送費・保険料を足したCIFを作り、そこに関税・付加価値税・通関手数料・国内陸送を乗せて自宅までの着地原価を出します。"
+  ],
+  "해외 쇼핑몰에서 한두 개 살 때 씁니다. 물품가격이 미화 150달러(미국에서 보낸 물품은 200달러) 이하이고 자가사용 범위라면 목록통관으로 관세·부가세가 붙지 않습니다. 넘으면 국제 배송비·보험료까지 과세가격에 들어가 관세와 부가세가 붙습니다. 배대지 수수료와 국내 배송비까지 더해 집 앞 금액을 냅니다.": [
+   "For one or two items from an overseas shop. If the goods price is at or under 150 USD (200 USD for goods sent from the US) and the goods are for personal use, list clearance applies and there is no duty or VAT. Above the limit, duty and VAT apply and the customs value then includes international shipping and insurance. Forwarder fees and domestic delivery are added to give the price at your door.",
+   "用于在海外网店买一两件商品。货物价格在 150 美元以下（美国发货 200 美元以下）且属于自用时，可按目录通关，不征关税和增值税。超过限额则要课税，且国际运费和保险费也计入完税价格。再加上转运费和韩国国内配送费，得出到手价。",
+   "海外ショップで1〜2点買うときに使います。商品価格が150ドル（米国発送は200ドル）以下で自家使用の範囲なら、リスト通関となり関税・付加価値税はかかりません。超えると課税対象となり、国際配送料と保険料も課税価格に含まれます。転送手数料と韓国内の配送料を足して自宅までの金額を出します。"
+  ],
+  "중고·한정판·개인 간 거래로 해외 물건을 들여올 때 씁니다. 물품 가격에 국제배송·보험, 안전결제나 구매대행 수수료, 국내 배송을 더하고 관부가세를 계산합니다. 자가사용 소액(150달러, 미국 200달러)이면 면세로 처리되고, 판매·사업용이면 금액과 상관없이 과세됩니다.": [
+   "For second-hand, limited-edition and person-to-person purchases from abroad. Goods price plus international shipping, insurance, buyer-protection or proxy fees and domestic delivery, with duty and VAT worked out on top. Personal use at a small amount (150 USD, 200 USD from the US) is duty-free; goods for resale or business are taxable at any amount.",
+   "用于通过二手、限量或个人间交易从海外入手商品。把货款与国际运费、保险、担保支付或代购手续费、韩国国内配送相加，并计算关税与增值税。自用小额（150 美元，美国 200 美元）免税；用于转售或经营则不论金额都要课税。",
+   "中古・限定品・個人間取引で海外から取り寄せるときに使います。商品価格に国際配送・保険、安全決済や購入代行の手数料、韓国内の配送を足し、関税・付加価値税を計算します。自家使用の少額（150ドル、米国200ドル）は免税、転売・業務用は金額にかかわらず課税されます。"
+  ],
+  "FCL·LCL·항공으로 들여오는 원료와 부품의 도착원가": [
+   "Landed cost of raw materials and parts shipped by FCL, LCL or air",
+   "以 FCL·LCL·空运进口的原料与零部件的到手成本",
+   "FCL・LCL・航空で仕入れる原材料・部品の着地原価"
+  ],
+  "목록통관 면세 판정과 배대지까지 합친 집 앞 금액": [
+   "Duty-free list-clearance check plus forwarder cost, to the price at your door",
+   "含目录通关免税判定与转运费的到手价",
+   "リスト通関の免税判定と転送費まで含めた自宅までの金額"
+  ],
+  "안전결제·대행 수수료와 국제배송, 관부가세를 합산": [
+   "Protection fee, proxy fee, international shipping and duty, added up",
+   "合计担保支付·代购手续费、国际运费与关税",
+   "安全決済・代行手数料、国際配送、関税を合算"
   ]
  }
 }

@@ -12,14 +12,14 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="INSIGHT BRIEF">
 <meta property="og:title" content="海运运价·进口物流成本计算器 — 3~4家船公司一次比完 | INSIGHT BRIEF">
-<meta property="og:description" content="如果加上O/F、BAF、目的地杂费、内陆运输、清关费用，立即比较各船公司的物流总成本、最低价差、每吨单价。包括韩国和台湾船公司报价中心。">
+<meta property="og:description" content="O/F·BAF·도착지 부대비용·내륙운송·통관수수료를 넣으면 선사별 총 물류비와 최저가 차액, 톤당 단가를 바로 비교합니다. 한국계·대만계 선사 견적 허브 포함.">
 <meta property="og:url" content="https://insightbriefnews.com/zh/freight.html">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
 <meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="海运/进口物流成本（卸岸成本）对比计算器">
-<meta name="twitter:description" content="以韩元和美元为单位并列比较 3 至 4 家船公司的进口物流总成本。自动计算最低价、差价、每吨单价。">
+<meta name="twitter:title" content="해상운임·수입물류비(Landing Cost) 비교 계산기">
+<meta name="twitter:description" content="선사 3~4곳의 총 수입물류비를 원화·달러로 나란히 비교. 최저가·차액·톤당 단가 자동 계산.">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -121,6 +121,7 @@
         <div class="nav-panel" id="nav-trade" role="group" aria-label="贸易·采购·行情">
           <a href="biz.html#trade" data-nav-key="tdoc">贸易单据 (PI·CI·PL)</a>
           <a href="freight.html" data-nav-key="freight" class="is-active" aria-current="page">海运运价·物流成本</a>
+          <a href="sourcing.html" data-nav-key="sourcing">全球采购·到岸成本计算</a>
           <a href="market.html" data-nav-key="market">原材料·汇率行情板</a>
           <a href="global.html#portal" data-nav-key="portal">采购厅·企业验证门户</a>
           <a href="global.html#email" data-nav-key="email">贸易邮件撰写</a>
@@ -182,7 +183,7 @@
     <!-- 공통 조건 -->
     <section class="fr-cond" aria-labelledby="fr-cond-title">
       <div class="fr-cond-head">
-        <h2 id="fr-cond-title">常见条件</h2>
+        <h2 id="fr-cond-title">공통 조건</h2>
         <p>起运港、集装箱规格、汇率与重量对所有船公司同样适用。</p>
       </div>
       <div id="fr-global"></div>
@@ -211,7 +212,7 @@
     <!-- 결과 -->
     <section class="fr-out" id="fr-out" aria-labelledby="fr-out-title" aria-live="polite" translate="no">
       <div class="fr-sec-head">
-        <h2 id="fr-out-title">比较结果</h2>
+        <h2 id="fr-out-title">비교 결과</h2>
         <span id="fr-out-note"></span>
       </div>
       <div id="fr-summary"></div>

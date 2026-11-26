@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>B2B·B2C·C2C 글로벌 소싱·집 앞 도착원가 계산기 | INSIGHT BRIEF</title>
+<meta name="description" content="원료·부품 대량 수입(B2B), 해외직구(B2C), 중고·한정판 직거래(C2C)를 한 화면에서. 품목·수량·운송방식만 넣으면 관세·부가세·통관수수료·국내운송까지 더한 집 앞 도착원가를 원화로 계산합니다. 목록통관 150달러(미국 200달러) 면세 판정, LookChem·ChemSrc·Alibaba·1688·Amazon·타오바오·eBay·메루카리 검색 바로가기 포함.">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/sourcing.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:title" content="B2B·B2C·C2C 글로벌 소싱·집 앞 도착원가 계산기">
+<meta property="og:description" content="품목·수량·운송방식만 넣으면 관세·부가세·통관·내륙운송까지 더한 도착원가가 나옵니다. 해외직구 목록통관 150달러(미국 200달러) 판정과 글로벌 소싱 검색 바로가기를 함께.">
+<meta property="og:url" content="https://insightbriefnews.com/sourcing.html">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="B2B·B2C·C2C 글로벌 소싱·도착원가 계산기">
+<meta name="twitter:description" content="관세·부가세·통관·내륙운송까지 더한 집 앞 도착원가. 목록통관 150달러(미국 200달러) 판정 포함.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="assets/css/monetize.css?v=20261123m">
+<link rel="stylesheet" href="assets/css/sourcing.css?v=20261126a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Global sourcing and landed cost calculator (B2B, B2C, C2C)",
+  "url": "https://insightbriefnews.com/sourcing.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "Free landed cost calculator for bulk imports (B2B), overseas direct purchases (B2C) and second-hand or limited-edition trades (C2C). Enter item, quantity and transport mode to get duty, VAT, customs fees and inland haulage added into one delivered cost in KRW, with Korea's 150 USD (200 USD from the US) list-clearance duty-free check and shortcuts to chemical, sourcing and marketplace search.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<link rel="stylesheet" href="assets/css/nav.css?v=20261125a">
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/sourcing.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/sourcing.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/sourcing.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/sourcing.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/sourcing.html">
+<link rel="stylesheet" href="assets/css/i18n.css?v=20261124a">
+<script src="assets/js/i18n.js?v=20261124a" defer></script>
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tool">
+<a class="skip" href="#main">본문 바로가기</a>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026년 11월 26일 목요일</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="sourcing.html" hreflang="ko" lang="ko" class="is-on" aria-current="true">KO</a><a href="en/sourcing.html" hreflang="en" lang="en">EN</a><a href="zh/sourcing.html" hreflang="zh-Hans" lang="zh-Hans">ZH</a><a href="ja/sourcing.html" hreflang="ja" lang="ja">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">독립 경제·탐사 리서치 웹진</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF 홈으로">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>인사이트 브리프</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>숫자 뒤의 맥락을 읽습니다</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">제보하기</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">주간 브리핑 구독</a>
+        <button class="icon-btn search-toggle" type="button" aria-label="검색 열기" aria-expanded="false" aria-controls="search-mobile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">뉴스·리포트<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="뉴스·리포트">
+          <a href="index.html" data-nav-key="all">전체 기사</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI·테크</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">경제·금융</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">무역·원자재</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">재난·안전</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">주간 탐사보도</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">무역·조달·시황<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="무역·조달·시황">
+          <a href="biz.html#trade" data-nav-key="tdoc">무역서식 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">해상운임·물류비 비교</a>
+          <a href="sourcing.html" data-nav-key="sourcing" class="is-active" aria-current="page">글로벌 소싱·도착원가 계산기</a>
+          <a href="market.html" data-nav-key="market">원자재·환율 시황판</a>
+          <a href="global.html#portal" data-nav-key="portal">조달청·기업검증 포털</a>
+          <a href="global.html#email" data-nav-key="email">무역 이메일</a>
+          <a href="global.html#trip" data-nav-key="trip">출장 허브</a>
+          <a href="biz.html#cost" data-nav-key="cost">마진·원가·자금 계산기</a>
+          <a href="seller.html" data-nav-key="seller">셀러·마케터 툴</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">글로벌 전시회 캘린더</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">세무·법률·생활<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="세무·법률·생활">
+          <a href="tax.html" data-nav-key="tax">세금·연봉·건보 계산기</a>
+          <a href="salary.html" data-nav-key="salary">급여·최저임금·4대보험</a>
+          <a href="insurance.html" data-nav-key="insurance">실손·자동차보험 계산기</a>
+          <a href="law.html" data-nav-key="law">법률·계약서·내용증명</a>
+          <a href="forms.html" data-nav-key="forms">서식·전자서명 138종</a>
+          <a href="saju.html" data-nav-key="saju">무료 만세력·신년운세</a>
+          <a href="lotto.html" data-nav-key="lotto">로또 번호 생성기</a>
+          <a href="music.html" data-nav-key="music">AI 음악·가사 생성기</a>
+          <a href="style.html" data-nav-key="style">패션·스타일 추천</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">안내·사이트맵<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="안내·사이트맵">
+          <a href="sitemap.html" data-nav-key="sitemap">사이트맵</a>
+          <a href="about.html" data-nav-key="about">매체 소개</a>
+          <a href="ad.html" data-nav-key="ad">광고·제휴</a>
+          <a href="contact.html" data-nav-key="contact">제보·문의</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="키워드로 검색" aria-label="기사 검색" autocomplete="off">
+    </form>
+  </div>
+</div>
+<div class="search-mobile" id="search-mobile" hidden>
+  <form class="search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+    <input type="search" name="q" placeholder="키워드로 검색" aria-label="기사 검색" autocomplete="off">
+  </form>
+</div>
+
+<main id="main" class="sc-main">
+  <div class="container sc-wrap">
+
+    <div class="sc-head">
+      <span class="kicker">FREE TOOL · GLOBAL SOURCING</span>
+      <h1>B2B · B2C · C2C<br>글로벌 소싱·집 앞 도착원가</h1>
+      <p class="dek">원료·부품을 컨테이너로 들여오는 일부터 해외직구 한 건, 중고 거래 한 건까지 같은 질문으로 시작합니다. “집 앞까지 다 해서 얼마인가.” 품목과 수량, 운송방식만 넣으면 물품대금에 국제운송·보험·관세·부가세·통관수수료·국내운송을 더한 도착원가가 원화로 나옵니다. 해외직구는 목록통관 150달러(미국 200달러) 기준으로 면세·과세를 자동 판정합니다.</p>
+      <div class="sc-badges">
+        <span>무료</span><span>회원가입 없음</span><span>입력값 서버 전송 없음</span><span>사진은 브라우저 안에서만</span><span>3가지 거래 유형</span><span>환율 자동 반영</span>
+      </div>
+    </div>
+
+    <div class="sc-tabs" role="tablist" aria-label="거래 유형">
+      <button class="sc-tab" type="button" role="tab" id="sc-tab-b2b" data-tab="b2b" aria-selected="true" aria-controls="sc-panel-b2b" tabindex="0">
+        <span class="t-code">B2B · BULK IMPORT</span>
+        <span class="t-name">원료·부품·대량 수입</span>
+        <span class="t-desc">FCL·LCL·항공으로 들여오는 원료와 부품의 도착원가</span>
+      </button>
+      <button class="sc-tab" type="button" role="tab" id="sc-tab-b2c" data-tab="b2c" aria-selected="false" aria-controls="sc-panel-b2c" tabindex="-1">
+        <span class="t-code">B2C · DIRECT PURCHASE</span>
+        <span class="t-name">해외직구·소량 구매</span>
+        <span class="t-desc">목록통관 면세 판정과 배대지까지 합친 집 앞 금액</span>
+      </button>
+      <button class="sc-tab" type="button" role="tab" id="sc-tab-c2c" data-tab="c2c" aria-selected="false" aria-controls="sc-panel-c2c" tabindex="-1">
+        <span class="t-code">C2C · SECOND-HAND</span>
+        <span class="t-name">중고·한정판·개인 거래</span>
+        <span class="t-desc">안전결제·대행 수수료와 국제배송, 관부가세를 합산</span>
+      </button>
+    </div>
+
+    <!-- ===== B2B ===== -->
+    <section class="sc-panel" id="sc-panel-b2b" role="tabpanel" aria-labelledby="sc-tab-b2b">
+      <p class="sc-panel-lead">원료·부품·소재를 컨테이너(FCL)나 소량(LCL), 항공으로 들여올 때 씁니다. 단가와 수량, 총중량·CBM, 운송방식을 넣으면 물품대금(FOB)에 국제운송료·보험료를 더한 CIF를 만들고, 여기에 관세·부가세·통관수수료·국내 내륙운송을 얹어 집 앞 도착원가를 냅니다.</p>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>물품 정보</h3><span>CAS·HS 코드는 검색과 관세율 확인에 씁니다</span></div>
+        <div class="sc-grid wide">
+          <div class="sc-field full"><label for="sc-b-name">품목명</label>
+            <input id="sc-b-name" type="text" placeholder="예: 폴리카보네이트(PC) 재생펠릿" autocomplete="off">
+            <span class="hint">검색 카드의 검색어로도 쓰입니다. 영문 품명을 함께 적으면 해외 공급처 검색이 잘 됩니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-cas">CAS 번호 <i>선택</i></label>
+            <input id="sc-b-cas" type="text" placeholder="예: 9003-53-6" autocomplete="off" spellcheck="false">
+            <span class="hint">화학물질이면 CAS가 가장 정확한 검색어입니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-hs">HS 코드 <i>선택</i></label>
+            <input id="sc-b-hs" type="text" placeholder="예: 3907.40-0000" autocomplete="off" spellcheck="false">
+            <span class="hint">관세율은 HS 10자리로 갈립니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-duty">관세율 (%)</label>
+            <input id="sc-b-duty" class="num" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="6.5">
+            <span class="hint">기본세율·FTA 협정세율 중 실제 적용되는 세율을 넣으세요.</span>
+          </div>
+          <div class="sc-field full"><label for="sc-b-memo">스펙·용도 메모 <i>계산 제외</i></label>
+            <textarea id="sc-b-memo" placeholder="예: PC 재생펠릿, MFI 12, 등급 A, 사출용. MSDS·TDS 확인 필요. 샘플 25kg 별도."></textarea>
+            <span class="hint">메모는 계산에 쓰이지 않고 검색어에도 들어가지 않습니다. 견적 요청서에 옮겨 적기 좋게 남겨 두세요.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>가격·수량</h3><span>단가 기준 단위와 총중량·CBM을 따로 넣습니다</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-b-price">단가</label>
+            <input id="sc-b-price" class="num" type="text" inputmode="decimal" value="2.15">
+          </div>
+          <div class="sc-field"><label for="sc-b-cur">통화</label>
+            <select id="sc-b-cur">
+              <option value="USD" selected>USD · 미국 달러</option>
+              <option value="CNY">CNY · 중국 위안</option>
+              <option value="JPY">JPY · 일본 엔</option>
+              <option value="KRW">KRW · 원</option>
+            </select>
+          </div>
+          <div class="sc-field"><label for="sc-b-basis">단가 기준</label>
+            <select id="sc-b-basis">
+              <option value="kg" selected>1 kg</option>
+              <option value="mt">1 톤(MT)</option>
+              <option value="ea">1 개(EA)</option>
+              <option value="pkg">1 포장(bag·drum)</option>
+            </select>
+          </div>
+          <div class="sc-field"><label for="sc-b-qty">수량 <i>입력한 단가 기준 단위</i></label>
+            <input id="sc-b-qty" class="num" type="text" inputmode="numeric" value="20000">
+          </div>
+          <div class="sc-field"><label for="sc-b-weight">총중량 (kg)</label>
+            <input id="sc-b-weight" class="num" type="text" inputmode="decimal" value="20000">
+          </div>
+          <div class="sc-field"><label for="sc-b-cbm">총 용적 (CBM)</label>
+            <input id="sc-b-cbm" class="num" type="text" inputmode="decimal" value="32">
+            <span class="hint">컨테이너 대수·LCL 운임·항공 용적환산에 쓰입니다.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>운송·보험</h3><span>운송방식을 바꾸면 운임 계산 기준이 바뀝니다</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-b-mode">운송 방식</label>
+            <select id="sc-b-mode">
+              <option value="fcl20" selected>FCL 20ft (28 CBM)</option>
+              <option value="fcl40">FCL 40ft (58 CBM)</option>
+              <option value="lcl">LCL (CBM·W/M)</option>
+              <option value="air">항공 (용적환산 167kg/CBM)</option>
+            </select>
+          </div>
+          <div class="sc-field"><label for="sc-b-freight">운임 <i>USD / 컨테이너·CBM·kg</i></label>
+            <input id="sc-b-freight" class="num" type="text" inputmode="decimal" value="2400">
+            <span class="hint" id="sc-b-freight-hint">고른 운송 방식의 단위당 운임입니다. FCL 20ft·40ft는 컨테이너 1대 기준.</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-ins">보험료율 (%)</label>
+            <input id="sc-b-ins" class="num" type="number" inputmode="decimal" min="0" step="0.05" value="0.3">
+            <span class="hint">물품대금+운송료의 0.2~0.5%가 흔합니다. 안 들면 0.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>환율·통관·국내운송</h3><span>도착지에서 나가는 돈까지 넣어야 총액이 맞습니다</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-b-fx">적용 환율 <i>1 단위통화 = ? 원</i></label>
+            <input id="sc-b-fx" class="num" type="text" inputmode="decimal" value="1343.9">
+            <span class="hint" id="sc-b-fx-hint">시황판 환율을 기본값으로 넣습니다. 직접 고쳐도 됩니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-fee">통관수수료 (원)</label>
+            <input id="sc-b-fee" class="num" type="text" inputmode="numeric" value="44000">
+            <span class="hint">관세사·통관대행 수수료. 건당 3~7만 원이 흔합니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-b-inland">국내 내륙운송 (원)</label>
+            <input id="sc-b-inland" class="num" type="text" inputmode="numeric" value="250000">
+            <span class="hint">부산·인천 → 창고. 컨테이너 1대 기준 예시값입니다.</span>
+          </div>
+        </div>
+        <div class="sc-row-actions" style="display:flex;gap:8px;align-items:center;margin-top:11px;flex-wrap:wrap">
+          <button class="fr-btn" id="sc-b-reset" type="button" style="font-family:var(--sans);font-size:12px;font-weight:800;border:1px solid var(--ink);background:#fff;padding:7px 12px;cursor:pointer">예시값으로 되돌리기</button>
+          <span class="sc-table-note" style="margin:0">부가세는 (과세가격+관세)의 10%로 계산합니다. 개별소비세·주세가 붙는 품목은 결과가 실제와 달라집니다.</span>
+        </div>
+      </div>
+
+      <section class="sc-out" id="sc-b-out" translate="no" aria-live="polite">
+        <div class="sc-sec-head"><h2>도착원가 요약</h2></div>
+        <p class="sc-table-note">금액과 수량을 넣으면 바로 계산됩니다.</p>
+      </section>
+
+      <section class="sc-hub" aria-labelledby="sc-b-hub-title">
+        <div class="sc-sec-head"><h2 id="sc-b-hub-title">공급처·물성·관세 검색 바로가기</h2><span>입력한 품목·CAS로 연결</span></div>
+        <p class="sc-hub-lead">품목명이나 CAS 번호를 넣으면 아래 카드가 그 검색어로 열립니다. 해외 공급처는 같은 물질도 등급·포장 단위가 달라 단가 비교가 어렵기 때문에, CAS 번호로 먼저 물질을 확정한 뒤 공급처를 좁히는 편이 빠릅니다. 관세율은 HS 10자리로 갈리므로 UNI-PASS에서 직접 확인하세요.</p>
+        <div class="sc-qbox" id="sc-b-query"><span class="qk">검색어</span><span class="qh">품목명이나 CAS 번호를 넣으면 이 검색어로 바로 연결됩니다.</span></div>
+        <div class="sc-cards">
+          <a class="sc-link" id="sc-b-lookchem" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">LookChem</span><span class="e">Chemical suppliers</span>
+            <span class="t">CAS·품명으로 화학물질 공급사와 규격 목록. 중국계 공급사 비중이 큽니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-b-chemsrc" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">ChemSrc (化源网)</span><span class="e">Properties · MSDS</span>
+            <span class="t">물성·MSDS·제조사 정보. CAS로 물질을 확정할 때 가장 빠릅니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-b-alibaba" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Alibaba</span><span class="e">B2B marketplace</span>
+            <span class="t">영문 견적·MOQ·FOB 단가 확인. 수출 경험이 있는 공급사를 고르기 좋습니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-b-1688" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">1688 (阿里巴巴)</span><span class="e">China domestic</span>
+            <span class="t">중국 내수 도매가. Alibaba보다 싼 대신 수출·통관은 대행이 필요합니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-b-mic" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Made-in-China</span><span class="e">Chinese makers</span>
+            <span class="t">제조사 직거래 위주. 공장 인증·생산능력 표시가 비교적 자세합니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link plain" id="sc-b-unipass" href="https://unipass.customs.go.kr/clip/index.do" target="_blank" rel="noopener noreferrer">
+            <span class="n">UNI-PASS 관세법령정보포털</span><span class="e">HS · tariff</span>
+            <span class="t">세번·상품검색에 HS 코드를 넣으면 기본세율·FTA 협정세율이 나옵니다.</span>
+            <span class="go">사이트 열기 →</span>
+          </a>
+        </div>
+        <p class="sc-hub-note">각 사이트의 검색 결과·가격은 해당 사이트의 것이며, 이 페이지는 제휴나 중개 없이 검색 주소만 연결합니다. 사이트 구조가 바뀌면 검색이 안 될 수 있으니 그때는 사이트 안에서 직접 검색하세요.</p>
+      </section>
+
+      <aside class="sc-cta" aria-labelledby="sc-b-cta-title">
+        <span class="k">NEXT STEP · SOURCING SUPPORT</span>
+        <h3 id="sc-b-cta-title">실제 공장 협상·샘플 검수·수입 통관 대행이 필요하신가요?</h3>
+        <p>이 계산기로 후보 단가를 좁혔다면, 다음은 사람이 직접 확인할 차례입니다. 같은 견적서라도 등급·포장·선적 조건에 따라 실제 지불액이 달라지고, 샘플 검수와 서류 확인에서 갈리는 경우가 많습니다. 아래는 크몽에서 진행하는 유료 서비스입니다.</p>
+        <div class="sc-cta-acts">
+          <a class="sc-cta-btn" href="https://kmong.com/gig/873859" target="_blank" rel="noopener noreferrer">
+            <span class="b1">수입 소싱 단가·리스크 1차 진단</span>
+            <span class="b2">30만 원부터 · 5일 이내 · 크몽</span>
+          </a>
+          <a class="sc-cta-btn" href="https://kmong.com/gig/873880" target="_blank" rel="noopener noreferrer">
+            <span class="b1">수입 계약·선적·품질 검수 풀 대행</span>
+            <span class="b2">80만 원부터 · 7일 이내 · 크몽</span>
+          </a>
+        </div>
+        <p class="sc-cta-note">가격·기간은 2026년 11월 크몽 등록 기준이며 바뀔 수 있습니다. 이 페이지는 계산 결과를 근거로 상담 창구를 연결할 뿐, 결제·계약을 대신하지 않습니다.</p>
+      </aside>
+    </section>
+
+    <!-- ===== B2C ===== -->
+    <section class="sc-panel" id="sc-panel-b2c" role="tabpanel" aria-labelledby="sc-tab-b2c" hidden>
+      <p class="sc-panel-lead">해외 쇼핑몰에서 한두 개 살 때 씁니다. 물품가격이 미화 150달러(미국에서 보낸 물품은 200달러) 이하이고 자가사용 범위라면 목록통관으로 관세·부가세가 붙지 않습니다. 넘으면 국제 배송비·보험료까지 과세가격에 들어가 관세와 부가세가 붙습니다. 배대지 수수료와 국내 배송비까지 더해 집 앞 금액을 냅니다.</p>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>물품 정보</h3><span>사진은 미리보기 전용, 서버로 보내지 않습니다</span></div>
+        <div class="sc-grid wide">
+          <div class="sc-field full"><label for="sc-c-name">품목명·모델명</label>
+            <input id="sc-c-name" type="text" placeholder="예: 무선 이어폰 (모델명)" autocomplete="off">
+            <span class="hint">검색 카드의 검색어로도 쓰입니다. 모델명을 정확히 넣을수록 검색이 정확합니다.</span>
+          </div>
+          <div class="sc-field full">
+            <span class="lbl">사진 <i>선택 · 로컬 미리보기</i></span>
+            <div class="sc-photo">
+              <div class="sc-photo-drop" id="sc-c-prev"><span>사진 없음</span></div>
+              <div class="sc-photo-body">
+                <input id="sc-c-photo" type="file" accept="image/*" aria-label="상품 사진 선택">
+                <button class="sc-photo-clear" id="sc-c-clear" type="button">사진 지우기</button>
+                <p class="sc-photo-note">사진은 서버로 전송되지 않고 이 브라우저 안에서만 미리보기로 보입니다. 새로고침하면 사라집니다. 상품을 확인해야 할 때만 쓰세요.</p>
+              </div>
+            </div>
+          </div>
+          <div class="sc-field full"><label for="sc-c-use">용도 메모 <i>계산 제외</i></label>
+            <textarea id="sc-c-use" placeholder="예: 개인 사용. 같은 모델 2개, 액세서리 포함. 국내 A/S 가능 여부 확인."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>가격·배송</h3><span>발송국 안에서 나가는 돈과 국제 배송비를 나눠 넣습니다</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-c-origin">발송 국가</label>
+            <select id="sc-c-origin">
+              <option value="us" selected>미국 (면세 한도 200달러)</option>
+              <option value="cn">중국·홍콩 (150달러)</option>
+              <option value="jp">일본 (150달러)</option>
+              <option value="eu">유럽 (150달러)</option>
+              <option value="etc">그 외 (150달러)</option>
+            </select>
+          </div>
+          <div class="sc-field"><label for="sc-c-price">물품 가격</label>
+            <input id="sc-c-price" class="num" type="text" inputmode="decimal" value="89">
+          </div>
+          <div class="sc-field"><label for="sc-c-cur">통화</label>
+            <select id="sc-c-cur">
+              <option value="USD" selected>USD · 미국 달러</option>
+              <option value="CNY">CNY · 중국 위안</option>
+              <option value="JPY">JPY · 일본 엔</option>
+              <option value="KRW">KRW · 원</option>
+            </select>
+          </div>
+          <div class="sc-field"><label for="sc-c-localship">현지 배송비</label>
+            <input id="sc-c-localship" class="num" type="text" inputmode="decimal" value="0">
+            <span class="hint">쇼핑몰 → 배대지 구간. 물품가격에 포함해 판정합니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-c-intl">국제 배송비</label>
+            <input id="sc-c-intl" class="num" type="text" inputmode="decimal" value="18">
+            <span class="hint">한국까지. 면세 판정에서는 빠지고, 과세 시 과세가격에 들어갑니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-c-ins">보험료</label>
+            <input id="sc-c-ins" class="num" type="text" inputmode="decimal" value="0">
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>배대지·국내 배송·세금</h3><span>수수료와 마지막 구간까지 넣어야 집 앞 금액입니다</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-c-forward">배대지·대행 수수료 (원)</label>
+            <input id="sc-c-forward" class="num" type="text" inputmode="numeric" value="8000">
+          </div>
+          <div class="sc-field"><label for="sc-c-domestic">국내 배송비 (원)</label>
+            <input id="sc-c-domestic" class="num" type="text" inputmode="numeric" value="4000">
+          </div>
+          <div class="sc-field"><label for="sc-c-duty">관세율 (%)</label>
+            <input id="sc-c-duty" class="num" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="8">
+            <span class="hint">의류 13%, 신발·가방 8% 등 품목마다 다릅니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-c-fx">적용 환율 <i>1 단위통화 = ? 원</i></label>
+            <input id="sc-c-fx" class="num" type="text" inputmode="decimal" value="1343.9">
+            <span class="hint" id="sc-c-fx-hint">시황판 환율을 기본값으로 넣습니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-c-region">배송지 시·도</label>
+            <select id="sc-c-region">
+              <option value="">선택 안 함</option>
+              <option value="seoul">서울</option>
+              <option value="busan">부산</option>
+              <option value="daegu">대구</option>
+              <option value="incheon">인천</option>
+              <option value="gwangju">광주</option>
+              <option value="daejeon">대전</option>
+              <option value="ulsan">울산</option>
+              <option value="sejong">세종</option>
+              <option value="gyeonggi">경기</option>
+              <option value="gangwon">강원</option>
+              <option value="chungbuk">충북</option>
+              <option value="chungnam">충남</option>
+              <option value="jeonbuk">전북</option>
+              <option value="jeonnam">전남</option>
+              <option value="gyeongbuk">경북</option>
+              <option value="gyeongnam">경남</option>
+              <option value="jeju">제주</option>
+            </select>
+            <span class="hint">통관·배송 참고용입니다. 저장하지 않습니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-c-code">개인통관고유부호 <i>선택</i></label>
+            <input id="sc-c-code" type="text" inputmode="text" placeholder="P123456789012" maxlength="13" autocomplete="off" spellcheck="false">
+            <span class="hint" id="sc-c-code-badge"><span class="sc-badge" style="display:none"></span></span>
+          </div>
+          <div class="sc-field full">
+            <div class="sc-checks">
+              <label class="sc-check"><input type="checkbox" id="sc-c-excluded">
+                <span><b>목록통관 배제 품목</b> — 건강기능식품·의약품·식품·주류·담배·기능성 화장품·검역대상 농수산물·무선기기 등은 금액과 상관없이 수입신고 대상입니다. 체크하면 과세로 계산합니다.</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="sc-row-actions" style="display:flex;gap:8px;align-items:center;margin-top:11px;flex-wrap:wrap">
+          <button class="fr-btn" id="sc-c-reset" type="button" style="font-family:var(--sans);font-size:12px;font-weight:800;border:1px solid var(--ink);background:#fff;padding:7px 12px;cursor:pointer">예시값으로 되돌리기</button>
+          <span class="sc-table-note" style="margin:0">개인통관고유부호는 화면 안에서 형식만 확인하며 어디에도 저장·전송하지 않습니다.</span>
+        </div>
+      </div>
+
+      <section class="sc-out" id="sc-c-out" translate="no" aria-live="polite">
+        <div class="sc-sec-head"><h2>도착원가 요약</h2></div>
+        <p class="sc-table-note">금액을 넣으면 면세·과세 판정과 함께 계산됩니다.</p>
+      </section>
+
+      <section class="sc-hub" aria-labelledby="sc-c-hub-title">
+        <div class="sc-sec-head"><h2 id="sc-c-hub-title">해외 쇼핑몰·통관 확인 바로가기</h2><span>입력한 품목명으로 연결</span></div>
+        <p class="sc-hub-lead">같은 물건도 판매처에 따라 가격과 배송 조건이 크게 다릅니다. 아래 카드에서 검색한 뒤, 결제 전에 관세청 예상세액 조회로 세금을 한 번 더 확인하세요. 면세 한도는 물품가격 기준이고, 합산과세(같은 날 같은 판매처 등)가 적용되면 한도를 넘길 수 있습니다.</p>
+        <div class="sc-qbox" id="sc-c-query"><span class="qk">검색어</span><span class="qh">품목명이나 CAS 번호를 넣으면 이 검색어로 바로 연결됩니다.</span></div>
+        <div class="sc-cards">
+          <a class="sc-link" id="sc-c-amazon" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Amazon</span><span class="e">US · global</span>
+            <span class="t">미국 발송이면 면세 한도가 200달러. 판매자·배송국을 확인하세요.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-c-taobao" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Taobao (淘宝)</span><span class="e">China</span>
+            <span class="t">중국 내수 가격. 해외 배송은 대행·배대지를 거쳐야 합니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-c-aliexpress" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">AliExpress</span><span class="e">Global</span>
+            <span class="t">소량·단품. 배송국과 소요일이 상품마다 다릅니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-c-rakuten" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Rakuten (楽天)</span><span class="e">Japan</span>
+            <span class="t">일본 발송. 엔화 결제라 환율에 따라 체감가가 달라집니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-c-iherb" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">iHerb</span><span class="e">Supplements</span>
+            <span class="t">건강기능식품은 목록통관 배제 대상이라 금액과 상관없이 수입신고 대상입니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link plain" href="https://www.customs.go.kr/kcs/ad/tax/BuyTaxCalculation.do" target="_blank" rel="noopener noreferrer">
+            <span class="n">관세청 예상세액 조회</span><span class="e">Customs service</span>
+            <span class="t">결제 전 관세청 공식 계산기로 세액을 다시 확인하세요.</span>
+            <span class="go">사이트 열기 →</span>
+          </a>
+          <a class="sc-link plain" href="https://unipass.customs.go.kr/csp/persIndex.do" target="_blank" rel="noopener noreferrer">
+            <span class="n">개인통관고유부호 발급</span><span class="e">UNI-PASS</span>
+            <span class="t">특송 목록통관에 필요합니다. 2026년부터 유효기간 1년.</span>
+            <span class="go">사이트 열기 →</span>
+          </a>
+        </div>
+        <p class="sc-hub-note">면세 한도·배제 품목은 관세청 고시로 바뀔 수 있습니다. 2026년 11월 기준 150달러(미국 200달러)이며, 결제 전 관세청 안내를 확인하세요.</p>
+      </section>
+    </section>
+
+    <!-- ===== C2C ===== -->
+    <section class="sc-panel" id="sc-panel-c2c" role="tabpanel" aria-labelledby="sc-tab-c2c" hidden>
+      <p class="sc-panel-lead">중고·한정판·개인 간 거래로 해외 물건을 들여올 때 씁니다. 물품 가격에 국제배송·보험, 안전결제나 구매대행 수수료, 국내 배송을 더하고 관부가세를 계산합니다. 자가사용 소액(150달러, 미국 200달러)이면 면세로 처리되고, 판매·사업용이면 금액과 상관없이 과세됩니다.</p>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>물품 정보</h3><span>연식·상태는 가격 판단의 기준이 됩니다</span></div>
+        <div class="sc-grid wide">
+          <div class="sc-field full"><label for="sc-d-name">모델명</label>
+            <input id="sc-d-name" type="text" placeholder="예: 한정판 스니커즈 (모델명·컬러)" autocomplete="off">
+            <span class="hint">검색 카드의 검색어로도 쓰입니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-d-cond">연식·상태</label>
+            <select id="sc-d-cond">
+              <option value="sealed" selected>미개봉 (박스 개봉 전)</option>
+              <option value="new">새상품 (택·태그 있음)</option>
+              <option value="used-hi">중고 상 (사용감 적음)</option>
+              <option value="used-mid">중고 중</option>
+              <option value="used-low">중고 하 (사용감 큼)</option>
+              <option value="as-is">부품·수리용</option>
+            </select>
+          </div>
+          <div class="sc-field full">
+            <span class="lbl">사진 <i>선택 · 로컬 미리보기</i></span>
+            <div class="sc-photo">
+              <div class="sc-photo-drop" id="sc-d-prev"><span>사진 없음</span></div>
+              <div class="sc-photo-body">
+                <input id="sc-d-photo" type="file" accept="image/*" aria-label="상품 사진 선택">
+                <button class="sc-photo-clear" id="sc-d-clear" type="button">사진 지우기</button>
+                <p class="sc-photo-note">사진은 서버로 전송되지 않습니다. 상태를 기록해 두고 싶을 때만 쓰세요.</p>
+              </div>
+            </div>
+          </div>
+          <div class="sc-field full"><label for="sc-d-memo">스펙·상태 메모 <i>계산 제외</i></label>
+            <textarea id="sc-d-memo" placeholder="예: 2024년 모델, 박스 있음, 미착용. 사이즈 270. 정품 인증 태그 포함."></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>가격·수수료</h3><span>플랫폼마다 수수료 구조가 다릅니다</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-d-price">물품 가격</label>
+            <input id="sc-d-price" class="num" type="text" inputmode="decimal" value="180">
+          </div>
+          <div class="sc-field"><label for="sc-d-cur">통화</label>
+            <select id="sc-d-cur">
+              <option value="USD" selected>USD · 미국 달러</option>
+              <option value="JPY">JPY · 일본 엔</option>
+              <option value="CNY">CNY · 중국 위안</option>
+              <option value="KRW">KRW · 원</option>
+            </select>
+            <span class="hint">USD면 미국 발송으로 보고 면세 한도 200달러를 적용합니다.</span>
+          </div>
+          <div class="sc-field"><label for="sc-d-safe">안전결제 수수료 (%)</label>
+            <input id="sc-d-safe" class="num" type="number" inputmode="decimal" min="0" max="30" step="0.1" value="0">
+            <span class="hint">에스크로·보호결제 수수료. 플랫폼이 부담하면 0.</span>
+          </div>
+          <div class="sc-field"><label for="sc-d-agency">구매대행 수수료 (%)</label>
+            <input id="sc-d-agency" class="num" type="number" inputmode="decimal" min="0" max="50" step="0.5" value="10">
+            <span class="hint">메루카리·야후옥션 등 대행 이용 시. 직접 결제하면 0.</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="sc-group">
+        <div class="sc-group-head"><h3>배송·세금</h3><span>국제배송과 국내배송을 나눠 넣습니다</span></div>
+        <div class="sc-grid">
+          <div class="sc-field"><label for="sc-d-intl">국제 배송비</label>
+            <input id="sc-d-intl" class="num" type="text" inputmode="decimal" value="25">
+          </div>
+          <div class="sc-field"><label for="sc-d-ins">보험료</label>
+            <input id="sc-d-ins" class="num" type="text" inputmode="decimal" value="0">
+          </div>
+          <div class="sc-field"><label for="sc-d-domestic">국내 배송비 (원)</label>
+            <input id="sc-d-domestic" class="num" type="text" inputmode="numeric" value="4000">
+          </div>
+          <div class="sc-field"><label for="sc-d-duty">관세율 (%)</label>
+            <input id="sc-d-duty" class="num" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="8">
+          </div>
+          <div class="sc-field"><label for="sc-d-fx">적용 환율 <i>1 단위통화 = ? 원</i></label>
+            <input id="sc-d-fx" class="num" type="text" inputmode="decimal" value="1343.9">
+            <span class="hint" id="sc-d-fx-hint">시황판 환율을 기본값으로 넣습니다.</span>
+          </div>
+          <div class="sc-field full">
+            <div class="sc-checks">
+              <label class="sc-check"><input type="checkbox" id="sc-d-business">
+                <span><b>판매·사업용(자가사용 아님)</b> — 되팔 목적이나 사업용이면 소액 면세가 적용되지 않습니다. 체크하면 과세로 계산합니다.</span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="sc-row-actions" style="display:flex;gap:8px;align-items:center;margin-top:11px;flex-wrap:wrap">
+          <button class="fr-btn" id="sc-d-reset" type="button" style="font-family:var(--sans);font-size:12px;font-weight:800;border:1px solid var(--ink);background:#fff;padding:7px 12px;cursor:pointer">예시값으로 되돌리기</button>
+          <span class="sc-table-note" style="margin:0">중고품도 수입 물품이므로 관부가세 대상입니다. 다만 자가사용 소액은 면세될 수 있습니다.</span>
+        </div>
+      </div>
+
+      <section class="sc-out" id="sc-d-out" translate="no" aria-live="polite">
+        <div class="sc-sec-head"><h2>도착원가 요약</h2></div>
+        <p class="sc-table-note">금액을 넣으면 수수료·관부가세와 함께 계산됩니다.</p>
+      </section>
+
+      <section class="sc-hub" aria-labelledby="sc-d-hub-title">
+        <div class="sc-sec-head"><h2 id="sc-d-hub-title">중고·한정판 마켓 검색 바로가기</h2><span>입력한 모델명으로 연결</span></div>
+        <p class="sc-hub-lead">같은 모델이라도 상태·사이즈·구성품에 따라 가격 차가 큽니다. 판매자 평가와 반품 정책을 먼저 보고, 대행을 쓸 때는 수수료율과 배송비 부담 주체를 확인하세요. 당근·번개장터는 국내 거래라 관부가세가 붙지 않지만, 해외에서 들여온 물건을 되파는 경우는 다릅니다.</p>
+        <div class="sc-qbox" id="sc-d-query"><span class="qk">검색어</span><span class="qh">품목명이나 CAS 번호를 넣으면 이 검색어로 바로 연결됩니다.</span></div>
+        <div class="sc-cards">
+          <a class="sc-link" id="sc-d-ebay" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">eBay</span><span class="e">Global C2C</span>
+            <span class="t">미국·유럽 개인 판매자. 배송 프로그램 선택에 따라 관부가세 처리 방식이 다릅니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-d-mercari" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">Mercari (メルカリ)</span><span class="e">Japan</span>
+            <span class="t">일본 개인 간 거래. 해외 배송은 대행이 필요합니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-d-stockx" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">StockX</span><span class="e">Sneakers · watches</span>
+            <span class="t">정품 검수 후 발송. 표시 가격에 수수료가 포함되는 구조입니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-d-daangn" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">당근 (Daangn)</span><span class="e">Korea · local</span>
+            <span class="t">국내 직거래. 관부가세는 없고, 해외 배송도 없습니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+          <a class="sc-link" id="sc-d-bunjang" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
+            <span class="n">번개장터</span><span class="e">Korea · resale</span>
+            <span class="t">국내 중고·한정판. 안전결제 수수료는 판매자 부담이 일반적입니다.</span>
+            <span class="go">검색 열기 →</span>
+          </a>
+        </div>
+        <p class="sc-hub-note">플랫폼 수수료·배송 정책은 2026년 11월 기준 일반적인 구조를 적은 것이며, 실제 청구는 플랫폼 안내를 따릅니다.</p>
+      </section>
+    </section>
+
+    <!-- how to read -->
+    <section class="sc-how" aria-labelledby="sc-how-title">
+      <div class="sc-sec-head"><h2 id="sc-how-title">도착원가, 이렇게 읽습니다</h2><span>4가지</span></div>
+      <div class="sc-how-grid">
+        <div class="sc-how-card">
+          <span class="k">01</span>
+          <h3>FOB와 도착원가는 다릅니다</h3>
+          <p>FOB는 배에 싣는 순간까지의 가격입니다. 여기에 국제운송·보험·관세·부가세·통관·내륙운송이 붙어야 창고에 닿는 실제 원가가 됩니다. 단가만 비교하면 국내 도착 기준으로 순위가 뒤집히는 일이 흔합니다.</p>
+        </div>
+        <div class="sc-how-card">
+          <span class="k">02</span>
+          <h3>관세는 CIF에 붙습니다</h3>
+          <p>과세가격은 물품대금에 국제운송료와 보험료를 더한 CIF입니다. 운임을 낮게 신고하면 세금은 줄지만, 실제와 다르면 과태료·추징 위험이 있습니다. 운임은 실제 지급액으로 넣으세요.</p>
+        </div>
+        <div class="sc-how-card">
+          <span class="k">03</span>
+          <h3>부가세는 관세 위에 한 번 더</h3>
+          <p>부가세는 (과세가격+관세)의 10%입니다. 관세가 붙으면 부가세의 기준금액도 같이 올라갑니다. 그래서 관세율 8%짜리 품목의 실효 세부담은 대략 18.8%가 됩니다.</p>
+        </div>
+        <div class="sc-how-card">
+          <span class="k">04</span>
+          <h3>소액 면세는 물품가격 기준</h3>
+          <p>해외직구 면세 판정은 국제 배송비를 뺀 물품가격으로 합니다(발송국 안의 세금·내륙운임은 포함). 한도를 넘으면 반대로 국제 배송비·보험료까지 과세가격에 들어갑니다. 한도 바로 아래와 바로 위의 차이가 큰 이유입니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sc-faq" aria-labelledby="sc-faq-title">
+      <div class="sc-sec-head"><h2 id="sc-faq-title">자주 묻는 질문</h2><span>6문항</span></div>
+      <dl>
+        <dt>B2B 계산에 어떤 비용까지 넣어야 하나요?</dt>
+        <dd>공급사 견적의 물품대금(FOB), 국제운송료, 보험료, 관세율, 통관수수료, 국내 내륙운송입니다. 부가세는 이 계산기가 자동으로 붙입니다. 개별소비세·주세·농어촌특별세가 붙는 품목(주류·담배·자동차 등)은 세율이 더 얹히므로 결과가 실제와 달라집니다.</dd>
+
+        <dt>목록통관 150달러, 미국 200달러가 정확히 무엇인가요?</dt>
+        <dd>자가사용 물품이 미화 150달러(미국에서 보낸 물품은 200달러) 이하이면 수입신고 없이 목록통관으로 통관되고 관세·부가세가 면제됩니다. 건강기능식품·의약품·식품·주류·담배·기능성 화장품·검역대상 농수산물·무선기기 등은 목록통관 배제 대상이라 금액과 상관없이 수입신고를 거치고, 이때 면세 한도는 국가 구분 없이 150달러입니다.</dd>
+
+        <dt>개인통관고유부호를 꼭 넣어야 하나요?</dt>
+        <dd>이 페이지에서는 선택입니다. 실제 특송 목록통관에는 필요한 경우가 많아 2020년 12월부터 사용이 의무화됐고, 2026년부터는 유효기간 1년이 적용됩니다. 입력한 부호는 형식만 화면에서 확인하며 서버로 보내거나 저장하지 않습니다.</dd>
+
+        <dt>사진을 올리면 어디로 가나요?</dt>
+        <dd>어디로도 가지 않습니다. 브라우저 안에서만 미리보기로 보여 주고, 페이지를 새로고침하면 사라집니다. 서버·데이터베이스에 저장하지 않습니다.</dd>
+
+        <dt>관세율은 어디서 확인하나요?</dt>
+        <dd>관세법령정보포털(UNI-PASS CLIP)의 세계HS → 관세율표에서 HS 코드로 확인합니다. 같은 품목도 기본세율·WTO 협정세율·FTA 협정세율이 다르므로, 실제 적용 세율을 넣어야 계산이 맞습니다. 품목분류가 애매하면 관세사나 품목분류 사전심사를 이용하세요.</dd>
+
+        <dt>중고·한정판도 세금을 내나요?</dt>
+        <dd>수입 물품이면 중고도 관부가세 대상입니다. 다만 자가사용 소액이면 면세될 수 있고, 판매·사업용이면 금액과 상관없이 과세됩니다. 해외 플랫폼이 배송·통관을 대행하며 세금을 미리 받는 경우에는 청구서에 이미 포함돼 있을 수 있으니 중복으로 계산하지 마세요.</dd>
+      </dl>
+    </section>
+
+    <p class="sc-xlink">
+      함께 쓰는 무역 도구 · <a href="freight.html">해상운임·물류비 비교</a> ·
+      <a href="biz.html#cost">수입 원가·관부가세 계산기</a> ·
+      <a href="biz.html#trade">무역서식 (PI·CI·PL)</a> ·
+      <a href="market.html">원자재·환율 시황판</a> ·
+      <a href="global.html#email">무역 이메일 작성</a> ·
+      <a href="ad.html#b2b">B2B 소싱·원가 의뢰</a>
+    </p>
+
+    <section class="sc-legal" aria-labelledby="sc-legal-title">
+      <h3 id="sc-legal-title">계산 기준과 개인정보 안내</h3>
+      <p><b>계산 범위</b> — 입력한 금액과 환율로 관세·부가세·부대비용을 더하는 참고용 계산기입니다. 실제 세액은 수입신고일의 과세환율, 확정된 HS 코드, FTA 적용 여부, 세관 판단에 따라 달라집니다. 개별소비세·주세·농어촌특별세와 검사·검역 비용은 포함하지 않습니다.</p>
+      <p><b>개인정보</b> — 입력한 품목·금액·환율·시·도·개인통관고유부호는 브라우저 안에서만 계산에 쓰이고 서버로 전송되거나 저장되지 않습니다. 사진도 마찬가지로 로컬 미리보기 전용이며 업로드되지 않습니다. 새로고침하면 모두 사라집니다.</p>
+      <p><b>외부 링크</b> — 각 사이트의 상호·상표는 해당 회사의 자산이며, 링크는 이용자의 편의를 위해 공식 검색 주소로 연결한 것입니다. 이 페이지는 어느 쇼핑몰·공급처·플랫폼과도 제휴하거나 거래를 중개하지 않습니다.</p>
+    </section>
+
+    <p class="sc-disclaimer">
+      본 계산기는 일반적인 수입 원가 비교를 돕는 참고 도구이며, 관세·통관·계약에 대한 법적·상업적 판단을 대신하지 않습니다. 표시된 예시 금액은 실제 시세와 무관합니다. 세율·면세 한도·통관 규정은 관세청 고시로 바뀔 수 있으니 결제·계약 전에 공식 안내를 확인하세요.
+    </p>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>독립 경제·탐사 리서치 웹진</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>인사이트 브리프는 경제·금융, 무역·원자재, AI·테크 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진입니다. 정식 인터넷신문 등록 언론사가 아니며, 취재·편집 인력 5인 이상 등 등록 요건을 갖추지 않았습니다.</p>
+      </div>
+      <div class="f-col">
+        <h4>섹션</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">탐사보도</a></li>
+          <li><a href="index.html?cat=economy">경제·금융</a></li>
+          <li><a href="index.html?cat=trade">무역·원자재</a></li>
+          <li><a href="market.html">원자재 시황</a></li>
+          <li><a href="index.html?cat=ai">AI·테크</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>매체</h4>
+        <ul>
+          <li><a href="about.html">소개·편집 원칙</a></li>
+          <li><a href="contact.html#tip">독자 제보</a></li>
+          <li><a href="ad.html">광고·스폰서 단가표</a></li>
+          <li><a href="ad.html#b2b">B2B 소싱·원가 의뢰</a></li>
+          <li><a href="sourcing.html">무료 도구 · 글로벌 소싱·도착원가 계산기</a></li>
+          <li><a href="freight.html">무료 도구 · 해상운임·물류비 비교</a></li>
+          <li><a href="biz.html">무료 도구 · 1인 사업자 툴 9종</a></li>
+          <li><a href="market.html">무료 도구 · 원자재·환율 시황판</a></li>
+          <li><a href="feed.xml">RSS 피드</a></li>
+          <li><a href="sitemap.html">사이트맵</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>문의</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">제보 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">광고 hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">서울 · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>본 웹진은 인터넷신문 등록을 하지 않은 독립 미디어입니다. 기사와 사진의 무단 전재·재배포를 금합니다. 협찬·광고 콘텐츠는 ‘광고’로 표기합니다.</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 독립 경제·탐사 리서치 웹진</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="실시간 브리핑 채널"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>실시간 브리핑 채널</h3><p>새 리포트와 시황을 카카오톡 오픈채팅과 텔레그램으로 실시간으로 받아 보세요.</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">카카오톡 오픈채팅</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">텔레그램 채널</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+<div class="sc-toast" id="sc-toast" role="status" aria-live="polite"></div>
+<script src="assets/js/monetize.js?v=20261123c" defer></script>
+<script src="assets/js/sourcing.js?v=20261126a" defer></script>
+<script src="assets/js/nav.js?v=20261124c"></script>
+<!-- IB:CHAT-FLOAT -->
+<script src="assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

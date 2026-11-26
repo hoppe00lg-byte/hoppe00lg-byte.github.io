@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 15:06:44 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 16:09:16 +0900</lastBuildDate>
+    <item>
+      <title>申請書には5億トン、発表文には数字がない — ニッケルを1万5,000ドルに縛るのは釜山・光陽の7万9,266トンだ</title>
+      <link>https://insightbriefnews.com/ja/a/nickel-quota-2027-korea-warehouse-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/nickel-quota-2027-korea-warehouse-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 15:15:00 +0900</pubDate>
+      <category>貿易・原材料</category>
+      <description>インドネシアの鉱山会社は2027年に5億湿量トンを超える採掘を申請し、政府は11月15日に受け付けを締め切ったまま数字を示していない。クォータが削るのは鉱石であって精錬ニッケルではなく、製錬所はフィリピン鉱石を輸入して埋める。LMEニッケル3か月物は11月13日の1万6,230ドルから25日には1万5,210ドルへ下がり、LME倉庫の27万5,604トンのうち7万9,266トンが釜山と光陽にある。</description>
+    </item>
     <item>
       <title>時間が来れば切れる装置は基準にない — 電気マット5年2,354件、死者37人</title>
       <link>https://insightbriefnews.com/ja/a/electric-mat-auto-off-standard-gap.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 07:00:00 +0900</pubDate>
       <category>調査報道</category>
       <description>2026年1～9月の個人回生受付は12万4,703件。昨年処理された事件だけ見ても4万4,914人が棄却・取消・廃止に出た。認可前廃止率は10.1％から15.2％に上昇し、認可された事件の平均弁済率は42.2％に下がった。管轄裁判所によって17.6％ポイントが分かれる。</description>
-    </item>
-    <item>
-      <title>TOPIK志願者4万9,290人、日本人の海外旅行の28%が韓国へ——「推し活の言語」は、いま実用の資格になった</title>
-      <link>https://insightbriefnews.com/ja/a/kankokugo-topik-49290-nihonjin-kankou-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/kankokugo-topik-49290-nihonjin-kankou-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 05:20:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>2026年1〜7月に韓国を訪れた日本人は228万人。日本人の海外旅行先に占める韓国の比率は28.03%と過去最高になった。2025年に日本からTOPIK（韓国語能力試験）に出願した人は4万9,290人で世界3位。円安でも韓国が選ばれる理由と、2027年から年15回に増える試験制度を、公式統計だけで整理する。</description>
     </item>
   </channel>
 </rss>

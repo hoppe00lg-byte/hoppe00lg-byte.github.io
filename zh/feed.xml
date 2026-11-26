@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 26 Nov 2026 15:06:40 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 16:09:12 +0900</lastBuildDate>
+    <item>
+      <title>申请书上是5亿吨，公告里没有数字——把镍价按在1万5,000美元的是釜山和光阳的7万9,266吨</title>
+      <link>https://insightbriefnews.com/zh/a/nickel-quota-2027-korea-warehouse-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/nickel-quota-2027-korea-warehouse-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 15:15:00 +0900</pubDate>
+      <category>贸易·原材料</category>
+      <description>印尼矿企申请2027年开采超过5亿湿吨，政府11月15日截止申请后仍未公布数字。配额削减的是矿石而非精炼镍，因为冶炼厂会进口菲律宾矿石。LME三个月期镍从11月13日的1万6,230美元跌至25日的1万5,210美元，LME仓库27万5,604吨中有7万9,266吨在釜山和光阳。</description>
+    </item>
     <item>
       <title>没有标准要求它到时自动断电 —— 电热垫五年2354起火灾、37人死亡</title>
       <link>https://insightbriefnews.com/zh/a/electric-mat-auto-off-standard-gap.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 07:00:00 +0900</pubDate>
       <category>调查报道</category>
       <description>2026年1月至9月，个人康复申请124,703件。仅从去年办理的案件来看，驳回、撤销、废止的案件就有44,914件。批准前取消率由10.1%上升至15.2%，批准案件平均报销率下降至42.2%。 17.6% 的分数因管辖法院而异。</description>
-    </item>
-    <item>
-      <title>韩语考生7万267人、访韩中国人321万——TOPIK正从“追星工具”变成留学与就业的硬通货</title>
-      <link>https://insightbriefnews.com/zh/a/hanguoyu-topik-70267-zhongguoren-fanghan-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/hanguoyu-topik-70267-zhongguoren-fanghan-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 05:30:00 +0900</pubDate>
-      <category>经济·金融</category>
-      <description>2025年，中国考区的TOPIK报名人数为7万267人，首次被越南超越、退居第二。与此同时，2026年上半年访韩中国人达321万，重回第一大客源国，团体游客免签已延长至12月31日。数字背后，是韩语用途从“看剧追星”转向留学、就业，以及消费从“扫货”转向“体验”的结构变化。</description>
     </item>
   </channel>
 </rss>
