@@ -767,15 +767,30 @@
     { name: 'United', url: 'https://www.united.com' },
     { name: 'Delta', url: 'https://www.delta.com' }
   ];
+  /* 트립닷컴 파트너스 딥링크 (Allianceid 11473995 · SID 336786143) —
+     파트너센터 Affiliate Link 생성기가 발급한 주소를 그대로 둡니다(수정 금지). */
   D.flightSearch = [
     { name: 'Google Flights', url: 'https://www.google.com/travel/flights' },
     { name: 'Skyscanner', url: 'https://www.skyscanner.co.kr' },
-    { name: 'Trip.com', url: 'https://kr.trip.com' }
+    { name: 'Trip.com', url: 'https://kr.trip.com/flights/?Allianceid=11473995&SID=336786143&trip_sub1=ibn-trip-flights&trip_sub3=D21594477' }
   ];
   D.hotelSearch = [
     { name: 'Agoda', url: 'https://www.agoda.com' },
     { name: 'Booking.com', url: 'https://www.booking.com' },
-    { name: 'Trip.com', url: 'https://kr.trip.com/hotels/' }
+    { name: 'Trip.com', url: 'https://kr.trip.com/hotels/?Allianceid=11473995&SID=336786143&trip_sub1=ibn-trip-hotels&trip_sub3=D21594477' }
+  ];
+  /* 클룩 제휴(제휴 ID 144447) — 공항 이동·eSIM. 리다이렉트 주소를 그대로 둡니다. */
+  D.tripExtras = [
+    {
+      name: { ko: '공항 픽업·샌딩', en: 'Airport transfer', zh: '机场接送', ja: '空港送迎' },
+      note: { ko: '도착 시간을 넣으면 기사 배차까지', en: 'Enter your arrival time', zh: '填写到达时间', ja: '到着時刻を入力' },
+      url: 'https://affiliate.klook.com/redirect?aid=144447&aff_adid=1585973&k_site=https%3A%2F%2Fwww.klook.com%2Fko%2Fairport-transfers%2F'
+    },
+    {
+      name: { ko: 'eSIM·현지 유심', en: 'eSIM & local SIM', zh: 'eSIM·当地SIM', ja: 'eSIM・現地SIM' },
+      note: { ko: '출국 전 설치, 도착 즉시 개통', en: 'Install before you fly', zh: '出发前安装，落地即用', ja: '出国前に設定、到着後すぐ開通' },
+      url: 'https://affiliate.klook.com/redirect?aid=144447&aff_adid=1585973&k_site=https%3A%2F%2Fwww.klook.com%2Fko%2Fesim%2F'
+    }
   ];
   D.foodLinks = [
     { name: 'Google Maps', url: 'https://www.google.com/maps/search/?api=1&query=' },

@@ -459,6 +459,13 @@
           esc(nm(x)) + '</b><span>' + esc(d.city) + '</span></a>';
       }).join('');
     }
+    var extra = $('#gl-trip-extra');
+    if (extra && D.tripExtras) {
+      extra.innerHTML = D.tripExtras.map(function (x) {
+        return '<a class="gl-link" rel="sponsored noopener noreferrer" href="' + esc(x.url) +
+          '" target="_blank"><b>' + esc(nm(x)) + '</b><span>' + esc(nm({ name: x.note })) + '</span></a>';
+      }).join('');
+    }
   }
 
   function renderCheck() {
