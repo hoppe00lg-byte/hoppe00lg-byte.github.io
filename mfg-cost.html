@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>직접생산 vs 외주가공 원가 산출기 — 사출 성형 원가·BEP 비교 | INSIGHT BRIEF</title>
+<meta name="description" content="사출 성형 제품을 직접 생산할 때와 외주가공(임가공)할 때의 개당 원가를 나란히 계산합니다. 수지 12종 프리셋, 금형 상각·캐비티·사이클타임·불량률·후가공·물류를 반영하고 손익분기 수량(BEP), 수량 구간별 단가, CSV·PDF 산출서까지. 입력값은 브라우저 안에서만 계산됩니다.">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/mfg-cost.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:title" content="직접생산 vs 외주가공 원가 산출기">
+<meta property="og:description" content="원재료·금형 상각·사이클타임·불량률·후가공·물류를 반영해 개당 원가를 나란히 비교합니다. 손익분기 수량(BEP)과 수량 구간별 단가, CSV·PDF 산출서 포함.">
+<meta property="og:url" content="https://insightbriefnews.com/mfg-cost.html">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="직접생산 vs 외주가공 원가 산출기">
+<meta name="twitter:description" content="수지·금형 상각·사이클·불량률·물류까지 반영한 개당 원가 비교와 손익분기 수량. CSV·PDF 산출서 포함.">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="assets/css/mfg-cost.css?v=20261126a">
+<link rel="stylesheet" href="assets/css/nav.css?v=20261125a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "In-house vs outsourced manufacturing cost calculator",
+  "url": "https://insightbriefnews.com/mfg-cost.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "Free unit-cost calculator that compares making an injection-moulded part in-house with outsourcing it. Resin, masterbatch, runner scrap, mould amortisation, cavities, cycle time, defect rate, post-processing, packaging and freight are included, with break-even quantity, unit cost by order volume, CSV export and an A4 cost sheet.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/mfg-cost.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/mfg-cost.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/mfg-cost.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/mfg-cost.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/mfg-cost.html">
+<link rel="stylesheet" href="assets/css/i18n.css?v=20261124a">
+<script src="assets/js/i18n.js?v=20261124a" defer></script>
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tool">
+<a class="skip" href="#main">본문 바로가기</a>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026년 11월 26일 목요일</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="mfg-cost.html" hreflang="ko" lang="ko" class="is-on" aria-current="true">KO</a><a href="en/mfg-cost.html" hreflang="en" lang="en">EN</a><a href="zh/mfg-cost.html" hreflang="zh-Hans" lang="zh-Hans">ZH</a><a href="ja/mfg-cost.html" hreflang="ja" lang="ja">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">독립 경제·탐사 리서치 웹진</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF 홈으로">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>인사이트 브리프</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>숫자 뒤의 맥락을 읽습니다</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">제보하기</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">주간 브리핑 구독</a>
+        <button class="icon-btn search-toggle" type="button" aria-label="검색 열기" aria-expanded="false" aria-controls="search-mobile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">뉴스·리포트<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="뉴스·리포트">
+          <a href="index.html" data-nav-key="all">전체 기사</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI·테크</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">경제·금융</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">무역·원자재</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">재난·안전</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">주간 탐사보도</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">무역·조달·시황<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="무역·조달·시황">
+          <a href="biz.html#trade" data-nav-key="tdoc">무역서식 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">해상운임·물류비 비교</a>
+          <a href="sourcing.html" data-nav-key="sourcing">글로벌 소싱·도착원가 계산기</a>
+          <a href="market.html" data-nav-key="market">원자재·환율 시황판</a>
+          <a href="global.html#portal" data-nav-key="portal">조달청·기업검증 포털</a>
+          <a href="global.html#email" data-nav-key="email">무역 이메일</a>
+          <a href="global.html#trip" data-nav-key="trip">출장 허브</a>
+          <a href="biz.html#cost" data-nav-key="cost">마진·원가·자금 계산기</a>
+          <a href="mfg-cost.html" data-nav-key="mfgcost" class="is-active" aria-current="page">제조·외주 원가 산출기</a>
+          <a href="seller.html" data-nav-key="seller">셀러·마케터 툴</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">글로벌 전시회 캘린더</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">세무·법률·생활<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="세무·법률·생활">
+          <a href="tax.html" data-nav-key="tax">세금·연봉·건보 계산기</a>
+          <a href="salary.html" data-nav-key="salary">급여·최저임금·4대보험</a>
+          <a href="insurance.html" data-nav-key="insurance">실손·자동차보험 계산기</a>
+          <a href="law.html" data-nav-key="law">법률·계약서·내용증명</a>
+          <a href="forms.html" data-nav-key="forms">서식·전자서명 138종</a>
+          <a href="saju.html" data-nav-key="saju">무료 만세력·신년운세</a>
+          <a href="lotto.html" data-nav-key="lotto">로또 번호 생성기</a>
+          <a href="music.html" data-nav-key="music">AI 음악·가사 생성기</a>
+          <a href="style.html" data-nav-key="style">패션·스타일 추천</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">안내·사이트맵<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="안내·사이트맵">
+          <a href="sitemap.html" data-nav-key="sitemap">사이트맵</a>
+          <a href="about.html" data-nav-key="about">매체 소개</a>
+          <a href="ad.html" data-nav-key="ad">광고·제휴</a>
+          <a href="contact.html" data-nav-key="contact">제보·문의</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="키워드로 검색" aria-label="기사 검색" autocomplete="off">
+    </form>
+  </div>
+</div>
+<div class="search-mobile" id="search-mobile" hidden>
+  <form class="search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+    <input type="search" name="q" placeholder="키워드로 검색" aria-label="기사 검색" autocomplete="off">
+  </form>
+</div>
+
+<main id="main" class="mf-main">
+<div class="container mf-wrap" id="mfg-tool">
+
+  <div class="mf-head">
+    <span class="mf-kicker">FREE TOOL · MANUFACTURING COST</span>
+    <h1>직접생산 vs 외주가공 원가 산출기</h1>
+    <p class="mf-dek">같은 제품을 직접 생산할 때와 외주가공(임가공)할 때의 개당 원가를 나란히 계산합니다. 원재료와 마스터배치, 런너 로스, 금형 상각, 사이클타임과 불량률, 후가공·포장·물류까지 반영하고 손익분기 수량과 수량 구간별 단가를 함께 보여 줍니다. 입력값은 브라우저 밖으로 전송되지 않습니다.</p>
+    <div class="mf-badges">
+      <span>사출 성형 기준</span><span>자료 전송 없음</span><span>CSV·PDF 내보내기</span><span>금형 상각 방식 선택</span><span>원·달러 환산</span>
+    </div>
+    <div class="mf-toolbar mf-noprint">
+      <button class="mf-btn" type="button" id="btnExample"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10"/></svg>예시 값 불러오기</button>
+      <button class="mf-btn" type="button" id="btnReset"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg>입력 초기화</button>
+      <button class="mf-btn" type="button" id="btnCsv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16"/></svg>CSV 내려받기</button>
+      <button class="mf-btn mf-btn-primary" type="button" id="btnPrint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg>인쇄 / PDF 저장</button>
+    </div>
+  </div>
+
+  <section class="mf-card" aria-labelledby="h-basic">
+    <h2 id="h-basic"><span class="mf-n">01</span>기본 조건 <small>품목과 수량, 표시 통화</small></h2>
+    <div class="mf-grid mf-g2">
+      <div class="mf-f" style="grid-column:span 2">
+        <label for="item">품목명</label>
+        <div class="mf-inw"><input id="item" type="text" value="컨트롤박스 하우징 (예시)" autocomplete="off" spellcheck="false"></div>
+      </div>
+      <div class="mf-f">
+        <label for="qty">수량</label>
+        <div class="mf-inw mf-has-u"><input id="qty" type="number" inputmode="numeric" min="0" step="100" value="10000"><span class="mf-u">pcs</span></div>
+        <span class="mf-hint">이번 오더(또는 검토) 수량</span>
+      </div>
+      <div class="mf-f">
+        <label for="cur">표시 통화</label>
+        <div class="mf-inw"><select id="cur"><option value="KRW">원 (KRW)</option><option value="USD">달러 (USD)</option></select></div>
+        <span class="mf-hint">입력은 모두 원화 기준, 결과만 환산</span>
+      </div>
+      <div class="mf-f">
+        <label for="fx">적용 환율</label>
+        <div class="mf-inw mf-has-u"><input id="fx" type="number" inputmode="decimal" min="1" step="0.1" value="1343.9"><span class="mf-u">원/USD</span></div>
+        <span class="mf-hint">기본값 1,343.9원 — 한국수출입은행 2026-11-26 고시</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="mf-cols">
+    <div class="mf-col-inputs">
+
+      <section class="mf-card" aria-labelledby="h-mat">
+        <h2 id="h-mat"><span class="mf-n">02</span>원재료 <small>수지·마스터배치</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f mf-full">
+            <label for="resinPreset">수지 프리셋 <span class="mf-q">— 고르면 원료명과 단가가 채워집니다</span></label>
+            <div class="mf-inw"><select id="resinPreset"></select></div>
+            <span class="mf-hint" id="resinSrc">참고 시세는 아래 ‘단가 참고’에 출처와 기준일을 적었습니다. 실제 계약단가로 고쳐 쓰세요.</span>
+          </div>
+          <div class="mf-f">
+            <label for="resinName">원료명</label>
+            <div class="mf-inw"><input id="resinName" type="text" value="ABS (버진)" autocomplete="off"></div>
+          </div>
+          <div class="mf-f">
+            <label for="resinPrice">수지 단가</label>
+            <div class="mf-inw mf-has-u"><input id="resinPrice" type="number" inputmode="decimal" min="0" step="10" value="2305"><span class="mf-u">원/kg</span></div>
+          </div>
+          <div class="mf-f">
+            <label for="weight">제품 중량</label>
+            <div class="mf-inw mf-has-u"><input id="weight" type="number" inputmode="decimal" min="0" step="0.1" value="85"><span class="mf-u">g</span></div>
+            <span class="mf-hint">게이트·런너 제외, 완제품 1개</span>
+          </div>
+          <div class="mf-f">
+            <label for="loss">런너·스크랩 로스율</label>
+            <div class="mf-inw mf-has-u"><input id="loss" type="number" inputmode="decimal" min="0" max="99" step="0.5" value="8"><span class="mf-u">%</span></div>
+            <span class="mf-hint">재사용 불가분 포함해 넉넉히</span>
+          </div>
+          <div class="mf-f">
+            <label for="mbPct">마스터배치·첨가제</label>
+            <div class="mf-inw mf-has-u"><input id="mbPct" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="2"><span class="mf-u">%</span></div>
+            <span class="mf-hint">수지 중량 대비</span>
+          </div>
+          <div class="mf-f">
+            <label for="mbPrice">첨가제 단가</label>
+            <div class="mf-inw mf-has-u"><input id="mbPrice" type="number" inputmode="decimal" min="0" step="50" value="3500"><span class="mf-u">원/kg</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-mold">
+        <h2 id="h-mold"><span class="mf-n">03</span>금형 <small>제작비·캐비티·상각</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="moldCost">금형 제작비</label>
+            <div class="mf-inw mf-has-u"><input id="moldCost" type="number" inputmode="numeric" min="0" step="100000" value="18000000"><span class="mf-u">원</span></div>
+            <span class="mf-hint">시사출·수정 포함 금액</span>
+          </div>
+          <div class="mf-f">
+            <label for="cavities">캐비티 수</label>
+            <div class="mf-inw mf-has-u"><input id="cavities" type="number" inputmode="numeric" min="1" step="1" value="4"><span class="mf-u">개</span></div>
+            <span class="mf-hint">1쇼트에 나오는 제품 수</span>
+          </div>
+          <div class="mf-f">
+            <label for="moldLife">금형 수명 / 상각 기준 수량</label>
+            <div class="mf-inw mf-has-u"><input id="moldLife" type="number" inputmode="numeric" min="1" step="1000" value="300000"><span class="mf-u">pcs</span></div>
+            <span class="mf-hint">이 수량까지 나눠 배분</span>
+          </div>
+          <div class="mf-f mf-full">
+            <span class="mf-lb">금형비 배분 방식</span>
+            <div class="mf-seg" role="radiogroup" aria-label="금형비 배분 방식">
+              <label><input type="radio" name="moldMode" value="basis" checked><span>상각 수량에 분배<br><i class="mf-sub">제품 전체 물량 기준</i></span></label>
+              <label><input type="radio" name="moldMode" value="order"><span>이번 수량에 전액<br><i class="mf-sub">단일 오더 견적</i></span></label>
+            </div>
+            <span class="mf-hint">분배를 고르면 개당 원가에는 금형비의 상각분만 들어가고, 금형 투자금은 ‘초기 투자’에 따로 표시됩니다.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-form">
+        <h2 id="h-form"><span class="mf-n">04</span>성형·가공 <small>사이클·불량</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="cycle">사이클타임</label>
+            <div class="mf-inw mf-has-u"><input id="cycle" type="number" inputmode="decimal" min="0" step="0.5" value="32"><span class="mf-u">초</span></div>
+            <span class="mf-hint">형개~형폐 1쇼트 기준</span>
+          </div>
+          <div class="mf-f">
+            <label for="defect">불량률</label>
+            <div class="mf-inw mf-has-u"><input id="defect" type="number" inputmode="decimal" min="0" max="99" step="0.5" value="2"><span class="mf-u">%</span></div>
+            <span class="mf-hint">원재료·가공비를 양품에 배분</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-post">
+        <h2 id="h-post"><span class="mf-n">05</span>후가공·포장·물류 <small>양품 기준</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="post">개당 후가공비</label>
+            <div class="mf-inw mf-has-u"><input id="post" type="number" inputmode="decimal" min="0" step="10" value="120"><span class="mf-u">원/pc</span></div>
+            <span class="mf-hint">버·게이트 제거, 인쇄, 조립 등</span>
+          </div>
+          <div class="mf-f">
+            <label for="pack">개당 포장비</label>
+            <div class="mf-inw mf-has-u"><input id="pack" type="number" inputmode="decimal" min="0" step="5" value="35"><span class="mf-u">원/pc</span></div>
+            <span class="mf-hint">비닐·완충·박스·라벨</span>
+          </div>
+          <div class="mf-f">
+            <label for="logiMode">물류·운송비 입력 방식</label>
+            <div class="mf-inw"><select id="logiMode"><option value="total">이번 수량 총액</option><option value="unit">개당</option></select></div>
+          </div>
+          <div class="mf-f">
+            <label for="logiVal">물류·운송비</label>
+            <div class="mf-inw mf-has-u"><input id="logiVal" type="number" inputmode="decimal" min="0" step="10000" value="450000"><span class="mf-u" id="logiUnit">원</span></div>
+            <span class="mf-hint">왕복 배송·상하차 포함</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card mf-card-direct" aria-labelledby="h-direct">
+        <h2 id="h-direct"><span class="mf-n mf-n-direct">06</span>직접생산 조건 <small>사출기·인력·세팅</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="dpTon">사출기 톤수</label>
+            <div class="mf-inw mf-has-u"><input id="dpTon" type="number" inputmode="numeric" min="0" step="10" value="150"><span class="mf-u">톤</span></div>
+            <span class="mf-hint">형체력 기준, 참고 표기</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpMachine">시간당 기계가동비</label>
+            <div class="mf-inw mf-has-u"><input id="dpMachine" type="number" inputmode="numeric" min="0" step="1000" value="22000"><span class="mf-u">원/h</span></div>
+            <span class="mf-hint">전력+감가+유지+간접비</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpLabor">시간당 인건비</label>
+            <div class="mf-inw mf-has-u"><input id="dpLabor" type="number" inputmode="numeric" min="0" step="1000" value="18000"><span class="mf-u">원/h</span></div>
+            <span class="mf-hint">1인 1대 기준, 부대인력 포함</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpSetup">초기 설비·세팅비</label>
+            <div class="mf-inw mf-has-u"><input id="dpSetup" type="number" inputmode="numeric" min="0" step="10000" value="350000"><span class="mf-u">원</span></div>
+            <span class="mf-hint">금형 장착·조건 셋업·시사출</span>
+          </div>
+        </div>
+        <p class="mf-note">기계가동비는 (연간 감가상각 + 전력 + 유지보수 + 간접비) ÷ 연간 가동시간으로 잡으면 실제와 가까워집니다. 가동률이 낮으면 시간당 부담이 커집니다.</p>
+      </section>
+
+      <section class="mf-card mf-card-os" aria-labelledby="h-os">
+        <h2 id="h-os"><span class="mf-n mf-n-os">07</span>외주가공 조건 <small>견적 단가·자재·관리</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f mf-full">
+            <label for="osMode">외주 견적 방식</label>
+            <div class="mf-inw"><select id="osMode">
+              <option value="perPart">개당 견적 (원/pc)</option>
+              <option value="perShot">쇼트당 견적 (원/shot)</option>
+              <option value="perHour">시간당 견적 (원/h)</option>
+            </select></div>
+            <span class="mf-hint">쇼트·시간당 견적은 위 캐비티 수·사이클타임으로 개당 환산합니다.</span>
+          </div>
+          <div class="mf-f">
+            <label for="osPrice">외주 가공비</label>
+            <div class="mf-inw mf-has-u"><input id="osPrice" type="number" inputmode="decimal" min="0" step="10" value="620"><span class="mf-u" id="osPriceUnit">원/pc</span></div>
+          </div>
+          <div class="mf-f">
+            <span class="mf-lb">원재료 지급 방식</span>
+            <div class="mf-seg mf-seg-sm" role="radiogroup" aria-label="원재료 지급 방식">
+              <label><input type="radio" name="osMat" value="supply" checked><span>사급</span></label>
+              <label><input type="radio" name="osMat" value="turnkey"><span>도급(자재 포함)</span></label>
+            </div>
+            <span class="mf-hint">사급이면 위 원재료비를 더합니다.</span>
+          </div>
+          <div class="mf-f">
+            <label for="osAdmin">외주 관리비</label>
+            <div class="mf-inw mf-has-u"><input id="osAdmin" type="number" inputmode="decimal" min="0" step="0.5" value="3"><span class="mf-u">%</span></div>
+            <span class="mf-hint">가공비 대비 검수·발주 관리</span>
+          </div>
+          <div class="mf-f">
+            <label for="osLogi">외주 운송비</label>
+            <div class="mf-inw mf-has-u"><input id="osLogi" type="number" inputmode="decimal" min="0" step="10000" value="0"><span class="mf-u">원</span></div>
+            <span class="mf-hint">이번 수량 왕복 총액</span>
+          </div>
+          <div class="mf-f mf-full">
+            <label class="mf-chk"><input type="checkbox" id="osMold" checked><span>금형 제작비를 당사가 부담합니다(외주처에 금형 지급). 끄면 외주 개당 원가에서 금형비가 빠집니다.</span></label>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="mf-col-result" aria-label="계산 결과 요약">
+      <div class="mf-rc" id="resultCard">
+        <div class="mf-rc-top"><h2>개당 원가 비교</h2><span id="rcMeta">10,000 pcs</span></div>
+        <div class="mf-rc-body">
+          <div class="mf-verdict" id="verdict" aria-live="polite">계산 중…</div>
+          <div class="mf-duo">
+            <div class="mf-cc mf-cc-direct" id="ccDirect">
+              <div class="mf-who"><i class="mf-dot"></i>직접생산<span class="mf-win-tag" id="winDirect" hidden>유리</span></div>
+              <div class="mf-big" id="unitDirect">—<small>/개</small></div>
+              <div class="mf-sub" id="subDirect">—</div>
+              <div class="mf-bar" id="barDirect" aria-hidden="true"></div>
+            </div>
+            <div class="mf-cc mf-cc-os" id="ccOs">
+              <div class="mf-who"><i class="mf-dot"></i>외주가공<span class="mf-win-tag" id="winOs" hidden>유리</span></div>
+              <div class="mf-big" id="unitOs">—<small>/개</small></div>
+              <div class="mf-sub" id="subOs">—</div>
+              <div class="mf-bar" id="barOs" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="mf-bep" id="bepBox">
+            <span class="mf-k">손익분기 수량 (BEP)</span>
+            <b id="bepVal">—</b>
+            <span id="bepText">—</span>
+          </div>
+          <div class="mf-legend" id="legend"></div>
+          <div class="mf-warn" id="warnBox" role="status"></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <section class="mf-out" aria-labelledby="h-cmp">
+    <div class="mf-sec-head">
+      <h2 id="h-cmp">항목별 비교</h2>
+      <p>개당 원가와 이번 수량 총액을 같은 항목끼리 맞춥니다.</p>
+      <span class="mf-r" id="cmpMeta">—</span>
+    </div>
+    <div class="mf-tw">
+      <table class="mf-cmp" id="cmpTable">
+        <thead>
+          <tr>
+            <th class="mf-l" rowspan="2">항목</th>
+            <th class="mf-d" colspan="2">직접생산</th>
+            <th class="mf-o" colspan="2">외주가공</th>
+            <th rowspan="2">차액<br><span class="mf-thsub">(개당)</span></th>
+          </tr>
+          <tr>
+            <th class="mf-d">개당</th><th class="mf-d">총액</th><th class="mf-o">개당</th><th class="mf-o">총액</th>
+          </tr>
+        </thead>
+        <tbody id="cmpBody"></tbody>
+      </table>
+    </div>
+    <p class="mf-tbl-note" id="cmpNote">차액은 ‘외주 − 직접’입니다. 양수(+)면 직접생산이 그만큼 저렴합니다.</p>
+    <p class="mf-scroll-hint">← 표를 좌우로 밀면 외주가공 값과 차액까지 보입니다.</p>
+  </section>
+
+  <section class="mf-out" aria-labelledby="h-qty">
+    <div class="mf-sec-head">
+      <h2 id="h-qty">수량 구간별 단가</h2>
+      <p>수량이 달라지면 금형 상각과 세팅비, 총액 운송비의 개당 부담이 달라집니다.</p>
+      <span class="mf-r">1,000 ~ 100,000 pcs</span>
+    </div>
+    <div class="mf-tw">
+      <table class="mf-cmp" id="qtyTable">
+        <thead>
+          <tr>
+            <th class="mf-l">수량</th>
+            <th class="mf-d">직접 개당</th><th class="mf-d">직접 총액</th>
+            <th class="mf-o">외주 개당</th><th class="mf-o">외주 총액</th>
+            <th>유리</th><th>총액 차액</th>
+          </tr>
+        </thead>
+        <tbody id="qtyBody"></tbody>
+      </table>
+    </div>
+    <p class="mf-scroll-hint">← 표와 차트를 좌우로 밀어 전체 수량 구간을 볼 수 있습니다.</p>
+    <div class="mf-chart-wrap">
+      <div class="mf-chart-title"><h3>수량 구간별 개당 원가</h3><span id="chartNote">원/개</span></div>
+      <div class="mf-chart-scroll"><div id="chart"></div></div>
+    </div>
+  </section>
+
+  <section class="mf-out" aria-labelledby="h-cost">
+    <div class="mf-sec-head">
+      <h2 id="h-cost">초기 투자와 총 소요 현금</h2>
+      <p>개당 원가와 별도로, 이번 오더에서 실제로 나가는 돈을 봅니다.</p>
+    </div>
+    <div class="mf-facts" id="facts"></div>
+    <p class="mf-tbl-note" id="cashNote">총 소요 현금 = 생산비(원재료·가공·후가공·물류) + 세팅비 + 금형 제작비(현금 기준). 금형비를 상각 수량에 분배한 경우에도 제작비는 전액 현금으로 나갑니다.</p>
+  </section>
+
+  <details class="mf-src" id="srcBox">
+    <summary>단가 참고 — 수지 시세와 출처 <span>2026-11 기준</span></summary>
+    <div class="mf-src-body">
+      <p class="mf-note">프리셋 단가는 공개 시세를 원/kg으로 환산한 참고값입니다. 중국 위안화 시세는 위안·원 201.57원(2026-11-26 고시)으로 환산했고 운임·관세·통관·부대비용은 포함하지 않았습니다. 실제 조달 단가로 반드시 고쳐 쓰세요.</p>
+      <table class="mf-src-table">
+        <thead><tr><th>원료</th><th style="text-align:right">참고 단가</th><th>기준·출처</th></tr></thead>
+        <tbody id="srcBody"></tbody>
+      </table>
+      <p class="mf-note">재생원료는 한국환경공단 「재활용가능자원 가격조사」 2026년 11월분(2026-11-10 조사, 전국 평균, 부가세 포함·물류비 제외)과 무역 벤치마크를 썼습니다.</p>
+    </div>
+  </details>
+
+  <details class="mf-src" id="calcBox">
+    <summary>계산 기준 <span>어떻게 계산했는지</span></summary>
+    <div class="mf-src-body">
+      <ul class="mf-calc-list">
+        <li>원재료비 = 제품중량 × (1 + 로스율) × 수지단가 + 같은 중량 × 마스터배치% × 첨가제단가</li>
+        <li>성형·가공비 = (사이클타임 ÷ 3,600) × (시간당 기계가동비 + 시간당 인건비) ÷ (캐비티 수 × (1 − 불량률))</li>
+        <li>금형 배분 = 금형 제작비 ÷ 상각 기준 수량. ‘이번 수량에 전액’을 고르면 제작비 ÷ 수량입니다. 수량이 수명을 넘으면 필요한 금형 수만큼 제작비가 늘어납니다.</li>
+        <li>세팅비 배분 = 초기 설비·세팅비 ÷ 수량</li>
+        <li>후가공·포장은 양품 1개당 입력값, 물류는 개당 또는 총액 선택값을 개당으로 환산합니다.</li>
+        <li>외주는 개당·쇼트당·시간당 견적을 개당으로 환산하고, 사급이면 원재료비를 더합니다. 관리비는 외주 가공비의 %입니다.</li>
+        <li>손익분기 수량(BEP) = (직접 고정비 − 외주 고정비) ÷ (외주 개당 변동비 − 직접 개당 변동비). 고정비는 금형·세팅·총액 운송비, 변동비는 원재료·가공·후가공·포장·개당 운송비입니다. 금형 수명 이내를 전제로 계산합니다.</li>
+        <li>세금(부가세), 금융비용, 창고비, 인증·검사비, 설비 투자 회수기간은 넣지 않았습니다. 의사결정 전에 별도로 더해 보세요.</li>
+      </ul>
+    </div>
+  </details>
+
+  <p class="mf-xlink">
+    함께 쓰는 무역 도구 · <a href="biz.html#cost">수입 원가·관부가세 계산기</a> ·
+    <a href="sourcing.html">글로벌 소싱·도착원가 계산기</a> ·
+    <a href="freight.html">해상운임·물류비 비교</a> ·
+    <a href="market.html">원자재·환율 시황판</a> ·
+    <a href="biz.html#trade">무역서식 (PI·CI·PL)</a>
+  </p>
+
+  <section class="mf-legal" aria-labelledby="mf-legal-title">
+    <h3 id="mf-legal-title">계산 기준과 개인정보 안내</h3>
+    <p>계산 범위 — 입력한 수량·단가·조건으로 개당 원가와 총액을 더하는 참고용 계산기입니다. 실제 견적·결산에는 세금, 간접비, 환율 변동, 가동률, 검사·인증 비용이 함께 반영됩니다. 이 계산기는 부가세·금융비용·창고비를 포함하지 않습니다.</p>
+    <p>개인정보 — 입력한 품목명·수량·단가·환율은 브라우저 안에서만 계산에 쓰이고 서버로 전송되지 않습니다. 값은 이 브라우저(localStorage)에만 남고, ‘입력 초기화’를 누르거나 브라우저 데이터를 지우면 사라집니다.</p>
+    <p>수지 시세 — 프리셋 단가는 공개 시세를 원/kg으로 환산한 참고값이며, 운임·관세·통관·부대비용은 포함하지 않았습니다. 계약 전에 공급사 견적으로 확인하세요.</p>
+  </section>
+
+  <p class="mf-disclaimer">
+    본 계산기는 원가 검토를 돕는 참고 도구이며, 계약·견적에 대한 법적·상업적 판단을 대신하지 않습니다. 표시된 값은 입력한 조건 안에서의 계산 결과이고, 실제 견적·결산과 다를 수 있습니다.
+  </p>
+
+</div>
+</main>
+
+<div class="mf-mini mf-noprint" id="miniBar" translate="no">
+  <div class="mf-mini-in">
+    <div class="mf-mini-m mf-mini-d"><span>직접생산</span><b id="miniDirect">—</b></div>
+    <div class="mf-mini-m mf-mini-o"><span>외주가공</span><b id="miniOs">—</b></div>
+    <button class="mf-mini-go" type="button" id="miniGo">비교표</button>
+  </div>
+</div>
+
+<div id="printSheet" aria-hidden="true" translate="no"></div>
+<div class="mf-toast" id="toast" role="status" translate="no"></div>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>독립 경제·탐사 리서치 웹진</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>인사이트 브리프는 경제·금융, 무역·원자재, AI·테크 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진입니다. 정식 인터넷신문 등록 언론사가 아니며, 취재·편집 인력 5인 이상 등 등록 요건을 갖추지 않았습니다.</p>
+      </div>
+      <div class="f-col">
+        <h4>섹션</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">탐사보도</a></li>
+          <li><a href="index.html?cat=economy">경제·금융</a></li>
+          <li><a href="index.html?cat=trade">무역·원자재</a></li>
+          <li><a href="market.html">원자재 시황</a></li>
+          <li><a href="index.html?cat=ai">AI·테크</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>매체</h4>
+        <ul>
+          <li><a href="about.html">소개·편집 원칙</a></li>
+          <li><a href="contact.html#tip">독자 제보</a></li>
+          <li><a href="ad.html">광고·스폰서 단가표</a></li>
+          <li><a href="ad.html#b2b">B2B 소싱·원가 의뢰</a></li>
+          <li><a href="sourcing.html">무료 도구 · 글로벌 소싱·도착원가 계산기</a></li>
+          <li><a href="freight.html">무료 도구 · 해상운임·물류비 비교</a></li>
+          <li><a href="biz.html">무료 도구 · 1인 사업자 툴 9종</a></li>
+          <li><a href="market.html">무료 도구 · 원자재·환율 시황판</a></li>
+          <li><a href="feed.xml">RSS 피드</a></li>
+          <li><a href="sitemap.html">사이트맵</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>문의</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">제보 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">광고 hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">서울 · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>본 웹진은 인터넷신문 등록을 하지 않은 독립 미디어입니다. 기사와 사진의 무단 전재·재배포를 금합니다. 협찬·광고 콘텐츠는 ‘광고’로 표기합니다.</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 독립 경제·탐사 리서치 웹진</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="실시간 브리핑 채널"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>실시간 브리핑 채널</h3><p>새 리포트와 시황을 카카오톡 오픈채팅과 텔레그램으로 실시간으로 받아 보세요.</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">카카오톡 오픈채팅</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">텔레그램 채널</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+<script src="assets/js/mfg-cost.js?v=20261126a" defer></script>
+<script src="assets/js/nav.js?v=20261124c"></script>
+<!-- IB:CHAT-FLOAT -->
+<script src="assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

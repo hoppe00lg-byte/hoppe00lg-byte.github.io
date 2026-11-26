@@ -156,6 +156,7 @@
           <a href="global.html#email" data-nav-key="email">Trade email writer</a>
           <a href="global.html#trip" data-nav-key="trip">Business trip hub</a>
           <a href="biz.html#cost" data-nav-key="cost">Margin, cost &amp; cash calculator</a>
+          <a href="mfg-cost.html" data-nav-key="mfgcost">Make-or-buy cost calculator</a>
           <a href="seller.html" data-nav-key="seller">Seller &amp; marketer tools</a>
           <a href="exhibitions.html" data-nav-key="exhibitions">Global exhibition calendar</a>
         </div>
@@ -261,7 +262,7 @@
             <div class="in-grid in-grid--two">
               <div class="in-field">
                 <label class="lbl" for="sil-prem-cur">Current monthly premium</label>
-                <div class="unit"><input type="number" id="sil-prem-cur" inputmode="numeric" min="0" step="1000" value="31000"><span>won</span></div>
+                <div class="unit"><input type="number" id="sil-prem-cur" inputmode="numeric" min="0" step="1000" value="31000"><span>KRW</span></div>
               </div>
               <div class="in-field">
                 <label class="lbl" for="sil-rate-g">Deductible rate on covered care<span class="hint">Current Agreement</span></label>
@@ -277,11 +278,11 @@
             <div class="in-grid in-grid--two">
               <div class="in-field">
                 <label class="lbl" for="sil-prem-g4">4th-gen monthly premium (total)</label>
-                <div class="unit"><input type="number" id="sil-prem-g4" inputmode="numeric" min="0" step="1000" value="22000"><span>won</span></div>
+                <div class="unit"><input type="number" id="sil-prem-g4" inputmode="numeric" min="0" step="1000" value="22000"><span>KRW</span></div>
               </div>
               <div class="in-field">
                 <label class="lbl" for="sil-prem-g4nb">Of which non-covered rider<span class="hint">Surcharge only applies here</span></label>
-                <div class="unit"><input type="number" id="sil-prem-g4nb" inputmode="numeric" min="0" step="1000" value="11000"><span>won</span></div>
+                <div class="unit"><input type="number" id="sil-prem-g4nb" inputmode="numeric" min="0" step="1000" value="11000"><span>KRW</span></div>
               </div>
             </div>
 
@@ -289,11 +290,11 @@
             <div class="in-grid in-grid--two">
               <div class="in-field">
                 <label class="lbl" for="sil-prem-g5">5th-gen monthly premium (total)<span class="hint">About 70% of the 4th generation</span></label>
-                <div class="unit"><input type="number" id="sil-prem-g5" inputmode="numeric" min="0" step="1000" value="15400"><span>won</span></div>
+                <div class="unit"><input type="number" id="sil-prem-g5" inputmode="numeric" min="0" step="1000" value="15400"><span>KRW</span></div>
               </div>
               <div class="in-field">
                 <label class="lbl" for="sil-prem-g5nb">Of which mild non-covered rider</label>
-                <div class="unit"><input type="number" id="sil-prem-g5nb" inputmode="numeric" min="0" step="1000" value="7700"><span>won</span></div>
+                <div class="unit"><input type="number" id="sil-prem-g5nb" inputmode="numeric" min="0" step="1000" value="7700"><span>KRW</span></div>
               </div>
             </div>
             <div class="in-field">
@@ -318,28 +319,28 @@
             <div class="in-grid in-grid--two">
               <div class="in-field">
                 <label class="lbl" for="sil-med-g">Covered medical costs<span class="hint">Receipt Out-of-pocket expenses</span></label>
-                <div class="unit"><input type="number" id="sil-med-g" inputmode="numeric" min="0" step="10000" value="500000"><span>won</span></div>
+                <div class="unit"><input type="number" id="sil-med-g" inputmode="numeric" min="0" step="10000" value="500000"><span>KRW</span></div>
               </div>
               <div class="in-field">
                 <label class="lbl" for="sil-med-n">Non-covered medical costs<span class="hint">Manual, injection, MRI, etc.</span></label>
-                <div class="unit"><input type="number" id="sil-med-n" inputmode="numeric" min="0" step="10000" value="900000"><span>won</span></div>
+                <div class="unit"><input type="number" id="sil-med-n" inputmode="numeric" min="0" step="10000" value="900000"><span>KRW</span></div>
               </div>
             </div>
             <div class="in-grid in-grid--two">
               <div class="in-field">
                 <label class="lbl" for="sil-med-severe">Severe non-covered, of which<span class="hint">Special calculation cases for cancer, brain, heart, etc.</span></label>
-                <div class="unit"><input type="number" id="sil-med-severe" inputmode="numeric" min="0" step="10000" value="0"><span>won</span></div>
+                <div class="unit"><input type="number" id="sil-med-severe" inputmode="numeric" min="0" step="10000" value="0"><span>KRW</span></div>
               </div>
               <div class="in-field">
                 <label class="lbl" for="sil-med-excl">Excluded items, of which<span class="hint">Manual injections, body supplements, and non-reimbursed injections</span></label>
-                <div class="unit"><input type="number" id="sil-med-excl" inputmode="numeric" min="0" step="10000" value="300000"><span>won</span></div>
+                <div class="unit"><input type="number" id="sil-med-excl" inputmode="numeric" min="0" step="10000" value="300000"><span>KRW</span></div>
               </div>
             </div>
             <p class="in-hint">Just copy the salary ‘out-of-pocket’ and non-benefit totals from the receipt (excluding public corporation contributions). Severe and excluded items are used only for 5th generation calculations, and if you do not know them, leave them as 0 won.</p>
 
             <div class="in-field">
               <label class="lbl" for="sil-paid-nb">Non-covered payout received in the past year <em>(optional)</em><span class="hint">If you know this, your premium rating will be more accurate.</span></label>
-              <div class="unit"><input type="number" id="sil-paid-nb" inputmode="numeric" min="0" step="10000" value="" placeholder="If empty, it is assumed to be non-covered medical expenses."><span>won</span></div>
+              <div class="unit"><input type="number" id="sil-paid-nb" inputmode="numeric" min="0" step="10000" value="" placeholder="If empty, it is assumed to be non-covered medical expenses."><span>KRW</span></div>
             </div>
 
             <div class="in-actions">
@@ -617,7 +618,7 @@
           <div class="in-body">
             <div class="in-field">
               <label class="lbl" for="car-repair">Repair cost (loss amount)<span class="hint">Based on repair shop quotation</span></label>
-              <div class="unit"><input type="number" id="car-repair" inputmode="numeric" min="0" step="10000" value="1800000"><span>won</span></div>
+              <div class="unit"><input type="number" id="car-repair" inputmode="numeric" min="0" step="10000" value="1800000"><span>KRW</span></div>
             </div>
 
             <div class="in-grid in-grid--two">
@@ -642,11 +643,11 @@
             <div class="in-grid in-grid--two">
               <div class="in-field">
                 <label class="lbl" for="car-min">Minimum deductible</label>
-                <div class="unit"><input type="number" id="car-min" inputmode="numeric" min="0" step="10000" value="200000"><span>won</span></div>
+                <div class="unit"><input type="number" id="car-min" inputmode="numeric" min="0" step="10000" value="200000"><span>KRW</span></div>
               </div>
               <div class="in-field">
                 <label class="lbl" for="car-max">Maximum deductible</label>
-                <div class="unit"><input type="number" id="car-max" inputmode="numeric" min="0" step="10000" value="500000"><span>won</span></div>
+                <div class="unit"><input type="number" id="car-max" inputmode="numeric" min="0" step="10000" value="500000"><span>KRW</span></div>
               </div>
             </div>
             <p class="in-hint">Enter the numbers exactly as they appear on the policy. If you choose 20% deductible, the minimum limit is usually 10% of the standard surcharge amount (2 million won → 200,000 won), and the maximum is 500,000 won. It varies by company and product.</p>
@@ -654,7 +655,7 @@
             <div class="in-grid in-grid--two">
               <div class="in-field">
                 <label class="lbl" for="car-premium">Current annual premium<span class="hint">Total automobile insurance premium</span></label>
-                <div class="unit"><input type="number" id="car-premium" inputmode="numeric" min="0" step="10000" value="600000"><span>won</span></div>
+                <div class="unit"><input type="number" id="car-premium" inputmode="numeric" min="0" step="10000" value="600000"><span>KRW</span></div>
               </div>
               <div class="in-field">
                 <label class="lbl" for="car-history">Property claims in the last 3 years</label>

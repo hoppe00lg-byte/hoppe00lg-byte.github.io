@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>自主生产 vs 外协加工 成本计算器 — 注塑成本与盈亏平衡 | INSIGHT BRIEF</title>
+<meta name="description" content="把注塑件自主生产与外协加工的单件成本并排计算。含 12 种树脂预设、模具摊销、模穴、成型周期、不良率、后加工与物流，并提供盈亏平衡数量、各数量区间单价与 CSV·PDF 测算表。所有计算都在浏览器内完成。">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/zh/mfg-cost.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:title" content="自主生产 vs 外协加工 成本计算器">
+<meta property="og:description" content="综合原材料、模具摊销、成型周期、不良率、后加工与物流，并排比较单件成本。含盈亏平衡数量（BEP）、各数量区间单价与 CSV·PDF 测算表。">
+<meta property="og:url" content="https://insightbriefnews.com/zh/mfg-cost.html">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="自主生产 vs 外协加工 成本计算器">
+<meta name="twitter:description" content="含树脂、模具摊销、成型周期、不良率与物流的单件成本比较，以及盈亏平衡数量。附 CSV·PDF 测算表。">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/mfg-cost.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "In-house vs outsourced manufacturing cost calculator",
+  "url": "https://insightbriefnews.com/mfg-cost.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "Free unit-cost calculator that compares making an injection-moulded part in-house with outsourcing it. Resin, masterbatch, runner scrap, mould amortisation, cavities, cycle time, defect rate, post-processing, packaging and freight are included, with break-even quantity, unit cost by order volume, CSV export and an A4 cost sheet.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/mfg-cost.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/mfg-cost.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/mfg-cost.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/mfg-cost.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/mfg-cost.html">
+<link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="../assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tool">
+<a class="skip" href="#main">跳至正文</a>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026年11月26日 星期四</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="../mfg-cost.html" hreflang="ko" lang="ko">KO</a><a href="../en/mfg-cost.html" hreflang="en" lang="en">EN</a><a href="mfg-cost.html" hreflang="zh-Hans" lang="zh-Hans" class="is-on" aria-current="true">ZH</a><a href="../ja/mfg-cost.html" hreflang="ja" lang="ja">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">独立经济·调查报道研究网络杂志</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF 首页">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>洞察简报</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>解读数字背后的脉络</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">提供线索</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">订阅每周简报</a>
+        <button class="icon-btn search-toggle" type="button" aria-label="打开搜索" aria-expanded="false" aria-controls="search-mobile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">新闻·报告<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="新闻·报告">
+          <a href="index.html" data-nav-key="all">全部报道</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI·科技</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">经济·金融</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">贸易·原材料</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">灾难·安全</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">每周调查报道</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">贸易·采购·行情<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="贸易·采购·行情">
+          <a href="biz.html#trade" data-nav-key="tdoc">贸易单据 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">海运运价·物流成本</a>
+          <a href="sourcing.html" data-nav-key="sourcing">全球采购·到岸成本计算</a>
+          <a href="market.html" data-nav-key="market">原材料·汇率行情板</a>
+          <a href="global.html#portal" data-nav-key="portal">采购厅·企业验证门户</a>
+          <a href="global.html#email" data-nav-key="email">贸易邮件撰写</a>
+          <a href="global.html#trip" data-nav-key="trip">出差中心</a>
+          <a href="biz.html#cost" data-nav-key="cost">利润·成本·资金计算器</a>
+          <a href="mfg-cost.html" data-nav-key="mfgcost" class="is-active" aria-current="page">自制·外协成本计算</a>
+          <a href="seller.html" data-nav-key="seller">卖家·营销工具</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">全球展会日历</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税务·法律·生活<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税务·法律·生活">
+          <a href="tax.html" data-nav-key="tax">税金·年薪·健康保险</a>
+          <a href="salary.html" data-nav-key="salary">工资·最低工资·四大保险</a>
+          <a href="insurance.html" data-nav-key="insurance">实损·车险计算器</a>
+          <a href="law.html" data-nav-key="law">法律·合同·催告书</a>
+          <a href="forms.html" data-nav-key="forms">表单·电子签名 138种</a>
+          <a href="saju.html" data-nav-key="saju">四柱·新年运势</a>
+          <a href="lotto.html" data-nav-key="lotto">彩票号码生成器</a>
+          <a href="music.html" data-nav-key="music">AI 音乐·歌词生成器</a>
+          <a href="style.html" data-nav-key="style">穿搭·风格推荐</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">介绍·网站地图<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="介绍·网站地图">
+          <a href="sitemap.html" data-nav-key="sitemap">网站地图</a>
+          <a href="about.html" data-nav-key="about">媒体介绍</a>
+          <a href="ad.html" data-nav-key="ad">广告·合作</a>
+          <a href="contact.html" data-nav-key="contact">爆料·咨询</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="输入关键词搜索" aria-label="搜索文章" autocomplete="off">
+    </form>
+  </div>
+</div>
+<div class="search-mobile" id="search-mobile" hidden>
+  <form class="search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+    <input type="search" name="q" placeholder="输入关键词搜索" aria-label="搜索文章" autocomplete="off">
+  </form>
+</div>
+
+<main id="main" class="mf-main">
+<div class="container mf-wrap" id="mfg-tool">
+
+  <div class="mf-head">
+    <span class="mf-kicker">FREE TOOL · MANUFACTURING COST</span>
+    <h1>自主生产 vs 外协加工 成本计算器</h1>
+    <p class="mf-dek">把同一件产品自主生产与外协加工（来料加工）时的单件成本并排计算。综合树脂、色母、流道损耗、模具摊销、成型周期与不良率、后加工·包装·物流，并同时给出盈亏平衡数量与各数量区间的单价。输入内容不会离开您的浏览器。</p>
+    <div class="mf-badges">
+      <span>注塑成型基准</span><span>不传输数据</span><span>CSV·PDF 导出</span><span>模具摊销方式可选</span><span>韩元·美元换算</span>
+    </div>
+    <div class="mf-toolbar mf-noprint">
+      <button class="mf-btn" type="button" id="btnExample"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10"/></svg>载入示例值</button>
+      <button class="mf-btn" type="button" id="btnReset"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg>清空输入</button>
+      <button class="mf-btn" type="button" id="btnCsv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16"/></svg>下载 CSV</button>
+      <button class="mf-btn mf-btn-primary" type="button" id="btnPrint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg>打印 / 存为 PDF</button>
+    </div>
+  </div>
+
+  <section class="mf-card" aria-labelledby="h-basic">
+    <h2 id="h-basic"><span class="mf-n">01</span>基本条件 <small>产品与数量、显示货币</small></h2>
+    <div class="mf-grid mf-g2">
+      <div class="mf-f" style="grid-column:span 2">
+        <label for="item">项目名称</label>
+        <div class="mf-inw"><input id="item" type="text" value="控制箱外壳（示例）" autocomplete="off" spellcheck="false"></div>
+      </div>
+      <div class="mf-f">
+        <label for="qty">数量</label>
+        <div class="mf-inw mf-has-u"><input id="qty" type="number" inputmode="numeric" min="0" step="100" value="10000"><span class="mf-u">pcs</span></div>
+        <span class="mf-hint">本次订单（或评估）数量</span>
+      </div>
+      <div class="mf-f">
+        <label for="cur">显示货币</label>
+        <div class="mf-inw"><select id="cur"><option value="KRW">韩元 (KRW)</option><option value="USD">美元 (USD)</option></select></div>
+        <span class="mf-hint">输入均按韩元，仅结果换算</span>
+      </div>
+      <div class="mf-f">
+        <label for="fx">适用汇率</label>
+        <div class="mf-inw mf-has-u"><input id="fx" type="number" inputmode="decimal" min="1" step="0.1" value="1343.9"><span class="mf-u">韩元/USD</span></div>
+        <span class="mf-hint">默认 1,343.9 韩元 — 韩国进出口银行 2026-11-26 基准汇率</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="mf-cols">
+    <div class="mf-col-inputs">
+
+      <section class="mf-card" aria-labelledby="h-mat">
+        <h2 id="h-mat"><span class="mf-n">02</span>原材料 <small>树脂·色母</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f mf-full">
+            <label for="resinPreset">树脂预设 <span class="mf-q">— 选择后自动填入原料名与单价</span></label>
+            <div class="mf-inw"><select id="resinPreset"></select></div>
+            <span class="mf-hint" id="resinSrc">参考行情的出处与基准日写在下方“单价参考”中。请改为实际合同单价。</span>
+          </div>
+          <div class="mf-f">
+            <label for="resinName">原料名</label>
+            <div class="mf-inw"><input id="resinName" type="text" value="ABS（原生）" autocomplete="off"></div>
+          </div>
+          <div class="mf-f">
+            <label for="resinPrice">树脂单价</label>
+            <div class="mf-inw mf-has-u"><input id="resinPrice" type="number" inputmode="decimal" min="0" step="10" value="2305"><span class="mf-u">韩元/kg</span></div>
+          </div>
+          <div class="mf-f">
+            <label for="weight">产品重量</label>
+            <div class="mf-inw mf-has-u"><input id="weight" type="number" inputmode="decimal" min="0" step="0.1" value="85"><span class="mf-u">g</span></div>
+            <span class="mf-hint">不含浇口·流道，成品 1 件</span>
+          </div>
+          <div class="mf-f">
+            <label for="loss">流道·废料损耗率</label>
+            <div class="mf-inw mf-has-u"><input id="loss" type="number" inputmode="decimal" min="0" max="99" step="0.5" value="8"><span class="mf-u">%</span></div>
+            <span class="mf-hint">含无法回用部分，取宽一些</span>
+          </div>
+          <div class="mf-f">
+            <label for="mbPct">色母·助剂</label>
+            <div class="mf-inw mf-has-u"><input id="mbPct" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="2"><span class="mf-u">%</span></div>
+            <span class="mf-hint">相对于树脂重量</span>
+          </div>
+          <div class="mf-f">
+            <label for="mbPrice">助剂单价</label>
+            <div class="mf-inw mf-has-u"><input id="mbPrice" type="number" inputmode="decimal" min="0" step="50" value="3500"><span class="mf-u">韩元/kg</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-mold">
+        <h2 id="h-mold"><span class="mf-n">03</span>模具 <small>制作费·模穴·摊销</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="moldCost">模具制作费</label>
+            <div class="mf-inw mf-has-u"><input id="moldCost" type="number" inputmode="numeric" min="0" step="100000" value="18000000"><span class="mf-u">韩元</span></div>
+            <span class="mf-hint">含试模与修正金额</span>
+          </div>
+          <div class="mf-f">
+            <label for="cavities">模穴数</label>
+            <div class="mf-inw mf-has-u"><input id="cavities" type="number" inputmode="numeric" min="1" step="1" value="4"><span class="mf-u">个</span></div>
+            <span class="mf-hint">每模次产出的产品数</span>
+          </div>
+          <div class="mf-f">
+            <label for="moldLife">模具寿命 / 摊销基准数量</label>
+            <div class="mf-inw mf-has-u"><input id="moldLife" type="number" inputmode="numeric" min="1" step="1000" value="300000"><span class="mf-u">pcs</span></div>
+            <span class="mf-hint">分摊到此数量</span>
+          </div>
+          <div class="mf-f mf-full">
+            <span class="mf-lb">模具费分摊方式</span>
+            <div class="mf-seg" role="radiogroup" aria-label="模具费分摊方式">
+              <label><input type="radio" name="moldMode" value="basis" checked><span>按摊销数量分摊<br><i class="mf-sub">按产品全量</i></span></label>
+              <label><input type="radio" name="moldMode" value="order"><span>全部计入本次数量<br><i class="mf-sub">单次订单报价</i></span></label>
+            </div>
+            <span class="mf-hint">选择分摊时，单件成本只含模具摊销部分，模具投资另在“前期投资”中显示。</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-form">
+        <h2 id="h-form"><span class="mf-n">04</span>成型·加工 <small>周期·不良</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="cycle">成型周期</label>
+            <div class="mf-inw mf-has-u"><input id="cycle" type="number" inputmode="decimal" min="0" step="0.5" value="32"><span class="mf-u">秒</span></div>
+            <span class="mf-hint">以开模到合模 1 模次计</span>
+          </div>
+          <div class="mf-f">
+            <label for="defect">不良率</label>
+            <div class="mf-inw mf-has-u"><input id="defect" type="number" inputmode="decimal" min="0" max="99" step="0.5" value="2"><span class="mf-u">%</span></div>
+            <span class="mf-hint">原材料·加工费摊到良品</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-post">
+        <h2 id="h-post"><span class="mf-n">05</span>后加工·包装·物流 <small>按良品计</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="post">单件后加工费</label>
+            <div class="mf-inw mf-has-u"><input id="post" type="number" inputmode="decimal" min="0" step="10" value="120"><span class="mf-u">韩元/件</span></div>
+            <span class="mf-hint">去毛边·浇口、印刷、组装等</span>
+          </div>
+          <div class="mf-f">
+            <label for="pack">单件包装费</label>
+            <div class="mf-inw mf-has-u"><input id="pack" type="number" inputmode="decimal" min="0" step="5" value="35"><span class="mf-u">韩元/件</span></div>
+            <span class="mf-hint">胶袋·缓冲·纸箱·标签</span>
+          </div>
+          <div class="mf-f">
+            <label for="logiMode">物流·运输费输入方式</label>
+            <div class="mf-inw"><select id="logiMode"><option value="total">本次数量总额</option><option value="unit">每件</option></select></div>
+          </div>
+          <div class="mf-f">
+            <label for="logiVal">物流·运输费</label>
+            <div class="mf-inw mf-has-u"><input id="logiVal" type="number" inputmode="decimal" min="0" step="10000" value="450000"><span class="mf-u" id="logiUnit">韩元</span></div>
+            <span class="mf-hint">含往返运输与装卸</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card mf-card-direct" aria-labelledby="h-direct">
+        <h2 id="h-direct"><span class="mf-n mf-n-direct">06</span>自主生产条件 <small>注塑机·人工·换模</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="dpTon">注塑机吨位</label>
+            <div class="mf-inw mf-has-u"><input id="dpTon" type="number" inputmode="numeric" min="0" step="10" value="150"><span class="mf-u">吨</span></div>
+            <span class="mf-hint">按锁模力，仅供参考</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpMachine">每小时设备运转费</label>
+            <div class="mf-inw mf-has-u"><input id="dpMachine" type="number" inputmode="numeric" min="0" step="1000" value="22000"><span class="mf-u">韩元/小时</span></div>
+            <span class="mf-hint">电费+折旧+维护+间接费</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpLabor">每小时人工费</label>
+            <div class="mf-inw mf-has-u"><input id="dpLabor" type="number" inputmode="numeric" min="0" step="1000" value="18000"><span class="mf-u">韩元/小时</span></div>
+            <span class="mf-hint">1 人 1 机，含辅助人员</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpSetup">初期设备·换模费</label>
+            <div class="mf-inw mf-has-u"><input id="dpSetup" type="number" inputmode="numeric" min="0" step="10000" value="350000"><span class="mf-u">韩元</span></div>
+            <span class="mf-hint">装模·条件设定·试模</span>
+          </div>
+        </div>
+        <p class="mf-note">设备运转费按（年折旧 + 电费 + 维护 + 间接费）÷ 年运转工时计算会更接近实际。运转率低时每小时负担会变大。</p>
+      </section>
+
+      <section class="mf-card mf-card-os" aria-labelledby="h-os">
+        <h2 id="h-os"><span class="mf-n mf-n-os">07</span>外协加工条件 <small>报价单价·材料·管理</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f mf-full">
+            <label for="osMode">外协报价方式</label>
+            <div class="mf-inw"><select id="osMode">
+              <option value="perPart">按件报价（韩元/件）</option>
+              <option value="perShot">按模次报价（韩元/模次）</option>
+              <option value="perHour">按小时报价（韩元/小时）</option>
+            </select></div>
+            <span class="mf-hint">按模次、按小时的报价，用上面的模穴数与成型周期换算为单件价。</span>
+          </div>
+          <div class="mf-f">
+            <label for="osPrice">外协加工费</label>
+            <div class="mf-inw mf-has-u"><input id="osPrice" type="number" inputmode="decimal" min="0" step="10" value="620"><span class="mf-u" id="osPriceUnit">韩元/件</span></div>
+          </div>
+          <div class="mf-f">
+            <span class="mf-lb">原材料供给方式</span>
+            <div class="mf-seg mf-seg-sm" role="radiogroup" aria-label="原材料供给方式">
+              <label><input type="radio" name="osMat" value="supply" checked><span>来料加工</span></label>
+              <label><input type="radio" name="osMat" value="turnkey"><span>包工包料</span></label>
+            </div>
+            <span class="mf-hint">若为来料加工，会加上上面的原材料费。</span>
+          </div>
+          <div class="mf-f">
+            <label for="osAdmin">外协管理费</label>
+            <div class="mf-inw mf-has-u"><input id="osAdmin" type="number" inputmode="decimal" min="0" step="0.5" value="3"><span class="mf-u">%</span></div>
+            <span class="mf-hint">按加工费比例计检验·下单管理</span>
+          </div>
+          <div class="mf-f">
+            <label for="osLogi">外协运输费</label>
+            <div class="mf-inw mf-has-u"><input id="osLogi" type="number" inputmode="decimal" min="0" step="10000" value="0"><span class="mf-u">韩元</span></div>
+            <span class="mf-hint">本次数量往返总额</span>
+          </div>
+          <div class="mf-f mf-full">
+            <label class="mf-chk"><input type="checkbox" id="osMold" checked><span>模具制作费由我方承担（向外部提供模具）。取消勾选则外协单件成本不含模具费。</span></label>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="mf-col-result" aria-label="计算结果摘要">
+      <div class="mf-rc" id="resultCard">
+        <div class="mf-rc-top"><h2>单件成本比较</h2><span id="rcMeta">10,000 pcs</span></div>
+        <div class="mf-rc-body">
+          <div class="mf-verdict" id="verdict" aria-live="polite">计算中…</div>
+          <div class="mf-duo">
+            <div class="mf-cc mf-cc-direct" id="ccDirect">
+              <div class="mf-who"><i class="mf-dot"></i>自主生产<span class="mf-win-tag" id="winDirect" hidden>更有利</span></div>
+              <div class="mf-big" id="unitDirect">—<small>/件</small></div>
+              <div class="mf-sub" id="subDirect">—</div>
+              <div class="mf-bar" id="barDirect" aria-hidden="true"></div>
+            </div>
+            <div class="mf-cc mf-cc-os" id="ccOs">
+              <div class="mf-who"><i class="mf-dot"></i>外协加工<span class="mf-win-tag" id="winOs" hidden>更有利</span></div>
+              <div class="mf-big" id="unitOs">—<small>/件</small></div>
+              <div class="mf-sub" id="subOs">—</div>
+              <div class="mf-bar" id="barOs" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="mf-bep" id="bepBox">
+            <span class="mf-k">盈亏平衡数量 (BEP)</span>
+            <b id="bepVal">—</b>
+            <span id="bepText">—</span>
+          </div>
+          <div class="mf-legend" id="legend"></div>
+          <div class="mf-warn" id="warnBox" role="status"></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <section class="mf-out" aria-labelledby="h-cmp">
+    <div class="mf-sec-head">
+      <h2 id="h-cmp">分项比较</h2>
+      <p>把单件成本与本次数量总额按同一项目对齐。</p>
+      <span class="mf-r" id="cmpMeta">—</span>
+    </div>
+    <div class="mf-tw">
+      <table class="mf-cmp" id="cmpTable">
+        <thead>
+          <tr>
+            <th class="mf-l" rowspan="2">项目</th>
+            <th class="mf-d" colspan="2">自主生产</th>
+            <th class="mf-o" colspan="2">外协加工</th>
+            <th rowspan="2">差额<br><span class="mf-thsub">（每件）</span></th>
+          </tr>
+          <tr>
+            <th class="mf-d">每件</th><th class="mf-d">总额</th><th class="mf-o">每件</th><th class="mf-o">总额</th>
+          </tr>
+        </thead>
+        <tbody id="cmpBody"></tbody>
+      </table>
+    </div>
+    <p class="mf-tbl-note" id="cmpNote">差额为“外协 − 自主”，正数(+)表示自主生产便宜相应金额。</p>
+    <p class="mf-scroll-hint">← 左右滑动表格可看到外协数值与差额。</p>
+  </section>
+
+  <section class="mf-out" aria-labelledby="h-qty">
+    <div class="mf-sec-head">
+      <h2 id="h-qty">各数量区间单价</h2>
+      <p>数量变化时，模具摊销、换模费和总额运费的单件分摊也会变化。</p>
+      <span class="mf-r">1,000 ~ 100,000 pcs</span>
+    </div>
+    <div class="mf-tw">
+      <table class="mf-cmp" id="qtyTable">
+        <thead>
+          <tr>
+            <th class="mf-l">数量</th>
+            <th class="mf-d">自主 单件</th><th class="mf-d">自主 总额</th>
+            <th class="mf-o">外协 单件</th><th class="mf-o">外协 总额</th>
+            <th>更有利</th><th>总额差额</th>
+          </tr>
+        </thead>
+        <tbody id="qtyBody"></tbody>
+      </table>
+    </div>
+    <p class="mf-scroll-hint">← 左右滑动表格与图表可查看全部数量区间。</p>
+    <div class="mf-chart-wrap">
+      <div class="mf-chart-title"><h3>各数量区间单件成本</h3><span id="chartNote">韩元/件</span></div>
+      <div class="mf-chart-scroll"><div id="chart"></div></div>
+    </div>
+  </section>
+
+  <section class="mf-out" aria-labelledby="h-cost">
+    <div class="mf-sec-head">
+      <h2 id="h-cost">前期投资与所需现金总额</h2>
+      <p>除单件成本外，还看本次订单实际流出的资金。</p>
+    </div>
+    <div class="mf-facts" id="facts"></div>
+    <p class="mf-tbl-note" id="cashNote">所需现金总额 = 生产成本（原材料·加工·后加工·物流）+ 换模费 + 模具制作费（现金基准）。模具费即使按摊销数量分摊，制作费仍全额以现金支出。</p>
+  </section>
+
+  <details class="mf-src" id="srcBox">
+    <summary>单价参考 — 树脂行情与出处 <span>2026-11 基准</span></summary>
+    <div class="mf-src-body">
+      <p class="mf-note">预设单价是把公开行情换算为韩元/kg 的参考值。人民币行情按 201.57 韩元/元（2026-11-26 公示）换算，不含运费、关税、报关及其他费用。请务必改为实际采购单价。</p>
+      <table class="mf-src-table">
+        <thead><tr><th>树脂</th><th style="text-align:right">参考单价</th><th>基准·出处</th></tr></thead>
+        <tbody id="srcBody"></tbody>
+      </table>
+      <p class="mf-note">再生料采用韩国环境公团《可再生资源价格调查》2026 年 11 月数据（2026-11-10 调查，全国平均，含增值税、不含物流费）与贸易基准。</p>
+    </div>
+  </details>
+
+  <details class="mf-src" id="calcBox">
+    <summary>计算基准 <span>如何计算</span></summary>
+    <div class="mf-src-body">
+      <ul class="mf-calc-list">
+        <li>原材料费 = 产品重量 × (1 + 损耗率) × 树脂单价 + 同一重量 × 色母% × 助剂单价</li>
+        <li>成型·加工费 = (成型周期 ÷ 3,600) × (每小时设备运转费 + 每小时人工费) ÷ (模穴数 × (1 − 不良率))</li>
+        <li>模具分摊 = 模具制作费 ÷ 摊销基准数量。选择“全部计入本次数量”时为制作费 ÷ 数量。数量超过寿命时，制作费按所需模具套数增加。</li>
+        <li>换模费分摊 = 初期设备·换模费 ÷ 数量</li>
+        <li>后加工·包装为每件良品的输入值，物流则把按件或按总额的输入换算为单件。</li>
+        <li>外协把按件、按模次、按小时的报价换算为单件价，来料加工时加上原材料费。管理费是外协加工费的百分比。</li>
+        <li>盈亏平衡数量(BEP) = (自主固定成本 − 外协固定成本) ÷ (外协单件变动成本 − 自主单件变动成本)。固定成本为模具·换模·总额运输费，变动成本为原材料·加工·后加工·包装·单件运输费。以模具寿命以内为前提计算。</li>
+        <li>未计入税金（增值税）、财务费用、仓储费、认证·检测费与设备投资回收期。做决定前请另行加上。</li>
+      </ul>
+    </div>
+  </details>
+
+  <p class="mf-xlink">
+    相关贸易工具 · <a href="biz.html#cost">进口成本·关税增值税计算器</a> ·
+    <a href="sourcing.html">全球采购/到货成本计算器</a> ·
+    <a href="freight.html">海运运价·物流成本</a> ·
+    <a href="market.html">Raw materials and exchange rate market information</a> ·
+    <a href="biz.html#trade">贸易单据（PI·CI·PL）</a>
+  </p>
+
+  <section class="mf-legal" aria-labelledby="mf-legal-title">
+    <h3 id="mf-legal-title">计算基准与个人信息说明</h3>
+    <p>计算范围 — 按输入的數量、单价与条件合计单件成本与总额的参考计算器。实际报价·结算还会反映税金、间接费、汇率变动、运转率与检验·认证费用。本计算器不含增值税、财务费用与仓储费。</p>
+    <p>个人信息 — 输入的产品名称、数量、单价与汇率只在浏览器内用于计算，不会发送到服务器。数值只保存在本浏览器（localStorage）中，按下“清空输入”或清除浏览器数据后即消失。</p>
+    <p>树脂行情 — 预设单价是把公开行情换算为韩元/kg 的参考值，不含运费、关税、报关及其他费用。签约前请以供应商报价确认。</p>
+  </section>
+
+  <p class="mf-disclaimer">
+    本计算器是帮助审阅成本的参考工具，不能代替对合同·报价的法律与商业判断。显示的数值是在输入条件内的计算结果，可能与实际报价·结算不同。
+  </p>
+
+</div>
+</main>
+
+<div class="mf-mini mf-noprint" id="miniBar" translate="no">
+  <div class="mf-mini-in">
+    <div class="mf-mini-m mf-mini-d"><span>自主生产</span><b id="miniDirect">—</b></div>
+    <div class="mf-mini-m mf-mini-o"><span>外协加工</span><b id="miniOs">—</b></div>
+    <button class="mf-mini-go" type="button" id="miniGo">比较表</button>
+  </div>
+</div>
+
+<div id="printSheet" aria-hidden="true" translate="no"></div>
+<div class="mf-toast" id="toast" role="status" translate="no"></div>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>独立经济·调查报道研究网络杂志</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>INSIGHT BRIEF 是以数据与访谈追踪经济金融、贸易原材料、AI 科技现场的独立研究媒体。并非正式注册的互联网新闻机构，也不具备五名以上采编人员等注册条件。</p>
+      </div>
+      <div class="f-col">
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">调查报道</a></li>
+          <li><a href="index.html?cat=economy">经济·金融</a></li>
+          <li><a href="index.html?cat=trade">贸易·原材料</a></li>
+          <li><a href="market.html">行情中心</a></li>
+          <li><a href="index.html?cat=ai">AI·科技</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>媒体</h4>
+        <ul>
+          <li><a href="about.html">关于·编辑原则</a></li>
+          <li><a href="contact.html#tip">读者线索</a></li>
+          <li><a href="ad.html">广告·赞助价目表</a></li>
+          <li><a href="ad.html#b2b">B2B 采购·成本咨询</a></li>
+          <li><a href="sourcing.html">免费工具·全球采购·目的地成本计算器</a></li>
+          <li><a href="freight.html">免费工具 · 海运运价与物流成本</a></li>
+          <li><a href="biz.html">免费工具 · 个体经营者工具 9 种</a></li>
+          <li><a href="market.html">免费工具、原材料和汇率市场信息</a></li>
+          <li><a href="feed.xml">RSS 订阅</a></li>
+          <li><a href="sitemap.html">网站地图</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>联系我们</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">爆料 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">广告 hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">首尔 · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>本媒体为未注册的独立媒体。禁止擅自转载、再分发文章与照片。赞助与广告内容标注为“广告”。</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 独立经济·调查报道研究网络杂志</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="实时简报频道"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>实时简报频道</h3><p>通过 KakaoTalk 开放聊天和 Telegram 实时接收最新报道与行情。</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk 开放聊天</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram 频道</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+<script src="../assets/js/mfg-cost.js?v=20261126a" defer></script>
+<script src="../assets/js/nav.js?v=20261124c"></script>
+<script src="data/i18n.fallback.js?v=20261124a"></script>
+<script src="../assets/js/i18n.js?v=20261124a"></script>
+<!-- IB:CHAT-FLOAT -->
+<script src="../assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

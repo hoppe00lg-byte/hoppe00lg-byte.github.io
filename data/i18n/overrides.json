@@ -652,9 +652,9 @@
    "品目"
   ],
   "개당": [
-   "Per unit",
+   "per piece",
    "每件",
-   "1 個あたり"
+   "1個あたり"
   ],
   "개당 실질 도착원가": [
    "Net landed cost per unit",
@@ -1123,7 +1123,7 @@
   ],
   "기준·출처": [
    "Basis & sources",
-   "基准·来源",
+   "基准·出处",
    "基準・出典"
   ],
   "기준일": [
@@ -2517,9 +2517,9 @@
    "原単位・コスト"
   ],
   "원료": [
-   "Feedstock",
-   "原料",
-   "原料"
+   "Resin",
+   "树脂",
+   "樹脂"
   ],
   "원리금균등": [
    "Equal payment",
@@ -4077,7 +4077,7 @@
    "物損事故の増額基準額"
   ],
   "원": [
-   "won",
+   "KRW",
    "韩元",
    "ウォン"
   ],
@@ -4642,9 +4642,9 @@
    "この道具は入力した値の合計を出すだけです。割増の適用期間、スペース、レート適用日、ターミナル費用で実際の請求は変わります。最終金額は船社・フォワーダーの見積と請求書で確認してください。"
   ],
   "계산 기준과 개인정보 안내": [
-   "Basis of calculation & privacy",
-   "计算依据与个人信息",
-   "計算基準と個人情報"
+   "Calculation basis and privacy",
+   "计算基准与个人信息说明",
+   "計算基準と個人情報のご案内"
   ],
   "— 이 도구는 입력한 운임·할증료·부대비용을 환율로 환산해 더하는 계산기입니다. 관세·부가세·보험료·검사비는 포함하지 않으며, 선사의 실제 청구와 다를 수 있습니다. 견적의 유효기간과 적용 조건은 선사·포워더에 확인하세요.": [
    "— This is a calculator that converts and adds the freight, surcharges and charges you enter. Duty, VAT, insurance and inspection fees are not included and the total can differ from the carrier's invoice. Check the quote's validity and conditions with the carrier or forwarder.",
@@ -4683,8 +4683,8 @@
   ],
   "수입 원가·관부가세 계산기": [
    "Landed cost & duty calculator",
-   "进口成本·关税计算",
-   "輸入原価・関税計算"
+   "进口成本·关税增值税计算器",
+   "輸入原価・関税付加価値税計算"
   ],
   "자주 묻는 질문": [
    "Frequently asked questions",
@@ -5430,6 +5430,761 @@
    "Protection fee, proxy fee, international shipping and duty, added up",
    "合计担保支付·代购手续费、国际运费与关税",
    "安全決済・代行手数料、国際配送、関税を合算"
+  ],
+  "직접생산 vs 외주가공 원가 산출기 — 사출 성형 원가·BEP 비교 | INSIGHT BRIEF": [
+   "In-house vs outsourced manufacturing cost calculator — injection moulding cost & break-even | INSIGHT BRIEF",
+   "自主生产 vs 外协加工 成本计算器 — 注塑成本与盈亏平衡 | INSIGHT BRIEF",
+   "自社生産 vs 外注加工 原価計算ツール — 射出成形原価と損益分岐 | INSIGHT BRIEF"
+  ],
+  "제조·외주 원가 산출기": [
+   "Make-or-buy cost calculator",
+   "自制·外协成本计算",
+   "内製・外注 原価計算"
+  ],
+  "직접생산 vs 외주가공 원가 산출기": [
+   "In-house vs outsourced cost calculator",
+   "自主生产 vs 外协加工 成本计算器",
+   "自社生産 vs 外注加工 原価計算"
+  ],
+  "같은 제품을 직접 생산할 때와 외주가공(임가공)할 때의 개당 원가를 나란히 계산합니다. 원재료와 마스터배치, 런너 로스, 금형 상각, 사이클타임과 불량률, 후가공·포장·물류까지 반영하고 손익분기 수량과 수량 구간별 단가를 함께 보여 줍니다. 입력값은 브라우저 밖으로 전송되지 않습니다.": [
+   "Compare the unit cost of the same part made in-house and outsourced to a moulder. Resin, masterbatch, runner scrap, mould amortisation, cycle time and defect rate, post-processing, packaging and freight are all reflected, together with the break-even quantity and the unit cost at each order volume. Nothing you enter leaves your browser.",
+   "把同一件产品自主生产与外协加工（来料加工）时的单件成本并排计算。综合树脂、色母、流道损耗、模具摊销、成型周期与不良率、后加工·包装·物流，并同时给出盈亏平衡数量与各数量区间的单价。输入内容不会离开您的浏览器。",
+   "同じ製品を自社生産する場合と外注加工（受託加工）する場合の1個あたり原価を並べて計算します。樹脂・マスターバッチ・ランナーロス・金型償却・サイクルタイム・不良率・後加工・包装・物流まで反映し、損益分岐数量と数量帯別の単価も表示します。入力内容はブラウザの外に送信されません。"
+  ],
+  "사출 성형 기준": [
+   "Injection moulding",
+   "注塑成型基准",
+   "射出成形基準"
+  ],
+  "자료 전송 없음": [
+   "No data sent",
+   "不传输数据",
+   "データ送信なし"
+  ],
+  "CSV·PDF 내보내기": [
+   "CSV & PDF export",
+   "CSV·PDF 导出",
+   "CSV・PDF出力"
+  ],
+  "금형 상각 방식 선택": [
+   "Mould amortisation options",
+   "模具摊销方式可选",
+   "金型償却方式を選択"
+  ],
+  "원·달러 환산": [
+   "KRW and USD",
+   "韩元·美元换算",
+   "ウォン・ドル換算"
+  ],
+  "예시 값 불러오기": [
+   "Load example values",
+   "载入示例值",
+   "例の値を読み込む"
+  ],
+  "입력 초기화": [
+   "Clear inputs",
+   "清空输入",
+   "入力をリセット"
+  ],
+  "CSV 내려받기": [
+   "Download CSV",
+   "下载 CSV",
+   "CSVをダウンロード"
+  ],
+  "인쇄 / PDF 저장": [
+   "Print / save PDF",
+   "打印 / 存为 PDF",
+   "印刷 / PDF保存"
+  ],
+  "기본 조건": [
+   "Basics",
+   "基本条件",
+   "基本条件"
+  ],
+  "품목과 수량, 표시 통화": [
+   "Item, quantity, display currency",
+   "产品与数量、显示货币",
+   "品目・数量・表示通貨"
+  ],
+  "컨트롤박스 하우징 (예시)": [
+   "Control box housing (example)",
+   "控制箱外壳（示例）",
+   "コントロールボックスハウジング（例）"
+  ],
+  "이번 오더(또는 검토) 수량": [
+   "Quantity for this order (or review)",
+   "本次订单（或评估）数量",
+   "今回の発注（または検討）数量"
+  ],
+  "표시 통화": [
+   "Display currency",
+   "显示货币",
+   "表示通貨"
+  ],
+  "원 (KRW)": [
+   "KRW (won)",
+   "韩元 (KRW)",
+   "ウォン (KRW)"
+  ],
+  "달러 (USD)": [
+   "USD (dollar)",
+   "美元 (USD)",
+   "ドル (USD)"
+  ],
+  "입력은 모두 원화 기준, 결과만 환산": [
+   "All inputs in KRW; only the results are converted",
+   "输入均按韩元，仅结果换算",
+   "入力はすべてウォン基準、結果のみ換算"
+  ],
+  "원/USD": [
+   "KRW/USD",
+   "韩元/USD",
+   "ウォン/USD"
+  ],
+  "기본값 1,343.9원 — 한국수출입은행 2026-11-26 고시": [
+   "Default 1,343.9 — Korea Eximbank base rate, 2026-11-26",
+   "默认 1,343.9 韩元 — 韩国进出口银行 2026-11-26 基准汇率",
+   "初期値 1,343.9ウォン — 韓国輸出入銀行 2026-11-26 公示"
+  ],
+  "원재료": [
+   "Material",
+   "原材料",
+   "原材料"
+  ],
+  "수지·마스터배치": [
+   "Resin & masterbatch",
+   "树脂·色母",
+   "樹脂・マスターバッチ"
+  ],
+  "수지 프리셋": [
+   "Resin preset",
+   "树脂预设",
+   "樹脂プリセット"
+  ],
+  "— 고르면 원료명과 단가가 채워집니다": [
+   "— picking one fills the resin name and price",
+   "— 选择后自动填入原料名与单价",
+   "— 選ぶと原料名と単価が入ります"
+  ],
+  "참고 시세는 아래 ‘단가 참고’에 출처와 기준일을 적었습니다. 실제 계약단가로 고쳐 쓰세요.": [
+   "Sources and dates for the reference prices are listed under ‘Price references’ below. Replace them with your contracted price.",
+   "参考行情的出处与基准日写在下方“单价参考”中。请改为实际合同单价。",
+   "参考市況の出典と基準日は下の「単価参考」に記載しています。実際の契約単価に直して使ってください。"
+  ],
+  "원료명": [
+   "Resin name",
+   "原料名",
+   "原料名"
+  ],
+  "ABS (버진)": [
+   "ABS (virgin)",
+   "ABS（原生）",
+   "ABS（バージン）"
+  ],
+  "수지 단가": [
+   "Resin price",
+   "树脂单价",
+   "樹脂単価"
+  ],
+  "원/kg": [
+   "KRW/kg",
+   "韩元/kg",
+   "ウォン/kg"
+  ],
+  "제품 중량": [
+   "Part weight",
+   "产品重量",
+   "製品重量"
+  ],
+  "게이트·런너 제외, 완제품 1개": [
+   "Finished part only, gate and runner excluded",
+   "不含浇口·流道，成品 1 件",
+   "ゲート・ランナーを除く完成品1個"
+  ],
+  "런너·스크랩 로스율": [
+   "Runner & scrap loss",
+   "流道·废料损耗率",
+   "ランナー・スクラップロス率"
+  ],
+  "재사용 불가분 포함해 넉넉히": [
+   "Include the part that cannot be reused",
+   "含无法回用部分，取宽一些",
+   "再利用できない分を含めて余裕をもって"
+  ],
+  "마스터배치·첨가제": [
+   "Masterbatch & additives",
+   "色母·助剂",
+   "マスターバッチ・添加剤"
+  ],
+  "수지 중량 대비": [
+   "Against resin weight",
+   "相对于树脂重量",
+   "樹脂重量比"
+  ],
+  "첨가제 단가": [
+   "Additive price",
+   "助剂单价",
+   "添加剤単価"
+  ],
+  "금형": [
+   "Mould",
+   "模具",
+   "金型"
+  ],
+  "제작비·캐비티·상각": [
+   "Tool cost, cavities, amortisation",
+   "制作费·模穴·摊销",
+   "製作費・キャビティ・償却"
+  ],
+  "금형 제작비": [
+   "Mould cost",
+   "模具制作费",
+   "金型製作費"
+  ],
+  "시사출·수정 포함 금액": [
+   "Including trial shots and rework",
+   "含试模与修正金额",
+   "試し撃ち・修正込みの金額"
+  ],
+  "캐비티 수": [
+   "Cavities",
+   "模穴数",
+   "キャビティ数"
+  ],
+  "1쇼트에 나오는 제품 수": [
+   "Parts per shot",
+   "每模次产出的产品数",
+   "1ショットで出る製品数"
+  ],
+  "금형 수명 / 상각 기준 수량": [
+   "Mould life / amortisation volume",
+   "模具寿命 / 摊销基准数量",
+   "金型寿命 / 償却基準数量"
+  ],
+  "이 수량까지 나눠 배분": [
+   "Spread over this volume",
+   "分摊到此数量",
+   "この数量まで配分"
+  ],
+  "금형비 배분 방식": [
+   "How the mould cost is spread",
+   "模具费分摊方式",
+   "金型費の配分方式"
+  ],
+  "상각 수량에 분배": [
+   "Spread over life volume",
+   "按摊销数量分摊",
+   "償却数量に配分"
+  ],
+  "제품 전체 물량 기준": [
+   "over the whole programme",
+   "按产品全量",
+   "製品全体の数量基準"
+  ],
+  "이번 수량에 전액": [
+   "All on this order",
+   "全部计入本次数量",
+   "今回数量に全額"
+  ],
+  "단일 오더 견적": [
+   "single-order quote",
+   "单次订单报价",
+   "単発注の見積"
+  ],
+  "분배를 고르면 개당 원가에는 금형비의 상각분만 들어가고, 금형 투자금은 ‘초기 투자’에 따로 표시됩니다.": [
+   "With spreading, only the amortised share enters the unit cost and the mould investment appears separately as upfront investment.",
+   "选择分摊时，单件成本只含模具摊销部分，模具投资另在“前期投资”中显示。",
+   "配分を選ぶと1個あたり原価には償却分だけが入り、金型投資は「初期投資」に別途表示されます。"
+  ],
+  "성형·가공": [
+   "Moulding & processing",
+   "成型·加工",
+   "成形・加工"
+  ],
+  "사이클·불량": [
+   "Cycle & defects",
+   "周期·不良",
+   "サイクル・不良"
+  ],
+  "사이클타임": [
+   "Cycle time",
+   "成型周期",
+   "サイクルタイム"
+  ],
+  "초": [
+   "s",
+   "秒",
+   "秒"
+  ],
+  "형개~형폐 1쇼트 기준": [
+   "One shot, mould open to close",
+   "以开模到合模 1 模次计",
+   "型開き〜型閉じの1ショット基準"
+  ],
+  "불량률": [
+   "Defect rate",
+   "不良率",
+   "不良率"
+  ],
+  "원재료·가공비를 양품에 배분": [
+   "Material and processing cost spread over good parts",
+   "原材料·加工费摊到良品",
+   "原材料・加工費を良品に配分"
+  ],
+  "후가공·포장·물류": [
+   "Post-processing, packaging & logistics",
+   "后加工·包装·物流",
+   "後加工・包装・物流"
+  ],
+  "양품 기준": [
+   "Per good part",
+   "按良品计",
+   "良品基準"
+  ],
+  "개당 후가공비": [
+   "Post-processing per piece",
+   "单件后加工费",
+   "1個あたり後加工費"
+  ],
+  "원/pc": [
+   "KRW/pc",
+   "韩元/件",
+   "ウォン/個"
+  ],
+  "버·게이트 제거, 인쇄, 조립 등": [
+   "Degating, printing, assembly and so on",
+   "去毛边·浇口、印刷、组装等",
+   "バリ・ゲート除去、印刷、組立など"
+  ],
+  "개당 포장비": [
+   "Packaging per piece",
+   "单件包装费",
+   "1個あたり包装費"
+  ],
+  "비닐·완충·박스·라벨": [
+   "Bag, cushioning, carton, label",
+   "胶袋·缓冲·纸箱·标签",
+   "袋・緩衝材・箱・ラベル"
+  ],
+  "물류·운송비 입력 방식": [
+   "Freight input basis",
+   "物流·运输费输入方式",
+   "物流・運送費の入力方式"
+  ],
+  "이번 수량 총액": [
+   "Total for this order",
+   "本次数量总额",
+   "今回数量の総額"
+  ],
+  "물류·운송비": [
+   "Freight & logistics",
+   "物流·运输费",
+   "物流・運送費"
+  ],
+  "왕복 배송·상하차 포함": [
+   "Including round trip and handling",
+   "含往返运输与装卸",
+   "往復配送・積み下ろし込み"
+  ],
+  "직접생산 조건": [
+   "In-house conditions",
+   "自主生产条件",
+   "自社生産条件"
+  ],
+  "사출기·인력·세팅": [
+   "Machine, labour, setup",
+   "注塑机·人工·换模",
+   "成形機・人員・段取り"
+  ],
+  "사출기 톤수": [
+   "Machine size",
+   "注塑机吨位",
+   "成形機トン数"
+  ],
+  "톤": [
+   "t",
+   "吨",
+   "トン"
+  ],
+  "형체력 기준, 참고 표기": [
+   "Clamping force; for reference",
+   "按锁模力，仅供参考",
+   "型締力基準、参考表示"
+  ],
+  "시간당 기계가동비": [
+   "Machine rate per hour",
+   "每小时设备运转费",
+   "時間あたり機械稼働費"
+  ],
+  "원/h": [
+   "KRW/h",
+   "韩元/小时",
+   "ウォン/h"
+  ],
+  "전력+감가+유지+간접비": [
+   "Power + depreciation + upkeep + overhead",
+   "电费+折旧+维护+间接费",
+   "電力＋減価＋維持＋間接費"
+  ],
+  "시간당 인건비": [
+   "Labour rate per hour",
+   "每小时人工费",
+   "時間あたり人件費"
+  ],
+  "1인 1대 기준, 부대인력 포함": [
+   "One operator per machine, helpers included",
+   "1 人 1 机，含辅助人员",
+   "1人1台基準、補助人員込み"
+  ],
+  "초기 설비·세팅비": [
+   "Initial setup cost",
+   "初期设备·换模费",
+   "初期設備・段取り費"
+  ],
+  "금형 장착·조건 셋업·시사출": [
+   "Mould mounting, conditions, trial shots",
+   "装模·条件设定·试模",
+   "金型取付・条件設定・試し撃ち"
+  ],
+  "기계가동비는 (연간 감가상각 + 전력 + 유지보수 + 간접비) ÷ 연간 가동시간으로 잡으면 실제와 가까워집니다. 가동률이 낮으면 시간당 부담이 커집니다.": [
+   "Setting the machine rate as (annual depreciation + power + maintenance + overhead) ÷ annual running hours gets close to reality. A low utilisation rate raises the hourly burden.",
+   "设备运转费按（年折旧 + 电费 + 维护 + 间接费）÷ 年运转工时计算会更接近实际。运转率低时每小时负担会变大。",
+   "機械稼働費は（年間減価償却＋電力＋保守＋間接費）÷年間稼働時間で置くと実際に近づきます。稼働率が低いと時間あたり負担が大きくなります。"
+  ],
+  "외주가공 조건": [
+   "Outsourcing conditions",
+   "外协加工条件",
+   "外注加工条件"
+  ],
+  "견적 단가·자재·관리": [
+   "Quote, material, admin",
+   "报价单价·材料·管理",
+   "見積単価・材料・管理"
+  ],
+  "외주 견적 방식": [
+   "Quote basis",
+   "外协报价方式",
+   "外注見積の方式"
+  ],
+  "개당 견적 (원/pc)": [
+   "Per piece (KRW/pc)",
+   "按件报价（韩元/件）",
+   "1個あたり（ウォン/個）"
+  ],
+  "쇼트당 견적 (원/shot)": [
+   "Per shot (KRW/shot)",
+   "按模次报价（韩元/模次）",
+   "1ショットあたり（ウォン/shot）"
+  ],
+  "시간당 견적 (원/h)": [
+   "Per hour (KRW/h)",
+   "按小时报价（韩元/小时）",
+   "1時間あたり（ウォン/h）"
+  ],
+  "쇼트·시간당 견적은 위 캐비티 수·사이클타임으로 개당 환산합니다.": [
+   "Per-shot and per-hour quotes are converted to a per-piece price with the cavities and cycle time above.",
+   "按模次、按小时的报价，用上面的模穴数与成型周期换算为单件价。",
+   "ショット・時間あたりの見積は、上のキャビティ数・サイクルタイムで1個あたりに換算します。"
+  ],
+  "외주 가공비": [
+   "Outsourcing price",
+   "外协加工费",
+   "外注加工費"
+  ],
+  "원재료 지급 방식": [
+   "Material supply",
+   "原材料供给方式",
+   "原材料の支給方式"
+  ],
+  "사급": [
+   "Free issue",
+   "来料加工",
+   "支給"
+  ],
+  "도급(자재 포함)": [
+   "Turnkey (material included)",
+   "包工包料",
+   "素材込み"
+  ],
+  "사급이면 위 원재료비를 더합니다.": [
+   "With free issue, the material cost above is added.",
+   "若为来料加工，会加上上面的原材料费。",
+   "支給の場合は上の原材料費を加えます。"
+  ],
+  "외주 관리비": [
+   "Outsourcing admin",
+   "外协管理费",
+   "外注管理費"
+  ],
+  "가공비 대비 검수·발주 관리": [
+   "% of processing cost for inspection and ordering",
+   "按加工费比例计检验·下单管理",
+   "加工費に対する検収・発注管理"
+  ],
+  "외주 운송비": [
+   "Outsourcing freight",
+   "外协运输费",
+   "外注運送費"
+  ],
+  "이번 수량 왕복 총액": [
+   "Round trip total for this order",
+   "本次数量往返总额",
+   "今回数量の往復総額"
+  ],
+  "금형 제작비를 당사가 부담합니다(외주처에 금형 지급). 끄면 외주 개당 원가에서 금형비가 빠집니다.": [
+   "We pay for the mould (the tool is supplied to the moulder). Uncheck to leave mould cost out of the outsourced unit cost.",
+   "模具制作费由我方承担（向外部提供模具）。取消勾选则外协单件成本不含模具费。",
+   "金型製作費は当社負担（外注先に金型を支給）。外すと外注の1個あたり原価から金型費が抜けます。"
+  ],
+  "계산 결과 요약": [
+   "Calculation summary",
+   "计算结果摘要",
+   "計算結果の概要"
+  ],
+  "개당 원가 비교": [
+   "Unit cost comparison",
+   "单件成本比较",
+   "1個あたり原価の比較"
+  ],
+  "계산 중…": [
+   "Calculating…",
+   "计算中…",
+   "計算中…"
+  ],
+  "직접생산": [
+   "In-house",
+   "自主生产",
+   "自社生産"
+  ],
+  "유리": [
+   "Cheaper",
+   "更有利",
+   "有利"
+  ],
+  "/개": [
+   "/pc",
+   "/件",
+   "/個"
+  ],
+  "외주가공": [
+   "Outsourced",
+   "外协加工",
+   "外注加工"
+  ],
+  "손익분기 수량 (BEP)": [
+   "Break-even quantity (BEP)",
+   "盈亏平衡数量 (BEP)",
+   "損益分岐数量 (BEP)"
+  ],
+  "항목별 비교": [
+   "Cost by item",
+   "分项比较",
+   "項目別比較"
+  ],
+  "개당 원가와 이번 수량 총액을 같은 항목끼리 맞춥니다.": [
+   "Unit cost and total for this order, lined up item by item.",
+   "把单件成本与本次数量总额按同一项目对齐。",
+   "1個あたり原価と今回数量の総額を同じ項目で並べます。"
+  ],
+  "(개당)": [
+   "(per piece)",
+   "（每件）",
+   "（1個）"
+  ],
+  "차액은 ‘외주 − 직접’입니다. 양수(+)면 직접생산이 그만큼 저렴합니다.": [
+   "The difference is outsourced − in-house; a positive figure means in-house is that much cheaper.",
+   "差额为“外协 − 自主”，正数(+)表示自主生产便宜相应金额。",
+   "差額は「外注 − 自社」です。プラス(+)なら自社生産がその分安いという意味です。"
+  ],
+  "← 표를 좌우로 밀면 외주가공 값과 차액까지 보입니다.": [
+   "← Swipe the table sideways to see the outsourced figures and the difference.",
+   "← 左右滑动表格可看到外协数值与差额。",
+   "← 表を左右にスクロールすると外注の値と差額まで見えます。"
+  ],
+  "수량 구간별 단가": [
+   "Unit cost by order volume",
+   "各数量区间单价",
+   "数量帯別単価"
+  ],
+  "수량이 달라지면 금형 상각과 세팅비, 총액 운송비의 개당 부담이 달라집니다.": [
+   "Changing the volume changes the per-piece share of mould amortisation, setup and lump-sum freight.",
+   "数量变化时，模具摊销、换模费和总额运费的单件分摊也会变化。",
+   "数量が変わると金型償却・段取り費・総額運送費の1個あたり負担が変わります。"
+  ],
+  "직접 개당": [
+   "In-house /pc",
+   "自主 单件",
+   "自社 1個"
+  ],
+  "직접 총액": [
+   "In-house total",
+   "自主 总额",
+   "自社 総額"
+  ],
+  "외주 개당": [
+   "Outsourced /pc",
+   "外协 单件",
+   "外注 1個"
+  ],
+  "외주 총액": [
+   "Outsourced total",
+   "外协 总额",
+   "外注 総額"
+  ],
+  "총액 차액": [
+   "Total difference",
+   "总额差额",
+   "総額差額"
+  ],
+  "← 표와 차트를 좌우로 밀어 전체 수량 구간을 볼 수 있습니다.": [
+   "← Swipe the table and chart sideways to see every volume band.",
+   "← 左右滑动表格与图表可查看全部数量区间。",
+   "← 表とグラフを左右にスクロールすると全数量帯が見えます。"
+  ],
+  "수량 구간별 개당 원가": [
+   "Unit cost by volume",
+   "各数量区间单件成本",
+   "数量帯別1個あたり原価"
+  ],
+  "원/개": [
+   "KRW/pc",
+   "韩元/件",
+   "ウォン/個"
+  ],
+  "초기 투자와 총 소요 현금": [
+   "Upfront investment and total cash",
+   "前期投资与所需现金总额",
+   "初期投資と必要現金合計"
+  ],
+  "개당 원가와 별도로, 이번 오더에서 실제로 나가는 돈을 봅니다.": [
+   "Separate from the unit cost, this is the money that actually leaves for this order.",
+   "除单件成本外，还看本次订单实际流出的资金。",
+   "1個あたり原価とは別に、今回の発注で実際に出ていくお金を見ます。"
+  ],
+  "총 소요 현금 = 생산비(원재료·가공·후가공·물류) + 세팅비 + 금형 제작비(현금 기준). 금형비를 상각 수량에 분배한 경우에도 제작비는 전액 현금으로 나갑니다.": [
+   "Total cash = production cost (material, processing, post-processing, freight) + setup + mould cost, on a cash basis. Even when the mould cost is spread, the full tool cost leaves as cash.",
+   "所需现金总额 = 生产成本（原材料·加工·后加工·物流）+ 换模费 + 模具制作费（现金基准）。模具费即使按摊销数量分摊，制作费仍全额以现金支出。",
+   "必要現金合計＝生産費（原材料・加工・後加工・物流）＋段取り費＋金型製作費（現金基準）。金型費を償却数量に配分した場合でも製作費は全額現金で出ます。"
+  ],
+  "단가 참고 — 수지 시세와 출처": [
+   "Price references — resin prices and sources",
+   "单价参考 — 树脂行情与出处",
+   "単価参考 — 樹脂市況と出典"
+  ],
+  "2026-11 기준": [
+   "as of Nov 2026",
+   "2026-11 基准",
+   "2026-11 基準"
+  ],
+  "프리셋 단가는 공개 시세를 원/kg으로 환산한 참고값입니다. 중국 위안화 시세는 위안·원 201.57원(2026-11-26 고시)으로 환산했고 운임·관세·통관·부대비용은 포함하지 않았습니다. 실제 조달 단가로 반드시 고쳐 쓰세요.": [
+   "Preset prices are public quotes converted to KRW/kg. Chinese yuan quotes were converted at KRW 201.57/CNY (2026-11-26) and exclude freight, duty, customs clearance and other charges. Always replace them with your actual procurement price.",
+   "预设单价是把公开行情换算为韩元/kg 的参考值。人民币行情按 201.57 韩元/元（2026-11-26 公示）换算，不含运费、关税、报关及其他费用。请务必改为实际采购单价。",
+   "プリセット単価は公開市況をウォン/kgに換算した参考値です。人民元の市況は201.57ウォン/元（2026-11-26公示）で換算し、運賃・関税・通関・付帯費用は含みません。実際の調達単価に必ず直してください。"
+  ],
+  "참고 단가": [
+   "Reference price",
+   "参考单价",
+   "参考単価"
+  ],
+  "재생원료는 한국환경공단 「재활용가능자원 가격조사」 2026년 11월분(2026-11-10 조사, 전국 평균, 부가세 포함·물류비 제외)과 무역 벤치마크를 썼습니다.": [
+   "Recycled grades use the Korea Environment Corporation recyclables price survey for November 2026 (surveyed 2026-11-10, national average, VAT included, freight excluded) and trade benchmarks.",
+   "再生料采用韩国环境公团《可再生资源价格调查》2026 年 11 月数据（2026-11-10 调查，全国平均，含增值税、不含物流费）与贸易基准。",
+   "再生原料は韓国環境公団「再活用可能資源価格調査」2026年11月分（2026-11-10調査、全国平均、付加価値税込み・物流費別）と貿易ベンチマークを使用しました。"
+  ],
+  "계산 기준": [
+   "Calculation basis",
+   "计算基准",
+   "計算基準"
+  ],
+  "어떻게 계산했는지": [
+   "How it is calculated",
+   "如何计算",
+   "計算方法"
+  ],
+  "원재료비 = 제품중량 × (1 + 로스율) × 수지단가 + 같은 중량 × 마스터배치% × 첨가제단가": [
+   "Material cost = part weight × (1 + scrap rate) × resin price + the same weight × masterbatch % × additive price",
+   "原材料费 = 产品重量 × (1 + 损耗率) × 树脂单价 + 同一重量 × 色母% × 助剂单价",
+   "原材料費 = 製品重量 × (1 + ロス率) × 樹脂単価 + 同じ重量 × マスターバッチ% × 添加剤単価"
+  ],
+  "성형·가공비 = (사이클타임 ÷ 3,600) × (시간당 기계가동비 + 시간당 인건비) ÷ (캐비티 수 × (1 − 불량률))": [
+   "Moulding cost = (cycle time ÷ 3,600) × (machine rate + labour rate) ÷ (cavities × (1 − defect rate))",
+   "成型·加工费 = (成型周期 ÷ 3,600) × (每小时设备运转费 + 每小时人工费) ÷ (模穴数 × (1 − 不良率))",
+   "成形・加工費 = (サイクルタイム ÷ 3,600) × (時間あたり機械稼働費 + 時間あたり人件費) ÷ (キャビティ数 × (1 − 不良率))"
+  ],
+  "금형 배분 = 금형 제작비 ÷ 상각 기준 수량. ‘이번 수량에 전액’을 고르면 제작비 ÷ 수량입니다. 수량이 수명을 넘으면 필요한 금형 수만큼 제작비가 늘어납니다.": [
+   "Mould share = mould cost ÷ amortisation volume. With ‘all on this order’ it is cost ÷ order quantity. If the quantity exceeds the mould life, the cost grows by the number of mould sets needed.",
+   "模具分摊 = 模具制作费 ÷ 摊销基准数量。选择“全部计入本次数量”时为制作费 ÷ 数量。数量超过寿命时，制作费按所需模具套数增加。",
+   "金型配分 = 金型製作費 ÷ 償却基準数量。「今回数量に全額」を選ぶと製作費 ÷ 数量です。数量が寿命を超えると必要な金型数だけ製作費が増えます。"
+  ],
+  "세팅비 배분 = 초기 설비·세팅비 ÷ 수량": [
+   "Setup share = initial setup cost ÷ quantity",
+   "换模费分摊 = 初期设备·换模费 ÷ 数量",
+   "段取り費配分 = 初期設備・段取り費 ÷ 数量"
+  ],
+  "후가공·포장은 양품 1개당 입력값, 물류는 개당 또는 총액 선택값을 개당으로 환산합니다.": [
+   "Post-processing and packaging are entered per good part; freight is converted to a per-piece figure from either the per-piece or the lump-sum value.",
+   "后加工·包装为每件良品的输入值，物流则把按件或按总额的输入换算为单件。",
+   "後加工・包装は良品1個あたりの入力値、物流は1個あたりまたは総額の選択値を1個あたりに換算します。"
+  ],
+  "외주는 개당·쇼트당·시간당 견적을 개당으로 환산하고, 사급이면 원재료비를 더합니다. 관리비는 외주 가공비의 %입니다.": [
+   "Outsourcing converts a per-piece, per-shot or per-hour quote to a per-piece price and, with free issue, adds the material cost. The admin fee is a percentage of the processing price.",
+   "外协把按件、按模次、按小时的报价换算为单件价，来料加工时加上原材料费。管理费是外协加工费的百分比。",
+   "外注は1個・1ショット・1時間あたりの見積を1個あたりに換算し、支給の場合は原材料費を加えます。管理費は外注加工費の%です。"
+  ],
+  "손익분기 수량(BEP) = (직접 고정비 − 외주 고정비) ÷ (외주 개당 변동비 − 직접 개당 변동비). 고정비는 금형·세팅·총액 운송비, 변동비는 원재료·가공·후가공·포장·개당 운송비입니다. 금형 수명 이내를 전제로 계산합니다.": [
+   "Break-even quantity (BEP) = (in-house fixed − outsourced fixed) ÷ (outsourced variable − in-house variable). Fixed costs are the mould, setup and lump-sum freight; variable costs are material, processing, post-processing, packaging and per-piece freight. It assumes the quantity stays within the mould life.",
+   "盈亏平衡数量(BEP) = (自主固定成本 − 外协固定成本) ÷ (外协单件变动成本 − 自主单件变动成本)。固定成本为模具·换模·总额运输费，变动成本为原材料·加工·后加工·包装·单件运输费。以模具寿命以内为前提计算。",
+   "損益分岐数量(BEP) = (自社固定費 − 外注固定費) ÷ (外注1個あたり変動費 − 自社1個あたり変動費)。固定費は金型・段取り・総額運送費、変動費は原材料・加工・後加工・包装・1個あたり運送費です。金型寿命以内を前提に計算します。"
+  ],
+  "세금(부가세), 금융비용, 창고비, 인증·검사비, 설비 투자 회수기간은 넣지 않았습니다. 의사결정 전에 별도로 더해 보세요.": [
+   "Tax (VAT), financing, warehousing, certification and inspection costs are not included, nor is a payback period for equipment. Add them separately before deciding.",
+   "未计入税金（增值税）、财务费用、仓储费、认证·检测费与设备投资回收期。做决定前请另行加上。",
+   "税金（付加価値税）、金融費用、倉庫費、認証・検査費、設備投資の回収期間は含めていません。意思決定の前に別途足してみてください。"
+  ],
+  "함께 쓰는 무역 도구 ·": [
+   "Related trade tools ·",
+   "相关贸易工具 ·",
+   "あわせて使う貿易ツール ·"
+  ],
+  "계산 범위 — 입력한 수량·단가·조건으로 개당 원가와 총액을 더하는 참고용 계산기입니다. 실제 견적·결산에는 세금, 간접비, 환율 변동, 가동률, 검사·인증 비용이 함께 반영됩니다. 이 계산기는 부가세·금융비용·창고비를 포함하지 않습니다.": [
+   "Scope — a reference calculator that adds up unit cost and total from the quantity, prices and conditions you enter. An actual quote or closing also reflects tax, overhead, exchange-rate movement, utilisation and inspection or certification costs. This calculator does not include VAT, financing or warehousing.",
+   "计算范围 — 按输入的數量、单价与条件合计单件成本与总额的参考计算器。实际报价·结算还会反映税金、间接费、汇率变动、运转率与检验·认证费用。本计算器不含增值税、财务费用与仓储费。",
+   "計算範囲 — 入力した数量・単価・条件で1個あたり原価と総額を足す参考用の計算ツールです。実際の見積・決算には税金、間接費、為替変動、稼働率、検査・認証費用が反映されます。この計算ツールは付加価値税・金融費用・倉庫費を含みません。"
+  ],
+  "개인정보 — 입력한 품목명·수량·단가·환율은 브라우저 안에서만 계산에 쓰이고 서버로 전송되지 않습니다. 값은 이 브라우저(localStorage)에만 남고, ‘입력 초기화’를 누르거나 브라우저 데이터를 지우면 사라집니다.": [
+   "Privacy — the item name, quantity, prices and exchange rate you enter are used only inside your browser and are not sent to a server. Values stay in this browser (localStorage) and disappear when you press ‘Clear inputs’ or clear browser data.",
+   "个人信息 — 输入的产品名称、数量、单价与汇率只在浏览器内用于计算，不会发送到服务器。数值只保存在本浏览器（localStorage）中，按下“清空输入”或清除浏览器数据后即消失。",
+   "個人情報 — 入力した品目名・数量・単価・為替はブラウザ内だけで計算に使われ、サーバーに送信されません。値はこのブラウザ（localStorage）にだけ残り、「入力をリセット」を押すかブラウザデータを消すと失われます。"
+  ],
+  "수지 시세 — 프리셋 단가는 공개 시세를 원/kg으로 환산한 참고값이며, 운임·관세·통관·부대비용은 포함하지 않았습니다. 계약 전에 공급사 견적으로 확인하세요.": [
+   "Resin prices — preset prices are public quotes converted to KRW/kg and exclude freight, duty, customs clearance and other charges. Confirm with a supplier quote before contracting.",
+   "树脂行情 — 预设单价是把公开行情换算为韩元/kg 的参考值，不含运费、关税、报关及其他费用。签约前请以供应商报价确认。",
+   "樹脂市況 — プリセット単価は公開市況をウォン/kgに換算した参考値で、運賃・関税・通関・付帯費用は含みません。契約前に供給元の見積で確認してください。"
+  ],
+  "본 계산기는 원가 검토를 돕는 참고 도구이며, 계약·견적에 대한 법적·상업적 판단을 대신하지 않습니다. 표시된 값은 입력한 조건 안에서의 계산 결과이고, 실제 견적·결산과 다를 수 있습니다.": [
+   "This calculator is a reference tool for reviewing cost; it does not replace legal or commercial judgement about a contract or a quote. The figures shown are the result of the conditions entered and may differ from the actual quote or closing.",
+   "本计算器是帮助审阅成本的参考工具，不能代替对合同·报价的法律与商业判断。显示的数值是在输入条件内的计算结果，可能与实际报价·结算不同。",
+   "本計算ツールは原価検討を助ける参考ツールであり、契約・見積に関する法的・商業的な判断の代わりにはなりません。表示される値は入力した条件内での計算結果で、実際の見積・決算とは異なる場合があります。"
+  ],
+  "비교표": [
+   "Compare",
+   "比较表",
+   "比較表"
+  ],
+  "사출 성형 제품을 직접 생산할 때와 외주가공(임가공)할 때의 개당 원가를 나란히 계산합니다. 수지 12종 프리셋, 금형 상각·캐비티·사이클타임·불량률·후가공·물류를 반영하고 손익분기 수량(BEP), 수량 구간별 단가, CSV·PDF 산출서까지. 입력값은 브라우저 안에서만 계산됩니다.": [
+   "Compare the unit cost of an injection-moulded part made in-house and outsourced. 12 resin presets, mould amortisation, cavities, cycle time, defect rate, post-processing and freight, with break-even quantity, unit cost by order volume and a CSV or PDF cost sheet. Everything is calculated inside your browser.",
+   "把注塑件自主生产与外协加工的单件成本并排计算。含 12 种树脂预设、模具摊销、模穴、成型周期、不良率、后加工与物流，并提供盈亏平衡数量、各数量区间单价与 CSV·PDF 测算表。所有计算都在浏览器内完成。",
+   "射出成形品を自社生産する場合と外注加工する場合の1個あたり原価を並べて計算します。樹脂12種プリセット、金型償却・キャビティ・サイクルタイム・不良率・後加工・物流を反映し、損益分岐数量（BEP）、数量帯別単価、CSV・PDF計算書まで。入力内容はブラウザ内だけで計算されます。"
+  ],
+  "원재료·금형 상각·사이클타임·불량률·후가공·물류를 반영해 개당 원가를 나란히 비교합니다. 손익분기 수량(BEP)과 수량 구간별 단가, CSV·PDF 산출서 포함.": [
+   "Unit cost of the same part made in-house and outsourced, with resin, mould amortisation, cycle time, defect rate, post-processing and freight. Break-even quantity, unit cost by volume, CSV and PDF cost sheet included.",
+   "综合原材料、模具摊销、成型周期、不良率、后加工与物流，并排比较单件成本。含盈亏平衡数量（BEP）、各数量区间单价与 CSV·PDF 测算表。",
+   "原材料・金型償却・サイクルタイム・不良率・後加工・物流を反映して1個あたり原価を並べて比較。損益分岐数量（BEP）、数量帯別単価、CSV・PDF計算書付き。"
+  ],
+  "수지·금형 상각·사이클·불량률·물류까지 반영한 개당 원가 비교와 손익분기 수량. CSV·PDF 산출서 포함.": [
+   "Unit cost comparison with resin, mould amortisation, cycle time, defect rate and freight, plus the break-even quantity. CSV and PDF cost sheet included.",
+   "含树脂、模具摊销、成型周期、不良率与物流的单件成本比较，以及盈亏平衡数量。附 CSV·PDF 测算表。",
+   "樹脂・金型償却・サイクル・不良率・物流まで反映した1個あたり原価比較と損益分岐数量。CSV・PDF計算書付き。"
   ]
  }
 }

@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>自社生産 vs 外注加工 原価計算ツール — 射出成形原価と損益分岐 | INSIGHT BRIEF</title>
+<meta name="description" content="射出成形品を自社生産する場合と外注加工する場合の1個あたり原価を並べて計算します。樹脂12種プリセット、金型償却・キャビティ・サイクルタイム・不良率・後加工・物流を反映し、損益分岐数量（BEP）、数量帯別単価、CSV・PDF計算書まで。入力内容はブラウザ内だけで計算されます。">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/ja/mfg-cost.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:title" content="自社生産 vs 外注加工 原価計算">
+<meta property="og:description" content="原材料・金型償却・サイクルタイム・不良率・後加工・物流を反映して1個あたり原価を並べて比較。損益分岐数量（BEP）、数量帯別単価、CSV・PDF計算書付き。">
+<meta property="og:url" content="https://insightbriefnews.com/ja/mfg-cost.html">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="自社生産 vs 外注加工 原価計算">
+<meta name="twitter:description" content="樹脂・金型償却・サイクル・不良率・物流まで反映した1個あたり原価比較と損益分岐数量。CSV・PDF計算書付き。">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/mfg-cost.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "In-house vs outsourced manufacturing cost calculator",
+  "url": "https://insightbriefnews.com/mfg-cost.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "Free unit-cost calculator that compares making an injection-moulded part in-house with outsourcing it. Resin, masterbatch, runner scrap, mould amortisation, cavities, cycle time, defect rate, post-processing, packaging and freight are included, with break-even quantity, unit cost by order volume, CSV export and an A4 cost sheet.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/mfg-cost.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/mfg-cost.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/mfg-cost.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/mfg-cost.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/mfg-cost.html">
+<link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="../assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tool">
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026年11月26日(木曜日)</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="../mfg-cost.html" hreflang="ko" lang="ko">KO</a><a href="../en/mfg-cost.html" hreflang="en" lang="en">EN</a><a href="../zh/mfg-cost.html" hreflang="zh-Hans" lang="zh-Hans">ZH</a><a href="mfg-cost.html" hreflang="ja" lang="ja" class="is-on" aria-current="true">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">独立系・経済調査報道リサーチ誌</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF ホームへ">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>インサイトブリーフ</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>数字の向こうの文脈を読む</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">情報提供</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">週刊ブリーフを購読</a>
+        <button class="icon-btn search-toggle" type="button" aria-label="検索を開く" aria-expanded="false" aria-controls="search-mobile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">ニュース<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="ニュース">
+          <a href="index.html" data-nav-key="all">すべての記事</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI・テック</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">経済・金融</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">貿易・原材料</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">災害・安全</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">週刊調査報道</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">貿易・調達・市況<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="貿易・調達・市況">
+          <a href="biz.html#trade" data-nav-key="tdoc">貿易書式 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">海上運賃・物流コスト</a>
+          <a href="sourcing.html" data-nav-key="sourcing">グローバル調達・着地原価計算</a>
+          <a href="market.html" data-nav-key="market">原材料・為替市況板</a>
+          <a href="global.html#portal" data-nav-key="portal">調達庁・企業審査ポータル</a>
+          <a href="global.html#email" data-nav-key="email">貿易メール作成</a>
+          <a href="global.html#trip" data-nav-key="trip">出張ハブ</a>
+          <a href="biz.html#cost" data-nav-key="cost">粗利・原価・資金計算</a>
+          <a href="mfg-cost.html" data-nav-key="mfgcost" class="is-active" aria-current="page">内製・外注 原価計算</a>
+          <a href="seller.html" data-nav-key="seller">セラー・マーケター向けツール</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">世界の展示会カレンダー</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税務・法律・生活<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税務・法律・生活">
+          <a href="tax.html" data-nav-key="tax">税金・年収・社会保険</a>
+          <a href="salary.html" data-nav-key="salary">給与・最低賃金・社会保険</a>
+          <a href="insurance.html" data-nav-key="insurance">実損・自動車保険計算</a>
+          <a href="law.html" data-nav-key="law">法律・契約書・内容証明</a>
+          <a href="forms.html" data-nav-key="forms">書式・電子署名 138種</a>
+          <a href="saju.html" data-nav-key="saju">四柱推命・新年占い</a>
+          <a href="lotto.html" data-nav-key="lotto">ロト番号生成器</a>
+          <a href="music.html" data-nav-key="music">AI音楽・歌詞生成</a>
+          <a href="style.html" data-nav-key="style">ファッション・スタイル提案</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">案内・サイトマップ<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="案内・サイトマップ">
+          <a href="sitemap.html" data-nav-key="sitemap">サイトマップ</a>
+          <a href="about.html" data-nav-key="about">媒体紹介</a>
+          <a href="ad.html" data-nav-key="ad">広告・提携</a>
+          <a href="contact.html" data-nav-key="contact">情報提供・お問い合わせ</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="キーワードで検索" aria-label="記事を検索" autocomplete="off">
+    </form>
+  </div>
+</div>
+<div class="search-mobile" id="search-mobile" hidden>
+  <form class="search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+    <input type="search" name="q" placeholder="キーワードで検索" aria-label="記事を検索" autocomplete="off">
+  </form>
+</div>
+
+<main id="main" class="mf-main">
+<div class="container mf-wrap" id="mfg-tool">
+
+  <div class="mf-head">
+    <span class="mf-kicker">FREE TOOL · MANUFACTURING COST</span>
+    <h1>自社生産 vs 外注加工 原価計算</h1>
+    <p class="mf-dek">同じ製品を自社生産する場合と外注加工（受託加工）する場合の1個あたり原価を並べて計算します。樹脂・マスターバッチ・ランナーロス・金型償却・サイクルタイム・不良率・後加工・包装・物流まで反映し、損益分岐数量と数量帯別の単価も表示します。入力内容はブラウザの外に送信されません。</p>
+    <div class="mf-badges">
+      <span>射出成形基準</span><span>データ送信なし</span><span>CSV・PDF出力</span><span>金型償却方式を選択</span><span>ウォン・ドル換算</span>
+    </div>
+    <div class="mf-toolbar mf-noprint">
+      <button class="mf-btn" type="button" id="btnExample"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10"/></svg>例の値を読み込む</button>
+      <button class="mf-btn" type="button" id="btnReset"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg>入力をリセット</button>
+      <button class="mf-btn" type="button" id="btnCsv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16"/></svg>CSVをダウンロード</button>
+      <button class="mf-btn mf-btn-primary" type="button" id="btnPrint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg>印刷 / PDF保存</button>
+    </div>
+  </div>
+
+  <section class="mf-card" aria-labelledby="h-basic">
+    <h2 id="h-basic"><span class="mf-n">01</span>基本条件 <small>品目・数量・表示通貨</small></h2>
+    <div class="mf-grid mf-g2">
+      <div class="mf-f" style="grid-column:span 2">
+        <label for="item">アイテム名</label>
+        <div class="mf-inw"><input id="item" type="text" value="コントロールボックスハウジング（例）" autocomplete="off" spellcheck="false"></div>
+      </div>
+      <div class="mf-f">
+        <label for="qty">数量</label>
+        <div class="mf-inw mf-has-u"><input id="qty" type="number" inputmode="numeric" min="0" step="100" value="10000"><span class="mf-u">pcs</span></div>
+        <span class="mf-hint">今回の発注（または検討）数量</span>
+      </div>
+      <div class="mf-f">
+        <label for="cur">表示通貨</label>
+        <div class="mf-inw"><select id="cur"><option value="KRW">ウォン (KRW)</option><option value="USD">ドル (USD)</option></select></div>
+        <span class="mf-hint">入力はすべてウォン基準、結果のみ換算</span>
+      </div>
+      <div class="mf-f">
+        <label for="fx">適用為替レート</label>
+        <div class="mf-inw mf-has-u"><input id="fx" type="number" inputmode="decimal" min="1" step="0.1" value="1343.9"><span class="mf-u">ウォン/USD</span></div>
+        <span class="mf-hint">初期値 1,343.9ウォン — 韓国輸出入銀行 2026-11-26 公示</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="mf-cols">
+    <div class="mf-col-inputs">
+
+      <section class="mf-card" aria-labelledby="h-mat">
+        <h2 id="h-mat"><span class="mf-n">02</span>原材料 <small>樹脂・マスターバッチ</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f mf-full">
+            <label for="resinPreset">樹脂プリセット <span class="mf-q">— 選ぶと原料名と単価が入ります</span></label>
+            <div class="mf-inw"><select id="resinPreset"></select></div>
+            <span class="mf-hint" id="resinSrc">参考市況の出典と基準日は下の「単価参考」に記載しています。実際の契約単価に直して使ってください。</span>
+          </div>
+          <div class="mf-f">
+            <label for="resinName">原料名</label>
+            <div class="mf-inw"><input id="resinName" type="text" value="ABS（バージン）" autocomplete="off"></div>
+          </div>
+          <div class="mf-f">
+            <label for="resinPrice">樹脂単価</label>
+            <div class="mf-inw mf-has-u"><input id="resinPrice" type="number" inputmode="decimal" min="0" step="10" value="2305"><span class="mf-u">ウォン/kg</span></div>
+          </div>
+          <div class="mf-f">
+            <label for="weight">製品重量</label>
+            <div class="mf-inw mf-has-u"><input id="weight" type="number" inputmode="decimal" min="0" step="0.1" value="85"><span class="mf-u">g</span></div>
+            <span class="mf-hint">ゲート・ランナーを除く完成品1個</span>
+          </div>
+          <div class="mf-f">
+            <label for="loss">ランナー・スクラップロス率</label>
+            <div class="mf-inw mf-has-u"><input id="loss" type="number" inputmode="decimal" min="0" max="99" step="0.5" value="8"><span class="mf-u">%</span></div>
+            <span class="mf-hint">再利用できない分を含めて余裕をもって</span>
+          </div>
+          <div class="mf-f">
+            <label for="mbPct">マスターバッチ・添加剤</label>
+            <div class="mf-inw mf-has-u"><input id="mbPct" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="2"><span class="mf-u">%</span></div>
+            <span class="mf-hint">樹脂重量比</span>
+          </div>
+          <div class="mf-f">
+            <label for="mbPrice">添加剤単価</label>
+            <div class="mf-inw mf-has-u"><input id="mbPrice" type="number" inputmode="decimal" min="0" step="50" value="3500"><span class="mf-u">ウォン/kg</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-mold">
+        <h2 id="h-mold"><span class="mf-n">03</span>金型 <small>製作費・キャビティ・償却</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="moldCost">金型製作費</label>
+            <div class="mf-inw mf-has-u"><input id="moldCost" type="number" inputmode="numeric" min="0" step="100000" value="18000000"><span class="mf-u">ウォン</span></div>
+            <span class="mf-hint">試し撃ち・修正込みの金額</span>
+          </div>
+          <div class="mf-f">
+            <label for="cavities">キャビティ数</label>
+            <div class="mf-inw mf-has-u"><input id="cavities" type="number" inputmode="numeric" min="1" step="1" value="4"><span class="mf-u">個</span></div>
+            <span class="mf-hint">1ショットで出る製品数</span>
+          </div>
+          <div class="mf-f">
+            <label for="moldLife">金型寿命 / 償却基準数量</label>
+            <div class="mf-inw mf-has-u"><input id="moldLife" type="number" inputmode="numeric" min="1" step="1000" value="300000"><span class="mf-u">pcs</span></div>
+            <span class="mf-hint">この数量まで配分</span>
+          </div>
+          <div class="mf-f mf-full">
+            <span class="mf-lb">金型費の配分方式</span>
+            <div class="mf-seg" role="radiogroup" aria-label="金型費の配分方式">
+              <label><input type="radio" name="moldMode" value="basis" checked><span>償却数量に配分<br><i class="mf-sub">製品全体の数量基準</i></span></label>
+              <label><input type="radio" name="moldMode" value="order"><span>今回数量に全額<br><i class="mf-sub">単発注の見積</i></span></label>
+            </div>
+            <span class="mf-hint">配分を選ぶと1個あたり原価には償却分だけが入り、金型投資は「初期投資」に別途表示されます。</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-form">
+        <h2 id="h-form"><span class="mf-n">04</span>成形・加工 <small>サイクル・不良</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="cycle">サイクルタイム</label>
+            <div class="mf-inw mf-has-u"><input id="cycle" type="number" inputmode="decimal" min="0" step="0.5" value="32"><span class="mf-u">秒</span></div>
+            <span class="mf-hint">型開き〜型閉じの1ショット基準</span>
+          </div>
+          <div class="mf-f">
+            <label for="defect">不良率</label>
+            <div class="mf-inw mf-has-u"><input id="defect" type="number" inputmode="decimal" min="0" max="99" step="0.5" value="2"><span class="mf-u">%</span></div>
+            <span class="mf-hint">原材料・加工費を良品に配分</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-post">
+        <h2 id="h-post"><span class="mf-n">05</span>後加工・包装・物流 <small>良品基準</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="post">1個あたり後加工費</label>
+            <div class="mf-inw mf-has-u"><input id="post" type="number" inputmode="decimal" min="0" step="10" value="120"><span class="mf-u">ウォン/個</span></div>
+            <span class="mf-hint">バリ・ゲート除去、印刷、組立など</span>
+          </div>
+          <div class="mf-f">
+            <label for="pack">1個あたり包装費</label>
+            <div class="mf-inw mf-has-u"><input id="pack" type="number" inputmode="decimal" min="0" step="5" value="35"><span class="mf-u">ウォン/個</span></div>
+            <span class="mf-hint">袋・緩衝材・箱・ラベル</span>
+          </div>
+          <div class="mf-f">
+            <label for="logiMode">物流・運送費の入力方式</label>
+            <div class="mf-inw"><select id="logiMode"><option value="total">今回数量の総額</option><option value="unit">1個あたり</option></select></div>
+          </div>
+          <div class="mf-f">
+            <label for="logiVal">物流・運送費</label>
+            <div class="mf-inw mf-has-u"><input id="logiVal" type="number" inputmode="decimal" min="0" step="10000" value="450000"><span class="mf-u" id="logiUnit">ウォン</span></div>
+            <span class="mf-hint">往復配送・積み下ろし込み</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card mf-card-direct" aria-labelledby="h-direct">
+        <h2 id="h-direct"><span class="mf-n mf-n-direct">06</span>自社生産条件 <small>成形機・人員・段取り</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="dpTon">成形機トン数</label>
+            <div class="mf-inw mf-has-u"><input id="dpTon" type="number" inputmode="numeric" min="0" step="10" value="150"><span class="mf-u">トン</span></div>
+            <span class="mf-hint">型締力基準、参考表示</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpMachine">時間あたり機械稼働費</label>
+            <div class="mf-inw mf-has-u"><input id="dpMachine" type="number" inputmode="numeric" min="0" step="1000" value="22000"><span class="mf-u">ウォン/h</span></div>
+            <span class="mf-hint">電力＋減価＋維持＋間接費</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpLabor">時間あたり人件費</label>
+            <div class="mf-inw mf-has-u"><input id="dpLabor" type="number" inputmode="numeric" min="0" step="1000" value="18000"><span class="mf-u">ウォン/h</span></div>
+            <span class="mf-hint">1人1台基準、補助人員込み</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpSetup">初期設備・段取り費</label>
+            <div class="mf-inw mf-has-u"><input id="dpSetup" type="number" inputmode="numeric" min="0" step="10000" value="350000"><span class="mf-u">ウォン</span></div>
+            <span class="mf-hint">金型取付・条件設定・試し撃ち</span>
+          </div>
+        </div>
+        <p class="mf-note">機械稼働費は（年間減価償却＋電力＋保守＋間接費）÷年間稼働時間で置くと実際に近づきます。稼働率が低いと時間あたり負担が大きくなります。</p>
+      </section>
+
+      <section class="mf-card mf-card-os" aria-labelledby="h-os">
+        <h2 id="h-os"><span class="mf-n mf-n-os">07</span>外注加工条件 <small>見積単価・材料・管理</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f mf-full">
+            <label for="osMode">外注見積の方式</label>
+            <div class="mf-inw"><select id="osMode">
+              <option value="perPart">1個あたり（ウォン/個）</option>
+              <option value="perShot">1ショットあたり（ウォン/shot）</option>
+              <option value="perHour">1時間あたり（ウォン/h）</option>
+            </select></div>
+            <span class="mf-hint">ショット・時間あたりの見積は、上のキャビティ数・サイクルタイムで1個あたりに換算します。</span>
+          </div>
+          <div class="mf-f">
+            <label for="osPrice">外注加工費</label>
+            <div class="mf-inw mf-has-u"><input id="osPrice" type="number" inputmode="decimal" min="0" step="10" value="620"><span class="mf-u" id="osPriceUnit">ウォン/個</span></div>
+          </div>
+          <div class="mf-f">
+            <span class="mf-lb">原材料の支給方式</span>
+            <div class="mf-seg mf-seg-sm" role="radiogroup" aria-label="原材料の支給方式">
+              <label><input type="radio" name="osMat" value="supply" checked><span>支給</span></label>
+              <label><input type="radio" name="osMat" value="turnkey"><span>素材込み</span></label>
+            </div>
+            <span class="mf-hint">支給の場合は上の原材料費を加えます。</span>
+          </div>
+          <div class="mf-f">
+            <label for="osAdmin">外注管理費</label>
+            <div class="mf-inw mf-has-u"><input id="osAdmin" type="number" inputmode="decimal" min="0" step="0.5" value="3"><span class="mf-u">%</span></div>
+            <span class="mf-hint">加工費に対する検収・発注管理</span>
+          </div>
+          <div class="mf-f">
+            <label for="osLogi">外注運送費</label>
+            <div class="mf-inw mf-has-u"><input id="osLogi" type="number" inputmode="decimal" min="0" step="10000" value="0"><span class="mf-u">ウォン</span></div>
+            <span class="mf-hint">今回数量の往復総額</span>
+          </div>
+          <div class="mf-f mf-full">
+            <label class="mf-chk"><input type="checkbox" id="osMold" checked><span>金型製作費は当社負担（外注先に金型を支給）。外すと外注の1個あたり原価から金型費が抜けます。</span></label>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="mf-col-result" aria-label="計算結果の概要">
+      <div class="mf-rc" id="resultCard">
+        <div class="mf-rc-top"><h2>1個あたり原価の比較</h2><span id="rcMeta">10,000 pcs</span></div>
+        <div class="mf-rc-body">
+          <div class="mf-verdict" id="verdict" aria-live="polite">計算中…</div>
+          <div class="mf-duo">
+            <div class="mf-cc mf-cc-direct" id="ccDirect">
+              <div class="mf-who"><i class="mf-dot"></i>自社生産<span class="mf-win-tag" id="winDirect" hidden>有利</span></div>
+              <div class="mf-big" id="unitDirect">—<small>/個</small></div>
+              <div class="mf-sub" id="subDirect">—</div>
+              <div class="mf-bar" id="barDirect" aria-hidden="true"></div>
+            </div>
+            <div class="mf-cc mf-cc-os" id="ccOs">
+              <div class="mf-who"><i class="mf-dot"></i>外注加工<span class="mf-win-tag" id="winOs" hidden>有利</span></div>
+              <div class="mf-big" id="unitOs">—<small>/個</small></div>
+              <div class="mf-sub" id="subOs">—</div>
+              <div class="mf-bar" id="barOs" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="mf-bep" id="bepBox">
+            <span class="mf-k">損益分岐数量 (BEP)</span>
+            <b id="bepVal">—</b>
+            <span id="bepText">—</span>
+          </div>
+          <div class="mf-legend" id="legend"></div>
+          <div class="mf-warn" id="warnBox" role="status"></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <section class="mf-out" aria-labelledby="h-cmp">
+    <div class="mf-sec-head">
+      <h2 id="h-cmp">項目別比較</h2>
+      <p>1個あたり原価と今回数量の総額を同じ項目で並べます。</p>
+      <span class="mf-r" id="cmpMeta">—</span>
+    </div>
+    <div class="mf-tw">
+      <table class="mf-cmp" id="cmpTable">
+        <thead>
+          <tr>
+            <th class="mf-l" rowspan="2">項目</th>
+            <th class="mf-d" colspan="2">自社生産</th>
+            <th class="mf-o" colspan="2">外注加工</th>
+            <th rowspan="2">差額<br><span class="mf-thsub">（1個）</span></th>
+          </tr>
+          <tr>
+            <th class="mf-d">1個あたり</th><th class="mf-d">総額</th><th class="mf-o">1個あたり</th><th class="mf-o">総額</th>
+          </tr>
+        </thead>
+        <tbody id="cmpBody"></tbody>
+      </table>
+    </div>
+    <p class="mf-tbl-note" id="cmpNote">差額は「外注 − 自社」です。プラス(+)なら自社生産がその分安いという意味です。</p>
+    <p class="mf-scroll-hint">← 表を左右にスクロールすると外注の値と差額まで見えます。</p>
+  </section>
+
+  <section class="mf-out" aria-labelledby="h-qty">
+    <div class="mf-sec-head">
+      <h2 id="h-qty">数量帯別単価</h2>
+      <p>数量が変わると金型償却・段取り費・総額運送費の1個あたり負担が変わります。</p>
+      <span class="mf-r">1,000 ~ 100,000 pcs</span>
+    </div>
+    <div class="mf-tw">
+      <table class="mf-cmp" id="qtyTable">
+        <thead>
+          <tr>
+            <th class="mf-l">数量</th>
+            <th class="mf-d">自社 1個</th><th class="mf-d">自社 総額</th>
+            <th class="mf-o">外注 1個</th><th class="mf-o">外注 総額</th>
+            <th>有利</th><th>総額差額</th>
+          </tr>
+        </thead>
+        <tbody id="qtyBody"></tbody>
+      </table>
+    </div>
+    <p class="mf-scroll-hint">← 表とグラフを左右にスクロールすると全数量帯が見えます。</p>
+    <div class="mf-chart-wrap">
+      <div class="mf-chart-title"><h3>数量帯別1個あたり原価</h3><span id="chartNote">ウォン/個</span></div>
+      <div class="mf-chart-scroll"><div id="chart"></div></div>
+    </div>
+  </section>
+
+  <section class="mf-out" aria-labelledby="h-cost">
+    <div class="mf-sec-head">
+      <h2 id="h-cost">初期投資と必要現金合計</h2>
+      <p>1個あたり原価とは別に、今回の発注で実際に出ていくお金を見ます。</p>
+    </div>
+    <div class="mf-facts" id="facts"></div>
+    <p class="mf-tbl-note" id="cashNote">必要現金合計＝生産費（原材料・加工・後加工・物流）＋段取り費＋金型製作費（現金基準）。金型費を償却数量に配分した場合でも製作費は全額現金で出ます。</p>
+  </section>
+
+  <details class="mf-src" id="srcBox">
+    <summary>単価参考 — 樹脂市況と出典 <span>2026-11 基準</span></summary>
+    <div class="mf-src-body">
+      <p class="mf-note">プリセット単価は公開市況をウォン/kgに換算した参考値です。人民元の市況は201.57ウォン/元（2026-11-26公示）で換算し、運賃・関税・通関・付帯費用は含みません。実際の調達単価に必ず直してください。</p>
+      <table class="mf-src-table">
+        <thead><tr><th>樹脂</th><th style="text-align:right">参考単価</th><th>基準・出典</th></tr></thead>
+        <tbody id="srcBody"></tbody>
+      </table>
+      <p class="mf-note">再生原料は韓国環境公団「再活用可能資源価格調査」2026年11月分（2026-11-10調査、全国平均、付加価値税込み・物流費別）と貿易ベンチマークを使用しました。</p>
+    </div>
+  </details>
+
+  <details class="mf-src" id="calcBox">
+    <summary>計算基準 <span>計算方法</span></summary>
+    <div class="mf-src-body">
+      <ul class="mf-calc-list">
+        <li>原材料費 = 製品重量 × (1 + ロス率) × 樹脂単価 + 同じ重量 × マスターバッチ% × 添加剤単価</li>
+        <li>成形・加工費 = (サイクルタイム ÷ 3,600) × (時間あたり機械稼働費 + 時間あたり人件費) ÷ (キャビティ数 × (1 − 不良率))</li>
+        <li>金型配分 = 金型製作費 ÷ 償却基準数量。「今回数量に全額」を選ぶと製作費 ÷ 数量です。数量が寿命を超えると必要な金型数だけ製作費が増えます。</li>
+        <li>段取り費配分 = 初期設備・段取り費 ÷ 数量</li>
+        <li>後加工・包装は良品1個あたりの入力値、物流は1個あたりまたは総額の選択値を1個あたりに換算します。</li>
+        <li>外注は1個・1ショット・1時間あたりの見積を1個あたりに換算し、支給の場合は原材料費を加えます。管理費は外注加工費の%です。</li>
+        <li>損益分岐数量(BEP) = (自社固定費 − 外注固定費) ÷ (外注1個あたり変動費 − 自社1個あたり変動費)。固定費は金型・段取り・総額運送費、変動費は原材料・加工・後加工・包装・1個あたり運送費です。金型寿命以内を前提に計算します。</li>
+        <li>税金（付加価値税）、金融費用、倉庫費、認証・検査費、設備投資の回収期間は含めていません。意思決定の前に別途足してみてください。</li>
+      </ul>
+    </div>
+  </details>
+
+  <p class="mf-xlink">
+    あわせて使う貿易ツール · <a href="biz.html#cost">輸入原価・関税付加価値税計算</a> ·
+    <a href="sourcing.html">グローバルソーシング・到着原価計算機</a> ·
+    <a href="freight.html">海上運賃・物流コスト</a> ·
+    <a href="market.html">原材料・為替レート 市況版</a> ·
+    <a href="biz.html#trade">貿易書式（PI・CI・PL）</a>
+  </p>
+
+  <section class="mf-legal" aria-labelledby="mf-legal-title">
+    <h3 id="mf-legal-title">計算基準と個人情報のご案内</h3>
+    <p>計算範囲 — 入力した数量・単価・条件で1個あたり原価と総額を足す参考用の計算ツールです。実際の見積・決算には税金、間接費、為替変動、稼働率、検査・認証費用が反映されます。この計算ツールは付加価値税・金融費用・倉庫費を含みません。</p>
+    <p>個人情報 — 入力した品目名・数量・単価・為替はブラウザ内だけで計算に使われ、サーバーに送信されません。値はこのブラウザ（localStorage）にだけ残り、「入力をリセット」を押すかブラウザデータを消すと失われます。</p>
+    <p>樹脂市況 — プリセット単価は公開市況をウォン/kgに換算した参考値で、運賃・関税・通関・付帯費用は含みません。契約前に供給元の見積で確認してください。</p>
+  </section>
+
+  <p class="mf-disclaimer">
+    本計算ツールは原価検討を助ける参考ツールであり、契約・見積に関する法的・商業的な判断の代わりにはなりません。表示される値は入力した条件内での計算結果で、実際の見積・決算とは異なる場合があります。
+  </p>
+
+</div>
+</main>
+
+<div class="mf-mini mf-noprint" id="miniBar" translate="no">
+  <div class="mf-mini-in">
+    <div class="mf-mini-m mf-mini-d"><span>自社生産</span><b id="miniDirect">—</b></div>
+    <div class="mf-mini-m mf-mini-o"><span>外注加工</span><b id="miniOs">—</b></div>
+    <button class="mf-mini-go" type="button" id="miniGo">比較表</button>
+  </div>
+</div>
+
+<div id="printSheet" aria-hidden="true" translate="no"></div>
+<div class="mf-toast" id="toast" role="status" translate="no"></div>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>独立系・経済調査報道リサーチ誌</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>INSIGHT BRIEF は経済・金融、貿易・原材料、AI・テックの現場をデータと取材で追う独立系リサーチ媒体です。正式なインターネット新聞の登録媒体ではなく、取材・編集5人以上などの登録要件を満たしていません。</p>
+      </div>
+      <div class="f-col">
+        <h4>セクション</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">調査報道</a></li>
+          <li><a href="index.html?cat=economy">経済・金融</a></li>
+          <li><a href="index.html?cat=trade">貿易・原材料</a></li>
+          <li><a href="market.html">市況ボード</a></li>
+          <li><a href="index.html?cat=ai">AI・テック</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>媒体</h4>
+        <ul>
+          <li><a href="about.html">紹介・編集方針</a></li>
+          <li><a href="contact.html#tip">読者からの情報</a></li>
+          <li><a href="ad.html">広告・スポンサー料金表</a></li>
+          <li><a href="ad.html#b2b">B2B 調達・原価相談</a></li>
+          <li><a href="sourcing.html">無料ツール・グローバルソーシング・到着原価計算機</a></li>
+          <li><a href="freight.html">無料ツール · 海上運賃・物流コスト</a></li>
+          <li><a href="biz.html">無料ツール · 個人事業主ツール 9 種</a></li>
+          <li><a href="market.html">無料ツール・原材料・為替相場</a></li>
+          <li><a href="feed.xml">RSS フィード</a></li>
+          <li><a href="sitemap.html">サイトマップ</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">情報提供 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">広告 hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">ソウル · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>本媒体はインターネット新聞の登録をしていない独立メディアです。記事・写真の無断転載・再配布を禁じます。協賛・広告コンテンツは「広告」と明記します。</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 独立系・経済調査報道リサーチ誌</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="リアルタイム・ブリーフィング"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>リアルタイム・ブリーフィング</h3><p>新しいレポートと市況を KakaoTalk オープンチャットと Telegram でリアルタイムに受け取れます。</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk オープンチャット</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram チャンネル</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+<script src="../assets/js/mfg-cost.js?v=20261126a" defer></script>
+<script src="../assets/js/nav.js?v=20261124c"></script>
+<script src="data/i18n.fallback.js?v=20261124a"></script>
+<script src="../assets/js/i18n.js?v=20261124a"></script>
+<!-- IB:CHAT-FLOAT -->
+<script src="../assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

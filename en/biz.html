@@ -124,6 +124,7 @@
           <a href="global.html#email" data-nav-key="email">Trade email writer</a>
           <a href="global.html#trip" data-nav-key="trip">Business trip hub</a>
           <a href="biz.html#cost" data-nav-key="cost">Margin, cost &amp; cash calculator</a>
+          <a href="mfg-cost.html" data-nav-key="mfgcost">Make-or-buy cost calculator</a>
           <a href="seller.html" data-nav-key="seller">Seller &amp; marketer tools</a>
           <a href="exhibitions.html" data-nav-key="exhibitions">Global exhibition calendar</a>
         </div>
@@ -432,22 +433,22 @@ Created with <b>Save as PDF</b>or just print it as is.
           <div class="bz-grid three">
             <div class="bz-field">
               <div class="lbl"><span>Selling price</span><span class="hint">Amount paid by customer</span></div>
-              <div class="unit"><input type="number" id="m-price" inputmode="numeric" min="0" step="100" value="29900"><span>won</span></div>
+              <div class="unit"><input type="number" id="m-price" inputmode="numeric" min="0" step="100" value="29900"><span>KRW</span></div>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Purchase cost</span><span class="hint">Purchase and manufacturing costs</span></div>
-              <div class="unit"><input type="number" id="m-cost" inputmode="numeric" min="0" step="100" value="15000"><span>won</span></div>
+              <div class="unit"><input type="number" id="m-cost" inputmode="numeric" min="0" step="100" value="15000"><span>KRW</span></div>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Shipping cost</span><span class="hint">My share</span></div>
-              <div class="unit"><input type="number" id="m-ship" inputmode="numeric" min="0" step="100" value="3000"><span>won</span></div>
+              <div class="unit"><input type="number" id="m-ship" inputmode="numeric" min="0" step="100" value="3000"><span>KRW</span></div>
             </div>
           </div>
           <div class="bz-grid three" style="margin-top:12px">
             <div class="bz-field">
               <div class="lbl"><span>Packaging costs
 Includes</span><span class="hint">Box/cushioning material</span></div>
-              <div class="unit"><input type="number" id="m-pack" inputmode="numeric" min="0" step="100" value="600"><span>won</span></div>
+              <div class="unit"><input type="number" id="m-pack" inputmode="numeric" min="0" step="100" value="600"><span>KRW</span></div>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Market commission rate</span><span class="hint">Based on selling price</span></div>
@@ -534,11 +535,11 @@ Includes</span><span class="hint">Box/cushioning material</span></div>
           <div class="bz-grid three">
             <div class="bz-field">
               <div class="lbl"><span>Sales (supply price)</span><span class="hint">Excluding VAT</span></div>
-              <div class="unit"><input type="number" id="v-sales" inputmode="numeric" min="0" step="10000" value="60000000"><span>won</span></div>
+              <div class="unit"><input type="number" id="v-sales" inputmode="numeric" min="0" step="10000" value="60000000"><span>KRW</span></div>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Purchase (supply price)</span><span class="hint">Tax invoice receipt</span></div>
-              <div class="unit"><input type="number" id="v-purchase" inputmode="numeric" min="0" step="10000" value="30000000"><span>won</span></div>
+              <div class="unit"><input type="number" id="v-purchase" inputmode="numeric" min="0" step="10000" value="30000000"><span>KRW</span></div>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Simplified taxation industry additional rate</span><span class="hint">Notice by industry</span></div>
@@ -599,11 +600,11 @@ It is safer to unify with</li>
           <div class="bz-grid two">
             <div class="bz-field">
               <div class="lbl"><span>Contract amount (before tax)</span><span class="hint">Amount written on invoice</span></div>
-              <div class="unit"><input type="number" id="f-amount" inputmode="numeric" min="0" step="10000" value="3000000"><span>won</span></div>
+              <div class="unit"><input type="number" id="f-amount" inputmode="numeric" min="0" step="10000" value="3000000"><span>KRW</span></div>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Actual salary amount you would like to receive</span><span class="hint">Calculated back to before tax</span></div>
-              <div class="unit"><input type="number" id="f-net-target" inputmode="numeric" min="0" step="10000" value=""><span>won</span></div>
+              <div class="unit"><input type="number" id="f-net-target" inputmode="numeric" min="0" step="10000" value=""><span>KRW</span></div>
             </div>
           </div>
           <div class="bz-kpis three" style="margin-top:14px">
@@ -638,7 +639,7 @@ It is safer to unify with</li>
           <div class="bz-grid four">
             <div class="bz-field">
               <div class="lbl"><span>Annual income amount</span></div>
-              <div class="unit"><input type="number" id="t-income" inputmode="numeric" min="0" step="100000" value="36000000"><span>won</span></div>
+              <div class="unit"><input type="number" id="t-income" inputmode="numeric" min="0" step="100000" value="36000000"><span>KRW</span></div>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Expense ratio</span><span class="hint">Simple expense ratio, etc.</span></div>
@@ -650,7 +651,7 @@ It is safer to unify with</li>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Tax amount already paid</span><span class="hint">Auto at 3.3%</span></div>
-              <div class="unit"><input type="number" id="t-paid" inputmode="numeric" min="0" step="10000" value=""><span>won</span></div>
+              <div class="unit"><input type="number" id="t-paid" inputmode="numeric" min="0" step="10000" value=""><span>KRW</span></div>
             </div>
           </div>
           <div class="bz-kpis" style="margin-top:14px">
@@ -717,7 +718,7 @@ Write the amount in the space where <b>Deducted separately from actual cost.</b>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Exchange rate</span><span class="hint">1 unit = ? KRW</span></div>
-              <div class="unit"><input type="number" id="p-fx" inputmode="decimal" min="1" step="0.1" value="1330.8"><span>won</span></div>
+              <div class="unit"><input type="number" id="p-fx" inputmode="decimal" min="1" step="0.1" value="1330.8"><span>KRW</span></div>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Quantity</span><span class="hint">Total number</span></div>
@@ -735,7 +736,7 @@ Write the amount in the space where <b>Deducted separately from actual cost.</b>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>International freight</span><span class="hint">Based on total amount</span></div>
-              <div class="unit"><input type="number" id="p-freight" inputmode="numeric" min="0" step="10000" value="1500000"><span>won</span></div>
+              <div class="unit"><input type="number" id="p-freight" inputmode="numeric" min="0" step="10000" value="1500000"><span>KRW</span></div>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Duty rate</span><span class="hint">Varies by HS code</span></div>
@@ -754,11 +755,11 @@ Write the amount in the space where <b>Deducted separately from actual cost.</b>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Customs clearance</span><span class="hint">Customs broker, warehouse, etc.</span></div>
-              <div class="unit"><input type="number" id="p-clear" inputmode="numeric" min="0" step="10000" value="300000"><span>won</span></div>
+              <div class="unit"><input type="number" id="p-clear" inputmode="numeric" min="0" step="10000" value="300000"><span>KRW</span></div>
             </div>
             <div class="bz-field">
               <div class="lbl"><span>Domestic shipping costs</span><span class="hint">Port → Warehouse</span></div>
-              <div class="unit"><input type="number" id="p-domestic" inputmode="numeric" min="0" step="10000" value="200000"><span>won</span></div>
+              <div class="unit"><input type="number" id="p-domestic" inputmode="numeric" min="0" step="10000" value="200000"><span>KRW</span></div>
             </div>
           </div>
         </div>
@@ -989,7 +990,7 @@ Write the amount in the space where <b>Deducted separately from actual cost.</b>
             <div class="bz-grid three" style="margin-top:12px">
               <div class="bz-field">
                 <div class="lbl"><span>Amount</span><span class="hint">Standard excluding VAT</span></div>
-                <div class="unit"><input type="number" id="c-amount" inputmode="numeric" min="0" step="10000" value="3000000"><span>won</span></div>
+                <div class="unit"><input type="number" id="c-amount" inputmode="numeric" min="0" step="10000" value="3000000"><span>KRW</span></div>
               </div>
               <div class="bz-field">
                 <div class="lbl"><span>Date written</span></div>
@@ -1377,7 +1378,7 @@ If
                 </div>
               </div>
               <div class="bz-field">
-                <div class="lbl"><span>Unit price</span><span class="hint">Per unit</span></div>
+                <div class="lbl"><span>Unit price</span><span class="hint">per piece</span></div>
                 <div class="unit"><input type="number" id="lc-price" inputmode="decimal" min="0" step="0.01" value="1.85"><span id="lc-cur-unit">USD</span></div>
               </div>
             </div>
@@ -1467,7 +1468,7 @@ If
           <div class="bz-scroll" style="overflow-x:auto">
             <table class="bz-table">
               <caption>Landed cost statement — the customs value is CIF (goods + freight + insurance).</caption>
-              <thead><tr><th scope="col">Item</th><th scope="col">Amount</th><th scope="col">Per unit</th></tr></thead>
+              <thead><tr><th scope="col">Item</th><th scope="col">Amount</th><th scope="col">per piece</th></tr></thead>
               <tbody id="lc-rows"></tbody>
             </table>
           </div>
@@ -1629,7 +1630,7 @@ If
                 <div class="unit"><input type="number" id="be-fixed" inputmode="numeric" min="0" step="100000" value="4000000"><span>KRW</span></div>
               </div>
               <div class="bz-field">
-                <div class="lbl"><span>Variable cost per unit</span><span class="hint">Per unit</span></div>
+                <div class="lbl"><span>Variable cost per unit</span><span class="hint">per piece</span></div>
                 <div class="unit"><input type="number" id="be-var" inputmode="numeric" min="0" step="100" value="15000"><span>KRW</span></div>
               </div>
               <div class="bz-field">

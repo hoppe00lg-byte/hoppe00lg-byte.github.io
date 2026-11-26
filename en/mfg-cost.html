@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>In-house vs outsourced manufacturing cost calculator — injection moulding cost & break-even | INSIGHT BRIEF</title>
+<meta name="description" content="Compare the unit cost of an injection-moulded part made in-house and outsourced. 12 resin presets, mould amortisation, cavities, cycle time, defect rate, post-processing and freight, with break-even quantity, unit cost by order volume and a CSV or PDF cost sheet. Everything is calculated inside your browser.">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/en/mfg-cost.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:title" content="In-house vs outsourced cost calculator">
+<meta property="og:description" content="Unit cost of the same part made in-house and outsourced, with resin, mould amortisation, cycle time, defect rate, post-processing and freight. Break-even quantity, unit cost by volume, CSV and PDF cost sheet included.">
+<meta property="og:url" content="https://insightbriefnews.com/en/mfg-cost.html">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="In-house vs outsourced cost calculator">
+<meta name="twitter:description" content="Unit cost comparison with resin, mould amortisation, cycle time, defect rate and freight, plus the break-even quantity. CSV and PDF cost sheet included.">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/mfg-cost.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "In-house vs outsourced manufacturing cost calculator",
+  "url": "https://insightbriefnews.com/mfg-cost.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "Free unit-cost calculator that compares making an injection-moulded part in-house with outsourcing it. Resin, masterbatch, runner scrap, mould amortisation, cavities, cycle time, defect rate, post-processing, packaging and freight are included, with break-even quantity, unit cost by order volume, CSV export and an A4 cost sheet.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/mfg-cost.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/mfg-cost.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/mfg-cost.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/mfg-cost.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/mfg-cost.html">
+<link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="../assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tool">
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">November 26, 2026 (Thursday)</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="../mfg-cost.html" hreflang="ko" lang="ko">KO</a><a href="mfg-cost.html" hreflang="en" lang="en" class="is-on" aria-current="true">EN</a><a href="../zh/mfg-cost.html" hreflang="zh-Hans" lang="zh-Hans">ZH</a><a href="../ja/mfg-cost.html" hreflang="ja" lang="ja">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">Independent economics & investigative research magazine</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF home">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>Insight Brief</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>We read the context behind the numbers</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">Send a tip</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">Subscribe to the weekly brief</a>
+        <button class="icon-btn search-toggle" type="button" aria-label="Open search" aria-expanded="false" aria-controls="search-mobile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">News<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="News">
+          <a href="index.html" data-nav-key="all">All stories</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI &amp; Tech</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">Economy &amp; Finance</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">Trade &amp; Commodities</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">Disaster &amp; Safety</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">Weekly investigations</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">Trade &amp; Procurement<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="Trade &amp; Procurement">
+          <a href="biz.html#trade" data-nav-key="tdoc">Trade documents (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">Freight &amp; landing cost</a>
+          <a href="sourcing.html" data-nav-key="sourcing">Global sourcing &amp; landed cost</a>
+          <a href="market.html" data-nav-key="market">Commodities &amp; FX board</a>
+          <a href="global.html#portal" data-nav-key="portal">Procurement &amp; company checks</a>
+          <a href="global.html#email" data-nav-key="email">Trade email writer</a>
+          <a href="global.html#trip" data-nav-key="trip">Business trip hub</a>
+          <a href="biz.html#cost" data-nav-key="cost">Margin, cost &amp; cash calculator</a>
+          <a href="mfg-cost.html" data-nav-key="mfgcost" class="is-active" aria-current="page">Make-or-buy cost calculator</a>
+          <a href="seller.html" data-nav-key="seller">Seller &amp; marketer tools</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">Global exhibition calendar</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">Tax, Law &amp; Life<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="Tax, Law &amp; Life">
+          <a href="tax.html" data-nav-key="tax">Tax, salary &amp; health insurance</a>
+          <a href="salary.html" data-nav-key="salary">Payroll, minimum wage &amp; insurance</a>
+          <a href="insurance.html" data-nav-key="insurance">Indemnity &amp; car insurance</a>
+          <a href="law.html" data-nav-key="law">Contracts &amp; demand letters</a>
+          <a href="forms.html" data-nav-key="forms">Forms &amp; e-signature (138)</a>
+          <a href="saju.html" data-nav-key="saju">Saju &amp; new-year fortune</a>
+          <a href="lotto.html" data-nav-key="lotto">Lotto number generator</a>
+          <a href="music.html" data-nav-key="music">AI music &amp; lyric writer</a>
+          <a href="style.html" data-nav-key="style">Style &amp; outfit brief</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">Guide &amp; Sitemap<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="Guide &amp; Sitemap">
+          <a href="sitemap.html" data-nav-key="sitemap">Sitemap</a>
+          <a href="about.html" data-nav-key="about">About us</a>
+          <a href="ad.html" data-nav-key="ad">Advertise &amp; partner</a>
+          <a href="contact.html" data-nav-key="contact">Tips &amp; contact</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="Search by keyword" aria-label="Search articles" autocomplete="off">
+    </form>
+  </div>
+</div>
+<div class="search-mobile" id="search-mobile" hidden>
+  <form class="search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+    <input type="search" name="q" placeholder="Search by keyword" aria-label="Search articles" autocomplete="off">
+  </form>
+</div>
+
+<main id="main" class="mf-main">
+<div class="container mf-wrap" id="mfg-tool">
+
+  <div class="mf-head">
+    <span class="mf-kicker">FREE TOOL · MANUFACTURING COST</span>
+    <h1>In-house vs outsourced cost calculator</h1>
+    <p class="mf-dek">Compare the unit cost of the same part made in-house and outsourced to a moulder. Resin, masterbatch, runner scrap, mould amortisation, cycle time and defect rate, post-processing, packaging and freight are all reflected, together with the break-even quantity and the unit cost at each order volume. Nothing you enter leaves your browser.</p>
+    <div class="mf-badges">
+      <span>Injection moulding</span><span>No data sent</span><span>CSV & PDF export</span><span>Mould amortisation options</span><span>KRW and USD</span>
+    </div>
+    <div class="mf-toolbar mf-noprint">
+      <button class="mf-btn" type="button" id="btnExample"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 5h16M4 12h16M4 19h10"/></svg>Load example values</button>
+      <button class="mf-btn" type="button" id="btnReset"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 12a9 9 0 1 0 3-6.7M3 4v5h5"/></svg>Clear inputs</button>
+      <button class="mf-btn" type="button" id="btnCsv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16"/></svg>Download CSV</button>
+      <button class="mf-btn mf-btn-primary" type="button" id="btnPrint"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 9V3h12v6M6 18H4v-7h16v7h-2M8 14h8v7H8z"/></svg>Print / save PDF</button>
+    </div>
+  </div>
+
+  <section class="mf-card" aria-labelledby="h-basic">
+    <h2 id="h-basic"><span class="mf-n">01</span>Basics <small>Item, quantity, display currency</small></h2>
+    <div class="mf-grid mf-g2">
+      <div class="mf-f" style="grid-column:span 2">
+        <label for="item">Item name</label>
+        <div class="mf-inw"><input id="item" type="text" value="Control box housing (example)" autocomplete="off" spellcheck="false"></div>
+      </div>
+      <div class="mf-f">
+        <label for="qty">Quantity</label>
+        <div class="mf-inw mf-has-u"><input id="qty" type="number" inputmode="numeric" min="0" step="100" value="10000"><span class="mf-u">pcs</span></div>
+        <span class="mf-hint">Quantity for this order (or review)</span>
+      </div>
+      <div class="mf-f">
+        <label for="cur">Display currency</label>
+        <div class="mf-inw"><select id="cur"><option value="KRW">KRW (won)</option><option value="USD">USD (dollar)</option></select></div>
+        <span class="mf-hint">All inputs in KRW; only the results are converted</span>
+      </div>
+      <div class="mf-f">
+        <label for="fx">Applicable exchange rate</label>
+        <div class="mf-inw mf-has-u"><input id="fx" type="number" inputmode="decimal" min="1" step="0.1" value="1343.9"><span class="mf-u">KRW/USD</span></div>
+        <span class="mf-hint">Default 1,343.9 — Korea Eximbank base rate, 2026-11-26</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="mf-cols">
+    <div class="mf-col-inputs">
+
+      <section class="mf-card" aria-labelledby="h-mat">
+        <h2 id="h-mat"><span class="mf-n">02</span>Material <small>Resin & masterbatch</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f mf-full">
+            <label for="resinPreset">Resin preset <span class="mf-q">— picking one fills the resin name and price</span></label>
+            <div class="mf-inw"><select id="resinPreset"></select></div>
+            <span class="mf-hint" id="resinSrc">Sources and dates for the reference prices are listed under ‘Price references’ below. Replace them with your contracted price.</span>
+          </div>
+          <div class="mf-f">
+            <label for="resinName">Resin name</label>
+            <div class="mf-inw"><input id="resinName" type="text" value="ABS (virgin)" autocomplete="off"></div>
+          </div>
+          <div class="mf-f">
+            <label for="resinPrice">Resin price</label>
+            <div class="mf-inw mf-has-u"><input id="resinPrice" type="number" inputmode="decimal" min="0" step="10" value="2305"><span class="mf-u">KRW/kg</span></div>
+          </div>
+          <div class="mf-f">
+            <label for="weight">Part weight</label>
+            <div class="mf-inw mf-has-u"><input id="weight" type="number" inputmode="decimal" min="0" step="0.1" value="85"><span class="mf-u">g</span></div>
+            <span class="mf-hint">Finished part only, gate and runner excluded</span>
+          </div>
+          <div class="mf-f">
+            <label for="loss">Runner & scrap loss</label>
+            <div class="mf-inw mf-has-u"><input id="loss" type="number" inputmode="decimal" min="0" max="99" step="0.5" value="8"><span class="mf-u">%</span></div>
+            <span class="mf-hint">Include the part that cannot be reused</span>
+          </div>
+          <div class="mf-f">
+            <label for="mbPct">Masterbatch & additives</label>
+            <div class="mf-inw mf-has-u"><input id="mbPct" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="2"><span class="mf-u">%</span></div>
+            <span class="mf-hint">Against resin weight</span>
+          </div>
+          <div class="mf-f">
+            <label for="mbPrice">Additive price</label>
+            <div class="mf-inw mf-has-u"><input id="mbPrice" type="number" inputmode="decimal" min="0" step="50" value="3500"><span class="mf-u">KRW/kg</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-mold">
+        <h2 id="h-mold"><span class="mf-n">03</span>Mould <small>Tool cost, cavities, amortisation</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="moldCost">Mould cost</label>
+            <div class="mf-inw mf-has-u"><input id="moldCost" type="number" inputmode="numeric" min="0" step="100000" value="18000000"><span class="mf-u">KRW</span></div>
+            <span class="mf-hint">Including trial shots and rework</span>
+          </div>
+          <div class="mf-f">
+            <label for="cavities">Cavities</label>
+            <div class="mf-inw mf-has-u"><input id="cavities" type="number" inputmode="numeric" min="1" step="1" value="4"><span class="mf-u">ea</span></div>
+            <span class="mf-hint">Parts per shot</span>
+          </div>
+          <div class="mf-f">
+            <label for="moldLife">Mould life / amortisation volume</label>
+            <div class="mf-inw mf-has-u"><input id="moldLife" type="number" inputmode="numeric" min="1" step="1000" value="300000"><span class="mf-u">pcs</span></div>
+            <span class="mf-hint">Spread over this volume</span>
+          </div>
+          <div class="mf-f mf-full">
+            <span class="mf-lb">How the mould cost is spread</span>
+            <div class="mf-seg" role="radiogroup" aria-label="How the mould cost is spread">
+              <label><input type="radio" name="moldMode" value="basis" checked><span>Spread over life volume<br><i class="mf-sub">over the whole programme</i></span></label>
+              <label><input type="radio" name="moldMode" value="order"><span>All on this order<br><i class="mf-sub">single-order quote</i></span></label>
+            </div>
+            <span class="mf-hint">With spreading, only the amortised share enters the unit cost and the mould investment appears separately as upfront investment.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-form">
+        <h2 id="h-form"><span class="mf-n">04</span>Moulding & processing <small>Cycle & defects</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="cycle">Cycle time</label>
+            <div class="mf-inw mf-has-u"><input id="cycle" type="number" inputmode="decimal" min="0" step="0.5" value="32"><span class="mf-u">s</span></div>
+            <span class="mf-hint">One shot, mould open to close</span>
+          </div>
+          <div class="mf-f">
+            <label for="defect">Defect rate</label>
+            <div class="mf-inw mf-has-u"><input id="defect" type="number" inputmode="decimal" min="0" max="99" step="0.5" value="2"><span class="mf-u">%</span></div>
+            <span class="mf-hint">Material and processing cost spread over good parts</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card" aria-labelledby="h-post">
+        <h2 id="h-post"><span class="mf-n">05</span>Post-processing, packaging & logistics <small>Per good part</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="post">Post-processing per piece</label>
+            <div class="mf-inw mf-has-u"><input id="post" type="number" inputmode="decimal" min="0" step="10" value="120"><span class="mf-u">KRW/pc</span></div>
+            <span class="mf-hint">Degating, printing, assembly and so on</span>
+          </div>
+          <div class="mf-f">
+            <label for="pack">Packaging per piece</label>
+            <div class="mf-inw mf-has-u"><input id="pack" type="number" inputmode="decimal" min="0" step="5" value="35"><span class="mf-u">KRW/pc</span></div>
+            <span class="mf-hint">Bag, cushioning, carton, label</span>
+          </div>
+          <div class="mf-f">
+            <label for="logiMode">Freight input basis</label>
+            <div class="mf-inw"><select id="logiMode"><option value="total">Total for this order</option><option value="unit">per piece</option></select></div>
+          </div>
+          <div class="mf-f">
+            <label for="logiVal">Freight & logistics</label>
+            <div class="mf-inw mf-has-u"><input id="logiVal" type="number" inputmode="decimal" min="0" step="10000" value="450000"><span class="mf-u" id="logiUnit">KRW</span></div>
+            <span class="mf-hint">Including round trip and handling</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="mf-card mf-card-direct" aria-labelledby="h-direct">
+        <h2 id="h-direct"><span class="mf-n mf-n-direct">06</span>In-house conditions <small>Machine, labour, setup</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f">
+            <label for="dpTon">Machine size</label>
+            <div class="mf-inw mf-has-u"><input id="dpTon" type="number" inputmode="numeric" min="0" step="10" value="150"><span class="mf-u">t</span></div>
+            <span class="mf-hint">Clamping force; for reference</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpMachine">Machine rate per hour</label>
+            <div class="mf-inw mf-has-u"><input id="dpMachine" type="number" inputmode="numeric" min="0" step="1000" value="22000"><span class="mf-u">KRW/h</span></div>
+            <span class="mf-hint">Power + depreciation + upkeep + overhead</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpLabor">Labour rate per hour</label>
+            <div class="mf-inw mf-has-u"><input id="dpLabor" type="number" inputmode="numeric" min="0" step="1000" value="18000"><span class="mf-u">KRW/h</span></div>
+            <span class="mf-hint">One operator per machine, helpers included</span>
+          </div>
+          <div class="mf-f">
+            <label for="dpSetup">Initial setup cost</label>
+            <div class="mf-inw mf-has-u"><input id="dpSetup" type="number" inputmode="numeric" min="0" step="10000" value="350000"><span class="mf-u">KRW</span></div>
+            <span class="mf-hint">Mould mounting, conditions, trial shots</span>
+          </div>
+        </div>
+        <p class="mf-note">Setting the machine rate as (annual depreciation + power + maintenance + overhead) ÷ annual running hours gets close to reality. A low utilisation rate raises the hourly burden.</p>
+      </section>
+
+      <section class="mf-card mf-card-os" aria-labelledby="h-os">
+        <h2 id="h-os"><span class="mf-n mf-n-os">07</span>Outsourcing conditions <small>Quote, material, admin</small></h2>
+        <div class="mf-grid mf-g2">
+          <div class="mf-f mf-full">
+            <label for="osMode">Quote basis</label>
+            <div class="mf-inw"><select id="osMode">
+              <option value="perPart">Per piece (KRW/pc)</option>
+              <option value="perShot">Per shot (KRW/shot)</option>
+              <option value="perHour">Per hour (KRW/h)</option>
+            </select></div>
+            <span class="mf-hint">Per-shot and per-hour quotes are converted to a per-piece price with the cavities and cycle time above.</span>
+          </div>
+          <div class="mf-f">
+            <label for="osPrice">Outsourcing price</label>
+            <div class="mf-inw mf-has-u"><input id="osPrice" type="number" inputmode="decimal" min="0" step="10" value="620"><span class="mf-u" id="osPriceUnit">KRW/pc</span></div>
+          </div>
+          <div class="mf-f">
+            <span class="mf-lb">Material supply</span>
+            <div class="mf-seg mf-seg-sm" role="radiogroup" aria-label="Material supply">
+              <label><input type="radio" name="osMat" value="supply" checked><span>Free issue</span></label>
+              <label><input type="radio" name="osMat" value="turnkey"><span>Turnkey (material included)</span></label>
+            </div>
+            <span class="mf-hint">With free issue, the material cost above is added.</span>
+          </div>
+          <div class="mf-f">
+            <label for="osAdmin">Outsourcing admin</label>
+            <div class="mf-inw mf-has-u"><input id="osAdmin" type="number" inputmode="decimal" min="0" step="0.5" value="3"><span class="mf-u">%</span></div>
+            <span class="mf-hint">% of processing cost for inspection and ordering</span>
+          </div>
+          <div class="mf-f">
+            <label for="osLogi">Outsourcing freight</label>
+            <div class="mf-inw mf-has-u"><input id="osLogi" type="number" inputmode="decimal" min="0" step="10000" value="0"><span class="mf-u">KRW</span></div>
+            <span class="mf-hint">Round trip total for this order</span>
+          </div>
+          <div class="mf-f mf-full">
+            <label class="mf-chk"><input type="checkbox" id="osMold" checked><span>We pay for the mould (the tool is supplied to the moulder). Uncheck to leave mould cost out of the outsourced unit cost.</span></label>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <aside class="mf-col-result" aria-label="Calculation summary">
+      <div class="mf-rc" id="resultCard">
+        <div class="mf-rc-top"><h2>Unit cost comparison</h2><span id="rcMeta">10,000 pcs</span></div>
+        <div class="mf-rc-body">
+          <div class="mf-verdict" id="verdict" aria-live="polite">Calculating…</div>
+          <div class="mf-duo">
+            <div class="mf-cc mf-cc-direct" id="ccDirect">
+              <div class="mf-who"><i class="mf-dot"></i>In-house<span class="mf-win-tag" id="winDirect" hidden>Cheaper</span></div>
+              <div class="mf-big" id="unitDirect">—<small>/pc</small></div>
+              <div class="mf-sub" id="subDirect">—</div>
+              <div class="mf-bar" id="barDirect" aria-hidden="true"></div>
+            </div>
+            <div class="mf-cc mf-cc-os" id="ccOs">
+              <div class="mf-who"><i class="mf-dot"></i>Outsourced<span class="mf-win-tag" id="winOs" hidden>Cheaper</span></div>
+              <div class="mf-big" id="unitOs">—<small>/pc</small></div>
+              <div class="mf-sub" id="subOs">—</div>
+              <div class="mf-bar" id="barOs" aria-hidden="true"></div>
+            </div>
+          </div>
+          <div class="mf-bep" id="bepBox">
+            <span class="mf-k">Break-even quantity (BEP)</span>
+            <b id="bepVal">—</b>
+            <span id="bepText">—</span>
+          </div>
+          <div class="mf-legend" id="legend"></div>
+          <div class="mf-warn" id="warnBox" role="status"></div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <section class="mf-out" aria-labelledby="h-cmp">
+    <div class="mf-sec-head">
+      <h2 id="h-cmp">Cost by item</h2>
+      <p>Unit cost and total for this order, lined up item by item.</p>
+      <span class="mf-r" id="cmpMeta">—</span>
+    </div>
+    <div class="mf-tw">
+      <table class="mf-cmp" id="cmpTable">
+        <thead>
+          <tr>
+            <th class="mf-l" rowspan="2">Item</th>
+            <th class="mf-d" colspan="2">In-house</th>
+            <th class="mf-o" colspan="2">Outsourced</th>
+            <th rowspan="2">Difference<br><span class="mf-thsub">(per piece)</span></th>
+          </tr>
+          <tr>
+            <th class="mf-d">per piece</th><th class="mf-d">Total</th><th class="mf-o">per piece</th><th class="mf-o">Total</th>
+          </tr>
+        </thead>
+        <tbody id="cmpBody"></tbody>
+      </table>
+    </div>
+    <p class="mf-tbl-note" id="cmpNote">The difference is outsourced − in-house; a positive figure means in-house is that much cheaper.</p>
+    <p class="mf-scroll-hint">← Swipe the table sideways to see the outsourced figures and the difference.</p>
+  </section>
+
+  <section class="mf-out" aria-labelledby="h-qty">
+    <div class="mf-sec-head">
+      <h2 id="h-qty">Unit cost by order volume</h2>
+      <p>Changing the volume changes the per-piece share of mould amortisation, setup and lump-sum freight.</p>
+      <span class="mf-r">1,000 ~ 100,000 pcs</span>
+    </div>
+    <div class="mf-tw">
+      <table class="mf-cmp" id="qtyTable">
+        <thead>
+          <tr>
+            <th class="mf-l">Quantity</th>
+            <th class="mf-d">In-house /pc</th><th class="mf-d">In-house total</th>
+            <th class="mf-o">Outsourced /pc</th><th class="mf-o">Outsourced total</th>
+            <th>Cheaper</th><th>Total difference</th>
+          </tr>
+        </thead>
+        <tbody id="qtyBody"></tbody>
+      </table>
+    </div>
+    <p class="mf-scroll-hint">← Swipe the table and chart sideways to see every volume band.</p>
+    <div class="mf-chart-wrap">
+      <div class="mf-chart-title"><h3>Unit cost by volume</h3><span id="chartNote">KRW/pc</span></div>
+      <div class="mf-chart-scroll"><div id="chart"></div></div>
+    </div>
+  </section>
+
+  <section class="mf-out" aria-labelledby="h-cost">
+    <div class="mf-sec-head">
+      <h2 id="h-cost">Upfront investment and total cash</h2>
+      <p>Separate from the unit cost, this is the money that actually leaves for this order.</p>
+    </div>
+    <div class="mf-facts" id="facts"></div>
+    <p class="mf-tbl-note" id="cashNote">Total cash = production cost (material, processing, post-processing, freight) + setup + mould cost, on a cash basis. Even when the mould cost is spread, the full tool cost leaves as cash.</p>
+  </section>
+
+  <details class="mf-src" id="srcBox">
+    <summary>Price references — resin prices and sources <span>as of Nov 2026</span></summary>
+    <div class="mf-src-body">
+      <p class="mf-note">Preset prices are public quotes converted to KRW/kg. Chinese yuan quotes were converted at KRW 201.57/CNY (2026-11-26) and exclude freight, duty, customs clearance and other charges. Always replace them with your actual procurement price.</p>
+      <table class="mf-src-table">
+        <thead><tr><th>Resin</th><th style="text-align:right">Reference price</th><th>Basis & sources</th></tr></thead>
+        <tbody id="srcBody"></tbody>
+      </table>
+      <p class="mf-note">Recycled grades use the Korea Environment Corporation recyclables price survey for November 2026 (surveyed 2026-11-10, national average, VAT included, freight excluded) and trade benchmarks.</p>
+    </div>
+  </details>
+
+  <details class="mf-src" id="calcBox">
+    <summary>Calculation basis <span>How it is calculated</span></summary>
+    <div class="mf-src-body">
+      <ul class="mf-calc-list">
+        <li>Material cost = part weight × (1 + scrap rate) × resin price + the same weight × masterbatch % × additive price</li>
+        <li>Moulding cost = (cycle time ÷ 3,600) × (machine rate + labour rate) ÷ (cavities × (1 − defect rate))</li>
+        <li>Mould share = mould cost ÷ amortisation volume. With ‘all on this order’ it is cost ÷ order quantity. If the quantity exceeds the mould life, the cost grows by the number of mould sets needed.</li>
+        <li>Setup share = initial setup cost ÷ quantity</li>
+        <li>Post-processing and packaging are entered per good part; freight is converted to a per-piece figure from either the per-piece or the lump-sum value.</li>
+        <li>Outsourcing converts a per-piece, per-shot or per-hour quote to a per-piece price and, with free issue, adds the material cost. The admin fee is a percentage of the processing price.</li>
+        <li>Break-even quantity (BEP) = (in-house fixed − outsourced fixed) ÷ (outsourced variable − in-house variable). Fixed costs are the mould, setup and lump-sum freight; variable costs are material, processing, post-processing, packaging and per-piece freight. It assumes the quantity stays within the mould life.</li>
+        <li>Tax (VAT), financing, warehousing, certification and inspection costs are not included, nor is a payback period for equipment. Add them separately before deciding.</li>
+      </ul>
+    </div>
+  </details>
+
+  <p class="mf-xlink">
+    Related trade tools · <a href="biz.html#cost">Landed cost & duty calculator</a> ·
+    <a href="sourcing.html">Global sourcing/arrival cost calculator</a> ·
+    <a href="freight.html">Freight & landing cost</a> ·
+    <a href="market.html">Raw materials and exchange rate market information</a> ·
+    <a href="biz.html#trade">Trade documents (PI · CI · PL)</a>
+  </p>
+
+  <section class="mf-legal" aria-labelledby="mf-legal-title">
+    <h3 id="mf-legal-title">Calculation basis and privacy</h3>
+    <p>Scope — a reference calculator that adds up unit cost and total from the quantity, prices and conditions you enter. An actual quote or closing also reflects tax, overhead, exchange-rate movement, utilisation and inspection or certification costs. This calculator does not include VAT, financing or warehousing.</p>
+    <p>Privacy — the item name, quantity, prices and exchange rate you enter are used only inside your browser and are not sent to a server. Values stay in this browser (localStorage) and disappear when you press ‘Clear inputs’ or clear browser data.</p>
+    <p>Resin prices — preset prices are public quotes converted to KRW/kg and exclude freight, duty, customs clearance and other charges. Confirm with a supplier quote before contracting.</p>
+  </section>
+
+  <p class="mf-disclaimer">
+    This calculator is a reference tool for reviewing cost; it does not replace legal or commercial judgement about a contract or a quote. The figures shown are the result of the conditions entered and may differ from the actual quote or closing.
+  </p>
+
+</div>
+</main>
+
+<div class="mf-mini mf-noprint" id="miniBar" translate="no">
+  <div class="mf-mini-in">
+    <div class="mf-mini-m mf-mini-d"><span>In-house</span><b id="miniDirect">—</b></div>
+    <div class="mf-mini-m mf-mini-o"><span>Outsourced</span><b id="miniOs">—</b></div>
+    <button class="mf-mini-go" type="button" id="miniGo">Compare</button>
+  </div>
+</div>
+
+<div id="printSheet" aria-hidden="true" translate="no"></div>
+<div class="mf-toast" id="toast" role="status" translate="no"></div>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>Independent economics & investigative research magazine</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>INSIGHT BRIEF is an independent research outlet tracking economy and finance, trade and commodities, and AI and tech with data and interviews. It is not a registered internet newspaper and does not meet the registration requirements, such as five or more reporting and editing staff.</p>
+      </div>
+      <div class="f-col">
+        <h4>Sections</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">Investigation</a></li>
+          <li><a href="index.html?cat=economy">Economy & Finance</a></li>
+          <li><a href="index.html?cat=trade">Trade & Commodities</a></li>
+          <li><a href="market.html">Market board</a></li>
+          <li><a href="index.html?cat=ai">AI & Tech</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>Publication</h4>
+        <ul>
+          <li><a href="about.html">About & editorial policy</a></li>
+          <li><a href="contact.html#tip">Reader tips</a></li>
+          <li><a href="ad.html">Ad & sponsor rate card</a></li>
+          <li><a href="ad.html#b2b">B2B sourcing & cost inquiry</a></li>
+          <li><a href="sourcing.html">Free Tools · Global Sourcing · Destination Cost Calculator</a></li>
+          <li><a href="freight.html">Free tool · freight & landing cost</a></li>
+          <li><a href="biz.html">Free tool · 9 tools for solo business owners</a></li>
+          <li><a href="market.html">Free tools, raw materials, and exchange rate market information</a></li>
+          <li><a href="feed.xml">RSS feed</a></li>
+          <li><a href="sitemap.html">Sitemap</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">Tips hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">Ads hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">Seoul · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>This outlet is an independent medium not registered as an internet newspaper. Reproduction or redistribution of articles and photos without permission is prohibited. Sponsored content is labelled ‘Ad’.</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · Independent economics & investigative research magazine</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="Live briefing channels"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>Live briefing channels</h3><p>Get new reports and market updates in real time on KakaoTalk Open Chat and Telegram.</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk Open Chat</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram channel</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+<script src="../assets/js/mfg-cost.js?v=20261126a" defer></script>
+<script src="../assets/js/nav.js?v=20261124c"></script>
+<script src="data/i18n.fallback.js?v=20261124a"></script>
+<script src="../assets/js/i18n.js?v=20261124a"></script>
+<!-- IB:CHAT-FLOAT -->
+<script src="../assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

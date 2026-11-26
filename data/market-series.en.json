@@ -2241,7 +2241,7 @@
   "USD/KRW": {
    "code": "USD/KRW",
    "name": "Won·Dollar",
-   "unit": "won",
+   "unit": "KRW",
    "decimals": 2,
    "symbol": "KRW=X",
    "market": "yahoo",
