@@ -1,0 +1,72 @@
+name: Resell Picks Sync
+
+on:
+  schedule:
+    # 매일 08:30 KST (전날 23:30 UTC) — 마진 스캐너(08:00 KST)가 끝난 뒤에 돕니다.
+    - cron: '30 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: resell-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      TZ: Asia/Seoul
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Fetch latest margin report
+        env:
+          MARGIN_REPORT_TOKEN: ${{ secrets.MARGIN_REPORT_TOKEN }}
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/resell-latest.json"
+          URL="https://api.github.com/repos/hoppe00lg-byte/pickle-automation/contents/reports/resell-margin/latest.json?ref=main"
+          if [ -n "${MARGIN_REPORT_TOKEN:-}" ]; then
+            curl -fsSL --retry 3 -H "Authorization: Bearer $MARGIN_REPORT_TOKEN" \
+              -H "Accept: application/vnd.github.raw" "$URL" -o "$OUT"
+          else
+            curl -fsSL --retry 3 -H "Accept: application/vnd.github.raw" "$URL" -o "$OUT"
+          fi
+          if [ ! -s "$OUT" ]; then
+            echo "::error::마진 리포트를 받지 못했습니다. MARGIN_REPORT_TOKEN Secret(비공개 저장소 읽기)을 확인하세요."
+            exit 1
+          fi
+          python3 -c "import json,sys;d=json.load(open('$OUT'));print('리포트',d.get('date'),d.get('generated_at'),'항목',len(d.get('items') or []))"
+
+      - name: Sync resell picks into site data
+        run: |
+          set +e
+          python3 tools/sync_resell_picks.py --report "$RUNNER_TEMP/resell-latest.json" --top 5
+          code=$?
+          set -e
+          if [ "$code" = "3" ]; then
+            echo "유효 아이템 0건 — 기존 파일을 그대로 둡니다."
+            exit 0
+          fi
+          exit "$code"
+
+      - name: Commit and push if changed
+        run: |
+          FILES="data/resell-picks.json en/data/resell-picks.json zh/data/resell-picks.json ja/data/resell-picks.json"
+          if [ -z "$(git status --porcelain $FILES)" ]; then
+            echo "변경 없음"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add $FILES
+          git commit -m "chore(resell): 오늘의 마진 아이템 갱신 $(date +%F)"
+          git pull --rebase --autostash origin main || true
+          git push
