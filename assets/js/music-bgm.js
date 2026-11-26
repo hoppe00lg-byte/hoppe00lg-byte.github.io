@@ -1041,12 +1041,13 @@
   function defaultTitle() { return vibe().title[LANG] || vibe().title.ko; }
   function titleText() { return (S.title || '').trim() || defaultTitle(); }
 
-  function keyLabel() {
-    var k = keyObj();
-    if (LANG === 'ko') return k.id + ' ' + T.keysSuffix[k.mode];
-    if (LANG === 'ja') return k.id + T.keysSuffix[k.mode];
-    return k.id + ' ' + T.keysSuffix[k.mode];
+  function keyLabelOf(k) {
+    k = k || keyObj();
+    var root = String(k.id).replace(/m$/, '');
+    var word = T.keysSuffix[k.mode] || '';
+    return LANG === 'ja' ? root + word : root + ' ' + word;
   }
+  function keyLabel() { return keyLabelOf(keyObj()); }
   function metaLine() {
     return [nm(vibe()), nm(mood()), S.bpm + ' BPM', keyLabel()].join(' · ');
   }
@@ -1086,7 +1087,7 @@
     }).join('');
 
     var keys = KEYS.map(function (k) {
-      var label = k.id + ' ' + T.keysSuffix[k.mode];
+      var label = keyLabelOf(k);
       return '<option value="' + k.id + '"' + (k.id === S.key ? ' selected' : '') + '>' + esc(label) + '</option>';
     }).join('');
 
