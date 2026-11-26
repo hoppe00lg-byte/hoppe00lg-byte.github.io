@@ -1131,7 +1131,7 @@
     ],
     [
      "Input per ton of crude steel",
-     "The blast furnace/converter route costs 1,370kg of iron ore, 780kg of raw coal, 270kg of limestone, and 125kg of iron scrap (World Steel Association average)."
+     "The blast furnace/converter route costs 1,370kg of iron ore, 780kg of coking coal, 270kg of limestone, and 125kg of iron scrap (World Steel Association average)."
     ],
     [
      "1 ton of pig iron",
@@ -2034,13 +2034,13 @@
      "The gC NEWC index is the benchmark for Asia-Pacific power coal prices, and ICE Newcastle futures are settled on this index."
     ],
     [
-     "Distinguished from raw coal",
-     "Raw coal for steel (strong coal) goes to coke, and bituminous coal for power generation goes to fuel for thermal power generation."
+     "Distinguished from coking coal",
+     "Coking coal for steel (strong coal) goes to coke, and bituminous coal for power generation goes to fuel for thermal power generation."
     ]
    ],
    "body": [
     "Bituminous coal is coal that is burned for power generation. Calorific value (kcal/kg), ash content, sulfur content, and moisture determine the price and environmental facility burden. The Newcastle standard is preferred in Asia due to its high calorific value and low sulfur content.",
-    "Raw coal has coking properties and must harden into coke at high temperatures, so its price is set separately. Even if they come from the same coal mine, different grades are traded in different markets.",
+    "Coking coal has coking properties and must harden into coke at high temperatures, so its price is set separately. Even if they come from the same coal mine, different grades are traded in different markets.",
     "The price of power generation coal is affected by demand from China and India, supply from Australia and Indonesia, and gas prices. When gas becomes more expensive, the share of coal-fired power generation increases and the price of coal may rise."
    ],
    "sources": [
