@@ -79,8 +79,6 @@
     y += 122;
 
     /* 코디 3세트 */
-    var labels = [T.pieceTop, T.pieceBottom, T.pieceOuter, T.pieceShoes, T.piecePoint];
-    var keys = ['top', 'bottom', 'outer', 'shoes', 'point'];
     model.looks.forEach(function (lk, idx) {
       ctx.strokeStyle = RULE; ctx.lineWidth = 1;
       ctx.beginPath(); ctx.moveTo(64, y); ctx.lineTo(W - 64, y); ctx.stroke();
@@ -93,26 +91,19 @@
       var name = lk.style === 'minimal' ? T.styleMinimal : lk.style === 'trendy' ? T.styleTrendy : T.styleCasual;
       ctx.fillText(name, 108, y);
       y += 40;
-      ctx.font = font(21, 600);
-      keys.forEach(function (k, i) {
-        var item = lk[k];
-        if (!item) return;
-        var col = item.color === 'point' ? lk.colors.point : item.color === 'sub' ? lk.colors.sub : lk.colors.base;
-        ctx.fillStyle = col.hex;
+      lk.rows.forEach(function (r) {
+        ctx.fillStyle = r.hex;
         ctx.beginPath(); ctx.arc(72, y - 7, 9, 0, Math.PI * 2); ctx.fill();
-        ctx.strokeStyle = RULE; ctx.stroke();
+        ctx.strokeStyle = RULE; ctx.lineWidth = 1; ctx.stroke();
         ctx.fillStyle = MUTED;
         ctx.font = font(17, 500);
-        ctx.fillText(labels[i], 90, y);
+        ctx.fillText(r.label, 90, y);
         ctx.fillStyle = INK2;
         ctx.font = font(21, 600);
-        var text = L(item.name);
         var glue = model.lang === 'ja' ? 'の' : ' ';
-        var merged = model.lang === 'zh' ? L(col.name) + text : L(col.name) + glue + text;
+        var merged = model.lang === 'zh' ? r.name + r.item : r.name + glue + r.item;
         var lines = wrap(ctx, merged, W - 220).slice(0, 2);
-        lines.forEach(function (ln, li) {
-          ctx.fillText(ln, 200, y + li * 26);
-        });
+        lines.forEach(function (ln, li) { ctx.fillText(ln, 200, y + li * 26); });
         y += Math.max(34, lines.length * 26 + 8);
       });
       y += 14;

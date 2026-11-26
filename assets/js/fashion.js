@@ -43,6 +43,7 @@
       errImage: '이 이미지는 브라우저에서 읽을 수 없습니다. JPG·PNG 사진을 올려 주세요.',
       skinLow: '피부색 픽셀이 적어 톤 판단이 어렵습니다. 얼굴이 크게 나온 사진이 좋습니다.',
       metal: '어울리는 금속', seasonLabel: '계절', weekOf: '기준일',
+      colorBase: '기본', colorSub: '보조', colorPoint: '포인트', colorExtra: '여유색',
       bodyAutoNote: 'BMI와 사진으로 자동 계산했습니다. 다르면 직접 고르세요.',
       bodyManualNote: '직접 고른 체형으로 추천합니다.',
       trendNote: '데이터 파일 기준', shopTip: '검색어를 그대로 붙여 넣으면 비슷한 상품이 나옵니다.',
@@ -73,6 +74,7 @@
       errImage: 'This image cannot be read by the browser. Please use a JPG or PNG.',
       skinLow: 'Too few skin pixels to judge tone — a closer face shot works better.',
       metal: 'Metal that suits you', seasonLabel: 'Season', weekOf: 'Data as of',
+      colorBase: 'base', colorSub: 'secondary', colorPoint: 'accent', colorExtra: 'extra',
       bodyAutoNote: 'Calculated from BMI and your photo. Pick another if it feels off.',
       bodyManualNote: 'Using the body type you selected.',
       trendNote: 'From the data file', shopTip: 'Paste the keyword into a shop search box as it is.',
@@ -103,6 +105,7 @@
       errImage: '浏览器无法读取该图片，请使用 JPG 或 PNG。',
       skinLow: '肤色像素太少，难以判断色调。建议用面部较大的照片。',
       metal: '适合的金属', seasonLabel: '季节', weekOf: '数据基准日',
+      colorBase: '主色', colorSub: '辅色', colorPoint: '点缀', colorExtra: '备用',
       bodyAutoNote: '已根据 BMI 与照片自动计算，不合适可自行选择。',
       bodyManualNote: '按你选择的体型推荐。',
       trendNote: '依据数据文件', shopTip: '把关键词原样粘贴到购物搜索框即可。',
@@ -133,6 +136,7 @@
       errImage: 'この画像はブラウザで読めません。JPG・PNG の写真を選んでください。',
       skinLow: '肌色のピクセルが少なく色味を判定しづらいです。顔が大きく写った写真が向いています。',
       metal: '似合う金属', seasonLabel: '季節', weekOf: 'データ基準日',
+      colorBase: 'ベース', colorSub: 'サブ', colorPoint: 'アクセント', colorExtra: '予備',
       bodyAutoNote: 'BMIと写真から自動計算しました。違う場合は選び直してください。',
       bodyManualNote: '選んだ体型で提案しています。',
       trendNote: 'データファイル基準', shopTip: 'キーワードをそのままショップの検索窓に貼ってください。',
@@ -375,11 +379,15 @@
 
   function colorNames(pal) {
     /* 팔레트에서 기본·보조·포인트 세 색을 고른다 */
-    return { base: pal[0], sub: pal[1], point: pal[2], extra: pal.slice(0, 5) };
+    return { base: pal[0], sub: pal[1], point: pal[2] || pal[1] || pal[0], extra: pal.slice(0, 5) };
   }
-  function colorFor(pieceColor, cols) {
-    if (pieceColor === 'point') return cols.point;
-    if (pieceColor === 'sub') return cols.sub;
+  /* 조각별 색 배정 — 같은 색으로 도배되지 않게 칸마다 역할을 나눈다 */
+  function colorSlotFor(kind, item, style, cols) {
+    var want = item && item.color;
+    if (want === 'point') return cols.point;
+    if (want === 'sub') return cols.sub;
+    if (kind === 'bottom' && style !== 'minimal') return cols.sub;
+    if (kind === 'outer' && style === 'casual') return cols.sub;
     return cols.base;
   }
   function glue(colorName, itemName) {
@@ -390,7 +398,6 @@
 
   function buildLooks(rand) {
     var d = state.data, body = bodyKey();
-    var cols = colorNames(d.personalColors[colorKey()].palette);
     var styles = ['minimal', 'trendy', 'casual'];
     var used = { top: [], bottom: [], outer: [], shoes: [], point: [] };
     var looks = [];
@@ -403,7 +410,17 @@
       [['top', top], ['bottom', bottom], ['outer', outer], ['shoes', shoes], ['point', point]].forEach(function (pair) {
         if (pair[1]) used[pair[0]].push(pair[1].id);
       });
-      looks.push({ style: style, top: top, bottom: bottom, outer: outer, shoes: shoes, point: point, colors: cols });
+      looks.push({ style: style, top: top, bottom: bottom, outer: outer, shoes: shoes, point: point });
+    });
+    /* 팔레트의 포인트 색은 룩마다 돌려 쓴다(같은 색만 나오지 않도록) */
+    var pcPal = colorNames(d.personalColors[colorKey()].palette).extra;
+    looks.forEach(function (lk, i) {
+      lk.colors = {
+        base: pcPal[0],
+        sub: pcPal[1 + (i % 2)] || pcPal[1] || pcPal[0],
+        point: pcPal[3 + (i % 2)] || pcPal[3] || pcPal[2] || pcPal[0],
+        extra: pcPal
+      };
     });
     return looks;
   }
@@ -436,7 +453,7 @@
     return {
       bmi: Math.round(v * 10) / 10, band: bmiBand(v), body: body, bodyKey: bodyKey(),
       bodyMode: state.bodyMode, pc: pc, colorKey: colorKey(), occ: occ, sea: sea,
-      looks: looks, trends: trendsFor(), palette: colorNames(pc.palette)
+      looks: looks, trends: trendsFor(), palette: pc.palette
     };
   }
 
@@ -447,16 +464,15 @@
       bodyHTML + '</section>';
   }
 
-  function chips(colors) {
-    return '<span class="fs-chip" style="background:' + colors.hex + '" title="' + esc(L(colors.name)) + '"><i>' + esc(L(colors.name)) + '</i></span>';
-  }
-
-  function lookRow(label, item, cols) {
-    if (!item) return '';
-    var c = colorFor(item.color, cols);
-    return '<li><span class="p">' + esc(label) + '</span>' +
-      '<span class="v"><b style="background:' + c.hex + '" aria-hidden="true"></b>' +
-      esc(glue(L(c.name), L(item.name))) + '</span></li>';
+  function lookRows(lk) {
+    var defs = [['top', T.pieceTop], ['bottom', T.pieceBottom], ['outer', T.pieceOuter], ['shoes', T.pieceShoes], ['point', T.piecePoint]];
+    var rows = [];
+    defs.forEach(function (d) {
+      var it = lk[d[0]];
+      if (!it) return;
+      rows.push({ kind: d[0], label: d[1], item: it, color: colorSlotFor(d[0], it, lk.style, lk.colors) });
+    });
+    return rows;
   }
 
   function renderResult() {
@@ -476,7 +492,7 @@
 
     /* 체형 */
     var b = r.body;
-    out.push(resultCard(T.rBody, L(b.label),
+    out.push(resultCard('BODY · TYPE', L(b.label),
       '<p class="fs-lead">' + esc(L(b.goal)) + '</p>' +
       '<dl class="fs-list">' +
       '<dt>' + esc(T.up) + '</dt><dd>' + b.up.map(function (s) { return esc(L(s)); }).join(' · ') + '</dd>' +
@@ -485,18 +501,20 @@
       '</dl>'));
 
     /* 퍼스널 컬러 */
-    out.push(resultCard(T.rColor, L(r.pc.label),
+    out.push(resultCard('COLOR · TONE', L(r.pc.label),
       '<p class="fs-lead">' + esc(L(r.pc.note)) + '</p>' +
       '<ul class="fs-palette" aria-label="' + esc(T.paletteA11y) + '">' +
-      r.pc.palette.map(function (c) {
-        return '<li><b style="background:' + c.hex + '"></b><span>' + esc(L(c.name)) + '</span></li>';
+      r.pc.palette.map(function (c, i) {
+        var role = i === 0 ? T.colorBase : i === 1 ? T.colorSub : i === 2 ? T.colorPoint : T.colorExtra;
+        return '<li' + (i > 2 ? ' class="is-extra"' : '') + '><b style="background:' + c.hex + '"></b>' +
+          '<span>' + esc(L(c.name)) + '</span><em>' + esc(role) + '</em></li>';
       }).join('') + '</ul>' +
       '<p class="fs-note">' + esc(T.metal) + ' · ' + esc(L(r.pc.metal)) + '</p>' +
       (!state.photo ? '<p class="fs-note">' + esc(T.noPhoto) + '</p>' : '')));
 
     /* 실루엣·핏 */
     var t0 = r.trends[0];
-    out.push(resultCard(T.rFit, L(r.sea.label),
+    out.push(resultCard('FIT · SILHOUETTE', L(r.sea.label),
       '<dl class="fs-list">' +
       '<dt>' + esc(T.seasonLabel) + '</dt><dd>' + esc(L(r.sea.temp)) + ' · ' + esc(L(r.sea.layers[0])) + '</dd>' +
       '<dt>' + esc(T.occasion) + '</dt><dd>' + esc(L(r.occ.code)) + '</dd>' +
@@ -511,17 +529,15 @@
       return '<article class="fs-look" aria-label="' + esc(T.lookA11y) + ' ' + (i + 1) + '">' +
         '<header><span class="n">0' + (i + 1) + '</span><h4>' + esc(label) + '</h4>' +
         '<button type="button" class="fs-copy" data-copy="' + esc(kws) + '">' + esc(T.copy) + '</button></header>' +
-        '<ul class="fs-pieces">' +
-        lookRow(T.pieceTop, lk.top, lk.colors) +
-        lookRow(T.pieceBottom, lk.bottom, lk.colors) +
-        lookRow(T.pieceOuter, lk.outer, lk.colors) +
-        lookRow(T.pieceShoes, lk.shoes, lk.colors) +
-        lookRow(T.piecePoint, lk.point, lk.colors) +
-        '</ul>' +
+        '<ul class="fs-pieces">' + lookRows(lk).map(function (r) {
+          return '<li><span class="p">' + esc(r.label) + '</span>' +
+            '<span class="v"><b style="background:' + r.color.hex + '" aria-hidden="true"></b>' +
+            esc(glue(L(r.color.name), L(r.item.name))) + '</span></li>';
+        }).join('') + '</ul>' +
         '<p class="fs-kw">' + esc(kws) + '</p>' +
         '</article>';
     }).join('');
-    out.push(resultCard(T.rLooks, T.rLooks, '<div class="fs-looks">' + looksHTML + '</div>' +
+    out.push(resultCard('OUTFIT · 03', T.rLooks, '<div class="fs-looks">' + looksHTML + '</div>' +
       '<div class="fs-look-actions">' +
       '<button type="button" class="fs-btn" id="fs-copy-all">' + esc(T.copyAll) + '</button>' +
       '<button type="button" class="fs-btn fs-btn-main" id="fs-lookbook">' + esc(T.lookbook) + '</button>' +
@@ -529,11 +545,11 @@
       '</div>'));
 
     /* 피해야 할 핏 */
-    out.push(resultCard(T.rAvoid, L(b.label),
+    out.push(resultCard('AVOID', L(b.label),
       '<ul class="fs-avoid">' + b.avoid.map(function (s) { return '<li>' + esc(L(s)) + '</li>'; }).join('') + '</ul>'));
 
     /* 트렌드 */
-    out.push(resultCard(T.rTrend, state.data.meta.season,
+    out.push(resultCard('TREND · WEEK', state.data.meta.season,
       '<ul class="fs-trends">' + r.trends.map(function (t) {
         return '<li><b>' + esc(L(t.name)) + '</b><p>' + esc(L(t.line)) + '</p>' +
           '<code>' + esc(L(t.keywords)) + '</code></li>';
@@ -546,14 +562,9 @@
   }
 
   function lookKeywords(lk) {
-    var parts = [];
-    [['top', T.pieceTop], ['bottom', T.pieceBottom], ['outer', T.pieceOuter], ['shoes', T.pieceShoes], ['point', T.piecePoint]].forEach(function (pair) {
-      var it = lk[pair[0]];
-      if (!it) return;
-      var c = colorFor(it.color, lk.colors);
-      parts.push(glue(L(c.name), L(it.name)));
-    });
-    return parts.join(' / ');
+    return lookRows(lk).map(function (r) {
+      return glue(L(r.color.name), L(r.item.name));
+    }).join(' / ');
   }
 
   function bindResult() {
@@ -578,7 +589,13 @@
   function modelForBook() {
     return {
       lang: LANG, T: T, L: L, body: state.last.body, pc: state.last.pc,
-      season: state.last.sea, occasion: state.last.occ, looks: state.last.looks,
+      season: state.last.sea, occasion: state.last.occ,
+      looks: state.last.looks.map(function (lk) {
+        return {
+          style: lk.style,
+          rows: lookRows(lk).map(function (r) { return { label: r.label, hex: r.color.hex, name: L(r.color.name), item: L(r.item.name) }; })
+        };
+      }),
       bmi: state.last.bmi, band: state.last.band, keywords: state.last.looks.map(lookKeywords),
       date: state.data.meta.updatedAt, site: 'INSIGHT BRIEF'
     };

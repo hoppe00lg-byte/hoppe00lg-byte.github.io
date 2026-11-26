@@ -120,6 +120,9 @@
 .fs-palette li{min-width:0}
 .fs-palette b{display:block;height:46px;border:1px solid rgba(0,0,0,.08)}
 .fs-palette span{display:block;margin-top:5px;font-size:10.5px;line-height:1.4;color:var(--ink-3);word-break:keep-all}
+.fs-palette em{display:block;font-style:normal;font-family:var(--mono);font-size:8.5px;letter-spacing:.06em;color:var(--accent);text-transform:uppercase}
+.fs-palette li.is-extra b{height:30px}
+.fs-palette li.is-extra em{color:var(--muted)}
 .fs-note{margin-top:9px;font-size:10.5px;line-height:1.65;color:var(--muted)}
 
 /* 코디 세트 */
