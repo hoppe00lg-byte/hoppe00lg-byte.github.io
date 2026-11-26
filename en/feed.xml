@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 11:43:19 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 12:03:26 +0900</lastBuildDate>
+    <item>
+      <title>Section 301 Overcapacity Tariffs: What the 14-Economy Rate Card Adds, and Where It Does Not</title>
+      <link>https://insightbriefnews.com/en/a/section-301-overcapacity-tariffs-14-economies-2027.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/section-301-overcapacity-tariffs-14-economies-2027.html</guid>
+      <pubDate>Thu, 26 Nov 2026 11:30:00 +0900</pubDate>
+      <category>Trade &amp; Commodities</category>
+      <description>USTR named 14 economies that supplied about 60% of US goods imports in 2025 and floated duties from 10% to 40%. The &#x27;net of&#x27; clauses, the exemptions and one hearing in January decide what any importer actually pays.</description>
+    </item>
     <item>
       <title>97.8% and 63.0% — the AI that gets it right once and the AI that gets it right sixteen times</title>
       <link>https://insightbriefnews.com/en/a/hfe-reliability-floor-544-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 22:15:00 +0900</pubDate>
       <category>AI &amp; Tech</category>
       <description>The Personal Information Protection Commission gave notice of the enforcement decree for the AI training data exception on November 23, 2026; it takes effect March 9, 2027. Three legal conditions become five checkpoints and a review, and processing stops entirely if the work does not begin within six months of approval. The regulatory sandbox that has handled this so far approved 38 companies in about 28 and a half months.</description>
-    </item>
-    <item>
-      <title>The price is set at €82.32, but no certificate can be bought yet — the year that closes on 31 December</title>
-      <link>https://insightbriefnews.com/en/a/cbam-verification-first-bill-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/cbam-verification-first-bill-2027.html</guid>
-      <pubDate>Tue, 24 Nov 2026 21:15:00 +0900</pubDate>
-      <category>Trade &amp; Commodities</category>
-      <description>The EU has fixed the third-quarter CBAM certificate price at €82.32 per tonne. Certificates go on sale only on 1 February 2027, and the first declaration is due on 30 September that year. A tonne of Korean hot-rolled coil works out to about 120,000 won, and the door to domestic verification opened in Korea only on 5 November.</description>
     </item>
   </channel>
 </rss>
