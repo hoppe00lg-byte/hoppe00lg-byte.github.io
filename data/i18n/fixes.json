@@ -32,6 +32,22 @@
   [
    "raw coal",
    "coking coal"
+  ],
+  [
+   "Bakhlil",
+   "Bahlil"
+  ],
+  [
+   "official payment price",
+   "official settlement"
+  ],
+  [
+   "DiscoveryRealert",
+   "Discovery Alert"
+  ],
+  [
+   "wet tons",
+   "wet tonnes"
   ]
  ],
  "zh": [
@@ -144,6 +160,10 @@
   [
    "中国海管総書",
    "中国税関総署"
+  ],
+  [
+   "カルカイン",
+   "カルカイン（Kalkine）"
   ]
  ]
 }
