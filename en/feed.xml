@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 21:30:33 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 22:47:28 +0900</lastBuildDate>
+    <item>
+      <title>Ten million downloads, eight days, one refusal — the first border for AI agents</title>
+      <link>https://insightbriefnews.com/en/a/muse-uk-launch-pre-approval-gap-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/muse-uk-launch-pre-approval-gap-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 22:15:00 +0900</pubDate>
+      <category>AI &amp; Tech</category>
+      <description>Meta launched its personal AI agent Muse in the UK on 24 November. Downloads passed 10 million after the US launch. Four UK regulators sent ministers a joint letter eight days earlier telling firms to talk to them before launch, and three of them issued statements on launch day. Meta declined the FCA&#x27;s offer to test Muse together in its sandbox.</description>
+    </item>
     <item>
       <title>Anatomy of Dominance 58.8% — The space left by Bitcoin was filled by the dollar, not alts</title>
       <link>https://insightbriefnews.com/en/a/btc-dominance-58-altseason-index-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 10:45:00 +0900</pubDate>
       <category>AI &amp; Tech</category>
       <description>SK Telecom, KT, LG Uplus and Naver decided on Nov 23 to stop taking customer-service calls placed by AI agents. While calls from a service used by 200,000 people within a month of launch stall at identity checks, the payments market introduced cryptographically signed mandates in September 2025.</description>
-    </item>
-    <item>
-      <title>The same 61 days, 17 days apart — January 10 and January 27, the two ends of the postponements</title>
-      <link>https://insightbriefnews.com/en/a/gallium-rare-earth-two-deadlines-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/gallium-rare-earth-two-deadlines-2027.html</guid>
-      <pubDate>Wed, 25 Nov 2026 09:45:00 +0900</pubDate>
-      <category>Trade &amp; Commodities</category>
-      <description>China&#x27;s Commerce Ministry postponed the ban on gallium, germanium and antimony exports to the US until January 27, 2027. The rare earth suspension it extended two weeks earlier ends on January 10. Both reprieves run 61 days, but they start 17 days apart, so they end 17 days apart too — and in between, European dysprosium has risen to 15-19 times the Chinese price.</description>
     </item>
   </channel>
 </rss>

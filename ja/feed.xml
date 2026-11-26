@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 21:30:40 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 22:47:41 +0900</lastBuildDate>
+    <item>
+      <title>1000万ダウンロード、8日、そして拒否1件——AIエージェントの最初の国境</title>
+      <link>https://insightbriefnews.com/ja/a/muse-uk-launch-pre-approval-gap-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/muse-uk-launch-pre-approval-gap-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 22:15:00 +0900</pubDate>
+      <category>AI・テック</category>
+      <description>メタは11月24日、個人向けAIエージェント「Muse」を英国で公開した。米国での開始後にダウンロードは1,000万件を超えた。英国の規制機関4社は8日前に閣僚へ連名書簡を送り、公開前に規制機関と協議するよう求めた。公開当日には3機関がそれぞれ声明を出した。FCAが提案したサンドボックスでの共同テストはメタが断った。</description>
+    </item>
     <item>
       <title>ドミナンス58.8％の解剖 - ビットコインが出した席はアルトではなくドルが満たした</title>
       <link>https://insightbriefnews.com/ja/a/btc-dominance-58-altseason-index-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 09:45:00 +0900</pubDate>
       <category>貿易・原材料</category>
       <description>中国商務省は11月24日、ガリウム・ゲルマニウム・アンチモンの対米輸出禁止を2027年1月27日まで再び延期した。2週間前に延長した希土類の猶予は1月10日に終わる。どちらも61日だが、開始日が17日違うため終わる日も17日ずれる。その間に欧州のジスプロシウム価格は中国国内の15〜19倍になった。</description>
-    </item>
-    <item>
-      <title>12月31日が本当の締め切りである年末決算 - カード限度400万ウォンの条件とその日を過ぎると消える控除</title>
-      <link>https://insightbriefnews.com/ja/a/year-end-tax-dec31-deadline-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/year-end-tax-dec31-deadline-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 09:20:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>2026年帰属年末精算は2027年1月に行う。しかし、元に戻せない日付は12月31日だ。カード所得控除基本限度は子ども数に応じて300万～400万ウォン、年金貯蓄・IRPは900万ウォン、婚姻税額控除は今年が最後だ。</description>
     </item>
   </channel>
 </rss>

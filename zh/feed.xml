@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 26 Nov 2026 21:30:36 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 22:47:33 +0900</lastBuildDate>
+    <item>
+      <title>1000万次下载、8天、1次被拒——AI 智能体的第一道国境</title>
+      <link>https://insightbriefnews.com/zh/a/muse-uk-launch-pre-approval-gap-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/muse-uk-launch-pre-approval-gap-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 22:15:00 +0900</pubDate>
+      <category>AI·科技</category>
+      <description>Meta 于 11 月 24 日在英国推出个人 AI 智能体“Muse”。美国上线后下载量已超过 1000 万次。英国四家监管机构在 8 天前向部长们发出联名信，要求企业在发布前先与监管沟通；发布当天又有三家机构分别发表声明。金融行为监管局提议在沙盒中共同测试 Muse，被 Meta 拒绝。</description>
+    </item>
     <item>
       <title>统治地位剖析 58.8% — 比特币留下的空间由美元而非山寨币填补</title>
       <link>https://insightbriefnews.com/zh/a/btc-dominance-58-altseason-index-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 09:45:00 +0900</pubDate>
       <category>贸易·原材料</category>
       <description>中国商务部11月24日把对美出口镓、锗、锑的禁令再次推迟到2027年1月27日。两周前延长的稀土暂缓则在1月10日结束。两次暂缓都是61天，但开始日期相差17天，结束日期也随之相差17天；其间欧洲氧化镝价格已涨到中国国内价格的15至19倍。</description>
-    </item>
-    <item>
-      <title>年终纳税结算，实际截止日期为 12 月 31 日 - 卡限额为 400 万韩元，扣除额在该日之后消失</title>
-      <link>https://insightbriefnews.com/zh/a/year-end-tax-dec31-deadline-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/year-end-tax-dec31-deadline-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 09:20:00 +0900</pubDate>
-      <category>经济·金融</category>
-      <description>2026年年终纳税将于2027年1月进行。但不可逆转的日期是12月31日。根据子女人数，基本信用卡收入扣除限额为3至400万韩元，养老金储蓄和IRP为900万韩元，结婚税抵免是今年最后一次。</description>
     </item>
   </channel>
 </rss>

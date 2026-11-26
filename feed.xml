@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 26 Nov 2026 21:26:07 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 22:47:14 +0900</lastBuildDate>
+    <item>
+      <title>1,000만 다운로드, 8일, 그리고 거절 1건 — AI 에이전트의 첫 국경</title>
+      <link>https://insightbriefnews.com/a/muse-uk-launch-pre-approval-gap-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/muse-uk-launch-pre-approval-gap-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 22:15:00 +0900</pubDate>
+      <category>AI·테크</category>
+      <description>메타가 11월 24일 개인 AI 에이전트 &#x27;뮤즈&#x27;를 영국에 출시했다. 미국 출시 뒤 다운로드는 1,000만 건을 넘었다. 영국 규제기관 네 곳은 8일 전 장관들에게 &#x27;출시 전에 먼저 상의하라&#x27;는 공동 서한을 보냈고, 출시 당일에는 세 기관이 각각 성명을 냈다. 금융감독청이 제안한 샌드박스 공동 테스트는 메타가 거절했다.</description>
+    </item>
     <item>
       <title>도미넌스 58.8%의 해부 — 비트코인이 내준 자리는 알트가 아니라 달러가 채웠다</title>
       <link>https://insightbriefnews.com/a/btc-dominance-58-altseason-index-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 09:45:00 +0900</pubDate>
       <category>무역·원자재</category>
       <description>중국 상무부는 11월 24일 갈륨·게르마늄·안티몬의 대미 수출 금지를 2027년 1월 27일까지 다시 미뤘다. 2주 전에 미룬 희토류 유예는 1월 10일에 끝난다. 두 유예는 모두 61일인데 시작일이 열일곱 날 달라 끝도 열일곱 날 벌어졌고, 그 사이에서 유럽 디스프로슘 값은 중국 내수의 15~19배가 됐다.</description>
-    </item>
-    <item>
-      <title>12월 31일이 진짜 마감인 연말정산 — 카드 한도 400만원의 조건과 그날 지나면 사라지는 공제</title>
-      <link>https://insightbriefnews.com/a/year-end-tax-dec31-deadline-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/year-end-tax-dec31-deadline-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 09:20:00 +0900</pubDate>
-      <category>경제·금융</category>
-      <description>2026년 귀속 연말정산은 2027년 1월에 한다. 그러나 되돌릴 수 없는 날짜는 12월 31일이다. 카드 소득공제 기본한도는 자녀 수에 따라 300만~400만원, 연금저축·IRP는 900만원, 혼인세액공제는 올해가 마지막이다.</description>
     </item>
   </channel>
 </rss>
