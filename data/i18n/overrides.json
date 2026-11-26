@@ -4990,6 +4990,351 @@
    "9 questions",
    "9 个问题",
    "9つの質問"
+  ],
+  "체형·사진 기반 최신 트렌드 스타일 추천 — 무료 코디 툴 | INSIGHT BRIEF": [
+   "Body type, photo & trend style brief — free outfit tool | INSIGHT BRIEF",
+   "体型·照片·最新趋势穿搭推荐 — 免费搭配工具 | INSIGHT BRIEF",
+   "体型・写真・最新トレンドのスタイル提案 — 無料コーデツール | INSIGHT BRIEF"
+  ],
+  "뉴스·리포트": [
+   "News",
+   "新闻·报告",
+   "ニュース"
+  ],
+  "전체 기사": [
+   "All stories",
+   "全部报道",
+   "すべての記事"
+  ],
+  "주간 탐사보도": [
+   "Weekly investigations",
+   "每周调查报道",
+   "週刊調査報道"
+  ],
+  "세무·법률·생활": [
+   "Tax, law & life",
+   "税务·法律·生活",
+   "税務・法律・生活"
+  ],
+  "패션·스타일 추천": [
+   "Style & outfit brief",
+   "穿搭·风格推荐",
+   "ファッション・スタイル提案"
+  ],
+  "체형과 사진, 이번 주 트렌드로": [
+   "Body type, a photo, this week's trends",
+   "体型、照片、本周趋势",
+   "体型と写真、今週のトレンドで"
+  ],
+  "고르는 오늘의 코디": [
+   "— your outfit for today",
+   "— 选出今天的搭配",
+   "— 今日のコーデを選ぶ"
+  ],
+  "사진·입력값 서버 전송 없음": [
+   "No photo or input leaves your device",
+   "照片与输入值不上传",
+   "写真・入力値の送信なし"
+  ],
+  "BMI·체형 자동 계산": [
+   "BMI & body type auto",
+   "BMI·体型自动计算",
+   "BMI・体型を自動計算"
+  ],
+  "2026 겨울~2027 초봄 트렌드": [
+   "2026 winter – 2027 early spring trends",
+   "2026冬~2027初春趋势",
+   "2026冬〜2027春先のトレンド"
+  ],
+  "코디 3세트 · 룩북 PNG": [
+   "3 outfits · lookbook PNG",
+   "三套搭配 · 造型卡 PNG",
+   "コーデ3セット・ルックブックPNG"
+  ],
+  "내 정보 넣기": [
+   "Your details",
+   "填写我的信息",
+   "自分の情報を入れる"
+  ],
+  "값을 바꾸면 결과가 바로 따라옵니다. 사진은 선택이고, 올리지 않아도 추천은 그대로 나옵니다.": [
+   "Change a value and the result follows at once. The photo is optional — the brief works without it.",
+   "改动任一数值，结果会立即更新。照片是可选的，不上传也能得到完整建议。",
+   "値を変えると結果がすぐに変わります。写真は任意で、上げなくても提案は出ます。"
+  ],
+  "이 도구는 JavaScript로 동작합니다. 브라우저에서 JavaScript를 켜면 체형·색·코디 추천을 볼 수 있습니다.": [
+   "This tool runs on JavaScript. Enable it in your browser to see body, colour and outfit suggestions.",
+   "本工具需要 JavaScript。开启后可查看体型、色彩与搭配推荐。",
+   "このツールはJavaScriptで動きます。有効にすると体型・色・コーデの提案が見られます。"
+  ],
+  "스타일 추천 받기": [
+   "Get my style brief",
+   "获取风格建议",
+   "スタイル提案を見る"
+  ],
+  "다른 조합 보기": [
+   "Show another mix",
+   "换一组搭配",
+   "別の組み合わせ"
+  ],
+  "입력값과 사진은 이 브라우저 안에서만 쓰이고 어디에도 저장·전송되지 않습니다. 새로고침하면 모두 사라집니다.": [
+   "Your inputs and photo are used only inside this browser — never stored or sent. Reloading clears everything.",
+   "输入值与照片仅在本浏览器内使用，不会保存或发送。刷新后全部消失。",
+   "入力値と写真はこのブラウザ内だけで使われ、保存も送信もされません。再読み込みで全て消えます。"
+  ],
+  "추천 결과": [
+   "Your brief",
+   "推荐结果",
+   "提案結果"
+  ],
+  "세 단계면 끝납니다": [
+   "Three steps is all it takes",
+   "三步就完成",
+   "3ステップで完了"
+  ],
+  "키·몸무게·상황만 고르기": [
+   "Just height, weight and occasion",
+   "只选身高、体重与场合",
+   "身長・体重・シーンだけ選ぶ"
+  ],
+  "성별과 키, 몸무게를 넣으면 BMI와 체형이 계산됩니다. 계산값이 마음에 안 들면 체형 칩을 눌러 직접 고를 수 있습니다. 상황은 출근·데이트·주말·여행 네 가지입니다.": [
+   "Gender, height and weight produce BMI and a body type. If the calculation feels off, tap a body-type chip and pick your own. There are four occasions: work, date, weekend and travel.",
+   "填入性别、身高、体重即可算出 BMI 与体型。若结果不合意，点体型标签自行选择。场合分为上班、约会、周末、旅行四种。",
+   "性別・身長・体重を入れるとBMIと体型が出ます。合わなければ体型チップで選び直せます。シーンは通勤・デート・週末・旅行の4つです。"
+  ],
+  "사진은 선택입니다": [
+   "The photo is optional",
+   "照片是可选项",
+   "写真は任意です"
+  ],
+  "얼굴이 크게 나온 사진은 피부 톤을, 전신 사진은 어깨와 힙의 비율을 읽습니다. 사진은 기기 안 캔버스에서만 처리되고 전송되지 않으며, 새로고침하면 사라집니다.": [
+   "A close face shot gives skin tone; a full-body shot gives the shoulder-to-hip ratio. The image is processed only in an on-device canvas, never sent, and disappears on reload.",
+   "面部较大的照片用于判断肤色，全身照用于判断肩胯比例。图片仅在设备内的画布上处理，不会上传，刷新即消失。",
+   "顔が大きく写った写真は肌の色味、全身写真は肩とヒップの比率を読みます。画像は端末内のキャンバスだけで処理され、送信も保存もしません。"
+  ],
+  "키워드 복사, 룩북 저장": [
+   "Copy keywords, save the lookbook",
+   "复制关键词，保存造型卡",
+   "キーワードをコピー、ルックブック保存"
+  ],
+  "세트마다 붙은 쇼핑 키워드를 그대로 검색창에 넣으면 비슷한 상품이 나옵니다. 세 세트를 1080×1350 룩북 PNG로 저장해 친구에게 보내거나 여행 짐을 쌀 때 참고하세요.": [
+   "Paste each set's shopping keyword into a shop search box and similar items come up. Save the three sets as a 1080×1350 lookbook PNG to send to a friend or to pack for a trip.",
+   "把每套的购物关键词直接粘到搜索框，就能找到相似商品。三套可存成 1080×1350 的造型卡 PNG，发给朋友或出门旅行打包时参考。",
+   "セットごとのキーワードをそのまま検索窓に貼れば似た商品が出ます。3セットは1080×1350のルックブックPNGに保存して、友人に送ったり旅の荷造りに使えます。"
+  ],
+  "8문항": [
+   "8 answers",
+   "8个问题",
+   "8問"
+  ],
+  "사진이 서버로 올라가나요?": [
+   "Does my photo get uploaded?",
+   "照片会上传到服务器吗？",
+   "写真はサーバーに送られますか？"
+  ],
+  "아니요. 사진은 브라우저의 파일 선택창에서 메모리로만 읽고, 캔버스에 그려 픽셀 값을 계산한 뒤 버립니다. 어떤 이미지도 네트워크로 나가지 않습니다. 개발자 도구의 네트워크 탭에서 확인할 수 있습니다.": [
+   "No. The browser reads the file into memory, draws it on a canvas to compute pixel values, then discards it. No image goes over the network — you can confirm this in your browser's network tab.",
+   "不会。浏览器把文件读入内存，画到画布上算出像素值后就丢弃，任何图片都不会经网络发出。可在浏览器的网络面板中确认。",
+   "いいえ。ブラウザがファイルをメモリに読み、キャンバスに描いて画素値を計算した後に破棄します。画像がネットワークに出ることはなく、開発者ツールのネットワークタブで確認できます。"
+  ],
+  "퍼스널 컬러 진단이 정확한가요?": [
+   "How accurate is the personal-colour reading?",
+   "个人色彩判断准确吗？",
+   "パーソナルカラーの判定は正確ですか？"
+  ],
+  "사진에서 읽은 사진값은 참고값입니다. 조명 색온도, 메이크업, 배경, 카메라 화이트밸런스에 따라 값이 달라지기 때문입니다. 이 도구는 피부 픽셀의 밝기와 노랑·붉음 균형으로 웜·쿨·뉴트럴을 나누고, 밝기로 사계절 팔레트를 고릅니다. 정확한 진단은 오프라인 진단을 권합니다.": [
+   "What the photo gives is a reference value: colour temperature of the light, makeup, background and camera white balance all move it. The tool splits warm, cool and neutral by the brightness and yellow-to-red balance of skin pixels, then picks a seasonal palette by brightness. For an exact reading, a professional in-person consultation is better.",
+   "从照片读到的是参考值。灯光色温、妆容、背景与相机白平衡都会影响结果。本工具按肤色像素的明度与黄红平衡区分暖、冷、中性，再按明度选四季色板。想要准确判断，建议做线下诊断。",
+   "写真から読めるのは参考値です。照明の色温度、メイク、背景、カメラのホワイトバランスで値は変わります。肌画素の明るさと黄・赤のバランスでウォーム・クール・ニュートラルを分け、明るさで四季のパレットを選びます。正確な判定は対面の診断をおすすめします。"
+  ],
+  "체형이 자동 계산과 다른데요?": [
+   "The body type differs from what I know",
+   "体型和自动计算结果不同",
+   "体型が自動計算と違います"
+  ],
+  "BMI는 키와 몸무게만 보므로 어깨·골반 비율을 반영하지 못합니다. 사진을 올리면 어깨와 힙의 폭 비율을 함께 보지만, 팔 위치나 옷차림에 따라 달라집니다. 체형 칩에서 직접 고르면 그 값이 우선합니다.": [
+   "BMI only sees height and weight, so it cannot reflect the shoulder-to-hip ratio. A photo adds that ratio, but arm position and clothing shift it. Pick a body-type chip and that choice takes priority.",
+   "BMI 只看身高体重，无法反映肩胯比例。上传照片会一并参考肩宽与胯宽，但会受手臂位置和衣着影响。点体型标签自行选择，以你的选择为准。",
+   "BMIは身長と体重だけなので肩・ヒップ比は反映できません。写真を上げると肩幅とヒップ幅の比も見ますが、腕の位置や服装で変わります。体型チップで選べばその値が優先されます。"
+  ],
+  "트렌드는 얼마나 자주 바뀌나요?": [
+   "How often do the trends change?",
+   "趋势多久更新一次？",
+   "トレンドはどのくらいで変わりますか？"
+  ],
+  "추천에 쓰는 트렌드 데이터는 주간 단위로 갱신합니다. 2026 가을·겨울 런웨이(소프트 테일러링, 와이드 팬츠, 미드나이트 블룸, 시어링, 하이넥 더블 코트, 빈티지 니트 등)와 2027 초봄 흐름을 담고 있으며, 갱신일은 결과 아래에 표시됩니다.": [
+   "The trend data behind the suggestions is refreshed weekly. It currently carries the 2026 autumn/winter runways — soft tailoring, wide pants, midnight bloom, shearling, high-neck double coats, vintage knits — plus the 2027 early-spring direction. The update date is shown under the results.",
+   "推荐所用的趋势数据按周更新。目前收录 2026 秋冬秀场（柔和剪裁、阔腿裤、午夜绽放、羊毛一体、高领双排扣大衣、复古针织等）与 2027 初春走向，更新日期显示在结果下方。",
+   "提案に使うトレンドデータは週単位で更新します。現在は2026秋冬ランウェイ（ソフトテーラリング、ワイドパンツ、ミッドナイトブルーム、シアリング、ハイネックダブルコート、ヴィンテージニットなど）と2027春先の流れを収録。更新日は結果の下に出ます。"
+  ],
+  "쇼핑 키워드는 어떻게 쓰나요?": [
+   "How do I use the shopping keywords?",
+   "购物关键词怎么用？",
+   "ショッピングキーワードの使い方は？"
+  ],
+  "색과 아이템 이름을 붙여 만든 검색어입니다. 예를 들어 버터 화이트와 터틀넥 니트를 합쳐 검색하면 색·핏이 비슷한 상품이 나옵니다. 복사 버튼을 누르면 클립보드에 들어갑니다.": [
+   "Each one is a search phrase built from a colour and an item name — searching \"butter white turtleneck knit\" brings up items in a similar colour and fit. The copy button puts it on your clipboard.",
+   "这是把颜色与单品名称拼成的搜索词。例如搜“奶油白高领针织”，就能找到颜色与版型相似的商品。点复制即进入剪贴板。",
+   "色とアイテム名をつないだ検索語です。たとえば「バター白のタートルニット」で検索すれば色と形の近い商品が出ます。コピーボタンでクリップボードに入ります。"
+  ],
+  "룩북 이미지는 어디에 쓰나요?": [
+   "What is the lookbook image for?",
+   "造型卡图片有什么用？",
+   "ルックブック画像は何に使えますか？"
+  ],
+  "세 세트를 한 장으로 정리한 1080×1350 PNG입니다. 여행 짐 목록, 쇼핑 메모, 친구와의 공유에 쓰기 좋습니다. 모바일에서는 공유 시트로 바로 보낼 수 있습니다.": [
+   "It is a 1080×1350 PNG with all three sets on one card — handy for a packing list, a shopping note or sending to a friend. On mobile the share sheet sends it directly.",
+   "是把三套整理在一张 1080×1350 的 PNG。适合做旅行行李清单、购物备忘或发给朋友。手机上可通过分享面板直接发送。",
+   "3セットを1枚にまとめた1080×1350のPNGです。旅の持ち物リストや買い物メモ、友人への共有に便利。スマホでは共有シートからそのまま送れます。"
+  ],
+  "남성이나 유니섹스 옷도 되나요?": [
+   "Does it work for men or unisex styles?",
+   "男性或中性风格也可以吗？",
+   "メンズやユニセックスでも大丈夫？"
+  ],
+  "됩니다. 성별을 남성이나 유니섹스로 고르면 그에 맞는 아이템만 골라 조합합니다. 수트·셔츠·니트·와이드 팬츠처럼 성별 구분이 약한 아이템이 중심이 됩니다.": [
+   "Yes. Choose men or unisex and it only mixes items that fit — suits, shirts, knits and wide pants lead the way.",
+   "可以。选男性或中性后，只挑选相应单品组合。以西装、衬衫、针织、阔腿裤等性别界限较弱的单品为主。",
+   "はい。男性やユニセックスを選ぶと、それに合うアイテムだけで組みます。スーツ・シャツ・ニット・ワイドパンツなど性別の境目が薄いものが中心です。"
+  ],
+  "키·몸무게를 넣기 싫으면?": [
+   "What if I don't want to give height and weight?",
+   "不想填身高体重怎么办？",
+   "身長・体重を入れたくない場合は？"
+  ],
+  "체형 칩에서 직접 고르고 키·몸무게는 그대로 두어도 코디는 나옵니다. 다만 BMI 표시가 실제와 달라질 수 있습니다. 입력값은 전송되지 않고 저장되지 않으니 안심해도 됩니다.": [
+   "Pick a body-type chip and leave height and weight as they are — you still get outfits. Only the BMI figure may not match you. Nothing you type is sent or stored.",
+   "直接点体型标签，身高体重保持默认也能得到搭配，只是 BMI 显示可能与实际不同。输入值不会上传也不会保存。",
+   "体型チップを選び、身長・体重はそのままでもコーデは出ます。ただしBMI表示は実際と違うことがあります。入力値は送信も保存もされません。"
+  ],
+  "로또 번호 생성기": [
+   "Lotto number generator",
+   "彩票号码生成器",
+   "ロト番号生成器"
+  ],
+  "셀러·마케터 툴": [
+   "Seller & marketer tools",
+   "卖家·营销工具",
+   "セラー・マーケター向けツール"
+  ],
+  "서식·전자서명 138종": [
+   "Forms & e-signature (138)",
+   "表单·电子签名 138种",
+   "書式・電子署名 138種"
+  ],
+  "개인정보·저작권 안내": [
+   "Privacy & copyright",
+   "隐私·版权说明",
+   "個人情報・著作権のご案内"
+  ],
+  "사진 처리": [
+   "Photo processing",
+   "照片处理",
+   "写真の取り扱い"
+  ],
+  "— 올린 사진은 브라우저 메모리와 캔버스에서만 읽고, 분석이 끝나면 화면 미리보기 외에는 보관하지 않습니다. 서버 전송·저장이 없으므로 운영자도 볼 수 없습니다. 사진에 다른 사람이 함께 찍혀 있다면 그 사람의 동의를 먼저 확인하세요.": [
+   "— An uploaded photo is read only in browser memory and a canvas; once the analysis ends nothing is kept but the on-screen preview. Nothing is sent or stored, so the operator cannot see it either. If someone else appears in the photo, get their consent first.",
+   "— 上传的照片只在浏览器内存与画布中读取，分析结束后除屏幕预览外不作保留。不上传也不存储，运营方同样看不到。若照片中有他人，请先取得对方同意。",
+   "— 上げた写真はブラウザのメモリとキャンバスで読むだけで、解析が終われば画面のプレビュー以外は残しません。送信も保存もないため運営者も見られません。他の人が写っている場合は本人の同意を先に確認してください。"
+  ],
+  "입력값": [
+   "Inputs",
+   "输入值",
+   "入力値"
+  ],
+  "— 키·몸무게·체형·상황은 쿠키나 서버에 저장하지 않습니다. 새로고침하면 초기화됩니다.": [
+   "— Height, weight, body type and occasion are not stored in cookies or on a server. Reloading resets them.",
+   "— 身高、体重、体型与场合不会存入 Cookie 或服务器，刷新即重置。",
+   "— 身長・体重・体型・シーンはCookieにもサーバーにも保存しません。再読み込みで初期化されます。"
+  ],
+  "추천의 성격": [
+   "What the recommendation is",
+   "推荐的性质",
+   "提案の性格"
+  ],
+  "— 이 도구는 공개된 런웨이·패션 매체 보도를 정리한 트렌드 데이터와, 사용자가 넣은 값으로 문장을 조합합니다. 특정 브랜드나 상품을 추천·광고하지 않으며, 어떤 쇼핑몰과도 제휴 관계가 없습니다.": [
+   "— The tool assembles its text from trend data summarised from public runway and fashion-press reporting, plus the values you enter. It does not recommend or advertise any brand or product, and has no affiliate relationship with any shop.",
+   "— 本工具用公开秀场与时尚媒体报道整理的趋势数据，加上你输入的值来组合文案。不推荐也不宣传特定品牌或商品，与任何购物网站均无合作关系。",
+   "— このツールは公開されたランウェイやファッション媒体の報道をまとめたトレンドデータと、入力された値で文章を組み立てます。特定のブランドや商品を推薦・広告せず、どの通販とも提携関係がありません。"
+  ],
+  "사진 사용 범위": [
+   "How the photo is used",
+   "照片的使用范围",
+   "写真の利用範囲"
+  ],
+  "— 결과 이미지(룩북 PNG)에는 사진이 들어가지 않습니다. 색과 아이템 이름만으로 그립니다.": [
+   "— The result image (lookbook PNG) does not include your photo. It is drawn from colours and item names only.",
+   "— 结果图片（造型卡 PNG）不包含照片，只用颜色与单品名称绘制。",
+   "— 結果画像（ルックブックPNG）に写真は入りません。色とアイテム名だけで描きます。"
+  ],
+  "이 도구는 쇼핑과 코디 결정을 돕는 참고 자료입니다. 체형·피부 톤 분석은 사진과 입력값에 따른 추정이며 의학적·미용적 진단이 아닙니다. 트렌드 데이터의 기준일은 결과 화면에 표시됩니다.": [
+   "This tool is a reference for shopping and outfit decisions. Body-type and skin-tone readings are estimates from your photo and inputs, not medical or cosmetic diagnoses. The trend data's date is shown with the results.",
+   "本工具是购物与搭配的参考资料。体型、肤色分析为依据照片与输入值的推测，不是医学或美容诊断。趋势数据的基准日显示在结果页面。",
+   "このツールは買い物とコーデ判断のための参考資料です。体型・肌の色味の解析は写真と入力値による推定で、医学的・美容的な診断ではありません。トレンドデータの基準日は結果画面に出ます。"
+  ],
+  "인사이트 브리프는 경제·금융, 무역·원자재, AI·테크 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진입니다. 정식 인터넷신문 등록 언론사가 아니며, 취재·편집 인력 5인 이상 등 등록 요건을 갖추지 않았습니다.": [
+   "INSIGHT BRIEF is an independent research outlet tracking economy and finance, trade and commodities, and AI and tech with data and interviews. It is not a registered internet newspaper and does not meet the registration requirements, such as five or more reporting and editing staff.",
+   "INSIGHT BRIEF 是以数据与访谈追踪经济金融、贸易原材料、AI 科技现场的独立研究媒体。并非正式注册的互联网新闻机构，也不具备五名以上采编人员等注册条件。",
+   "INSIGHT BRIEF は経済・金融、貿易・原材料、AI・テックの現場をデータと取材で追う独立系リサーチ媒体です。正式なインターネット新聞の登録媒体ではなく、取材・編集5人以上などの登録要件を満たしていません。"
+  ],
+  "무료 도구 · 체형·스타일 추천": [
+   "Free tool · style & outfit brief",
+   "免费工具 · 穿搭推荐",
+   "無料ツール・スタイル提案"
+  ],
+  "제보 hoppe00lg@gmail.com": [
+   "Tips hoppe00lg@gmail.com",
+   "爆料 hoppe00lg@gmail.com",
+   "情報提供 hoppe00lg@gmail.com"
+  ],
+  "광고 hoppe00lg@gmail.com": [
+   "Ads hoppe00lg@gmail.com",
+   "广告 hoppe00lg@gmail.com",
+   "広告 hoppe00lg@gmail.com"
+  ],
+  "서울 · VOL. 01": [
+   "Seoul · VOL. 01",
+   "首尔 · VOL. 01",
+   "ソウル · VOL. 01"
+  ],
+  "본 웹진은 인터넷신문 등록을 하지 않은 독립 미디어입니다. 기사와 사진의 무단 전재·재배포를 금합니다. 협찬·광고 콘텐츠는 ‘광고’로 표기합니다.": [
+   "This outlet is an independent medium not registered as an internet newspaper. Reproduction or redistribution of articles and photos without permission is prohibited. Sponsored content is labelled ‘Ad’.",
+   "本媒体为未注册的独立媒体。禁止擅自转载、再分发文章与照片。赞助与广告内容标注为“广告”。",
+   "本媒体はインターネット新聞の登録をしていない独立メディアです。記事・写真の無断転載・再配布を禁じます。協賛・広告コンテンツは「広告」と明記します。"
+  ],
+  "키·몸무게로 BMI와 체형을 계산하고, 사진은 브라우저 안에서만 분석해 피부 톤과 어깨·힙 비율을 참고값으로 뽑습니다. 2026 겨울~2027 초봄 최신 트렌드를 반영한 코디 3세트, 컬러 팔레트, 피해야 할 핏, 쇼핑 키워드와 룩북 PNG까지 무료. 서버 전송 없음, 회원가입 없음, 한·영·중·일 지원.": [
+   "Enter height and weight for BMI and body type; a photo is analysed inside your browser only, yielding skin tone and shoulder-to-hip reference values. Get three outfits built on 2026 winter to 2027 early-spring trends, a colour palette, fits to avoid, shopping keywords and a lookbook PNG — free, no server upload, no sign-up, in Korean, English, Chinese and Japanese.",
+   "输入身高体重即可算出 BMI 与体型；照片仅在浏览器内分析，得出肤色与肩胯比例参考值。结合 2026 冬~2027 初春最新趋势，免费给出三套搭配、色板、应避免的版型、购物关键词与造型卡 PNG。不上传、不注册，支持韩英中日四种语言。",
+   "身長と体重でBMI・体型を計算し、写真はブラウザ内だけで解析して肌の色味と肩・ヒップ比の参考値を出します。2026冬〜2027春先の最新トレンドを反映したコーデ3セット、カラーパレット、避けたいフィット、ショッピングキーワード、ルックブックPNGまで無料。送信なし・登録なし・韓英中日の4言語対応。"
+  ],
+  "체형·사진 기반 최신 트렌드 스타일 추천 — 무료 코디 툴": [
+   "Body type, photo & trend style brief — free outfit tool",
+   "体型·照片·最新趋势穿搭推荐 — 免费搭配工具",
+   "体型・写真・最新トレンドのスタイル提案 — 無料コーデツール"
+  ],
+  "BMI·체형 자동 계산, 사진으로 피부 톤·비율 참고값, 2026 겨울~초봄 트렌드 코디 3세트와 쇼핑 키워드·룩북 PNG. 사진은 기기 안에서만 처리됩니다.": [
+   "BMI and body type, skin-tone and proportion reference values from a photo, three trend-led outfits for the 2026 winter to early spring, shopping keywords and a lookbook PNG. The photo stays on your device.",
+   "BMI 与体型自动计算，照片给出肤色与比例参考值，2026 冬~初春趋势的三套搭配、购物关键词与造型卡 PNG。照片仅在设备内处理。",
+   "BMI・体型の自動計算、写真から肌の色味と比率の参考値、2026冬〜春先トレンドのコーデ3セット、ショッピングキーワード、ルックブックPNG。写真は端末内のみで処理します。"
+  ],
+  "BMI·체형·피부 톤 참고값에 최신 트렌드를 얹어 코디 3세트·컬러 팔레트·쇼핑 키워드·룩북 PNG까지. 서버 전송 없음.": [
+   "Body type, BMI and skin-tone references with current trends on top: three outfits, a colour palette, shopping keywords and a lookbook PNG. Nothing is uploaded.",
+   "以 BMI、体型与肤色参考值叠加最新趋势，给出三套搭配、色板、购物关键词与造型卡 PNG。不上传任何数据。",
+   "BMI・体型・肌の色味の参考値に最新トレンドを重ね、コーデ3セット・カラーパレット・ショッピングキーワード・ルックブックPNGまで。送信はありません。"
+  ],
+  "키와 몸무게만 넣으면 BMI와 체형을 계산해 상의·하의·아우터의 핏을 잡아 줍니다. 사진을 올리면 피부 톤과 어깨·힙 비율을": [
+   "Enter your height and weight and it works out BMI and body type, then sets the fit for tops, bottoms and outerwear. Add a photo and it reads skin tone and the shoulder-to-hip ratio",
+   "只输入身高体重，就能算出 BMI 与体型，并定好上衣、下装、外套的版型。上传照片后，还能把肤色与肩胯比例",
+   "身長と体重を入れるだけでBMIと体型を計算し、トップス・ボトムス・アウターのフィットを決めます。写真を上げると、肌の色味と肩・ヒップ比を"
+  ],
+  "이 브라우저 안에서만": [
+   "inside this browser only",
+   "仅在本浏览器内",
+   "このブラウザ内だけで"
+  ],
+  "읽어 퍼스널 컬러와 실루엣 참고값을 더합니다. 2026 겨울부터 2027 초봄까지의 런웨이 트렌드를 담은 데이터로 코디 3세트, 컬러 팔레트, 피해야 할 핏, 쇼핑 키워드, 룩북 이미지까지 한 화면에서 나옵니다.": [
+   "and adds a personal-colour and silhouette reference. Trend data from the 2026 winter to 2027 early-spring runways then produces three outfits, a colour palette, fits to avoid, shopping keywords and a lookbook image — all on one screen.",
+   "读出，给出个人色彩与轮廓的参考值。再用 2026 冬到 2027 初春的秀场趋势数据，在一屏内给出三套搭配、色板、应避免的版型、购物关键词和造型卡图片。",
+   "読み取り、パーソナルカラーとシルエットの参考値を足します。2026年冬から2027年初春のランウェイトレンドをまとめたデータで、コーデ3セット、カラーパレット、避けたいフィット、ショッピングキーワード、ルックブック画像までを1画面で出します。"
   ]
  }
 }

@@ -1,0 +1,3545 @@
+{
+  "meta": {
+    "id": "fashion-trends",
+    "version": "2026.11.26-1",
+    "season": "2026 F/W → 2027 S/S",
+    "updatedAt": "2026-11-26",
+    "cadence": "weekly",
+    "uiLang": [
+      "ko",
+      "en",
+      "zh",
+      "ja"
+    ],
+    "rule": {
+      "ko": "이 파일 하나만 갱신하면 style.html(한·영·중·일) 추천 결과가 그대로 바뀝니다. 모든 문구는 ko/en/zh/ja 네 언어를 함께 적어 주세요. 한 언어라도 빠지면 그 언어 화면에 한국어가 남습니다.",
+      "en": "Updating this single file changes the recommendations on style.html in all four languages. Always fill all four languages (ko/en/zh/ja); a missing language shows Korean text on that page.",
+      "zh": "只更新此文件，style.html 的四种语言推荐会同时改变。每条文案都要写齐 ko/en/zh/ja 四种语言，缺一种就会在该语言页面留下韩文。",
+      "ja": "このファイルだけを更新すれば、style.html の4言語の提案がそのまま変わります。文言は必ず ko/en/zh/ja の4言語すべてを書いてください。欠けた言語はその画面に韓国語が残ります。"
+    },
+    "schema": {
+      "trends[]": "id, name{}, line{}, keywords{}, tags[occasion], seasons[], genders[]",
+      "items.tops/bottoms/outers/shoes/points[]": "id, name{}, gender[], seasons[], occasion[], good[bodyType], bad[bodyType], style(minimal|trendy|casual|formal), slot",
+      "bodyTypes{}": "label{}, goal{}, up[], down[], outer[], avoid[], tips[]",
+      "personalColors{}": "label{}, note{}, metal{}, palette[{hex, name{} }]",
+      "occasions{}": "label{}, code{}, want[minimal|trendy|casual|formal], note{}",
+      "seasons{}": "label{}, months[], temp{}, layers[], keywords[]"
+    },
+    "sources": [
+      {
+        "label": "Vogue Korea — 런웨이에서 골라낸 올가을·겨울 트렌드 10",
+        "url": "https://www.vogue.co.kr/2026/08/12/런웨이에서-골라낸-올가을과-겨울의-트렌드-10/",
+        "date": "2026-08-12"
+      },
+      {
+        "label": "Harper's Bazaar Korea — 2026 F/W 트렌드 키워드 10",
+        "url": "https://www.harpersbazaar.co.kr/article/1908528",
+        "date": "2026-08-30"
+      },
+      {
+        "label": "우먼센스 — 2026 F/W 스타일 키워드: 소프트 테일러링",
+        "url": "https://www.womansense.co.kr/news/articleView.html?idxno=62979",
+        "date": "2026-08-03"
+      },
+      {
+        "label": "코스모폴리탄 코리아 — 2026 F/W 맨즈 컬렉션 트렌드 5",
+        "url": "https://www.cosmopolitan.co.kr/article/1909295",
+        "date": "2026-09-13"
+      },
+      {
+        "label": "중앙일보 더 하이엔드 — 2026 F/W 남성복 트렌드",
+        "url": "https://www.joongang.co.kr/article/25403399",
+        "date": "2026-02-08"
+      },
+      {
+        "label": "세계일보 — 올가을 패션 키워드 일상·뉴트럴·실용",
+        "url": "https://www.segye.com/newsView/20260930512647",
+        "date": "2026-09-30"
+      },
+      {
+        "label": "테넌트뉴스 — 2026-2027 FW 패션 트렌드",
+        "url": "https://tnnews.co.kr/archives/297911",
+        "date": "2026-11-18"
+      }
+    ]
+  },
+  "seasons": {
+    "winter": {
+      "label": {
+        "ko": "겨울 (12~2월)",
+        "en": "Winter (Dec–Feb)",
+        "zh": "冬季（12~2月）",
+        "ja": "冬（12〜2月）"
+      },
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "temp": {
+        "ko": "영하 6℃ ~ 6℃",
+        "en": "−6 °C to 6 °C",
+        "zh": "−6℃~6℃",
+        "ja": "−6℃〜6℃"
+      },
+      "layers": [
+        {
+          "ko": "히트텍·얇은 니트를 1겹 더 두르고, 아우터는 무릎 아래 기장이 바람을 막아 줍니다.",
+          "en": "Add one thin knit layer and pick an outer that falls below the knee to cut the wind.",
+          "zh": "多穿一层薄针织，外套选膝盖以下的长度挡风。",
+          "ja": "薄手ニットを1枚足し、アウターは膝下丈で風を防ぎます。"
+        },
+        {
+          "ko": "두꺼운 소재는 어깨가 넓어 보이므로, 상의는 몸에 붙는 얇은 니트로 두고 아우터로 볼륨을 줍니다.",
+          "en": "Keep bulky fabric on the outer layer and wear a thin knit close to the body so the shoulders don't widen.",
+          "zh": "厚面料放在外套上，内搭选贴身薄针织，肩线才不会显宽。",
+          "ja": "厚手素材はアウターに回し、トップスは体に沿う薄手ニットで肩幅を抑えます。"
+        }
+      ],
+      "keywords": [
+        {
+          "ko": "울 맥시 코트",
+          "en": "wool maxi coat",
+          "zh": "羊毛长大衣",
+          "ja": "ウールマキシコート"
+        },
+        {
+          "ko": "하이넥 니트",
+          "en": "high-neck knit",
+          "zh": "高领针织衫",
+          "ja": "ハイネックニット"
+        },
+        {
+          "ko": "기모 와이드 슬랙스",
+          "en": "brushed wide slacks",
+          "zh": "加绒阔腿西裤",
+          "ja": "起毛ワイドスラックス"
+        },
+        {
+          "ko": "사이하이 부츠",
+          "en": "over-the-knee boots",
+          "zh": "过膝靴",
+          "ja": "サイハイブーツ"
+        }
+      ]
+    },
+    "earlySpring": {
+      "label": {
+        "ko": "초봄 (3~4월)",
+        "en": "Early spring (Mar–Apr)",
+        "zh": "早春（3~4月）",
+        "ja": "春先（3〜4月）"
+      },
+      "months": [
+        3,
+        4
+      ],
+      "temp": {
+        "ko": "3℃ ~ 16℃ (일교차 큼)",
+        "en": "3 °C to 16 °C, wide daily swing",
+        "zh": "3℃~16℃（昼夜温差大）",
+        "ja": "3℃〜16℃（寒暖差大）"
+      },
+      "layers": [
+        {
+          "ko": "아침저녁은 코트, 낮에는 셔츠 재킷이나 가디건으로 벗었다 입었다 할 수 있게 3겹을 맞춥니다.",
+          "en": "Build three layers so you can peel a coat off at noon and put a shirt-jacket or cardigan back on at night.",
+          "zh": "做三层搭配：早晚加外套，中午换成衬衫外套或开衫。",
+          "ja": "朝晩はコート、昼はシャツジャケットやカーディガン。3枚で調整できる重ね方に。"
+        },
+        {
+          "ko": "니트는 얇은 게이지로, 하의는 발목이 드러나는 기장으로 바꾸면 계절 전환이 자연스럽습니다.",
+          "en": "Swap to a fine-gauge knit and a hem that shows the ankle — the season change reads naturally.",
+          "zh": "针织换成细针，裤长露出脚踝，换季感更自然。",
+          "ja": "ニットは薄手のゲージに、ボトムは足首が見える丈に替えると季節の変わり目らしくなります。"
+        }
+      ],
+      "keywords": [
+        {
+          "ko": "얇은 트렌치코트",
+          "en": "light trench coat",
+          "zh": "薄款风衣",
+          "ja": "薄手トレンチコート"
+        },
+        {
+          "ko": "셔츠 재킷",
+          "en": "shirt-jacket",
+          "zh": "衬衫外套",
+          "ja": "シャツジャケット"
+        },
+        {
+          "ko": "미디 플리츠 스커트",
+          "en": "pleated midi skirt",
+          "zh": "百褶中长裙",
+          "ja": "プリーツミディスカート"
+        },
+        {
+          "ko": "로퍼",
+          "en": "loafers",
+          "zh": "乐福鞋",
+          "ja": "ローファー"
+        }
+      ]
+    },
+    "spring": {
+      "label": {
+        "ko": "봄 (4~5월)",
+        "en": "Spring (Apr–May)",
+        "zh": "春季（4~5月）",
+        "ja": "春（4〜5月）"
+      },
+      "months": [
+        4,
+        5
+      ],
+      "temp": {
+        "ko": "12℃ ~ 24℃",
+        "en": "12 °C to 24 °C",
+        "zh": "12℃~24℃",
+        "ja": "12℃〜24℃"
+      },
+      "layers": [
+        {
+          "ko": "얇은 셔츠 한 장에 가디건을 걸치는 정도로 충분합니다.",
+          "en": "A light shirt plus a cardigan over the shoulders is enough.",
+          "zh": "一件薄衬衫加一件开衫就足够。",
+          "ja": "薄手シャツにカーディガンを羽織る程度で十分です。"
+        },
+        {
+          "ko": "파스텔·라이트 데님이 잘 어울리는 계절이니, 상의로 색을 먼저 시도해 보세요.",
+          "en": "Pastels and light denim belong to this season — try the colour on top first.",
+          "zh": "这个季节适合浅色与浅色牛仔，先从上半身用色。",
+          "ja": "パステルとライトデニムが似合う季節。色はまずトップスで試してみてください。"
+        }
+      ],
+      "keywords": [
+        {
+          "ko": "옥스퍼드 셔츠",
+          "en": "oxford shirt",
+          "zh": "牛津纺衬衫",
+          "ja": "オックスフォードシャツ"
+        },
+        {
+          "ko": "라이트 데님",
+          "en": "light-wash denim",
+          "zh": "浅色牛仔裤",
+          "ja": "ライトデニム"
+        },
+        {
+          "ko": "발레 플랫",
+          "en": "ballet flats",
+          "zh": "芭蕾平底鞋",
+          "ja": "バレエフラット"
+        }
+      ]
+    },
+    "summer": {
+      "label": {
+        "ko": "여름 (6~8월)",
+        "en": "Summer (Jun–Aug)",
+        "zh": "夏季（6~8月）",
+        "ja": "夏（6〜8月）"
+      },
+      "months": [
+        6,
+        7,
+        8
+      ],
+      "temp": {
+        "ko": "24℃ ~ 34℃ (습도 높음)",
+        "en": "24 °C to 34 °C, humid",
+        "zh": "24℃~34℃（湿度高）",
+        "ja": "24℃〜34℃（湿度高）"
+      },
+      "layers": [
+        {
+          "ko": "린넨·시어·쿨링 소재로 두께를 줄이고, 색은 밝게 가져가야 열이 덜해 보입니다.",
+          "en": "Cut the thickness with linen, sheer and cooling fabrics, and keep the colours light.",
+          "zh": "用亚麻、雪纺、凉感面料减薄，颜色选浅的更清爽。",
+          "ja": "リネン・シアー・接触冷感素材で厚みを減らし、色は明るく。"
+        },
+        {
+          "ko": "실내 냉방이 강하면 얇은 가디건이나 셔츠를 가방에 넣어 두세요.",
+          "en": "If the air conditioning is strong indoors, keep a thin cardigan or shirt in your bag.",
+          "zh": "室内冷气强时，包里放一件薄开衫或衬衫。",
+          "ja": "室内の冷房が強いときは薄手カーディガンかシャツをバッグに。"
+        }
+      ],
+      "keywords": [
+        {
+          "ko": "린넨 셔츠",
+          "en": "linen shirt",
+          "zh": "亚麻衬衫",
+          "ja": "リネンシャツ"
+        },
+        {
+          "ko": "쿨링 와이드 팬츠",
+          "en": "cooling wide pants",
+          "zh": "凉感阔腿裤",
+          "ja": "接触冷感ワイドパンツ"
+        },
+        {
+          "ko": "레더 샌들",
+          "en": "leather sandals",
+          "zh": "皮革凉鞋",
+          "ja": "レザーサンダル"
+        }
+      ]
+    },
+    "autumn": {
+      "label": {
+        "ko": "가을 (9~11월)",
+        "en": "Autumn (Sep–Nov)",
+        "zh": "秋季（9~11月）",
+        "ja": "秋（9〜11月）"
+      },
+      "months": [
+        9,
+        10,
+        11
+      ],
+      "temp": {
+        "ko": "8℃ ~ 24℃",
+        "en": "8 °C to 24 °C",
+        "zh": "8℃~24℃",
+        "ja": "8℃〜24℃"
+      },
+      "layers": [
+        {
+          "ko": "가죽 재킷·트위드 재킷을 꺼낼 때입니다. 안에는 얇은 니트나 셔츠 한 장이면 충분합니다.",
+          "en": "Time for the leather and tweed jackets — a thin knit or a shirt underneath is enough.",
+          "zh": "该拿出皮夹克和粗花呢外套了，内搭一件薄针织或衬衫即可。",
+          "ja": "レザーやツイードのジャケットの出番。中は薄手ニットかシャツ1枚で十分です。"
+        },
+        {
+          "ko": "브라운·카멜·올리브 같은 어스 톤이 가장 잘 어울리는 계절입니다.",
+          "en": "Earth tones — brown, camel, olive — look best in this season.",
+          "zh": "棕、驼、橄榄等大地色在这个季节最合适。",
+          "ja": "ブラウン・キャメル・オリーブなどアースカラーが最も映える季節です。"
+        }
+      ],
+      "keywords": [
+        {
+          "ko": "레더 재킷",
+          "en": "leather jacket",
+          "zh": "皮夹克",
+          "ja": "レザージャケット"
+        },
+        {
+          "ko": "케이블 니트",
+          "en": "cable knit",
+          "zh": "麻花针织衫",
+          "ja": "ケーブルニット"
+        },
+        {
+          "ko": "첼시 부츠",
+          "en": "Chelsea boots",
+          "zh": "切尔西靴",
+          "ja": "チェルシーブーツ"
+        }
+      ]
+    }
+  },
+  "personalColors": {
+    "springWarm": {
+      "label": {
+        "ko": "봄 웜 (라이트·브라이트)",
+        "en": "Spring warm (light · bright)",
+        "zh": "春季暖型（明亮·清透）",
+        "ja": "スプリング（明るく軽やか）"
+      },
+      "note": {
+        "ko": "복숭아빛이 도는 밝은 피부에 어울립니다. 맑고 따뜻한 색이 얼굴을 살립니다.",
+        "en": "Suits skin with a peach glow; clear, warm colours brighten the face.",
+        "zh": "适合带桃色调的明亮肤色，清澈的暖色能让脸更有神。",
+        "ja": "ピーチみのある明るい肌に。澄んだ暖色が顔色を上げます。"
+      },
+      "metal": {
+        "ko": "골드",
+        "en": "gold",
+        "zh": "金色",
+        "ja": "ゴールド"
+      },
+      "palette": [
+        {
+          "hex": "#f5ecd6",
+          "name": {
+            "ko": "크림",
+            "en": "cream",
+            "zh": "奶油色",
+            "ja": "クリーム"
+          }
+        },
+        {
+          "hex": "#f2b8a2",
+          "name": {
+            "ko": "피치",
+            "en": "peach",
+            "zh": "蜜桃粉",
+            "ja": "ピーチ"
+          }
+        },
+        {
+          "hex": "#e2735f",
+          "name": {
+            "ko": "코랄",
+            "en": "coral",
+            "zh": "珊瑚红",
+            "ja": "コーラル"
+          }
+        },
+        {
+          "hex": "#f2e2a8",
+          "name": {
+            "ko": "라이트 옐로",
+            "en": "light yellow",
+            "zh": "浅黄",
+            "ja": "ライトイエロー"
+          }
+        },
+        {
+          "hex": "#bfe0c8",
+          "name": {
+            "ko": "웜 민트",
+            "en": "warm mint",
+            "zh": "暖薄荷",
+            "ja": "ウォームミント"
+          }
+        }
+      ]
+    },
+    "summerCool": {
+      "label": {
+        "ko": "여름 쿨 (라이트·소프트)",
+        "en": "Summer cool (light · soft)",
+        "zh": "夏季冷型（柔和·清淡）",
+        "ja": "サマー（淡くやわらかい）"
+      },
+      "note": {
+        "ko": "핑크빛이 도는 피부에 잘 맞습니다. 회색이 섞인 부드러운 색이 잘 어울립니다.",
+        "en": "Fits pink-toned skin; muted, greyish colours work best.",
+        "zh": "适合偏粉的肤色，带灰调的柔和色彩最合拍。",
+        "ja": "ピンクみのある肌に。グレーがかった柔らかい色がよく合います。"
+      },
+      "metal": {
+        "ko": "실버",
+        "en": "silver",
+        "zh": "银色",
+        "ja": "シルバー"
+      },
+      "palette": [
+        {
+          "hex": "#f3f4f5",
+          "name": {
+            "ko": "오프 화이트",
+            "en": "off-white",
+            "zh": "米白",
+            "ja": "オフホワイト"
+          }
+        },
+        {
+          "hex": "#c9c2e8",
+          "name": {
+            "ko": "라벤더",
+            "en": "lavender",
+            "zh": "薰衣草紫",
+            "ja": "ラベンダー"
+          }
+        },
+        {
+          "hex": "#b6d2e8",
+          "name": {
+            "ko": "스카이 블루",
+            "en": "sky blue",
+            "zh": "天空蓝",
+            "ja": "スカイブルー"
+          }
+        },
+        {
+          "hex": "#e0b3bf",
+          "name": {
+            "ko": "로즈 핑크",
+            "en": "rose pink",
+            "zh": "玫瑰粉",
+            "ja": "ローズピンク"
+          }
+        },
+        {
+          "hex": "#cdd2d6",
+          "name": {
+            "ko": "소프트 그레이",
+            "en": "soft grey",
+            "zh": "柔灰",
+            "ja": "ソフトグレー"
+          }
+        }
+      ]
+    },
+    "autumnWarm": {
+      "label": {
+        "ko": "가을 웜 (딥·뮤트)",
+        "en": "Autumn warm (deep · muted)",
+        "zh": "秋季暖型（深沉·低饱和）",
+        "ja": "オータム（深く落ち着く）"
+      },
+      "note": {
+        "ko": "노란 기가 도는 차분한 피부에 어울립니다. 깊이 있는 어스 톤이 얼굴을 정돈합니다.",
+        "en": "Fits skin with a golden undertone; deep earth tones settle the face.",
+        "zh": "适合偏黄的沉静肤色，深沉的大地色能让脸更干净。",
+        "ja": "黄みのある落ち着いた肌に。深いアースカラーが顔を整えます。"
+      },
+      "metal": {
+        "ko": "골드·앤티크",
+        "en": "gold, antique",
+        "zh": "金色·复古金",
+        "ja": "ゴールド・アンティーク"
+      },
+      "palette": [
+        {
+          "hex": "#f0e6ce",
+          "name": {
+            "ko": "버터 화이트",
+            "en": "butter white",
+            "zh": "奶油白",
+            "ja": "バター白"
+          }
+        },
+        {
+          "hex": "#c08a52",
+          "name": {
+            "ko": "카멜",
+            "en": "camel",
+            "zh": "驼色",
+            "ja": "キャメル"
+          }
+        },
+        {
+          "hex": "#5b4436",
+          "name": {
+            "ko": "초콜릿",
+            "en": "chocolate",
+            "zh": "巧克力棕",
+            "ja": "チョコレート"
+          }
+        },
+        {
+          "hex": "#6f7247",
+          "name": {
+            "ko": "올리브",
+            "en": "olive",
+            "zh": "橄榄绿",
+            "ja": "オリーブ"
+          }
+        },
+        {
+          "hex": "#b9614a",
+          "name": {
+            "ko": "테라코타",
+            "en": "terracotta",
+            "zh": "赤陶",
+            "ja": "テラコッタ"
+          }
+        }
+      ]
+    },
+    "winterCool": {
+      "label": {
+        "ko": "겨울 쿨 (딥·클리어)",
+        "en": "Winter cool (deep · clear)",
+        "zh": "冬季冷型（鲜明·强烈）",
+        "ja": "ウィンター（深く鮮やか）"
+      },
+      "note": {
+        "ko": "대비가 또렷한 피부에 어울립니다. 검정·버건디·선명한 색이 힘을 실어 줍니다.",
+        "en": "Fits high-contrast skin; black, burgundy and clear colours give definition.",
+        "zh": "适合对比度高的肤色，黑、酒红与鲜明色最有气场。",
+        "ja": "コントラストの強い肌に。黒・バーガンディ・鮮やかな色が決まります。"
+      },
+      "metal": {
+        "ko": "실버·화이트골드",
+        "en": "silver, white gold",
+        "zh": "银色·白金",
+        "ja": "シルバー・ホワイトゴールド"
+      },
+      "palette": [
+        {
+          "hex": "#f7f8f9",
+          "name": {
+            "ko": "퓨어 화이트",
+            "en": "pure white",
+            "zh": "纯白",
+            "ja": "ピュアホワイト"
+          }
+        },
+        {
+          "hex": "#1c2740",
+          "name": {
+            "ko": "미드나잇 네이비",
+            "en": "midnight navy",
+            "zh": "午夜蓝",
+            "ja": "ミッドナイトネイビー"
+          }
+        },
+        {
+          "hex": "#6d1f2c",
+          "name": {
+            "ko": "버건디",
+            "en": "burgundy",
+            "zh": "酒红",
+            "ja": "バーガンディ"
+          }
+        },
+        {
+          "hex": "#cddbe6",
+          "name": {
+            "ko": "아이시 블루",
+            "en": "icy blue",
+            "zh": "冰蓝",
+            "ja": "アイシーブルー"
+          }
+        },
+        {
+          "hex": "#4b3b6b",
+          "name": {
+            "ko": "딥 퍼플",
+            "en": "deep purple",
+            "zh": "深紫",
+            "ja": "ディープパープル"
+          }
+        }
+      ]
+    },
+    "neutralSoft": {
+      "label": {
+        "ko": "뉴트럴 (사진 없이 시작한 참고값)",
+        "en": "Neutral (reference, no photo)",
+        "zh": "中性（未上传照片的参考值）",
+        "ja": "ニュートラル（写真なしの参考値）"
+      },
+      "note": {
+        "ko": "웜·쿨 어느 쪽도 강하지 않은 중간 톤입니다. 무채색에 한 가지 색만 얹는 방식이 가장 안전합니다.",
+        "en": "A middle tone that leans neither warm nor cool. Safe neutrals plus one colour work best.",
+        "zh": "不偏暖也不偏冷的中性色调。用无彩色加一个颜色最稳妥。",
+        "ja": "ウォームにもクールにも偏らない中間トーン。無彩色に1色だけ足すのが最も安全です。"
+      },
+      "metal": {
+        "ko": "골드·실버 모두",
+        "en": "gold or silver",
+        "zh": "金色或银色",
+        "ja": "ゴールドもシルバーも"
+      },
+      "palette": [
+        {
+          "hex": "#f4f2ee",
+          "name": {
+            "ko": "오프 화이트",
+            "en": "off-white",
+            "zh": "米白",
+            "ja": "オフホワイト"
+          }
+        },
+        {
+          "hex": "#8c9198",
+          "name": {
+            "ko": "미디엄 그레이",
+            "en": "medium grey",
+            "zh": "中灰",
+            "ja": "ミディアムグレー"
+          }
+        },
+        {
+          "hex": "#2c3a52",
+          "name": {
+            "ko": "소프트 네이비",
+            "en": "soft navy",
+            "zh": "柔和藏蓝",
+            "ja": "ソフトネイビー"
+          }
+        },
+        {
+          "hex": "#c08a52",
+          "name": {
+            "ko": "카멜",
+            "en": "camel",
+            "zh": "驼色",
+            "ja": "キャメル"
+          }
+        },
+        {
+          "hex": "#d7d9dc",
+          "name": {
+            "ko": "라이트 그레이",
+            "en": "light grey",
+            "zh": "浅灰",
+            "ja": "ライトグレー"
+          }
+        }
+      ]
+    }
+  },
+  "bodyTypes": {
+    "slim": {
+      "label": {
+        "ko": "슬림형",
+        "en": "Slim",
+        "zh": "瘦长型",
+        "ja": "スリム型"
+      },
+      "goal": {
+        "ko": "얇은 실루엣에 볼륨과 두께를 더해 균형을 맞춥니다.",
+        "en": "Add volume and weight to a narrow silhouette so the frame reads balanced.",
+        "zh": "给单薄的轮廓增加体积与厚度，取得平衡。",
+        "ja": "薄いシルエットにボリュームと厚みを足して均衡を取ります。"
+      },
+      "up": [
+        {
+          "ko": "케이블 니트·헤어리 니트처럼 두께가 보이는 소재를 고르세요.",
+          "en": "Pick cable or hairy knits — fabrics whose thickness shows.",
+          "zh": "选麻花针织、毛感针织等有厚度的面料。",
+          "ja": "ケーブルニットやヘアリーニットなど、厚みが見える素材を。"
+        },
+        {
+          "ko": "어깨선이 또렷한 셔츠 재킷·블레이저를 걸치면 상체가 채워집니다.",
+          "en": "A shirt-jacket or blazer with a defined shoulder line fills out the upper body.",
+          "zh": "肩线清晰的衬衫外套或西装外套能撑起上半身。",
+          "ja": "肩線のしっかりしたシャツジャケットやブレザーで上半身を補います。"
+        }
+      ],
+      "down": [
+        {
+          "ko": "와이드·스트레이트 핏으로 다리 폭을 확보하고, 하이웨이스트는 과하지 않게.",
+          "en": "Use wide or straight fits for leg volume; keep the waist rise moderate.",
+          "zh": "用阔腿或直筒裤增加腿宽，腰线不要提得太高。",
+          "ja": "ワイド・ストレートで脚幅を出し、ハイウエストは上げすぎない。"
+        },
+        {
+          "ko": "가벼운 원단의 플리츠 스커트는 걸을 때 볼륨이 생겨 좋습니다.",
+          "en": "A light pleated skirt creates volume as you walk.",
+          "zh": "轻质百褶裙走动时自然有体积感。",
+          "ja": "軽いプリーツスカートは歩くとボリュームが出ます。"
+        }
+      ],
+      "outer": [
+        {
+          "ko": "오버사이즈보다 정핏에 가까운, 어깨가 서는 아우터가 균형을 잡아 줍니다.",
+          "en": "Choose an outer closer to true fit with a set shoulder rather than oversized.",
+          "zh": "外套选接近正码、肩部立体的款式，比例更平衡。",
+          "ja": "オーバーサイズより、肩の決まったジャストサイズ寄りのアウターが均衡を作ります。"
+        }
+      ],
+      "avoid": [
+        {
+          "ko": "몸에 달라붙는 스키니 팬츠와 얇은 슬림핏 니트는 마른 인상을 더합니다.",
+          "en": "Skinny pants and thin slim knits exaggerate a thin impression.",
+          "zh": "紧身裤与薄款修身针织会加重单薄感。",
+          "ja": "ピタピタのスキニーと薄手のスリムニットは細さを強調します。"
+        }
+      ],
+      "tips": [
+        {
+          "ko": "벨트·스카프·레이어링으로 세로선에 리듬을 주면 볼륨이 생깁니다.",
+          "en": "Belts, scarves and layering add rhythm to a vertical line and create volume.",
+          "zh": "用腰带、围巾和叠穿打破纵向单调，制造体积。",
+          "ja": "ベルト・スカーフ・レイヤードで縦線にリズムを足すと厚みが出ます。"
+        },
+        {
+          "ko": "신발은 청키한 밑창보다 볼륨 있는 로퍼·부츠가 다리와 균형을 맞춥니다.",
+          "en": "Loafers and boots with volume balance the legs better than very chunky soles.",
+          "zh": "比超厚底更合适的是有一定体积的乐福鞋和靴子。",
+          "ja": "厚底より、ボリュームのあるローファーやブーツが脚と釣り合います。"
+        }
+      ]
+    },
+    "standard": {
+      "label": {
+        "ko": "표준형",
+        "en": "Standard",
+        "zh": "标准型",
+        "ja": "標準型"
+      },
+      "goal": {
+        "ko": "어깨와 골반 비율이 균형이라, 허리선만 잡아 주면 어떤 핏도 소화됩니다.",
+        "en": "Shoulders and hips are balanced, so defining the waist opens up any fit.",
+        "zh": "肩与胯比例均衡，只要收一下腰线，各种版型都能驾驭。",
+        "ja": "肩とヒップのバランスが良いので、ウエストを決めればどんなシルエットも決まります。"
+      },
+      "up": [
+        {
+          "ko": "크롭 기장이나 살짝 짧은 니트로 허리 위치를 보여 주세요.",
+          "en": "Show the waist position with a cropped or slightly short knit.",
+          "zh": "用短款针织露出腰线位置。",
+          "ja": "クロップ丈や少し短いニットでウエスト位置を見せて。"
+        },
+        {
+          "ko": "하이넥·스탠드 칼라로 목선에 세로 리듬을 더하면 얼굴이 작아 보입니다.",
+          "en": "A high neck or stand collar adds vertical rhythm and makes the face read smaller.",
+          "zh": "高领、立领增加纵向节奏，脸显小。",
+          "ja": "ハイネックやスタンドカラーで縦のリズムを足すと顔が小さく見えます。"
+        }
+      ],
+      "down": [
+        {
+          "ko": "와이드 슬랙스와 스트레이트 데님을 모두 소화합니다. 상의 볼륨에 맞춰 폭을 고르세요.",
+          "en": "Both wide slacks and straight denim work — match the width to the top's volume.",
+          "zh": "阔腿西裤与直筒牛仔都能驾驭，宽度随上半身体积调整。",
+          "ja": "ワイドスラックスもストレートデニムもOK。トップスのボリュームに幅を合わせて。"
+        },
+        {
+          "ko": "하이웨이스트로 넣어 입으면 다리가 길어 보입니다.",
+          "en": "Tucking into a high-rise waist lengthens the legs.",
+          "zh": "高腰塞衣角，显腿长。",
+          "ja": "ハイウエストにタックインすると脚が長く見えます。"
+        }
+      ],
+      "outer": [
+        {
+          "ko": "블레이저·트렌치·코트 모두 어울립니다. 어깨가 딱 맞는 기장을 고르세요.",
+          "en": "Blazers, trenches and coats all work; pick the shoulder that sits exactly right.",
+          "zh": "西装、风衣、大衣都合适，肩宽选刚好的。",
+          "ja": "ブレザー・トレンチ・コートどれも。肩がちょうど合うものを。"
+        }
+      ],
+      "avoid": [
+        {
+          "ko": "상하의를 모두 오버핏으로 맞추면 비율이 흐려집니다. 한쪽만 여유를 주세요.",
+          "en": "Oversized on both top and bottom blurs the proportion — give volume to only one side.",
+          "zh": "上下都宽松会模糊比例，只让一边有余量。",
+          "ja": "上下ともオーバーサイズだと比率がぼやけます。どちらか片方だけに余裕を。"
+        }
+      ],
+      "tips": [
+        {
+          "ko": "트렌드를 얹기 좋은 체형입니다. 이번 시즌은 소프트 테일러링과 와이드 팬츠를 편하게 소화합니다.",
+          "en": "This frame carries trends easily — soft tailoring and wide pants sit well now.",
+          "zh": "很适合承载当季趋势，柔和剪裁与阔腿裤都能轻松驾驭。",
+          "ja": "トレンドを載せやすい体型。今季はソフトテーラリングとワイドパンツがよく似合います。"
+        },
+        {
+          "ko": "색은 한 가지 포인트 컬러로 정리하면 정돈되어 보입니다.",
+          "en": "Limit colour to one accent and the whole look reads tidy.",
+          "zh": "只用一个点缀色，整体更干净。",
+          "ja": "色はポイント1色に絞ると整って見えます。"
+        }
+      ]
+    },
+    "inverted": {
+      "label": {
+        "ko": "역삼각형 (어깨 우세)",
+        "en": "Inverted triangle (shoulder-led)",
+        "zh": "倒三角型（肩部偏宽）",
+        "ja": "逆三角形（肩幅が優勢）"
+      },
+      "goal": {
+        "ko": "넓은 어깨를 눌러 주고, 하의에 볼륨을 두어 아래로 무게를 내립니다.",
+        "en": "Play down the shoulder and put volume below so weight settles downward.",
+        "zh": "弱化肩部，把体积放到下半身，重心下移。",
+        "ja": "肩を抑え、ボトムにボリュームを置いて重心を下げます。"
+      },
+      "up": [
+        {
+          "ko": "라글란·드롭 숄더는 피하고, 어깨선이 몸 안쪽에 오는 셋인 슬리브를 고르세요.",
+          "en": "Avoid raglan and drop shoulders; choose set-in sleeves that sit inside the shoulder.",
+          "zh": "避免插肩和落肩，选肩线内收的装袖。",
+          "ja": "ラグランやドロップショルダーは避け、肩線が内側に来るセットインスリーブを。"
+        },
+        {
+          "ko": "V넥·U넥처럼 목선을 세로로 열면 어깨 폭이 줄어 보입니다.",
+          "en": "A V or U neckline opens the neck vertically and narrows the shoulder.",
+          "zh": "V领、U领纵向打开领口，肩宽显窄。",
+          "ja": "VネックやUネックで縦に開くと肩幅が小さく見えます。"
+        }
+      ],
+      "down": [
+        {
+          "ko": "와이드 팬츠·플레어 스커트·부츠컷 데님으로 하체 볼륨을 만드세요.",
+          "en": "Build volume below with wide pants, flared skirts or bootcut denim.",
+          "zh": "用阔腿裤、伞裙、微喇牛仔在下半身制造体积。",
+          "ja": "ワイドパンツ・フレアスカート・ブーツカットデニムで下半身にボリュームを。"
+        },
+        {
+          "ko": "밝은 색 하의를 고르면 시선이 아래로 내려갑니다.",
+          "en": "A lighter bottom brings the eye down.",
+          "zh": "下装选浅色，视线自然下移。",
+          "ja": "明るい色のボトムで視線を下へ。"
+        }
+      ],
+      "outer": [
+        {
+          "ko": "어깨 패드가 없는 소프트한 블레이저, 허리에서 여유가 있는 코트를 고르세요.",
+          "en": "Choose a soft blazer without shoulder pads, or a coat with room at the waist.",
+          "zh": "选无垫肩的柔软西装，或腰部有余量的大衣。",
+          "ja": "肩パッドのないソフトなブレザー、ウエストにゆとりのあるコートを。"
+        }
+      ],
+      "avoid": [
+        {
+          "ko": "퍼프 소매·큰 라펠·어깨 패드·보트넥은 어깨를 더 넓혀 보입니다.",
+          "en": "Puff sleeves, big lapels, shoulder pads and boat necks widen the shoulder further.",
+          "zh": "泡泡袖、大翻领、垫肩、一字领会让肩更宽。",
+          "ja": "パフスリーブ・大きなラペル・肩パッド・ボートネックは肩をさらに広く見せます。"
+        }
+      ],
+      "tips": [
+        {
+          "ko": "상의는 어두운 색, 하의는 밝은 색으로 두면 상체가 가볍게 보입니다.",
+          "en": "Dark on top, light below keeps the upper body looking light.",
+          "zh": "上深下浅，上半身更轻盈。",
+          "ja": "上は濃色、下は淡色にすると上半身が軽く見えます。"
+        },
+        {
+          "ko": "허리 벨트로 중간에 선을 그으면 어깨와 골반이 나뉘어 보여 균형이 잡힙니다.",
+          "en": "A belt at the waist draws a mid line so shoulder and hip read separately.",
+          "zh": "腰部加一条腰带画出中线，肩与胯分区更均衡。",
+          "ja": "ウエストのベルトで中間に線を引くと、肩とヒップが分かれて見えます。"
+        }
+      ]
+    },
+    "pear": {
+      "label": {
+        "ko": "하체 발달형",
+        "en": "Pear (hip-led)",
+        "zh": "梨型（下半身偏重）",
+        "ja": "ペア型（下半身が優勢）"
+      },
+      "goal": {
+        "ko": "시선을 상체로 올리고, 하의는 곧게 떨어지는 핏으로 정리합니다.",
+        "en": "Lift attention to the upper body and keep the lower half falling straight.",
+        "zh": "把视线引到上半身，下装用顺直的版型。",
+        "ja": "視線を上半身へ上げ、ボトムはまっすぐ落ちる形に整えます。"
+      },
+      "up": [
+        {
+          "ko": "어깨에 구조가 있는 재킷·셔츠로 상체에 볼륨을 주세요.",
+          "en": "Use a jacket or shirt with structure at the shoulder to give the top volume.",
+          "zh": "用肩部有结构的夹克或衬衫给上半身加体积。",
+          "ja": "肩に構造のあるジャケットやシャツで上半身にボリュームを。"
+        },
+        {
+          "ko": "밝은 색·패턴·넥라인 장식을 상의에 두면 시선이 위로 갑니다.",
+          "en": "Light colour, pattern or neckline detail on top lifts the eye.",
+          "zh": "上装用浅色、图案或领口细节，视线自然上移。",
+          "ja": "明るい色・柄・ネックラインの装飾をトップスに置くと視線が上がります。"
+        }
+      ],
+      "down": [
+        {
+          "ko": "스트레이트·부츠컷·A라인으로 골반과 허벅지를 가볍게 감싸 주세요.",
+          "en": "Straight, bootcut or A-line shapes skim over hip and thigh.",
+          "zh": "用直筒、微喇、A字型轻盖胯部与大腿。",
+          "ja": "ストレート・ブーツカット・Aラインでヒップと太ももを軽く包みます。"
+        },
+        {
+          "ko": "하이웨이스트에 상의를 넣으면 다리 시작점이 올라가 비율이 좋아집니다.",
+          "en": "Tuck into a high waist so the leg line starts higher.",
+          "zh": "高腰塞衣角，腿的起点上移，比例更好。",
+          "ja": "ハイウエストにタックインすると脚の始点が上がります。"
+        }
+      ],
+      "outer": [
+        {
+          "ko": "골반을 덮는 기장의 재킷·코트가 가장 안정적입니다.",
+          "en": "A jacket or coat that covers the hip is the safest length.",
+          "zh": "盖住胯部的夹克或大衣最稳妥。",
+          "ja": "ヒップを覆う丈のジャケットやコートが一番安定します。"
+        }
+      ],
+      "avoid": [
+        {
+          "ko": "힙에 붙는 스키니, 짧은 크롭 상의, 골반에 걸리는 주머니 장식은 피하세요.",
+          "en": "Avoid hip-hugging skinny jeans, short crops and pocket details at the hip.",
+          "zh": "避免紧包胯部的紧身裤、短款上衣、胯部口袋装饰。",
+          "ja": "ヒップに張り付くスキニー、短いクロップ、ヒップのポケット装飾は避けて。"
+        }
+      ],
+      "tips": [
+        {
+          "ko": "상의는 밝게, 하의는 어둡게 두면 하체가 줄어 보입니다.",
+          "en": "Light top and dark bottom visually reduces the lower half.",
+          "zh": "上浅下深，下半身显小。",
+          "ja": "上は明るく、下は暗くすると下半身が小さく見えます。"
+        },
+        {
+          "ko": "발목이 드러나는 기장에 볼륨 있는 신발을 매치하면 무게가 분산됩니다.",
+          "en": "Show the ankle and add a shoe with volume to spread the weight.",
+          "zh": "露脚踝配有一定体积的鞋，重心更分散。",
+          "ja": "足首を見せ、ボリュームのある靴を合わせると重さが分散します。"
+        }
+      ]
+    },
+    "broad": {
+      "label": {
+        "ko": "체격 있는 형",
+        "en": "Broad frame",
+        "zh": "壮硕型",
+        "ja": "がっしり型"
+      },
+      "goal": {
+        "ko": "두께를 숨기지 말고, 세로선이 살아나는 핏으로 정리합니다.",
+        "en": "Don't hide the bulk — organize it with lines that run vertical.",
+        "zh": "不必藏住体量，用纵向线条整理轮廓。",
+        "ja": "厚みを隠すより、縦線が生きる形で整えます。"
+      },
+      "up": [
+        {
+          "ko": "어깨가 딱 맞고 몸통에 여유가 있는 핏을 고르세요. 너무 큰 옷은 더 커 보입니다.",
+          "en": "Choose a true shoulder with room through the body; too-large clothes read bigger.",
+          "zh": "肩线合身、躯干有余量的版型；过大反而更显宽。",
+          "ja": "肩はジャスト、身幅にゆとりのある形を。大きすぎる服は大きく見えます。"
+        },
+        {
+          "ko": "어두운 단색 또는 세로 스트라이프가 가장 안정적입니다.",
+          "en": "Dark solids or vertical stripes are the most reliable.",
+          "zh": "深色单色或竖条纹最稳妥。",
+          "ja": "濃色の無地か縦ストライプが一番安定します。"
+        }
+      ],
+      "down": [
+        {
+          "ko": "스트레이트·테이퍼드로 다리 선을 곧게 두고, 밑단은 발등에 살짝 얹히게.",
+          "en": "Straight or tapered legs keep the line clean; let the hem rest lightly on the shoe.",
+          "zh": "直筒或锥形裤让腿线干净，裤脚轻搭鞋面。",
+          "ja": "ストレートかテーパードで脚の線をまっすぐに。裾は甲に軽く乗せて。"
+        },
+        {
+          "ko": "가운데 주름(센터 크리즈)이 있는 슬랙스는 세로선을 만들어 줍니다.",
+          "en": "Slacks with a centre crease create a vertical line.",
+          "zh": "有中缝的西裤能造出纵向线。",
+          "ja": "センタークリース入りのスラックスは縦線を作ります。"
+        }
+      ],
+      "outer": [
+        {
+          "ko": "허리에서 조이지 않고 곧게 떨어지는 맥시 코트·카디건이 좋습니다.",
+          "en": "A maxi coat or cardigan that falls straight from the shoulder, not cinched.",
+          "zh": "不勒腰、顺势垂下的长大衣或开衫最佳。",
+          "ja": "ウエストを絞らず、まっすぐ落ちるマキシコートやカーディガンが良いです。"
+        }
+      ],
+      "avoid": [
+        {
+          "ko": "두꺼운 퍼·헤비 케이블 니트·가로 줄무늬는 두께를 더합니다.",
+          "en": "Heavy fur, chunky cable knits and horizontal stripes add thickness.",
+          "zh": "厚重毛皮、粗麻花针织、横条纹会加重厚度。",
+          "ja": "厚手ファー・重いケーブルニット・横ボーダーは厚みを足します。"
+        }
+      ],
+      "tips": [
+        {
+          "ko": "소재는 울·거즈·린넨처럼 흐르는 것을 고르고, 스판이 강한 옷은 피하세요.",
+          "en": "Pick fabrics that drape — wool, gauze, linen — and avoid high-stretch knits.",
+          "zh": "选羊毛、纱、亚麻等垂顺面料，避开强弹力材质。",
+          "ja": "ウール・ガーゼ・リネンなど落ちる素材を。伸縮性の強い服は避けて。"
+        },
+        {
+          "ko": "신발은 얇고 긴 라인의 로퍼·더비가 전체를 슬림하게 정리합니다.",
+          "en": "A long, low-profile loafer or derby slims the whole line.",
+          "zh": "鞋选修长低矮的乐福鞋、德比鞋，整个人更利落。",
+          "ja": "細く長いローファーやダービーで全体がすっきりします。"
+        }
+      ]
+    }
+  },
+  "occasions": {
+    "work": {
+      "label": {
+        "ko": "출근·비즈니스",
+        "en": "Work & business",
+        "zh": "上班·商务",
+        "ja": "通勤・ビジネス"
+      },
+      "code": {
+        "ko": "재킷이나 셔츠로 단정함을 먼저 만들고, 소재로 고급감을 더하는 것이 이번 시즌 방식입니다.",
+        "en": "Start with a jacket or shirt for formality, then let the fabric add the polish — that's the season's method.",
+        "zh": "先用夹克或衬衫建立正式感，再用面料加质感，是当季做法。",
+        "ja": "まずジャケットかシャツで端正さを作り、素材で上質さを足すのが今季の方法です。"
+      },
+      "want": [
+        "formal",
+        "minimal"
+      ],
+      "note": {
+        "ko": "어깨에 힘을 뺀 소프트 테일러링이 올 시즌 오피스 룩의 중심입니다.",
+        "en": "Soft tailoring with a relaxed shoulder is the centre of office wear this season.",
+        "zh": "放松肩线的柔和剪裁是本季通勤装的核心。",
+        "ja": "肩の力を抜いたソフトテーラリングが今季のオフィスの中心です。"
+      }
+    },
+    "date": {
+      "label": {
+        "ko": "데이트·식사",
+        "en": "Date & dinner",
+        "zh": "约会·晚餐",
+        "ja": "デート・食事"
+      },
+      "code": {
+        "ko": "한 가지는 과감하게(색 또는 소재), 나머지는 조용하게 두는 편이 세련돼 보입니다.",
+        "en": "Be bold in one place — colour or fabric — and keep the rest quiet.",
+        "zh": "在一个地方大胆（颜色或材质），其余保持低调才显气质。",
+        "ja": "どこか一箇所だけ攻めて（色か素材）、あとは静かにまとめると洗練されます。"
+      },
+      "want": [
+        "minimal",
+        "trendy"
+      ],
+      "note": {
+        "ko": "검정에 레이스·새틴을 섞는 올 블랙 무드가 저녁 자리에 잘 맞습니다.",
+        "en": "All-black with lace or satin suits an evening table.",
+        "zh": "全黑搭配蕾丝或缎面，很适合晚餐场合。",
+        "ja": "黒にレースやサテンを混ぜるオールブラックが夜の席に合います。"
+      }
+    },
+    "weekend": {
+      "label": {
+        "ko": "주말·캐주얼",
+        "en": "Weekend & casual",
+        "zh": "周末·休闲",
+        "ja": "週末・カジュアル"
+      },
+      "code": {
+        "ko": "기본 아이템에 색 양말·스카프·가방 같은 작은 포인트 하나를 얹는 방식이 요즘 캐주얼입니다.",
+        "en": "Basics plus one small accent — coloured socks, a scarf, a bag — is the current casual formula.",
+        "zh": "基础款加一个小点缀（彩色袜子、围巾、包）正是当下的休闲方式。",
+        "ja": "ベーシックに、色ソックスやスカーフ、バッグなど小さなポイントを一つ。"
+      },
+      "want": [
+        "casual",
+        "minimal"
+      ],
+      "note": {
+        "ko": "편하게 입되 소재만 좋으면 훨씬 좋아 보입니다.",
+        "en": "Wear it easy, but let the fabric do the work.",
+        "zh": "穿得轻松，但面料要讲究。",
+        "ja": "楽に着ても、素材が良ければずっと良く見えます。"
+      }
+    },
+    "travel": {
+      "label": {
+        "ko": "여행·모임",
+        "en": "Travel & gathering",
+        "zh": "旅行·聚会",
+        "ja": "旅行・集まり"
+      },
+      "code": {
+        "ko": "주머니·신축성·구김을 기준으로 고르고, 겉옷 한 벌로 낮과 밤을 모두 버티게 만드세요.",
+        "en": "Buy for pockets, stretch and wrinkle-resistance; one outer should cover day and night.",
+        "zh": "以口袋、弹性、抗皱为标准，一件外套撑住白天与夜晚。",
+        "ja": "ポケット・ストレッチ・シワになりにくさで選び、アウター1枚で昼夜をしのぎます。"
+      },
+      "want": [
+        "casual",
+        "trendy"
+      ],
+      "note": {
+        "ko": "여행지는 걷는 시간이 길어 신발이 가장 중요합니다.",
+        "en": "On a trip the shoes matter most — you will be walking.",
+        "zh": "旅行走路多，鞋最重要。",
+        "ja": "旅先は歩く時間が長いので、靴が最重要です。"
+      }
+    }
+  },
+  "trends": [
+    {
+      "id": "soft-tailoring",
+      "name": {
+        "ko": "소프트 테일러링",
+        "en": "Soft tailoring",
+        "zh": "柔和剪裁",
+        "ja": "ソフトテーラリング"
+      },
+      "line": {
+        "ko": "어깨 패드를 덜어 내고 몸을 따라 흐르는 재킷·팬츠. 벨트로 허리만 살짝 잡아 줍니다.",
+        "en": "Jackets and trousers that drop from a softened shoulder; only the waist is marked, with a belt.",
+        "zh": "去掉垫肩、顺着身体垂落的西装与西裤，只用腰带轻收腰线。",
+        "ja": "肩パッドを抜き、体に沿って流れるジャケットとパンツ。ベルトでウエストだけ軽く決めます。"
+      },
+      "keywords": {
+        "ko": "드롭숄더 블레이저",
+        "en": "drop-shoulder blazer",
+        "zh": "落肩西装外套",
+        "ja": "ドロップショルダーブレザー"
+      },
+      "tags": [
+        "work",
+        "date"
+      ],
+      "seasons": [
+        "winter",
+        "earlySpring",
+        "autumn"
+      ],
+      "genders": [
+        "women",
+        "men",
+        "unisex"
+      ]
+    },
+    {
+      "id": "wide-pants",
+      "name": {
+        "ko": "와이드·롱 팬츠",
+        "en": "Wide, long pants",
+        "zh": "阔腿长裤",
+        "ja": "ワイド・ロングパンツ"
+      },
+      "line": {
+        "ko": "발등을 덮는 기장의 넓은 통. 상의는 몸에 붙여 대비를 만드는 것이 핵심입니다.",
+        "en": "A wide leg that covers the instep; keep the top close to the body for contrast.",
+        "zh": "盖住脚背的宽裤脚，上衣贴身形成对比是关键。",
+        "ja": "甲を覆う丈のワイドシルエット。トップスは体に沿わせて対比を作ります。"
+      },
+      "keywords": {
+        "ko": "롱 와이드 슬랙스",
+        "en": "long wide slacks",
+        "zh": "长款阔腿西裤",
+        "ja": "ロングワイドスラックス"
+      },
+      "tags": [
+        "work",
+        "weekend",
+        "travel"
+      ],
+      "seasons": [
+        "winter",
+        "earlySpring",
+        "autumn"
+      ],
+      "genders": [
+        "women",
+        "men",
+        "unisex"
+      ]
+    },
+    {
+      "id": "midnight-bloom",
+      "name": {
+        "ko": "미드나이트 블룸 (올 블랙)",
+        "en": "Midnight bloom (all black)",
+        "zh": "午夜绽放（全黑）",
+        "ja": "ミッドナイトブルーム（オールブラック）"
+      },
+      "line": {
+        "ko": "검정에 레이스·플라워·시스루를 섞어 어둡고 관능적으로. 낮보다 저녁에 강합니다.",
+        "en": "Black mixed with lace, florals and sheer — darker, more sensual, stronger at night.",
+        "zh": "黑色混搭蕾丝、花朵与透视，暗而迷人，晚上更有力。",
+        "ja": "黒にレース・フラワー・シアーを混ぜて暗く官能的に。昼より夜に効きます。"
+      },
+      "keywords": {
+        "ko": "블랙 레이스 블라우스",
+        "en": "black lace blouse",
+        "zh": "黑色蕾丝衬衫",
+        "ja": "ブラックレースブラウス"
+      },
+      "tags": [
+        "date"
+      ],
+      "seasons": [
+        "winter",
+        "autumn"
+      ],
+      "genders": [
+        "women",
+        "unisex"
+      ]
+    },
+    {
+      "id": "shearling",
+      "name": {
+        "ko": "시어링·인조 퍼",
+        "en": "Shearling & faux fur",
+        "zh": "羊毛一体·人造毛",
+        "ja": "シアリング・フェイクファー"
+      },
+      "line": {
+        "ko": "복슬복슬한 아우터를 한 겹. 검정·아이보리로 두면 부담 없이 따뜻해 보입니다.",
+        "en": "One fluffy outer layer — in black or ivory it reads warm without trying too hard.",
+        "zh": "一件毛绒外套，黑或象牙色，保暖又不夸张。",
+        "ja": "もこもこのアウターを一枚。黒かアイボリーなら重くならず暖かく見えます。"
+      },
+      "keywords": {
+        "ko": "숏 시어링 재킷",
+        "en": "short shearling jacket",
+        "zh": "短款羊毛外套",
+        "ja": "ショートシアリングジャケット"
+      },
+      "tags": [
+        "weekend",
+        "travel"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "genders": [
+        "women",
+        "men",
+        "unisex"
+      ]
+    },
+    {
+      "id": "highneck-coat",
+      "name": {
+        "ko": "하이넥 더블 코트",
+        "en": "High-neck double coat",
+        "zh": "高领双排扣大衣",
+        "ja": "ハイネックダブルコート"
+      },
+      "line": {
+        "ko": "단추를 끝까지 채우면 목까지 정돈되고, 열면 라펠이 깊어집니다. 한 벌로 두 얼굴.",
+        "en": "Buttoned to the top it tidies the neck; open it and the lapel deepens. One coat, two faces.",
+        "zh": "全扣到顶显得利落，敞开则翻领更深，一件两用。",
+        "ja": "上まで留めれば首元が整い、開ければラペルが深く。1着で2つの顔。"
+      },
+      "keywords": {
+        "ko": "하이넥 더블버튼 코트",
+        "en": "high-neck double-breasted coat",
+        "zh": "高领双排扣长大衣",
+        "ja": "ハイネックダブルボタンコート"
+      },
+      "tags": [
+        "work",
+        "date"
+      ],
+      "seasons": [
+        "winter"
+      ],
+      "genders": [
+        "women",
+        "men",
+        "unisex"
+      ]
+    },
+    {
+      "id": "vintage-knit",
+      "name": {
+        "ko": "빈티지 니트 (페어아일·케이블)",
+        "en": "Vintage knits (Fair Isle, cable)",
+        "zh": "复古针织（费尔岛·麻花）",
+        "ja": "ヴィンテージニット（フェアアイル・ケーブル）"
+      },
+      "line": {
+        "ko": "두께가 보이는 니트에 체크·플라워를 한 가지 더 겹쳐 리듬을 만듭니다.",
+        "en": "A knit with visible thickness, plus one checked or floral piece for rhythm.",
+        "zh": "有厚度的针织，再叠一件格纹或花纹制造节奏。",
+        "ja": "厚みの見えるニットに、チェックか花柄を1つ重ねてリズムを。"
+      },
+      "keywords": {
+        "ko": "페어아일 니트",
+        "en": "Fair Isle knit",
+        "zh": "费尔岛针织衫",
+        "ja": "フェアアイルニット"
+      },
+      "tags": [
+        "weekend",
+        "travel"
+      ],
+      "seasons": [
+        "winter",
+        "earlySpring"
+      ],
+      "genders": [
+        "women",
+        "men",
+        "unisex"
+      ]
+    },
+    {
+      "id": "check",
+      "name": {
+        "ko": "톤온톤 체크·헤링본",
+        "en": "Tone-on-tone check & herringbone",
+        "zh": "同色系格纹·人字纹",
+        "ja": "トーンオントーンのチェック・ヘリンボーン"
+      },
+      "line": {
+        "ko": "같은 색 계열의 체크를 재킷·스커트·스카프 한 곳에만. 나머지는 무지로 둡니다.",
+        "en": "Put the check in one place — jacket, skirt or scarf — and keep the rest solid.",
+        "zh": "格纹只放在一处（外套、裙或围巾），其余用纯色。",
+        "ja": "チェックは一箇所だけ（ジャケット・スカート・スカーフ）。ほかは無地で。"
+      },
+      "keywords": {
+        "ko": "톤온톤 체크 재킷",
+        "en": "tone-on-tone check jacket",
+        "zh": "同色系格纹夹克",
+        "ja": "トーンオントーンチェックジャケット"
+      },
+      "tags": [
+        "work",
+        "weekend"
+      ],
+      "seasons": [
+        "winter",
+        "earlySpring",
+        "autumn"
+      ],
+      "genders": [
+        "women",
+        "men",
+        "unisex"
+      ]
+    },
+    {
+      "id": "color-point",
+      "name": {
+        "ko": "컬러 한 끗 (버건디·퍼플·블루)",
+        "en": "One bold colour (burgundy, purple, blue)",
+        "zh": "一抹亮色（酒红·紫·蓝）",
+        "ja": "差し色（バーガンディ・パープル・ブルー）"
+      },
+      "line": {
+        "ko": "무채색 옷장에 진한 색 한 점. 니트 한 장이나 양말 하나면 충분합니다.",
+        "en": "One deep colour in a neutral wardrobe — a sweater or even socks is enough.",
+        "zh": "素色衣橱里加一点深色，一件毛衣或一双袜子就够。",
+        "ja": "無彩色のワードローブに濃い色を一点。ニット1枚か靴下1足で十分です。"
+      },
+      "keywords": {
+        "ko": "버건디 니트",
+        "en": "burgundy knit",
+        "zh": "酒红针织衫",
+        "ja": "バーガンディニット"
+      },
+      "tags": [
+        "weekend",
+        "date"
+      ],
+      "seasons": [
+        "winter",
+        "autumn"
+      ],
+      "genders": [
+        "women",
+        "men",
+        "unisex"
+      ]
+    },
+    {
+      "id": "layered",
+      "name": {
+        "ko": "레이어드",
+        "en": "Layering",
+        "zh": "叠穿",
+        "ja": "レイヤード"
+      },
+      "line": {
+        "ko": "셔츠 위에 니트 베스트, 그 위에 코트. 길이와 질감을 다르게 쌓는 것이 규칙입니다.",
+        "en": "Knit vest over shirt, coat over that — stack different lengths and textures.",
+        "zh": "衬衫上叠针织背心，再加大衣，长度与质感要不同。",
+        "ja": "シャツにニットベスト、その上にコート。丈と質感を変えて重ねるのがルール。"
+      },
+      "keywords": {
+        "ko": "브이넥 니트 베스트",
+        "en": "V-neck knit vest",
+        "zh": "V领针织背心",
+        "ja": "Vネックニットベスト"
+      },
+      "tags": [
+        "work",
+        "weekend"
+      ],
+      "seasons": [
+        "winter",
+        "earlySpring",
+        "spring"
+      ],
+      "genders": [
+        "women",
+        "men",
+        "unisex"
+      ]
+    },
+    {
+      "id": "sport-mix",
+      "name": {
+        "ko": "스포츠 믹스",
+        "en": "Sport mix",
+        "zh": "运动混搭",
+        "ja": "スポーツミックス"
+      },
+      "line": {
+        "ko": "트랙 재킷·고글 선글라스·스포티 양말을 단정한 옷에 섞습니다. 한 개만 넣으세요.",
+        "en": "Mix a track jacket, goggle sunglasses or sporty socks into a tidy look — one piece only.",
+        "zh": "把运动夹克、护目镜式墨镜或运动袜混进正经穿搭，只放一件。",
+        "ja": "トラックジャケットやゴーグルサングラス、スポーティな靴下を端正な服に。1点だけ。"
+      },
+      "keywords": {
+        "ko": "트랙 재킷",
+        "en": "track jacket",
+        "zh": "运动夹克",
+        "ja": "トラックジャケット"
+      },
+      "tags": [
+        "weekend",
+        "travel"
+      ],
+      "seasons": [
+        "earlySpring",
+        "spring",
+        "autumn"
+      ],
+      "genders": [
+        "women",
+        "men",
+        "unisex"
+      ]
+    },
+    {
+      "id": "slim-line",
+      "name": {
+        "ko": "가늘고 길게 (슬림 라인)",
+        "en": "Long and lean",
+        "zh": "细长线条",
+        "ja": "細く長く"
+      },
+      "line": {
+        "ko": "넉넉한 실루엣 다음은 슬림. 조이는 대신 곧게 뻗는 팬츠와 재킷입니다.",
+        "en": "After the loose years comes slim: not tight, but pants and jackets that run straight down.",
+        "zh": "宽松之后是修身：不勒身，而是笔直延伸的裤子与外套。",
+        "ja": "ゆったり感の次はスリム。締め付けるのではなく、まっすぐ伸びるパンツとジャケット。"
+      },
+      "keywords": {
+        "ko": "슬림 테일러드 팬츠",
+        "en": "slim tailored pants",
+        "zh": "修身西装裤",
+        "ja": "スリムテーラードパンツ"
+      },
+      "tags": [
+        "work",
+        "date"
+      ],
+      "seasons": [
+        "winter",
+        "earlySpring",
+        "autumn"
+      ],
+      "genders": [
+        "men",
+        "women",
+        "unisex"
+      ]
+    },
+    {
+      "id": "peplum",
+      "name": {
+        "ko": "페플럼·셔링",
+        "en": "Peplum & shirring",
+        "zh": "荷叶摆·抽褶",
+        "ja": "ペプラム・シャリング"
+      },
+      "line": {
+        "ko": "허리 아래로 부드럽게 퍼지는 실루엣. 골반을 가리면서 여성스러움을 더합니다.",
+        "en": "A soft flare below the waist: covers the hip and adds a feminine line.",
+        "zh": "腰下柔和的展开，盖住胯部又显女性化。",
+        "ja": "ウエスト下で柔らかく広がる形。ヒップを隠しつつ女性らしさを足します。"
+      },
+      "keywords": {
+        "ko": "셔링 페플럼 블라우스",
+        "en": "shirred peplum blouse",
+        "zh": "抽褶荷叶摆衬衫",
+        "ja": "シャリングペプラムブラウス"
+      },
+      "tags": [
+        "date"
+      ],
+      "seasons": [
+        "earlySpring",
+        "spring"
+      ],
+      "genders": [
+        "women"
+      ]
+    },
+    {
+      "id": "capri",
+      "name": {
+        "ko": "카프리·크롭 팬츠",
+        "en": "Capri & cropped pants",
+        "zh": "七分裤·短一截裤",
+        "ja": "カプリ・クロップドパンツ"
+      },
+      "line": {
+        "ko": "발목 위에서 끊기는 기장. 발목이 드러나 답답함 없이 초봄까지 입을 수 있습니다.",
+        "en": "A hem that stops above the ankle — it opens the leg and carries into early spring.",
+        "zh": "脚踝以上的裤长，露出脚踝，轻松穿到早春。",
+        "ja": "足首上で切れる丈。足首が出て重くならず、春先まで使えます。"
+      },
+      "keywords": {
+        "ko": "카프리 팬츠",
+        "en": "capri pants",
+        "zh": "七分裤",
+        "ja": "カプリパンツ"
+      },
+      "tags": [
+        "weekend",
+        "travel"
+      ],
+      "seasons": [
+        "earlySpring",
+        "spring",
+        "summer"
+      ],
+      "genders": [
+        "women",
+        "unisex"
+      ]
+    }
+  ],
+  "items": {
+    "tops": [
+      {
+        "id": "t-thin-turtleneck",
+        "name": {
+          "ko": "얇은 터틀넥 니트",
+          "en": "fine-gauge turtleneck",
+          "zh": "细针高领针织",
+          "ja": "薄手タートルニット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn"
+        ],
+        "occasion": [
+          "work",
+          "date",
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "slim",
+          "inverted",
+          "broad"
+        ],
+        "bad": [
+          "pear"
+        ],
+        "style": "minimal",
+        "color": "base"
+      },
+      {
+        "id": "t-cable-knit",
+        "name": {
+          "ko": "케이블 니트",
+          "en": "cable knit sweater",
+          "zh": "麻花针织衫",
+          "ja": "ケーブルニット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "date"
+        ],
+        "good": [
+          "slim",
+          "standard"
+        ],
+        "bad": [
+          "broad"
+        ],
+        "style": "casual",
+        "color": "sub"
+      },
+      {
+        "id": "t-fairisle",
+        "name": {
+          "ko": "페어아일 니트",
+          "en": "Fair Isle knit",
+          "zh": "费尔岛针织衫",
+          "ja": "フェアアイルニット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter"
+        ],
+        "occasion": [
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "slim",
+          "standard"
+        ],
+        "bad": [
+          "broad",
+          "inverted"
+        ],
+        "style": "trendy",
+        "color": "sub"
+      },
+      {
+        "id": "t-knit-vest",
+        "name": {
+          "ko": "브이넥 니트 베스트",
+          "en": "V-neck knit vest",
+          "zh": "V领针织背心",
+          "ja": "Vネックニットベスト"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "spring"
+        ],
+        "occasion": [
+          "work",
+          "weekend"
+        ],
+        "good": [
+          "inverted",
+          "broad",
+          "standard"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "sub"
+      },
+      {
+        "id": "t-oxford",
+        "name": {
+          "ko": "옥스퍼드 셔츠",
+          "en": "oxford shirt",
+          "zh": "牛津纺衬衫",
+          "ja": "オックスフォードシャツ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "earlySpring",
+          "spring",
+          "autumn"
+        ],
+        "occasion": [
+          "work",
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "standard",
+          "pear",
+          "inverted"
+        ],
+        "bad": [],
+        "style": "formal",
+        "color": "base"
+      },
+      {
+        "id": "t-shirt-jacket",
+        "name": {
+          "ko": "셔츠 재킷",
+          "en": "shirt-jacket",
+          "zh": "衬衫外套",
+          "ja": "シャツジャケット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "earlySpring",
+          "spring",
+          "autumn"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "work"
+        ],
+        "good": [
+          "slim",
+          "pear",
+          "standard"
+        ],
+        "bad": [
+          "broad"
+        ],
+        "style": "casual",
+        "color": "sub"
+      },
+      {
+        "id": "t-lace-blouse",
+        "name": {
+          "ko": "레이스 블라우스",
+          "en": "lace blouse",
+          "zh": "蕾丝衬衫",
+          "ja": "レースブラウス"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "winter",
+          "autumn",
+          "earlySpring"
+        ],
+        "occasion": [
+          "date"
+        ],
+        "good": [
+          "standard",
+          "broad"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "base"
+      },
+      {
+        "id": "t-shirred",
+        "name": {
+          "ko": "셔링 블라우스",
+          "en": "shirred blouse",
+          "zh": "抽褶衬衫",
+          "ja": "シャリングブラウス"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "earlySpring",
+          "spring"
+        ],
+        "occasion": [
+          "date",
+          "weekend"
+        ],
+        "good": [
+          "pear",
+          "slim"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "sub"
+      },
+      {
+        "id": "t-slim-knit",
+        "name": {
+          "ko": "슬림핏 니트",
+          "en": "slim-fit knit",
+          "zh": "修身针织衫",
+          "ja": "スリムニット"
+        },
+        "gender": [
+          "women",
+          "men"
+        ],
+        "seasons": [
+          "winter",
+          "autumn",
+          "earlySpring"
+        ],
+        "occasion": [
+          "work",
+          "date"
+        ],
+        "good": [
+          "broad",
+          "inverted",
+          "standard"
+        ],
+        "bad": [
+          "slim"
+        ],
+        "style": "minimal",
+        "color": "base"
+      },
+      {
+        "id": "t-linen-shirt",
+        "name": {
+          "ko": "린넨 셔츠",
+          "en": "linen shirt",
+          "zh": "亚麻衬衫",
+          "ja": "リネンシャツ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "spring",
+          "summer"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "work"
+        ],
+        "good": [
+          "broad",
+          "pear",
+          "standard"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "base"
+      },
+      {
+        "id": "t-tee",
+        "name": {
+          "ko": "헤비 코튼 티셔츠",
+          "en": "heavy cotton tee",
+          "zh": "重磅棉T恤",
+          "ja": "ヘビーコットンTシャツ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "spring",
+          "summer",
+          "earlySpring"
+        ],
+        "occasion": [
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "slim",
+          "pear"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "base"
+      },
+      {
+        "id": "t-burgundy-knit",
+        "name": {
+          "ko": "버건디 니트",
+          "en": "burgundy knit",
+          "zh": "酒红针织衫",
+          "ja": "バーガンディニット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "autumn"
+        ],
+        "occasion": [
+          "weekend",
+          "date"
+        ],
+        "good": [
+          "standard",
+          "slim"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "point"
+      },
+      {
+        "id": "t-short-knit",
+        "name": {
+          "ko": "반팔 니트",
+          "en": "short-sleeve knit",
+          "zh": "短袖针织衫",
+          "ja": "半袖ニット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "summer",
+          "spring"
+        ],
+        "occasion": [
+          "work",
+          "date",
+          "weekend"
+        ],
+        "good": [
+          "standard",
+          "broad"
+        ],
+        "bad": [],
+        "style": "minimal",
+        "color": "base"
+      },
+      {
+        "id": "t-sheer-blouse",
+        "name": {
+          "ko": "시어 블라우스",
+          "en": "sheer blouse",
+          "zh": "透视衬衫",
+          "ja": "シアーブラウス"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "summer",
+          "spring"
+        ],
+        "occasion": [
+          "date",
+          "work"
+        ],
+        "good": [
+          "standard",
+          "inverted"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "sub"
+      }
+    ],
+    "bottoms": [
+      {
+        "id": "b-wide-slacks",
+        "name": {
+          "ko": "와이드 슬랙스",
+          "en": "wide slacks",
+          "zh": "阔腿西裤",
+          "ja": "ワイドスラックス"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn",
+          "spring"
+        ],
+        "occasion": [
+          "work",
+          "date",
+          "travel"
+        ],
+        "good": [
+          "inverted",
+          "pear",
+          "slim"
+        ],
+        "bad": [
+          "broad"
+        ],
+        "style": "minimal",
+        "color": "base"
+      },
+      {
+        "id": "b-straight-slacks",
+        "name": {
+          "ko": "스트레이트 슬랙스",
+          "en": "straight slacks",
+          "zh": "直筒西裤",
+          "ja": "ストレートスラックス"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn",
+          "spring"
+        ],
+        "occasion": [
+          "work",
+          "date"
+        ],
+        "good": [
+          "broad",
+          "pear",
+          "standard"
+        ],
+        "bad": [],
+        "style": "formal",
+        "color": "base"
+      },
+      {
+        "id": "b-straight-denim",
+        "name": {
+          "ko": "스트레이트 데님",
+          "en": "straight denim",
+          "zh": "直筒牛仔裤",
+          "ja": "ストレートデニム"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn",
+          "spring"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "date"
+        ],
+        "good": [
+          "pear",
+          "broad",
+          "standard"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "sub"
+      },
+      {
+        "id": "b-bootcut-denim",
+        "name": {
+          "ko": "부츠컷 데님",
+          "en": "bootcut denim",
+          "zh": "微喇牛仔裤",
+          "ja": "ブーツカットデニム"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn"
+        ],
+        "occasion": [
+          "date",
+          "weekend"
+        ],
+        "good": [
+          "pear",
+          "inverted"
+        ],
+        "bad": [
+          "slim"
+        ],
+        "style": "trendy",
+        "color": "sub"
+      },
+      {
+        "id": "b-pleated-midi",
+        "name": {
+          "ko": "미디 플리츠 스커트",
+          "en": "pleated midi skirt",
+          "zh": "百褶中长裙",
+          "ja": "プリーツミディスカート"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "earlySpring",
+          "spring",
+          "autumn"
+        ],
+        "occasion": [
+          "work",
+          "date",
+          "weekend"
+        ],
+        "good": [
+          "slim",
+          "inverted"
+        ],
+        "bad": [
+          "pear"
+        ],
+        "style": "minimal",
+        "color": "sub"
+      },
+      {
+        "id": "b-aline-skirt",
+        "name": {
+          "ko": "A라인 미디 스커트",
+          "en": "A-line midi skirt",
+          "zh": "A字中长裙",
+          "ja": "Aラインミディスカート"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn"
+        ],
+        "occasion": [
+          "work",
+          "date"
+        ],
+        "good": [
+          "pear",
+          "broad"
+        ],
+        "bad": [],
+        "style": "formal",
+        "color": "base"
+      },
+      {
+        "id": "b-capri",
+        "name": {
+          "ko": "카프리 팬츠",
+          "en": "capri pants",
+          "zh": "七分裤",
+          "ja": "カプリパンツ"
+        },
+        "gender": [
+          "women",
+          "unisex"
+        ],
+        "seasons": [
+          "earlySpring",
+          "spring",
+          "summer"
+        ],
+        "occasion": [
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "slim",
+          "standard"
+        ],
+        "bad": [
+          "pear"
+        ],
+        "style": "trendy",
+        "color": "sub"
+      },
+      {
+        "id": "b-cargo",
+        "name": {
+          "ko": "테일러드 카고 팬츠",
+          "en": "tailored cargo pants",
+          "zh": "西装感工装裤",
+          "ja": "テーラードカーゴパンツ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "earlySpring",
+          "autumn",
+          "winter"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "work"
+        ],
+        "good": [
+          "slim",
+          "standard"
+        ],
+        "bad": [
+          "pear",
+          "broad"
+        ],
+        "style": "trendy",
+        "color": "sub"
+      },
+      {
+        "id": "b-tapered",
+        "name": {
+          "ko": "테이퍼드 팬츠",
+          "en": "tapered pants",
+          "zh": "锥形裤",
+          "ja": "テーパードパンツ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn"
+        ],
+        "occasion": [
+          "work"
+        ],
+        "good": [
+          "broad",
+          "inverted"
+        ],
+        "bad": [],
+        "style": "formal",
+        "color": "base"
+      },
+      {
+        "id": "b-cooling-wide",
+        "name": {
+          "ko": "쿨링 와이드 팬츠",
+          "en": "cooling wide pants",
+          "zh": "凉感阔腿裤",
+          "ja": "接触冷感ワイドパンツ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "summer"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "work"
+        ],
+        "good": [
+          "inverted",
+          "slim",
+          "pear"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "base"
+      },
+      {
+        "id": "b-linen-pants",
+        "name": {
+          "ko": "린넨 와이드 팬츠",
+          "en": "linen wide pants",
+          "zh": "亚麻阔腿裤",
+          "ja": "リネンワイドパンツ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "summer",
+          "spring"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "work"
+        ],
+        "good": [
+          "broad",
+          "pear"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "base"
+      },
+      {
+        "id": "b-tailored-shorts",
+        "name": {
+          "ko": "테일러드 쇼츠",
+          "en": "tailored shorts",
+          "zh": "西装短裤",
+          "ja": "テーラードショーツ"
+        },
+        "gender": [
+          "women",
+          "unisex"
+        ],
+        "seasons": [
+          "summer"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "date"
+        ],
+        "good": [
+          "slim",
+          "standard"
+        ],
+        "bad": [
+          "pear"
+        ],
+        "style": "trendy",
+        "color": "sub"
+      },
+      {
+        "id": "b-denim-midi",
+        "name": {
+          "ko": "데님 미디 스커트",
+          "en": "denim midi skirt",
+          "zh": "牛仔中长裙",
+          "ja": "デニムミディスカート"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "summer",
+          "spring",
+          "earlySpring"
+        ],
+        "occasion": [
+          "date",
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "pear",
+          "standard"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "sub"
+      }
+    ],
+    "outers": [
+      {
+        "id": "o-maxicoat",
+        "name": {
+          "ko": "울 맥시 코트",
+          "en": "wool maxi coat",
+          "zh": "羊毛长大衣",
+          "ja": "ウールマキシコート"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter"
+        ],
+        "occasion": [
+          "work",
+          "date",
+          "travel"
+        ],
+        "good": [
+          "inverted",
+          "broad",
+          "pear"
+        ],
+        "bad": [
+          "slim"
+        ],
+        "style": "minimal",
+        "color": "base"
+      },
+      {
+        "id": "o-highneck-coat",
+        "name": {
+          "ko": "하이넥 더블 코트",
+          "en": "high-neck double-breasted coat",
+          "zh": "高领双排扣大衣",
+          "ja": "ハイネックダブルコート"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter"
+        ],
+        "occasion": [
+          "work",
+          "date"
+        ],
+        "good": [
+          "standard",
+          "slim"
+        ],
+        "bad": [
+          "inverted"
+        ],
+        "style": "formal",
+        "color": "base"
+      },
+      {
+        "id": "o-shearling",
+        "name": {
+          "ko": "숏 시어링 재킷",
+          "en": "short shearling jacket",
+          "zh": "短款羊毛外套",
+          "ja": "ショートシアリングジャケット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter"
+        ],
+        "occasion": [
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "slim",
+          "standard"
+        ],
+        "bad": [
+          "broad"
+        ],
+        "style": "trendy",
+        "color": "sub"
+      },
+      {
+        "id": "o-leather",
+        "name": {
+          "ko": "레더 재킷",
+          "en": "leather jacket",
+          "zh": "皮夹克",
+          "ja": "レザージャケット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "autumn",
+          "earlySpring"
+        ],
+        "occasion": [
+          "date",
+          "weekend"
+        ],
+        "good": [
+          "standard",
+          "inverted",
+          "slim"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "base"
+      },
+      {
+        "id": "o-soft-blazer",
+        "name": {
+          "ko": "소프트 블레이저",
+          "en": "soft blazer",
+          "zh": "柔和西装外套",
+          "ja": "ソフトブレザー"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn",
+          "spring"
+        ],
+        "occasion": [
+          "work",
+          "date"
+        ],
+        "good": [
+          "standard",
+          "pear",
+          "broad"
+        ],
+        "bad": [],
+        "style": "formal",
+        "color": "base"
+      },
+      {
+        "id": "o-trench",
+        "name": {
+          "ko": "얇은 트렌치코트",
+          "en": "light trench coat",
+          "zh": "薄款风衣",
+          "ja": "薄手トレンチコート"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "earlySpring",
+          "spring",
+          "autumn"
+        ],
+        "occasion": [
+          "work",
+          "travel",
+          "date"
+        ],
+        "good": [
+          "standard",
+          "inverted",
+          "broad"
+        ],
+        "bad": [],
+        "style": "formal",
+        "color": "base"
+      },
+      {
+        "id": "o-cardigan",
+        "name": {
+          "ko": "얇은 가디건",
+          "en": "fine cardigan",
+          "zh": "薄开衫",
+          "ja": "薄手カーディガン"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "earlySpring",
+          "spring",
+          "summer"
+        ],
+        "occasion": [
+          "work",
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "broad",
+          "inverted"
+        ],
+        "bad": [
+          "slim"
+        ],
+        "style": "casual",
+        "color": "sub"
+      },
+      {
+        "id": "o-light-padding",
+        "name": {
+          "ko": "경량 패딩",
+          "en": "light down jacket",
+          "zh": "轻薄羽绒服",
+          "ja": "ライトダウン"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter"
+        ],
+        "occasion": [
+          "travel",
+          "weekend"
+        ],
+        "good": [
+          "slim",
+          "standard"
+        ],
+        "bad": [
+          "broad"
+        ],
+        "style": "casual",
+        "color": "base"
+      },
+      {
+        "id": "o-track",
+        "name": {
+          "ko": "트랙 재킷",
+          "en": "track jacket",
+          "zh": "运动夹克",
+          "ja": "トラックジャケット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "earlySpring",
+          "autumn"
+        ],
+        "occasion": [
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "slim",
+          "pear"
+        ],
+        "bad": [
+          "broad"
+        ],
+        "style": "casual",
+        "color": "point"
+      },
+      {
+        "id": "o-quilted",
+        "name": {
+          "ko": "퀼팅 패딩 재킷",
+          "en": "quilted padded jacket",
+          "zh": "绗缝棉服",
+          "ja": "キルティングパデッドジャケット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter"
+        ],
+        "occasion": [
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "slim",
+          "standard"
+        ],
+        "bad": [
+          "broad"
+        ],
+        "style": "casual",
+        "color": "base"
+      },
+      {
+        "id": "o-wool-blouson",
+        "name": {
+          "ko": "울 블루종",
+          "en": "wool blouson",
+          "zh": "羊毛短夹克",
+          "ja": "ウールブルゾン"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "autumn"
+        ],
+        "occasion": [
+          "weekend",
+          "date",
+          "work"
+        ],
+        "good": [
+          "standard",
+          "inverted"
+        ],
+        "bad": [],
+        "style": "minimal",
+        "color": "base"
+      },
+      {
+        "id": "o-denim-jacket",
+        "name": {
+          "ko": "데님 재킷",
+          "en": "denim jacket",
+          "zh": "牛仔夹克",
+          "ja": "デニムジャケット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "earlySpring",
+          "spring",
+          "autumn"
+        ],
+        "occasion": [
+          "weekend",
+          "date",
+          "travel"
+        ],
+        "good": [
+          "slim",
+          "pear",
+          "standard"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "sub"
+      },
+      {
+        "id": "o-linen-blazer",
+        "name": {
+          "ko": "린넨 블레이저",
+          "en": "linen blazer",
+          "zh": "亚麻西装外套",
+          "ja": "リネンブレザー"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "summer",
+          "spring"
+        ],
+        "occasion": [
+          "work",
+          "date"
+        ],
+        "good": [
+          "standard",
+          "broad",
+          "pear"
+        ],
+        "bad": [],
+        "style": "minimal",
+        "color": "base"
+      }
+    ],
+    "shoes": [
+      {
+        "id": "s-chelsea",
+        "name": {
+          "ko": "첼시 부츠",
+          "en": "Chelsea boots",
+          "zh": "切尔西靴",
+          "ja": "チェルシーブーツ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "autumn",
+          "earlySpring"
+        ],
+        "occasion": [
+          "work",
+          "date",
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "broad",
+          "standard"
+        ],
+        "bad": [],
+        "style": "minimal",
+        "color": "base"
+      },
+      {
+        "id": "s-knee",
+        "name": {
+          "ko": "사이하이 부츠",
+          "en": "over-the-knee boots",
+          "zh": "过膝靴",
+          "ja": "サイハイブーツ"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "winter",
+          "autumn"
+        ],
+        "occasion": [
+          "date",
+          "work"
+        ],
+        "good": [
+          "pear",
+          "slim"
+        ],
+        "bad": [
+          "inverted"
+        ],
+        "style": "trendy",
+        "color": "base"
+      },
+      {
+        "id": "s-loafer",
+        "name": {
+          "ko": "로퍼",
+          "en": "loafers",
+          "zh": "乐福鞋",
+          "ja": "ローファー"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "earlySpring",
+          "autumn",
+          "winter",
+          "spring"
+        ],
+        "occasion": [
+          "work",
+          "date",
+          "weekend"
+        ],
+        "good": [
+          "broad",
+          "standard"
+        ],
+        "bad": [],
+        "style": "formal",
+        "color": "base"
+      },
+      {
+        "id": "s-maryjane",
+        "name": {
+          "ko": "메리제인",
+          "en": "Mary Janes",
+          "zh": "玛丽珍鞋",
+          "ja": "メリージェーン"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "earlySpring",
+          "spring",
+          "autumn"
+        ],
+        "occasion": [
+          "date",
+          "work"
+        ],
+        "good": [
+          "slim",
+          "inverted"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "sub"
+      },
+      {
+        "id": "s-sneaker",
+        "name": {
+          "ko": "화이트 스니커즈",
+          "en": "white sneakers",
+          "zh": "白球鞋",
+          "ja": "ホワイトスニーカー"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "earlySpring",
+          "spring",
+          "summer",
+          "autumn"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "date"
+        ],
+        "good": [
+          "standard",
+          "broad"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "base"
+      },
+      {
+        "id": "s-ankle",
+        "name": {
+          "ko": "앵클 부티",
+          "en": "ankle boots",
+          "zh": "短靴",
+          "ja": "アンクルブーティ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "autumn"
+        ],
+        "occasion": [
+          "date",
+          "work",
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "standard",
+          "inverted"
+        ],
+        "bad": [
+          "pear"
+        ],
+        "style": "minimal",
+        "color": "base"
+      },
+      {
+        "id": "s-sandal",
+        "name": {
+          "ko": "레더 샌들",
+          "en": "leather sandals",
+          "zh": "皮革凉鞋",
+          "ja": "レザーサンダル"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "summer"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "date"
+        ],
+        "good": [
+          "standard",
+          "slim"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "sub"
+      },
+      {
+        "id": "s-flat",
+        "name": {
+          "ko": "발레 플랫",
+          "en": "ballet flats",
+          "zh": "芭蕾平底鞋",
+          "ja": "バレエフラット"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "spring",
+          "earlySpring",
+          "summer"
+        ],
+        "occasion": [
+          "date",
+          "work"
+        ],
+        "good": [
+          "pear",
+          "broad"
+        ],
+        "bad": [
+          "slim"
+        ],
+        "style": "minimal",
+        "color": "sub"
+      },
+      {
+        "id": "s-rain-sneaker",
+        "name": {
+          "ko": "방수 스니커즈",
+          "en": "waterproof sneakers",
+          "zh": "防水球鞋",
+          "ja": "防水スニーカー"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "autumn",
+          "earlySpring"
+        ],
+        "occasion": [
+          "travel",
+          "weekend"
+        ],
+        "good": [
+          "standard",
+          "slim"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "base"
+      },
+      {
+        "id": "s-mule",
+        "name": {
+          "ko": "레더 뮬",
+          "en": "leather mules",
+          "zh": "皮革穆勒鞋",
+          "ja": "レザーミュール"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "summer",
+          "spring"
+        ],
+        "occasion": [
+          "work",
+          "date",
+          "weekend"
+        ],
+        "good": [
+          "standard",
+          "broad"
+        ],
+        "bad": [],
+        "style": "minimal",
+        "color": "sub"
+      },
+      {
+        "id": "s-derby",
+        "name": {
+          "ko": "더비 슈즈",
+          "en": "derby shoes",
+          "zh": "德比鞋",
+          "ja": "ダービーシューズ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn",
+          "spring"
+        ],
+        "occasion": [
+          "work",
+          "date",
+          "weekend"
+        ],
+        "good": [
+          "broad",
+          "standard"
+        ],
+        "bad": [],
+        "style": "formal",
+        "color": "base"
+      }
+    ],
+    "points": [
+      {
+        "id": "p-muffler",
+        "name": {
+          "ko": "오버사이즈 머플러",
+          "en": "oversized muffler",
+          "zh": "超大围巾",
+          "ja": "オーバーサイズマフラー"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter"
+        ],
+        "occasion": [
+          "work",
+          "weekend",
+          "travel",
+          "date"
+        ],
+        "good": [
+          "slim",
+          "standard"
+        ],
+        "bad": [],
+        "style": "minimal",
+        "color": "point"
+      },
+      {
+        "id": "p-pearl",
+        "name": {
+          "ko": "진주 목걸이",
+          "en": "pearl necklace",
+          "zh": "珍珠项链",
+          "ja": "パールネックレス"
+        },
+        "gender": [
+          "women",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn",
+          "spring"
+        ],
+        "occasion": [
+          "date",
+          "work"
+        ],
+        "good": [
+          "standard",
+          "inverted"
+        ],
+        "bad": [],
+        "style": "formal",
+        "color": "base"
+      },
+      {
+        "id": "p-belt",
+        "name": {
+          "ko": "레더 벨트",
+          "en": "leather belt",
+          "zh": "皮带",
+          "ja": "レザーベルト"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn",
+          "spring"
+        ],
+        "occasion": [
+          "work",
+          "date"
+        ],
+        "good": [
+          "inverted",
+          "standard"
+        ],
+        "bad": [],
+        "style": "minimal",
+        "color": "base"
+      },
+      {
+        "id": "p-metal",
+        "name": {
+          "ko": "볼드 메탈 이어링",
+          "en": "bold metal earrings",
+          "zh": "粗金属耳环",
+          "ja": "ボールドメタルピアス"
+        },
+        "gender": [
+          "women",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "autumn",
+          "earlySpring"
+        ],
+        "occasion": [
+          "date",
+          "work"
+        ],
+        "good": [
+          "standard",
+          "broad"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "point"
+      },
+      {
+        "id": "p-tote",
+        "name": {
+          "ko": "빅 토트백",
+          "en": "big tote bag",
+          "zh": "大托特包",
+          "ja": "ビッグトートバッグ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn",
+          "spring",
+          "summer"
+        ],
+        "occasion": [
+          "work",
+          "travel"
+        ],
+        "good": [
+          "broad",
+          "slim"
+        ],
+        "bad": [],
+        "style": "minimal",
+        "color": "base"
+      },
+      {
+        "id": "p-glove",
+        "name": {
+          "ko": "오페라 장갑",
+          "en": "opera gloves",
+          "zh": "长手套",
+          "ja": "オペラグローブ"
+        },
+        "gender": [
+          "women"
+        ],
+        "seasons": [
+          "winter",
+          "autumn"
+        ],
+        "occasion": [
+          "date"
+        ],
+        "good": [
+          "standard"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "base"
+      },
+      {
+        "id": "p-sunglass",
+        "name": {
+          "ko": "스포티 선글라스",
+          "en": "sporty sunglasses",
+          "zh": "运动风墨镜",
+          "ja": "スポーティサングラス"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "earlySpring",
+          "spring",
+          "summer"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "date"
+        ],
+        "good": [
+          "standard",
+          "inverted"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "point"
+      },
+      {
+        "id": "p-socks",
+        "name": {
+          "ko": "컬러 양말",
+          "en": "coloured socks",
+          "zh": "彩色袜子",
+          "ja": "カラーソックス"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "earlySpring",
+          "autumn"
+        ],
+        "occasion": [
+          "weekend",
+          "work",
+          "travel"
+        ],
+        "good": [
+          "standard",
+          "slim"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "point"
+      },
+      {
+        "id": "p-beanie",
+        "name": {
+          "ko": "비니",
+          "en": "beanie",
+          "zh": "针织帽",
+          "ja": "ビーニー"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter"
+        ],
+        "occasion": [
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "slim",
+          "standard"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "point"
+      },
+      {
+        "id": "p-check-scarf",
+        "name": {
+          "ko": "체크 스카프",
+          "en": "checked scarf",
+          "zh": "格纹围巾",
+          "ja": "チェックスカーフ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter",
+          "autumn"
+        ],
+        "occasion": [
+          "weekend",
+          "date"
+        ],
+        "good": [
+          "standard",
+          "slim"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "point"
+      },
+      {
+        "id": "p-leather-gloves",
+        "name": {
+          "ko": "가죽 장갑",
+          "en": "leather gloves",
+          "zh": "皮手套",
+          "ja": "レザーグローブ"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "winter"
+        ],
+        "occasion": [
+          "weekend",
+          "travel",
+          "work"
+        ],
+        "good": [
+          "standard",
+          "broad"
+        ],
+        "bad": [],
+        "style": "minimal",
+        "color": "base"
+      },
+      {
+        "id": "p-straw-hat",
+        "name": {
+          "ko": "밀짚 햇",
+          "en": "straw hat",
+          "zh": "草编帽",
+          "ja": "ストローハット"
+        },
+        "gender": [
+          "women",
+          "men",
+          "unisex"
+        ],
+        "seasons": [
+          "summer"
+        ],
+        "occasion": [
+          "weekend",
+          "travel"
+        ],
+        "good": [
+          "standard"
+        ],
+        "bad": [],
+        "style": "casual",
+        "color": "sub"
+      },
+      {
+        "id": "p-silk-scarf",
+        "name": {
+          "ko": "실크 스카프",
+          "en": "silk scarf",
+          "zh": "丝巾",
+          "ja": "シルクスカーフ"
+        },
+        "gender": [
+          "women",
+          "unisex"
+        ],
+        "seasons": [
+          "spring",
+          "summer",
+          "earlySpring"
+        ],
+        "occasion": [
+          "date",
+          "weekend",
+          "work"
+        ],
+        "good": [
+          "standard",
+          "inverted"
+        ],
+        "bad": [],
+        "style": "trendy",
+        "color": "point"
+      }
+    ]
+  }
+}

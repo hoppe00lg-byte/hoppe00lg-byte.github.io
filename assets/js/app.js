@@ -2530,6 +2530,8 @@
             '<li><a href="' + U('salary.html') + '">무료 도구 · 급여·노무 계산기</a></li>' +
             '<li><a href="' + U('biz.html') + '">무료 도구 · 1인 사업자 툴 5종</a></li>' +
             '<li><a href="' + U('seller.html') + '">무료 도구 · 셀러·마케터 툴 4종</a></li>' +
+            '<li><a href="' + U('music.html') + '">무료 도구 · AI 음악 가사·프롬프트</a></li>' +
+            '<li><a href="' + U('style.html') + '">무료 도구 · 체형·스타일 추천</a></li>' +
             '<li><a href="' + U('feed.xml') + '">' + T('RSS 피드') + '</a></li>' +
             '<li><a href="' + U('sitemap.html') + '">' + T('사이트맵') + '</a></li>' +
             '<li><a href="' + U('sitemap.xml') + '">sitemap.xml</a></li>' +
