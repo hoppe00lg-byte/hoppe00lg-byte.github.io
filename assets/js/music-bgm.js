@@ -1038,6 +1038,7 @@
   function keyObj() { return byId(KEYS, S.key); }
   function progObj() { return byId(progsFor(keyObj()), S.prog); }
   function lenSec() { return S.len; }
+  function lenLabel(n) { return LANG === 'en' ? n + ' ' + T.sec : n + T.sec; }
   function defaultTitle() { return vibe().title[LANG] || vibe().title.ko; }
   function titleText() { return (S.title || '').trim() || defaultTitle(); }
 
@@ -1097,7 +1098,7 @@
 
     var lens = LENGTHS.map(function (n) {
       var on = n === S.len;
-      return '<button type="button" class="bgm-chip' + (on ? ' is-on' : '') + '" data-bgm-len="' + n + '" aria-pressed="' + on + '">' + n + ' ' + T.sec + '</button>';
+      return '<button type="button" class="bgm-chip' + (on ? ' is-on' : '') + '" data-bgm-len="' + n + '" aria-pressed="' + on + '">' + esc(lenLabel(n)) + '</button>';
     }).join('');
 
     var sizes = [['wide', T.sizes.wide], ['tall', T.sizes.tall], ['square', T.sizes.square]].map(function (p) {
@@ -1134,7 +1135,7 @@
       '  </div>' +
       '  <div class="bgm-stage">' +
       '    <div class="bgm-card">' +
-      '      <div class="bgm-card-head"><span class="tag">AUDIO</span><h3>' + esc(T.cardAudio) + '</h3><span class="bgm-len" id="bgm-len-label">' + S.len + ' ' + T.sec + '</span></div>' +
+      '      <div class="bgm-card-head"><span class="tag">AUDIO</span><h3>' + esc(T.cardAudio) + '</h3><span class="bgm-len" id="bgm-len-label">' + esc(lenLabel(S.len)) + '</span></div>' +
       '      <div class="bgm-wave-wrap"><canvas id="bgm-wave" width="1200" height="180"></canvas><div class="bgm-wave-prog" id="bgm-wave-prog"></div></div>' +
       '      <div class="bgm-player">' +
       '        <button type="button" class="bgm-play" id="bgm-play" disabled aria-label="' + esc(T.play) + '"><span class="ic">&#9654;</span><span class="tx">' + esc(T.play) + '</span></button>' +
@@ -1585,7 +1586,7 @@
     var prog = document.getElementById('bgm-wave-prog');
     if (prog) prog.style.width = '0%';
     var ll = document.getElementById('bgm-len-label');
-    if (ll) ll.textContent = S.len + ' ' + T.sec;
+    if (ll) ll.textContent = lenLabel(S.len);
     paintCoverSoon();
   }
 
