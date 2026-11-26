@@ -202,7 +202,7 @@
 
   function render(d) {
     var items = (d && d.items) || [];
-    if (!items.length) return;
+    if (!MOUNT || !items.length) return;
     /* 갱신이 나흘 넘게 끊긴 데이터는 '오늘의' 목록으로 내보내지 않습니다. */
     var age = (Date.now() - new Date(d.generatedAt || d.date).getTime()) / 36e5;
     if (isFinite(age) && age > 96) return;
