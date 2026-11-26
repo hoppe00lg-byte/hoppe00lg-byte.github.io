@@ -66,6 +66,7 @@
       modeLcl: 'LCL · 용적/중량(W/M) 중 큰 값 {v} CBM 기준',
       modeAir: '항공 · 용적환산(1 CBM = 167kg)과 실중량 중 큰 값 {v} kg 기준',
       reset: '예시값으로 되돌리기', resetDone: '예시값으로 되돌렸습니다',
+      presetApplied: '예시를 불러왔습니다 — 아래 결과에서 숫자만 바꿔 보세요.',
       qLabel: '검색어', qEmpty: '품목명이나 CAS 번호를 넣으면 이 검색어로 바로 연결됩니다.',
       qNow: '이 검색어로 연결됩니다',
       copied: '복사했습니다',
@@ -122,6 +123,7 @@
       modeLcl: 'LCL · chargeable {v} CBM (greater of volume and weight)',
       modeAir: 'Air · chargeable {v} kg (greater of volumetric 167 kg/CBM and actual weight)',
       reset: 'Back to the sample values', resetDone: 'Reset to the sample values',
+      presetApplied: 'Example loaded — change any number in the result below.',
       qLabel: 'Search term', qEmpty: 'Enter an item name or CAS number and every card opens that search.',
       qNow: 'Linked to this search term',
       copied: 'Copied',
@@ -178,6 +180,7 @@
       modeLcl: 'LCL · 按体积/重量(W/M)较大值 {v} CBM',
       modeAir: '空运 · 按体积重(1 CBM=167kg)与实重较大值 {v} kg',
       reset: '恢复示例数值', resetDone: '已恢复示例数值',
+      presetApplied: '已载入示例——可在下方结果中直接修改数字。',
       qLabel: '搜索词', qEmpty: '输入品名或 CAS 号后，各卡片会直接带上该搜索词。',
       qNow: '已带上该搜索词',
       copied: '已复制',
@@ -234,6 +237,7 @@
       modeLcl: 'LCL · 容積/重量(W/M)の大きい値 {v} CBM 基準',
       modeAir: '航空 · 容積換算(1 CBM=167kg)と実重量の大きい値 {v} kg 基準',
       reset: 'サンプル値に戻す', resetDone: 'サンプル値に戻しました',
+      presetApplied: 'サンプルを読み込みました — 下の結果で数字だけ変えてみてください。',
       qLabel: '検索語', qEmpty: '品名か CAS 番号を入れると、各カードがその検索語で開きます。',
       qNow: 'この検索語で開きます',
       copied: 'コピーしました',
@@ -784,9 +788,129 @@
     });
   }
 
+  /* ---------------- 원클릭 예시 3개 ----------------
+     방문자가 버튼 한 번으로 계산 결과를 보게 합니다(품목·수량·운임·세율 채움).
+     예시 이름·메모는 페이지 언어로 직접 쓰고, 통화가 갈리는 값은 통화별로 둡니다. */
+  function px(v) { return (v && typeof v === 'object') ? (v[LANG] || v.ko) : v; }
+
+  var PRESETS = {
+    b2b: {
+      tab: 'b2b', letter: 'b',
+      name: {
+        ko: '폴리카보네이트(PC) 재생펠릿',
+        en: 'Polycarbonate (PC) regrind pellets',
+        zh: '聚碳酸酯(PC)再生颗粒',
+        ja: 'ポリカーボネート(PC)再生ペレット'
+      },
+      memo: {
+        ko: 'PC 리그라인드, MFI 12, 등급 A, 사출용. MSDS·TDS 확인. 샘플 25kg 별도.',
+        en: 'PC regrind, MFI 12, grade A, for injection moulding. MSDS/TDS required. 25 kg sample separately.',
+        zh: 'PC 再生料，MFI 12，A 级，注塑用。需 MSDS/TDS，样品 25kg 另计。',
+        ja: 'PC リグラインド、MFI 12、A グレード、射出成形用。MSDS/TDS 要確認。サンプル 25kg は別途。'
+      },
+      fields: {
+        'sc-b-name': null, 'sc-b-memo': null,
+        'sc-b-cas': '25037-45-0', 'sc-b-hs': '3907.40', 'sc-b-duty': '6.5',
+        'sc-b-price': '2.15', 'sc-b-cur': 'USD', 'sc-b-basis': 'kg',
+        'sc-b-qty': '20000', 'sc-b-weight': '20000', 'sc-b-cbm': '32',
+        'sc-b-mode': 'fcl20', 'sc-b-freight': '2400', 'sc-b-ins': '0.3',
+        'sc-b-fee': '44000', 'sc-b-inland': '250000'
+      }
+    },
+    b2c: {
+      tab: 'b2c', letter: 'c',
+      name: {
+        ko: '휴대용 미니 가습기 (USB-C, 500ml)',
+        en: 'Portable mini humidifier (USB-C, 500 ml)',
+        zh: '便携迷你加湿器（USB-C，500ml）',
+        ja: 'ポータブルミニ加湿器（USB-C・500ml）'
+      },
+      memo: {
+        ko: '알리·아마존 단품 직구. 220V 겸용 여부와 KC 인증 확인. 같은 날 같은 판매처 2개는 합산과세 주의.',
+        en: 'Single unit from AliExpress or Amazon. Check dual voltage and local certification; two units from one seller on the same day can be combined for duty.',
+        zh: '阿里、亚马逊单件直购。确认是否220V兼容与KC认证；同日同一卖家两件会合并计税。',
+        ja: 'AliExpress・Amazon の単品購入。220V 対応と KC 認証を確認。同日・同一販売者の2点は合算課税に注意。'
+      },
+      fixed: { 'sc-c-localship': '0', 'sc-c-ins': '0', 'sc-c-forward': '8000', 'sc-c-domestic': '4000', 'sc-c-duty': '8' },
+      origin: 'cn',
+      cur: { ko: 'USD', en: 'USD', zh: 'CNY', ja: 'JPY' },
+      price: { USD: '42', CNY: '299', JPY: '6300', KRW: '56000' },
+      intl: { USD: '12', CNY: '85', JPY: '1800', KRW: '16000' }
+    },
+    c2c: {
+      tab: 'c2c', letter: 'd',
+      name: {
+        ko: '빈티지 데님 재킷 (90s, 미국 빈티지숍)',
+        en: 'Vintage denim jacket (90s, US vintage shop)',
+        zh: '复古牛仔夹克（90年代，美国古着店）',
+        ja: 'ヴィンテージデニムジャケット（90s・US古着屋）'
+      },
+      memo: {
+        ko: '중고 상(사용감 적음). 정품 택·실측 사이즈 확인. 국내 리셀용으로 판매·사업용 판정.',
+        en: 'Used, excellent condition. Check original tags and measurements. Declared for resale in Korea.',
+        zh: '二手良好。确认原标与实测尺寸，按国内转售（销售用）申报。',
+        ja: '中古上（使用感少なめ）。正規タグと実寸を確認。国内リセール前提の販売用申告。'
+      },
+      fixed: { 'sc-d-cond': 'used-hi', 'sc-d-safe': '5', 'sc-d-agency': '0', 'sc-d-ins': '0', 'sc-d-domestic': '4000', 'sc-d-duty': '13' },
+      business: true,
+      cur: { ko: 'USD', en: 'USD', zh: 'CNY', ja: 'JPY' },
+      price: { USD: '180', CNY: '1250', JPY: '27000', KRW: '240000' },
+      intl: { USD: '25', CNY: '170', JPY: '3600', KRW: '33000' }
+    }
+  };
+
+  function applyPreset(key) {
+    var p = PRESETS[key];
+    if (!p) return;
+    resetPanel(p.tab);            /* 예시값으로 초기화한 뒤 그 위에 채웁니다 */
+    showTab(p.tab, true);
+
+    if (key === 'b2b') {
+      if ($('sc-b-name')) $('sc-b-name').value = px(p.name);
+      if ($('sc-b-memo')) $('sc-b-memo').value = px(p.memo);
+      Object.keys(p.fields).forEach(function (id) {
+        if (p.fields[id] != null && $(id)) $(id).value = p.fields[id];
+      });
+      lastMode = $('sc-b-mode') ? $('sc-b-mode').value : 'fcl20';
+      syncFreightHint();
+    } else {
+      var k = p.letter, curSel = $('sc-' + k + '-cur');
+      if ($('sc-' + k + '-name')) $('sc-' + k + '-name').value = px(p.name);
+      var memoEl = $(key === 'b2c' ? 'sc-c-use' : 'sc-d-memo');
+      if (memoEl) memoEl.value = px(p.memo);
+      var cur = p.cur[LANG] || 'USD';
+      if (curSel) curSel.value = cur;
+      if ($('sc-' + k + '-price')) $('sc-' + k + '-price').value = p.price[cur] || p.price.USD;
+      if ($('sc-' + k + '-intl')) $('sc-' + k + '-intl').value = p.intl[cur] || p.intl.USD;
+      Object.keys(p.fixed).forEach(function (id) { if ($(id)) $(id).value = p.fixed[id]; });
+      if (key === 'b2c' && $('sc-c-origin')) $('sc-c-origin').value = p.origin;
+      if (p.business && $('sc-d-business')) $('sc-d-business').checked = true;
+      touched[k] = false;
+      syncFxField('sc-' + k + '-cur', 'sc-' + k + '-fx', k);
+    }
+
+    applyFxToFields();
+    syncLinks(p.tab);
+    recalcAll();
+    Array.prototype.forEach.call(document.querySelectorAll('.sc-preset'), function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-preset') === key ? 'true' : 'false');
+    });
+    toast(T.presetApplied);
+    var out = $('sc-' + p.letter + '-out');
+    if (out && out.scrollIntoView) out.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+
+  function initPresets() {
+    Array.prototype.forEach.call(document.querySelectorAll('.sc-preset'), function (b) {
+      b.setAttribute('aria-pressed', 'false');
+      b.addEventListener('click', function () { applyPreset(b.getAttribute('data-preset')); });
+    });
+  }
+
   /* ---------------- 시작 ---------------- */
   function boot() {
     initTabs();
+    initPresets();
 
     /* 탭 내부 입력이 바뀌면 그 탭만 다시 계산합니다. */
     ['b2b', 'b2c', 'c2c'].forEach(function (k) {

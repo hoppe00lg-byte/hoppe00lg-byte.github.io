@@ -5,9 +5,9 @@
   "tagline": "独立经济·调查报道研究网络杂志",
   "slogan": "解读数字背后的脉络",
   "description": "一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。",
-  "email": "hoppe00lg@gmail.com",
-  "tipEmail": "hoppe00lg@gmail.com",
-  "adEmail": "hoppe00lg@gmail.com",
+  "email": "contact@insightbriefnews.com",
+  "tipEmail": "contact@insightbriefnews.com",
+  "adEmail": "contact@insightbriefnews.com",
   "editor": "《洞察简报》编辑部",
   "location": "首尔",
   "since": "2026",
@@ -49,7 +49,7 @@
    "id": "fire",
    "label": "灾难·安全",
    "en": "DISASTER & SAFETY",
-   "desc": "从消防一线看灾难与应急"
+   "desc": "从灾难·安全现场看预防与应对"
   }
  ],
  "ticker": [
@@ -81,13 +81,13 @@
   "title": "每周简报",
   "desc": "每个星期五，我们都会通过一封邮件向您发送本周的研究和数据。",
   "cta": "申请订阅",
-  "email": "hoppe00lg@gmail.com",
+  "email": "contact@insightbriefnews.com",
   "note": "该电子邮件地址仅用于发送简报，并且可以随时通过单个回复取消。",
   "done": "您的订阅请求已收到。我们将从下周五开始向您发送简报。"
  },
  "monetize": {
   "updated": "2026-11-23",
-  "inquiryEmail": "hoppe00lg@gmail.com",
+  "inquiryEmail": "contact@insightbriefnews.com",
   "response": "1-2 个工作日",
   "note": "这是 2026 年发布的起始价格。不含增值税，根据出版周期和材料协议调整。",
   "banners": [

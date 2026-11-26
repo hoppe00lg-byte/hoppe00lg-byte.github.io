@@ -5,9 +5,9 @@
   "tagline": "独立系・経済調査報道リサーチ誌",
   "slogan": "数字の向こうの文脈を読む",
   "description": "経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。",
-  "email": "hoppe00lg@gmail.com",
-  "tipEmail": "hoppe00lg@gmail.com",
-  "adEmail": "hoppe00lg@gmail.com",
+  "email": "contact@insightbriefnews.com",
+  "tipEmail": "contact@insightbriefnews.com",
+  "adEmail": "contact@insightbriefnews.com",
   "editor": "INSIGHT BRIEF 編集部",
   "location": "ソウル",
   "since": "2026",
@@ -49,7 +49,7 @@
    "id": "fire",
    "label": "災害・安全",
    "en": "DISASTER & SAFETY",
-   "desc": "消防の現場から見る災害と対応"
+   "desc": "災害・安全の現場から見る予防と対応"
   }
  ],
  "ticker": [
@@ -81,13 +81,13 @@
   "title": "週刊ブリーフ",
   "desc": "毎週金曜日、一週間のリサーチと数字を一通にまとめて送ります。",
   "cta": "購読申し込み",
-  "email": "hoppe00lg@gmail.com",
+  "email": "contact@insightbriefnews.com",
   "note": "メールアドレスは説明会の発送にのみ書いて、いつでも一度の返信で取り消すことができます。",
   "done": "購読の申し込みを受け付けました。次の金曜日の説明会からお送りします。"
  },
  "monetize": {
   "updated": "2026-11-23",
-  "inquiryEmail": "hoppe00lg@gmail.com",
+  "inquiryEmail": "contact@insightbriefnews.com",
   "response": "営業日基準1〜2日",
   "note": "2026年のローンチスターター単価です。 VAT別途、掲載期間・素材により協議で調整します。",
   "banners": [

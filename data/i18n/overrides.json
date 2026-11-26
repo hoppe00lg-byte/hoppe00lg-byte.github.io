@@ -3332,9 +3332,9 @@
    "おすすめ一覧を見る →"
   ],
   "추천 상품·용품": [
-   "Recommended products",
+   "Gear we use",
    "推荐商品·用品",
-   "おすすめ商品"
+   "おすすめ商品・用品"
   ],
   "추천 상품·용품 (쿠팡 파트너스)": [
    "Recommended products (Coupang Partners)",
@@ -6725,6 +6725,151 @@
    "Resell margin & payout calculator",
    "转售利润与结算计算器",
    "リセール粗利・精算計算"
+  ],
+  "세무·법률·툴": [
+   "Tax, Law & Tools",
+   "税务·法律·工具",
+   "税務・法律・ツール"
+  ],
+  "생활·유틸리티 툴": [
+   "Life & utility tools",
+   "生活·实用工具",
+   "生活・ユーティリティツール"
+  ],
+  "만세력·신년운세": [
+   "Saju & new-year fortune",
+   "四柱·新年运势",
+   "四柱推命・新年占い"
+  ],
+  "재난·안전 현장에서 보는 예방과 대응": [
+   "Prevention and response seen from the disaster and safety desk",
+   "从灾难·安全现场看预防与应对",
+   "災害・安全の現場から見る予防と対応"
+  ],
+  "수입 소싱·검수, 원가 진단 의뢰": [
+   "Sourcing, inspection and landed-cost review",
+   "进口采购、验货与成本诊断委托",
+   "輸入調達・検品・原価診断のご依頼"
+  ],
+  "재생원료 단가·리스크 1차 진단과 수입 계약·선적·품질 검수 대행. 크몽에서 상담합니다.": [
+   "A first-pass price and risk review for recycled resin, plus import contract, shipping and quality inspection support. Consultation on Kmong.",
+   "再生原料单价与风险初审，以及进口合同、装运与质量验货代理。在 Kmong 洽谈。",
+   "再生原料の単価・リスク一次診断と、輸入契約・船積み・品質検品の代行。Kmong で承ります。"
+  ],
+  "단가·리스크 진단 #873859": [
+   "Pricing & risk review #873859",
+   "单价·风险诊断 #873859",
+   "単価・リスク診断 #873859"
+  ],
+  "계약·검수 대행 #873880": [
+   "Contract & inspection #873880",
+   "合同·验货代理 #873880",
+   "契約・検品代行 #873880"
+  ],
+  "영업일 1~2일 내 회신": [
+   "Reply within 1–2 business days",
+   "1~2 个工作日内回复",
+   "営業日1〜2日以内に返信"
+  ],
+  "무료 주간 브리핑 구독": [
+   "Free weekly brief",
+   "免费每周简报",
+   "無料ウィークリーブリーフ購読"
+  ],
+  "매주 월요일, 경제·금융·무역·원자재에서 확인된 숫자와 일정만 5분 분량으로 정리해 보냅니다.": [
+   "Every Monday: the confirmed numbers and dates from economy, finance, trade and raw materials, in a five-minute read.",
+   "每周一，把经济、金融、贸易与原材料领域已核实的数字和日程整理成五分钟阅读。",
+   "毎週月曜日、経済・金融・貿易・原材料で確認された数字と日程だけを5分で読める形にまとめてお送りします。"
+  ],
+  "이메일로 받기": [
+   "Get it by email",
+   "邮件订阅",
+   "メールで受け取る"
+  ],
+  "광고 없음 · 언제든 해지": [
+   "No ads · unsubscribe any time",
+   "无广告 · 可随时退订",
+   "広告なし・いつでも解除"
+  ],
+  "EXAMPLE RUN · 한 번에 계산": [
+   "EXAMPLE RUN · one click",
+   "EXAMPLE RUN · 一键计算",
+   "EXAMPLE RUN · ワンクリック計算"
+  ],
+  "예시로 먼저 결과를 보세요": [
+   "See a result first",
+   "先看一遍结果",
+   "まずは結果を見てください"
+  ],
+  "아래 예시를 누르면 품목·수량·운임·세율이 채워지고 도착원가가 바로 나옵니다. 결과를 본 뒤 숫자만 바꿔 보세요.": [
+   "Press an example and the item, quantity, freight and duty rate are filled in, with the landed cost calculated at once. Then change any number.",
+   "点击下方示例，品名、数量、运费与关税率自动填入，到岸成本立即算出。看过结果后再改数字即可。",
+   "下の例を押すと品目・数量・運賃・税率が入り、着荷コストがすぐに算出されます。結果を見てから数字だけ変えてみてください。"
+  ],
+  "B2B · 20톤 해상수입": [
+   "B2B · 20 t sea import",
+   "B2B · 20吨海运进口",
+   "B2B・20トン海上輸入"
+  ],
+  "산업용 PC 재생원료": [
+   "Industrial PC regrind",
+   "工业用PC再生料",
+   "産業用PC再生原料"
+  ],
+  "2.15 USD/kg · FCL 20ft · 관세 6.5%": [
+   "2.15 USD/kg · FCL 20ft · duty 6.5%",
+   "2.15 美元/公斤 · FCL 20ft · 关税 6.5%",
+   "2.15 USD/kg・FCL 20ft・関税 6.5%"
+  ],
+  "결과 보기 →": [
+   "See the result →",
+   "查看结果 →",
+   "結果を見る →"
+  ],
+  "B2C · 소형가전 직구": [
+   "B2C · small appliance",
+   "B2C · 小家电海淘",
+   "B2C・小型家電の海外購入"
+  ],
+  "알리·아마존 미니 가습기": [
+   "AliExpress / Amazon mini humidifier",
+   "阿里·亚马逊迷你加湿器",
+   "AliExpress・Amazon ミニ加湿器"
+  ],
+  "목록통관 150달러 판정 · 배대지 포함": [
+   "USD 150 list-clearance test · forwarder included",
+   "150美元清单清关判定·含转运",
+   "150ドルのリスト通関判定・転送業者込み"
+  ],
+  "C2C · 중고 리셀": [
+   "C2C · second-hand resale",
+   "C2C · 二手转售",
+   "C2C・中古リセール"
+  ],
+  "일본·미국 빈티지 의류": [
+   "Japan / US vintage clothing",
+   "日本·美国古着",
+   "日本・US ヴィンテージ衣類"
+  ],
+  "의류 관세 13% · 판매용 판정": [
+   "Clothing duty 13% · declared for resale",
+   "服装关税13%·销售用判定",
+   "衣類関税13%・販売用判定"
+  ],
+  "제보 contact@insightbriefnews.com": [
+   "Tips contact@insightbriefnews.com",
+   "爆料 contact@insightbriefnews.com",
+   "情報提供 contact@insightbriefnews.com"
+  ],
+  "광고 contact@insightbriefnews.com": [
+   "Ads contact@insightbriefnews.com",
+   "广告 contact@insightbriefnews.com",
+   "広告 contact@insightbriefnews.com"
+  ],
+  "B2B 소싱·수입 원가 의뢰": [
+   "B2B sourcing & cost review",
+   "B2B 采购·成本咨询",
+   "B2B 調達・原価相談"
   ]
  }
 }

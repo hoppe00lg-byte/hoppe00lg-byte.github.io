@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 18:52:25 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 21:30:33 +0900</lastBuildDate>
+    <item>
+      <title>Anatomy of Dominance 58.8% — The space left by Bitcoin was filled by the dollar, not alts</title>
+      <link>https://insightbriefnews.com/en/a/btc-dominance-58-altseason-index-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/btc-dominance-58-altseason-index-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 20:15:00 +0900</pubDate>
+      <category>Economy &amp; Finance</category>
+      <description>Bitcoin dominance fell from 60.61% on November 12 to 58.76% on the 26th. During the same period, the altcoin season index rose from 49 to 58, but is 17 points short of the baseline of 75. If you follow where the proportion has shifted, you will find stablecoins, not Ethereum or altcoins.</description>
+    </item>
     <item>
       <title>Ten weeks become thirty, six months become thirty — the AI build-out queues in three layers</title>
       <link>https://insightbriefnews.com/en/a/fcbga-equipment-lead-time-30-months-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 09:45:00 +0900</pubDate>
       <category>Trade &amp; Commodities</category>
       <description>China&#x27;s Commerce Ministry postponed the ban on gallium, germanium and antimony exports to the US until January 27, 2027. The rare earth suspension it extended two weeks earlier ends on January 10. Both reprieves run 61 days, but they start 17 days apart, so they end 17 days apart too — and in between, European dysprosium has risen to 15-19 times the Chinese price.</description>
-    </item>
-    <item>
-      <title>Year-end tax settlement with a real deadline of December 31st — Card limit of 4 million won and deductions that disappear after that day</title>
-      <link>https://insightbriefnews.com/en/a/year-end-tax-dec31-deadline-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/year-end-tax-dec31-deadline-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 09:20:00 +0900</pubDate>
-      <category>Economy &amp; Finance</category>
-      <description>Year-end tax settlement for 2026 will be made in January 2027. However, the irreversible date is December 31st. The basic credit card income deduction limit is 3 to 4 million won depending on the number of children, pension savings and IRP are 9 million won, and the marriage tax credit is the last this year.</description>
     </item>
   </channel>
 </rss>

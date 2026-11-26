@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 18:52:32 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 21:30:40 +0900</lastBuildDate>
+    <item>
+      <title>ドミナンス58.8％の解剖 - ビットコインが出した席はアルトではなくドルが満たした</title>
+      <link>https://insightbriefnews.com/ja/a/btc-dominance-58-altseason-index-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/btc-dominance-58-altseason-index-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 20:15:00 +0900</pubDate>
+      <category>経済・金融</category>
+      <description>ビットコインドミナンスは11月12日60.61％から26日58.76％に下がった。同期間、アルトコインシーズン指数は49から58に上がったが、ベースライン75には17点足りない。比重が移ったところをたどると、イーサリアムも、アルトコインでもなくステープルコインが出てくる。</description>
+    </item>
     <item>
       <title>10週が30週に、6か月が30か月に——AI増設の列は三層になっている</title>
       <link>https://insightbriefnews.com/ja/a/fcbga-equipment-lead-time-30-months-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 09:20:00 +0900</pubDate>
       <category>経済・金融</category>
       <description>2026年帰属年末精算は2027年1月に行う。しかし、元に戻せない日付は12月31日だ。カード所得控除基本限度は子ども数に応じて300万～400万ウォン、年金貯蓄・IRPは900万ウォン、婚姻税額控除は今年が最後だ。</description>
-    </item>
-    <item>
-      <title>1,630万人のうち4万323件 — 3年半値が変わるものと変わらないもの</title>
-      <link>https://insightbriefnews.com/ja/a/silson-gen5-switch-50-percent-3years-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/silson-gen5-switch-50-percent-3years-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 09:00:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>金融委員会が2026年11月19日発表し、23日に施行した失損契約転換割引は、2013年3月以前の1・2世代契約1,630万人に5世代保険料の50%を3年間削ってくれる。 ６０代の女性の例で３年５５９万ウォンが減るが、４年目からは全額であり、比重症の非給与自己負担は３０％から５０％に上がる。 １０月末まで自ら乗り換え１・２世代契約は４万３２３件だった。</description>
     </item>
   </channel>
 </rss>

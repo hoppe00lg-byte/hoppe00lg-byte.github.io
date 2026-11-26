@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/seller.css?v=20261123d">
 <script type="application/ld+json">
 {
@@ -60,9 +60,12 @@
 <link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
 <!-- /IB:I18N-HEAD -->
 <!-- IB:VENDORS -->
+<!-- Google Analytics 4 (insightbriefnews.com 웹 스트림) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXYJ52M3GC"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-GXYJ52M3GC");</script>
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script src="../assets/js/vendors.js?v=20261124c" defer></script>
-<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<script src="../assets/js/vendors.js?v=20261126a" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
 <!-- /IB:VENDORS -->
 </head>
@@ -140,17 +143,19 @@
         </div>
       </li>
       <li class="nav-group" data-nav="life">
-        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税务·法律·生活<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
-        <div class="nav-panel" id="nav-life" role="group" aria-label="税务·法律·生活">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税务·法律·工具<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税务·法律·工具">
           <a href="tax.html" data-nav-key="tax">税金·年薪·健康保险</a>
           <a href="salary.html" data-nav-key="salary">工资·最低工资·四大保险</a>
           <a href="insurance.html" data-nav-key="insurance">实损·车险计算器</a>
           <a href="law.html" data-nav-key="law">法律·合同·催告书</a>
           <a href="forms.html" data-nav-key="forms">表单·电子签名 138种</a>
+          <span class="nav-head">生活·实用工具</span>
           <a href="saju.html" data-nav-key="saju">四柱·新年运势</a>
           <a href="lotto.html" data-nav-key="lotto">彩票号码生成器</a>
           <a href="music.html" data-nav-key="music">AI 音乐·歌词生成器</a>
           <a href="style.html" data-nav-key="style">穿搭·风格推荐</a>
+          <a href="links.html" data-nav-key="links">推荐商品·用品</a>
         </div>
       </li>
       <li class="nav-group" data-nav="guide">
@@ -192,11 +197,13 @@
     </div>
 
     <!-- 광고: 상단 -->
-    <!-- 광고 단위 발급 후 <ins class="adsbygoogle" data-ad-client="ca-pub-7853253075143438" data-ad-slot="{슬롯ID}" ...> 로 교체 -->
-    <aside class="ad sl-ad" data-slot="seller-top" aria-label="广告位">
-      <span class="ad-label">ADVERTISEMENT</span>
-      <span class="ad-slot">卖家工具 · 热门广告</span>
-      <span class="ad-size">响应式 · 970 × 90</span>
+    <!-- 자체 프로모션 배너 — 애드센스 승인 후 이 자리에 광고 단위를 넣습니다. -->
+<aside class="ib-promo ib-promo--b2b" aria-label="B2B 采购·成本咨询">
+      <span class="ib-promo-kicker">B2B · SOURCING</span>
+      <h3 class="ib-promo-title">进口采购、验货与成本诊断委托</h3>
+      <p class="ib-promo-desc">再生原料单价与风险初审，以及进口合同、装运与质量验货代理。在 Kmong 洽谈。</p>
+      <span class="ib-promo-acts"><a class="ib-promo-cta" href="https://kmong.com/gig/873859" target="_blank" rel="noopener noreferrer">单价·风险诊断 #873859</a><a class="ib-promo-cta ib-promo-cta--ghost" href="https://kmong.com/gig/873880" target="_blank" rel="noopener noreferrer">合同·验货代理 #873880</a></span>
+      <span class="ib-promo-note">1~2 个工作日内回复</span>
     </aside>
 
     <div class="sl-tabs" role="tablist" aria-label="4种卖家工具">
@@ -975,9 +982,9 @@
       <div class="f-col mail-col">
         <h4>联系我们</h4>
         <ul>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">爆料 hoppe00lg@gmail.com</a></li>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">广告 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">爆料 contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">广告 contact@insightbriefnews.com</a></li>
           <li><span style="font-size:11px;opacity:.55">首尔 · VOL. 01</span></li>
         </ul>
       </div>
@@ -998,7 +1005,7 @@
 <script src="../assets/js/i18n.js?v=20261124a"></script>
 <script src="../assets/js/intl-core.js?v=20261124a" defer></script>
 <!-- IB:SHARE-FLOAT -->
-<script src="../assets/js/share-float.js?v=20261124c" defer></script>
+<script src="../assets/js/share-float.js?v=20261126a" defer></script>
 <!-- /IB:SHARE-FLOAT -->
 <!-- IB:CHAT-FLOAT -->
 <script src="../assets/js/chat-float.js?v=20261124c" defer></script>

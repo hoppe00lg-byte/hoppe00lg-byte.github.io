@@ -27,7 +27,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
 <link rel="stylesheet" href="../assets/css/biz.css?v=20261125a">
 <link rel="stylesheet" href="../assets/css/exhibitions.css?v=20261124c">
@@ -56,9 +56,12 @@
 <link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
 <!-- /IB:I18N-HEAD -->
 <!-- IB:VENDORS -->
+<!-- Google Analytics 4 (insightbriefnews.com 웹 스트림) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXYJ52M3GC"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-GXYJ52M3GC");</script>
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script src="../assets/js/vendors.js?v=20261124c" defer></script>
-<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<script src="../assets/js/vendors.js?v=20261126a" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
 <!-- /IB:VENDORS -->
 </head>
@@ -132,17 +135,19 @@
         </div>
       </li>
       <li class="nav-group" data-nav="life">
-        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税務・法律・生活<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
-        <div class="nav-panel" id="nav-life" role="group" aria-label="税務・法律・生活">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税務・法律・ツール<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税務・法律・ツール">
           <a href="tax.html" data-nav-key="tax">税金・年収・社会保険</a>
           <a href="salary.html" data-nav-key="salary">給与・最低賃金・社会保険</a>
           <a href="insurance.html" data-nav-key="insurance">実損・自動車保険計算</a>
           <a href="law.html" data-nav-key="law">法律・契約書・内容証明</a>
           <a href="forms.html" data-nav-key="forms">書式・電子署名 138種</a>
+          <span class="nav-head">生活・ユーティリティツール</span>
           <a href="saju.html" data-nav-key="saju">四柱推命・新年占い</a>
           <a href="lotto.html" data-nav-key="lotto">ロト番号生成器</a>
           <a href="music.html" data-nav-key="music">AI音楽・歌詞生成</a>
           <a href="style.html" data-nav-key="style">ファッション・スタイル提案</a>
+          <a href="links.html" data-nav-key="links">おすすめ商品・用品</a>
         </div>
       </li>
       <li class="nav-group" data-nav="guide">
@@ -179,11 +184,12 @@
       </div>
     </div>
 
-    <aside class="ad bz-ad" data-slot="exhibitions-top" aria-label="広告枠">
-      <span class="ad-label">ADVERTISEMENT</span>
-      <span class="ad-slot">展示会カレンダー・上部広告</span>
-      <span class="ad-size">反応型・970×90</span>
-      <a class="ad-cta" href="contact.html#ad">この枠に広告を出す</a>
+<aside class="ib-promo ib-promo--b2b" aria-label="B2B 調達・原価相談">
+      <span class="ib-promo-kicker">B2B · SOURCING</span>
+      <h3 class="ib-promo-title">輸入調達・検品・原価診断のご依頼</h3>
+      <p class="ib-promo-desc">再生原料の単価・リスク一次診断と、輸入契約・船積み・品質検品の代行。Kmong で承ります。</p>
+      <span class="ib-promo-acts"><a class="ib-promo-cta" href="https://kmong.com/gig/873859" target="_blank" rel="noopener noreferrer">単価・リスク診断 #873859</a><a class="ib-promo-cta ib-promo-cta--ghost" href="https://kmong.com/gig/873880" target="_blank" rel="noopener noreferrer">契約・検品代行 #873880</a></span>
+      <span class="ib-promo-note">営業日1〜2日以内に返信</span>
     </aside>
 
     <!-- ============================ 도구 ============================ -->
@@ -299,9 +305,9 @@
       <div class="f-col mail-col">
         <h4>お問い合わせ</h4>
         <ul>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">情報提供 hoppe00lg@gmail.com</a></li>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">広告 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">情報提供 contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">広告 contact@insightbriefnews.com</a></li>
           <li><span style="font-size:11px;opacity:.55">ソウル · VOL. 01</span></li>
         </ul>
       </div>
@@ -314,7 +320,7 @@
 <!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="リアルタイム・ブリーフィング"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>リアルタイム・ブリーフィング</h3><p>新しいレポートと市況を KakaoTalk オープンチャットと Telegram でリアルタイムに受け取れます。</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk オープンチャット</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram チャンネル</a></div></section><!-- /IB:CHANNELS -->
 </footer>
 
-<script src="../assets/js/monetize.js?v=20261123c" defer></script>
+<script src="../assets/js/monetize.js?v=20261126a" defer></script>
 <script src="data/exhibitions.fallback.js?v=20261124d"></script>
 <script src="../assets/js/exhibitions.js?v=20261124d" defer></script>
 <script src="../assets/js/nav.js?v=20261124c"></script>

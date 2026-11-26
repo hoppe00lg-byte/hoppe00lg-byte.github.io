@@ -2001,12 +2001,14 @@
   var INLINE_IMG_RE = /!\[([^\]]*)\]\(([^)\s]+)\)/g;
   var SAFE_IMG_RE = /^(https?:\/\/|assets\/|\/assets\/)/i;
 
-  /* assets/ 아래 상대 경로와 https:// 주소만 이미지로 허용합니다. */
+  /* assets/ 아래 상대 경로와 https:// 주소만 이미지로 허용합니다.
+     assets/... 는 페이지가 /en/a/ 처럼 한 단계 안쪽에 있어도 사이트 루트 기준으로 풀어야
+     이미지가 깨지지 않습니다(대표 이미지 alt 만 보이던 문제). */
   function safeImgSrc(src) {
     var s = String(src == null ? '' : src).trim();
     if (!SAFE_IMG_RE.test(s)) return '';
     if (/[\s"'<>]/.test(s)) return '';
-    if (s.charAt(0) !== '/' && !/^https?:/i.test(s)) s = BASE + s;
+    if (s.charAt(0) !== '/' && !/^https?:/i.test(s)) s = /^assets\//i.test(s) ? '/' + s : BASE + s;
     return s;
   }
 
@@ -2234,9 +2236,12 @@
       '</div>';
   }
 
-  function sampleTag(a) {
-    return (isDemo() || (a && a.sample)) ? '<span class="sample-tag" title="시연용 샘플 콘텐츠">SAMPLE</span>' : '';
-  }
+  /* 정식 발행 리포트에는 SAMPLE 배지를 달지 않습니다(2026-11-26 지시). */
+  function sampleTag(a) { return ''; }
+
+  /* 조회수는 일정 수 이상일 때만 보여 줍니다. 한 자릿수 '읽음 3' 같은 숫자는
+     매체 신뢰도를 깎기 때문에 화면에서는 숨기고 예상 읽기 시간만 씁니다. */
+  var VIEW_MIN_PUBLIC = 20;
 
   function cardHTML(a, idx) {
     var c = catOf(a.category);
@@ -2254,23 +2259,86 @@
       '</article>';
   }
 
-  function adHTML(key, extraClass) {
-    var ad = (state.site.ads || {})[key];
-    if (!ad) return '';
-    var as = ad.adsense || {};
-    if (as.client && as.slot) {
+  /* ---------------- 자체 프로모션 ----------------
+     애드센스 승인 전에는 빈 광고 박스('이 자리에 광고하기 300×250')를 두지 않습니다.
+     그 자리에는 무료 주간 브리핑 구독 안내 또는 B2B 소싱·검수 의뢰(크몽) 배너를 놓습니다. */
+  var PROMO_TXT = {
+    ko: {
+      nlKicker: 'FREE WEEKLY BRIEF',
+      nlTitle: '무료 주간 브리핑 구독',
+      nlDesc: '매주 월요일, 경제·금융·무역·원자재에서 확인된 숫자와 일정만 5분 분량으로 정리해 보냅니다.',
+      nlCta: '이메일로 받기',
+      nlNote: '광고 없음 · 언제든 해지',
+      b2bKicker: 'B2B · SOURCING',
+      b2bTitle: '수입 소싱·검수, 원가 진단 의뢰',
+      b2bDesc: '재생원료 단가·리스크 1차 진단과 수입 계약·선적·품질 검수 대행. 크몽에서 상담합니다.',
+      b2bCta1: '단가·리스크 진단 #873859',
+      b2bCta2: '계약·검수 대행 #873880',
+      b2bNote: '영업일 1~2일 내 회신'
+    },
+    en: {
+      nlKicker: 'FREE WEEKLY BRIEF',
+      nlTitle: 'Free weekly brief',
+      nlDesc: 'Every Monday: the numbers and dates that mattered in economy, trade and raw materials, in a five-minute read.',
+      nlCta: 'Get it by email',
+      nlNote: 'No ads · unsubscribe any time',
+      b2bKicker: 'B2B · SOURCING',
+      b2bTitle: 'Sourcing, inspection and landed-cost review',
+      b2bDesc: 'First-pass pricing and risk review for recycled resin, plus import contract, shipping and quality inspection support.',
+      b2bCta1: 'Pricing & risk review #873859',
+      b2bCta2: 'Contract & inspection #873880',
+      b2bNote: 'Reply within 1–2 business days'
+    },
+    zh: {
+      nlKicker: 'FREE WEEKLY BRIEF',
+      nlTitle: '免费每周简报',
+      nlDesc: '每周一，把经济、金融、贸易与原材料领域确认过的数字和日程整理成五分钟阅读。',
+      nlCta: '邮件订阅',
+      nlNote: '无广告 · 可随时退订',
+      b2bKicker: 'B2B · SOURCING',
+      b2bTitle: '进口采购、验货与成本诊断委托',
+      b2bDesc: '再生原料单价与风险初审，以及进口合同、装运与质量验货代理。在 Kmong 上洽谈。',
+      b2bCta1: '单价·风险诊断 #873859',
+      b2bCta2: '合同·验货代理 #873880',
+      b2bNote: '1~2 个工作日内回复'
+    },
+    ja: {
+      nlKicker: 'FREE WEEKLY BRIEF',
+      nlTitle: '無料ウィークリーブリーフ購読',
+      nlDesc: '毎週月曜日、経済・金融・貿易・原材料で確認された数字と日程だけを5分で読める形にまとめてお送りします。',
+      nlCta: 'メールで受け取る',
+      nlNote: '広告なし・いつでも解除',
+      b2bKicker: 'B2B · SOURCING',
+      b2bTitle: '輸入調達・検品・原価診断のご依頼',
+      b2bDesc: '再生原料の単価・リスク一次診断と、輸入契約・船積み・品質検品の代行。Kmong で承ります。',
+      b2bCta1: '単価・リスク診断 #873859',
+      b2bCta2: '契約・検品代行 #873880',
+      b2bNote: '営業日1〜2日以内に返信'
+    }
+  }[IBLANG || 'ko'];
+
+  function promoHTML(kind) {
+    var t = PROMO_TXT;
+    if (kind === 'b2b') {
       return '' +
-        '<aside class="ad ad--live ' + (extraClass || '') + '" data-slot="' + attr(ad.slot) + '" aria-label="광고 영역">' +
-          '<span class="ad-label">' + esc(ad.label || 'ADVERTISEMENT') + '</span>' +
-          '<ins class="adsbygoogle" style="display:block;width:100%" data-ad-client="' + attr(as.client) + '" data-ad-slot="' + attr(as.slot) + '" data-ad-format="auto" data-full-width-responsive="true"></ins>' +
+        '<aside class="ib-promo ib-promo--b2b" aria-label="' + attr(t.b2bTitle) + '">' +
+          '<span class="ib-promo-kicker">' + esc(t.b2bKicker) + '</span>' +
+          '<h3 class="ib-promo-title">' + esc(t.b2bTitle) + '</h3>' +
+          '<p class="ib-promo-desc">' + esc(t.b2bDesc) + '</p>' +
+          '<span class="ib-promo-acts">' +
+            '<a class="ib-promo-cta" href="https://kmong.com/gig/873859" target="_blank" rel="noopener noreferrer">' + esc(t.b2bCta1) + '</a>' +
+            '<a class="ib-promo-cta ib-promo-cta--ghost" href="https://kmong.com/gig/873880" target="_blank" rel="noopener noreferrer">' + esc(t.b2bCta2) + '</a>' +
+          '</span>' +
+          '<span class="ib-promo-note">' + esc(t.b2bNote) + '</span>' +
         '</aside>';
     }
     return '' +
-      '<aside class="ad ' + (extraClass || '') + '" data-slot="' + attr(ad.slot) + '" aria-label="광고 영역">' +
-        '<span class="ad-label">' + esc(ad.label || 'ADVERTISEMENT') + '</span>' +
-        '<span class="ad-slot">' + esc(ad.note || '스폰서 배너') + '</span>' +
-        '<span class="ad-size">' + esc(ad.size || '') + '</span>' +
-        '<a class="ad-cta" href="' + U('ad.html') + '#rates">이 자리에 광고하기</a>' +
+      '<aside class="ib-promo ib-promo--nl" aria-label="' + attr(t.nlTitle) + '">' +
+        '<span class="ib-promo-kicker">' + esc(t.nlKicker) + '</span>' +
+        '<h3 class="ib-promo-title">' + esc(t.nlTitle) + '</h3>' +
+        '<p class="ib-promo-desc">' + esc(t.nlDesc) + '</p>' +
+        '<span class="ib-promo-acts"><a class="ib-promo-cta" href="' + attr(U('index.html#subscribe')) + '">' + esc(t.nlCta) + '</a></span>' +
+        '<span class="ib-promo-note">' + esc(t.nlNote) + '</span>' +
       '</aside>';
   }
 
@@ -2381,7 +2449,7 @@
     return '<ol class="rank">' + top.map(function (a, i) {
       return '<li><a href="' + articleUrl(a) + '">' +
         '<span class="no">' + String(i + 1).padStart(2, '0') + '</span>' +
-        '<span><h4>' + esc(a.title) + '</h4><span class="views">' + esc(catOf(a.category).label) + ' · ' + esc(LBL.views(num(a.views))) + '</span></span>' +
+        '<span><h4>' + esc(a.title) + '</h4><span class="views">' + esc(catOf(a.category).label) + ' · ' + esc(readingTime(a)) + '</span></span>' +
         '</a></li>';
     }).join('') + '</ol>';
   }
@@ -2667,8 +2735,8 @@
     if (rank) rank.innerHTML = rankHTML();
     loadViewCounts();
 
-    var sideA = $('#ad-side-a'); if (sideA) sideA.innerHTML = adHTML('sideA');
-    var sideB = $('#ad-side-b'); if (sideB) sideB.innerHTML = adHTML('sideB', 'ad--tall');
+    var sideA = $('#ad-side-a'); if (sideA) sideA.innerHTML = promoHTML('nl');
+    var sideB = $('#ad-side-b'); if (sideB) sideB.innerHTML = promoHTML('b2b');
     var news = $('#newsletter-slot'); if (news) news.innerHTML = newsletterHTML();
 
     var cta = $('#cta-band');
@@ -2868,10 +2936,10 @@
         '</div>' +
         '<aside class="article-side">' +
           '<nav class="toc" id="toc" aria-label="기사 목차"></nav>' +
-          adHTML('sideA') +
+          promoHTML('nl') +
         '</aside>' +
       '</div>' +
-      '<div class="container" style="max-width:1120px;padding-top:36px">' + adHTML('articleBottom') + '</div>' +
+      '<div class="container" style="max-width:1120px;padding-top:36px">' + promoHTML('b2b') + '</div>' +
       '<section class="related container" style="max-width:1120px;padding-top:36px;padding-bottom:10px">' +
         '<div class="section-head"><h2>' + esc(LBL.related) + '</h2><div class="sh-right">' + esc(c.label) + '</div></div>' +
         '<div class="grid grid-3">' + related.map(cardHTML).join('') + '</div>' +
@@ -3425,8 +3493,13 @@
         if (isNaN(n)) return;
         setArticleViews(a.id, n);
         if (el) {
-          el.textContent = LBL.views(num(n));
-          el.removeAttribute('hidden');
+          if (n >= VIEW_MIN_PUBLIC) {
+            el.textContent = LBL.views(num(n));
+            el.removeAttribute('hidden');
+          } else {
+            el.textContent = '';
+            el.hidden = true;
+          }
         }
       })
       .catch(function () {

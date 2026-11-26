@@ -26,7 +26,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
 <link rel="stylesheet" href="../assets/css/lotto.css?v=20261123m">
 <script type="application/ld+json">
@@ -54,9 +54,12 @@
 <link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
 <!-- /IB:I18N-HEAD -->
 <!-- IB:VENDORS -->
+<!-- Google Analytics 4 (insightbriefnews.com 웹 스트림) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXYJ52M3GC"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-GXYJ52M3GC");</script>
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script src="../assets/js/vendors.js?v=20261124c" defer></script>
-<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<script src="../assets/js/vendors.js?v=20261126a" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
 <!-- /IB:VENDORS -->
 </head>
@@ -134,17 +137,19 @@
         </div>
       </li>
       <li class="nav-group" data-nav="life">
-        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">Tax, Law &amp; Life<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
-        <div class="nav-panel" id="nav-life" role="group" aria-label="Tax, Law &amp; Life">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">Tax, Law &amp; Tools<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="Tax, Law &amp; Tools">
           <a href="tax.html" data-nav-key="tax">Tax, salary &amp; health insurance</a>
           <a href="salary.html" data-nav-key="salary">Payroll, minimum wage &amp; insurance</a>
           <a href="insurance.html" data-nav-key="insurance">Indemnity &amp; car insurance</a>
           <a href="law.html" data-nav-key="law">Contracts &amp; demand letters</a>
           <a href="forms.html" data-nav-key="forms">Forms &amp; e-signature (138)</a>
+          <span class="nav-head">Life &amp; utility tools</span>
           <a href="saju.html" data-nav-key="saju">Saju &amp; new-year fortune</a>
           <a href="lotto.html" data-nav-key="lotto" class="is-active" aria-current="page">Lotto number generator</a>
           <a href="music.html" data-nav-key="music">AI music &amp; lyric writer</a>
           <a href="style.html" data-nav-key="style">Style &amp; outfit brief</a>
+          <a href="links.html" data-nav-key="links">Gear we use</a>
         </div>
       </li>
       <li class="nav-group" data-nav="guide">
@@ -198,12 +203,13 @@
     </section>
 
     <!-- 광고: 상단 -->
-    <!-- 광고 단위 발급 후 <ins class="adsbygoogle" data-ad-client="ca-pub-7853253075143438" data-ad-slot="{슬롯ID}" ...> 로 교체 -->
-    <aside class="ad lt-ad" data-slot="lotto-top" aria-label="Advertisement">
-      <span class="ad-label">ADVERTISEMENT</span>
-      <span class="ad-slot">Number generator · top ad</span>
-      <span class="ad-size">Responsive · 970 × 90</span>
-      <a class="ad-cta" href="contact.html#ad">Advertise here</a>
+    <!-- 자체 프로모션 배너 — 애드센스 승인 후 이 자리에 광고 단위를 넣습니다. -->
+<aside class="ib-promo ib-promo--nl" aria-label="Free weekly brief">
+      <span class="ib-promo-kicker">FREE WEEKLY BRIEF</span>
+      <h3 class="ib-promo-title">Free weekly brief</h3>
+      <p class="ib-promo-desc">Every Monday: the confirmed numbers and dates from economy, finance, trade and raw materials, in a five-minute read.</p>
+      <span class="ib-promo-acts"><a class="ib-promo-cta" href="index.html#subscribe">Get it by email</a></span>
+      <span class="ib-promo-note">No ads · unsubscribe any time</span>
     </aside>
 
     <!-- 생성 패널 -->
@@ -315,11 +321,12 @@
     </section>
 
     <!-- 광고: 하단 -->
-    <aside class="ad lt-ad" data-slot="lotto-bottom" aria-label="Advertisement">
-      <span class="ad-label">ADVERTISEMENT</span>
-      <span class="ad-slot">Number generator · bottom ad</span>
-      <span class="ad-size">Responsive · 970 × 90</span>
-      <a class="ad-cta" href="contact.html#ad">Advertise here</a>
+<aside class="ib-promo ib-promo--nl" aria-label="Free weekly brief">
+      <span class="ib-promo-kicker">FREE WEEKLY BRIEF</span>
+      <h3 class="ib-promo-title">Free weekly brief</h3>
+      <p class="ib-promo-desc">Every Monday: the confirmed numbers and dates from economy, finance, trade and raw materials, in a five-minute read.</p>
+      <span class="ib-promo-acts"><a class="ib-promo-cta" href="index.html#subscribe">Get it by email</a></span>
+      <span class="ib-promo-note">No ads · unsubscribe any time</span>
     </aside>
 
     <!-- 설명 -->
@@ -419,9 +426,9 @@ Just add</p>
       <div class="f-col mail-col">
         <h4>Contact</h4>
         <ul>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">Tips hoppe00lg@gmail.com</a></li>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">Ads hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">Tips contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">Ads contact@insightbriefnews.com</a></li>
           <li><span style="font-size:11px;opacity:.55">Seoul · VOL. 01</span></li>
         </ul>
       </div>
@@ -435,7 +442,7 @@ Just add</p>
 </footer>
 
 <div class="lt-toast" id="lt-toast" role="status" aria-live="polite"></div>
-<script src="../assets/js/monetize.js?v=20261123c" defer></script>
+<script src="../assets/js/monetize.js?v=20261126a" defer></script>
 <script src="../assets/js/lotto.js?v=20261122a" defer></script>
 <script src="../assets/js/nav.js?v=20261124c"></script>
 <script src="data/i18n.fallback.js?v=20261124a"></script>
@@ -443,7 +450,7 @@ Just add</p>
 <script src="../assets/js/intl-core.js?v=20261124a" defer></script>
 <script src="../assets/js/intl-lotto.js?v=20261124a" defer></script>
 <!-- IB:SHARE-FLOAT -->
-<script src="../assets/js/share-float.js?v=20261124c" defer></script>
+<script src="../assets/js/share-float.js?v=20261126a" defer></script>
 <!-- /IB:SHARE-FLOAT -->
 <!-- IB:CHAT-FLOAT -->
 <script src="../assets/js/chat-float.js?v=20261124c" defer></script>

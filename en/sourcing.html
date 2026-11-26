@@ -26,9 +26,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
-<link rel="stylesheet" href="../assets/css/sourcing.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/sourcing.css?v=20261126b">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -54,9 +54,12 @@
 <link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
 <!-- /IB:I18N-HEAD -->
 <!-- IB:VENDORS -->
+<!-- Google Analytics 4 (insightbriefnews.com 웹 스트림) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXYJ52M3GC"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-GXYJ52M3GC");</script>
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script src="../assets/js/vendors.js?v=20261124c" defer></script>
-<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<script src="../assets/js/vendors.js?v=20261126a" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
 <!-- /IB:VENDORS -->
 </head>
@@ -134,17 +137,19 @@
         </div>
       </li>
       <li class="nav-group" data-nav="life">
-        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">Tax, Law &amp; Life<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
-        <div class="nav-panel" id="nav-life" role="group" aria-label="Tax, Law &amp; Life">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">Tax, Law &amp; Tools<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="Tax, Law &amp; Tools">
           <a href="tax.html" data-nav-key="tax">Tax, salary &amp; health insurance</a>
           <a href="salary.html" data-nav-key="salary">Payroll, minimum wage &amp; insurance</a>
           <a href="insurance.html" data-nav-key="insurance">Indemnity &amp; car insurance</a>
           <a href="law.html" data-nav-key="law">Contracts &amp; demand letters</a>
           <a href="forms.html" data-nav-key="forms">Forms &amp; e-signature (138)</a>
+          <span class="nav-head">Life &amp; utility tools</span>
           <a href="saju.html" data-nav-key="saju">Saju &amp; new-year fortune</a>
           <a href="lotto.html" data-nav-key="lotto">Lotto number generator</a>
           <a href="music.html" data-nav-key="music">AI music &amp; lyric writer</a>
           <a href="style.html" data-nav-key="style">Style &amp; outfit brief</a>
+          <a href="links.html" data-nav-key="links">Gear we use</a>
         </div>
       </li>
       <li class="nav-group" data-nav="guide">
@@ -181,6 +186,35 @@
         <span>Free</span><span>No sign-up</span><span>Nothing sent to a server</span><span>Photos only available within the browser</span><span>3 types of transactions</span><span>FX filled automatically</span>
       </div>
     </div>
+
+    <!-- 원클릭 예시 3개 — 누르면 입력값이 채워지고 도착원가가 바로 계산됩니다 -->
+    <section class="sc-presets" aria-labelledby="sc-presets-title">
+      <div class="sc-presets-head">
+        <span class="k">EXAMPLE RUN · one click</span>
+        <h2 id="sc-presets-title">See a result first</h2>
+        <p class="d">Press an example and the item, quantity, freight and duty rate are filled in, with the landed cost calculated at once. Then change any number.</p>
+      </div>
+      <div class="sc-presets-row">
+        <button type="button" class="sc-preset" data-preset="b2b">
+          <span class="p-tag">B2B · 20 t sea import</span>
+          <span class="p-name">Industrial PC regrind</span>
+          <span class="p-meta">2.15 USD/kg · FCL 20ft · duty 6.5%</span>
+          <span class="p-go">See the result →</span>
+        </button>
+        <button type="button" class="sc-preset" data-preset="b2c">
+          <span class="p-tag">B2C · small appliance</span>
+          <span class="p-name">AliExpress / Amazon mini humidifier</span>
+          <span class="p-meta">USD 150 list-clearance test · forwarder included</span>
+          <span class="p-go">See the result →</span>
+        </button>
+        <button type="button" class="sc-preset" data-preset="c2c">
+          <span class="p-tag">C2C · second-hand resale</span>
+          <span class="p-name">Japan / US vintage clothing</span>
+          <span class="p-meta">Clothing duty 13% · declared for resale</span>
+          <span class="p-go">See the result →</span>
+        </button>
+      </div>
+    </section>
 
     <div class="sc-tabs" role="tablist" aria-label="Transaction Type">
       <button class="sc-tab" type="button" role="tab" id="sc-tab-b2b" data-tab="b2b" aria-selected="true" aria-controls="sc-panel-b2b" tabindex="0">
@@ -791,9 +825,9 @@
       <div class="f-col mail-col">
         <h4>Contact</h4>
         <ul>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">Tips hoppe00lg@gmail.com</a></li>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">Ads hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">Tips contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">Ads contact@insightbriefnews.com</a></li>
           <li><span style="font-size:11px;opacity:.55">Seoul · VOL. 01</span></li>
         </ul>
       </div>
@@ -807,8 +841,8 @@
 </footer>
 
 <div class="sc-toast" id="sc-toast" role="status" aria-live="polite"></div>
-<script src="../assets/js/monetize.js?v=20261123c" defer></script>
-<script src="../assets/js/sourcing.js?v=20261126a" defer></script>
+<script src="../assets/js/monetize.js?v=20261126a" defer></script>
+<script src="../assets/js/sourcing.js?v=20261126b" defer></script>
 <script src="../assets/js/nav.js?v=20261124c"></script>
 <script src="data/i18n.fallback.js?v=20261124a"></script>
 <script src="../assets/js/i18n.js?v=20261124a"></script>

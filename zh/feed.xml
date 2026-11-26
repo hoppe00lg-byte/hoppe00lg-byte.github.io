@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 26 Nov 2026 18:52:29 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 21:30:36 +0900</lastBuildDate>
+    <item>
+      <title>统治地位剖析 58.8% — 比特币留下的空间由美元而非山寨币填补</title>
+      <link>https://insightbriefnews.com/zh/a/btc-dominance-58-altseason-index-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/btc-dominance-58-altseason-index-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 20:15:00 +0900</pubDate>
+      <category>经济·金融</category>
+      <description>比特币的统治地位从11月12日的60.61%下降到26日的58.76%。同一时期，山寨币季节指数从 49 上升至 58，但距离 75 的基线还差 17 个点。如果你追踪比例的变化，你会发现稳定币，而不是以太坊或山寨币。</description>
+    </item>
     <item>
       <title>从10周到30周，从6个月到30个月——AI扩产的队伍排了三层</title>
       <link>https://insightbriefnews.com/zh/a/fcbga-equipment-lead-time-30-months-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 09:20:00 +0900</pubDate>
       <category>经济·金融</category>
       <description>2026年年终纳税将于2027年1月进行。但不可逆转的日期是12月31日。根据子女人数，基本信用卡收入扣除限额为3至400万韩元，养老金储蓄和IRP为900万韩元，结婚税抵免是今年最后一次。</description>
-    </item>
-    <item>
-      <title>1,630万人中仅4万323件转换 — 3年半价改变了什么、没改变什么</title>
-      <link>https://insightbriefnews.com/zh/a/silson-gen5-switch-50-percent-3years-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/silson-gen5-switch-50-percent-3years-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 09:00:00 +0900</pubDate>
-      <category>经济·金融</category>
-      <description>金融委员会于2026年11月19日公布并于23日实施的实损合同转换折扣，为2013年3月之前签订1代和2代合同的1630万人提供3年50%的5代保险费折扣。以60多岁女性为例，3年减少559万韩元，但从第4年，全额，非关键自付费用从30%上升到50%。截至10月底，自行更换的第一代和第二代合约数量为40,323份。</description>
     </item>
   </channel>
 </rss>

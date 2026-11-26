@@ -5,9 +5,9 @@
   "tagline": "Independent economics & investigative research magazine",
   "slogan": "We read the context behind the numbers",
   "description": "An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.",
-  "email": "hoppe00lg@gmail.com",
-  "tipEmail": "hoppe00lg@gmail.com",
-  "adEmail": "hoppe00lg@gmail.com",
+  "email": "contact@insightbriefnews.com",
+  "tipEmail": "contact@insightbriefnews.com",
+  "adEmail": "contact@insightbriefnews.com",
   "editor": "INSIGHT BRIEF Editorial Desk",
   "location": "Seoul",
   "since": "2026",
@@ -49,7 +49,7 @@
    "id": "fire",
    "label": "Disaster & Safety",
    "en": "DISASTER & SAFETY",
-   "desc": "Disaster and response from the fire scene"
+   "desc": "Prevention and response seen from the disaster and safety desk"
   }
  ],
  "ticker": [
@@ -81,13 +81,13 @@
   "title": "Weekly brief",
   "desc": "Every Friday, we send you the week's research and numbers in one mail.",
   "cta": "Subscribe",
-  "email": "hoppe00lg@gmail.com",
+  "email": "contact@insightbriefnews.com",
   "note": "The email address is only used to send briefings, and can be canceled at any time with a single reply.",
   "done": "Your subscription request has been received. We will send you a briefing starting next Friday."
  },
  "monetize": {
   "updated": "2026-11-23",
-  "inquiryEmail": "hoppe00lg@gmail.com",
+  "inquiryEmail": "contact@insightbriefnews.com",
   "response": "1-2 business days",
   "note": "This is the starter price for launch in 2026. Excluding VAT, adjusted by agreement depending on publication period and material.",
   "banners": [

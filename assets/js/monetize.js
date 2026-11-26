@@ -3,7 +3,7 @@
    - Supabase 프로젝트 insight-brief(gsyqduysdzoifvyovfsc)의 공개 publishable 키만 쓴다.
    - 구독: public.newsletter_subscribers 에 바로 INSERT (SELECT 권한 없음, RLS)
    - 문의: public.inquiries 에 INSERT (kind: ad·b2b·saju·other)
-   - 실패하면 hoppe00lg@gmail.com 메일 링크를 만들어 준다.
+   - 실패하면 contact@insightbriefnews.com 메일 링크를 만들어 준다.
    마크업 계약
      <form data-ib-newsletter>            input[name=email], [data-ib-msg]
      <form data-ib-inquiry data-kind=ad data-source="ad.html">
@@ -15,7 +15,7 @@
   var API = {
     url: 'https://gsyqduysdzoifvyovfsc.supabase.co',
     key: 'sb_publishable_3AGJcDCF27lkTlaKYrIgKg_9kRPJZZ3',
-    mail: 'hoppe00lg@gmail.com'
+    mail: 'contact@insightbriefnews.com'
   };
 
   var MESSAGES = {

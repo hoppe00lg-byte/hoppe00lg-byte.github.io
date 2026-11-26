@@ -6,9 +6,9 @@ window.__SITE__ = {
   "tagline": "독립 경제·탐사 리서치 웹진",
   "slogan": "숫자 뒤의 맥락을 읽습니다",
   "description": "경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.",
-  "email": "hoppe00lg@gmail.com",
-  "tipEmail": "hoppe00lg@gmail.com",
-  "adEmail": "hoppe00lg@gmail.com",
+  "email": "contact@insightbriefnews.com",
+  "tipEmail": "contact@insightbriefnews.com",
+  "adEmail": "contact@insightbriefnews.com",
   "editor": "인사이트 브리프 편집실",
   "location": "서울",
   "since": "2026",
@@ -50,7 +50,7 @@ window.__SITE__ = {
    "id": "fire",
    "label": "재난·안전",
    "en": "DISASTER & SAFETY",
-   "desc": "소방 현장에서 보는 재난과 대응"
+   "desc": "재난·안전 현장에서 보는 예방과 대응"
   }
  ],
  "ticker": [
@@ -82,13 +82,13 @@ window.__SITE__ = {
   "title": "주간 브리핑",
   "desc": "매주 금요일, 한 주의 리서치와 숫자를 한 통에 정리해 보냅니다.",
   "cta": "구독 신청",
-  "email": "hoppe00lg@gmail.com",
+  "email": "contact@insightbriefnews.com",
   "note": "이메일 주소는 브리핑 발송에만 쓰고, 언제든 한 번의 회신으로 해지할 수 있습니다.",
   "done": "구독 신청이 접수되었습니다. 다음 금요일 브리핑부터 보내 드립니다."
  },
  "monetize": {
   "updated": "2026-11-23",
-  "inquiryEmail": "hoppe00lg@gmail.com",
+  "inquiryEmail": "contact@insightbriefnews.com",
   "response": "영업일 기준 1~2일",
   "note": "2026년 론칭 스타터 단가입니다. VAT 별도, 게재 기간·소재에 따라 협의로 조정합니다.",
   "banners": [

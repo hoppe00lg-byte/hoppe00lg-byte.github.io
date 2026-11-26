@@ -178,3 +178,20 @@
 @media (max-width:420px){
   .sc-grid{grid-template-columns:1fr}
 }
+
+/* 원클릭 예시 프리셋 (입력폼 위) */
+.sc-presets{margin-top:clamp(16px,2.4vw,22px);border:1px solid var(--rule-2);background:linear-gradient(180deg,#fbfaf7,#fff);padding:clamp(13px,2vw,18px) clamp(13px,2vw,18px) clamp(14px,2vw,18px)}
+.sc-presets-head .k{display:inline-block;font-family:var(--mono);font-size:9.5px;font-weight:700;letter-spacing:.16em;color:var(--accent);text-transform:uppercase}
+.sc-presets-head h2{font-family:var(--serif);font-size:clamp(16px,2vw,19px);font-weight:800;letter-spacing:-.02em;margin:5px 0 4px}
+.sc-presets-head .d{font-size:12px;line-height:1.7;color:var(--ink-3);max-width:76ch;word-break:keep-all}
+.sc-presets-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:9px;margin-top:12px}
+.sc-preset{appearance:none;text-align:left;cursor:pointer;display:flex;flex-direction:column;gap:3px;padding:12px 13px 11px;background:#fff;border:1px solid var(--rule-2);border-left:3px solid var(--ink);border-radius:2px;font-family:var(--sans);transition:border-color .15s ease,transform .15s ease,box-shadow .15s ease}
+.sc-preset:hover{border-color:var(--ink);border-left-color:var(--accent);transform:translateY(-1px);box-shadow:0 14px 26px -24px rgba(23,20,15,.6)}
+.sc-preset:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.sc-preset .p-tag{font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
+.sc-preset .p-name{font-family:var(--serif);font-size:14.5px;font-weight:800;letter-spacing:-.02em;color:var(--ink);line-height:1.35}
+.sc-preset .p-meta{font-size:10.5px;line-height:1.5;color:var(--muted)}
+.sc-preset .p-go{margin-top:4px;font-size:11px;font-weight:800;color:var(--ink)}
+.sc-preset:hover .p-go{color:var(--accent)}
+.sc-preset[aria-pressed="true"]{border-color:var(--accent);border-left-color:var(--accent);background:#fff8f6}
+@media(max-width:560px){.sc-presets-row{grid-template-columns:1fr}}

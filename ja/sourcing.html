@@ -26,9 +26,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
-<link rel="stylesheet" href="../assets/css/sourcing.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/sourcing.css?v=20261126b">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -54,9 +54,12 @@
 <link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
 <!-- /IB:I18N-HEAD -->
 <!-- IB:VENDORS -->
+<!-- Google Analytics 4 (insightbriefnews.com 웹 스트림) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GXYJ52M3GC"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-GXYJ52M3GC");</script>
 <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
-<script src="../assets/js/vendors.js?v=20261124c" defer></script>
-<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<script src="../assets/js/vendors.js?v=20261126a" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
 <!-- /IB:VENDORS -->
 </head>
@@ -134,17 +137,19 @@
         </div>
       </li>
       <li class="nav-group" data-nav="life">
-        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税務・法律・生活<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
-        <div class="nav-panel" id="nav-life" role="group" aria-label="税務・法律・生活">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税務・法律・ツール<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税務・法律・ツール">
           <a href="tax.html" data-nav-key="tax">税金・年収・社会保険</a>
           <a href="salary.html" data-nav-key="salary">給与・最低賃金・社会保険</a>
           <a href="insurance.html" data-nav-key="insurance">実損・自動車保険計算</a>
           <a href="law.html" data-nav-key="law">法律・契約書・内容証明</a>
           <a href="forms.html" data-nav-key="forms">書式・電子署名 138種</a>
+          <span class="nav-head">生活・ユーティリティツール</span>
           <a href="saju.html" data-nav-key="saju">四柱推命・新年占い</a>
           <a href="lotto.html" data-nav-key="lotto">ロト番号生成器</a>
           <a href="music.html" data-nav-key="music">AI音楽・歌詞生成</a>
           <a href="style.html" data-nav-key="style">ファッション・スタイル提案</a>
+          <a href="links.html" data-nav-key="links">おすすめ商品・用品</a>
         </div>
       </li>
       <li class="nav-group" data-nav="guide">
@@ -181,6 +186,35 @@
         <span>無料</span><span>会員登録不要</span><span>入力はサーバー送信なし</span><span>写真はブラウザ内でのみ</span><span>3種類の取引タイプ</span><span>為替を自動反映</span>
       </div>
     </div>
+
+    <!-- 원클릭 예시 3개 — 누르면 입력값이 채워지고 도착원가가 바로 계산됩니다 -->
+    <section class="sc-presets" aria-labelledby="sc-presets-title">
+      <div class="sc-presets-head">
+        <span class="k">EXAMPLE RUN · ワンクリック計算</span>
+        <h2 id="sc-presets-title">まずは結果を見てください</h2>
+        <p class="d">下の例を押すと品目・数量・運賃・税率が入り、着荷コストがすぐに算出されます。結果を見てから数字だけ変えてみてください。</p>
+      </div>
+      <div class="sc-presets-row">
+        <button type="button" class="sc-preset" data-preset="b2b">
+          <span class="p-tag">B2B・20トン海上輸入</span>
+          <span class="p-name">産業用PC再生原料</span>
+          <span class="p-meta">2.15 USD/kg・FCL 20ft・関税 6.5%</span>
+          <span class="p-go">結果を見る →</span>
+        </button>
+        <button type="button" class="sc-preset" data-preset="b2c">
+          <span class="p-tag">B2C・小型家電の海外購入</span>
+          <span class="p-name">AliExpress・Amazon ミニ加湿器</span>
+          <span class="p-meta">150ドルのリスト通関判定・転送業者込み</span>
+          <span class="p-go">結果を見る →</span>
+        </button>
+        <button type="button" class="sc-preset" data-preset="c2c">
+          <span class="p-tag">C2C・中古リセール</span>
+          <span class="p-name">日本・US ヴィンテージ衣類</span>
+          <span class="p-meta">衣類関税13%・販売用判定</span>
+          <span class="p-go">結果を見る →</span>
+        </button>
+      </div>
+    </section>
 
     <div class="sc-tabs" role="tablist" aria-label="取引タイプ">
       <button class="sc-tab" type="button" role="tab" id="sc-tab-b2b" data-tab="b2b" aria-selected="true" aria-controls="sc-panel-b2b" tabindex="0">
@@ -791,9 +825,9 @@
       <div class="f-col mail-col">
         <h4>お問い合わせ</h4>
         <ul>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">情報提供 hoppe00lg@gmail.com</a></li>
-          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">広告 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">情報提供 contact@insightbriefnews.com</a></li>
+          <li><a class="mail" href="mailto:contact@insightbriefnews.com">広告 contact@insightbriefnews.com</a></li>
           <li><span style="font-size:11px;opacity:.55">ソウル · VOL. 01</span></li>
         </ul>
       </div>
@@ -807,8 +841,8 @@
 </footer>
 
 <div class="sc-toast" id="sc-toast" role="status" aria-live="polite"></div>
-<script src="../assets/js/monetize.js?v=20261123c" defer></script>
-<script src="../assets/js/sourcing.js?v=20261126a" defer></script>
+<script src="../assets/js/monetize.js?v=20261126a" defer></script>
+<script src="../assets/js/sourcing.js?v=20261126b" defer></script>
 <script src="../assets/js/nav.js?v=20261124c"></script>
 <script src="data/i18n.fallback.js?v=20261124a"></script>
 <script src="../assets/js/i18n.js?v=20261124a"></script>

@@ -280,6 +280,28 @@ body.is-filtered .section-head{padding-bottom:18px;margin-bottom:28px}
 .ad[data-slot="article-bottom"]{min-height:110px;padding:22px 18px}
 .ad--tall .ad-ornament{font-family:var(--serif);font-size:26px;color:var(--rule-2);letter-spacing:.1em}
 
+/* ---------- 자체 프로모션(구독·B2B 의뢰) — 애드센스 승인 전 빈 광고 자리를 대신합니다 ---------- */
+.ib-promo{display:flex;flex-direction:column;align-items:flex-start;gap:8px;text-align:left;padding:22px 22px 20px;background:var(--paper-2);border:1px solid var(--rule);border-left:3px solid var(--accent);color:var(--ink-2)}
+.ib-promo .ib-promo-kicker{font-family:var(--mono);font-size:9.5px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase}
+.ib-promo .ib-promo-title{font-family:var(--serif);font-size:18px;font-weight:800;letter-spacing:-.02em;line-height:1.35;color:var(--ink);margin:0}
+.ib-promo .ib-promo-desc{font-size:12.5px;line-height:1.65;color:var(--ink-3);margin:0;max-width:52ch}
+.ib-promo .ib-promo-acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:2px}
+.ib-promo .ib-promo-cta{display:inline-block;padding:9px 14px;background:var(--ink);color:#fff;font-size:12px;font-weight:700;letter-spacing:-.01em;text-decoration:none;border:1px solid var(--ink);border-radius:2px}
+.ib-promo .ib-promo-cta:hover{background:var(--accent);border-color:var(--accent)}
+.ib-promo .ib-promo-cta--ghost{background:#fff;color:var(--ink);border-color:var(--rule-2)}
+.ib-promo .ib-promo-cta--ghost:hover{color:#fff;background:var(--accent);border-color:var(--accent)}
+.ib-promo .ib-promo-note{font-size:10.5px;color:var(--muted)}
+.ib-promo--b2b{background:var(--navy);border-color:var(--navy);border-left-color:var(--accent);color:rgba(255,255,255,.72)}
+.ib-promo--b2b .ib-promo-kicker{color:#e7a49b}
+.ib-promo--b2b .ib-promo-title{color:#fff}
+.ib-promo--b2b .ib-promo-desc{color:rgba(255,255,255,.68)}
+.ib-promo--b2b .ib-promo-cta{background:var(--accent);border-color:var(--accent);color:#fff}
+.ib-promo--b2b .ib-promo-cta:hover{background:#fff;border-color:#fff;color:var(--ink)}
+.ib-promo--b2b .ib-promo-cta--ghost{background:transparent;border-color:rgba(255,255,255,.35);color:#fff}
+.ib-promo--b2b .ib-promo-note{color:rgba(255,255,255,.5)}
+.article-side .ib-promo{min-height:0}
+@media(max-width:640px){.ib-promo{padding:18px 16px}}
+
 .newsletter{background:var(--ink);color:var(--paper);padding:22px;border-top:3px solid var(--accent)}
 .newsletter .mono{color:rgba(255,255,255,.5)}
 .newsletter h3{font-family:var(--serif);font-size:19px;font-weight:800;margin:6px 0 8px;letter-spacing:-.02em}
