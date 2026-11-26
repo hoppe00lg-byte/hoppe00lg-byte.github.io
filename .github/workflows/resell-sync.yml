@@ -26,29 +26,36 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Fetch latest margin report
+      - name: Fetch latest margin reports
         env:
           MARGIN_REPORT_TOKEN: ${{ secrets.MARGIN_REPORT_TOKEN }}
         run: |
           set -euo pipefail
-          OUT="$RUNNER_TEMP/resell-latest.json"
-          URL="https://api.github.com/repos/hoppe00lg-byte/pickle-automation/contents/reports/resell-margin/latest.json?ref=main"
-          if [ -n "${MARGIN_REPORT_TOKEN:-}" ]; then
-            curl -fsSL --retry 3 -H "Authorization: Bearer $MARGIN_REPORT_TOKEN" \
-              -H "Accept: application/vnd.github.raw" "$URL" -o "$OUT"
-          else
-            curl -fsSL --retry 3 -H "Accept: application/vnd.github.raw" "$URL" -o "$OUT"
-          fi
-          if [ ! -s "$OUT" ]; then
+          fetch() {
+            local name="$1" out="$2"
+            local url="https://api.github.com/repos/hoppe00lg-byte/pickle-automation/contents/reports/resell-margin/${name}?ref=main"
+            if [ -n "${MARGIN_REPORT_TOKEN:-}" ]; then
+              curl -fsSL --retry 3 -H "Authorization: Bearer $MARGIN_REPORT_TOKEN" \
+                -H "Accept: application/vnd.github.raw" "$url" -o "$out"
+            else
+              curl -fsSL --retry 3 -H "Accept: application/vnd.github.raw" "$url" -o "$out"
+            fi
+          }
+          fetch latest.json "$RUNNER_TEMP/resell-latest.json"
+          if [ ! -s "$RUNNER_TEMP/resell-latest.json" ]; then
             echo "::error::마진 리포트를 받지 못했습니다. MARGIN_REPORT_TOKEN Secret(비공개 저장소 읽기)을 확인하세요."
             exit 1
           fi
-          python3 -c "import json,sys;d=json.load(open('$OUT'));print('리포트',d.get('date'),d.get('generated_at'),'항목',len(d.get('items') or []))"
+          python3 -c "import json;d=json.load(open('$RUNNER_TEMP/resell-latest.json'));print('리포트',d.get('date'),d.get('generated_at'),'항목',len(d.get('items') or []))"
+          # 포켓몬 카드 리포트는 없을 수도 있습니다(스캔 실패·미실행). 있을 때만 동기화합니다.
+          fetch pokemon-latest.json "$RUNNER_TEMP/pokemon-latest.json" || echo "포켓몬 리포트 없음 — 스니커즈만 갱신"
 
       - name: Sync resell picks into site data
         run: |
           set +e
-          python3 tools/sync_resell_picks.py --report "$RUNNER_TEMP/resell-latest.json" --top 5
+          POKE_ARG=""
+          if [ -s "$RUNNER_TEMP/pokemon-latest.json" ]; then POKE_ARG="--pokemon-report $RUNNER_TEMP/pokemon-latest.json"; fi
+          python3 tools/sync_resell_picks.py --report "$RUNNER_TEMP/resell-latest.json" --top 5 --pokemon-top 6 $POKE_ARG
           code=$?
           set -e
           if [ "$code" = "3" ]; then
@@ -59,7 +66,7 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          FILES="data/resell-picks.json en/data/resell-picks.json zh/data/resell-picks.json ja/data/resell-picks.json"
+          FILES="data/resell-picks.json en/data/resell-picks.json zh/data/resell-picks.json ja/data/resell-picks.json data/pokemon-picks.json en/data/pokemon-picks.json zh/data/pokemon-picks.json ja/data/pokemon-picks.json"
           if [ -z "$(git status --porcelain $FILES)" ]; then
             echo "변경 없음"
             exit 0
