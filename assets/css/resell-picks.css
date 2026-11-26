@@ -59,6 +59,18 @@
 .rs-pk-notes p b{color:var(--ink-2);font-weight:700}
 .rs-pk-notes p.hw{margin-top:6px;font-family:var(--mono);font-size:9.5px;color:var(--muted);letter-spacing:.01em}
 
+/* ---------- 포켓몬 카드(TCG) 섹션 ---------- */
+.rs-picks--poke{margin-top:12px}
+.rs-picks--poke .rs-pk-grid{grid-template-columns:repeat(auto-fit,minmax(330px,1fr))}
+.rs-picks--poke .rs-pk-card{background:#fdfdfe}
+.rs-pk-flag{margin-left:auto;font-family:var(--mono);font-size:8.5px;letter-spacing:.02em;color:#14603a;background:#eaf7ef;border:1px solid #b8e0c8;padding:1px 5px;white-space:nowrap}
+.rs-pk-bep{margin:0 0 7px;display:flex;align-items:baseline;justify-content:space-between;gap:8px;font-size:10.5px;color:var(--ink-3)}
+.rs-pk-bep span{white-space:nowrap}
+.rs-pk-bep b{font-family:var(--mono);font-size:11.5px;font-weight:700;color:var(--ink-2);letter-spacing:-.02em;white-space:nowrap}
+.rs-pk-links{margin:0 0 8px;display:flex;gap:10px;flex-wrap:wrap;font-family:var(--mono);font-size:9.5px}
+.rs-pk-links a{color:var(--ink-3);text-decoration:none;border-bottom:1px solid var(--rule-2)}
+.rs-pk-links a:hover{color:var(--accent);border-bottom-color:var(--accent)}
+
 /* 채운 입력칸 표시 */
 .rs-field.rs-pk-flash{animation:rsPkFlash 1.3s ease-out}
 @keyframes rsPkFlash{
@@ -72,6 +84,7 @@
   .rs-pk-stat{flex:1 1 0;min-width:0;padding:6px 8px}
   .rs-pk-stat b{font-size:12.5px}
   .rs-pk-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .rs-picks--poke .rs-pk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .rs-pk-card{padding:9px 10px 10px}
   .rs-pk-name{font-size:12.5px}
   .rs-pk-rows dt{font-size:10px}

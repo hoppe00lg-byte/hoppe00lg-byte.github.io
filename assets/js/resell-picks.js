@@ -14,7 +14,8 @@
   var LOCALE = { ko: 'ko-KR', en: 'en-US', zh: 'zh-CN', ja: 'ja-JP' }[LANG];
   var CURRENCY = { ko: 'KRW', en: 'USD', zh: 'CNY', ja: 'JPY' }[LANG];
   var MOUNT = document.getElementById('rs-picks');
-  if (!MOUNT) return;
+  var POKE = document.getElementById('rs-poke');
+  if (!MOUNT && !POKE) return;
 
   /* ---------------- 화면 문구 ---------------- */
   var T = {
@@ -282,11 +283,197 @@
     toast(T.fillDone);
   }
 
-  MOUNT.addEventListener('click', function (e) {
-    var btn = e.target.closest ? e.target.closest('.rs-pk-fill') : null;
-    if (!btn) return;
-    var raw = btn.getAttribute('data-fill');
-    try { fillCalculator(JSON.parse(raw)); } catch (err) { /* 값이 깨졌으면 아무 일도 하지 않습니다 */ }
+  /* =========================================================
+     포켓몬 카드(TCG) — 같은 언어판(일본판)끼리만 비교한 국내외 시세 차익
+     data/pokemon-picks.json 을 읽어 별도 섹션(#rs-poke)에 그립니다.
+     ========================================================= */
+  var P = {
+    ko: {
+      kicker: 'POKÉMON TCG · JP → KR', title: '포켓몬 카드 국내외 시세 차익',
+      sub: '같은 일본판(언어판)끼리만 비교합니다. 일본 카드샵 판매가로 사서 국내 시세에 되팔 때, 국제배송·관부가세·KREAM 수수료를 빼고 남는 금액입니다.',
+      stamp: '기준 {date} · 환율 ¥1 = {fx}원',
+      statCards: '확인한 카드', statResolved: '시세 확정', statPos: '순마진 플러스', statBest: '최고 순마진',
+      unitCard: '종',
+      colJp: '일본 구매가', colCheap: '최저 매물', colKr: '국내 기준가', colSell: '판매가 (−10%)',
+      colFee: '관부가세·배송비', colCost: '총원가', colMargin: '순마진',
+      bep: '손익분기 매입가', bepBelow: '손익분기선 아래',
+      linkJp: '일본 상품', linkKr: '국내 시세',
+      fill: '계산기에 바로 채우기',
+      fillDone: '계산기에 값을 넣었습니다. 매입가와 판매가를 바꿔 직접 확인해 보세요.',
+      allNeg: '지금 일본 카드샵 소매가로는 확정 {n}종 모두 마이너스입니다. 카드마다 적힌 손익분기 매입가보다 싸게 구할 수 있을 때만 남습니다.',
+      some: '확정 {n}종 가운데 {p}종이 순마진 플러스입니다.',
+      noteTitle: '이 숫자를 읽는 법',
+      note1: '<b>국내 기준가</b>는 TCGIndex가 (일본판) 카드에 적어 둔 KREAM 판매 등록가(최저)이고, 판매가는 여기서 10% 낮춰 잡았습니다. 실제 체결가는 등록가보다 낮을 수 있습니다.',
+      note2: '<b>관부가세·배송비</b>에는 일본 배대지 국제배송 9,500원과 국내 택배 3,500원이 들어 있습니다. 카드 관세는 0%이고, 물품가가 150달러를 넘으면 부가세 10%와 통관수수료 4,000원이 붙습니다.',
+      note3: '<b>손익분기 매입가</b>보다 싸게 사야 남습니다. 카드러쉬 최저 매물이 이 선 아래면 그 매물은 계산상 플러스입니다. 상태(찍힘)·등급·가품은 결제 전에 직접 확인하세요.',
+      hw: '카드명·세트·번호·가격만 공개 데이터로 옮겼습니다. 개인정보는 담지 않습니다.'
+    },
+    en: {
+      kicker: 'POKÉMON TCG · JP → KR', title: 'Pokémon cards: Japan → Korea price gap',
+      sub: 'Same Japanese printing only. What is left after international shipping, duty and KREAM fees when you buy at a Japanese card shop and sell at the Korean price.',
+      stamp: 'As of {date} · ¥1 = ₩{fx}',
+      statCards: 'Cards checked', statResolved: 'Prices confirmed', statPos: 'Positive margin', statBest: 'Best margin',
+      unitCard: 'cards',
+      colJp: 'Japan price', colCheap: 'Cheapest copy', colKr: 'Korea price', colSell: 'Sale price (−10%)',
+      colFee: 'Duty & shipping', colCost: 'Total cost', colMargin: 'Net margin',
+      bep: 'Break-even buy price', bepBelow: 'Cheapest copy below break-even',
+      linkJp: 'Japan listing', linkKr: 'Korea price',
+      fill: 'Fill the calculator',
+      fillDone: 'Values are in the calculator. Change the buy and sale prices to test it yourself.',
+      allNeg: 'At today’s Japanese retail prices all {n} confirmed cards are negative. These trades only pay when you buy below the break-even price printed on each card.',
+      some: 'Only {p} of {n} confirmed cards clear a positive margin.',
+      noteTitle: 'How to read these numbers',
+      note1: 'The <b>Korea price</b> is the lowest KREAM asking price that TCGIndex records for the Japanese printing, and the sale price is set 10% below it. Actual trades can close lower.',
+      note2: '<b>Duty and shipping</b> include KRW 9,500 of Japan proxy international shipping and KRW 3,500 of domestic courier. Cards carry 0% duty; above US$150 of goods, 10% VAT and a KRW 4,000 clearance fee apply.',
+      note3: 'You only make money buying below the <b>break-even price</b>. If the cheapest CardRush copy sits under that line, the model shows a gain. Check condition, grade and authenticity before paying.',
+      hw: 'Only card name, set, number and prices come from public data. No personal information is included.'
+    },
+    zh: {
+      kicker: '宝可梦 TCG · 日→韩', title: '宝可梦卡牌 日韩价差',
+      sub: '仅比较同一日版卡牌。在日本卡店买入、按韩国价格卖出，扣除国际运费、关税与增值税、KREAM 手续费后的净额。',
+      stamp: '基准 {date} · 汇率 ¥1 = {fx} 韩元',
+      statCards: '检查卡牌', statResolved: '价格确认', statPos: '净利润为正', statBest: '最高净利润',
+      unitCard: '种',
+      colJp: '日本买入价', colCheap: '最低在售', colKr: '韩国参考价', colSell: '售价（−10%）',
+      colFee: '关税与运费', colCost: '总成本', colMargin: '净利润',
+      bep: '盈亏平衡买入价', bepBelow: '最低在售低于平衡线',
+      linkJp: '日本商品', linkKr: '韩国价格',
+      fill: '填入计算器',
+      fillDone: '已填入计算器。可修改买入价与售价自行验证。',
+      allNeg: '按今日日本卡店零售价，{n} 张已确认卡牌全部为负。只有低于每张卡标注的盈亏平衡价买入才有利润。',
+      some: '{n} 张已确认卡牌中仅 {p} 张净利润为正。',
+      noteTitle: '数字怎么看',
+      note1: '<b>韩国参考价</b>取自 TCGIndex 记录的日版卡牌 KREAM 最低在售价，售价比其低 10%。实际成交可能更低。',
+      note2: '<b>关税与运费</b>含日本转运国际运费 9,500 韩元与韩国国内快递 3,500 韩元。卡牌关税为 0%；货值超过 150 美元时加征 10% 增值税与 4,000 韩元通关费。',
+      note3: '买入价低于<b>盈亏平衡价</b>才有利润。CardRush 最低在售若低于该线，模型即为正。付款前务必确认品相、评级与真伪。',
+      hw: '仅迁移卡名、系列、编号与价格等公开数据，不含个人信息。'
+    },
+    ja: {
+      kicker: 'ポケモンTCG · 日→韓', title: 'ポケモンカード 日韓価格差',
+      sub: '同じ日本語版のみを比較します。日本のカードショップで買い、韓国価格で売るとき、国際送料・関税/付加税・KREAM手数料を引いて残る金額です。',
+      stamp: '基準 {date} · 為替 ¥1 = {fx}ウォン',
+      statCards: '確認カード', statResolved: '価格確定', statPos: '純利益プラス', statBest: '最高純利益',
+      unitCard: '種',
+      colJp: '日本買値', colCheap: '最安在庫', colKr: '韓国参考価格', colSell: '売値（−10%）',
+      colFee: '関税・送料', colCost: '総コスト', colMargin: '純利益',
+      bep: '損益分岐の買値', bepBelow: '最安在庫が分岐線以下',
+      linkJp: '日本の商品', linkKr: '韓国価格',
+      fill: '計算機に入れる',
+      fillDone: '計算機に入力しました。買値と売値を変えて確認できます。',
+      allNeg: '本日の日本カードショップ小売価格では、確定 {n} 種すべてマイナスです。各カードの損益分岐買値より安く買えたときだけ残ります。',
+      some: '確定 {n} 種のうち {p} 種が純利益プラスです。',
+      noteTitle: '数字の読み方',
+      note1: '<b>韓国参考価格</b>はTCGIndexが日本語版カードに記録したKREAMの最安出品価格で、売値はそこから10%下げています。実際の成約はさらに低いことがあります。',
+      note2: '<b>関税・送料</b>には日本の転送業者の国際送料9,500ウォンと韓国国内宅配3,500ウォンが入っています。カードの関税は0%、商品価格が150ドルを超えると付加税10%と通関手数料4,000ウォンがかかります。',
+      note3: '<b>損益分岐買値</b>より安く買わないと残りません。カードラッシュの最安在庫がこの線を下回れば計算上プラスです。状態・グレード・真贋は支払い前に確認してください。',
+      hw: 'カード名・セット・番号・価格のみを公開データから移しています。個人情報は含みません。'
+    }
+  }[LANG];
+
+  function yen(n) { return '\u00a5' + nf(Math.round(n)); }
+
+  function pokeName(it) {
+    if (LANG === 'ja') return it.nameJp || it.nameEn || it.nameKo;
+    if (LANG === 'zh') return it.nameZh || it.nameEn || it.nameKo || it.nameJp;
+    if (LANG === 'en') return it.nameEn || it.nameKo || it.nameJp;
+    return it.nameKo || it.nameEn || it.nameJp;
+  }
+
+  function pokeHead(d) {
+    var fx = d.fx || {};
+    var stamp = tpl(P.stamp, { date: fmtDate(d.generatedAt || d.date), fx: nf(fx.jpyKrw, 2) });
+    var scan = d.scan || {};
+    var pos = scan.positive || 0;
+    var best = scan.best || 0;
+    var bestTxt = (best >= 0 ? '+' : '\u2212') + krw(Math.abs(best));
+    var stats = '' +
+      '<div class="rs-pk-stat"><span>' + esc(P.statCards) + '</span><b>' + nf(scan.cards || 0) + '<i>' + esc(P.unitCard) + '</i></b></div>' +
+      '<div class="rs-pk-stat"><span>' + esc(P.statResolved) + '</span><b>' + nf(scan.resolved || 0) + '<i>' + esc(P.unitCard) + '</i></b></div>' +
+      '<div class="rs-pk-stat' + (pos ? '' : ' is-flat') + '"><span>' + esc(P.statPos) + '</span><b>' + nf(pos) + '<i>' + esc(P.unitCard) + '</i></b></div>' +
+      '<div class="rs-pk-stat"><span>' + esc(P.statBest) + '</span><b class="' + (best >= 0 ? 'pos' : 'neg') + '">' + bestTxt + '</b></div>';
+    return '<div class="rs-pk-head">' +
+      '<div class="rs-pk-title">' +
+        '<span class="kicker">' + esc(P.kicker) + '</span>' +
+        '<h2>' + esc(P.title) + '</h2>' +
+        '<p class="rs-pk-sub">' + esc(P.sub) + '</p>' +
+        '<p class="rs-pk-stamp">' + esc(stamp) + '</p>' +
+      '</div>' +
+      '<div class="rs-pk-stats">' + stats + '</div>' +
+    '</div>';
+  }
+
+  function pokeCard(it) {
+    var margin = it.margin || 0;
+    var cls = margin >= 0 ? 'pos' : 'neg';
+    var bep = (it.bep === 0 || it.bep) ? it.bep : null;
+    var below = bep != null && it.jpCheap && it.jpCheap > 0 && it.jpCheap <= bep;
+    var code = esc((it.set || '') + ' ' + (it.cardNo || '')).trim();
+    var rows = '' +
+      '<div><dt>' + esc(P.colJp) + '</dt><dd>' + yen(it.jp) + '</dd></div>' +
+      (it.jpCheap && it.jpCheap !== it.jp
+        ? '<div><dt>' + esc(P.colCheap) + (it.jpCheapCond ? ' \u00b7 ' + esc(it.jpCheapCond) : '') + '</dt><dd>' + yen(it.jpCheap) + '</dd></div>'
+        : '') +
+      '<div><dt>' + esc(P.colKr) + '</dt><dd>' + krw(it.kr) + '</dd></div>' +
+      '<div><dt>' + esc(P.colSell) + '</dt><dd>' + krw(it.sell) + '</dd></div>' +
+      '<div><dt>' + esc(P.colFee) + '</dt><dd>' + krw(it.customs || 0) + ' \u00b7 ' + krw(it.shipping || 0) + '</dd></div>' +
+      '<div><dt>' + esc(P.colCost) + '</dt><dd>' + krw(it.invested) + '</dd></div>';
+    return '<article class="rs-pk-card">' +
+      '<div class="rs-pk-top">' +
+        '<span class="rs-pk-rank">' + String(it.rank).padStart(2, '0') + '</span>' +
+        '<span class="rs-pk-tag">' + code + '</span>' +
+        (it.rarity ? '<span class="rs-pk-tag">' + esc(it.rarity) + '</span>' : '') +
+        (below ? '<span class="rs-pk-flag">' + esc(P.bepBelow) + '</span>' : '') +
+      '</div>' +
+      '<h3 class="rs-pk-name">' + esc(pokeName(it)) + '</h3>' +
+      (it.setKo && LANG === 'ko' ? '<p class="rs-pk-sku">' + esc(it.setKo) + '</p>' : '') +
+      '<dl class="rs-pk-rows">' + rows + '</dl>' +
+      '<div class="rs-pk-margin ' + cls + '">' +
+        '<span class="k">' + esc(P.colMargin) + '</span>' +
+        '<b>' + signed(margin) + '<i>' + esc(CURRENCY === 'KRW' ? '\uc6d0' : 'KRW') + '</i></b>' +
+        '<span class="r">ROI ' + pct(it.roi) + '</span>' +
+      '</div>' +
+      '<p class="rs-pk-bep"><span>' + esc(P.bep) + '</span><b>' + (bep != null ? yen(bep) : '\u2014') + '</b></p>' +
+      '<p class="rs-pk-links">' +
+        (it.jpUrl ? '<a href="' + esc(it.jpUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(P.linkJp) + ' \u2197</a>' : '') +
+        (it.krUrl ? '<a href="' + esc(it.krUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(P.linkKr) + ' \u2197</a>' : '') +
+      '</p>' +
+      '<button type="button" class="rs-pk-fill" data-fill="' + esc(JSON.stringify(it.fill || {})) + '">' + esc(P.fill) + ' \u2192</button>' +
+    '</article>';
+  }
+
+  function pokeNotes(d) {
+    var scan = d.scan || {};
+    var pos = scan.positive || 0;
+    var resolved = scan.resolved || 0;
+    var warn = pos === 0 ? tpl(P.allNeg, { n: resolved }) : (pos < resolved ? tpl(P.some, { n: resolved, p: pos }) : '');
+    return (warn ? '<p class="rs-pk-warn">' + esc(warn) + '</p>' : '') +
+      '<div class="rs-pk-notes">' +
+        '<b>' + esc(P.noteTitle) + '</b>' +
+        '<p>' + P.note1 + '</p>' +
+        '<p>' + P.note2 + '</p>' +
+        '<p>' + P.note3 + '</p>' +
+        '<p class="hw">' + esc(P.hw) + '</p>' +
+      '</div>';
+  }
+
+  function renderPoke(d) {
+    var items = (d && d.items) || [];
+    if (!POKE || !items.length) return;
+    var age = (Date.now() - new Date(d.generatedAt || d.date).getTime()) / 36e5;
+    if (isFinite(age) && age > 96) return;
+    POKE.innerHTML = pokeHead(d) +
+      '<div class="rs-pk-grid">' + items.map(pokeCard).join('') + '</div>' + pokeNotes(d);
+    POKE.hidden = false;
+  }
+
+  [MOUNT, POKE].forEach(function (el) {
+    if (!el) return;
+    el.addEventListener('click', function (e) {
+      var btn = e.target.closest ? e.target.closest('.rs-pk-fill') : null;
+      if (!btn) return;
+      var raw = btn.getAttribute('data-fill');
+      try { fillCalculator(JSON.parse(raw)); } catch (err) { /* 값이 깨졌으면 아무 일도 하지 않습니다 */ }
+    });
   });
 
   /* ---------------- 불러오기 ---------------- */
@@ -295,6 +482,10 @@
     fetch(base() + 'data/resell-picks.json', { cache: 'no-store' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (d) { if (d) render(d); })
+      .catch(function () { /* 데이터가 없으면 섹션을 그리지 않습니다 */ });
+    fetch(base() + 'data/pokemon-picks.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { if (d) renderPoke(d); })
       .catch(function () { /* 데이터가 없으면 섹션을 그리지 않습니다 */ });
   }
 

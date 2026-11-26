@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/resell.css?v=20261126a">
-<link rel="stylesheet" href="../assets/css/resell-picks.css?v=20261126c">
+<link rel="stylesheet" href="../assets/css/resell-picks.css?v=20261127a">
 <link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
 <script type="application/ld+json">
 {
@@ -198,6 +198,10 @@
     <section class="rs-picks" id="rs-picks" hidden></section>
     <!-- /IB:RESELL-PICKS -->
 
+    <!-- IB:RESELL-POKE — 포켓몬 카드 국내외 시세 차익: data/pokemon-picks.json 을 assets/js/resell-picks.js 가 카드로 그립니다. -->
+    <section class="rs-picks rs-picks--poke" id="rs-poke" hidden></section>
+    <!-- /IB:RESELL-POKE -->
+
     <div class="rs-tabs" role="tablist" aria-label="采购渠道">
       <button class="rs-tab" type="button" role="tab" id="rs-tab-abroad" data-tab="abroad" aria-selected="true" aria-controls="rs-panel-abroad" tabindex="0">
         <span class="t-code">OVERSEAS · DIRECT PURCHASE</span>
@@ -254,6 +258,7 @@
                   <option value="8" data-key="tech">科技·电子产品 — 关税 8%</option>
                   <option value="8" data-key="watch">手表·珠宝 — 关税 8%</option>
                   <option value="8" data-key="sports">运动·爱好 — 关税 8%</option>
+                  <option value="0" data-key="card">포켓몬 카드(TCG) — 관세 0%</option>
                   <option value="" data-key="custom">手动输入</option>
                 </select>
                 <span class="hint" id="rs-a-cat-hint">关税 13% 加增值税 10%，相当于完税价格的 24.3%。</span>
@@ -546,7 +551,7 @@
 <div class="rs-toast" id="rs-toast" role="status" aria-live="polite"></div>
 <script src="../assets/js/monetize.js?v=20261126a" defer></script>
 <script src="../assets/js/resell.js?v=20261126a" defer></script>
-<script src="../assets/js/resell-picks.js?v=20261126c" defer></script>
+<script src="../assets/js/resell-picks.js?v=20261127a" defer></script>
 <script src="../assets/js/nav.js?v=20261124c"></script>
 <script src="data/i18n.fallback.js?v=20261124a"></script>
 <script src="../assets/js/i18n.js?v=20261124a"></script>
