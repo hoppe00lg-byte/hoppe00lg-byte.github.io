@@ -263,16 +263,18 @@
       for (yy = Math.round(top + bh * 0.55); yy <= Math.round(top + bh * 0.70); yy++) {
         if (rows[yy]) hw = Math.max(hw, rows[yy].max - rows[yy].min);
       }
-      if (sw > 8 && hw > 8) {
+      var bboxW = 0;
+      for (yy = top; yy <= bottom; yy++) if (rows[yy]) bboxW = Math.max(bboxW, rows[yy].max - rows[yy].min);
+      /* 사람의 세로/어깨폭 비는 대략 2.8~4배 — 2.2 미만이면 상체 사진으로 봅니다 */
+      fullBody = (bh / H > 0.45) && (bboxW > 0 && bh / bboxW >= 2.2);
+      /* 어깨/힙 비율은 전신 사진에서만 의미가 있습니다 */
+      if (fullBody && sw > 8 && hw > 8) {
         var ratio = sw / hw;
         shoulderHip = Math.round(ratio * 100) / 100;
         if (ratio >= 1.14) bodyGuess = 'inverted';
         else if (ratio <= 0.9) bodyGuess = 'pear';
         else bodyGuess = 'standard';
       }
-      var bboxW = 0;
-      for (yy = top; yy <= bottom; yy++) if (rows[yy]) bboxW = Math.max(bboxW, rows[yy].max - rows[yy].min);
-      fullBody = (bh / H > 0.55) && (bboxW > 0 && bh / bboxW > 1.15);
     }
 
     /* 4) 톤 판정 — Lab 의 b*(노랑)와 a*(붉음) 균형 */
@@ -382,12 +384,12 @@
     return { base: pal[0], sub: pal[1], point: pal[2] || pal[1] || pal[0], extra: pal.slice(0, 5) };
   }
   /* 조각별 색 배정 — 같은 색으로 도배되지 않게 칸마다 역할을 나눈다 */
-  function colorSlotFor(kind, item, style, cols) {
-    var want = item && item.color;
-    if (want === 'point') return cols.point;
-    if (want === 'sub') return cols.sub;
-    if (kind === 'bottom' && style !== 'minimal') return cols.sub;
-    if (kind === 'outer' && style === 'casual') return cols.sub;
+  function colorSlotFor(kind, item, cols, lookIndex) {
+    if (kind === 'point') return cols.point;
+    if (item && item.color === 'point') return cols.point;
+    /* 룩마다 한 칸만 보조색을 맡아 같은 색 도배를 막는다 */
+    var focus = ['outer', 'bottom', 'top'][(lookIndex || 0) % 3];
+    if (kind === focus) return cols.sub;
     return cols.base;
   }
   function glue(colorName, itemName) {
@@ -415,6 +417,7 @@
     /* 팔레트의 포인트 색은 룩마다 돌려 쓴다(같은 색만 나오지 않도록) */
     var pcPal = colorNames(d.personalColors[colorKey()].palette).extra;
     looks.forEach(function (lk, i) {
+      lk.idx = i;
       lk.colors = {
         base: pcPal[0],
         sub: pcPal[1 + (i % 2)] || pcPal[1] || pcPal[0],
@@ -470,7 +473,7 @@
     defs.forEach(function (d) {
       var it = lk[d[0]];
       if (!it) return;
-      rows.push({ kind: d[0], label: d[1], item: it, color: colorSlotFor(d[0], it, lk.style, lk.colors) });
+      rows.push({ kind: d[0], label: d[1], item: it, color: colorSlotFor(d[0], it, lk.colors, lk.idx) });
     });
     return rows;
   }
