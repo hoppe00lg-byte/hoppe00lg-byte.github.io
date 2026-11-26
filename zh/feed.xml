@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 26 Nov 2026 14:57:17 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 15:01:05 +0900</lastBuildDate>
+    <item>
+      <title></title>
+      <link>https://insightbriefnews.com/zh/a/electric-mat-auto-off-standard-gap.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/electric-mat-auto-off-standard-gap.html</guid>
+      <pubDate>Thu, 26 Nov 2026 14:50:00 +0900</pubDate>
+      <category>灾难·安全</category>
+      <description></description>
+    </item>
     <item>
       <title>3.25%不会在今天到来 —— 12月15日下午3点，以及各自的重新定价日</title>
       <link>https://insightbriefnews.com/zh/a/bok-325-loan-reset-date-dec15-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 05:30:00 +0900</pubDate>
       <category>经济·金融</category>
       <description>2025年，中国考区的TOPIK报名人数为7万267人，首次被越南超越、退居第二。与此同时，2026年上半年访韩中国人达321万，重回第一大客源国，团体游客免签已延长至12月31日。数字背后，是韩语用途从“看剧追星”转向留学、就业，以及消费从“扫货”转向“体验”的结构变化。</description>
-    </item>
-    <item>
-      <title>28个月里38家 — 3月9日起，AI学习数据要过审议室</title>
-      <link>https://insightbriefnews.com/zh/a/ai-training-data-exception-review-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/ai-training-data-exception-review-2027.html</guid>
-      <pubDate>Tue, 24 Nov 2026 22:15:00 +0900</pubDate>
-      <category>AI·科技</category>
-      <description>韩国个人信息保护委员会于2026年11月23日就AI学习用个人信息特例的施行令修正案进行立法预告，2027年3月9日施行。三项法律要件变成五道关口和一次审议；批准后6个月内未开始处理，处理将全部停止。此前承担这项工作的监管沙盒，在约28个半月里批准了38家企业。</description>
     </item>
   </channel>
 </rss>

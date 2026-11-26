@@ -44,7 +44,7 @@
       skinLow: '피부색 픽셀이 적어 톤 판단이 어렵습니다. 얼굴이 크게 나온 사진이 좋습니다.',
       metal: '어울리는 금속', seasonLabel: '계절', weekOf: '기준일',
       colorBase: '기본', colorSub: '보조', colorPoint: '포인트', colorExtra: '여유색',
-      bodyAutoNote: 'BMI와 사진으로 자동 계산했습니다. 다르면 직접 고르세요.',
+      bodyAutoNote: 'BMI(와 사진)로 자동 계산했습니다. 다르면 직접 고르세요.',
       bodyManualNote: '직접 고른 체형으로 추천합니다.',
       trendNote: '데이터 파일 기준', shopTip: '검색어를 그대로 붙여 넣으면 비슷한 상품이 나옵니다.',
       lookA11y: '코디 조합', paletteA11y: '추천 색상'
@@ -75,7 +75,7 @@
       skinLow: 'Too few skin pixels to judge tone — a closer face shot works better.',
       metal: 'Metal that suits you', seasonLabel: 'Season', weekOf: 'Data as of',
       colorBase: 'base', colorSub: 'secondary', colorPoint: 'accent', colorExtra: 'extra',
-      bodyAutoNote: 'Calculated from BMI and your photo. Pick another if it feels off.',
+      bodyAutoNote: 'Calculated from BMI and, if given, your photo. Pick another if it feels off.',
       bodyManualNote: 'Using the body type you selected.',
       trendNote: 'From the data file', shopTip: 'Paste the keyword into a shop search box as it is.',
       lookA11y: 'Outfit set', paletteA11y: 'Suggested colours'
@@ -106,7 +106,7 @@
       skinLow: '肤色像素太少，难以判断色调。建议用面部较大的照片。',
       metal: '适合的金属', seasonLabel: '季节', weekOf: '数据基准日',
       colorBase: '主色', colorSub: '辅色', colorPoint: '点缀', colorExtra: '备用',
-      bodyAutoNote: '已根据 BMI 与照片自动计算，不合适可自行选择。',
+      bodyAutoNote: '已根据 BMI（与照片）自动计算，不合适可自行选择。',
       bodyManualNote: '按你选择的体型推荐。',
       trendNote: '依据数据文件', shopTip: '把关键词原样粘贴到购物搜索框即可。',
       lookA11y: '搭配组合', paletteA11y: '推荐色彩'
@@ -137,7 +137,7 @@
       skinLow: '肌色のピクセルが少なく色味を判定しづらいです。顔が大きく写った写真が向いています。',
       metal: '似合う金属', seasonLabel: '季節', weekOf: 'データ基準日',
       colorBase: 'ベース', colorSub: 'サブ', colorPoint: 'アクセント', colorExtra: '予備',
-      bodyAutoNote: 'BMIと写真から自動計算しました。違う場合は選び直してください。',
+      bodyAutoNote: 'BMI（と写真）から自動計算しました。違う場合は選び直してください。',
       bodyManualNote: '選んだ体型で提案しています。',
       trendNote: 'データファイル基準', shopTip: 'キーワードをそのままショップの検索窓に貼ってください。',
       lookA11y: 'コーデの組み合わせ', paletteA11y: 'おすすめカラー'
@@ -210,6 +210,23 @@
     return { L: 116 * fy - 16, a: 500 * (fx - fy), b: 200 * (fy - fz) };
   }
 
+  function skinStats(img, W, reg) {
+    var n = 0, sr = 0, sg = 0, sb = 0;
+    for (var y = reg.y0; y < reg.y1; y++) {
+      for (var x = reg.x0; x < reg.x1; x++) {
+        var p = (y * W + x) * 4;
+        var r = img[p], g = img[p + 1], b = img[p + 2];
+        var cb = 128 - 0.168736 * r - 0.331264 * g + 0.5 * b;
+        var cr = 128 + 0.5 * r - 0.418688 * g - 0.081312 * b;
+        if (r > 60 && g > 30 && b > 15 && r > g && r > b && (r - g) > 8 &&
+            cb >= 77 && cb <= 135 && cr >= 133 && cr <= 180) {
+          n++; sr += r; sg += g; sb += b;
+        }
+      }
+    }
+    return { n: n, r: sr / (n || 1), g: sg / (n || 1), b: sb / (n || 1) };
+  }
+
   function analyzeCanvas(cv) {
     var ctx = cv.getContext('2d', { willReadFrequently: true });
     var W = cv.width, H = cv.height;
@@ -223,27 +240,17 @@
     for (y = 0; y < H; y += 2) { add((y * W + 0) * 4); add((y * W + W - 1) * 4); }
     br /= n; bg /= n; bb /= n;
 
-    /* 2) 전경 마스크 + 피부색 */
+    /* 2) 전경 마스크 — 배경색과 충분히 다른 픽셀 */
     var mask = new Uint8Array(W * H);
-    var skinN = 0, sr = 0, sg = 0, sb = 0;
     for (y = 0; y < H; y++) {
       for (x = 0; x < W; x++) {
         p = (y * W + x) * 4;
-        var r = img[p], g = img[p + 1], b = img[p + 2];
-        var dist = Math.abs(r - br) + Math.abs(g - bg) + Math.abs(b - bb);
+        var dist = Math.abs(img[p] - br) + Math.abs(img[p + 1] - bg) + Math.abs(img[p + 2] - bb);
         if (dist > 72) mask[y * W + x] = 1;
-        var cb = 128 - 0.168736 * r - 0.331264 * g + 0.5 * b;
-        var cr = 128 + 0.5 * r - 0.418688 * g - 0.081312 * b;
-        if (r > 60 && g > 30 && b > 15 && r > g && r > b && (r - g) > 8 &&
-            cb >= 77 && cb <= 135 && cr >= 133 && cr <= 180) {
-          skinN++; sr += r; sg += g; sb += b;
-        }
       }
     }
-    var total = W * H;
-    var skinRatio = skinN / total;
 
-    /* 3) 윤곽선 폭 — 어깨/힙 비율 */
+    /* 3) 행별 폭 — 어깨/힙 비율의 바탕 */
     var rows = [], top = -1, bottom = -1;
     for (y = 0; y < H; y++) {
       var cnt = 0, minX = W, maxX = -1;
@@ -253,21 +260,21 @@
       rows.push({ cnt: cnt, min: minX, max: maxX });
       if (cnt > W * 0.03) { if (top < 0) top = y; bottom = y; }
     }
-    var bodyGuess = null, shoulderHip = null, fullBody = null;
+
+    /* 4) 구도 판정 + 어깨/힙 비율 (전신일 때만) */
+    var bodyGuess = null, shoulderHip = null, fullBody = null, bh = 0;
     if (top >= 0 && bottom - top > H * 0.12) {
-      var bh = bottom - top + 1;
-      var sw = 0, hw = 0, yy;
+      bh = bottom - top + 1;
+      var sw = 0, hw = 0, yy, bboxW = 0;
       for (yy = Math.round(top + bh * 0.16); yy <= Math.round(top + bh * 0.30); yy++) {
         if (rows[yy]) sw = Math.max(sw, rows[yy].max - rows[yy].min);
       }
       for (yy = Math.round(top + bh * 0.55); yy <= Math.round(top + bh * 0.70); yy++) {
         if (rows[yy]) hw = Math.max(hw, rows[yy].max - rows[yy].min);
       }
-      var bboxW = 0;
       for (yy = top; yy <= bottom; yy++) if (rows[yy]) bboxW = Math.max(bboxW, rows[yy].max - rows[yy].min);
       /* 사람의 세로/어깨폭 비는 대략 2.8~4배 — 2.2 미만이면 상체 사진으로 봅니다 */
       fullBody = (bh / H > 0.45) && (bboxW > 0 && bh / bboxW >= 2.2);
-      /* 어깨/힙 비율은 전신 사진에서만 의미가 있습니다 */
       if (fullBody && sw > 8 && hw > 8) {
         var ratio = sw / hw;
         shoulderHip = Math.round(ratio * 100) / 100;
@@ -277,11 +284,26 @@
       }
     }
 
-    /* 4) 톤 판정 — Lab 의 b*(노랑)와 a*(붉음) 균형 */
+    /* 5) 피부색 — 얼굴이 있는 위쪽 영역을 먼저 본다(옷 색에 끌리지 않게) */
+    var total = W * H;
+    var acc = { n: 0 };
+    if (top >= 0) {
+      /* 머리는 전신에서 위쪽 12% 남짓 — 좁은 띠부터 넓혀 가며 피부를 찾는다 */
+      var bands = [0.12, 0.25, 0.5, 1];
+      for (var bi = 0; bi < bands.length; bi++) {
+        var band = skinStats(img, W, { x0: 0, y0: top, x1: W, y1: Math.min(bottom + 1, top + Math.max(1, Math.round(bh * bands[bi]))) });
+        if (band.n >= 300) { acc = band; break; }
+        if (band.n > acc.n) acc = band;
+      }
+    }
+    if (acc.n < 300) acc = skinStats(img, W, { x0: 0, y0: 0, x1: W, y1: H });
+    var skinRatio = acc.n / total;
+
+    /* 6) 톤 판정 — Lab 의 b*(노랑)와 a*(붉음) 균형 */
     var out = { tone: null, light: 'light', lab: null, skinRatio: skinRatio, shoulderHip: shoulderHip, bodyGuess: bodyGuess, full: fullBody, conf: 0 };
-    if (skinN > total * 0.004 && skinN > 400) {
-      var lab = rgbToLab(sr / skinN, sg / skinN, sb / skinN);
-      var warmth = lab.b - lab.a;               // 피부의 노랑-붉음 균형
+    if (acc.n > total * 0.004 && acc.n > 300) {
+      var lab = rgbToLab(acc.r, acc.g, acc.b);
+      var warmth = lab.b - lab.a;               /* 피부의 노랑-붉음 균형 */
       out.lab = { L: Math.round(lab.L), a: Math.round(lab.a * 10) / 10, b: Math.round(lab.b * 10) / 10, warmth: Math.round(warmth * 10) / 10 };
       out.tone = warmth >= 7 ? 'warm' : (warmth <= 2.5 ? 'cool' : 'neutral');
       out.light = lab.L >= 62 ? 'light' : 'deep';

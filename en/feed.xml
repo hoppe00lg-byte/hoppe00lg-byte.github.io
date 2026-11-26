@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 14:57:14 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 15:01:01 +0900</lastBuildDate>
+    <item>
+      <title>Devices that turn off on time are not included in the standards — 2,354 cases in 5 years of electric blankets, 37 deaths</title>
+      <link>https://insightbriefnews.com/en/a/electric-mat-auto-off-standard-gap.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/electric-mat-auto-off-standard-gap.html</guid>
+      <pubDate>Thu, 26 Nov 2026 14:50:00 +0900</pubDate>
+      <category>Disaster &amp; Safety</category>
+      <description>There were 2,354 fires caused by electric blankets and electric heaters in 5 years, and 37 people died. Of the 532 fires due to carelessness in electric blankets, 87% were listed as ‘use/installation’. However, the safety standard KC 60335-2-17 sets the temperature of the heating element and surface in numbers, but does not require a device to turn itself off after a certain period of time. After certification, the only window to check whether the product is as certified is the market survey every winter, and in that window, electric blankets and blankets are caught every year.</description>
+    </item>
     <item>
       <title>3.25% does not arrive today — December 15 at 3 p.m., and then your own reset date</title>
       <link>https://insightbriefnews.com/en/a/bok-325-loan-reset-date-dec15-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 07:00:00 +0900</pubDate>
       <category>Investigation</category>
       <description>There were 124,703 personal rehabilitation applications from January to September 2026. Looking at the cases handled last year alone, 44,914 cases were dismissed, canceled, or abolished. The rate of abolition before approval rose from 10.1% to 15.2%, and the average reimbursement rate for approved cases fell to 42.2%. 17.6% points vary depending on the court of jurisdiction.</description>
-    </item>
-    <item>
-      <title>566,665 TOPIK Applicants and 20 Million Visitors: How K-Pop and K-Dramas Turned Korean Learning Into a Real Economic Engine</title>
-      <link>https://insightbriefnews.com/en/a/topik-566665-20-million-visitors-korean-learning-economy.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/topik-566665-20-million-visitors-korean-learning-economy.html</guid>
-      <pubDate>Wed, 25 Nov 2026 05:10:00 +0900</pubDate>
-      <category>Economy &amp; Finance</category>
-      <description>Korea broke two records six weeks apart in late 2026: a record number of people signed up to be tested on their Korean, and a record number of foreigners showed up to spend money in the country. The link between them is real — but smaller, and messier, than the headline numbers suggest.</description>
     </item>
   </channel>
 </rss>

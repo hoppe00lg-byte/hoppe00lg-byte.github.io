@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 14:57:20 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 15:01:08 +0900</lastBuildDate>
+    <item>
+      <title></title>
+      <link>https://insightbriefnews.com/ja/a/electric-mat-auto-off-standard-gap.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/electric-mat-auto-off-standard-gap.html</guid>
+      <pubDate>Thu, 26 Nov 2026 14:50:00 +0900</pubDate>
+      <category>災害・安全</category>
+      <description></description>
+    </item>
     <item>
       <title>3.25%は今日は届かない — 12月15日午後3時、そして各自の金利再計算日</title>
       <link>https://insightbriefnews.com/ja/a/bok-325-loan-reset-date-dec15-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 05:20:00 +0900</pubDate>
       <category>経済・金融</category>
       <description>2026年1〜7月に韓国を訪れた日本人は228万人。日本人の海外旅行先に占める韓国の比率は28.03%と過去最高になった。2025年に日本からTOPIK（韓国語能力試験）に出願した人は4万9,290人で世界3位。円安でも韓国が選ばれる理由と、2027年から年15回に増える試験制度を、公式統計だけで整理する。</description>
-    </item>
-    <item>
-      <title>28か月で38社 — 3月9日から、AI学習データは審査室を通る</title>
-      <link>https://insightbriefnews.com/ja/a/ai-training-data-exception-review-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/ai-training-data-exception-review-2027.html</guid>
-      <pubDate>Tue, 24 Nov 2026 22:15:00 +0900</pubDate>
-      <category>AI・テック</category>
-      <description>個人情報保護委員会が2026年11月23日、AI学習用の個人情報特例の施行令改正案を立法予告した。2027年3月9日施行となる。三つの法律上の要件が五つの関門と審議になり、承認後6か月以内に始めなければ処理のすべてが止まる。これまでこの業務を担ってきた規制サンドボックスは、約28か月半で38社だった。</description>
     </item>
   </channel>
 </rss>

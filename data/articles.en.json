@@ -1,5 +1,132 @@
 [
  {
+  "id": "electric-mat-auto-off-standard-gap",
+  "category": "fire",
+  "title": "Devices that turn off on time are not included in the standards — 2,354 cases in 5 years of electric blankets, 37 deaths",
+  "deck": "There were 2,354 fires caused by electric blankets and electric heaters in 5 years, and 37 people died. Of the 532 fires due to carelessness in electric blankets, 87% were listed as ‘use/installation’. However, the safety standard KC 60335-2-17 sets the temperature of the heating element and surface in numbers, but does not require a device to turn itself off after a certain period of time. After certification, the only window to check whether the product is as certified is the market survey every winter, and in that window, electric blankets and blankets are caught every year.",
+  "date": "2026-11-26",
+  "sample": false,
+  "author": "Insight Brief Editorial Room",
+  "authorRole": "Disaster and Safety Team",
+  "publishedAt": "2026-11-26T14:50:00+09:00",
+  "updatedAt": "2026-11-26T14:50:00+09:00",
+  "readMinutes": 7,
+  "tags": [
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "",
+   "National Fire Agency"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "SAFETY FILE 03",
+   "word": "OFF"
+  },
+  "coverImage": "/assets/img/articles/electric-mat-auto-off-standard-gap.jpg",
+  "summary": [
+   "From 2021 to 2025, there were 2,354 fires caused by electric blankets and electric heaters, 37 deaths, and 219 injuries (Ministry of Public Administration and Security, November 18, 2026). Among the 532 fires caused by careless use or installation of electric blankets, 461 (87%) were caused by careless use or installation. However, the electrical appliance safety standard KC 60335-2-17 sets temperatures such as 95℃ for the heating wire and 37℃ for the surface, but does not include a provision requiring a device to turn itself off after a certain period of time. The only condition (22.110) is when a time setting device is present.",
+   "While the cause of the fire was attributed to humans, records from the product side also remained. Researchers at the Korea Electrical Safety Corporation analyzed 1,308 electric mat fires from 2016 to 2020, and 294 (22.5%) cases in which combustion was limited to the mat and there were no electrical traces were concluded to be 'negligence (leaving combustibles in close proximity)'. When 10 safety-certified products on the market were retested, 7 exceeded the surface temperature standard and 3 had thermostat parts that were different from those at the time of certification.",
+   "On December 11, 2025, the National Agency for Technology and Standards ordered the recall of 53 products in a survey of 1,119 winter products, and 5 out of 12 electrical products were electric blankets, electric cushions, and electric blankets. Electric blankets and mats are subject to safety certification with factory inspection and regular inspection every two years, but electric hot water mats are subject to safety confirmation without factory inspection."
+  ],
+  "body": "Write the conclusion first. **Electrical blankets do not turn off on their own over time.** Electrical appliance safety standards KC 60335-2-17 include a provision (22.110) that states that a control device that sets a time and automatically switches from high temperature output to low temperature output after a certain period of time \"must not automatically switch back to high temperature output.\" This is the condition when such a device exists. There is no provision in the preamble to the standards to require a device, and the word ‘timer’ does not appear once.\n\nThe numbers released by the Ministry of Public Administration and Security on November 18, 2026 are as follows. From 2021 to 2025, there were 2,354 fires caused by electric blankets (including electric blankets and electric cushions) and electric stoves (electric heaters and electric stoves), 37 deaths, and 219 injuries. Among the 532 fires caused by careless use or installation of electric blankets, 461 cases were due to careless use or installation, or 87%. On the same day, a notice recommends, “Use the time setting (timer) function to turn off the power after a certain period of time.” It is not a condition of the product, but a sentence left to the user.\n\n## Statistics that point to humans as the cause\n\nAccording to statistics from 2010 to 2019 released by the National Fire Agency in November 2020, there were 2,443 electric blanket fires and 47 deaths. The causes were electrical factors in 50.1% and carelessness in 19.4%.\n\nRecent statistics have the order reversed. The number of electric blanket fires from 2021 to 2023, which the Ministry of the Interior and Safety disclosed in November 2024, increased from 179 → 243 → 257, with carelessness accounting for the most at 44%. Negligence in device use and installation alone increased from 54 to 102 to 94, nearly doubling the number in 2021.\n\nThe two series cannot be placed side by side because the period and cause classification are different. However, recent statistics show that the cause is centered on people, not products.\n\n## What 87% can cover\n\nThe analysis published by the Electrical Safety Research Institute of the Korea Electrical Safety Corporation in the 2022 Journal of the Korea Fire Protection Society looks at that 87% again. When we looked at the fire investigation reports for 1,308 electric mat fires from 2016 to 2020, we found that 1,026 fires burned only at the point of ignition, of which 506 were localized fires, and 294 cases (22.5%) where combustion was limited to the mat and there were no electrical traces such as melt marks were concluded to be 'carelessness (leaving combustibles in close proximity)'.\n\n> Assuming that a defective product with no temperature control was used, if only some of the combustibles were carbonized and no other peculiarities were identified, it is highly likely that the fire investigator would have judged the fire to be caused by heat storage and concluded that it was carelessness by leaving combustibles in close proximity.\n\nHeat storage fires in which heat cannot escape by covering with blankets and fires heated by heating elements due to temperature control failures leave similar traces at the scene and are included in the same box in statistics.\n\n## 7 out of 10 certified products\n\nThe same paper re-tested 10 safety-certified products purchased on the market using KC 60335-2-17. There were 7 products that exceeded the surface temperature standard (37℃, toe area 45℃), and the temperature rose up to 64.3℃. One product (96.1℃) had a hot wire insulation temperature that exceeded the standard 95℃, and four products (maximum +66.7%) exceeded the allowable rated power range (+10%). When comparing the temperature controller with the product at the time of certification, there were three differences. Major elements such as current fuse, capacitor, and SCR were changed.\n\nThere are also products that were caught in the marketing investigation. The National Agency for Technology and Standards conducted five safety investigations on electric mats in 2014, 2016, 2018, 2019, and 2020 and ordered the recall of 76 products (8 electric blankets, 52 electric mats, and 16 electric blankets) from 53 companies. In the defect analysis, temperature rise test failures were the most common at 63 (86.3%). At the time of the investigation, the recalled product was still being sold in 3 out of 10 traditional markets and second-hand trading sites.\n\n## List to be released in December\n\nThe announcement on December 11 last year also had the same structure. We investigated 1,119 products in 54 winter items and ordered a recall of 53 products, and 5 out of 12 electrical items were heating items. The heating elements of two electric blankets were 113.5℃ and 108.8℃ (standard 95℃), the surfaces of two electric cushions were 66.3℃ (standard 50℃) and 57.1℃, and one electric blanket was 110.0℃. In the 2022 winter product survey, 12 electric mats, electric blankets, and electric cushions were ordered to be recalled because they exceeded the temperature rise standards.\n\n![An electric blanket folded under the blanket and turned on, a plug plugged into a wall outlet, and a small thermostat on the side table.](/assets/img/articles/electric-mat-auto-off-standard-gap.jpg)\n\n## A window into the system\n\nElectric blankets, mats, and electric beds are subject to safety certification (Appendix 3 of the Enforcement Rules of the Electrical Appliances and Household Products Safety Management Act). Safety certification involves both product testing and factory inspection (Article 2, Paragraph 5 of the Act), and even after certification, regular inspections are conducted once every two years, and self-inspection records must be kept for each product (Article 7).\n\nThe test is not easy. It includes 100,000 thermostat operations, 10,000 automatic reset overheating prevention devices (24.1.4), 500-hour temperature rise, and abnormal operation in the three-layer folded state (19.110) and the heating wire bundled (19.113). Temperature limits are also set in numbers. Heat insulation is 95°C, pad surface is 50°C (85°C for up to 2 hours), blanket and mattress are 60°C for the first hour under sleeping conditions, then one-third of the toes are 45°C and the rest is 37°C (11.101).\n\nThere is also an obligation to display. The mattress must contain a warning message saying ‘Do not fold or crumple,’ the manual and the product must contain a warning about low-temperature burns, and the control unit must have a manual switch and an off sign (Article 7, 22.112). What is missing is time. The standard sets the temperature, and the time is left to the user.\n\n## Same mat, different door\n\nElectric hot water mats are of different grades. Since it is subject to safety confirmation, it only needs to be tested by a testing agency and reported, and there are no factory inspections or regular inspections (Appendix 4, Article 15 of the Act). Of the 4,154 heating appliance accidents reported by the Korea Consumer Agency between 2020 and 2024, hot water mats accounted for 684 cases, of which 415 (60.7%) were related to product defects, the highest among the items. Although it cannot be concluded that there are many accidents due to the low grade, the fact that the items with the most complaints of product defects are in a grade without even factory inspection is evident in the numbers.\n\n## One extra line\n\nFive-year statistics show that 87% is at the fingertips of people, and safety standards set the temperature but not the time. After certification, the window to check whether the product is as certified is a market survey held every winter, and several electric blankets and blankets are caught in that window every year.\n\nThere are three things you can do at home. Check whether or not there is a recall at the Product Safety Information Center using the KC certification number on the label. When storing, do not fold or round the product, and do not use latex mattresses or thick blankets. The surface temperature for sleeping is preferably 37℃ or lower.\n\nThis article only reports to the extent confirmed by condolences, government press releases, academic papers, and recall announcements. It was not possible to confirm when the classification of the two statistical series changed and the actual recovery rate of recalled products.\n",
+  "sources": [
+   {
+    "name": "행정안전부 보도자료 「전기장판·전기난로 안전사용 하세요!」 (2026. 11. 18.)",
+    "url": "https://www.mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=131027",
+    "note": "2021~2025년 전기장판(전기담요·전기방석 포함)·전기난로 화재 2,354건, 사망 37명, 부상 219명 / 전기장판 부주의 532건 중 사용·설치 부주의 461건(87%) / 전기난로 부주의 674건 중 가연물 근접 344건(51%) / \"시간설정(타이머) 기능을 활용해 일정 시간 후 전원이 꺼지도록\" 권고"
+   },
+   {
+    "name": "행정안전부 보도자료 「전기난로, 전기장판 안전하게 사용해 화재 예방하세요!」 (2024. 11. 27.)",
+    "url": "https://www.ciss.go.kr/DATA/bbs/86/20241129094632644.pdf",
+    "note": "2021~2023년 전기장판 화재 179→243→257건 / 부주의 전기장판 44%·전기난로 57% / 기기 사용(설치) 부주의 54→102→94건 / 전기난로·전기장판 합계 1,403건, 사망 21명, 부상 142명"
+   },
+   {
+    "name": "연합뉴스 「겨울철 전기장판 화재 급증…소방청, 화재주의보 발령」 (2020. 11. 25.) — 소방청 발표 인용",
+    "url": "https://www.yna.co.kr/view/AKR20201125042400530",
+    "note": "2010~2019년 난방기기 화재 8,544건 중 전기장판 2,443건(28.6%) / 전기장판 화재 사망 47명·부상 263명 / 원인 전기적 50.1%·기계적 23.9%·부주의 19.4% / 월별 1월 457건"
+   },
+   {
+    "name": "박광묵·최재혁·방준호, 「전기매트 리콜제품 유통현황 조사 및 안전성 실험을 통한 문제점 분석」, 한국화재소방학회 논문지 36(5):93-105 (2022. 10. 31.)",
+    "url": "https://www.kifsejournal.or.kr/journal/view.php?number=2132",
+    "note": "2016~2020년 전기매트 화재 1,308건 중 발화지점만 연소 1,026건, 국소지점 506건, 매트 한정·전기적 특이점 없는 294건(22.48%)이 부주의(가연물 근접방치)로 결론 / 안전인증 제품 10개 시험에서 표면온도 기준(37℃·발끝 45℃) 초과 7개(최대 64.3℃·46.4℃), 열선 96.1℃ 1개, 정격전력 초과 4개(최대 +66.7%), 온도조절기 동일성 상이 3개 / 리콜 5차례(2014·2016·2018·2019·2020) 53개 업체 76개 제품(전기요 8·전기매트 52·전기장판 16) / 온도상승 부적합 63개(86.3%) / 전통시장 10곳 중 3곳에서 리콜제품 판매"
+   },
+   {
+    "name": "전기용품안전기준 KC 60335-2-17 (모포·패드 및 이와 유사한 유연성을 가진 전열기기의 개별 요구사항, 2015. 11. 9. 개정)",
+    "url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=169459025",
+    "note": "11.101 담요·매트리스 열사병 방지 시험(첫 1시간 60℃, 이후 발끝 1/3 45℃·나머지 37℃) / 표 101 패드 표면 50℃(2시간까지 85℃), 전열소자 115·95·120·100℃ / 19.110 패드 3겹 접음, 19.113 발열선 뭉치 / 22.110 시간 설정 제어장치의 고온 복귀 금지 / 22.112 수동 스위치·꺼짐 표시 / 24.1.4 온도조절기 10만 회·과승방지장치 1만 회 / 7. 표시(접거나 구겨서 사용 금지, 저온화상 주의 문구) / 전문에 '타이머' 표기 없음"
+   },
+   {
+    "name": "전기용품 및 생활용품 안전관리법 (법률 제21065호, 2025. 10. 1. 시행)",
+    "url": "https://www.law.go.kr/LSW/lsInfoR.do?ancYnChk=0&chrClsCd=010202&efYd=20251001&lsiSeq=276591",
+    "note": "제2조 5호 안전인증=제품시험+공장심사, 6호 안전확인=안전확인시험 / 제5조 안전인증 의무 / 제7조 2년에 1회 정기검사, 자체검사 기록 / 제15조 안전확인시험·신고"
+   },
+   {
+    "name": "전기용품 및 생활용품 안전관리법 시행규칙 별표3 안전인증대상제품 (2026. 4. 1. 개정)",
+    "url": "https://www.law.go.kr/LSW/flDownload.do?flSeq=171244357",
+    "note": "1. 안전인증대상전기용품 사목 9) 전기담요 및 매트, 전기침대"
+   },
+   {
+    "name": "전기용품 및 생활용품 안전관리법 시행규칙 별표4 안전확인대상제품",
+    "url": "https://www.motir.go.kr/attach/down/c26df36c4f964b1523b31be51e734922/9120180de1509c14503d18096acc8b05/c26df36c4f964b1523b31be51e734922",
+    "note": "1. 안전확인대상전기용품 사목 6) 전기온수매트"
+   },
+   {
+    "name": "산업통상부 국가기술표준원 「아동용 섬유제품, 학습교구 등 53개 제품 리콜명령」 (2025. 12. 11.)",
+    "url": "https://www.motir.go.kr/attach/down/095a2dda9c864e1d90d751f7668a1117/dbfc16d30bd51b7aa3e640f16464997e/778bdbf5db9ced7c8fd52756c00bf0cd",
+    "note": "겨울용품 54개 품목 1,119개 제품 조사, 53개 제품 리콜(어린이 34·전기 12·생활 7) / 전기요 2개 열선 113.5℃·108.8℃(기준 95℃) / 전기방석 2개 표면 66.3℃(기준 50℃)·57.1℃ / 전기장판 1개 110.0℃"
+   },
+   {
+    "name": "소비자24 「전기방석, 온열팩 등 58개 제품 리콜명령」 (2022. 12. 20.)",
+    "url": "https://www.consumer.go.kr/user/ftc/consumer/recallnews/801/selectRecallNewsView.do?recallNewsIdx=374",
+    "note": "2022년 겨울용품 56개 품목 1,387개 제품 조사 / 전기매트·전기장판·전기방석 등 12개 제품 온도상승 기준 부적합(기준온도 대비 최대 2.6배 초과)"
+   },
+   {
+    "name": "공정거래위원회·한국소비자원 「겨울철 난방용품 화재 안전사고 주의보 발령」 (2025. 12. 4.)",
+    "url": "https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=46724",
+    "note": "2020~2024년 소비자위해감시시스템 난방용품 안전사고 4,154건 / 전기장판·전기요 2,666건(64.2%) / 온수매트 684건, 제품 불량 415건(60.7%) / 전기장판·전기요 화재·과열 1,545건(58.0%) / 화상 494건(85.3%)"
+   },
+   {
+    "name": "한국소비자원 「비교공감 제2025-22호 탄소전기매트」 (2025. 12. 11.)",
+    "url": "https://www.consumer.go.kr/user/ftc/consumer/cnsmrBBS/79/selectInfoRptDetail.do?infoId=A1081252",
+    "note": "탄소매트 10개 제품 최대 표면온도 39~64℃ / \"수면 중에는 저온화상 방지를 위해 매트 표면온도를 37℃ 이하로 설정해야 한다\" / 전 제품 전기용품안전기준 적합"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check & sources",
+   "note": "",
+   "sources": [
+    {
+     "name": "KC 60335-2-17 22.110·22.112·11.101·19.110·19.113·24.1.4·7.",
+     "note": ""
+    },
+    {
+     "name": "",
+     "note": ""
+    },
+    {
+     "name": "",
+     "note": ""
+    },
+    {
+     "name": "",
+     "note": ""
+    },
+    {
+     "name": "",
+     "note": ""
+    }
+   ]
+  },
+  "disclaimer": "This article was written by collating the original condolences, government press releases, academic papers, and recall announcements. It was written that two figures from different statistical series were not compared using the same standards, and that matters that could not be confirmed could not be confirmed. Requests for corrections and rebuttals are accepted at contact.html."
+ },
+ {
   "id": "bok-325-loan-reset-date-dec15-2026",
   "category": "economy",
   "title": "3.25% does not arrive today — December 15 at 3 p.m., and then your own reset date",
