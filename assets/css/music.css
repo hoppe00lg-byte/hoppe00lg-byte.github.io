@@ -270,3 +270,6 @@
 @media print{
   .bgm-app{display:none!important}
 }
+
+/* hidden 속성이 display 규칙에 밀리지 않게 */
+.bgm-app [hidden]{display:none!important}

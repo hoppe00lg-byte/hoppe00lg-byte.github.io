@@ -493,8 +493,9 @@
     comp.attack.value = 0.006; comp.release.value = 0.25;
     master.connect(comp); comp.connect(ctx.destination);
 
+    var IR_SEC = Math.min(2.6, Math.max(1.2, len * 0.55));
     var conv = ctx.createConvolver();
-    conv.buffer = makeImpulse(ctx, Math.min(3.2, Math.max(1.4, len)), 2.6);
+    conv.buffer = makeImpulse(ctx, IR_SEC, 2.6);
     var revGain = ctx.createGain(); revGain.gain.value = Math.min(0.65, vibe.rev * mood.rev);
     conv.connect(revGain); revGain.connect(master);
 
@@ -970,7 +971,7 @@
     var ink = pal.ink;
     var margin = W * (tall ? 0.085 : 0.075);
     var titleSize = Math.round(unit * (tall ? 0.105 : 0.115));
-    var titleY = tall ? H * 0.70 : H * 0.66;
+    var titleY = o.video ? H * (tall ? 0.46 : 0.44) : H * (tall ? 0.70 : 0.66);
     g.textBaseline = 'alphabetic';
     g.fillStyle = ink;
     g.shadowColor = 'rgba(0,0,0,0.45)';
@@ -995,7 +996,7 @@
     g.globalAlpha = 1;
 
     /* 브랜드 */
-    var brandY = H - margin * 0.65;
+    var brandY = o.video ? metaY + unit * 0.075 : H - margin * 0.65;
     g.font = '700 ' + Math.round(unit * 0.026) + 'px Pretendard,system-ui,sans-serif';
     g.globalAlpha = 0.72;
     g.fillText('INSIGHT BRIEF', margin, brandY);
@@ -1394,7 +1395,7 @@
     base.width = W; base.height = H;
     drawCover(base, {
       w: W, h: H, vibe: S.vibe, mood: S.mood, bpm: S.bpm, keyLabel: keyLabel(),
-      title: titleText(), meta: metaLine(), seed: S.seed
+      title: titleText(), meta: metaLine(), seed: S.seed, video: true
     });
 
     var out = document.createElement('canvas');
@@ -1447,6 +1448,7 @@
       var el = document.getElementById('bgm-video-el');
       var dl = document.getElementById('bgm-video-dl-row');
       if (el) { el.src = videoUrl; el.load(); }
+      if (el) setTimeout(function () { fixDuration(el); }, 300);
       if (wrap) wrap.hidden = false;
       if (dl) dl.hidden = false;
       setVideoState(T.videoDone, 'ok');
@@ -1462,7 +1464,7 @@
     rec.start(100);
     src.start();
 
-    var bars = W > H ? 72 : 44;
+    var bars = W > H ? 96 : 56;
     function frame(now) {
       if (!recording) return;
       var t = actx2.currentTime - startT;
@@ -1472,14 +1474,22 @@
       g.drawImage(base, 0, 0, W, H);
 
       /* 스펙트럼 */
-      var areaTop = H * (W > H ? 0.68 : 0.72);
-      var areaH = H * (W > H ? 0.22 : 0.20);
+      var areaTop = H * (W > H ? 0.64 : 0.66);
+      var areaH = H * (W > H ? 0.24 : 0.22);
+      var scrim = g.createLinearGradient(0, areaTop - areaH * 0.25, 0, H);
+      scrim.addColorStop(0, 'rgba(0,0,0,0)');
+      scrim.addColorStop(0.45, 'rgba(0,0,0,0.28)');
+      scrim.addColorStop(1, 'rgba(0,0,0,0.52)');
+      g.fillStyle = scrim;
+      g.fillRect(0, areaTop - areaH * 0.25, W, H - (areaTop - areaH * 0.25));
       var bw = W / bars;
-      g.globalAlpha = 0.92;
+      g.globalAlpha = 0.95;
       for (var i = 0; i < bars; i++) {
         var idx = Math.floor(Math.pow(i / bars, 1.35) * (fbuf.length * 0.72));
         var v = fbuf[idx] / 255;
-        var h = Math.pow(v, 1.15) * areaH;
+        v = Math.pow(v, 0.8) * (1 + 0.6 * Math.pow(i / bars, 1.4));
+        if (v > 1) v = 1;
+        var h = Math.max(areaH * 0.012, v * areaH);
         var x = i * bw + bw * 0.18;
         var bwid = bw * 0.64;
         var lg = g.createLinearGradient(0, areaTop + areaH - h, 0, areaTop + areaH);
@@ -1534,6 +1544,20 @@
     el.className = 'bgm-note-inline' + (kind ? ' is-' + kind : '');
   }
 
+  /* MediaRecorder가 만든 WebM은 길이 정보가 헤더에 없어 미리보기의 seek 바가
+     비어 보입니다. 아주 먼 위치로 한 번 건너뛰면 브라우저가 전체 길이를 읽습니다. */
+  function fixDuration(v) {
+    try {
+      if (isFinite(v.duration) && v.duration > 0) return;
+      var done = function () {
+        v.removeEventListener('timeupdate', done);
+        try { v.currentTime = 0; } catch (e) { }
+      };
+      v.addEventListener('timeupdate', done);
+      v.currentTime = 1e101;
+    } catch (e) { }
+  }
+
   /* =========================================================
      10. 이벤트
      ========================================================= */
@@ -1572,6 +1596,7 @@
   function bind() {
     host.addEventListener('click', function (e) {
       var t = e.target;
+      if (recording && !t.closest('#bgm-video')) return;
       var v = t.closest('[data-bgm-vibe]');
       if (v) {
         S.vibe = v.getAttribute('data-bgm-vibe');
@@ -1645,6 +1670,7 @@
 
     host.addEventListener('input', function (e) {
       var t = e.target;
+      if (recording) return;
       if (t.id === 'bgm-bpm') {
         S.bpm = parseInt(t.value, 10) || 78;
         var bv = document.getElementById('bgm-bpm-val');
@@ -1659,6 +1685,7 @@
 
     host.addEventListener('change', function (e) {
       var t = e.target;
+      if (recording) return;
       if (t.id === 'bgm-key') {
         S.key = t.value;
         S.prog = progsFor(keyObj())[0].id;
