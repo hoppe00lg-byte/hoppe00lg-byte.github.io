@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 26 Nov 2026 10:25:08 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 10:56:32 +0900</lastBuildDate>
+    <item>
+      <title>97.8%与63.0% —— 一次答对的AI，和十六次都答对的AI</title>
+      <link>https://insightbriefnews.com/zh/a/hfe-reliability-floor-544-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/hfe-reliability-floor-544-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 10:45:00 +0900</pubDate>
+      <category>AI·科技</category>
+      <description>谷歌DeepMind于2026年11月24日在Kaggle发布“人类的第一次考试（HFE）”：544道数数、读词的题被编成136个“家族”，不是更难的题，而是考“每次是否都对”。前五名模型单次正确率为96%~98%，但在一个家族十六次尝试必须全部正确的规则下平均只有85.8%。差距从7.6到80.1个百分点，榜上没有韩国模型。</description>
+    </item>
     <item>
       <title>铁矿石跌至86.9美元，四年新低——重新推高高炉原料成本的是273美元的原料煤</title>
       <link>https://insightbriefnews.com/zh/a/iron-ore-four-year-low-coking-coal-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 21:15:00 +0900</pubDate>
       <category>贸易·原材料</category>
       <description>欧盟已将第三季度CBAM（碳边境调节机制）证书价格确定为每吨82.32欧元。但证书要到2027年2月1日才开始销售，首次申报在同年9月30日。韩国产热轧卷每吨的账单约合12万韩元，而国内验证机构直到11月5日才开门。</description>
-    </item>
-    <item>
-      <title>100人10万亿韩元——亚马逊在出售芯片之前购买的是“更换芯片所花费的钱”</title>
-      <link>https://insightbriefnews.com/zh/a/amazon-decart-chip-switching-cost-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/amazon-decart-chip-switching-cost-2026.html</guid>
-      <pubDate>Tue, 24 Nov 2026 16:45:00 +0900</pubDate>
-      <category>AI·科技</category>
-      <description>亚马逊决定收购Decart的优化软件DOS及其创始人和研究人员。亚马逊没有透露具体金额，但彭博社和 Calcalist 报道称其金额为 75 亿美元（约合 10.1 万亿韩元）。按100名员工计算，人均收入为1010亿韩元。亚马逊将于2027年底在AWS之外销售Tranium。要销售芯片，你必须先支付客户的搬家费用。</description>
     </item>
   </channel>
 </rss>

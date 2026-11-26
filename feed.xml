@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 26 Nov 2026 10:24:56 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 10:55:17 +0900</lastBuildDate>
+    <item>
+      <title>97.8%와 63.0% — 한 번 맞히는 AI와 열여섯 번 맞히는 AI</title>
+      <link>https://insightbriefnews.com/a/hfe-reliability-floor-544-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/hfe-reliability-floor-544-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 10:45:00 +0900</pubDate>
+      <category>AI·테크</category>
+      <description>구글 딥마인드가 2026년 11월 24일 캐글에 공개한 &#x27;인류의 첫 번째 시험(HFE)&#x27;은 어려운 문제가 아니라 세고 읽는 문제 544개를 136개 &#x27;가족&#x27;으로 묶었다. 상위 5개 모델의 단일 정답률은 96~98%였지만, 가족마다 16번의 시도가 모두 맞아야 하는 규칙에서는 평균 85.8%로 떨어졌다. 격차는 7.6~80.1%포인트이고, 이 표에 한국 모델은 없다.</description>
+    </item>
     <item>
       <title>철광석은 86.9달러로 4년 만의 최저인데 — 고로의 원료비를 다시 올린 것은 273달러짜리 원료탄이다</title>
       <link>https://insightbriefnews.com/a/iron-ore-four-year-low-coking-coal-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 16:45:00 +0900</pubDate>
       <category>AI·테크</category>
       <description>아마존이 데카트의 최적화 소프트웨어 DOS와 창업자·연구진을 사기로 했다. 아마존은 금액을 공개하지 않았고 블룸버그·칼칼리스트는 75억 달러(약 10조1,000억 원)로 전했다. 직원 100명 기준 한 사람당 1,010억 원이다. 아마존은 2027년 말 트레이니엄을 AWS 밖에 판다. 칩을 팔려면 고객의 이사 비용을 먼저 치러야 한다.</description>
-    </item>
-    <item>
-      <title>쿼터는 세 번 미뤄졌고 재고는 95일치다 — 이번 주 나올 기니 보크사이트 문서의 숫자</title>
-      <link>https://insightbriefnews.com/a/guinea-bauxite-quota-alumina-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/guinea-bauxite-quota-alumina-2027.html</guid>
-      <pubDate>Tue, 24 Nov 2026 15:15:00 +0900</pubDate>
-      <category>무역·원자재</category>
-      <description>기니가 이번 달 말 보크사이트 생산 규제 문서를 내놓겠다고 했다. 올해 1~9월 1억6,500만 톤을 판 나라가 시장에서 기대받는 상한은 1억5,000만 톤이다. 그런데 값은 하반기 내내 위안 70~72에서 움직이지 않았다. 중국 정제소가 95일치 재고를 쥐고 있어서다.</description>
     </item>
   </channel>
 </rss>

@@ -1,5 +1,126 @@
 [
  {
+  "id": "hfe-reliability-floor-544-2026",
+  "category": "ai",
+  "title": "97.8% and 63.0% — the AI that gets it right once and the AI that gets it right sixteen times",
+  "deck": "Google DeepMind published Humanity's First Exam (HFE) on Kaggle on November 24, 2026: 544 prompts about counting and reading, not hard problems, grouped into 136 families. The top five models score 96% to 98% on a single attempt, but under a rule that needs all sixteen attempts in a family to be right they average 85.8%. The gap runs from 7.6 to 80.1 points, and no Korean model is on the board.",
+  "date": "2026-11-26",
+  "sample": false,
+  "author": "Insight Brief Editorial Room",
+  "authorRole": "AI·Tech Team",
+  "publishedAt": "2026-11-26T10:45:00+09:00",
+  "readMinutes": 8,
+  "tags": [
+   "Humanity's First Exam",
+   "HFE",
+   "Google DeepMind",
+   "reliability floor",
+   "family pass⁴",
+   "pass@4",
+   "AI trustworthiness certification",
+   "CAT",
+   "ISO/IEC 42001",
+   "AI benchmark"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "TECH FILE 34",
+   "word": "RELIABILITY"
+  },
+  "coverImage": "/assets/img/articles/hfe-reliability-floor-544-2026.jpg",
+  "summary": [
+   "HFE, published by Google DeepMind on Kaggle on November 24, 2026, puts 544 basic prompts (316 of them with an image) into 136 families and answers every prompt six times, so a family passes only when all sixteen attempts are correct. It is not a harder test but a test of whether a model is right every time.",
+   "Across 58,752 rollouts from 18 models, the top five scored 96% to 98% on single attempts and got at least one of sixteen right in every family, yet their family pass⁴ averages 85.8%. GPT-6.2 Astra leads at 92.4% and Gemini 3.5 Flash-Lite trails at 18.6%, a gap of up to 80.1 points.",
+   "73% of wrong answers were visual perception errors. 112 prompts (28 families) are open under CC-BY-4.0, the other 432 are held out, and the Kaggle competition runs through December 15, 2026. Neither the 16-model leaderboard nor the 18-model paper includes a Korean model."
+  ],
+  "body": "On November 24, 2026, Google DeepMind posted Humanity's First Exam (HFE) on Kaggle. It is not hard maths or coding. One prompt asks how many coffee mugs in a photo have no steam rising from them. Its 544 prompts sit in 136 'families' across 20 foundational capabilities, and 316 of them (58.1%) come with an image.\n\n![An examination hall of sixteen desks in a row, the answer sheet on the last one crumpled and dropped on the floor](/assets/img/articles/hfe-reliability-floor-544-2026.jpg)\n\n## Fail once in sixteen and the family scores zero\n\nA family is one newly written seed prompt and three variants. The variants change object names, clause order and image layout while the logic stays and only the answer moves. Each prompt is answered six times independently, and the score is the chance that four drawn from those six are all correct: 1.0 for six out of six, 0.333 for five, 0.067 for four, zero for three or fewer. Multiplying the four prompt scores across the family gives family pass⁴, and only sixteen correct attempts out of sixteen earn a point. A seed survived only if at least three of four people solved it without tools (single-rater accuracy 90.8%, median solve one minute).\n\n## Where 6.6 points becomes 29.4\n\nThe paper had 18 models answer 58,752 times. The top five scored 96% to 98% on single attempts, and in every family at least one of sixteen attempts was right — 100%. Yet the share of families with all sixteen correct averages 85.8%. The best, GPT-6.2 Astra, reaches 92.4%, then Gemini 4 Neon at 85.8%, and the lowest, Gemini 3.5 Flash-Lite, 18.6%. The gap between the capability ceiling and the reliability floor runs from 7.6 points to 80.1 points.\n\n> \"Real-world deployment requires evaluations that enable us to measure and raise the reliability floor, not just the capability ceiling.\" — Google DeepMind, HFE technical report, November 24, 2026\n\nRepetition amplifies the difference. Claude Opus 5.5 scores 91.2% on a single attempt, only 6.6 points below Astra's 97.8%, but its family pass⁴ is 63.0% against 92.4% — a 29.4-point gap. Among families that fail, 61% to 85% got exactly one prompt wrong. The failure is not a missing capability but the inability to do the same thing the same way every time.\n\n## The failures are in the eyes\n\nOf 5,823 failed rollouts, 95% were wrong answers, and 73% of those were visual perception errors: misreading a position, direction or path in 31%, miscounting objects in 23%. Forty percent were off by a single element and 16% involved objects partly hidden or overlapping. The top nine models score 83% to 97% on text families but fall to 64% to 89% once an image is attached, and more thinking time barely fills the hole: dropping Gemini 4 Carbon from high to low effort costs 42.4 points on maths and algorithms (97.5% to 55.1%) but only 3.1 points on vision. Humans and models also rank the difficulty in opposite order (Spearman -0.64).\n\n## A refusal counts as a wrong answer\n\nWrong answers are not the only failures: 3% were refusals, 2% hit the output limit and 0.1% were harness errors. Every refusal came from Anthropic models. Opus 5.5 refused 1.6% of the time, and that alone took it from 67.4% to 63.0% — safety alignment billed as a score. Grading fell to Gemini 3.1 Pro, and with Google models on the same board the paper names that as a limitation; a re-grade of 1,492 failed pairs by Claude Fable 5.2 agreed on the cause 84% of the time (κ=0.81). The Kaggle leaderboard (16 models) and the paper (18) are separate runs, so the top score differs too: 90.7% and 92.4%.\n\n## In Korea, the forms still have no such column\n\nNo Korean model is on the board: all 16 on the leaderboard and all 18 in the paper come from Google, OpenAI and Anthropic. Korea's certification axis runs elsewhere. The AI Trustworthiness Certification (CAT) that the Telecommunications Technology Association (TTA) has run since December 2023 audits conformity with ISO/IEC 42001, 23894, TR 24028 and 38507 — all management-system, risk and governance standards, with no test method for whether an output is right every time. The KOLAS accreditation the Jeonju Information & Culture Industry Promotion Agency won on November 23 (ISO/IEC 4213, classification performance) measures accuracy once. Robustness (TR 24029) and data quality (ISO/IEC 5259) are planned additions; repeat consistency is not on the list.\n\nSo the only open tool in Korea for checking 'sixteen out of sixteen' is this exam. 112 prompts (28 families) are published under CC-BY-4.0, chosen for a 0.97 rank correlation with the full set, and the other 432 stay private. Apply the same rule — six draws per prompt, three variants, all sixteen — to your own model or retrieval-augmented pipeline, and procurement gets a second number to ask for.\n\n## December 15\n\nKaggle is running a three-week competition through December 15 for everyday questions that models still get wrong. Accepted prompts are cited in the next paper and the prizes are $50,000 worth of swag. DeepMind says frontier models have climbed far on this exam in six months. Yesterday's ceiling becomes today's floor, and the exam has to be rewritten at that speed.\n\nThe question this table answers is not 'can it work' but 'does it work every time'. The moment a model goes into repeat work, a 97.8% single-attempt score becomes advertising and sixteen becomes the contract term.\n",
+  "sources": [
+   {
+    "name": "Google DeepMind 블로그 — Oran Kelly, 「Humanity's First Exam: Testing LLM reliability」 (2026-11-24)",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/humanitys-first-exam/",
+    "note": "544개 문항·136개 가족·20개 기초 역량, 캐글 리더보드·기술보고서 링크, 12월 15일까지 3주 대회, 예시 문항(네온사인 세 번째 글자 색)"
+   },
+   {
+    "name": "Google DeepMind — HFE 기술보고서 「Humanity's First Exam: Measuring the Reliability Floor of LLMs」 (2026-11-24, PDF)",
+    "url": "https://storage.googleapis.com/deepmind-media/papers/hfe_tech_paper.pdf",
+    "note": "초록·표 1~6 · 18개 모델 58,752회, 가족 통과율 80.5~92.4%·격차 7.6~80.1%포인트, 오퍼스 5.5 단일 91.2% 대 아스트라 97.8%에 가족 63.0% 대 92.4%, 오답 73% 시각 인지, 거부 3%·출력 한도 2%·장치 오류 0.1%, Gemini 3.1 Pro 채점·교차 감사 84%·κ 0.81, 공개 112문항·순위 상관 0.97, 사람 기준 90.8%·중앙 1분"
+   },
+   {
+    "name": "Kaggle — Humanity's First Exam (HFE) 리더보드",
+    "url": "https://www.kaggle.com/benchmarks/deepmind/hfe/leaderboard",
+    "note": "16개 모델 순위(GPT-6.2 Astra 90.7% ±4.7 ~ Gemini 3.1 Flash-Lite Preview 18.5%), Harbor 격리 환경·인터넷 차단, 거부·빈 출력·잘림 0점, 참여 상금 5만 달러어치 굿즈"
+   },
+   {
+    "name": "Kaggle — Humanity's First Exam (HFE) 공개 데이터셋 (112문항, CC-BY-4.0)",
+    "url": "https://www.kaggle.com/datasets/deepmind/hfe-public",
+    "note": "28개 가족 112문항(텍스트 48·멀티모달 64), 6회 샘플·온도 1.0, 문항 점수 6/6=1.0·5/6=0.333·4/6=0.067, Gemini 3.1 Pro(temp 0) 채점, 432문항 비공개"
+   },
+   {
+    "name": "TTA 고객서비스포털 — 인공지능 신뢰성 인증(CAT) 개요",
+    "url": "https://cs.tta.or.kr/tta/introduce/introCont.do?tnc_cls_no=T000101&tnc_lab=T000002&up_tnc_cls_no=T000014",
+    "note": "ISO/IEC 23894·TR 24028·42001·38507 표준 적합성 검사, 대상 4종(제품·서비스 AI 위험관리·신뢰성 확보 조치, 조직 AI 경영시스템·거버넌스), ISO/IEC 국제표준 기반 시험·심사"
+   },
+   {
+    "name": "파이낸셜뉴스 — TTA 주도 'AI 신뢰성 얼라이언스' 출범 (2025-09-30)",
+    "url": "https://www.fnnews.com/news/202509301454256597",
+    "note": "CAT을 2023년 12월부터 운영, AI 기본법 제30조에 따른 민간 자율 검·인증, 2021년부터 분야별 '신뢰할 수 있는 인공지능 개발안내서' 보급"
+   },
+   {
+    "name": "TTA 보도자료 — 「AI 신뢰성 얼라이언스 2026-1차 총회」 (2026-04-30 배포)",
+    "url": "https://www.tta.or.kr/api/1.0/contentFile/download?name=20260430135939233_4DPX.pdf",
+    "note": "AI 기본법 시행 이후 검·인증 수요 증가, 고영향 AI 중심 시범 인증, 인증제도 고도화·심사원 양성 계획"
+   },
+   {
+    "name": "전자신문 — 전주정보문화산업진흥원, AI 분야 KOLAS 공인시험 인정 획득 (2026-11-23)",
+    "url": "https://www.etnews.com/20261123000161",
+    "note": "ISO/IEC 4213:2022 머신러닝 분류 성능평가 국제공인시험 인정, 7개 분야 공인시험성적서, 견고성(TR 24029)·시스템 품질(25059)·데이터 품질(5259)로 확대 계획"
+   },
+   {
+    "name": "인공지능신문 — 아무리 똑똑한 AI도 쉬운 문제에서 틀린다 (2026-11-25)",
+    "url": "https://www.aitimes.kr/news/articleView.html?idxno=42886",
+    "note": "기술보고서 수치 국문 정리: 18개 모델 순위·58,752회, 5,823건 실패 중 5,552건 오답, 73% 시각 인지, 40% 한 요소 차이, 16% 가림, 거부 원인 분석, 방법론 한계"
+   },
+   {
+    "name": "디지털포커스 — 구글 딥마인드, LLM 신뢰성 측정 벤치마크 '인류의 첫 시험' 공개 (2026-11-25)",
+    "url": "https://www.digitalfocus.news/news/articleView.html?idxno=25373",
+    "note": "국문 보도, 예시 문항 정답(green; yellow; white; blue; blue), 12월 15일까지 커뮤니티 문항 공모"
+   },
+   {
+    "name": "The Parameter — Google's new test asks whether AI models get easy questions right every time (2026-11-24)",
+    "url": "https://theparameter.ai/a/humanitys-first-exam/",
+    "note": "136개 가족·가족 통과율 정의, 사람 평가자 4명 중 3명 기준, 리더보드 수치와 신뢰구간, 공개 20%·순위 상관 0.97"
+   },
+   {
+    "name": "BenchLM — Humanity's First Exam (HFE) 모델별 점수 정리",
+    "url": "https://benchlm.ai/benchmarks/humanitys-first-exam",
+    "note": "16개 모델 점수·추론 설정·95% 구간, 가족 구성(시각 51·수학 40·공간 27·추론 18), 거부·빈 출력 0점 처리, 논문(18개)과 리더보드(16개) 차이"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check & sources",
+   "note": "'Sixteen' unpacks the rule: each prompt is answered six times, the prompt score is the chance that four drawn without replacement are all correct, and the four prompt scores are multiplied across the family. A family actually draws 24 answers (4 prompts x 6), and a prompt scores 1.0 only when six of six are right. The 85.8% average is the paper's figure for the top five models; across all 18 the range is 18.6% to 92.4%. The same material carries two boards: the paper's 18 models put GPT-6.2 Astra first at 92.4%, the Kaggle leaderboard's 16 models put it at 90.7% in an isolated environment, so this article quotes the paper and notes the leaderboard difference separately. The 90.8% human figure is single-rater accuracy on the 136 final seed prompts (494/544); the paper gives no human score on the variants or under the family rule. The prompts were adversarially filtered to expose model blind spots and many images are synthetic, so the paper itself says the scores are not an estimate of everyday failure rates. Grading was done by one model, Gemini 3.1 Pro (a cross-provider audit agreed on cause in 84% of cases, κ=0.81, and 3% of wrong rollouts were flagged as possibly defensible), and refusals, empty outputs and output-limit truncations all score zero; Opus 5.5's 4.4-point drop is what counting refusals as correct would recover. 'No Korean model' comes from reading the 16-row leaderboard and the 18-model table directly. The Korean comparison rests on TTA's published CAT overview and its list of ISO/IEC standards; the full CAT test items are not published on that page, so the point is that no repeat-consistency axis appears in the published criteria, not that none exists. The KOLAS scope for Jeonju is as reported by Electronic Times; the accreditation certificate itself was not examined. The Kaggle prize is 'a share of $50k in swag' as stated on the leaderboard page.",
+   "sources": [
+    {
+     "name": "HFE design, grading and results",
+     "note": "Google DeepMind technical report, Nov 24, 2026 (Tables 1-6); Kaggle HFE leaderboard and public dataset pages; DeepMind blog, Nov 24, 2026"
+    },
+    {
+     "name": "Cross-check of figures",
+     "note": "AI Times, Nov 25, 2026; Digital Focus, Nov 25, 2026; The Parameter, Nov 24, 2026; BenchLM HFE page"
+    },
+    {
+     "name": "Korea's certification and testing system",
+     "note": "TTA service portal, CAT overview; Financial News, Sep 30, 2025; TTA press release, Apr 30, 2026; Electronic Times, Nov 23, 2026"
+    },
+    {
+     "name": "Nature of the ISO/IEC standards",
+     "note": "ISO/IEC 42001 (AI management system), 23894 (risk management), TR 24028 (trustworthiness overview), 38507 (governance) — the criteria TTA lists"
+    }
+   ]
+  }
+ },
+ {
   "id": "iron-ore-four-year-low-coking-coal-2026",
   "category": "trade",
   "title": "Iron ore is at $86.9, a four-year low — but coking coal at $273 is what pushed the blast furnace's raw-material bill back up",
