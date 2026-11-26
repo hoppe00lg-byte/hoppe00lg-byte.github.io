@@ -926,8 +926,12 @@ def publish(articles_today: list[dict], commit: bool = True) -> bool:
     git("add", "-A")
     git("commit", "-m", "Publish: " + ", ".join(ids))
     if git("push", "origin", "HEAD:main") != 0:
-        log("! push 실패")
-        return False
+        # 다른 워크플로(색인·로또·시세)가 먼저 밀어 올렸을 수 있다 — 리베이스 후 한 번 더.
+        log("· push 충돌 — origin/main 으로 리베이스 후 재시도")
+        git("pull", "--rebase", "--autostash", "origin", "main")
+        if git("push", "origin", "HEAD:main") != 0:
+            log("! push 실패 — 다음 실행이 이어받습니다")
+            return False
     return True
 
 
