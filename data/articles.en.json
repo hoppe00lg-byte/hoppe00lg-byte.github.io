@@ -12,15 +12,15 @@
   "updatedAt": "2026-11-26T14:50:00+09:00",
   "readMinutes": 7,
   "tags": [
-   "",
-   "",
-   "",
-   "",
-   "",
-   "",
-   "",
-   "",
-   "",
+   "Electric blanket",
+   "Electric Mat",
+   "KC Certification",
+   "Safety Certification",
+   "Recall",
+   "Fire statistics",
+   "Low-temperature burns",
+   "Timer",
+   "National Agency for Technology and Standards",
    "National Fire Agency"
   ],
   "views": 0,
@@ -100,27 +100,27 @@
   ],
   "factCheck": {
    "title": "Fact check & sources",
-   "note": "",
+   "note": "Verified by checking the original text: There is no provision in the preamble to KC 60335-2-17 requiring a time setting device, and the 'timer' notation does not appear even once (22.110 is a condition for the presence of a device), temperature limits in 11.101 (60°C for the first hour, then 45°C for the toe third, 37°C for the remainder), and the pad surface in Table 101. 50℃ (85℃ for up to 2 hours), test items of 19.110, 19.113, 24.1.4, regular inspection every two years in Article 7, item classification in Annex 3 and Annex 4, temperature values from the recall announcement inquiry on December 11, 2025, and experimental and fire analysis values from the 2022 paper. What was not confirmed: The point in time when the cause classification system of the National Fire Information System was reorganized (the classification of the 2010-2019 series and the 2021 and later series was different, so the two rates were not directly compared), the actual recovery rate of recalled products, and the penetration rate of automatic shutoff and timer functions by product. Since the surface temperature value varies depending on the test conditions (ambient temperature, insulation, set value), the actual maximum surface temperature (39~64℃, ambient 20℃ condition) of the Korea Consumer Agency Comparison Gonggam and the KS standard test value were not compared as the same value.",
    "sources": [
     {
      "name": "KC 60335-2-17 22.110·22.112·11.101·19.110·19.113·24.1.4·7.",
-     "note": ""
+     "note": "No time setting device required / Manual switch/off display / Temperature limit / Folding/clumping test / Number of component operations / Display obligation"
     },
     {
-     "name": "",
-     "note": ""
+     "name": "Ministry of the Interior and Safety November 18, 2026 Press Release",
+     "note": "2,354 cases, 37 people, 219 people, 461 out of 532 careless cases (87%), timer recommended"
     },
     {
-     "name": "",
-     "note": ""
+     "name": "Ministry of the Interior and Safety November 27, 2024 Press Release",
+     "note": "179·243·257 cases from 2021 to 2023, 44% carelessness, 54·102·94 cases of careless use of devices."
     },
     {
-     "name": "",
-     "note": ""
+     "name": "2022 thesis by Korea Electrical Safety Corporation researchers",
+     "note": "294 out of 1,308 cases (22.5%) were classified carelessly, 7 out of 10 certified products exceeded the standards, and 3 parts were different."
     },
     {
-     "name": "",
-     "note": ""
+     "name": "National Agency for Technology and Standards Announcement of Recall on December 11, 2025",
+     "note": "2 electric blankets, 2 electric cushions, 1 electric blanket, heating wire 113.5·108.8·110.0℃, surface 66.3·57.1℃"
     }
    ]
   },

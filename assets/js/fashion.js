@@ -715,9 +715,10 @@
         return '<button type="button" data-g="' + g + '" aria-pressed="' + (state.gender === g ? 'true' : 'false') + '">' + esc(T.g[g]) + '</button>';
       }).join('') + '</div>');
 
-    html += field('02', T.height, '<div class="fs-num"><input type="number" id="fs-height" min="120" max="230" step="1" value="' + state.height + '" inputmode="numeric" aria-label="' + esc(T.height) + '"><span>cm</span></div>' +
+    html += field('02', T.height, '<div class="fs-nums">' +
+      '<div class="fs-num"><input type="number" id="fs-height" min="120" max="230" step="1" value="' + state.height + '" inputmode="numeric" aria-label="' + esc(T.height) + '"><span>cm</span></div>' +
       '<div class="fs-num"><input type="number" id="fs-weight" min="30" max="200" step="0.5" value="' + state.weight + '" inputmode="decimal" aria-label="' + esc(T.weight) + '"><span>kg</span></div>' +
-      '<p class="fs-bmi" id="fs-bmi"></p>');
+      '</div><p class="fs-bmi" id="fs-bmi"></p>');
 
     html += field('03', T.body, '<div class="fs-chips" id="fs-body-chips"></div>');
 
