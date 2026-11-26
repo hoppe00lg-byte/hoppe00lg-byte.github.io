@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>海外購入・中古リセール粗利計算機 — 精算額・純利益・損益分岐の仕入価格 | INSIGHT BRIEF</title>
+<meta name="description" content="海外で買ったものや中古で仕入れたものを転売したとき、手元にいくら残るかを先に計算します。仕入価格・転送と国際送料・関税と付加価値税（靴・衣類13%、テック・雑貨8%、付加価値税10%）・KREAM、バンジャン、Naver スマートストア、タンジュン、Musinsa Used の手数料・宅配料を入れると、見込み精算額・純利益・コスト利益率・損益分岐の仕入価格が出ます。計算はすべてブラウザ内で行われます。">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/ja/resell.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:title" content="海外購入・中古リセール粗利計算機">
+<meta property="og:description" content="仕入価格・送料・関税と付加価値税・手数料・宅配料を入れると、見込み精算額・純利益・コスト利益率・損益分岐の仕入価格がすぐ出ます。KREAM・バンジャン・Naver・タンジュン・Musinsa Usedを同じ販売価格で比較できます。">
+<meta property="og:url" content="https://insightbriefnews.com/ja/resell.html">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="海外購入・中古リセール粗利計算機">
+<meta name="twitter:description" content="精算額・純利益・コスト利益率・損益分岐の仕入価格をリアルタイムで。関税・付加価値税・手数料まで反映した無料計算機。">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;600;700;900&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/resell.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Resell margin calculator (overseas direct purchase and second-hand)",
+  "url": "https://insightbriefnews.com/resell.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "Free calculator for resellers: enter the purchase price in USD, JPY, EUR or CNY (or a domestic second-hand price), forwarding and international shipping, duty and VAT when the 150/200 USD list-clearance limit is exceeded, the selling platform fee and the domestic courier fee to get the expected settlement, net profit, return on cost and break-even purchase price, with a side-by-side comparison of KREAM, Bunjang, Naver Smart Store, Danggeun and Musinsa Used.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/resell.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/resell.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/resell.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/resell.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/resell.html">
+<link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="../assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tool">
+<a class="skip" href="#main">本文へスキップ</a>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026年11月26日(木曜日)</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="../resell.html" hreflang="ko" lang="ko">KO</a><a href="../en/resell.html" hreflang="en" lang="en">EN</a><a href="../zh/resell.html" hreflang="zh-Hans" lang="zh-Hans">ZH</a><a href="resell.html" hreflang="ja" lang="ja" class="is-on" aria-current="true">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">独立系・経済調査報道リサーチ誌</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF ホームへ">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>インサイトブリーフ</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>数字の向こうの文脈を読む</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">情報提供</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">週刊ブリーフを購読</a>
+        <button class="icon-btn search-toggle" type="button" aria-label="検索を開く" aria-expanded="false" aria-controls="search-mobile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">ニュース<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="ニュース">
+          <a href="index.html" data-nav-key="all">すべての記事</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI・テック</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">経済・金融</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">貿易・原材料</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">災害・安全</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">週刊調査報道</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">貿易・調達・市況<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="貿易・調達・市況">
+          <a href="biz.html#trade" data-nav-key="tdoc">貿易書式 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">海上運賃・物流コスト</a>
+          <a href="sourcing.html" data-nav-key="sourcing">グローバル調達・着地原価計算</a>
+          <a href="market.html" data-nav-key="market">原材料・為替市況板</a>
+          <a href="global.html#portal" data-nav-key="portal">調達庁・企業審査ポータル</a>
+          <a href="global.html#email" data-nav-key="email">貿易メール作成</a>
+          <a href="global.html#trip" data-nav-key="trip">出張ハブ</a>
+          <a href="biz.html#cost" data-nav-key="cost">粗利・原価・資金計算</a>
+          <a href="mfg-cost.html" data-nav-key="mfgcost">内製・外注 原価計算</a>
+          <a href="resell.html" data-nav-key="resell" class="is-active" aria-current="page">海外購入・中古リセール粗利計算</a>
+          <a href="seller.html" data-nav-key="seller">セラー・マーケター向けツール</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">世界の展示会カレンダー</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税務・法律・生活<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税務・法律・生活">
+          <a href="tax.html" data-nav-key="tax">税金・年収・社会保険</a>
+          <a href="salary.html" data-nav-key="salary">給与・最低賃金・社会保険</a>
+          <a href="insurance.html" data-nav-key="insurance">実損・自動車保険計算</a>
+          <a href="law.html" data-nav-key="law">法律・契約書・内容証明</a>
+          <a href="forms.html" data-nav-key="forms">書式・電子署名 138種</a>
+          <a href="saju.html" data-nav-key="saju">四柱推命・新年占い</a>
+          <a href="lotto.html" data-nav-key="lotto">ロト番号生成器</a>
+          <a href="music.html" data-nav-key="music">AI音楽・歌詞生成</a>
+          <a href="style.html" data-nav-key="style">ファッション・スタイル提案</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">案内・サイトマップ<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="案内・サイトマップ">
+          <a href="sitemap.html" data-nav-key="sitemap">サイトマップ</a>
+          <a href="about.html" data-nav-key="about">媒体紹介</a>
+          <a href="ad.html" data-nav-key="ad">広告・提携</a>
+          <a href="contact.html" data-nav-key="contact">情報提供・お問い合わせ</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="キーワードで検索" aria-label="記事を検索" autocomplete="off">
+    </form>
+  </div>
+</div>
+<div class="search-mobile" id="search-mobile" hidden>
+  <form class="search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+    <input type="search" name="q" placeholder="キーワードで検索" aria-label="記事を検索" autocomplete="off">
+  </form>
+</div>
+
+<main id="main" class="rs-main">
+  <div class="container rs-wrap">
+
+    <div class="rs-head">
+      <span class="kicker">FREE TOOL · RESELL MARGIN</span>
+      <h1>海外購入と中古の<br>リセール粗利計算機</h1>
+      <p class="dek">買って売る仕事は「いくらで売れるか」より「手元にいくら残るか」で決まります。仕入価格・送料・関税と付加価値税・手数料・宅配料を入れると、見込み精算額・純利益・コスト利益率（ROI）・損益分岐の仕入価格がすぐ出ます。同じ販売価格で KREAM・バンジャン・Naver スマートストア・タンジュン・Musinsa Used を並べ、どこに出すかを決めてください。</p>
+      <div class="rs-badges">
+        <span>無料</span><span>会員登録不要</span><span>入力はサーバー送信なし</span><span>リアルタイム計算</span><span>5つのプラットフォーム比較</span><span>4通貨</span>
+      </div>
+    </div>
+
+    <div class="rs-tabs" role="tablist" aria-label="仕入ルート">
+      <button class="rs-tab" type="button" role="tab" id="rs-tab-abroad" data-tab="abroad" aria-selected="true" aria-controls="rs-panel-abroad" tabindex="0">
+        <span class="t-code">OVERSEAS · DIRECT PURCHASE</span>
+        <span class="t-name">海外購入リセール</span>
+        <span class="t-desc">海外モールや中古マーケットで買い、転送サービスで受け取って韓国で転売</span>
+      </button>
+      <button class="rs-tab" type="button" role="tab" id="rs-tab-domestic" data-tab="domestic" aria-selected="false" aria-controls="rs-panel-domestic" tabindex="-1">
+        <span class="t-code">DOMESTIC · SECOND-HAND</span>
+        <span class="t-name">国内中古リセール</span>
+        <span class="t-desc">タンジュンやバンジャンで買い、別のプラットフォームで転売</span>
+      </button>
+    </div>
+
+    <div class="rs-mini" id="rs-mini" hidden>
+      <span class="m-k" id="rs-mini-k">純収益</span>
+      <b id="rs-mini-v">—</b>
+      <span class="m-r" id="rs-mini-r"></span>
+    </div>
+
+    <div class="rs-layout">
+      <div class="rs-inputs">
+
+        <!-- ===== 해외직구 ===== -->
+        <section class="rs-panel" id="rs-panel-abroad" role="tabpanel" aria-labelledby="rs-tab-abroad">
+          <p class="rs-panel-lead">ドル・円・ユーロ・人民元で買った品を転送サービスで受け取り、韓国で転売するときに使います。リスト通関の免税限度（米国発送は200ドル、それ以外は150ドル）を超えると品目別の関税と付加価値税がかかります。転売目的なら自己使用の免税は適用されないので、下の「転売用」にチェックしてください。</p>
+
+          <div class="rs-group">
+            <div class="rs-group-head"><span class="no">01</span><h3>仕入</h3><span>買った値段と適用レート</span></div>
+            <div class="rs-grid">
+              <div class="rs-field">
+                <label for="rs-a-price">仕入価格 <i>現地通貨</i></label>
+                <div class="rs-inline">
+                  <select id="rs-a-cur" aria-label="仕入通貨">
+                    <option value="USD" selected>USD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CNY">CNY</option>
+                  </select>
+                  <input id="rs-a-price" class="num" type="text" inputmode="decimal" value="120" aria-label="仕入価格">
+                </div>
+                <span class="hint" id="rs-a-price-hint">商品代金のみ。現地送料は下で別に加えます。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-fx">適用レート <i>1単位 = ? ウォン</i></label>
+                <input id="rs-a-fx" class="num" type="text" inputmode="decimal" value="1343.9">
+                <span class="hint" id="rs-a-fx-hint">市況板のレートを初期値にしています。手入力もできます。</span>
+              </div>
+              <div class="rs-field full">
+                <label for="rs-a-cat">品目 <i>関税率が自動で入ります</i></label>
+                <select id="rs-a-cat">
+                  <option value="13" data-key="shoes" selected>靴・スニーカー — 関税13%</option>
+                  <option value="13" data-key="apparel">衣類 — 関税13%</option>
+                  <option value="8" data-key="bag">バッグ・財布 — 関税8%</option>
+                  <option value="8" data-key="tech">テック・電子機器 — 関税8%</option>
+                  <option value="8" data-key="watch">時計・ジュエリー — 関税8%</option>
+                  <option value="8" data-key="sports">スポーツ・ホビー — 関税8%</option>
+                  <option value="" data-key="custom">手入力</option>
+                </select>
+                <span class="hint" id="rs-a-cat-hint">関税13%と付加価値税10%で、課税価格の24.3%が税負担です。</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="rs-group">
+            <div class="rs-group-head"><span class="no">02</span><h3>送料・関税</h3><span>転送と通関</span></div>
+            <div class="rs-grid">
+              <div class="rs-field">
+                <label for="rs-a-local">現地送料 <i>仕入通貨</i></label>
+                <input id="rs-a-local" class="num" type="text" inputmode="decimal" value="0">
+                <span class="hint">発送国内の送料。送料無料なら0。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-intl">国際送料 <i>ウォン</i></label>
+                <input id="rs-a-intl" class="num" type="text" inputmode="decimal" value="12000">
+                <span class="hint">転送先までの運賃。関税の課税価格に含まれます。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-forward">転送手数料 <i>ウォン</i></label>
+                <input id="rs-a-forward" class="num" type="text" inputmode="decimal" value="8000">
+                <span class="hint">同梱・検品・再梱包の手数料。課税価格には入りません。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-duty">関税率 <i>%</i></label>
+                <input id="rs-a-duty" class="num" type="text" inputmode="decimal" value="13">
+                <span class="hint">品目を選ぶと自動で変わります。HSコードで確認した実際の税率を入れてください。</span>
+              </div>
+              <div class="rs-checkline">
+                <input id="rs-a-business" type="checkbox">
+                <label for="rs-a-business">転売用に輸入する
+                  <span class="sub">チェックすると自己使用の免税限度が適用されず、金額にかかわらず関税・付加価値税がかかります。</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="rs-group">
+            <div class="rs-group-head"><span class="no">03</span><h3>販売</h3><span>売るときに引かれるお金</span></div>
+            <div class="rs-grid">
+              <div class="rs-field">
+                <label for="rs-a-sell">販売価格 <i>ウォン</i></label>
+                <input id="rs-a-sell" class="num" type="text" inputmode="decimal" value="260000">
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-platform">販売プラットフォーム</label>
+                <select id="rs-a-platform">
+                  <option value="kream" selected>KREAM</option>
+                  <option value="bunjang">バンジャン Bunjang</option>
+                  <option value="naver">Naver スマートストア</option>
+                  <option value="musinsa">Musinsa Used</option>
+                  <option value="daangn">タンジュン・手渡し</option>
+                  <option value="custom">手入力</option>
+                </select>
+                <span class="hint" id="rs-a-platform-hint">プラットフォームを選ぶと手数料率が入ります。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-fee">手数料率 <i>%</i></label>
+                <input id="rs-a-fee" class="num" type="text" inputmode="decimal" value="6.6">
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-fixed">固定手数料 <i>ウォン</i></label>
+                <input id="rs-a-fixed" class="num" type="text" inputmode="decimal" value="2750">
+                <span class="hint">KREAMは基本手数料2,500ウォン（税込2,750ウォン）が別にかかります。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-shipout">売り手負担の送料 <i>ウォン</i></label>
+                <input id="rs-a-shipout" class="num" type="text" inputmode="decimal" value="3000">
+                <span class="hint">検品センターや購入者へ送る宅配料。購入者負担なら0。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-other">その他費用 <i>ウォン</i></label>
+                <input id="rs-a-other" class="num" type="text" inputmode="decimal" value="4000">
+                <span class="hint">検品・梱包・広告・保険など。なければ0。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-target">目標マージン率 <i>%</i></label>
+                <input id="rs-a-target" class="num" type="text" inputmode="decimal" value="20">
+                <span class="hint">その利益率を得る販売価格も一緒に計算します。</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== 국내 중고 ===== -->
+        <section class="rs-panel" id="rs-panel-domestic" role="tabpanel" aria-labelledby="rs-tab-domestic" hidden>
+          <p class="rs-panel-lead">タンジュンやバンジャンで買い、KREAMなど別のプラットフォームに再出品するときに使います。国内取引なので関税・付加価値税はかかりませんが、仕入時の送料・手数料・販売時の宅配料が利益を削ります。仕入先と販売先の手数料を入れ替えて試してください。</p>
+
+          <div class="rs-group">
+            <div class="rs-group-head"><span class="no">01</span><h3>仕入</h3><span>買った値段と受け取り送料</span></div>
+            <div class="rs-grid">
+              <div class="rs-field">
+                <label for="rs-d-price">仕入価格 <i>ウォン</i></label>
+                <input id="rs-d-price" class="num" type="text" inputmode="decimal" value="120000">
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-buy-ship">仕入送料 <i>ウォン</i></label>
+                <input id="rs-d-buy-ship" class="num" type="text" inputmode="decimal" value="3500">
+                <span class="hint">手渡しで受け取ったなら0。</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="rs-group">
+            <div class="rs-group-head"><span class="no">02</span><h3>販売</h3><span>売るときに引かれるお金</span></div>
+            <div class="rs-grid">
+              <div class="rs-field">
+                <label for="rs-d-sell">販売価格 <i>ウォン</i></label>
+                <input id="rs-d-sell" class="num" type="text" inputmode="decimal" value="190000">
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-platform">販売プラットフォーム</label>
+                <select id="rs-d-platform">
+                  <option value="bunjang" selected>バンジャン Bunjang</option>
+                  <option value="kream">KREAM</option>
+                  <option value="naver">Naver スマートストア</option>
+                  <option value="musinsa">Musinsa Used</option>
+                  <option value="daangn">タンジュン・手渡し</option>
+                  <option value="custom">手入力</option>
+                </select>
+                <span class="hint" id="rs-d-platform-hint">プラットフォームを選ぶと手数料率が入ります。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-fee">手数料率 <i>%</i></label>
+                <input id="rs-d-fee" class="num" type="text" inputmode="decimal" value="6">
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-fixed">固定手数料 <i>ウォン</i></label>
+                <input id="rs-d-fixed" class="num" type="text" inputmode="decimal" value="0">
+                <span class="hint">KREAMは基本手数料2,500ウォン（税込2,750ウォン）が別にかかります。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-shipout">売り手負担の送料 <i>ウォン</i></label>
+                <input id="rs-d-shipout" class="num" type="text" inputmode="decimal" value="3000">
+                <span class="hint">購入者負担なら0。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-other">その他費用 <i>ウォン</i></label>
+                <input id="rs-d-other" class="num" type="text" inputmode="decimal" value="0">
+                <span class="hint">洗濯・修理・梱包・広告など。なければ0。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-target">目標マージン率 <i>%</i></label>
+                <input id="rs-d-target" class="num" type="text" inputmode="decimal" value="20">
+                <span class="hint">その利益率を得る販売価格も一緒に計算します。</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="rs-result" aria-label="計算結果">
+        <div class="rs-out" id="rs-out" translate="no" aria-live="polite"></div>
+      </aside>
+    </div>
+
+    <section class="rs-how" aria-labelledby="rs-how-title">
+      <div class="rs-sec-head"><h2 id="rs-how-title">数字の読み方</h2><span>4つのポイント</span></div>
+      <div class="rs-how-grid">
+        <div class="rs-how-card">
+          <span class="k">01</span>
+          <h3>精算額と純利益は別物</h3>
+          <p>精算額はプラットフォームが手数料を引いて口座に振り込む金額です。純利益はそこから仕入価格・送料・関税と付加価値税・梱包費をさらに引いて残る金額です。精算額が大きくても純利益がマイナスになることがあります。</p>
+        </div>
+        <div class="rs-how-card">
+          <span class="k">02</span>
+          <h3>利益率はコスト基準</h3>
+          <p>ここでのコスト利益率（ROI）は純利益 ÷ 総コストです。「販売価格に対する粗利率」とは数字が違うので混同しないでください。100万ウォンを投じて20万ウォンを残せばROIは20%、販売価格120万ウォンに対しては16.7%です。</p>
+        </div>
+        <div class="rs-how-card">
+          <span class="k">03</span>
+          <h3>損益分岐の仕入価格</h3>
+          <p>この価格より高く買うと、売っても残りません。値段交渉や入札の基準にしてください。課税される範囲では税金も一緒に上がるため、免税限度の前後で損益分岐が急に跳ね上がります。</p>
+        </div>
+        <div class="rs-how-card">
+          <span class="k">04</span>
+          <h3>関税・付加価値税は課税価格に</h3>
+          <p>関税は物品価格に国際送料を加えた課税価格にかかり、付加価値税は（課税価格＋関税）の10%でさらにかかります。関税8%なら実効負担は18.8%、13%なら24.3%になります。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="rs-faq" aria-labelledby="rs-faq-title">
+      <div class="rs-sec-head"><h2 id="rs-faq-title">よくある質問</h2><span>8問</span></div>
+      <dl>
+        <dt>関税・付加価値税はいつかかりますか？</dt>
+        <dd>自己使用の物品が150ドル（米国発送は200ドル）以下ならリスト通関で関税・付加価値税が免除されます。限度を超えると、物品価格に国際送料を加えた課税価格に関税がかかり、その上に付加価値税10%がさらにかかります。健康機能食品、一部化粧品、食品、酒類、たばこなどリスト通関が使えない品目は、金額にかかわらず輸入申告が必要です。</dd>
+
+        <dt>転売目的でも150ドルの免税は使えますか？</dt>
+        <dd>リスト通関の免税は自己使用が前提です。販売目的の商品は少額でも輸入申告と課税の対象になることがあるため、ここでは「転売用」にチェックして税金を含めて見るのが安全です。実際の判断は税関によります。事業者であれば輸入時の付加価値税を仕入税額として控除できる場合が多くあります。</dd>
+
+        <dt>靴と衣類の関税率が13%なのはなぜですか？</dt>
+        <dd>韓国の基本税率は靴と衣類の大半が13%、バッグ・財布・電子機器・時計・スポーツ用品は通常8%です。原産地によりFTA協定税率が適用されれば0%になることもありますが、個人の海外購入は通常、基本税率で計算されます。正確な税率はHSコードで関税法令情報ポータルを確認してください。</dd>
+
+        <dt>KREAMの手数料はどう計算しますか？</dt>
+        <dd>KREAMは基本手数料と等級別手数料を併せて取ります。2026年3月2日から一般カテゴリの等級手数料は5.5〜6.0%（税別）、基本手数料は2,500ウォン（税別）です。初めてのLevel 1なら6.6%＋2,750ウォン（税込）で見ておけばよいでしょう。この計算機の初期値がその値で、等級が上がったら手数料率を下げて入力してください。手数料の上限（税込30万ウォン）は反映していません。</dd>
+
+        <dt>バンジャンとタンジュンの手数料はどう違いますか？</dt>
+        <dd>バンジャンの一般店舗は2025年9月17日以降の決済分から売り手が商品代金の6%を負担します（購入者は0%）。タンジュンは売り手手数料がなく、安心決済や即時購入を使うと購入者が3.3%を負担します。手渡しの現金取引は双方無料です。プロ店舗やカテゴリ別の料率は異なるので、販売者センターの見込み精算額もあわせて確認してください。</dd>
+
+        <dt>SoldOutが一覧にありません。</dt>
+        <dd>SoldOutは2026年12月31日でサービス終了を予告し、一般取引は2026年12月1日に先に終わります。そのためプリセットから外し、ファッション・中古の委託販売先としてMusinsa Usedを入れました。Musinsa Usedは委託手数料15%前後に商品化費用7,000ウォンが別にかかるので、固定手数料欄に7,000を入れて比べてください。</dd>
+
+        <dt>コスト利益率（ROI）と粗利率は何が違いますか？</dt>
+        <dd>コスト利益率（ROI）は投じたお金に対してどれだけ稼いだかを見ます。純利益 ÷ 総コストです。粗利率は販売価格に対して残る割合で、純利益 ÷ 販売価格です。販売価格がコストより大きいため、粗利率はROIより小さくなります。計算機の下の「販売価格に対する粗利率」の行で両方見られます。</dd>
+
+        <dt>事業者登録をすると税金は変わりますか？</dt>
+        <dd>一般課税の事業者なら輸入時に払った付加価値税を仕入税額として控除でき、実質コストが下がります。逆に販売益には付加価値税と所得税（または法人税）がかかります。この計算機は1件の取引のキャッシュフローだけを示すので、事業者の精算は税理士と確認してください。</dd>
+      </dl>
+    </section>
+
+    <p class="rs-xlink">
+      あわせて使う · <a href="sourcing.html">グローバルソーシング・到着原価計算機</a> ·
+      <a href="biz.html#cost">マージン・原価・資金計算機</a> ·
+      <a href="seller.html">セラー・マーケター向けツール</a> ·
+      <a href="freight.html">海上運賃・物流コスト</a> ·
+      <a href="market.html">原材料・為替レート 市況版</a> ·
+      <a href="ad.html#b2b">B2B 調達・原価相談</a>
+    </p>
+
+    <section class="rs-legal" aria-labelledby="rs-legal-title">
+      <h3 id="rs-legal-title">計算基準と個人情報のご案内</h3>
+      <p><b>計算範囲</b> — 入力した仕入価格・レート・送料・手数料から精算額と純利益を足し引きする参考計算機です。実際の税額は輸入申告日の課税レート、確定したHSコード、FTAの適用可否、税関の判断によって変わります。個別消費税・酒税・農漁村特別税、検査・検疫費用、返品・交換費用は含めていません。手数料率は2026年11月26日に確認した公開方針を初期値にしており、等級・カテゴリ・キャンペーンで変わります。</p>
+      <p><b>個人情報</b> — 入力した金額と選択はブラウザ内の計算にだけ使われ、サーバーへ送信したり保存したりしません。再読み込みするとすべて消えます。会員登録も、Cookie に値を残すこともありません。</p>
+      <p><b>外部リンク</b> — KREAM、バンジャン、Naver、タンジュン、Musinsa などの名称・商標は各社に帰属します。このページはどのマーケットとも提携せず、取引を仲介せず、特定のプラットフォームを推奨しません。</p>
+    </section>
+
+    <p class="rs-disclaimer">
+      本計算機はリセール取引の損益を見積もるための参考ツールであり、税務・通関・契約に関する法的判断の代わりにはなりません。例示金額は実際の相場とは関係ありません。関税率・免税限度・プラットフォーム手数料は告示や方針変更で変わるため、決済や出品の前に公式の案内を確認してください。
+    </p>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>独立系・経済調査報道リサーチ誌</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>INSIGHT BRIEF は経済・金融、貿易・原材料、AI・テックの現場をデータと取材で追う独立系リサーチ媒体です。正式なインターネット新聞の登録媒体ではなく、取材・編集5人以上などの登録要件を満たしていません。</p>
+      </div>
+      <div class="f-col">
+        <h4>セクション</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">調査報道</a></li>
+          <li><a href="index.html?cat=economy">経済・金融</a></li>
+          <li><a href="index.html?cat=trade">貿易・原材料</a></li>
+          <li><a href="market.html">市況ボード</a></li>
+          <li><a href="index.html?cat=ai">AI・テック</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>媒体</h4>
+        <ul>
+          <li><a href="about.html">紹介・編集方針</a></li>
+          <li><a href="contact.html#tip">読者からの情報</a></li>
+          <li><a href="ad.html">広告・スポンサー料金表</a></li>
+          <li><a href="ad.html#b2b">B2B 調達・原価相談</a></li>
+          <li><a href="resell.html">無料ツール・リセール粗利計算</a></li>
+          <li><a href="sourcing.html">無料ツール・グローバルソーシング・到着原価計算機</a></li>
+          <li><a href="freight.html">無料ツール · 海上運賃・物流コスト</a></li>
+          <li><a href="biz.html">無料ツール · 個人事業主ツール 9 種</a></li>
+          <li><a href="market.html">無料ツール・原材料・為替相場</a></li>
+          <li><a href="feed.xml">RSS フィード</a></li>
+          <li><a href="sitemap.html">サイトマップ</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>お問い合わせ</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">情報提供 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">広告 hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">ソウル · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>本媒体はインターネット新聞の登録をしていない独立メディアです。記事・写真の無断転載・再配布を禁じます。協賛・広告コンテンツは「広告」と明記します。</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 独立系・経済調査報道リサーチ誌</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="リアルタイム・ブリーフィング"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>リアルタイム・ブリーフィング</h3><p>新しいレポートと市況を KakaoTalk オープンチャットと Telegram でリアルタイムに受け取れます。</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk オープンチャット</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram チャンネル</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+<div class="rs-toast" id="rs-toast" role="status" aria-live="polite"></div>
+<script src="../assets/js/monetize.js?v=20261123c" defer></script>
+<script src="../assets/js/resell.js?v=20261126a" defer></script>
+<script src="../assets/js/nav.js?v=20261124c"></script>
+<script src="data/i18n.fallback.js?v=20261124a"></script>
+<script src="../assets/js/i18n.js?v=20261124a"></script>
+<!-- IB:CHAT-FLOAT -->
+<script src="../assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

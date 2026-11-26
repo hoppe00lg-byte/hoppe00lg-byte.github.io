@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-adsense-account" content="ca-pub-7853253075143438">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
+<title>海淘·二手转售利润计算器 — 结算额·净利润·盈亏平衡采购价 | INSIGHT BRIEF</title>
+<meta name="description" content="把海外直购或韩国二手买来的东西转卖时，先算清自己到底留下多少。输入采购价、转运与国际运费、关税与增值税（鞋类·服装 13%，科技·杂货 8%，增值税 10%）、KREAM、闪电市场、Naver 智能商店、Danggeun、Musinsa Used 的手续费以及国内快递费，即可得出预计结算额、净利润、成本回报率与盈亏平衡采购价。所有计算都在浏览器内完成。">
+<meta name="theme-color" content="#17140f">
+<link rel="canonical" href="https://insightbriefnews.com/zh/resell.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="INSIGHT BRIEF">
+<meta property="og:title" content="海淘·二手转售利润计算器">
+<meta property="og:description" content="输入采购价、运费、关税与增值税、平台手续费和快递费，立即得出预计结算额、净利润、成本回报率与盈亏平衡采购价，并在同一售价下比较 KREAM、闪电市场、Naver、Danggeun 与 Musinsa Used。">
+<meta property="og:url" content="https://insightbriefnews.com/zh/resell.html">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="海淘·二手转售利润计算器">
+<meta name="twitter:description" content="实时算出结算额、净利润、成本回报率与盈亏平衡采购价，并把关税、增值税与平台手续费一并计入的免费计算器。">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="../assets/css/resell.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Resell margin calculator (overseas direct purchase and second-hand)",
+  "url": "https://insightbriefnews.com/resell.html",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Any",
+  "inLanguage": "ko",
+  "description": "Free calculator for resellers: enter the purchase price in USD, JPY, EUR or CNY (or a domestic second-hand price), forwarding and international shipping, duty and VAT when the 150/200 USD list-clearance limit is exceeded, the selling platform fee and the domestic courier fee to get the expected settlement, net profit, return on cost and break-even purchase price, with a side-by-side comparison of KREAM, Bunjang, Naver Smart Store, Danggeun and Musinsa Used.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "isAccessibleForFree": true,
+  "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
+}
+</script>
+<!-- IB:I18N-HEAD -->
+<link rel="alternate" hreflang="ko" href="https://insightbriefnews.com/resell.html">
+<link rel="alternate" hreflang="en" href="https://insightbriefnews.com/en/resell.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://insightbriefnews.com/zh/resell.html">
+<link rel="alternate" hreflang="ja" href="https://insightbriefnews.com/ja/resell.html">
+<link rel="alternate" hreflang="x-default" href="https://insightbriefnews.com/resell.html">
+<link rel="stylesheet" href="../assets/css/i18n.css?v=20261124a">
+<!-- /IB:I18N-HEAD -->
+<!-- IB:VENDORS -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script src="../assets/js/vendors.js?v=20261124c" defer></script>
+<link rel="stylesheet" href="../assets/css/widgets.css?v=20261124c">
+<link rel="stylesheet" href="../assets/css/chat.css?v=20261124c">
+<!-- /IB:VENDORS -->
+</head>
+<body data-page="tool">
+<a class="skip" href="#main">跳至正文</a>
+
+<header class="site-header">
+  <div class="topbar">
+    <div class="container">
+      <div class="tb-left">
+        <span class="live"><i></i>INDEPENDENT</span>
+        <span class="tb-sep"></span>
+        <span id="today-date">2026年11月26日 星期四</span>
+      </div>
+      <div class="tb-right"><!-- IB:I18N-SWITCH --><div class="lang-switch" role="group" aria-label="Language"><a href="../resell.html" hreflang="ko" lang="ko">KO</a><a href="../en/resell.html" hreflang="en" lang="en">EN</a><a href="resell.html" hreflang="zh-Hans" lang="zh-Hans" class="is-on" aria-current="true">ZH</a><a href="../ja/resell.html" hreflang="ja" lang="ja">JA</a></div><!-- /IB:I18N-SWITCH -->
+        <span class="opt">独立经济·调查报道研究网络杂志</span>
+        <span class="tb-sep opt"></span>
+        <span>VOL. 01</span>
+      </div>
+    </div>
+  </div>
+  <div class="masthead">
+    <div class="container">
+      <div class="brand">
+        <a href="index.html" aria-label="INSIGHT BRIEF 首页">
+          <span class="mark" aria-hidden="true"></span>
+          <span class="name">INSIGHT <em>BRIEF</em></span>
+        </a>
+        <div class="sub">
+          <b>洞察简报</b>
+          <span class="bar" aria-hidden="true"></span>
+          <span>解读数字背后的脉络</span>
+        </div>
+      </div>
+      <div class="mast-tools">
+        <a class="btn btn-ghost btn-sm" href="contact.html#tip">提供线索</a>
+        <a class="btn btn-accent btn-sm" href="index.html#subscribe">订阅每周简报</a>
+        <button class="icon-btn search-toggle" type="button" aria-label="打开搜索" aria-expanded="false" aria-controls="search-mobile">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="nav-wrap">
+  <div class="container">
+    <ul class="nav" id="site-nav">
+      <li class="nav-group" data-nav="news">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-news">新闻·报告<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-news" role="group" aria-label="新闻·报告">
+          <a href="index.html" data-nav-key="all">全部报道</a>
+          <a href="index.html?cat=ai" data-nav-key="ai">AI·科技</a>
+          <a href="index.html?cat=economy" data-nav-key="economy">经济·金融</a>
+          <a href="index.html?cat=trade" data-nav-key="trade">贸易·原材料</a>
+          <a href="index.html?cat=fire" data-nav-key="fire">灾难·安全</a>
+          <a href="index.html?cat=investigative" data-nav-key="weekly">每周调查报道</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="trade">
+        <button class="nav-top is-active" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-trade">贸易·采购·行情<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-trade" role="group" aria-label="贸易·采购·行情">
+          <a href="biz.html#trade" data-nav-key="tdoc">贸易单据 (PI·CI·PL)</a>
+          <a href="freight.html" data-nav-key="freight">海运运价·物流成本</a>
+          <a href="sourcing.html" data-nav-key="sourcing">全球采购·到岸成本计算</a>
+          <a href="market.html" data-nav-key="market">原材料·汇率行情板</a>
+          <a href="global.html#portal" data-nav-key="portal">采购厅·企业验证门户</a>
+          <a href="global.html#email" data-nav-key="email">贸易邮件撰写</a>
+          <a href="global.html#trip" data-nav-key="trip">出差中心</a>
+          <a href="biz.html#cost" data-nav-key="cost">利润·成本·资金计算器</a>
+          <a href="mfg-cost.html" data-nav-key="mfgcost">自制·外协成本计算</a>
+          <a href="resell.html" data-nav-key="resell" class="is-active" aria-current="page">海淘·二手转售利润计算</a>
+          <a href="seller.html" data-nav-key="seller">卖家·营销工具</a>
+          <a href="exhibitions.html" data-nav-key="exhibitions">全球展会日历</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="life">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-life">税务·法律·生活<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-life" role="group" aria-label="税务·法律·生活">
+          <a href="tax.html" data-nav-key="tax">税金·年薪·健康保险</a>
+          <a href="salary.html" data-nav-key="salary">工资·最低工资·四大保险</a>
+          <a href="insurance.html" data-nav-key="insurance">实损·车险计算器</a>
+          <a href="law.html" data-nav-key="law">法律·合同·催告书</a>
+          <a href="forms.html" data-nav-key="forms">表单·电子签名 138种</a>
+          <a href="saju.html" data-nav-key="saju">四柱·新年运势</a>
+          <a href="lotto.html" data-nav-key="lotto">彩票号码生成器</a>
+          <a href="music.html" data-nav-key="music">AI 音乐·歌词生成器</a>
+          <a href="style.html" data-nav-key="style">穿搭·风格推荐</a>
+        </div>
+      </li>
+      <li class="nav-group" data-nav="guide">
+        <button class="nav-top" type="button" aria-expanded="false" aria-haspopup="true" aria-controls="nav-guide">介绍·网站地图<svg class="nav-caret" viewBox="0 0 10 6" aria-hidden="true" focusable="false"><path d="M1 1.2 5 5l4-3.8" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+        <div class="nav-panel" id="nav-guide" role="group" aria-label="介绍·网站地图">
+          <a href="sitemap.html" data-nav-key="sitemap">网站地图</a>
+          <a href="about.html" data-nav-key="about">媒体介绍</a>
+          <a href="ad.html" data-nav-key="ad">广告·合作</a>
+          <a href="contact.html" data-nav-key="contact">爆料·咨询</a>
+        </div>
+      </li>
+    </ul>
+    <form class="search search-desktop" role="search" action="index.html" method="get">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+      <input type="search" name="q" placeholder="输入关键词搜索" aria-label="搜索文章" autocomplete="off">
+    </form>
+  </div>
+</div>
+<div class="search-mobile" id="search-mobile" hidden>
+  <form class="search" role="search" action="index.html" method="get">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
+    <input type="search" name="q" placeholder="输入关键词搜索" aria-label="搜索文章" autocomplete="off">
+  </form>
+</div>
+
+<main id="main" class="rs-main">
+  <div class="container rs-wrap">
+
+    <div class="rs-head">
+      <span class="kicker">FREE TOOL · RESELL MARGIN</span>
+      <h1>海淘与二手<br>转售利润计算器</h1>
+      <p class="dek">买来再卖，决定成败的不是“能卖多少钱”，而是“自己手里留下多少”。输入采购价、运费、关税与增值税、平台手续费和国内快递费，立即得出预计结算额、净利润、成本回报率（ROI）与盈亏平衡采购价。再把 KREAM、闪电市场、Naver 智能商店、Danggeun、Musinsa Used 放在同一售价下比较，决定挂到哪里。</p>
+      <div class="rs-badges">
+        <span>免费</span><span>无需注册</span><span>输入不上传服务器</span><span>实时计算</span><span>5个平台对比</span><span>4种货币</span>
+      </div>
+    </div>
+
+    <div class="rs-tabs" role="tablist" aria-label="采购渠道">
+      <button class="rs-tab" type="button" role="tab" id="rs-tab-abroad" data-tab="abroad" aria-selected="true" aria-controls="rs-panel-abroad" tabindex="0">
+        <span class="t-code">OVERSEAS · DIRECT PURCHASE</span>
+        <span class="t-name">海淘转售</span>
+        <span class="t-desc">在海外商城或二手市场买入，经转运公司收货后在韩国转卖</span>
+      </button>
+      <button class="rs-tab" type="button" role="tab" id="rs-tab-domestic" data-tab="domestic" aria-selected="false" aria-controls="rs-panel-domestic" tabindex="-1">
+        <span class="t-code">DOMESTIC · SECOND-HAND</span>
+        <span class="t-name">韩国二手转售</span>
+        <span class="t-desc">在 Danggeun、闪电市场买入后到其他平台转卖</span>
+      </button>
+    </div>
+
+    <div class="rs-mini" id="rs-mini" hidden>
+      <span class="m-k" id="rs-mini-k">净收入</span>
+      <b id="rs-mini-v">—</b>
+      <span class="m-r" id="rs-mini-r"></span>
+    </div>
+
+    <div class="rs-layout">
+      <div class="rs-inputs">
+
+        <!-- ===== 해외직구 ===== -->
+        <section class="rs-panel" id="rs-panel-abroad" role="tabpanel" aria-labelledby="rs-tab-abroad">
+          <p class="rs-panel-lead">适用于用美元、日元、欧元、人民币买入、经转运公司收货后在韩国转卖的情况。超过目录通关免税限额（美国发货200美元，其他150美元）时，按品类征收关税和增值税。转卖用途不适用自用免税，请在下方勾选“转售用”。</p>
+
+          <div class="rs-group">
+            <div class="rs-group-head"><span class="no">01</span><h3>采购</h3><span>买入价与适用汇率</span></div>
+            <div class="rs-grid">
+              <div class="rs-field">
+                <label for="rs-a-price">采购价 <i>当地货币</i></label>
+                <div class="rs-inline">
+                  <select id="rs-a-cur" aria-label="采购货币">
+                    <option value="USD" selected>USD</option>
+                    <option value="JPY">JPY</option>
+                    <option value="EUR">EUR</option>
+                    <option value="CNY">CNY</option>
+                  </select>
+                  <input id="rs-a-price" class="num" type="text" inputmode="decimal" value="120" aria-label="采购价">
+                </div>
+                <span class="hint" id="rs-a-price-hint">只填商品价格，当地运费在下方另行计入。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-fx">适用汇率 <i>1 单位 = ? 韩元</i></label>
+                <input id="rs-a-fx" class="num" type="text" inputmode="decimal" value="1343.9">
+                <span class="hint" id="rs-a-fx-hint">默认填入行情板汇率，可直接修改。</span>
+              </div>
+              <div class="rs-field full">
+                <label for="rs-a-cat">品种 <i>自动填入关税率</i></label>
+                <select id="rs-a-cat">
+                  <option value="13" data-key="shoes" selected>鞋类·运动鞋 — 关税 13%</option>
+                  <option value="13" data-key="apparel">服装 — 关税 13%</option>
+                  <option value="8" data-key="bag">包袋·钱包 — 关税 8%</option>
+                  <option value="8" data-key="tech">科技·电子产品 — 关税 8%</option>
+                  <option value="8" data-key="watch">手表·珠宝 — 关税 8%</option>
+                  <option value="8" data-key="sports">运动·爱好 — 关税 8%</option>
+                  <option value="" data-key="custom">手动输入</option>
+                </select>
+                <span class="hint" id="rs-a-cat-hint">关税 13% 加增值税 10%，相当于完税价格的 24.3%。</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="rs-group">
+            <div class="rs-group-head"><span class="no">02</span><h3>运费与关税·增值税</h3><span>转运与通关</span></div>
+            <div class="rs-grid">
+              <div class="rs-field">
+                <label for="rs-a-local">当地运费 <i>采购货币</i></label>
+                <input id="rs-a-local" class="num" type="text" inputmode="decimal" value="0">
+                <span class="hint">发货国内的配送费，免运费时填 0。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-intl">国际运费 <i>韩元</i></label>
+                <input id="rs-a-intl" class="num" type="text" inputmode="decimal" value="12000">
+                <span class="hint">运到转运公司的运费，计入关税完税价格。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-forward">转运手续费 <i>韩元</i></label>
+                <input id="rs-a-forward" class="num" type="text" inputmode="decimal" value="8000">
+                <span class="hint">合箱、验货、重新包装费用，不计入完税价格。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-duty">关税率 <i>%</i></label>
+                <input id="rs-a-duty" class="num" type="text" inputmode="decimal" value="13">
+                <span class="hint">选择品类后自动变更，请填入按 HS 编码确认的实际税率。</span>
+              </div>
+              <div class="rs-checkline">
+                <input id="rs-a-business" type="checkbox">
+                <label for="rs-a-business">以转售用途进口
+                  <span class="sub">勾选后不再适用自用免税限额，不论金额都要缴纳关税与增值税。</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="rs-group">
+            <div class="rs-group-head"><span class="no">03</span><h3>销售</h3><span>卖出时被扣掉的钱</span></div>
+            <div class="rs-grid">
+              <div class="rs-field">
+                <label for="rs-a-sell">售价 <i>韩元</i></label>
+                <input id="rs-a-sell" class="num" type="text" inputmode="decimal" value="260000">
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-platform">销售平台</label>
+                <select id="rs-a-platform">
+                  <option value="kream" selected>KREAM</option>
+                  <option value="bunjang">闪电市场 Bunjang</option>
+                  <option value="naver">Naver 智能商店</option>
+                  <option value="musinsa">Musinsa Used</option>
+                  <option value="daangn">Danggeun·当面交易</option>
+                  <option value="custom">手动输入</option>
+                </select>
+                <span class="hint" id="rs-a-platform-hint">选择平台后自动填入费率。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-fee">手续费率 <i>%</i></label>
+                <input id="rs-a-fee" class="num" type="text" inputmode="decimal" value="6.6">
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-fixed">固定手续费 <i>韩元</i></label>
+                <input id="rs-a-fixed" class="num" type="text" inputmode="decimal" value="2750">
+                <span class="hint">KREAM 另收基本手续费 2,500韩元（含增值税 2,750韩元）。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-shipout">卖家承担运费 <i>韩元</i></label>
+                <input id="rs-a-shipout" class="num" type="text" inputmode="decimal" value="3000">
+                <span class="hint">寄往检验中心或买家的快递费，买家承担时填 0。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-other">其他费用 <i>韩元</i></label>
+                <input id="rs-a-other" class="num" type="text" inputmode="decimal" value="4000">
+                <span class="hint">验货、包装、广告、保险等，没有则填 0。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-a-target">目标毛利率 <i>%</i></label>
+                <input id="rs-a-target" class="num" type="text" inputmode="decimal" value="20">
+                <span class="hint">同时算出要达到该利润率需要挂多少钱。</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- ===== 국내 중고 ===== -->
+        <section class="rs-panel" id="rs-panel-domestic" role="tabpanel" aria-labelledby="rs-tab-domestic" hidden>
+          <p class="rs-panel-lead">在 Danggeun、闪电市场买入后到 KREAM 等平台重新上架时使用。韩国境内交易没有关税与增值税，但采购运费、平台手续费和出售时的快递费都会侵蚀利润。可以把买进和卖出的费率都换一换。</p>
+
+          <div class="rs-group">
+            <div class="rs-group-head"><span class="no">01</span><h3>采购</h3><span>买入价与收货运费</span></div>
+            <div class="rs-grid">
+              <div class="rs-field">
+                <label for="rs-d-price">采购价 <i>韩元</i></label>
+                <input id="rs-d-price" class="num" type="text" inputmode="decimal" value="120000">
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-buy-ship">采购运费 <i>韩元</i></label>
+                <input id="rs-d-buy-ship" class="num" type="text" inputmode="decimal" value="3500">
+                <span class="hint">当面交易自取则填 0。</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="rs-group">
+            <div class="rs-group-head"><span class="no">02</span><h3>销售</h3><span>卖出时被扣掉的钱</span></div>
+            <div class="rs-grid">
+              <div class="rs-field">
+                <label for="rs-d-sell">售价 <i>韩元</i></label>
+                <input id="rs-d-sell" class="num" type="text" inputmode="decimal" value="190000">
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-platform">销售平台</label>
+                <select id="rs-d-platform">
+                  <option value="bunjang" selected>闪电市场 Bunjang</option>
+                  <option value="kream">KREAM</option>
+                  <option value="naver">Naver 智能商店</option>
+                  <option value="musinsa">Musinsa Used</option>
+                  <option value="daangn">Danggeun·当面交易</option>
+                  <option value="custom">手动输入</option>
+                </select>
+                <span class="hint" id="rs-d-platform-hint">选择平台后自动填入费率。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-fee">手续费率 <i>%</i></label>
+                <input id="rs-d-fee" class="num" type="text" inputmode="decimal" value="6">
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-fixed">固定手续费 <i>韩元</i></label>
+                <input id="rs-d-fixed" class="num" type="text" inputmode="decimal" value="0">
+                <span class="hint">KREAM 另收基本手续费 2,500韩元（含增值税 2,750韩元）。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-shipout">卖家承担运费 <i>韩元</i></label>
+                <input id="rs-d-shipout" class="num" type="text" inputmode="decimal" value="3000">
+                <span class="hint">买家承担时填 0。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-other">其他费用 <i>韩元</i></label>
+                <input id="rs-d-other" class="num" type="text" inputmode="decimal" value="0">
+                <span class="hint">清洗、修补、包装、广告等，没有则填 0。</span>
+              </div>
+              <div class="rs-field">
+                <label for="rs-d-target">目标毛利率 <i>%</i></label>
+                <input id="rs-d-target" class="num" type="text" inputmode="decimal" value="20">
+                <span class="hint">同时算出要达到该利润率需要挂多少钱。</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <aside class="rs-result" aria-label="计算结果">
+        <div class="rs-out" id="rs-out" translate="no" aria-live="polite"></div>
+      </aside>
+    </div>
+
+    <section class="rs-how" aria-labelledby="rs-how-title">
+      <div class="rs-sec-head"><h2 id="rs-how-title">这样读这些数字</h2><span>4个要点</span></div>
+      <div class="rs-how-grid">
+        <div class="rs-how-card">
+          <span class="k">01</span>
+          <h3>结算额与净利润不是一回事</h3>
+          <p>结算额是平台扣掉手续费后打到你账户的钱。净利润是从中再减去采购价、运费、关税与增值税以及包装费后剩下的钱。结算额很大，净利润也可能是负数。</p>
+        </div>
+        <div class="rs-how-card">
+          <span class="k">02</span>
+          <h3>利润率以投入成本为基准</h3>
+          <p>这里的成本回报率（ROI）是净利润 ÷ 总投入成本。它与“占售价的利润率”不是同一个数字，不要混用。投入100万韩元赚到20万韩元，ROI 是20%；相对120万韩元售价则是16.7%。</p>
+        </div>
+        <div class="rs-how-card">
+          <span class="k">03</span>
+          <h3>盈亏平衡采购价</h3>
+          <p>高于这个价格，卖出也赚不到钱。议价或出价时可以把它当作底线。进入征税区间后税金也随之上升，因此在免税限额附近，盈亏平衡点会突然抬高。</p>
+        </div>
+        <div class="rs-how-card">
+          <span class="k">04</span>
+          <h3>关税与增值税以完税价格为基数</h3>
+          <p>关税以物品价值加国际运费（完税价格）为基数计征，增值税再按（完税价格＋关税）的10%加征。关税率8%时实际负担为18.8%，13%时为24.3%。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="rs-faq" aria-labelledby="rs-faq-title">
+      <div class="rs-sec-head"><h2 id="rs-faq-title">常见问题</h2><span>8个问题</span></div>
+      <dl>
+        <dt>什么时候要交关税与增值税？</dt>
+        <dd>自用物品在150美元（美国发货200美元）以下可按目录通关，免征关税与增值税。超过限额时，关税以物品价值加国际运费为完税价格计征，再在此基础上加收10%增值税。保健功能食品、部分化妆品、食品、酒类、香烟等不适用目录通关的品目，不论金额都需申报进口。</dd>
+
+        <dt>我是买来转卖的，还能享受150美元免税吗？</dt>
+        <dd>目录通关免税以自用为前提。用于销售的商品即使金额很小，也可能需要进口申报并缴税，因此在这里勾选“转售用”并计入税金更稳妥。最终判断由海关作出；已登记营业者的进口增值税通常可作为进项税额抵扣。</dd>
+
+        <dt>为什么鞋类和服装的关税是13%？</dt>
+        <dd>韩国基本税率对大部分鞋类和服装为13%，包袋、钱包、电子产品、手表、体育用品通常为8%。按原产地适用FTA协定税率时可能降到0%，但个人海淘通常按基本税率计征。准确税率请用 HS 编码在关税法令信息门户确认。</dd>
+
+        <dt>KREAM 的手续费怎么算？</dt>
+        <dd>KREAM 同时收取基本手续费和等级手续费。自2026年3月2日起，普通品类等级手续费为5.5~6.0%（不含增值税），基本手续费为2,500韩元（不含增值税）。首次销售的 Level 1 可按 6.6% + 2,750韩元（含增值税）估算。本计算器的默认值即此，等级提高后请自行调低费率。手续费上限（含税30万韩元）未在此反映。</dd>
+
+        <dt>闪电市场和 Danggeun 的手续费有什么不同？</dt>
+        <dd>闪电市场普通店铺自2025年9月17日之后的付款起，由卖家承担商品金额的6%（买家为0%）。Danggeun 不收卖家手续费，使用安心结算或立即购买时由买家支付3.3%。当面现金交易双方都无手续费。专业店铺与品类费率不同，请一并查看卖家中心的预计结算额。</dd>
+
+        <dt>列表里没有 SoldOut。</dt>
+        <dd>SoldOut 已预告将于2026年12月31日结束服务，普通交易先在2026年12月1日终止。因此这里不设该预设，改以 Musinsa Used 作为时尚·二手的委托销售渠道。Musinsa Used 约收15%委托手续费，另有7,000韩元商品化费用，把7,000填进固定手续费栏即可比较。</dd>
+
+        <dt>成本回报率（ROI）和利润率有什么区别？</dt>
+        <dd>成本回报率（ROI）看的是投入的钱赚了多少，即净利润 ÷ 总投入成本。利润率看的是售价中剩下多少，即净利润 ÷ 售价。因为售价大于投入成本，利润率总是比 ROI 小。计算器下方的“占售价比的利润率”一行可以同时看到两个数字。</dd>
+
+        <dt>办理营业登记后税金会不同吗？</dt>
+        <dd>一般课税营业者进口时缴纳的增值税可作为进项税额抵扣，实际成本会降低。反过来，销售利润要缴纳增值税和所得税（或法人税）。本计算器只显示单笔交易的现金流，营业者结算请与税务代理人确认。</dd>
+      </dl>
+    </section>
+
+    <p class="rs-xlink">
+      配套工具 · <a href="sourcing.html">全球采购/到货成本计算器</a> ·
+      <a href="biz.html#cost">保证金/成本/资金计算器</a> ·
+      <a href="seller.html">卖家·营销工具</a> ·
+      <a href="freight.html">海运运价·物流成本</a> ·
+      <a href="market.html">Raw materials and exchange rate market information</a> ·
+      <a href="ad.html#b2b">B2B 采购·成本咨询</a>
+    </p>
+
+    <section class="rs-legal" aria-labelledby="rs-legal-title">
+      <h3 id="rs-legal-title">计算基准与个人信息说明</h3>
+      <p><b>计算范围</b> — 这是按您输入的采购价、汇率、运费和手续费加减出结算额与净利润的参考计算器。实际税额取决于进口申报日的课税汇率、确定的 HS 编码、FTA 适用与否以及海关判断。未计入个别消费税、酒税、农渔村特别税、检查检疫费用和退换货费用。手续费率以2026年11月26日确认的公开政策为默认值，并会随等级、品类和活动变化。</p>
+      <p><b>个人信息</b> — 输入的金额与选项只在浏览器内用于计算，不会发送到服务器，也不会保存。刷新后全部消失。无需注册，也不会在 Cookie 中留下任何值。</p>
+      <p><b>外部链接</b> — KREAM、闪电市场、Naver、Danggeun、Musinsa 等名称与商标属于各公司。本页不与任何平台合作、不中介交易，也不推荐特定平台。</p>
+    </section>
+
+    <p class="rs-disclaimer">
+      本计算器是衡量转售交易损益的参考工具，不能替代税务、通关与合同方面的法律判断。示例金额与真实行情无关。关税率、免税限额与平台手续费会因公告和政策变化而调整，付款与上架前请确认官方说明。
+    </p>
+
+  </div>
+</main>
+
+<footer class="site-footer" id="site-footer">
+  <div class="container">
+    <div class="f-top">
+      <div class="f-brand">
+        <div class="mark-line"><i></i><span>独立经济·调查报道研究网络杂志</span></div>
+        <div class="name">INSIGHT BRIEF</div>
+        <p>INSIGHT BRIEF 是以数据与访谈追踪经济金融、贸易原材料、AI 科技现场的独立研究媒体。并非正式注册的互联网新闻机构，也不具备五名以上采编人员等注册条件。</p>
+      </div>
+      <div class="f-col">
+        <h4>栏目</h4>
+        <ul>
+          <li><a href="index.html?cat=investigative">调查报道</a></li>
+          <li><a href="index.html?cat=economy">经济·金融</a></li>
+          <li><a href="index.html?cat=trade">贸易·原材料</a></li>
+          <li><a href="market.html">行情中心</a></li>
+          <li><a href="index.html?cat=ai">AI·科技</a></li>
+        </ul>
+      </div>
+      <div class="f-col">
+        <h4>媒体</h4>
+        <ul>
+          <li><a href="about.html">关于·编辑原则</a></li>
+          <li><a href="contact.html#tip">读者线索</a></li>
+          <li><a href="ad.html">广告·赞助价目表</a></li>
+          <li><a href="ad.html#b2b">B2B 采购·成本咨询</a></li>
+          <li><a href="resell.html">免费工具 · 转售利润计算器</a></li>
+          <li><a href="sourcing.html">免费工具·全球采购·目的地成本计算器</a></li>
+          <li><a href="freight.html">免费工具 · 海运运价与物流成本</a></li>
+          <li><a href="biz.html">免费工具 · 个体经营者工具 9 种</a></li>
+          <li><a href="market.html">免费工具、原材料和汇率市场信息</a></li>
+          <li><a href="feed.xml">RSS 订阅</a></li>
+          <li><a href="sitemap.html">网站地图</a></li>
+        </ul>
+      </div>
+      <div class="f-col mail-col">
+        <h4>联系我们</h4>
+        <ul>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">爆料 hoppe00lg@gmail.com</a></li>
+          <li><a class="mail" href="mailto:hoppe00lg@gmail.com">广告 hoppe00lg@gmail.com</a></li>
+          <li><span style="font-size:11px;opacity:.55">首尔 · VOL. 01</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="f-note">
+      <p>本媒体为未注册的独立媒体。禁止擅自转载、再分发文章与照片。赞助与广告内容标注为“广告”。</p>
+      <div class="copy"><span>© 2026 INSIGHT BRIEF. All rights reserved.</span><span>INSIGHT BRIEF · 独立经济·调查报道研究网络杂志</span></div>
+    </div>
+  </div>
+<!-- IB:CHANNELS --><section class="ib-ch ib-ch--footer" aria-label="实时简报频道"><div class="ib-ch-main"><span class="ib-ch-kicker">LIVE BRIEFING</span><h3>实时简报频道</h3><p>通过 KakaoTalk 开放聊天和 Telegram 实时接收最新报道与行情。</p></div><div class="ib-ch-act"><a class="btn btn-accent" href="https://open.kakao.com/o/prc7jqYi" target="_blank" rel="noopener noreferrer">KakaoTalk 开放聊天</a><a class="btn btn-ghost" href="https://t.me/blockbrief_kr" target="_blank" rel="noopener noreferrer">Telegram 频道</a></div></section><!-- /IB:CHANNELS -->
+</footer>
+
+<div class="rs-toast" id="rs-toast" role="status" aria-live="polite"></div>
+<script src="../assets/js/monetize.js?v=20261123c" defer></script>
+<script src="../assets/js/resell.js?v=20261126a" defer></script>
+<script src="../assets/js/nav.js?v=20261124c"></script>
+<script src="data/i18n.fallback.js?v=20261124a"></script>
+<script src="../assets/js/i18n.js?v=20261124a"></script>
+<!-- IB:CHAT-FLOAT -->
+<script src="../assets/js/chat-float.js?v=20261124c" defer></script>
+<!-- /IB:CHAT-FLOAT -->
+</body>
+</html>

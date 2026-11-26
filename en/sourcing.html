@@ -128,6 +128,7 @@
           <a href="global.html#trip" data-nav-key="trip">Business trip hub</a>
           <a href="biz.html#cost" data-nav-key="cost">Margin, cost &amp; cash calculator</a>
           <a href="mfg-cost.html" data-nav-key="mfgcost">Make-or-buy cost calculator</a>
+          <a href="resell.html" data-nav-key="resell">Resell margin calculator</a>
           <a href="seller.html" data-nav-key="seller">Seller &amp; marketer tools</a>
           <a href="exhibitions.html" data-nav-key="exhibitions">Global exhibition calendar</a>
         </div>
@@ -289,9 +290,9 @@
       <div class="sc-group">
         <div class="sc-group-head"><h3>Exchange rate, customs clearance, domestic transportation</h3><span>The total amount is correct if you include the money leaving the destination.</span></div>
         <div class="sc-grid">
-          <div class="sc-field"><label for="sc-b-fx">Applicable exchange rate <i>1 unit currency = ? circle</i></label>
+          <div class="sc-field"><label for="sc-b-fx">Exchange rate <i>1 unit currency = ? circle</i></label>
             <input id="sc-b-fx" class="num" type="text" inputmode="decimal" value="1343.9">
-            <span class="hint" id="sc-b-fx-hint">Set the market rate as the default. You can fix it yourself.</span>
+            <span class="hint" id="sc-b-fx-hint">Prefilled with the market board rate; you can edit it.</span>
           </div>
           <div class="sc-field"><label for="sc-b-fee">Customs clearance fee (KRW)</label>
             <input id="sc-b-fee" class="num" type="text" inputmode="numeric" value="44000">
@@ -421,7 +422,7 @@
               <option value="KRW">KRW · Won</option>
             </select>
           </div>
-          <div class="sc-field"><label for="sc-c-localship">Local shipping cost</label>
+          <div class="sc-field"><label for="sc-c-localship">Local shipping</label>
             <input id="sc-c-localship" class="num" type="text" inputmode="decimal" value="0">
             <span class="hint">Shopping mall → Baedaeji section. It is determined by including it in the price of the product.</span>
           </div>
@@ -448,7 +449,7 @@
             <input id="sc-c-duty" class="num" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="8">
             <span class="hint">It varies by item, including 13% for clothing and 8% for shoes and bags.</span>
           </div>
-          <div class="sc-field"><label for="sc-c-fx">Applicable exchange rate <i>1 unit currency = ? circle</i></label>
+          <div class="sc-field"><label for="sc-c-fx">Exchange rate <i>1 unit currency = ? circle</i></label>
             <input id="sc-c-fx" class="num" type="text" inputmode="decimal" value="1343.9">
             <span class="hint" id="sc-c-fx-hint">Set the market rate as the default.</span>
           </div>
@@ -622,7 +623,7 @@
           <div class="sc-field"><label for="sc-d-duty">Tariff rate (%)</label>
             <input id="sc-d-duty" class="num" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="8">
           </div>
-          <div class="sc-field"><label for="sc-d-fx">Applicable exchange rate <i>1 unit currency = ? circle</i></label>
+          <div class="sc-field"><label for="sc-d-fx">Exchange rate <i>1 unit currency = ? circle</i></label>
             <input id="sc-d-fx" class="num" type="text" inputmode="decimal" value="1343.9">
             <span class="hint" id="sc-d-fx-hint">Set the market rate as the default.</span>
           </div>
@@ -671,7 +672,7 @@
             <span class="go">Open Search →</span>
           </a>
           <a class="sc-link" id="sc-d-bunjang" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
-            <span class="n">Lightning Marketplace</span><span class="e">Korea · resale</span>
+            <span class="n">Bunjang</span><span class="e">Korea · resale</span>
             <span class="t">Domestic used/limited edition. Secure payment fees are generally borne by the seller.</span>
             <span class="go">Open Search →</span>
           </a>
@@ -735,15 +736,16 @@
       <a href="biz.html#cost">Landed cost & duty calculator</a> ·
       <a href="biz.html#trade">Trade documents (PI · CI · PL)</a> ·
       <a href="market.html">Raw materials and exchange rate market information</a> ·
+      <a href="resell.html">Resell margin & payout calculator</a> ·
       <a href="global.html#email">Writing Trade Emails</a> ·
       <a href="ad.html#b2b">B2B sourcing & cost inquiry</a>
     </p>
 
     <section class="sc-legal" aria-labelledby="sc-legal-title">
       <h3 id="sc-legal-title">Calculation basis and privacy</h3>
-      <p><b>Calculation range</b> — This is a reference calculator that adds customs duties, VAT, and incidental costs based on the entered amount and exchange rate. The actual tax amount will vary depending on the tax exchange rate on the import declaration date, confirmed HS code, application of FTA, and customs judgment. Individual consumption tax, liquor tax, special tax for rural areas, and inspection and quarantine costs are not included.</p>
-      <p><b>Personal information</b> — The entered item, amount, exchange rate, city, province, and personal customs clearance code are used for calculation only within the browser and are not transmitted or stored on the server. Photos are likewise for local preview only and are not uploaded. If you refresh, they all disappear.</p>
-      <p><b>External Links</b> — The names and trademarks of each site are the property of the respective company, and the link is to the official search address for the convenience of users. This page is not affiliated with or brokers transactions with any shopping mall, supplier, or platform.</p>
+      <p><b>Scope</b> — This is a reference calculator that adds customs duties, VAT, and incidental costs based on the entered amount and exchange rate. The actual tax amount will vary depending on the tax exchange rate on the import declaration date, confirmed HS code, application of FTA, and customs judgment. Individual consumption tax, liquor tax, special tax for rural areas, and inspection and quarantine costs are not included.</p>
+      <p><b>Privacy</b> — The entered item, amount, exchange rate, city, province, and personal customs clearance code are used for calculation only within the browser and are not transmitted or stored on the server. Photos are likewise for local preview only and are not uploaded. If you refresh, they all disappear.</p>
+      <p><b>External links</b> — The names and trademarks of each site are the property of the respective company, and the link is to the official search address for the convenience of users. This page is not affiliated with or brokers transactions with any shopping mall, supplier, or platform.</p>
     </section>
 
     <p class="sc-disclaimer">

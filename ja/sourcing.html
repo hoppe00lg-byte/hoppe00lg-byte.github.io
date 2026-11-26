@@ -128,6 +128,7 @@
           <a href="global.html#trip" data-nav-key="trip">出張ハブ</a>
           <a href="biz.html#cost" data-nav-key="cost">粗利・原価・資金計算</a>
           <a href="mfg-cost.html" data-nav-key="mfgcost">内製・外注 原価計算</a>
+          <a href="resell.html" data-nav-key="resell">海外購入・中古リセール粗利計算</a>
           <a href="seller.html" data-nav-key="seller">セラー・マーケター向けツール</a>
           <a href="exhibitions.html" data-nav-key="exhibitions">世界の展示会カレンダー</a>
         </div>
@@ -289,9 +290,9 @@
       <div class="sc-group">
         <div class="sc-group-head"><h3>為替レート・通関・国内輸送</h3><span>到着地から出るお金まで入れなければ総額が正しい</span></div>
         <div class="sc-grid">
-          <div class="sc-field"><label for="sc-b-fx">適用為替レート <i>1単位通貨=？円</i></label>
+          <div class="sc-field"><label for="sc-b-fx">適用レート <i>1単位通貨=？円</i></label>
             <input id="sc-b-fx" class="num" type="text" inputmode="decimal" value="1343.9">
-            <span class="hint" id="sc-b-fx-hint">市販の為替レートをデフォルト値にします。直接修正することもできます。</span>
+            <span class="hint" id="sc-b-fx-hint">市況板のレートを初期値にしています。手入力もできます。</span>
           </div>
           <div class="sc-field"><label for="sc-b-fee">通関手数料（ウォン）</label>
             <input id="sc-b-fee" class="num" type="text" inputmode="numeric" value="44000">
@@ -448,7 +449,7 @@
             <input id="sc-c-duty" class="num" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="8">
             <span class="hint">衣類13%、靴・バッグ8%など品目によって異なります。</span>
           </div>
-          <div class="sc-field"><label for="sc-c-fx">適用為替レート <i>1単位通貨=？円</i></label>
+          <div class="sc-field"><label for="sc-c-fx">適用レート <i>1単位通貨=？円</i></label>
             <input id="sc-c-fx" class="num" type="text" inputmode="decimal" value="1343.9">
             <span class="hint" id="sc-c-fx-hint">市販の為替レートをデフォルト値にします。</span>
           </div>
@@ -622,7 +623,7 @@
           <div class="sc-field"><label for="sc-d-duty">関税率(%)</label>
             <input id="sc-d-duty" class="num" type="number" inputmode="decimal" min="0" max="100" step="0.1" value="8">
           </div>
-          <div class="sc-field"><label for="sc-d-fx">適用為替レート <i>1単位通貨=？円</i></label>
+          <div class="sc-field"><label for="sc-d-fx">適用レート <i>1単位通貨=？円</i></label>
             <input id="sc-d-fx" class="num" type="text" inputmode="decimal" value="1343.9">
             <span class="hint" id="sc-d-fx-hint">市販の為替レートをデフォルト値にします。</span>
           </div>
@@ -671,7 +672,7 @@
             <span class="go">検索を開く →</span>
           </a>
           <a class="sc-link" id="sc-d-bunjang" href="#" target="_blank" rel="noopener noreferrer" aria-disabled="true">
-            <span class="n">雷の場</span><span class="e">Korea · resale</span>
+            <span class="n">バンジャン Bunjang</span><span class="e">Korea · resale</span>
             <span class="t">国内中古・限定版。安全決済手数料は販売者負担が一般的です。</span>
             <span class="go">検索を開く →</span>
           </a>
@@ -735,6 +736,7 @@
       <a href="biz.html#cost">輸入原価・関税付加価値税計算</a> ·
       <a href="biz.html#trade">貿易書式（PI・CI・PL）</a> ·
       <a href="market.html">原材料・為替レート 市況版</a> ·
+      <a href="resell.html">リセール粗利・精算計算</a> ·
       <a href="global.html#email">取引メールを書く</a> ·
       <a href="ad.html#b2b">B2B 調達・原価相談</a>
     </p>

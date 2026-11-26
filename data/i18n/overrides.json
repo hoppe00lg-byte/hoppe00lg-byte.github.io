@@ -6185,6 +6185,546 @@
    "Unit cost comparison with resin, mould amortisation, cycle time, defect rate and freight, plus the break-even quantity. CSV and PDF cost sheet included.",
    "含树脂、模具摊销、成型周期、不良率与物流的单件成本比较，以及盈亏平衡数量。附 CSV·PDF 测算表。",
    "樹脂・金型償却・サイクル・不良率・物流まで反映した1個あたり原価比較と損益分岐数量。CSV・PDF計算書付き。"
+  ],
+  "해외직구·중고 리셀 마진 계산기 — 정산액·순수익·손익분기 매입가 | INSIGHT BRIEF": [
+   "Resell margin calculator: overseas purchase & second-hand — settlement, net profit, break-even | INSIGHT BRIEF",
+   "海淘·二手转售利润计算器 — 结算额·净利润·盈亏平衡采购价 | INSIGHT BRIEF",
+   "海外購入・中古リセール粗利計算機 — 精算額・純利益・損益分岐の仕入価格 | INSIGHT BRIEF"
+  ],
+  "해외직구나 국내 중고로 산 물건을 크림·번개장터·네이버 스마트스토어·당근·무신사 유즈드에서 팔 때 예상 정산액과 순수익, 마진율(ROI), 손익분기 매입가를 실시간으로 계산합니다. 관부가세(신발·의류 13%, 테크·잡화 8%, 부가세 10%), 플랫폼 수수료, 국내 택배비를 반영합니다. 입력값은 브라우저 안에서만 계산됩니다.": [
+   "Work out what you actually keep when you resell something bought overseas or second-hand in Korea. Enter the purchase price, forwarding and international shipping, duty and VAT (13% for shoes and clothing, 8% for tech and general goods, plus 10% VAT), the fee at KREAM, Bunjang, Naver Smart Store, Danggeun or Musinsa Used, and the courier cost to get the expected settlement, net profit, return on cost and break-even purchase price. Everything is calculated inside your browser.",
+   "把海外直购或韩国二手买来的东西转卖时，先算清自己到底留下多少。输入采购价、转运与国际运费、关税与增值税（鞋类·服装 13%，科技·杂货 8%，增值税 10%）、KREAM、闪电市场、Naver 智能商店、Danggeun、Musinsa Used 的手续费以及国内快递费，即可得出预计结算额、净利润、成本回报率与盈亏平衡采购价。所有计算都在浏览器内完成。",
+   "海外で買ったものや中古で仕入れたものを転売したとき、手元にいくら残るかを先に計算します。仕入価格・転送と国際送料・関税と付加価値税（靴・衣類13%、テック・雑貨8%、付加価値税10%）・KREAM、バンジャン、Naver スマートストア、タンジュン、Musinsa Used の手数料・宅配料を入れると、見込み精算額・純利益・コスト利益率・損益分岐の仕入価格が出ます。計算はすべてブラウザ内で行われます。"
+  ],
+  "해외직구·중고 리셀 마진 계산기": [
+   "Overseas purchase & second-hand resell margin calculator",
+   "海淘·二手转售利润计算器",
+   "海外購入・中古リセール粗利計算機"
+  ],
+  "매입가·배송비·관부가세·플랫폼 수수료·택배비를 넣으면 예상 정산액·순수익·마진율(ROI)·손익분기 매입가가 바로 나옵니다. 크림·번개장터·네이버·당근·무신사 유즈드를 같은 판매가로 비교.": [
+   "Enter the purchase price, shipping, duty and VAT, platform fee and courier cost to see the expected settlement, net profit, return on cost and break-even purchase price — with KREAM, Bunjang, Naver, Danggeun and Musinsa Used compared at the same sale price.",
+   "输入采购价、运费、关税与增值税、平台手续费和快递费，立即得出预计结算额、净利润、成本回报率与盈亏平衡采购价，并在同一售价下比较 KREAM、闪电市场、Naver、Danggeun 与 Musinsa Used。",
+   "仕入価格・送料・関税と付加価値税・手数料・宅配料を入れると、見込み精算額・純利益・コスト利益率・損益分岐の仕入価格がすぐ出ます。KREAM・バンジャン・Naver・タンジュン・Musinsa Usedを同じ販売価格で比較できます。"
+  ],
+  "정산액·순수익·마진율·손익분기 매입가를 실시간으로. 관부가세와 플랫폼 수수료까지 반영한 무료 계산기.": [
+   "Settlement, net profit, return on cost and break-even purchase price in real time — a free calculator that includes duty, VAT and platform fees.",
+   "实时算出结算额、净利润、成本回报率与盈亏平衡采购价，并把关税、增值税与平台手续费一并计入的免费计算器。",
+   "精算額・純利益・コスト利益率・損益分岐の仕入価格をリアルタイムで。関税・付加価値税・手数料まで反映した無料計算機。"
+  ],
+  "직구·중고 리셀 마진 계산기": [
+   "Resell margin calculator",
+   "海淘·二手转售利润",
+   "リセール粗利計算"
+  ],
+  "해외직구 · 중고 리셀": [
+   "Overseas & second-hand",
+   "海淘与二手",
+   "海外購入と中古の"
+  ],
+  "마진 계산기": [
+   "resell margin calculator",
+   "转售利润计算器",
+   "リセール粗利計算機"
+  ],
+  "사서 다시 파는 일은 “얼마에 팔리나”보다 “내 손에 얼마가 남나”로 갈립니다. 매입가와 배송비, 관부가세, 플랫폼 수수료, 국내 택배비를 넣으면 예상 정산액과 순수익, 마진율(ROI), 손익분기 매입가가 바로 나옵니다. 같은 판매가로 크림·번개장터·네이버 스마트스토어·당근·무신사 유즈드를 나란히 놓고 어디에 올릴지 정하세요.": [
+   "Buying to resell is decided less by “what will it sell for” than by “what do I actually keep”. Enter the purchase price, shipping, duty and VAT, platform fee and courier cost, and the expected settlement, net profit, return on cost and break-even purchase price appear at once. Then put KREAM, Bunjang, Naver Smart Store, Danggeun and Musinsa Used side by side at the same sale price and choose where to list.",
+   "买来再卖，决定成败的不是“能卖多少钱”，而是“自己手里留下多少”。输入采购价、运费、关税与增值税、平台手续费和国内快递费，立即得出预计结算额、净利润、成本回报率（ROI）与盈亏平衡采购价。再把 KREAM、闪电市场、Naver 智能商店、Danggeun、Musinsa Used 放在同一售价下比较，决定挂到哪里。",
+   "買って売る仕事は「いくらで売れるか」より「手元にいくら残るか」で決まります。仕入価格・送料・関税と付加価値税・手数料・宅配料を入れると、見込み精算額・純利益・コスト利益率（ROI）・損益分岐の仕入価格がすぐ出ます。同じ販売価格で KREAM・バンジャン・Naver スマートストア・タンジュン・Musinsa Used を並べ、どこに出すかを決めてください。"
+  ],
+  "실시간 계산": [
+   "Real-time calculation",
+   "实时计算",
+   "リアルタイム計算"
+  ],
+  "플랫폼 5곳 비교": [
+   "5 platforms compared",
+   "5个平台对比",
+   "5つのプラットフォーム比較"
+  ],
+  "4개 통화": [
+   "4 currencies",
+   "4种货币",
+   "4通貨"
+  ],
+  "매입 경로": [
+   "Where you buy",
+   "采购渠道",
+   "仕入ルート"
+  ],
+  "해외직구 리셀": [
+   "Overseas purchase",
+   "海淘转售",
+   "海外購入リセール"
+  ],
+  "해외 몰·중고 마켓에서 사서 배대지로 받아 국내에서 되팔기": [
+   "Buy from an overseas store or second-hand market, receive it through a forwarder and resell in Korea",
+   "在海外商城或二手市场买入，经转运公司收货后在韩国转卖",
+   "海外モールや中古マーケットで買い、転送サービスで受け取って韓国で転売"
+  ],
+  "국내 중고 리셀": [
+   "Domestic second-hand",
+   "韩国二手转售",
+   "国内中古リセール"
+  ],
+  "당근·번개장터에서 사서 다른 플랫폼에서 되팔기": [
+   "Buy on Danggeun or Bunjang and resell on another platform",
+   "在 Danggeun、闪电市场买入后到其他平台转卖",
+   "タンジュンやバンジャンで買い、別のプラットフォームで転売"
+  ],
+  "달러·엔·유로·위안으로 산 물건을 배대지로 받아 국내에서 되팔 때 씁니다. 목록통관 면세 한도(미국에서 보낸 물품 200달러, 그 밖 150달러)를 넘으면 품목별 관세와 부가세가 붙습니다. 되팔 목적이면 자가사용 면세가 적용되지 않으니 아래 ‘판매용’을 체크하세요.": [
+   "Use this when you buy in dollars, yen, euros or yuan, receive the parcel through a forwarder and resell it in Korea. Above the list-clearance limit (US$200 for goods sent from the United States, US$150 otherwise) duty for the category and VAT apply. Goods bought to resell are not covered by the personal-use exemption, so tick “for resale” below.",
+   "适用于用美元、日元、欧元、人民币买入、经转运公司收货后在韩国转卖的情况。超过目录通关免税限额（美国发货200美元，其他150美元）时，按品类征收关税和增值税。转卖用途不适用自用免税，请在下方勾选“转售用”。",
+   "ドル・円・ユーロ・人民元で買った品を転送サービスで受け取り、韓国で転売するときに使います。リスト通関の免税限度（米国発送は200ドル、それ以外は150ドル）を超えると品目別の関税と付加価値税がかかります。転売目的なら自己使用の免税は適用されないので、下の「転売用」にチェックしてください。"
+  ],
+  "매입": [
+   "Purchase",
+   "采购",
+   "仕入"
+  ],
+  "산 값과 적용 환율": [
+   "Price paid and exchange rate",
+   "买入价与适用汇率",
+   "買った値段と適用レート"
+  ],
+  "매입가": [
+   "Purchase price",
+   "采购价",
+   "仕入価格"
+  ],
+  "현지 통화": [
+   "Local currency",
+   "当地货币",
+   "現地通貨"
+  ],
+  "매입 통화": [
+   "Purchase currency",
+   "采购货币",
+   "仕入通貨"
+  ],
+  "물건값만 넣습니다. 현지 배송비는 아래에서 따로 더합니다.": [
+   "Item price only. Local shipping is added separately below.",
+   "只填商品价格，当地运费在下方另行计入。",
+   "商品代金のみ。現地送料は下で別に加えます。"
+  ],
+  "적용 환율": [
+   "Exchange rate",
+   "适用汇率",
+   "適用レート"
+  ],
+  "1 통화 = ? 원": [
+   "1 unit = ? KRW",
+   "1 单位 = ? 韩元",
+   "1単位 = ? ウォン"
+  ],
+  "시황판 환율을 기본값으로 넣습니다. 직접 고쳐도 됩니다.": [
+   "Prefilled with the market board rate; you can edit it.",
+   "默认填入行情板汇率，可直接修改。",
+   "市況板のレートを初期値にしています。手入力もできます。"
+  ],
+  "관세율이 자동으로 들어갑니다": [
+   "Fills in the duty rate",
+   "自动填入关税率",
+   "関税率が自動で入ります"
+  ],
+  "신발·스니커즈 — 관세 13%": [
+   "Shoes & sneakers — 13% duty",
+   "鞋类·运动鞋 — 关税 13%",
+   "靴・スニーカー — 関税13%"
+  ],
+  "의류 — 관세 13%": [
+   "Clothing — 13% duty",
+   "服装 — 关税 13%",
+   "衣類 — 関税13%"
+  ],
+  "가방·지갑 — 관세 8%": [
+   "Bags & wallets — 8% duty",
+   "包袋·钱包 — 关税 8%",
+   "バッグ・財布 — 関税8%"
+  ],
+  "테크·전자기기 — 관세 8%": [
+   "Tech & electronics — 8% duty",
+   "科技·电子产品 — 关税 8%",
+   "テック・電子機器 — 関税8%"
+  ],
+  "시계·주얼리 — 관세 8%": [
+   "Watches & jewellery — 8% duty",
+   "手表·珠宝 — 关税 8%",
+   "時計・ジュエリー — 関税8%"
+  ],
+  "스포츠·취미 — 관세 8%": [
+   "Sports & hobby — 8% duty",
+   "运动·爱好 — 关税 8%",
+   "スポーツ・ホビー — 関税8%"
+  ],
+  "직접 입력": [
+   "Custom",
+   "手动输入",
+   "手入力"
+  ],
+  "관세 13% + 부가세 10%면 과세가격의 24.3%가 세금입니다.": [
+   "13% duty plus 10% VAT makes 24.3% of the customs value.",
+   "关税 13% 加增值税 10%，相当于完税价格的 24.3%。",
+   "関税13%と付加価値税10%で、課税価格の24.3%が税負担です。"
+  ],
+  "배송·관부가세": [
+   "Shipping & duty",
+   "运费与关税·增值税",
+   "送料・関税"
+  ],
+  "배대지와 통관": [
+   "Forwarding and clearance",
+   "转运与通关",
+   "転送と通関"
+  ],
+  "현지 배송비": [
+   "Local shipping",
+   "当地运费",
+   "現地送料"
+  ],
+  "구매 통화": [
+   "Purchase currency",
+   "采购货币",
+   "仕入通貨"
+  ],
+  "발송국 안에서 드는 배송비. 무료배송이면 0.": [
+   "Delivery inside the sending country. 0 if shipping is free.",
+   "发货国内的配送费，免运费时填 0。",
+   "発送国内の送料。送料無料なら0。"
+  ],
+  "국제배송비": [
+   "International shipping",
+   "国际运费",
+   "国際送料"
+  ],
+  "배대지까지 오는 운송료. 관세의 과세가격에 들어갑니다.": [
+   "Freight to the forwarder. It is part of the customs value for duty.",
+   "运到转运公司的运费，计入关税完税价格。",
+   "転送先までの運賃。関税の課税価格に含まれます。"
+  ],
+  "배대지 수수료": [
+   "Forwarder fee",
+   "转运手续费",
+   "転送手数料"
+  ],
+  "합배송·검수·재포장 수수료. 세금 계산에는 들어가지 않습니다.": [
+   "Consolidation, inspection and repacking fee. Not part of the customs value.",
+   "合箱、验货、重新包装费用，不计入完税价格。",
+   "同梱・検品・再梱包の手数料。課税価格には入りません。"
+  ],
+  "품목을 고르면 자동으로 바뀝니다. HS 코드로 확인한 실제 세율을 넣으세요.": [
+   "Changes with the category. Enter the rate you confirmed with the HS code.",
+   "选择品类后自动变更，请填入按 HS 编码确认的实际税率。",
+   "品目を選ぶと自動で変わります。HSコードで確認した実際の税率を入れてください。"
+  ],
+  "판매용으로 들여옵니다": [
+   "Importing for resale",
+   "以转售用途进口",
+   "転売用に輸入する"
+  ],
+  "체크하면 자가사용 면세 한도가 적용되지 않고, 금액과 상관없이 관세·부가세가 붙습니다.": [
+   "When checked, the personal-use exemption no longer applies and duty and VAT are charged whatever the value.",
+   "勾选后不再适用自用免税限额，不论金额都要缴纳关税与增值税。",
+   "チェックすると自己使用の免税限度が適用されず、金額にかかわらず関税・付加価値税がかかります。"
+  ],
+  "판매": [
+   "Sale",
+   "销售",
+   "販売"
+  ],
+  "팔 때 빠지는 돈": [
+   "What comes off when you sell",
+   "卖出时被扣掉的钱",
+   "売るときに引かれるお金"
+  ],
+  "판매가": [
+   "Sale price",
+   "售价",
+   "販売価格"
+  ],
+  "판매 플랫폼": [
+   "Selling platform",
+   "销售平台",
+   "販売プラットフォーム"
+  ],
+  "크림 KREAM": [
+   "KREAM",
+   "KREAM",
+   "KREAM"
+  ],
+  "번개장터": [
+   "Bunjang",
+   "闪电市场 Bunjang",
+   "バンジャン Bunjang"
+  ],
+  "네이버 스마트스토어": [
+   "Naver Smart Store",
+   "Naver 智能商店",
+   "Naver スマートストア"
+  ],
+  "무신사 유즈드": [
+   "Musinsa Used",
+   "Musinsa Used",
+   "Musinsa Used"
+  ],
+  "당근·직거래": [
+   "Danggeun / in person",
+   "Danggeun·当面交易",
+   "タンジュン・手渡し"
+  ],
+  "플랫폼을 고르면 수수료율이 들어갑니다.": [
+   "Picking a platform fills in its fee rate.",
+   "选择平台后自动填入费率。",
+   "プラットフォームを選ぶと手数料率が入ります。"
+  ],
+  "수수료율": [
+   "Fee rate",
+   "手续费率",
+   "手数料率"
+  ],
+  "정액 수수료": [
+   "Fixed fee",
+   "固定手续费",
+   "固定手数料"
+  ],
+  "크림은 기본 수수료 2,500원(부가세 포함 2,750원)이 따로 붙습니다.": [
+   "KREAM adds a basic fee of ₩2,500 (₩2,750 including VAT).",
+   "KREAM 另收基本手续费 2,500韩元（含增值税 2,750韩元）。",
+   "KREAMは基本手数料2,500ウォン（税込2,750ウォン）が別にかかります。"
+  ],
+  "판매자 부담 배송비": [
+   "Seller-paid delivery",
+   "卖家承担运费",
+   "売り手負担の送料"
+  ],
+  "검수센터나 구매자에게 보내는 택배비. 구매자 부담이면 0.": [
+   "Courier cost to the inspection centre or the buyer. 0 if the buyer pays.",
+   "寄往检验中心或买家的快递费，买家承担时填 0。",
+   "検品センターや購入者へ送る宅配料。購入者負担なら0。"
+  ],
+  "기타 비용": [
+   "Other costs",
+   "其他费用",
+   "その他費用"
+  ],
+  "검수·포장·광고·보험 등. 없으면 0.": [
+   "Inspection, packing, ads, insurance and so on. 0 if none.",
+   "验货、包装、广告、保险等，没有则填 0。",
+   "検品・梱包・広告・保険など。なければ0。"
+  ],
+  "이 마진을 내려면 얼마에 올려야 하는지 함께 계산합니다.": [
+   "Also works out the price you need to list at to earn it.",
+   "同时算出要达到该利润率需要挂多少钱。",
+   "その利益率を得る販売価格も一緒に計算します。"
+  ],
+  "당근·번개장터에서 사서 크림이나 다른 플랫폼에 다시 올릴 때 씁니다. 국내 거래라 관부가세는 없고, 대신 매입 배송비와 플랫폼 수수료, 판매할 때 내는 택배비가 수익을 갉아먹습니다. 사입처와 판매처의 수수료를 바꿔 넣어 보세요.": [
+   "Use this when you buy on Danggeun or Bunjang and relist on KREAM or another platform. Inside Korea there is no duty, but the purchase shipping, the platform fee and the courier cost when you sell eat into the margin. Try changing the fees on both sides.",
+   "在 Danggeun、闪电市场买入后到 KREAM 等平台重新上架时使用。韩国境内交易没有关税与增值税，但采购运费、平台手续费和出售时的快递费都会侵蚀利润。可以把买进和卖出的费率都换一换。",
+   "タンジュンやバンジャンで買い、KREAMなど別のプラットフォームに再出品するときに使います。国内取引なので関税・付加価値税はかかりませんが、仕入時の送料・手数料・販売時の宅配料が利益を削ります。仕入先と販売先の手数料を入れ替えて試してください。"
+  ],
+  "산 값과 받은 배송비": [
+   "Price paid and incoming shipping",
+   "买入价与收货运费",
+   "買った値段と受け取り送料"
+  ],
+  "매입 배송비": [
+   "Purchase shipping",
+   "采购运费",
+   "仕入送料"
+  ],
+  "직거래로 받았으면 0.": [
+   "0 if you collected it in person.",
+   "当面交易自取则填 0。",
+   "手渡しで受け取ったなら0。"
+  ],
+  "구매자 부담이면 0.": [
+   "0 if the buyer pays.",
+   "买家承担时填 0。",
+   "購入者負担なら0。"
+  ],
+  "세탁·수선·포장·광고 등. 없으면 0.": [
+   "Cleaning, repairs, packing, ads and so on. 0 if none.",
+   "清洗、修补、包装、广告等，没有则填 0。",
+   "洗濯・修理・梱包・広告など。なければ0。"
+  ],
+  "계산 결과": [
+   "Result",
+   "计算结果",
+   "計算結果"
+  ],
+  "이렇게 읽습니다": [
+   "How to read the numbers",
+   "这样读这些数字",
+   "数字の読み方"
+  ],
+  "정산액과 순수익은 다릅니다": [
+   "Settlement and net profit differ",
+   "结算额与净利润不是一回事",
+   "精算額と純利益は別物"
+  ],
+  "정산액은 플랫폼이 수수료를 떼고 통장에 넣어 주는 돈입니다. 순수익은 거기서 매입가와 배송비, 관부가세, 포장비를 다시 빼고 남은 돈입니다. 정산액이 커도 순수익이 마이너스일 수 있습니다.": [
+   "The settlement is what the platform pays into your account after taking its fee. Net profit is what is left once the purchase price, shipping, duty and VAT and packing come off that. A large settlement can still leave a negative net.",
+   "结算额是平台扣掉手续费后打到你账户的钱。净利润是从中再减去采购价、运费、关税与增值税以及包装费后剩下的钱。结算额很大，净利润也可能是负数。",
+   "精算額はプラットフォームが手数料を引いて口座に振り込む金額です。純利益はそこから仕入価格・送料・関税と付加価値税・梱包費をさらに引いて残る金額です。精算額が大きくても純利益がマイナスになることがあります。"
+  ],
+  "마진율은 투입원가 기준": [
+   "Return is measured against cost",
+   "利润率以投入成本为基准",
+   "利益率はコスト基準"
+  ],
+  "여기서 마진율(ROI)은 순수익 ÷ 총 투입원가입니다. “판매가 대비 마진”과 숫자가 다르니 섞어 쓰지 마세요. 100만 원을 넣어 20만 원을 남기면 ROI는 20%이고, 판매가 120만 원 대비로는 16.7%입니다.": [
+   "Return on cost (ROI) here is net profit ÷ total cost. It is not the same number as margin on the sale price, so keep them apart. Put in ₩1m and keep ₩200,000 and the ROI is 20%, while against a ₩1.2m sale price it is 16.7%.",
+   "这里的成本回报率（ROI）是净利润 ÷ 总投入成本。它与“占售价的利润率”不是同一个数字，不要混用。投入100万韩元赚到20万韩元，ROI 是20%；相对120万韩元售价则是16.7%。",
+   "ここでのコスト利益率（ROI）は純利益 ÷ 総コストです。「販売価格に対する粗利率」とは数字が違うので混同しないでください。100万ウォンを投じて20万ウォンを残せばROIは20%、販売価格120万ウォンに対しては16.7%です。"
+  ],
+  "손익분기 매입가": [
+   "Break-even purchase price",
+   "盈亏平衡采购价",
+   "損益分岐の仕入価格"
+  ],
+  "이 가격보다 비싸게 사면 팔아도 남지 않는 선입니다. 흥정하거나 입찰할 때 기준으로 쓰세요. 관부가세가 붙는 구간에서는 세금까지 함께 오르기 때문에 한도 근처에서 손익분기가 훅 올라갑니다.": [
+   "Above this price you cannot make money even after selling. Use it as your line when negotiating or bidding. Where duty applies the tax climbs with the price too, so break-even jumps sharply around the exemption limit.",
+   "高于这个价格，卖出也赚不到钱。议价或出价时可以把它当作底线。进入征税区间后税金也随之上升，因此在免税限额附近，盈亏平衡点会突然抬高。",
+   "この価格より高く買うと、売っても残りません。値段交渉や入札の基準にしてください。課税される範囲では税金も一緒に上がるため、免税限度の前後で損益分岐が急に跳ね上がります。"
+  ],
+  "관부가세는 과세가격에": [
+   "Duty and VAT sit on the customs value",
+   "关税与增值税以完税价格为基数",
+   "関税・付加価値税は課税価格に"
+  ],
+  "관세는 물품가에 국제운송료를 더한 과세가격에 붙고, 부가세는 (과세가격 + 관세)의 10%로 한 번 더 붙습니다. 관세 8%면 실효 부담 18.8%, 13%면 24.3%가 됩니다.": [
+   "Duty is charged on the goods value plus international freight (the customs value), and 10% VAT is then charged on the customs value plus the duty. An 8% duty works out to an 18.8% effective burden, and 13% to 24.3%.",
+   "关税以物品价值加国际运费（完税价格）为基数计征，增值税再按（完税价格＋关税）的10%加征。关税率8%时实际负担为18.8%，13%时为24.3%。",
+   "関税は物品価格に国際送料を加えた課税価格にかかり、付加価値税は（課税価格＋関税）の10%でさらにかかります。関税8%なら実効負担は18.8%、13%なら24.3%になります。"
+  ],
+  "관부가세는 언제 붙나요?": [
+   "When do duty and VAT apply?",
+   "什么时候要交关税与增值税？",
+   "関税・付加価値税はいつかかりますか？"
+  ],
+  "자가사용 물품이 미화 150달러(미국에서 보낸 물품은 200달러) 이하이면 목록통관으로 관세·부가세가 면제됩니다. 한도를 넘으면 물품가에 국제운송료를 더한 과세가격에 관세가 붙고, 그 위에 부가세 10%가 다시 붙습니다. 건강기능식품·화장품 일부·식품·주류·담배처럼 목록통관이 안 되는 품목은 금액과 상관없이 수입신고 대상입니다.": [
+   "Personal-use goods up to US$150 (US$200 for shipments from the United States) clear under list clearance with no duty or VAT. Above that, duty is charged on the goods value plus international freight, and 10% VAT is added on top. Items that cannot use list clearance — health supplements, some cosmetics, food, alcohol, tobacco and similar — need an import declaration whatever the amount.",
+   "自用物品在150美元（美国发货200美元）以下可按目录通关，免征关税与增值税。超过限额时，关税以物品价值加国际运费为完税价格计征，再在此基础上加收10%增值税。保健功能食品、部分化妆品、食品、酒类、香烟等不适用目录通关的品目，不论金额都需申报进口。",
+   "自己使用の物品が150ドル（米国発送は200ドル）以下ならリスト通関で関税・付加価値税が免除されます。限度を超えると、物品価格に国際送料を加えた課税価格に関税がかかり、その上に付加価値税10%がさらにかかります。健康機能食品、一部化粧品、食品、酒類、たばこなどリスト通関が使えない品目は、金額にかかわらず輸入申告が必要です。"
+  ],
+  "되팔 목적인데 150달러 면세를 받을 수 있나요?": [
+   "I'm buying to resell — can I still use the US$150 exemption?",
+   "我是买来转卖的，还能享受150美元免税吗？",
+   "転売目的でも150ドルの免税は使えますか？"
+  ],
+  "목록통관 면세는 자가사용 물품을 전제로 합니다. 판매할 물건이면 금액이 작아도 수입신고와 과세 대상이 될 수 있으니, 이 계산기에서는 ‘판매용’을 체크해 세금을 넣고 보는 편이 안전합니다. 실제 판단은 세관의 확인에 따르며, 사업자라면 수입 부가세를 매입세액으로 공제받을 수 있는 경우가 있습니다.": [
+   "The list-clearance exemption assumes the goods are for personal use. Goods bought to sell can need an import declaration and be taxed even at a small amount, so it is safer to tick “for resale” here and include the tax. The actual decision rests with customs; a registered business can often deduct import VAT as input tax.",
+   "目录通关免税以自用为前提。用于销售的商品即使金额很小，也可能需要进口申报并缴税，因此在这里勾选“转售用”并计入税金更稳妥。最终判断由海关作出；已登记营业者的进口增值税通常可作为进项税额抵扣。",
+   "リスト通関の免税は自己使用が前提です。販売目的の商品は少額でも輸入申告と課税の対象になることがあるため、ここでは「転売用」にチェックして税金を含めて見るのが安全です。実際の判断は税関によります。事業者であれば輸入時の付加価値税を仕入税額として控除できる場合が多くあります。"
+  ],
+  "신발·의류 관세율은 왜 13%인가요?": [
+   "Why is duty on shoes and clothing 13%?",
+   "为什么鞋类和服装的关税是13%？",
+   "靴と衣類の関税率が13%なのはなぜですか？"
+  ],
+  "우리나라 기본세율이 신발과 의류 대부분 13%입니다. 가방·지갑, 전자기기, 시계, 스포츠용품은 8%가 흔합니다. 원산지에 따라 FTA 협정세율이 적용되면 0%가 될 수도 있지만, 개인이 직구할 때는 대개 기본세율로 계산됩니다. 정확한 세율은 HS 코드로 관세법령정보포털에서 확인하세요.": [
+   "Korea's basic rate is 13% for most shoes and clothing. Bags, wallets, electronics, watches and sports goods are usually 8%. An FTA rate can bring it to 0% depending on origin, but individual direct purchases are normally assessed at the basic rate. Check the exact rate by HS code on the Korea Customs tariff portal.",
+   "韩国基本税率对大部分鞋类和服装为13%，包袋、钱包、电子产品、手表、体育用品通常为8%。按原产地适用FTA协定税率时可能降到0%，但个人海淘通常按基本税率计征。准确税率请用 HS 编码在关税法令信息门户确认。",
+   "韓国の基本税率は靴と衣類の大半が13%、バッグ・財布・電子機器・時計・スポーツ用品は通常8%です。原産地によりFTA協定税率が適用されれば0%になることもありますが、個人の海外購入は通常、基本税率で計算されます。正確な税率はHSコードで関税法令情報ポータルを確認してください。"
+  ],
+  "크림 수수료는 어떻게 계산하나요?": [
+   "How is the KREAM fee calculated?",
+   "KREAM 的手续费怎么算？",
+   "KREAMの手数料はどう計算しますか？"
+  ],
+  "크림은 기본 수수료와 등급별 수수료를 함께 받습니다. 2026년 3월 2일부터 일반 카테고리 기준 등급 수수료가 5.5~6.0%(부가세 별도), 기본 수수료가 2,500원(부가세 별도)입니다. 처음 파는 Level 1이면 6.6% + 2,750원(부가세 포함)으로 잡으면 됩니다. 이 계산기의 기본값이 그 값이고, 등급이 올라가면 수수료율을 직접 낮춰 넣으세요. 수수료 상한(부가세 포함 30만 원)은 반영하지 않습니다.": [
+   "KREAM charges a basic fee plus a level fee. Since 2 March 2026, for general categories the level fee is 5.5–6.0% (VAT excluded) and the basic fee is ₩2,500 (VAT excluded). A first-time Level 1 seller should budget 6.6% + ₩2,750 with VAT. Those are this calculator's defaults; lower the rate as your level rises. The fee cap (₩300,000 including VAT) is not applied here.",
+   "KREAM 同时收取基本手续费和等级手续费。自2026年3月2日起，普通品类等级手续费为5.5~6.0%（不含增值税），基本手续费为2,500韩元（不含增值税）。首次销售的 Level 1 可按 6.6% + 2,750韩元（含增值税）估算。本计算器的默认值即此，等级提高后请自行调低费率。手续费上限（含税30万韩元）未在此反映。",
+   "KREAMは基本手数料と等級別手数料を併せて取ります。2026年3月2日から一般カテゴリの等級手数料は5.5〜6.0%（税別）、基本手数料は2,500ウォン（税別）です。初めてのLevel 1なら6.6%＋2,750ウォン（税込）で見ておけばよいでしょう。この計算機の初期値がその値で、等級が上がったら手数料率を下げて入力してください。手数料の上限（税込30万ウォン）は反映していません。"
+  ],
+  "번개장터·당근 수수료는 어떻게 다른가요?": [
+   "How do Bunjang and Danggeun fees differ?",
+   "闪电市场和 Danggeun 的手续费有什么不同？",
+   "バンジャンとタンジュンの手数料はどう違いますか？"
+  ],
+  "번개장터 일반상점은 2025년 9월 17일 이후 결제분부터 판매자가 상품 금액의 6%를 냅니다(구매자는 0%). 당근은 판매자 수수료가 없고, 안심결제·바로구매를 쓰면 구매자가 3.3%를 냅니다. 직거래 현금 거래는 양쪽 모두 수수료가 없습니다. 프로상점이나 카테고리별 요율은 다르니 판매자센터의 예상 정산 금액을 함께 확인하세요.": [
+   "At Bunjang's standard shop the seller pays 6% of the item price for payments from 17 September 2025 (buyers pay nothing). Danggeun charges sellers no fee; with its protected payment or buy-now the buyer pays 3.3%. Cash deals in person are free for both sides. Pro shops and category rates differ, so check the estimated payout in the seller centre as well.",
+   "闪电市场普通店铺自2025年9月17日之后的付款起，由卖家承担商品金额的6%（买家为0%）。Danggeun 不收卖家手续费，使用安心结算或立即购买时由买家支付3.3%。当面现金交易双方都无手续费。专业店铺与品类费率不同，请一并查看卖家中心的预计结算额。",
+   "バンジャンの一般店舗は2025年9月17日以降の決済分から売り手が商品代金の6%を負担します（購入者は0%）。タンジュンは売り手手数料がなく、安心決済や即時購入を使うと購入者が3.3%を負担します。手渡しの現金取引は双方無料です。プロ店舗やカテゴリ別の料率は異なるので、販売者センターの見込み精算額もあわせて確認してください。"
+  ],
+  "솔드아웃이 목록에 없네요.": [
+   "SoldOut isn't in the list.",
+   "列表里没有 SoldOut。",
+   "SoldOutが一覧にありません。"
+  ],
+  "솔드아웃은 2026년 12월 31일 서비스 종료를 예고했고, 일반거래는 2026년 12월 1일에 먼저 끝납니다. 그래서 프리셋에서 빼고, 중고·패션 위탁 판매처로 무신사 유즈드를 넣었습니다. 유즈드는 위탁 판매 수수료 15% 안팎에 상품화 비용 7,000원이 따로 붙는 구조라, 정액 수수료 칸에 7,000원을 넣고 비교하면 됩니다.": [
+   "SoldOut has announced it will close on 31 December 2026, with general trading ending first on 1 December 2026. It is therefore not a preset here; Musinsa Used stands in as the consignment route for fashion and second-hand. Musinsa Used takes about 15% commission plus a ₩7,000 merchandising fee, so put 7,000 in the fixed-fee box to compare.",
+   "SoldOut 已预告将于2026年12月31日结束服务，普通交易先在2026年12月1日终止。因此这里不设该预设，改以 Musinsa Used 作为时尚·二手的委托销售渠道。Musinsa Used 约收15%委托手续费，另有7,000韩元商品化费用，把7,000填进固定手续费栏即可比较。",
+   "SoldOutは2026年12月31日でサービス終了を予告し、一般取引は2026年12月1日に先に終わります。そのためプリセットから外し、ファッション・中古の委託販売先としてMusinsa Usedを入れました。Musinsa Usedは委託手数料15%前後に商品化費用7,000ウォンが別にかかるので、固定手数料欄に7,000を入れて比べてください。"
+  ],
+  "마진율(ROI)과 마진은 무엇이 다른가요?": [
+   "What is the difference between return on cost (ROI) and margin?",
+   "成本回报率（ROI）和利润率有什么区别？",
+   "コスト利益率（ROI）と粗利率は何が違いますか？"
+  ],
+  "마진율(ROI)은 내가 넣은 돈 대비 얼마를 벌었는지를 봅니다. 순수익 ÷ 총 투입원가입니다. 마진은 판매가 대비 남는 비율로, 순수익 ÷ 판매가입니다. 같은 거래도 판매가가 투입원가보다 크기 때문에 마진이 ROI보다 작게 나옵니다. 계산기 아래 ‘판매가 대비 마진’ 줄에서 두 숫자를 함께 볼 수 있습니다.": [
+   "Return on cost (ROI) measures what you earned against the money you put in: net profit ÷ total cost. Margin is what is left against the sale price: net profit ÷ sale price. Because the sale price is larger than the cost, margin is the smaller of the two. The line under the calculator shows both numbers.",
+   "成本回报率（ROI）看的是投入的钱赚了多少，即净利润 ÷ 总投入成本。利润率看的是售价中剩下多少，即净利润 ÷ 售价。因为售价大于投入成本，利润率总是比 ROI 小。计算器下方的“占售价比的利润率”一行可以同时看到两个数字。",
+   "コスト利益率（ROI）は投じたお金に対してどれだけ稼いだかを見ます。純利益 ÷ 総コストです。粗利率は販売価格に対して残る割合で、純利益 ÷ 販売価格です。販売価格がコストより大きいため、粗利率はROIより小さくなります。計算機の下の「販売価格に対する粗利率」の行で両方見られます。"
+  ],
+  "사업자등록을 하면 세금이 달라지나요?": [
+   "Does registering as a business change the tax?",
+   "办理营业登记后税金会不同吗？",
+   "事業者登録をすると税金は変わりますか？"
+  ],
+  "수입할 때 낸 부가세는 일반과세자 사업자라면 매입세액으로 공제받을 수 있어 실질 비용이 줄어듭니다. 반대로 판매 이익에는 부가세와 소득세(또는 법인세)가 붙습니다. 이 계산기는 거래 한 건의 현금 흐름만 보여 주므로, 사업자 정산은 세무 대리인과 함께 확인하세요.": [
+   "For a VAT-registered business, the VAT paid on import can usually be deducted as input tax, so the real cost falls. On the other side, profit is subject to VAT and income tax (or corporate tax). This calculator shows the cash flow of one deal only, so check business accounting with your tax adviser.",
+   "一般课税营业者进口时缴纳的增值税可作为进项税额抵扣，实际成本会降低。反过来，销售利润要缴纳增值税和所得税（或法人税）。本计算器只显示单笔交易的现金流，营业者结算请与税务代理人确认。",
+   "一般課税の事業者なら輸入時に払った付加価値税を仕入税額として控除でき、実質コストが下がります。逆に販売益には付加価値税と所得税（または法人税）がかかります。この計算機は1件の取引のキャッシュフローだけを示すので、事業者の精算は税理士と確認してください。"
+  ],
+  "함께 쓰는 도구 ·": [
+   "Use it with ·",
+   "配套工具 ·",
+   "あわせて使う ·"
+  ],
+  "계산 범위": [
+   "Scope",
+   "计算范围",
+   "計算範囲"
+  ],
+  "— 입력한 매입가·환율·배송비·수수료로 정산액과 순수익을 더하고 빼는 참고용 계산기입니다. 실제 세액은 수입신고일의 과세환율, 확정된 HS 코드, FTA 적용 여부, 세관 판단에 따라 달라집니다. 개별소비세·주세·농어촌특별세, 검사·검역 비용, 반품·교환 비용은 넣지 않았습니다. 수수료율은 2026년 11월 26일 확인한 공개 정책을 기본값으로 두었고, 등급·카테고리·이벤트에 따라 달라집니다.": [
+   "— A reference calculator that adds and subtracts settlement and net profit from the purchase price, exchange rate, shipping and fees you enter. The actual tax depends on the exchange rate on the import declaration date, the confirmed HS code, whether an FTA applies and the customs officer's judgement. Individual consumption tax, liquor tax, the rural special tax, inspection and quarantine costs, and return or exchange costs are not included. Fee rates use public policies checked on 26 November 2026 as defaults and vary by level, category and promotion.",
+   "— 这是按您输入的采购价、汇率、运费和手续费加减出结算额与净利润的参考计算器。实际税额取决于进口申报日的课税汇率、确定的 HS 编码、FTA 适用与否以及海关判断。未计入个别消费税、酒税、农渔村特别税、检查检疫费用和退换货费用。手续费率以2026年11月26日确认的公开政策为默认值，并会随等级、品类和活动变化。",
+   "— 入力した仕入価格・レート・送料・手数料から精算額と純利益を足し引きする参考計算機です。実際の税額は輸入申告日の課税レート、確定したHSコード、FTAの適用可否、税関の判断によって変わります。個別消費税・酒税・農漁村特別税、検査・検疫費用、返品・交換費用は含めていません。手数料率は2026年11月26日に確認した公開方針を初期値にしており、等級・カテゴリ・キャンペーンで変わります。"
+  ],
+  "개인정보": [
+   "Privacy",
+   "个人信息",
+   "個人情報"
+  ],
+  "— 입력한 금액과 선택값은 브라우저 안에서만 계산에 쓰이고 서버로 전송되거나 저장되지 않습니다. 새로고침하면 모두 사라집니다. 회원가입도, 쿠키에 값을 남기는 일도 없습니다.": [
+   "— The amounts and choices you enter are used only for the calculation inside your browser; nothing is sent to or stored on a server. Reloading clears everything. There is no sign-up and no value is kept in cookies.",
+   "— 输入的金额与选项只在浏览器内用于计算，不会发送到服务器，也不会保存。刷新后全部消失。无需注册，也不会在 Cookie 中留下任何值。",
+   "— 入力した金額と選択はブラウザ内の計算にだけ使われ、サーバーへ送信したり保存したりしません。再読み込みするとすべて消えます。会員登録も、Cookie に値を残すこともありません。"
+  ],
+  "외부 링크": [
+   "External links",
+   "外部链接",
+   "外部リンク"
+  ],
+  "— 크림·번개장터·네이버·당근·무신사 등 상호와 상표는 각 회사의 자산입니다. 이 페이지는 어느 플랫폼과도 제휴하거나 거래를 중개하지 않으며, 특정 플랫폼을 권하지 않습니다.": [
+   "— The names and trademarks KREAM, Bunjang, Naver, Danggeun, Musinsa and others belong to their companies. This page is not affiliated with any marketplace, does not broker trades and does not recommend any platform.",
+   "— KREAM、闪电市场、Naver、Danggeun、Musinsa 等名称与商标属于各公司。本页不与任何平台合作、不中介交易，也不推荐特定平台。",
+   "— KREAM、バンジャン、Naver、タンジュン、Musinsa などの名称・商標は各社に帰属します。このページはどのマーケットとも提携せず、取引を仲介せず、特定のプラットフォームを推奨しません。"
+  ],
+  "본 계산기는 리셀 거래의 손익을 가늠하기 위한 참고 도구이며, 세무·통관·계약에 대한 법적 판단을 대신하지 않습니다. 예시 금액은 실제 시세와 무관합니다. 관세율·면세 한도·플랫폼 수수료는 고시와 정책 변경으로 달라질 수 있으니 결제와 등록 전에 공식 안내를 확인하세요.": [
+   "This calculator is a reference for sizing the profit and loss of a resale, and does not replace legal, tax or customs advice. The sample amounts have nothing to do with real prices. Duty rates, duty-free limits and platform fees change with notices and policies, so check official guidance before you pay or list.",
+   "本计算器是衡量转售交易损益的参考工具，不能替代税务、通关与合同方面的法律判断。示例金额与真实行情无关。关税率、免税限额与平台手续费会因公告和政策变化而调整，付款与上架前请确认官方说明。",
+   "本計算機はリセール取引の損益を見積もるための参考ツールであり、税務・通関・契約に関する法的判断の代わりにはなりません。例示金額は実際の相場とは関係ありません。関税率・免税限度・プラットフォーム手数料は告示や方針変更で変わるため、決済や出品の前に公式の案内を確認してください。"
+  ],
+  "무료 도구 · 리셀 마진 계산기": [
+   "Free tool · resell margin calculator",
+   "免费工具 · 转售利润计算器",
+   "無料ツール・リセール粗利計算"
+  ],
+  "리셀 마진·정산 계산기": [
+   "Resell margin & payout calculator",
+   "转售利润与结算计算器",
+   "リセール粗利・精算計算"
   ]
  }
 }
