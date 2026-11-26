@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Thu, 26 Nov 2026 14:59:58 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 15:46:33 +0900</lastBuildDate>
+    <item>
+      <title>신청서에는 5억 톤, 발표문에는 숫자가 없다 — 니켈을 1만5,000달러에 묶어 둔 7만9,266톤</title>
+      <link>https://insightbriefnews.com/a/nickel-quota-2027-korea-warehouse-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/nickel-quota-2027-korea-warehouse-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 15:15:00 +0900</pubDate>
+      <category>무역·원자재</category>
+      <description>인도네시아 광산들은 2027년에 5억 습량톤 넘게 캐겠다고 신청했고, 정부는 11월 15일 접수를 마감한 뒤 아직 숫자를 내놓지 않았다. 쿼터를 조여도 세계 정제 니켈이 줄지 않는 이유는 제련소가 필리핀 광석을 수입해서다. LME 니켈 3개월물은 11월 13일 16,230달러에서 25일 15,210달러로 내렸고, 창고 27만5,604톤 가운데 7만9,266톤은 부산·광양에 있다.</description>
+    </item>
     <item>
       <title>시간이 되면 꺼지는 장치는 기준에 없다 — 전기장판 5년 2,354건, 사망 37명</title>
       <link>https://insightbriefnews.com/a/electric-mat-auto-off-standard-gap.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 07:00:00 +0900</pubDate>
       <category>탐사보도</category>
       <description>2026년 1~9월 개인회생 접수는 12만4,703건. 지난해 처리된 사건만 봐도 4만4,914명이 기각·취소·폐지로 나갔다. 인가 전 폐지 비율은 10.1%에서 15.2%로 올랐고, 인가된 사건의 평균변제율은 42.2%로 내려왔다. 관할 법원에 따라 17.6%포인트가 갈린다.</description>
-    </item>
-    <item>
-      <title>38곳의 28개월 — 3월 9일, AI 학습데이터는 심의실을 지나간다</title>
-      <link>https://insightbriefnews.com/a/ai-training-data-exception-review-2027.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/ai-training-data-exception-review-2027.html</guid>
-      <pubDate>Tue, 24 Nov 2026 22:15:00 +0900</pubDate>
-      <category>AI·테크</category>
-      <description>개인정보위가 2026년 11월 23일 AI 학습용 개인정보 특례의 시행령 개정안을 입법예고했다. 2027년 3월 9일 시행이다. 요건 세 개가 안전조치·위험요인평가·심의·간소화의 네 문이 되고, 승인 뒤 6개월 안에 시작하지 않으면 처리 전부가 멈춘다. 지금까지 이 일을 해 온 규제샌드박스는 약 28개월 반에 38곳이었다.</description>
     </item>
   </channel>
 </rss>
