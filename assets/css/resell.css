@@ -35,7 +35,7 @@
   .rs-mini b{font-family:var(--mono);font-size:14px;font-weight:800;letter-spacing:-.02em}
   .rs-mini b.neg{color:#a31c14}
   .rs-mini b.pos{color:#14603a}
-  .rs-mini .m-r{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--ink-3)}
+  .rs-mini .m-r{margin-left:6px;font-family:var(--mono);font-size:11px;color:var(--ink-3)}
 }
 
 /* 2단 배치 */
@@ -53,6 +53,7 @@
 .rs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
 .rs-field{min-width:0}
 .rs-field.full{grid-column:1/-1}
+.rs-field.wide{grid-column:span 2}
 .rs-field > label{display:block;font-size:10.5px;font-weight:700;letter-spacing:.02em;color:var(--ink-3);margin-bottom:4px}
 .rs-field > label i{font-style:normal;font-family:var(--mono);font-size:9px;color:var(--muted);margin-left:4px}
 .rs-field input,.rs-field select{
@@ -159,7 +160,7 @@
   .rs-tab .t-desc{display:none}
   .rs-tab[aria-selected="true"] .t-desc{display:block}
   .rs-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .rs-field.full{grid-column:1/-1}
+  .rs-field.full,.rs-field.wide{grid-column:1/-1}
   .rs-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
   .rs-inline{grid-template-columns:84px minmax(0,1fr)}
 }
