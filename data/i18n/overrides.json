@@ -4845,6 +4845,146 @@
    "5 questions",
    "5 个问题",
    "5つの質問"
+  ],
+  "AI 음악·BGM 생성기 — 가사 프롬프트 + 무료 배경음 WAV 다운로드 | INSIGHT BRIEF": [
+   "AI music & BGM maker — lyric prompts + free background music, WAV | INSIGHT BRIEF",
+   "AI 音乐与 BGM 生成器 — 歌词提示词 + 免费背景音乐 WAV | INSIGHT BRIEF",
+   "AI音楽・BGM生成器 — 歌詞プロンプト + 無料BGMのWAVダウンロード | INSIGHT BRIEF"
+  ],
+  "장르·분위기·템포·보컬을 고르면 Suno·Flow Music용 영문 스타일 태그(200자)와 Verse/Chorus/Bridge 가사, 작사 프롬프트가 나옵니다. 아래에서는 로파이·피아노·시티팝·앰비언트 배경음(BGM)을 브라우저에서 직접 합성해 미리듣기하고 WAV·커버 이미지·스펙트럼 영상으로 내려받을 수 있습니다. 서버·API 키 없이 동작하며 한국어·영어·중국어·일본어를 지원합니다.": [
+   "Pick genre, mood, tempo and vocal and you get English style tags (under 200 characters), Verse/Chorus/Bridge lyrics and a lyric prompt for Suno and Flow Music. Further down, the browser itself synthesises lo-fi, piano, city pop and ambient background music you can preview and save as WAV audio, a cover image or a spectrum video. Works without a server or API key in Korean, English, Chinese and Japanese.",
+   "选好曲风、氛围、速度和音色，就能得到可直接粘贴到 Suno、Flow Music 的英文风格标签(200 字以内)、Verse/Chorus/Bridge 结构歌词和作词提示词。页面下方还能在浏览器里直接合成 Lo-fi、钢琴、City pop、氛围背景音乐，试听后下载 WAV、封面图和频谱视频。无需服务器和 API 密钥，支持韩语、英语、中文、日语。",
+   "ジャンル・雰囲気・テンポ・ボーカルを選ぶと、Suno・Flow Music にそのまま貼れる英語スタイルタグ(200文字以内)、Verse/Chorus/Bridge 構成の歌詞、作詞プロンプトが出ます。ページ下部ではローファイ・ピアノ・シティポップ・アンビエントのBGMをブラウザで直接合成し、試聴してWAV・カバー画像・スペクトラム動画で保存できます。サーバーもAPIキーも不要、韓国語・英語・中国語・日本語に対応。"
+  ],
+  "AI 음악·BGM 생성기 — 가사 프롬프트 + 무료 배경음 WAV": [
+   "AI music & BGM maker — lyric prompts + free background music WAV",
+   "AI 音乐与 BGM 生成器 — 歌词提示词 + 免费背景音乐 WAV",
+   "AI音楽・BGM生成器 — 歌詞プロンプト + 無料BGMのWAV"
+  ],
+  "스타일 태그와 곡 구조 가사, 그리고 브라우저에서 직접 합성하는 로파이·피아노·시티팝·앰비언트 배경음. WAV·커버 PNG·스펙트럼 영상까지 무료, 서버 전송 없음.": [
+   "Style tags and structured lyrics, plus lo-fi, piano, city pop and ambient background music synthesised right in your browser. WAV audio, cover PNG and spectrum video — all free, nothing sent to a server.",
+   "风格标签与结构化歌词，还有在浏览器里直接合成的 Lo-fi、钢琴、City pop、氛围背景音乐。WAV 音频、封面 PNG、频谱视频全部免费，不上传服务器。",
+   "スタイルタグと構成付き歌詞、そしてブラウザで直接合成するローファイ・ピアノ・シティポップ・アンビエントのBGM。WAV・カバーPNG・スペクトラム動画まですべて無料、サーバー送信なし。"
+  ],
+  "스타일 태그·가사·작사 프롬프트 + 브라우저에서 직접 합성하는 배경음(BGM)과 WAV·커버 이미지·스펙트럼 영상.": [
+   "Style tags, lyrics and a lyric prompt, plus background music synthesised in your browser with WAV, cover image and spectrum video.",
+   "风格标签、歌词与作词提示词，加上浏览器内合成的背景音乐(BGM)、WAV、封面图和频谱视频。",
+   "スタイルタグ・歌詞・作詞プロンプトに加え、ブラウザで合成するBGMとWAV・カバー画像・スペクトラム動画。"
+  ],
+  "BGM 합성 · WAV · 커버 · 영상": [
+   "BGM synthesis · WAV · cover · video",
+   "BGM 合成 · WAV · 封面 · 视频",
+   "BGM合成 · WAV · カバー · 動画"
+  ],
+  "배경음(BGM) 직접 만들기 — 음원·커버 이미지·영상까지": [
+   "Make background music — audio, cover image and video",
+   "自己做背景音乐(BGM) — 音频、封面图和视频",
+   "BGMを自分で作る — 音源・カバー画像・動画まで"
+  ],
+  "장르와 분위기, BPM, 조성만 고르면 이 브라우저가 로파이·잔잔한 피아노·시티팝·어쿠스틱 앰비언트 루프를 직접 합성합니다. 서버도 API 키도 쓰지 않으니 바로 미리듣기하고 WAV로 내려받아 유튜브·쇼츠 배경음으로 얹으세요. 같은 설정으로 커버 이미지(PNG)와 스펙트럼이 움직이는 영상까지 만들 수 있습니다.": [
+   "Pick a genre, mood, BPM and key and this browser synthesises a lo-fi, soft piano, city pop or acoustic ambient loop on the spot. No server and no API key, so you can preview it and download a WAV to drop under a YouTube video or Short. The same settings also give you a cover image (PNG) and a video with a moving spectrum.",
+   "选好曲风、氛围、BPM 和调性，这个浏览器就会当场合成 Lo-fi、安静钢琴、City pop 或原声氛围循环。不用服务器也不用 API 密钥，可以立即试听并下载 WAV，放到 YouTube 或 Shorts 下面。同样的设置还能生成封面图(PNG)和带动态频谱的视频。",
+   "ジャンルと雰囲気、BPM、キーを選ぶだけで、このブラウザがローファイ・静かなピアノ・シティポップ・アコースティックアンビエントのループをその場で合成します。サーバーもAPIキーも使わないので、すぐ試聴してWAVで保存し、YouTubeやショートのBGMに使えます。同じ設定からカバー画像(PNG)とスペクトラムが動く動画も作れます。"
+  ],
+  "서버비 0원": [
+   "Zero server cost",
+   "服务器零成本",
+   "サーバー費用0円"
+  ],
+  "CC0 자작 음원": [
+   "Your own CC0 audio",
+   "自有 CC0 音频",
+   "自作CC0音源"
+  ],
+  "WAV · PNG · 영상": [
+   "WAV · PNG · video",
+   "WAV · PNG · 视频",
+   "WAV · PNG · 動画"
+  ],
+  "미리듣기 · 진행바": [
+   "Preview & progress bar",
+   "试听 · 进度条",
+   "試聴・進行バー"
+  ],
+  "한·영·중·일": [
+   "KO · EN · ZH · JA",
+   "韩·英·中·日",
+   "韓・英・中・日"
+  ],
+  "이 도구는 JavaScript로 동작합니다. 브라우저에서 JavaScript를 켜면 배경음을 합성하고 WAV로 내려받을 수 있습니다.": [
+   "This tool runs on JavaScript. Turn it on in your browser to synthesise background music and download it as a WAV.",
+   "此工具依赖 JavaScript。请在浏览器中启用 JavaScript，即可合成背景音乐并下载 WAV。",
+   "このツールはJavaScriptで動きます。ブラウザでJavaScriptを有効にすると、BGMを合成してWAVで保存できます。"
+  ],
+  "이렇게 쓰면 됩니다": [
+   "How to use it",
+   "使用方法",
+   "使い方"
+  ],
+  "음원 — 장르·분위기·BPM·조성을 고르면 자동으로 합성됩니다. 재생 버튼으로 들어 보고, 마음에 들면 WAV로 내려받으세요.": [
+   "Audio — pick a genre, mood, BPM and key and it is synthesised for you. Press play to check, then download the WAV if you like it.",
+   "音频 — 选好曲风、氛围、BPM 和调性后自动合成。按播放试听，满意就下载 WAV。",
+   "音源 — ジャンル・雰囲気・BPM・キーを選ぶと自動で合成されます。再生して確認し、気に入ったらWAVで保存してください。"
+  ],
+  "커버 이미지 — 곡 제목을 넣고 가로(1280×720)·세로(1080×1920)·정사각(1080×1080) 중 하나를 골라 PNG로 저장합니다. 썸네일·릴스 배경에 그대로 쓸 수 있습니다.": [
+   "Cover image — enter a track title and save a PNG at landscape (1280×720), vertical (1080×1920) or square (1080×1080). Use it as a thumbnail or a Reels background.",
+   "封面图 — 输入曲名，选择横版(1280×720)、竖版(1080×1920)或方形(1080×1080)保存为 PNG，可直接用作缩略图或 Reels 背景。",
+   "カバー画像 — 曲名を入れて、横(1280×720)・縦(1080×1920)・正方形(1080×1080)から選びPNGで保存します。サムネイルやリールの背景にそのまま使えます。"
+  ],
+  "스펙트럼 영상 — 같은 화면에서 스펙트럼이 움직이는 영상을 만듭니다. 녹화는 음원 길이만큼 걸리니 탭을 켜 두세요.": [
+   "Spectrum video — the same screen renders a video with a moving spectrum. Recording takes as long as the track, so leave the tab open.",
+   "频谱视频 — 在同一页面生成频谱动态视频。录制需要与音频等长的时间，请保持标签页开着。",
+   "スペクトラム動画 — 同じ画面でスペクトラムが動く動画を作ります。録画は音源の長さだけかかるので、タブを開いたままにしてください。"
+  ],
+  "저작권 — 소리·그림·영상 모두 이 페이지가 브라우저에서 직접 만든 것이라 CC0로 자유롭게 쓸 수 있습니다. 유튜브 수익화 영상 배경음으로도 괜찮습니다.": [
+   "Copyright — the sound, image and video are all made here in your browser, so you can use them freely as CC0, including as background music in a monetised YouTube video.",
+   "版权 — 声音、图像和视频都由本页在浏览器中直接生成，可按 CC0 自由使用，用于 YouTube 营利视频的背景音乐也没问题。",
+   "著作権 — 音・画像・動画はすべてこのページがブラウザで作ったものなので、CC0として自由に使えます。YouTubeの収益化動画のBGMでも構いません。"
+  ],
+  "배경음(BGM)은 저작권이 있나요?": [
+   "Is the background music copyrighted?",
+   "背景音乐有版权吗?",
+   "BGMに著作権はありますか?"
+  ],
+  "없습니다. 이 페이지의 음원·커버 이미지·영상은 브라우저의 Web Audio·Canvas가 그 자리에서 합성한 자체 제작물이라 CC0(퍼블릭 도메인)로 봐도 됩니다. 유튜브·쇼츠·릴스 배경음으로 수익화 영상에 써도 되고, 출처 표기도 필요 없습니다. 다만 유튜브의 음원 자동 인식(Content ID)은 등록된 상용 음원에 반응하는 장치이므로, 이 음원을 그대로 올린 남의 영상이 있다면 그건 다른 문제입니다.": [
+   "No. The audio, cover image and video on this page are generated on the spot by the browser's Web Audio and Canvas, so treat them as CC0 (public domain). Use them as background music in monetised YouTube, Shorts or Reels videos — no credit needed. YouTube's Content ID reacts to registered commercial recordings, so if someone else's video using this audio gets claimed, that is a separate matter.",
+   "没有。本页的音频、封面图和视频都由浏览器的 Web Audio 与 Canvas 当场生成，可视为 CC0(公共领域)。可以用在 YouTube、Shorts、Reels 的营利视频里，也不必标注出处。YouTube 的 Content ID 针对已登记的商用录音，如果别人上传的视频使用了同款音频而被识别，那是另一回事。",
+   "ありません。このページの音源・カバー画像・動画はブラウザのWeb AudioとCanvasがその場で生成したもので、CC0(パブリックドメイン)として扱えます。YouTube・ショート・リールの収益化動画のBGMに使ってもよく、クレジット表記も不要です。YouTubeのContent IDは登録された商用音源に反応する仕組みなので、同じ音源を使った他人の動画が申告されるのは別の話です。"
+  ],
+  "WAV와 영상은 어떤 형식으로 저장되나요?": [
+   "What format are the WAV and the video saved in?",
+   "WAV 和视频保存成什么格式?",
+   "WAVと動画はどの形式で保存されますか?"
+  ],
+  "음원은 44.1kHz 스테레오 16비트 WAV라 편집 프로그램·유튜브에 그대로 얹을 수 있습니다. 영상은 브라우저가 지원하는 코덱을 자동으로 골라 WebM(VP9/Opus) 또는 MP4로 저장합니다. 세로 9:16은 쇼츠·릴스·틱톡용입니다.": [
+   "Audio is 44.1 kHz stereo 16-bit WAV, ready for an editor or YouTube. Video uses whatever codec the browser supports — WebM (VP9/Opus) or MP4. Vertical 9:16 is for Shorts, Reels and TikTok.",
+   "音频是 44.1kHz 立体声 16 位 WAV，可直接放进剪辑软件或 YouTube。视频由浏览器自动选择支持的编码，保存为 WebM(VP9/Opus)或 MP4。竖版 9:16 用于 Shorts、Reels、TikTok。",
+   "音源は44.1kHzステレオ16ビットWAVなので、編集ソフトやYouTubeにそのまま載せられます。動画はブラウザが対応するコーデックを自動で選び、WebM(VP9/Opus)またはMP4で保存します。縦9:16はショート・リール・TikTok向けです。"
+  ],
+  "영상 만들기가 오래 걸리는 이유는?": [
+   "Why does making the video take so long?",
+   "生成视频为什么要这么久?",
+   "動画づくりに時間がかかるのはなぜ?"
+  ],
+  "화면을 실시간으로 그려 녹화하는 방식이라 음원 길이만큼 시간이 걸립니다. 30초 음원이면 30초입니다. 녹화 중에는 탭을 닫거나 다른 탭으로 넘어가지 마세요. 프레임이 끊길 수 있습니다.": [
+   "It draws the frames in real time and records them, so it takes as long as the track. A 30-second track takes 30 seconds. Keep the tab in front while recording; frames drop if you switch away.",
+   "它按实时绘制画面并录制，所以和音频一样长。30 秒的音频就要 30 秒。录制时请不要关闭或切换标签页，否则会丢帧。",
+   "画面を実時間で描いて録画する方式なので、音源の長さだけかかります。30秒の音源なら30秒です。録画中はタブを閉じたり切り替えたりしないでください。フレームが落ちることがあります。"
+  ],
+  "합성 음원·이미지·영상 — 배경음(BGM) 섹션의 소리는 이 페이지의 JavaScript가 Web Audio API로 직접 합성하고, 커버 이미지와 영상은 Canvas로 그립니다. 샘플 음원이나 남의 그림을 쓰지 않았으므로 결과물은 자유롭게(CC0) 사용할 수 있습니다. 곡 제목·가사에 특정인의 이름이나 상표를 넣지 마세요.": [
+   "Synthesised audio, image and video — the background music on this page is synthesised by JavaScript with the Web Audio API, and the cover image and video are drawn with Canvas. No sample recordings or third-party artwork are used, so the results are free to use (CC0). Do not put a real person's name or a trademark in the title or lyrics.",
+   "合成音频、图像与视频 — 本页背景音乐由 JavaScript 通过 Web Audio API 直接合成，封面图与视频用 Canvas 绘制，没有使用任何采样音频或他人画作，因此结果可按 CC0 自由使用。请不要在曲名或歌词里写入真实姓名或商标。",
+   "合成した音源・画像・動画 — BGMセクションの音はこのページのJavaScriptがWeb Audio APIで直接合成し、カバー画像と動画はCanvasで描いています。サンプル音源や他人の絵は使っていないため、結果は自由に(CC0)使えます。曲名や歌詞に実在の人名や商標を入れないでください。"
+  ],
+  "합성 음원·이미지·영상": [
+   "Synthesised audio, image and video",
+   "合成音频、图像与视频",
+   "合成した音源・画像・動画"
+  ],
+  "— 배경음(BGM) 섹션의 소리는 이 페이지의 JavaScript가 Web Audio API로 직접 합성하고, 커버 이미지와 영상은 Canvas로 그립니다. 샘플 음원이나 남의 그림을 쓰지 않았으므로 결과물은 자유롭게(CC0) 사용할 수 있습니다. 곡 제목·가사에 특정인의 이름이나 상표를 넣지 마세요.": [
+   "— the background music on this page is synthesised by JavaScript with the Web Audio API, and the cover image and video are drawn with Canvas. No sample recordings or third-party artwork are used, so the results are free to use (CC0). Do not put a real person's name or a trademark in the title or lyrics.",
+   "— 本页背景音乐由 JavaScript 通过 Web Audio API 直接合成，封面图与视频用 Canvas 绘制，没有使用任何采样音频或他人画作，因此结果可按 CC0 自由使用。请不要在曲名或歌词里写入真实姓名或商标。",
+   "— BGMセクションの音はこのページのJavaScriptがWeb Audio APIで直接合成し、カバー画像と動画はCanvasで描いています。サンプル音源や他人の絵は使っていないため、結果は自由に(CC0)使えます。曲名や歌詞に実在の人名や商標を入れないでください。"
   ]
  }
 }

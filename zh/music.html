@@ -5,21 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="google-adsense-account" content="ca-pub-7853253075143438">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
-<title>AI 音乐歌词·提示词生成器 — 免费用于 Suno、Flow Music | INSIGHT BRIEF</title>
-<meta name="description" content="选好曲风、氛围、速度、人声与主题，即可得到可直接粘贴到 Suno AI、Google Flow Music 的英文风格标签（200字以内）、Verse/Chorus/Bridge 歌词，以及 ChatGPT、Gemini 作词提示词。支持韩语、英语、日语歌词，无需注册，仅在浏览器内运行。">
+<title>AI 音乐与 BGM 生成器 — 歌词提示词 + 免费背景音乐 WAV | INSIGHT BRIEF</title>
+<meta name="description" content="选好曲风、氛围、速度和音色，就能得到可直接粘贴到 Suno、Flow Music 的英文风格标签(200 字以内)、Verse/Chorus/Bridge 结构歌词和作词提示词。页面下方还能在浏览器里直接合成 Lo-fi、钢琴、City pop、氛围背景音乐，试听后下载 WAV、封面图和频谱视频。无需服务器和 API 密钥，支持韩语、英语、中文、日语。">
 <meta name="theme-color" content="#17140f">
 <link rel="canonical" href="https://insightbriefnews.com/zh/music.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="INSIGHT BRIEF">
-<meta property="og:title" content="AI 音乐歌词·提示词生成器 — 免费用于 Suno、Flow Music">
-<meta property="og:description" content="只选曲风、氛围、速度、人声与主题，风格标签和分段歌词立刻生成。韩语、英语、日语，一键复制，不上传服务器。">
+<meta property="og:title" content="AI 音乐与 BGM 生成器 — 歌词提示词 + 免费背景音乐 WAV">
+<meta property="og:description" content="风格标签与结构化歌词，还有在浏览器里直接合成的 Lo-fi、钢琴、City pop、氛围背景音乐。WAV 音频、封面 PNG、频谱视频全部免费，不上传服务器。">
 <meta property="og:url" content="https://insightbriefnews.com/zh/music.html">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
 <meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI 音乐歌词·提示词生成器 — 免费用于 Suno、Flow Music">
-<meta name="twitter:description" content="选好曲风、氛围、速度、人声与主题，立即得到风格标签与分段歌词。韩语、英语、日语一键复制。">
+<meta name="twitter:title" content="AI 音乐与 BGM 生成器 — 歌词提示词 + 免费背景音乐 WAV">
+<meta name="twitter:description" content="风格标签、歌词与作词提示词，加上浏览器内合成的背景音乐(BGM)、WAV、封面图和频谱视频。">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/css/style.css?v=20261123p">
 <link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
-<link rel="stylesheet" href="../assets/css/music.css?v=20261126a">
+<link rel="stylesheet" href="../assets/css/music.css?v=20261126b">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -38,7 +38,7 @@
   "applicationCategory": "MultimediaApplication",
   "operatingSystem": "Any",
   "inLanguage": "ko",
-  "description": "장르·서브장르·분위기·템포(BPM)·보컬·언어·주제를 조합해 Suno AI·Google Flow Music용 영문 스타일 태그와 Verse/Chorus/Bridge 구조의 가사, ChatGPT·Gemini용 작사 프롬프트를 만드는 무료 도구. 서버 전송 없이 브라우저에서만 동작합니다.",
+  "description": "장르·서브장르·분위기·템포(BPM)·보컬·언어·주제를 조합해 Suno AI·Google Flow Music용 영문 스타일 태그와 Verse/Chorus/Bridge 구조의 가사, ChatGPT·Gemini용 작사 프롬프트를 만드는 무료 도구. 같은 화면에서 로파이·피아노·시티팝·앰비언트 배경음(BGM)을 Web Audio로 직접 합성해 미리듣기하고 WAV 음원·커버 이미지(PNG)·스펙트럼 영상으로 내려받을 수 있습니다. 서버 전송 없이 브라우저에서만 동작합니다.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
   "isAccessibleForFree": true,
   "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
@@ -174,7 +174,7 @@
       <h1>AI 音乐<br>歌词·提示词生成器</h1>
       <p class="dek">选好曲风、氛围、速度和唱腔，就能一次得到可直接粘贴到 Suno AI、Google Flow Music 风格栏的英文标签，以及按 Verse、Chorus、Bridge 结构写好的歌词。支持韩语、英语、日语歌词，一键复制。</p>
       <div class="mu-badges">
-        <span>免费</span><span>无需注册</span><span>输入不上传服务器</span><span>Suno · Flow Music · Udio</span><span>韩·英·日歌词</span>
+        <span>免费</span><span>无需注册</span><span>输入不上传服务器</span><span>Suno · Flow Music · Udio</span><span>韩·英·日歌词</span><span>BGM 合成 · WAV · 封面 · 视频</span>
       </div>
     </div>
 
@@ -206,6 +206,27 @@
         <div id="mu-results"></div>
       </section>
     </div>
+
+    <!-- BGM 스튜디오 -->
+    <section class="bgm" id="bgm" aria-labelledby="bgm-title">
+      <div class="bgm-head">
+        <span class="kicker">FREE TOOL · BGM STUDIO</span>
+        <h2 id="bgm-title">自己做背景音乐(BGM) — 音频、封面图和视频</h2>
+        <p class="dek">选好曲风、氛围、BPM 和调性，这个浏览器就会当场合成 Lo-fi、安静钢琴、City pop 或原声氛围循环。不用服务器也不用 API 密钥，可以立即试听并下载 WAV，放到 YouTube 或 Shorts 下面。同样的设置还能生成封面图(PNG)和带动态频谱的视频。</p>
+        <div class="bgm-badges"><span>服务器零成本</span><span>自有 CC0 音频</span><span>WAV · PNG · 视频</span><span>试听 · 进度条</span><span>韩·英·中·日</span></div>
+      </div>
+      <div class="bgm-app" id="bgm-app" translate="no"></div>
+      <noscript><p class="mu-noscript">此工具依赖 JavaScript。请在浏览器中启用 JavaScript，即可合成背景音乐并下载 WAV。</p></noscript>
+      <details class="bgm-help">
+        <summary>使用方法</summary>
+        <ul>
+          <li>音频 — 选好曲风、氛围、BPM 和调性后自动合成。按播放试听，满意就下载 WAV。</li>
+          <li>封面图 — 输入曲名，选择横版(1280×720)、竖版(1080×1920)或方形(1080×1080)保存为 PNG，可直接用作缩略图或 Reels 背景。</li>
+          <li>频谱视频 — 在同一页面生成频谱动态视频。录制需要与音频等长的时间，请保持标签页开着。</li>
+          <li>版权 — 声音、图像和视频都由本页在浏览器中直接生成，可按 CC0 自由使用，用于 YouTube 营利视频的背景音乐也没问题。</li>
+        </ul>
+      </details>
+    </section>
 
     <!-- 쓰는 법 -->
     <section class="mu-how" aria-labelledby="mu-how-title">
@@ -256,6 +277,15 @@
 
         <dt>输入的内容会被保存吗？</dt>
         <dd>不会。所有计算都在这个浏览器里完成，不会发送到服务器。刷新页面后输入与结果都会消失，需要的内容请先复制。</dd>
+
+        <dt>背景音乐有版权吗?</dt>
+        <dd>没有。本页的音频、封面图和视频都由浏览器的 Web Audio 与 Canvas 当场生成，可视为 CC0(公共领域)。可以用在 YouTube、Shorts、Reels 的营利视频里，也不必标注出处。YouTube 的 Content ID 针对已登记的商用录音，如果别人上传的视频使用了同款音频而被识别，那是另一回事。</dd>
+
+        <dt>WAV 和视频保存成什么格式?</dt>
+        <dd>音频是 44.1kHz 立体声 16 位 WAV，可直接放进剪辑软件或 YouTube。视频由浏览器自动选择支持的编码，保存为 WebM(VP9/Opus)或 MP4。竖版 9:16 用于 Shorts、Reels、TikTok。</dd>
+
+        <dt>生成视频为什么要这么久?</dt>
+        <dd>它按实时绘制画面并录制，所以和音频一样长。30 秒的音频就要 30 秒。录制时请不要关闭或切换标签页，否则会丢帧。</dd>
       </dl>
     </section>
 
@@ -273,6 +303,7 @@
       <p><b>个人信息</b> — 主题、关键词与设置只在浏览器内处理，不会保存到服务器。请勿把真实姓名、电话、地址等一旦公开就麻烦的内容填进关键词，分享结果前也请再确认一次。</p>
       <p><b>受版权保护的素材</b> — 在提示词里写某位歌手的名字、真实歌名或商标，要求“用那位歌手的声音”来做，可能引发肖像权、商标权问题。用曲风和氛围来描述风格更安全。</p>
       <p><b>平台条款</b> — Suno、Google Flow Music、Udio 等平台按套餐不同，商用范围也不同。在 YouTube、TikTok 或流媒体上变现之前，请先确认该服务的最新条款。本工具与任何平台都没有合作关系。</p>
+      <p><b>合成音频、图像与视频</b> — 本页背景音乐由 JavaScript 通过 Web Audio API 直接合成，封面图与视频用 Canvas 绘制，没有使用任何采样音频或他人画作，因此结果可按 CC0 自由使用。请不要在曲名或歌词里写入真实姓名或商标。</p>
     </section>
 
     <p class="mu-disclaimer">
@@ -338,6 +369,7 @@
 <div class="mu-toast" id="mu-toast" role="status" aria-live="polite"></div>
 <script src="../assets/js/monetize.js?v=20261123c" defer></script>
 <script src="../assets/js/music.js?v=20261126a" defer></script>
+<script src="../assets/js/music-bgm.js?v=20261126a" defer></script>
 <script src="../assets/js/nav.js?v=20261124c"></script>
 <script src="data/i18n.fallback.js?v=20261124a"></script>
 <script src="../assets/js/i18n.js?v=20261124a"></script>
