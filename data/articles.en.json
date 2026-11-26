@@ -1,5 +1,108 @@
 [
  {
+  "id": "virtual-asset-tax-2029-deferral-dec9-2026",
+  "category": "economy",
+  "title": "Coin taxation pushed to January 2029, all that remains is December 9 and ‘Is it 3 or 5 years?’",
+  "deck": "On November 5, the government announced that it would postpone virtual asset income taxation by two years to January 2029 and pursue a three-year carryover deduction for losses. On November 17, it was agreed to maintain the basic deduction of 2.5 million won, but the legal effective date is still January 1, 2027. The regular National Assembly ends on December 9, and the plenary session is scheduled for December 1, 2, and 9.",
+  "date": "2026-11-26",
+  "sample": false,
+  "author": "Insight Brief Editorial Room",
+  "authorRole": "Economy and Finance Team",
+  "publishedAt": "2026-11-26T09:05:00+09:00",
+  "readMinutes": 5,
+  "tags": [
+   "Taxation of virtual assets",
+   "Deferred until 2029",
+   "Loss carryover deduction",
+   "Amendment to the Income Tax Act",
+   "Tax Subcommittee",
+   "Regular National Assembly December 9",
+   "Basic deduction 2.5 million won",
+   "Base date of acquisition price",
+   "CARF",
+   "Digital Asset Act"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "ECONOMY FILE 36",
+   "word": "DEFERRAL"
+  },
+  "coverImage": "/assets/img/articles/virtual-asset-tax-2029-deferral-dec9-2026.jpg",
+  "summary": [
+   "On November 5, 2026, the government announced a plan to postpone virtual asset income taxation for two years to January 1, 2029, and carry forward deductions for losses for three years. On November 9, 10 people, including Representative Ahn Do-geol, proposed the government bill as legislation (bill number 2222597), and on November 11, the Tax Subcommittee tentatively agreed to a postponement, but postponed the resolution.",
+   "On November 17, it was agreed to maintain the basic deduction at the current 2.5 million won. The remaining issues are the loss carryover deduction period (3 years for the government vs. 5 years for the opposition party) and the timing and scope of submission of exchange tax data. The National Tax Service's tax notice is on hold until discussions on deferment are completed.",
+   "Until the law is revised, the statutory effective date is January 1, 2027. The regular National Assembly ends on December 9, and the plenary session is scheduled for December 1, 2, and 9, so whether it is processed within the year determines the start of taxation in 2027 and the base date of the acquisition price (late 2026 vs. late 2028)."
+  ],
+  "body": "After the Income Tax Act defined income from the transfer and rental of virtual assets as other income in December 2020, this taxation was postponed three times. On November 5, 2026, the government issued a fourth moratorium. The effective date will be two years later, from January 1, 2027 to January 1, 2029. However, what has now been confirmed is the government policy and the provisional agreement of the National Assembly Standing Committee. Until the law changes, the statutory effective date is still January 1, 2027.\n\n## What is confirmed and what is not?\n\nOn November 5, Deputy Prime Minister and Minister of Finance and Economy Lee Hyung-il announced at a briefing at the Seoul Government Complex a two-year deferral, a three-year carryover deduction for investment losses, and the formation of a public-private joint working group. There are two reasons for this. The automatic exchange of cryptographic asset information (CARF) with the United States will not begin until 2029, and the market discipline will change with the enactment of the Digital Asset Act.\n\nOn November 9, 10 people, including Democratic Party of Korea lawmaker Ando-geol, proposed a government bill in the form of legislation by lawmakers (bill number 2222597). Along with the change in the enforcement date, losses will be carried forward for 3 years, and virtual asset business operators will be required to submit transaction data from 2027. On November 11, the Tax Subcommittee of the Finance and Economy Committee confirmed that there was no disagreement with the postponement, but did not pass a decision. On November 17, it was agreed to abandon the plan to raise the basic deduction to 50 million won and maintain the current level of 2.5 million won. The remaining issues are the carryover deduction period (3 years vs. 5 years) and the method of submitting transaction data.\n\n|items|Current Income Tax Act|Suspension plan (under review by the National Assembly)|\n|---|---|---|\n|Effective date|2027.1.1. Subsequent transfer and rental|2029.1.1. After|\n|Income classification|Separate taxation of other income|Maintain|\n|Basic deduction|2.5 million won per year|Maintained at 2.5 million won (agreed on 11.17)|\n|Tax rate|20% + 2% local income tax|Maintain|\n|Loss Carryover|None (only profit and loss for the same year)|3-year carryover (government plan), parallel discussion on 5-year plan|\n|Base date of acquisition price|2026.12.31. The larger amount between the market price and the actual acquisition price|Moved to 2028.12.31 (government explanation)|\n|First report|May 2028|May 2030|\n\n## Why January 1, 2027 is still alive\n\nThe statutory enforcement date remains the same until the National Assembly revises the Income Tax Act. The regular National Assembly ends on December 9, and the plenary session is scheduled for December 1, 2, and 9. As of November 25, there are 26 bills submitted to the plenary session, and due to the filibuster, there is no agreement between the ruling and opposition parties on the scope and order of processing. The tax law revision bill is scheduled to be submitted to the plenary session in early December along with the budget, so the Tax Subcommittee must complete its review by the end of this month. Even after holding five subcommittees as of November 20, no conclusion has been reached.\n\nAdministrative preparations are also at a standstill. The National Tax Service planned to prepare a notice containing the calculation of income amount, calculation of acquisition price, and designation of business by market notification by the end of October, and to issue an administrative notice from November 30 to December 20. The process was put on hold as the ruling party requested that it be postponed until the conclusion of the postponement. If the National Assembly is unable to process it within the year, the implementation date and detailed standards will come at the same time.\n\n## 3 years or 5 years?\n\nThe government and ruling party insist on a 3-year carryover period, while the opposition party insists on a 5-year carryover period. Financial investment income tax is designed to be carried forward for 5 years, and business income losses are, in principle, 15 years. The US and UK carry forward capital losses without any period limit. Japan is reforming its taxation system to be similar to that of financial products and is pushing for a three-year carryover. The government is sticking to the three-year limit, citing the fact that carrying forward losses creates an exception to the system.\n\n## The base date is moved\n\nThe current law considers the acquisition price of the holding before taxation to be the larger of the market price on December 31, 2026 and the actual acquisition price. If implementation is pushed back to 2029, this base date will also be moved to December 31, 2028 (government explanation). There is no need to determine the valuation profit at the end of 2026, but instead, the price change until the end of 2028 becomes the tax base. For quantities for which the actual acquisition price cannot be proven, a rule is applied that deems a certain percentage (up to 50%) of the transfer price as necessary expenses.\n\n## Burden in numbers\n\nSubtract 2.5 million won from annual net profit and multiply by 22%. Net profit of 10 million won is 1.65 million won, 20 million won is 3.85 million won, and 50 million won is 10.45 million won. The biggest complaint with the current structure was that the loss from the year in which the loss occurred could not be carried over to the next year. This is why the government bundled carryover deductions with deferral.\n\n## Remaining schedule\n\nIf the law is passed, the government will create a system improvement plan by the first half of 2027 and submit it to the regular National Assembly in 2027, and detailed tax standards will be announced in the first half of 2028. The first report of 2029 imputed income is May 2030. The risk that experts point out is the time between standard confirmation and computer construction. Bitplanet Research Lab calculated that if the standard is confirmed in June 2028, it will take 9 to 11 months just to build the exchange system, which will be about 3 months short of the implementation date.\n\n## Reporting Memo\n\nThis article was written based on government announcements, National Assembly review reports, and National Tax Service guidance released until the morning of November 26, 2026. The postponement is in the implementation stage and is not confirmed until it is passed and announced by the plenary session. The tax amount example and 2.5 million won/22% structure are simple calculations based on the provisions of the current Income Tax Act, and the actual tax amount varies depending on necessary expenses and incidental expenses. The carryover deduction period and transaction data submission scope are pending as of November 20.\n",
+  "sources": [
+   {
+    "name": "연합뉴스 — 정부 \"가상자산 과세 2년 늦춰 2029년부터…손실 3년 이월공제\" (2026-11-05)",
+    "url": "https://www.yna.co.kr/view/AKR20261105132100002",
+    "note": "이형일 부총리 브리핑, 네 번째 유예, CARF 미국 정보교환 2029년, 2027년 상반기 개선안·2028년 상반기 세부기준 일정"
+   },
+   {
+    "name": "프레스데일리 — 안도걸 의원 등 10명 소득세법 개정안 발의 (2026-11-09)",
+    "url": "https://pressdaily.co.kr/View.aspx?No=4304416",
+    "note": "의안번호 2222597, 시행일 2029.1.1., 손실 3년 이월공제, 사업자 과세자료 제출 근거 신설"
+   },
+   {
+    "name": "연합뉴스 — 정부 이어 여야도 '가상자산 과세 2년 유예' 잠정 합의 (2026-11-11)",
+    "url": "https://www.yna.co.kr/view/AKR20261111170100001",
+    "note": "오기형·배준영 간사 발언, 기본공제 상향·거래자료 제출 의무 이견으로 의결 보류"
+   },
+   {
+    "name": "디지털애셋 — 3년? 5년? 가상자산 과세, 손실이월공제 쟁점만 남았다 (2026-11-17)",
+    "url": "https://www.digitalasset.works/news/articleView.html?idxno=44375",
+    "note": "기본공제 250만원(5,000만원 상향 불채택) 유지 합의, 인적정보 제외·식별정보 포함 방향"
+   },
+   {
+    "name": "서울경제 — 가업상속공제 못풀고…세법 심사 (2026-11-20)",
+    "url": "https://www.sedaily.com/article/20117082",
+    "note": "5차 조세소위까지 미결, 이달 말 심사 종료 목표, 3년 대 5년 대치"
+   },
+   {
+    "name": "아주경제 — 코인 손실 이월공제 몇 년까지…'3년 vs 5년' (2026-11-21)",
+    "url": "https://www.ajunews.com/view/20261120174237589",
+    "note": "금투세 5년·사업소득 15년·미국·영국 무제한·일본 3년 비교"
+   },
+   {
+    "name": "매일일보 — 정쟁에 발목 잡힌 민생…정기국회 '빈손' 위기 (2026-11-25)",
+    "url": "https://www.m-i.kr/news/articleView.html?idxno=2023234",
+    "note": "정기국회 12월 9일 종료, 본회의 12월 1·2·9일, 부의 법안 26건, 필리버스터"
+   },
+   {
+    "name": "국세청 — 가상자산소득 과세제도",
+    "url": "https://www.nts.go.kr/nts/cm/cntnts/cntntsView.do?cntntsId=238935&mi=40369",
+    "note": "2027.1.1. 이후 양도·대여분, 기타소득 분리과세, 기본공제 250만원, 세율 20%, 총평균법, 취득가 확인 곤란 시 최대 50% 의제"
+   },
+   {
+    "name": "주간블록체인 — 에어드랍 과세기준 공백 (2026-11-07)",
+    "url": "https://www.weeklyblockchain.co.kr/ko-kr/articles/111406",
+    "note": "국세청 고시 11월 30일~12월 20일 행정예고 예정이 보류된 경위, 거래 유형별 기준 미확정"
+   },
+   {
+    "name": "더팩트 — 정부, 가상자산 과세 2029년으로 2년 유예 추진 (2026-11-05)",
+    "url": "https://news.tf.co.kr/read/economy/2385355.htm",
+    "note": "의제취득가 기준일 2028년 12월 31일 시가로 이동, 이월공제는 순차 적용"
+   },
+   {
+    "name": "이데일리 — \"네번째 코인 과세 유예…2029년에도 준비 부족 논란 반복될 수도\" (2026-11-18)",
+    "url": "https://marketin.edaily.co.kr/News/ReadE?newsId=02076246645647032",
+    "note": "비트플래닛 리서치랩 보고서, 전산 구축 9~11개월·3개월 부족 추정, 첫 신고 2030년 5월"
+   },
+   {
+    "name": "이포커스 — \"연내 국세청 고시\"…이형일, 가상자산 과세 예정대로 시행한다 (2026-09-14)",
+    "url": "https://www.e-focus.co.kr/news/articleView.html?idxno=3002857",
+    "note": "소득세법 시행일 조문 17개, 시가고시 사업자 지정 등 국세청장 고시 위임 3개 항목"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check & calculation basis",
+   "note": "As of the report on November 20th, the final resolution of the tax subcommittee has not yet been made, and reports of its passage in the plenary session have not been confirmed until the morning of November 26th. Deferral and carry-over deductions are not final laws, but are in the stage of government policy and provisional agreement by the standing committee. Examples of tax amounts (10 million won, 1.65 million won, 20 million won, 3.85 million won, 50 million won, 10.45 million won) are internal figures calculated as (net profit - 2.5 million won) x 22%, and vary depending on necessary expenses, incidental expenses and profit and loss results. The 'base date of December 31, 2028' is what the government explained in the briefing, and cannot be confirmed as confirmed until the revised provisions are made public. The information on the National Tax Service website clearly indicates that it will take effect on January 1, 2027. The scope and timing of transaction data submission and the carryover deduction period are unresolved issues."
+  }
+ },
+ {
   "id": "ai-project-wage-table-18-jobs-2028",
   "category": "ai",
   "title": "4,053,137 won and 11,042,071 won — the AI price table only hardens in 2028",

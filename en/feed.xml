@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Thu, 26 Nov 2026 08:00:52 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 09:03:54 +0900</lastBuildDate>
+    <item>
+      <title>Coin taxation pushed to January 2029, all that remains is December 9 and ‘Is it 3 or 5 years?’</title>
+      <link>https://insightbriefnews.com/en/a/virtual-asset-tax-2029-deferral-dec9-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/virtual-asset-tax-2029-deferral-dec9-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 09:05:00 +0900</pubDate>
+      <category>Economy &amp; Finance</category>
+      <description>On November 5, the government announced that it would postpone virtual asset income taxation by two years to January 2029 and pursue a three-year carryover deduction for losses. On November 17, it was agreed to maintain the basic deduction of 2.5 million won, but the legal effective date is still January 1, 2027. The regular National Assembly ends on December 9, and the plenary session is scheduled for December 1, 2, and 9.</description>
+    </item>
     <item>
       <title>4,053,137 won and 11,042,071 won — the AI price table only hardens in 2028</title>
       <link>https://insightbriefnews.com/en/a/ai-project-wage-table-18-jobs-2028.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 14:30:00 +0900</pubDate>
       <category>Economy &amp; Finance</category>
       <description>The additional premium is calculated at the rate of the month in which the payment is due, not the month of application. For applications filed in November, 9.5% must be paid by December 31, and for applications filed in December, 10% must be paid by January 31, 2027. If the standard monthly income is 1 million won for 60 months, it is 5.7 million won and 6 million won. Up to 119 months, required document is marriage certificate (detailed).</description>
-    </item>
-    <item>
-      <title>Reports increased by 5,420% and people increased by 34% — the number of people at the counter receiving 1.33 million cases was 79.</title>
-      <link>https://insightbriefnews.com/en/a/aml-25-years-1330k-reports-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/aml-25-years-1330k-reports-2026.html</guid>
-      <pubDate>Tue, 24 Nov 2026 14:15:00 +0900</pubDate>
-      <category>Economy &amp; Finance</category>
-      <description>Korea Financial Intelligence Unit celebrated its 25th anniversary. In 2025, there were 1,333,391 reports of suspicious transactions, of which 44,680 (3.4%) were analyzed in detail. During the same period, the workforce increased by 34% from 59 to 79 people. The suspension of transactions on accounts suspected of new phishing, which began on June 30, stopped 11,586 cases by the end of October, and the number of users next year will be 105.</description>
     </item>
   </channel>
 </rss>

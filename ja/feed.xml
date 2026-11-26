@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2026 08:01:01 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 09:04:07 +0900</lastBuildDate>
+    <item>
+      <title>2029年1月に押されたコイン課税、残りは12月9日と「3年か5年か」</title>
+      <link>https://insightbriefnews.com/ja/a/virtual-asset-tax-2029-deferral-dec9-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/virtual-asset-tax-2029-deferral-dec9-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 09:05:00 +0900</pubDate>
+      <category>経済・金融</category>
+      <description>政府が11月5日、仮想資産所得課税を2029年1月に2年延ばし、損失3年繰越控除を推進すると明らかにした。 11月17日、基本控除250万ウォンの維持まで合意されたが、法定施行日はまだ2027年1月1日だ。定期国会は12月9日に終わり、本会議は12月1・2・9日となっている。</description>
+    </item>
     <item>
       <title>4,053,137ウォンと11,042,071ウォン —— AI事業の価格表が固まる日は2028年だ</title>
       <link>https://insightbriefnews.com/ja/a/ai-project-wage-table-18-jobs-2028.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 14:30:00 +0900</pubDate>
       <category>経済・金融</category>
       <description>追納保険料は申請した月ではなく、納付期限が属する月の料金で計算される。 11月の受付は12月31日の納付で9.5％、12月の受付は2027年1月31日の納付で10％。基準所得月額100万ウォン・60ヶ月であれば570万ウォンと600万ウォンだ。最大119ヶ月、必須書類は婚姻関係証明書（詳細）だ。</description>
-    </item>
-    <item>
-      <title>報告は5,420％増、人は34％増 - 133万件を受ける窓口の庭園は79人</title>
-      <link>https://insightbriefnews.com/ja/a/aml-25-years-1330k-reports-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/aml-25-years-1330k-reports-2026.html</guid>
-      <pubDate>Tue, 24 Nov 2026 14:15:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>金融情報分析院が設立25周年を迎えた。 2025年の疑い取引報告は133万3,391件、そのうち詳細分析に行ったのは4万4,680件（3.4％）だ。同じ期間の人材は59人から79人に34％増えた。 6月30日に始まった新種フィッシング疑惑口座取引停止は10月末までに1万1,586件を停止し、来年の庭園は105人になる。</description>
     </item>
   </channel>
 </rss>

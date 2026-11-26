@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 26 Nov 2026 08:00:56 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 09:04:00 +0900</lastBuildDate>
+    <item>
+      <title>硬币税推迟到 2029 年 1 月，剩下的就是 12 月 9 日，“是 3 年还是 5 年？”</title>
+      <link>https://insightbriefnews.com/zh/a/virtual-asset-tax-2029-deferral-dec9-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/virtual-asset-tax-2029-deferral-dec9-2026.html</guid>
+      <pubDate>Thu, 26 Nov 2026 09:05:00 +0900</pubDate>
+      <category>经济·金融</category>
+      <description>11月5日，政府宣布将虚拟资产所得税推迟两年至2029年1月，并实行三年结转扣除。 11月17日，同意维持250万韩元的基本扣除额，但法定生效日期仍为2027年1月1日。例行国会于12月9日结束，全体会议定于12月1日、2日、9日举行。</description>
+    </item>
     <item>
       <title>4,053,137韩元与11,042,071韩元 —— AI项目价格表定型的日子是2028年</title>
       <link>https://insightbriefnews.com/zh/a/ai-project-wage-table-18-jobs-2028.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Tue, 24 Nov 2026 14:30:00 +0900</pubDate>
       <category>经济·金融</category>
       <description>额外保费是按照付款到期月份而非申请月份的费率计算的。对于11月提交的申请，必须在12月31日之前缴纳9.5%，对于12月提交的申请，必须在2027年1月31日之前缴纳10%。如果标准月收入为100万韩元，持续60个月，则为570万韩元和600万韩元。最长 119 个月，所需文件是结婚证（详细）。</description>
-    </item>
-    <item>
-      <title>报告增加了5,420%，人数增加了34%——受理133万病例的柜台人数为79人。</title>
-      <link>https://insightbriefnews.com/zh/a/aml-25-years-1330k-reports-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/aml-25-years-1330k-reports-2026.html</guid>
-      <pubDate>Tue, 24 Nov 2026 14:15:00 +0900</pubDate>
-      <category>经济·金融</category>
-      <description>韩国金融情报院庆祝成立 25 周年。 2025年，可疑交易报告1,333,391起，其中44,680起（3.4%）得到详细分析。同期，劳动力增加了 34%，从 59 人增加到 79 人。自6月30日开始暂停涉嫌新型网络钓鱼的账户交易，截至10月底已停止11,586起案件，明年用户数量将达到105人。</description>
     </item>
   </channel>
 </rss>
