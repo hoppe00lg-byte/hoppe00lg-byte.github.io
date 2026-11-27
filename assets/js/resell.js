@@ -595,10 +595,13 @@
     if (!el) return;
     var curC = selVal('rs-a-cur', 'USD');
     if (curC === PAGE_CUR) { el.textContent = T.priceHint; return; }
-    var usd = val('rs-a-price') * val('rs-a-fx') / fxOf('USD');
+    var goodsLocal = val('rs-a-price');
+    var goodsPage = goodsLocal * (val('rs-a-fx') > 0 ? val('rs-a-fx') : fxOf(curC));
     var limitUsd = (MKT.tax === 'kr' && curC === 'USD') ? MKT.limitUs : MKT.limit;
-    var limitShown = (curC === 'USD' || MKT.tax === 'kr') ? cur(limitUsd, 'USD') : cur(limitUsd, PAGE_CUR);
-    el.textContent = tpl(T.priceHintUsd, { usd: cur(usd, 'USD'), limit: limitShown });
+    var limitShown = (MKT.tax === 'kr' && curC === 'USD') ? cur(limitUsd, 'USD') : cur(limitUsd, PAGE_CUR);
+    var shown = MKT.tax === 'kr' && curC !== 'KRW'
+      ? cur(goodsPage / fxOf('USD'), 'USD') : cur(goodsPage, PAGE_CUR);
+    el.textContent = tpl(T.priceHintUsd, { usd: shown, limit: limitShown });
   }
 
   function paintPlatformHint(which) {
