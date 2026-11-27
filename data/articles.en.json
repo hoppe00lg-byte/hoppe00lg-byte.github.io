@@ -1,5 +1,119 @@
 [
  {
+  "id": "bok-base-rate-325-cofix-reset-2026",
+  "category": "economy",
+  "title": "Base interest rate increased by 3.25%, why does loan interest not change on December 15th?",
+  "deck": "The Bank of Korea raised the base interest rate from 3.00% to 3.25%. However, the interest rate on variable mortgage loans is changed only after the COFIX announcement and the recalculation date for each borrower. We dissect the structure in which the 165 trillion won recalculation section in the fourth quarter and the 4% deposit special offer appear simultaneously.",
+  "date": "2026-11-27",
+  "sample": false,
+  "author": "Insight Brief Editorial Room",
+  "authorRole": "Economy and Finance Team",
+  "publishedAt": "2026-11-27T09:15:00+09:00",
+  "readMinutes": 8,
+  "tags": [
+   "Base interest rate",
+   "COFIX",
+   "Mortgage loan",
+   "Variable interest rate",
+   "Interest rate recalculation",
+   "Term deposit",
+   "Bank of Korea",
+   "Financial stability"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "MONEY & RATES FILE 27",
+   "word": "COFIX"
+  },
+  "coverImage": "/assets/img/articles/bok-base-rate-325-cofix-reset-2026.jpg",
+  "summary": [
+   "On November 26, the Bank of Korea raised the base interest rate by 0.25 percentage points from 3.00% to 3.25%. Five members of the Monetary Policy Committee were in favor and two were against, and this is the third increase this year.",
+   "The new transaction amount COFIX, which is the standard for variable housing mortgage loans, was 3.62% in October, the highest in two years and eight months. The increase is only partially included in the amount announced on December 15, and is fully included in the December amount (announced in January 2027).",
+   "In the fourth quarter alone, approximately 165 trillion won in housing mortgage loans were recalculated, and more than 70% of new borrowers chose the variable type, so interest rate increases are quickly passed on."
+  ],
+  "body": "## Base interest rate 3.25%, 0.75% point in four months\n\nThe Monetary Policy Committee of the Bank of Korea raised the base interest rate by 0.25 percentage points from 3.00% to 3.25% per annum at the monetary policy direction decision meeting on November 26, 2026. This is the third increase following July (2.50% → 2.75%) and August (2.75% → 3.00%) this year, and it is the resumption of austerity measures three months after a freeze in October. Five out of seven members of the Monetary Policy Committee supported the increase, and members Hwang Geon-il and Lee Soo-hyung expressed a minority opinion arguing for maintaining 3.00%.\n\nThe basis was two axes: growth and prices. The Bank of Korea presented this year's growth forecast as 3.9% and next year's forecast as 4.1%. This figure exceeds the August forecasts (3.3% and 2.9%, respectively) by 0.6% points and 1.2% points. In October, consumer prices and core prices (excluding food and energy) were both 2.8%, exceeding the price stability target (2%). The decision stated that it would review “the timing of additional increases.”\n\n![Base interest rate and new transaction amount COFIX trend](/assets/img/articles/bok-base-rate-325-cofix-reset-2026.jpg)\n\n## The loan interest rate was already up: Copix 3.62%\n\nThe reason why an increase in the base interest rate does not directly lead to loan interest is because of the lag in the base interest rate. COFIX (Funding Cost Index), which is the standard for variable housing mortgage loans, is the weighted average interest rate of funds raised by eight domestic banks through deposits, savings, and bank bonds, and is announced around the 15th of every month for the previous month.\n\nBased on the new transaction amount for October announced by the Korea Federation of Banks on November 16, COFIX was 3.62%, up 0.19 percentage points from the previous month (3.43%). This is the highest level in 2 years and 8 months since February 2024 (3.62%). The increase over the two months of September (0.25 percentage points) and October (0.19 percentage points) is 0.44 percentage points.\n\nWhat is noteworthy is the direction of parallax. The base interest rate has been stopped at 3.00% since August 27, but COFIX also rose during that period. The Korea Federation of Banks cited the fact that despite a slight decline in market interest rates, the interest rate on term deposits continued to rise and funding costs increased. The new COFIX amount, which was 2.77% in January 2026, rose 0.85 percentage points in 10 months.\n\n|Metrics|January 2026|September|October|Personality|\n|---|---|---|---|---|\n|Based on new handling amount|2.77%|3.43%|3.62%|Reflects only new transactions in the current month, changes are the fastest|\n|Based on balance|2.85%|3.15%|3.26%|Includes existing reception, slow to change|\n|Based on new balance|2.48%|2.79%|2.93%|Including payment funds|\n\n## Reflection time: ‘My contract date’, not December 15th\n\nThe existing borrower's interest rate changes on the interest rate recalculation date specified in the agreement, not on the COFIX announcement date. The change cycle is generally 3 months, 6 months, or 12 months for each product, and even for the same product from the same bank, the recalculation date is different if the execution date is different.\n\nThe increase on November 26 is only partially reflected in the November COFIX (announced on December 15). This is because there are only five days in the month of November after the increase. The effect of the increase is fully reflected in the December portion, and this figure will be announced in mid-January 2027. In addition to this, the recalculation date for each borrower is added, so the actual reflection can take from as little as a month to as long as half a year or more.\n\nThe amount is calculated as the product of the balance and the index fluctuation range. When the interest rate rises by 0.25 percentage points and the principal is maintained, 100 million won increases by 21,000 won per month, 300 million won increases by 62,500 won per month, and 500 million won increases by 104,000 won per month. The actual fluctuation range may be larger depending on COFIX movements. When the 300 million won 6-month variable loan, where the previous applied index was 2.89% (announced in May), is recalculated on December 10, 3.62% will be applied, an increase of 0.73 percentage points, or 182,500 won per month (2.19 million won per year). The 12-month change is an increase of 1.05 percentage points from 2.57% a year ago to 3.62%, which amounts to 262,500 won per month based on 300 million won.\n\n## Recalculation of KRW 165 trillion in the 4th quarter, 5-year fixed maturity borrowers vulnerable\n\nBased on the Bank of Korea's tally, interest rates on approximately 165 trillion won of housing mortgage loans will be re-established in the fourth quarter of 2026 alone. This is the combined size of variable loans and hybrid loans with a fixed interest rate period ending. Borrowers who received a 5-year fixed hybrid loan during the low interest rate period of 2021 will enter the recalculation period this year. If the interest rate is converted to a floating rate after the end of the fixed period, the increase can be reflected all at once.\n\nThe choice of new borrowers also increases the burden. According to the Bank of Korea, the proportion of variable borrowers among new home mortgage loan borrowers was 79.0% in July, 76.5% in August, 76.0% in September, and 76.2% in October, maintaining the mid to high 70% range. The average interest rate on household loans based on new deposits from deposit banks in October was 5.02% per year, exceeding 5% for the first time since November 2023, and the average interest rate on home mortgage loans was 4.98%, the highest in 14 years and 7 months. As of November 26, the interest rates on variable (6-month) home mortgage loans from the five major banks were 4.51-6.51% per annum. The possibility of an additional increase in the first half of next year is also being discussed, and some predict that the upper end of the home mortgage interest rate could reach 7%.\n\n## Deposits go in the opposite direction: 8 products in the 4% range, special offer competition\n\nDeposit interest rates move in the opposite direction. According to the Korea Federation of Banks' consumer portal, as of November 20, 8 out of 39 term deposit products with 12-month maturity had the highest interest rate of 4% or more per annum. SC First Bank e-Green Save Deposit is 4.15%, and BNK Gyeongnam Bank, BNK Busan Bank, and Jeonbuk Bank special products are 4.10%. Term deposits from the five major banks have a maximum annual interest rate of 3.60-3.65% with a one-year maturity.\n\nThe inflow of funds is also fast. The balance of term deposits at the five major banks reached KRW 1049.5041 trillion on November 20, increasing for 7 consecutive months since May and increasing by more than KRW 19 trillion in just 20 days in November. The proportion of annual interest rates in the 4% range among new term deposits increased from 0.5% in August to 10.6% in September and 29.0% in October.\n\nHowever, if you only look at the surface interest rate, your actual profits may decrease. The preferential interest rate is subject to conditions such as salary transfer and first transaction, the depositor protection limit is 50 million won per financial company, and in case of early cancellation, the early cancellation interest rate, not the contract interest rate, is applied.\n\n## Three things to check\n\nFirst, it is an interconnection indicator. Check which index is used among new handling amount, balance, and new balance COFIX, or whether it is linked to financial bonds. Second, it is a fluctuation cycle. The timing and range of reflection are different for 3 months and 12 months. Third, the next recalculation date is. You can check it on the loan details screen or contract form of the bank app, and if you know this date and the immediately preceding and following indicators, you can calculate the next interest rate in advance. If you are considering a refinancing loan, you must also compare the early repayment fee and the conditions for maintaining preferential interest rates.\n\n## Future variables\n\nThe next schedule is the US Federal Open Market Committee (FOMC) on December 8-9, the COFIX announcement for November on December 15, and the Bank of Korea's first Monetary Policy Committee meeting in January 2027. The outlook is different. In a report on November 24, Goldman Sachs predicted that the Bank of Korea's final base interest rate would not exceed 3.50% per annum, and Hana Securities left open the possibility of a final 3.50% and 3.75%. In either case, the borrower's recalculation date is already set in the agreement.\n",
+  "sources": [
+   {
+    "name": "한국은행, 통화정책방향(2026.11.26) 보도자료",
+    "date": "2026-11-26",
+    "url": "https://www.bok.or.kr/portal/bbs/P0000559/view.do?menuNo=200690&nttId=11067084"
+   },
+   {
+    "name": "한국은행 영문 보도자료 Monetary Policy Decision (November 26, 2026)",
+    "date": "2026-11-26",
+    "url": "https://www.bok.or.kr/eng/bbs/E0000627/view.do?menuNo=400022&nttId=11067085"
+   },
+   {
+    "name": "연합뉴스, [1보] 한은, 기준금리 연 3.25%로 0.25%p 인상",
+    "date": "2026-11-26",
+    "url": "https://www.yna.co.kr/view/AKR20261126054900002"
+   },
+   {
+    "name": "머니투데이, 한은 \"내년 韓경제 4.1% 성장 전망\"…기준금리 연 3.25%로 올렸다",
+    "date": "2026-11-26",
+    "url": "https://www.mt.co.kr/economy/2026/11/26/2026112609240771689"
+   },
+   {
+    "name": "한국금융신문, 올해 마지막 한은 금통위 기준금리 3.25%로 인상(종합)",
+    "date": "2026-11-26",
+    "url": "https://www.fntimes.com/html/view.php?ud=202611261110132637179ad43907_18"
+   },
+   {
+    "name": "연합뉴스, 신규 코픽스 2년 8개월 만에 최고…주담대 금리 더 오른다(종합)",
+    "date": "2026-11-16",
+    "url": "https://www.yna.co.kr/view/AKR20261116115851002"
+   },
+   {
+    "name": "머니투데이, 주담대 금리 15년 만에 최고인데…한은 또 인상, '7% 주담대' 오나",
+    "date": "2026-11-26",
+    "url": "https://www.mt.co.kr/finance/2026/11/26/2026112615315475729"
+   },
+   {
+    "name": "아주경제, 금리 인상기 돌아온 '예테크'…4%대 정기예금 골라볼까",
+    "date": "2026-11-26",
+    "url": "https://www.ajunews.com/view/20261125151543713"
+   },
+   {
+    "name": "경제일보, 한은 기준금리 3.25%로 인상…예금금리 상승 기대 속 은행권 건전성 부담도",
+    "date": "2026-11-26",
+    "url": "https://www.kyungjeilbo.com/view/20261126141644457"
+   },
+   {
+    "name": "네이버페이 머니스토리, 기준금리 3.25% 인상…내 대출 이자는 언제 오르나",
+    "date": "2026-11-26",
+    "url": "https://story.pay.naver.com/content/4050_24_C5"
+   },
+   {
+    "name": "뱅보드, 2026년 11월 26일 통합 뱅보드 차트(정기예금 금리)",
+    "date": "2026-11-26",
+    "url": "https://www.bankboard.kr/archive/2026/11-26-1830"
+   },
+   {
+    "name": "마켓로그, 2026년 기준금리 발표일·코픽스 공시 일정",
+    "date": "2026-11-24",
+    "url": "https://marketlog.co.kr/rate-decision-calendar-2026/"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check",
+   "confirmed": [
+    "한국은행은 2026년 11월 26일 기준금리를 3.00%에서 3.25%로 0.25%포인트 인상했다(금통위원 5명 찬성, 황건일·이수형 위원 반대).",
+    "10월 신규취급액 기준 코픽스는 3.62%로 9월(3.43%)보다 0.19%포인트 올랐고, 2024년 2월 이후 최고치다.",
+    "잔액 기준 코픽스는 3.26%, 신잔액 기준은 2.93%다.",
+    "코픽스는 매월 15일 전후 공시되며, 11월분은 12월 15일, 12월분은 2027년 1월 중순에 공시된다.",
+    "5대 은행 변동형(6개월) 주택담보대출 금리는 2026년 11월 26일 기준 연 4.51~6.51%다.",
+    "2026년 4분기 주택담보대출 약 165조원이 금리 재산정 구간에 들어간다(한국은행 집계)."
+   ],
+   "unconfirmed": [
+    "11월분 코픽스의 실제 수치와 인상 폭은 12월 15일 공시 전까지 확정되지 않았다.",
+    "은행별 재산정 기준일 적용 방식(직전 공시분 기준 여부)은 상품·약정별로 달라 개별 확인이 필요하다.",
+    "2027년 추가 기준금리 인상 여부와 시점은 결정되지 않았다."
+   ]
+  },
+  "_slot": "2026-11-27#economy"
+ },
+ {
   "id": "us-energy-loss-and-efficiency-analysis-20261127",
   "category": "energy",
   "title": "60% of US energy lost by 2025, physical limits to grid efficiency and cost structure",

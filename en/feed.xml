@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 27 Nov 2026 07:54:20 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 09:11:32 +0900</lastBuildDate>
+    <item>
+      <title>Base interest rate increased by 3.25%, why does loan interest not change on December 15th?</title>
+      <link>https://insightbriefnews.com/en/a/bok-base-rate-325-cofix-reset-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/bok-base-rate-325-cofix-reset-2026.html</guid>
+      <pubDate>Fri, 27 Nov 2026 09:15:00 +0900</pubDate>
+      <category>Economy &amp; Finance</category>
+      <description>The Bank of Korea raised the base interest rate from 3.00% to 3.25%. However, the interest rate on variable mortgage loans is changed only after the COFIX announcement and the recalculation date for each borrower. We dissect the structure in which the 165 trillion won recalculation section in the fourth quarter and the 4% deposit special offer appear simultaneously.</description>
+    </item>
     <item>
       <title>60% of US energy lost by 2025, physical limits to grid efficiency and cost structure</title>
       <link>https://insightbriefnews.com/en/a/us-energy-loss-and-efficiency-analysis-20261127.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 20:45:00 +0900</pubDate>
       <category>Economy &amp; Finance</category>
       <description>KOSPI closed at 4,697.51 on 25 November 2026, down 6.16% and its lowest close in more than ten months. The intraday low sat 50.22% below the 19 June peak, the fourth time since 2000 that the index has halved from a high. Sidecars were triggered 102 times this year and 43 sessions moved more than 5%. Individuals net bought 1.42 trillion won, while the credit-loan balance still stood at 25.88 trillion won.</description>
-    </item>
-    <item>
-      <title>Profit zone 43.6%, lowest since February 2019 — This is the first time this number has been shown above the realized price</title>
-      <link>https://insightbriefnews.com/en/a/btc-profit-supply-43-6-2019-low-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/btc-profit-supply-43-6-2019-low-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 19:58:00 +0900</pubDate>
-      <category>Economy &amp; Finance</category>
-      <description>On November 20, the supply of Bitcoin profit section fell to 43.6%. It is lower than during the crash in March 2020 and the bear market in November 2022. However, three times in the past, the number came out when the price was below the realized price, and this time it came out 11% above the realized price. Spot ETF net outflows of $4.71 billion in November appear to have made the difference.</description>
     </item>
   </channel>
 </rss>

@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 27 Nov 2026 07:54:24 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 09:11:37 +0900</lastBuildDate>
+    <item>
+      <title>基准利率上调3.25%，为何12月15日贷款利息不变？</title>
+      <link>https://insightbriefnews.com/zh/a/bok-base-rate-325-cofix-reset-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/bok-base-rate-325-cofix-reset-2026.html</guid>
+      <pubDate>Fri, 27 Nov 2026 09:15:00 +0900</pubDate>
+      <category>经济·金融</category>
+      <description>韩国央行将基准利率从3.00%上调至3.25%。然而，可变抵押贷款的利率只有在 COFIX 公告和每个借款人的重新计算日期后才会改变。我们剖析第四季度165万亿韩元重新计算部分和4%存款优惠同时出现的结构。</description>
+    </item>
     <item>
       <title>到 2025 年，美国将损失 60% 的能源，电网效率和成本结构受到物理限制</title>
       <link>https://insightbriefnews.com/zh/a/us-energy-loss-and-efficiency-analysis-20261127.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 19:58:00 +0900</pubDate>
       <category>经济·金融</category>
       <description>11月20日，比特币盈利板块供应量跌至43.6%。它低于2020年3月的崩盘和2022年11月的熊市期间。然而，过去3次，该数字是在价格低于实现价格时出现的，而这一次，它比实现价格高出了11%。 11 月份现货 ETF 净流出 47.1 亿美元似乎起到了作用。</description>
-    </item>
-    <item>
-      <title>99项中80项是必需，148个检查项 —— 键盘要等到2027年2月才写进这张表</title>
-      <link>https://insightbriefnews.com/zh/a/public-ai-uiux-checklist-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/public-ai-uiux-checklist-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 16:45:00 +0900</pubDate>
-      <category>AI·科技</category>
-      <description>韩国行政安全部于11月25日向中央行政机关、地方政府和公共机构分发《公共AI服务UI/UX指南》。其中包含29项设计标准、99项细部要求（必需80项）与148个检查项，但按钮说明、键盘操作等无障碍标准要到2027年2月才加入。同样的一句话，欧洲自8月2日起已作为法律执行。</description>
     </item>
   </channel>
 </rss>

@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 07:54:28 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 09:11:42 +0900</lastBuildDate>
+    <item>
+      <title>基準金利3.25％引き上げ、ローン利子はなぜ12月15日にも変わらないのか</title>
+      <link>https://insightbriefnews.com/ja/a/bok-base-rate-325-cofix-reset-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/bok-base-rate-325-cofix-reset-2026.html</guid>
+      <pubDate>Fri, 27 Nov 2026 09:15:00 +0900</pubDate>
+      <category>経済・金融</category>
+      <description>韓国銀行が基準金利を開いた3.00%から3.25%に上げた。しかし、変動型住宅担保ローン金利はコフィックス公示と借主別財産定日を経なければ変わる。第4四半期の165兆ウォン財産政区間と4%台預金特板が同時に現れる構造を解剖する。</description>
+    </item>
     <item>
       <title>2025年の米国エネルギーの60％消失、電力網効率の物理的限界とコスト構造</title>
       <link>https://insightbriefnews.com/ja/a/us-energy-loss-and-efficiency-analysis-20261127.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 19:58:00 +0900</pubDate>
       <category>経済・金融</category>
       <description>11月20日、ビットコイン収益区間供給が43.6％まで下がった。 2020年3月の暴落と2022年11月の弱世場よりも低い。ところが、過去３回は価格が実現価格の下であるときに出てきた数字であり、今回は実現価格より１１％上から出た。 11月、現物ETF純流出47億1,000万ドルがその差を作ったものと見られる。</description>
-    </item>
-    <item>
-      <title>99項目のうち80項目が必須、チェックは148項目 —— キーボードが表に入るのは2027年2月</title>
-      <link>https://insightbriefnews.com/ja/a/public-ai-uiux-checklist-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/public-ai-uiux-checklist-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 16:45:00 +0900</pubDate>
-      <category>AI・テック</category>
-      <description>行政安全部が11月25日、中央行政機関と地方政府、公共機関に「公共AIサービスUI/UXガイドライン」を配布した。設計基準29項目、細部要求99項目（必須80）、チェック項目148項目を備えるが、ボタンの説明やキーボード操作といったアクセシビリティ基準は2027年2月に加わる。同じ一文を、欧州は8月2日から法律として執行している。</description>
     </item>
   </channel>
 </rss>
