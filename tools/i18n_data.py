@@ -231,6 +231,83 @@ def localize_cover(b: dict, lang: str, src_cover: str) -> dict:
     return b
 
 
+# ---------------------------------------------------------------- 국가별 직접 쓴 원고
+# tools/auto_publish_webzine.py 가 같은 주제를 en·zh·ja 독자용으로 따로 쓰면
+# data/i18n-articles/{기사ID}.json 에 넣어 둡니다. 그 파일이 있으면 기계번역 대신
+# 그 원고를 그 언어판에 씁니다(제목·요약·본문·커버 카드까지 그 언어 그대로).
+NATIVE_DIR = os.path.join(DATA, "i18n-articles")
+_native_cache: dict = {}
+
+
+def _native_doc(article_id: str) -> dict:
+    if article_id not in _native_cache:
+        path = os.path.join(NATIVE_DIR, f"{article_id}.json")
+        doc = {}
+        if os.path.exists(path):
+            try:
+                with open(path, encoding="utf-8") as f:
+                    doc = json.load(f) or {}
+            except Exception as e:  # noqa: BLE001
+                print(f"  ! 국가별 원고 파일을 읽지 못했습니다({article_id}): {e}")
+                doc = {}
+        _native_cache[article_id] = doc
+    return _native_cache[article_id]
+
+
+def native_variant(a: dict, lang: str) -> dict | None:
+    """그 기사에 이 언어로 직접 쓴 원고가 있으면 돌려줍니다(없으면 None → 기계번역)."""
+    aid = (a or {}).get("id")
+    if not aid:
+        return None
+    doc = _native_doc(aid)
+    block = doc.get(lang)
+    if not isinstance(block, dict) or not (block.get("title") and block.get("body")):
+        return None
+    # 한국어판이 나중에 수정됐으면 그 원고는 지금 기사와 다른 내용이다 — 번역으로 돌아간다.
+    want = doc.get("sourceHash")
+    if want:
+        have = hashlib.sha1(((a.get("title") or "") + "\n" + (a.get("body") or ""))
+                           .encode("utf-8")).hexdigest()[:12]
+        if have != want:
+            print(f"  ! {lang} {aid}: 직접 쓴 원고가 한국어판과 달라 번역으로 대체합니다(원고 갱신 필요)")
+            return None
+    text = (block.get("title") or "") + "\n" + (block.get("body") or "")
+    if HANGUL.search(text):
+        print(f"  ! {lang} {aid}: 직접 쓴 원고에 한국어가 남아 번역으로 대체합니다")
+        return None
+    return block
+
+
+def apply_native(b: dict, block: dict, lang: str) -> None:
+    """기사 사본(b)을 직접 쓴 원고로 바꿔 넣습니다(번역을 거치지 않음)."""
+    b["title"] = (block.get("title") or "").strip()
+    if block.get("deck"):
+        b["deck"] = block["deck"].strip()
+    if isinstance(block.get("summary"), list) and block["summary"]:
+        b["summary"] = [s for s in block["summary"] if isinstance(s, str)][:3]
+    if isinstance(block.get("tags"), list) and block["tags"]:
+        b["tags"] = [t for t in block["tags"] if isinstance(t, str)][:10]
+    if isinstance(block.get("cover"), dict) and block["cover"].get("label"):
+        b["cover"] = block["cover"]
+    if block.get("readMinutes"):
+        try:
+            b["readMinutes"] = int(block["readMinutes"])
+        except (TypeError, ValueError):
+            pass
+    for key in ("author", "authorRole"):
+        if block.get(key):
+            b[key] = block[key]
+    b["body"] = fix_body(block.get("body") or "")
+    fc = block.get("factCheck")
+    if isinstance(fc, dict):
+        b["factCheck"] = {
+            "title": fc.get("title") or "",
+            "confirmed": [x for x in (fc.get("confirmed") or []) if isinstance(x, str)][:6],
+            "unconfirmed": [x for x in (fc.get("unconfirmed") or []) if isinstance(x, str)][:4],
+            "sources": b.get("sources") or [],
+        }
+
+
 def category_labels(lang: str) -> dict:
     """카테고리 이름·설명의 확정 표기(data/i18n/category-labels.json). 없으면 빈 사전."""
     path = os.path.join(DATA, "i18n", "category-labels.json")
@@ -292,6 +369,15 @@ def build_articles(lang):
         b = json.loads(json.dumps(a))
         if C.article_source_lang(a) == lang:
             # 이 언어 독자를 위해 직접 쓴 기사 — 기계번역하지 않습니다.
+            localize_urls(b)
+            localize_cover(b, lang, a.get("coverImage") or "")
+            out.append(b)
+            total += 1
+            continue
+        # 이 언어 독자를 위해 따로 쓴 원고가 있으면 기계번역보다 먼저 씁이다.
+        nv = native_variant(a, lang)
+        if nv:
+            apply_native(b, nv, lang)
             localize_urls(b)
             localize_cover(b, lang, a.get("coverImage") or "")
             out.append(b)
