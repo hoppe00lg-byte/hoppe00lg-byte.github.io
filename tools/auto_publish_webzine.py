@@ -802,87 +802,26 @@ def make_article(cat_id: str, pool: list[dict], articles: list[dict]) -> dict:
 
 
 # ---------------------------------------------------------------- 이미지(커버 카드)
-FONT_CANDIDATES = [
-    ("/usr/share/fonts/truetype/noto-serif-kr/NotoSerifKR-Bold.otf",),
-    ("/usr/share/fonts/opentype/noto/NotoSerifCJK-Bold.ttc",),
-    ("/usr/share/fonts/pickle-hwp/NotoSerifCJKkr-Regular.otf",),
-    ("assets/fonts/NotoSerifKR-Bold.otf",),
-    ("assets/fonts/NotoSansKR-Bold.otf",),
-]
-SANS_CANDIDATES = [
-    "/usr/share/fonts/truetype/noto/NotoSansCJK-Regular.ttc",
-    "/usr/share/fonts/opentype/noto/NotoSansCJK-Regular.ttc",
-    "/usr/share/fonts/pickle-hwp/NotoSansCJKkr-Regular.otf",
-    "assets/fonts/NotoSansKR-Regular.otf",
-]
-
-
-def _first_existing(paths) -> str:
-    for p in paths:
-        q = Path(p if isinstance(p, str) else p[0])
-        if not q.is_absolute():
-            q = ROOT / q
-        if q.exists():
-            return str(q)
-    return ""
-
-
 def make_cover_card(article: dict) -> str | None:
-    """1,600×900 편집 커버 카드. Pillow·한글 폰트가 없으면 None."""
+    """1,600×900 편집 커버 카드(한국어). 그렸으면 article["coverCard"]=True.
+
+    카드에는 기사 제목·부제가 글자로 들어갑니다. 그래서 이 표시가 있는 기사는
+    tools/i18n_data.py 가 번역 후 en·zh·ja 카드를 따로 그려 {ID}.{lang}.jpg 로 씁니다
+    (한국어 카드가 외국어판에 그대로 걸리는 일을 막는 장치).
+    """
     try:
-        from PIL import Image, ImageDraw, ImageFont
-    except Exception:  # noqa: BLE001
-        log("  ! Pillow 없음 — 커버 카드 생략")
+        import cover_card
+    except Exception as e:  # noqa: BLE001
+        log(f"  ! 커버 카드 모듈 없음 — 커버 카드 생략({e})")
         return None
-    serif = _first_existing(FONT_CANDIDATES)
-    sans = _first_existing(SANS_CANDIDATES) or serif
-    if not serif:
-        log("  ! 한글 폰트 없음 — 커버 카드 생략")
-        return None
-    W, H = 1600, 900
-    ink, paper, accent = (23, 20, 15), (245, 241, 232), (176, 58, 32)
-    img = Image.new("RGB", (W, H), paper)
-    d = ImageDraw.Draw(img)
-    d.rectangle([0, 0, W, 14], fill=accent)
-    d.rectangle([80, 96, 88, 96 + 62], fill=accent)
-    eyebrow = ImageFont.truetype(sans or serif, 30)
-    d.text((112, 104), f"INSIGHT BRIEF · {article.get('category', '').upper()}", font=eyebrow, fill=accent)
-    title_font = ImageFont.truetype(serif, 78)
-    body_font = ImageFont.truetype(sans or serif, 32)
-
-    def wrap(text: str, font, max_w: int) -> list[str]:
-        lines, cur = [], ""
-        for word in text.split():
-            trial = (cur + " " + word).strip()
-            if d.textlength(trial, font=font) <= max_w:
-                cur = trial
-            else:
-                if cur:
-                    lines.append(cur)
-                cur = word
-        if cur:
-            lines.append(cur)
-        return lines
-
-    lines = wrap(article.get("title", ""), title_font, W - 200)[:4]
-    y = 220
-    for line in lines:
-        d.text((96, y), line, font=title_font, fill=ink)
-        y += 96
-    y += 18
-    d.line([96, y, 96 + 220, y], fill=accent, width=4)
-    y += 34
-    for line in wrap(article.get("deck", ""), body_font, W - 210)[:3]:
-        d.text((96, y), line, font=body_font, fill=(90, 84, 74))
-        y += 46
-    foot = ImageFont.truetype(sans or serif, 26)
-    d.text((96, H - 92), "insightbriefnews.com", font=foot, fill=(120, 112, 100))
-    d.text((W - 380, H - 92), article.get("publishedAt", "")[:10], font=foot, fill=(120, 112, 100))
-
     out = ROOT / "assets" / "img" / "articles" / f"{article['id']}.jpg"
-    out.parent.mkdir(parents=True, exist_ok=True)
-    img.save(out, "JPEG", quality=86, optimize=True)
-    return str(out)
+    done = cover_card.render(str(out), article.get("title", ""), article.get("deck", ""),
+                             article.get("category", ""), (article.get("publishedAt") or "")[:10], lang="ko")
+    if not done:
+        log("  ! 커버 카드를 그리지 못했습니다(Pillow·CJK 폰트 확인)")
+        return None
+    article["coverCard"] = True
+    return done
 
 
 # ---------------------------------------------------------------- 발행

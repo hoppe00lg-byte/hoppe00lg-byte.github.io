@@ -42,7 +42,7 @@
    "summary": "This is the closing flow for the fourth week of November (11/23~11/27). Compared to the closing price of the previous Friday (11/20), WTI rose 2.7% from 83.41 to $85.64, Brent rose from 92.57 to $92.32 (-0.3%), and Dubai Oil remained flat from 87.41 to $87.00 (-0.5%). The won is 0.9% weaker than the dollar (1,330.80 → 1,342.70 won). Precious metals were strong at +2.2% for gold and +4.2% for silver, while the LME continued to be weak at -10.5% for aluminum, -4.3% for copper, and -4.1% for zinc (based on 11/25 official prices). Chinese petrochemical spot prices fell to PP -6.8%, PC -2.6%, and benzene -2.0%, and BDI rose 8.8% from 2,898 to 3,152 points, showing the largest increase this week.",
    "highlights": [
     {
-     "title": "WTI $85.64 — surges 2.3% on shortened Thanksgiving day",
+     "title": "WTI $85.64 — up 2.3% on short Thanksgiving day",
      "text": "WTI January contract rose 2.3% from $83.68 settled on 11/25 to $85.64 shortened on 11/26. Brent also rose 1.9% from 90.64 to $92.36, and Offinet Dubai Oil price jumped 3.3% from $84.19 on 11/25 to $87.00 on 11/26. The 11/27 Asian session was flat at $85.64."
     },
     {
@@ -384,7 +384,7 @@
        "price": 1243.25,
        "changePct": 1.84,
        "change": 22.5,
-       "note": "CBOT soybean January contract 11/20 1,220.75 cents → 11/25 night session 1,243.25 cents (closed 11/26).",
+       "note": "CBOT soybean January contract 1,220.75 cents on 11/20 → 1,243.25 cents on 11/25 night session (closed on 11/26).",
        "date": "2026-11-26",
        "sourceName": "CME CBOT closing price (KOIMA·Reuters summary)",
        "sourceUrl": "https://www.koimaindex.com/koimaindex/koima/price/retrieveList.do"
@@ -1524,7 +1524,7 @@
    "date": "2026-11-27",
    "sourceName": "Yahoo Finance NYMEX January contract",
    "sourceUrl": "https://finance.yahoo.com/quote/CL=F",
-   "note": "From the shortened Thanksgiving day (11/26), the price rose 2.3% from 11/25 settlement $83.68 → $85.64. The 11/27 Asian market (11:10 Korean time) was flat at $85.64. Brent−WTI $6.68."
+   "note": "From the shortened Thanksgiving day (11/26), the price rose 2.3% from $83.68 settled on 11/25 to $85.64. The 11/27 Asian market (11:10 Korean time) was flat at $85.64. Brent−WTI $6.68."
   },
   {
    "id": "brent",
@@ -1567,7 +1567,7 @@
    "decimals": 2,
    "change": -1.2,
    "changePct": -0.09,
-   "changeBasis": "Compared to the previous day’s notice (11/26)",
+   "changeBasis": "In preparation for the previous day’s notice (11/26)",
    "date": "2026-11-27",
    "sourceName": "Korea Export-Import Bank announced sales standard rate",
    "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
@@ -1582,7 +1582,7 @@
    "decimals": 2,
    "change": -1.42,
    "changePct": -0.17,
-   "changeBasis": "Compared to the previous day’s notice (11/26)",
+   "changeBasis": "In preparation for the previous day’s notice (11/26)",
    "date": "2026-11-27",
    "sourceName": "Korea Export-Import Bank announced sales standard rate",
    "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
@@ -1597,7 +1597,7 @@
    "decimals": 2,
    "change": -0.14,
    "changePct": -0.07,
-   "changeBasis": "Compared to the previous day’s notice (11/26)",
+   "changeBasis": "In preparation for the previous day’s notice (11/26)",
    "date": "2026-11-27",
    "sourceName": "Korea Export-Import Bank announced sales standard rate",
    "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
@@ -1665,7 +1665,7 @@
    "date": "2026-11-27",
    "sourceName": "Swissquote Real-Time Spot (XAG/USD)",
    "sourceUrl": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAG/USD",
-   "note": "Swissquote Spot $43.01 (11:10). Up 2.4% from $42.01 the previous morning."
+   "note": "Swissquote spot $43.01 (11:10). Up 2.4% from $42.01 the previous morning."
   },
   {
    "code": "CU",
@@ -1816,7 +1816,7 @@
    "date": "2026-11-27",
    "sourceName": "Sales price of raw materials stockpiled by the Public Procurement Service",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "Public Procurement Service 11/27 sales price (over 99.99%). It rose 2.8% from 2,910,000 won on 11/26."
+   "note": "Public Procurement Service 11/27 sale price (over 99.99%). It rose 2.8% from 2,910,000 won on 11/26."
   },
   {
    "code": "SN-PPS",
@@ -1898,7 +1898,7 @@
    "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "China propylene 11/26 9,326.50 yuan (11/25 9,199.00 yuan)."
+   "note": "Chinese propylene 11/26 9,326.50 yuan (11/25 9,199.00 yuan)."
   },
   {
    "code": "BZ",
@@ -2075,7 +2075,7 @@
    "date": "2026-11-26",
    "sourceName": "Baltic Shipping Exchange (as cited by Reuters)",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "Baltic Dry Cargo Freight Index 11/26 3,152 points (+45, +1.45%). It is the highest since September 29th. Cape size 5,100, Panamax 2,273 (+50), Supramax 1,816 (+2)."
+   "note": "Baltic Dry Freight Rate Index 11/26 3,152 points (+45, +1.45%). It is the highest since September 29th. Cape size 5,100, Panamax 2,273 (+50), Supramax 1,816 (+2)."
   },
   {
    "code": "BCI",
@@ -2296,7 +2296,7 @@
    "date": "2026-11-27",
    "sourceName": "Sina Finance Chinese futures delayed price",
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-AL.shtml",
-   "note": "SHFE Aluminum 11/27 am 21,365 yuan (11/26 settlement 21,000 yuan)."
+   "note": "SHFE Aluminum 11/27 21,365 yuan in the morning (11/26 settlement 21,000 yuan)."
   },
   {
    "code": "SHFE-SC",
@@ -2658,7 +2658,7 @@
  ],
  "notes": [
   "All prices are confirmed from free and public sources. Paid index-only items are not estimated and not indicated.",
-  "The LME zinc, lead, nickel, and tin are the LME official spot (Cash) settlement price (11/25: zinc 3,520.50, lead 1,792.00, nickel 15,035.00, tin $38,200.00), and the copper and aluminum in the table are the 3-month futures official price (11/25: copper) 11,758.00·Aluminum $2,760.00), so the standards are different. The 11/26 official price had not yet been published at the time of inquiry, so the 11/25 value was retained. The source is the Westmetall table, which is a direct translation of the LME official price.",
+  "LME zinc, lead, nickel, and tin are the LME official spot (Cash) settlement price (11/25: zinc 3,520.50, lead 1,792.00, nickel 15,035.00, tin $38,200.00), and the copper and aluminum in the table are the 3-month futures official price (11/25: copper) 11,758.00·Aluminum $2,760.00), so the standards are different. The 11/26 official price had not yet been published at the time of inquiry, so the 11/25 value was retained. The source is the Westmetall table, which is a direct translation of the LME official price.",
   "Petrochemical and plastic raw materials are priced at domestic Chinese spot prices (yuan/ton), which differ from Korean import negotiators depending on grade, volume, and freight.",
   "Nafta was carried in two ways. The CFR Japan (MOPJ) public valuation is $801.25/ton (11/25, +1.6%), and the Singapore spot price of Offinet (Korea National Oil Corporation) international petroleum product price is $88.09/barrel (11/26, $85.86 the previous day). The units are different so they cannot be directly compared.",
   "BDI, Capesize, Panamax, and Supramax are the Baltic Shipping Exchange indices and are the closing prices on Thursday, November 26 (BDI 3,152, BCI 5,100, BPI 2,273, BSI 1,816). BDI is at its highest since September 29th.",
@@ -2669,14 +2669,14 @@
   "The Public Procurement Service's stockpile release price includes VAT and is a sales price within the limits of registered actual consumers, and cannot be directly compared with the LME international price. In the 11/27 announcement, there were only aluminum, copper, and lead, so tin maintained its value of 11/26.",
   "Korea Petrochemical Association (KPIA) raw material and resin prices were not included because they cannot be checked for free. kpia.or.kr had a connection error (500·503) and the association's data was moved to kcia.kr (Korea Chemical Industry Association), and the association's price and statistics DB is only for paid users (1.2 million won per year, 2 devices). No estimates were included.",
   "The exchange rate is the trading standard rate announced by the Export-Import Bank of Korea (announced once a business day, around 11 a.m.), and is different from the exchange rate at bank counters and card payments. The 11/27 notice was 1,342.70 won/dollar, 842.95 won/yen, 201.43 won/yuan, all slightly lower than 11/26 (1,343.90, 844.37, 201.57).",
-  "Chinese futures are the values ​​of the main contracts of the Shanghai Futures Exchange (SHFE), Dalian Commodity Exchange (DCE), and Zhengzhou Commodity Exchange (ZCE) read at the Sina Finance delayed price. This is the intraday value on the morning of November 27th, and the previous day's value is the settlement price on November 26th.",
+  "Chinese futures are the values of the main contracts of the Shanghai Futures Exchange (SHFE), Dalian Commodity Exchange (DCE), and Zhengzhou Commodity Exchange (ZCE) read at the Sina Finance delayed price. This is the intraday value on the morning of November 27th, and the previous day's value is the settlement price on November 26th.",
   "SHFE copper/aluminum is yuan/ton, Shanghai Crude Oil (SC) is yuan/barrel. The LME dollar notation and the exchange rate, VAT, and rating are different, so direct comparison is not possible.",
   "The fluctuations of DCE PP·LLDPE·PVC·EG and ZCE PTA·methanol were calculated as the difference from the settlement price on November 26.",
   "SCFI·CCFI is a container freight index released every Friday by the Shanghai Shipping Exchange (SSE). Only the comprehensive index is released, and detailed indices for each route are provided to paid subscribers.",
   "The SMM production copper premium carried the figure specified in the SMM public article (11/23 warrant average of $450/ton, −$45 compared to the previous day). The 11/24 public value could not be confirmed, so the 11/23 value was kept, and the dashboard value is only visible after logging in.",
   "The KOMIS (Korea Resources Information Service) screen could not confirm the values ​​even in this update, so 6 types of non-ferrous metals were filled in with the Westmetall table, which was copied directly from the LME official notice. Spot settlement price and 3-month futures price are shown separately.",
   "Index Nuri petrochemical raw material prices are based on CFR Northeast Asia since 2012 based on a survey by the Korea Chemical Industry Association (KCIA), and the latest value in the public table is the average for the third quarter of 2026 (updated on October 30). This is not the actual price of domestic won.",
-  "KAMIS wholesale price is the wholesale market middleman sales price (national average), confirmed as of November 25th (59,640 won for 20 kg of rice product, the same since 11/13). For soybeans (40kg of domestically produced white beans), the November 20th survey was the latest confirmed value, so I left it as is. Surveys conducted after 11/26 were not confirmed in this inquiry.",
+  "KAMIS wholesale price is the wholesale market middleman sales price (national average) confirmed as of November 25th (59,640 won for 20 kg of rice product, the same since 11/13). For soybeans (40kg of domestically produced white beans), the November 20th survey was the latest confirmed value, so I left it as is. Surveys conducted after 11/26 were not confirmed in this inquiry.",
   "The Bank of Korea's producer price index and import price index are provisional values for October 2026 (2020=100). The producer price index was announced on November 20th, and the import price index was announced on November 13th.",
   "Import unit prices for the most recent month by item and HS code from the Korea Customs Service's export and import trade statistics (tradedata.go.kr) were not confirmed on the first public screen, so they were not included in this update.",
   "The operation rate and inventory indicators of SCI99 (intl.sci99.com) were not included because they are for paid members only. The PP·LLDPE values ​​from the public price center on the same site are not included in the table because the items overlap with the existing Chinese spot products (SunSirs).",

@@ -360,6 +360,21 @@ def absolutize_meta_assets(src):
     return re.sub(r"<meta\b[^>]*>", fix_tag, src)
 
 
+def localize_og_asset(src, lang):
+    """기본 공유 카드(og.png)는 한국어 슬로건이 박혀 있어, 외국어 페이지는 og.{lang}.png 를 씁니다."""
+    if lang == "ko" or not os.path.exists(os.path.join(ROOT, "assets", "img", f"og.{lang}.png")):
+        return src
+
+    def fix(m):
+        tag = m.group(0)
+        if 'property="og:image"' in tag or 'name="twitter:image"' in tag:
+            return (tag.replace("/assets/img/og.png", f"/assets/img/og.{lang}.png")
+                       .replace('content="assets/img/og.png"', f'content="assets/img/og.{lang}.png"'))
+        return tag
+
+    return re.sub(r"<meta\b[^>]*>", fix, src)
+
+
 def inject_shell(src, page_lang, path_rel, page_file, canonical_url=None, og_locale=None, title=None, desc=None, locales=None):
     """머리말(hreflang·canonical·언어 전환기)을 넣습니다. 여러 번 실행해도 한 번만 들어갑니다."""
     src = strip_block(src, HEAD_MARK, HEAD_END)
@@ -550,6 +565,7 @@ def lang_page(src_name, lang, path_rel, canonical_url, title=None, description=N
     src = normalize_title(src)
     src = inject_channels(src, lang)
     src = absolutize_meta_assets(src)
+    src = localize_og_asset(src, lang)
     depth_a = path_rel.startswith("a/")
     assets_prefix = "../../" if depth_a else "../"
     rel_prefix = "../" if depth_a else ""

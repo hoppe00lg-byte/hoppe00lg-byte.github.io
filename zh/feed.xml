@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 27 Nov 2026 19:57:21 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 20:58:30 +0900</lastBuildDate>
+    <item>
+      <title>为什么数字支付代币和稳定币这个名字消失了</title>
+      <link>https://insightbriefnews.com/zh/a/digital-payment-token-stablecoin-law-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/digital-payment-token-stablecoin-law-2026.html</guid>
+      <pubDate>Fri, 27 Nov 2026 20:05:00 +0900</pubDate>
+      <category>经济·金融</category>
+      <description>金融服务委员会11月24日发布的《数字资产法》将稳定币定义为“数字支付代币”。从100%的储备资产存款、银行财团占多数，以及对外国发行人的国内分支机构要求——法律改变的不是名称，而是支付结算的门槛。</description>
+    </item>
     <item>
       <title>基准利率上调3.25%，为何12月15日贷款利息不变？</title>
       <link>https://insightbriefnews.com/zh/a/bok-base-rate-325-cofix-reset-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 20:45:00 +0900</pubDate>
       <category>经济·金融</category>
       <description>2026年11月25日，KOSPI收于4,697.51点，下跌6.16%，创下10个多月以来的最低收盘价。盘中低点较6月19日高点低50.22%，是2000年以来第四次较峰值腰斩。今年熔断机制（sidecar）触发102次，单日涨跌超过5%的交易日达43天。其间个人净买入1兆4,232亿韩元，信用交易融资余额仍剩25兆8,800亿韩元。</description>
-    </item>
-    <item>
-      <title>利润区 43.6%，自 2019 年 2 月以来最低 — 这是该数字首次高于已实现价格</title>
-      <link>https://insightbriefnews.com/zh/a/btc-profit-supply-43-6-2019-low-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/btc-profit-supply-43-6-2019-low-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 19:58:00 +0900</pubDate>
-      <category>经济·金融</category>
-      <description>11月20日，比特币盈利板块供应量跌至43.6%。它低于2020年3月的崩盘和2022年11月的熊市期间。然而，过去3次，该数字是在价格低于实现价格时出现的，而这一次，它比实现价格高出了11%。 11 月份现货 ETF 净流出 47.1 亿美元似乎起到了作用。</description>
     </item>
   </channel>
 </rss>

@@ -28,6 +28,7 @@ window.__ARTICLES__ = [
    "word": "DPT"
   },
   "coverImage": "assets/img/articles/digital-payment-token-stablecoin-law-2026.jpg",
+  "coverCard": true,
   "summary": [
    "금융위원회가 11월 24일 공개한 디지털자산법 제정안은 스테이블코인의 법률상 명칭을 '디지털지급토큰'으로 규정했다. 명칭 변경은 가격 안정이 아니라 지급수단이라는 용도를 규율의 출발점으로 삼는 변화다.",
    "국내 발행은 금융위 인가제로, 자기자본 50억원 이상과 은행 과반 지분 컨소시엄 요건이 붙는다. 준비자산은 발행잔액의 100% 이상을 은행에 예치·신탁하고 발행사 도산과 분리하며, 이자 지급은 금지된다.",
@@ -150,6 +151,7 @@ window.__ARTICLES__ = [
    "word": "COFIX"
   },
   "coverImage": "assets/img/articles/bok-base-rate-325-cofix-reset-2026.jpg",
+  "coverCard": true,
   "summary": [
    "한국은행은 11월 26일 기준금리를 연 3.00%에서 3.25%로 0.25%포인트 인상했다. 금통위원 5명 찬성, 2명 반대였고 올해 세 번째 인상이다.",
    "변동형 주택담보대출의 준거인 신규취급액 코픽스는 10월 3.62%로 2년 8개월 만의 최고치다. 인상분은 12월 15일 공시분에 일부만, 12월분(2027년 1월 공시)에 온전히 담긴다.",
@@ -264,6 +266,7 @@ window.__ARTICLES__ = [
    "word": "EFFICIENCY"
   },
   "coverImage": "assets/img/articles/us-energy-loss-and-efficiency-analysis-20261127.jpg",
+  "coverCard": true,
   "summary": [
    "2025년 미국은 34쿼드의 1차 에너지를 투입했으나 최종 소비자에게 도달한 전력은 14쿼드에 불과해 약 60%의 손실이 발생했다.",
    "에너지 손실의 95%는 화석연료 연소 과정의 열 방출에서 발생하며, 나머지 5%는 송전 및 배전 인프라의 저항에 의해 소실된다.",
@@ -337,6 +340,7 @@ window.__ARTICLES__ = [
    "word": "MUSIC"
   },
   "coverImage": "assets/img/articles/takahashi-yoko-seoul-concert-analysis-20261127.jpg",
+  "coverCard": true,
   "summary": [
    "다카하시 요코가 2027년 2월 27일 이화여자대학교 대강당에서 내한 공연을 개최한다.",
    "1995년 발표된 '잔혹한 천사의 테제'는 30년이 지난 현재까지도 강력한 IP 가치를 유지하고 있다.",
@@ -430,6 +434,7 @@ window.__ARTICLES__ = [
    "word": "FLU"
   },
   "coverImage": "assets/img/articles/england-hospitals-flu-surge-nov-2026-20261127.jpg",
+  "coverCard": true,
   "summary": [
    "2026년 11월 27일 기준, 영국 내 독감 입원율이 팬데믹 이전 수준을 상회하며 최고치를 기록했다.",
    "NHS 보건 수장은 겨울철 호흡기 질환 확산 방지를 위해 병원 내 마스크 착용 의무화를 검토하고 있다.",
@@ -513,6 +518,7 @@ window.__ARTICLES__ = [
    "word": "URBAN"
   },
   "coverImage": "assets/img/articles/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.jpg",
+  "coverCard": true,
   "summary": [
    "오세훈 서울시장과 김은혜 국민의힘 경기도당위원장이 2026년 12월 1일 수원컨벤션센터에서 수도권 주거 안정 해법을 주제로 공동 정책 세미나를 개최한다.",
    "이번 세미나는 신속통합기획을 통한 도심 공급 정상화와 경기도 맞춤형 규제 완화 방안을 중심으로, 서울과 경기의 행정 경계를 넘는 공급 대책을 논의할 예정이다.",
@@ -575,6 +581,7 @@ window.__ARTICLES__ = [
    "word": "EUROPE"
   },
   "coverImage": "assets/img/articles/eu-budget-ukraine-funding-crisis-20261127.jpg",
+  "coverCard": true,
   "summary": [
    "EU 27개 회원국 정상들이 2028~2034년 장기 예산안과 우크라이나 450억 유로 지원안을 논의하기 위해 2026년 11월 26일 브뤼셀에 모였다.",
    "코스타 의장은 당초 예산안에서 2,000억 유로를 삭감한 1조 7,800억 유로 규모의 절충안을 제시하며 연내 합의를 강력히 촉구했다.",
@@ -788,6 +795,7 @@ window.__ARTICLES__ = [
    "word": "DOMINANCE"
   },
   "coverImage": "assets/img/articles/btc-dominance-58-altseason-index-2026.jpg",
+  "coverCard": true,
   "summary": [
    "비트코인 도미넌스는 11월 12일 60.61%에서 26일 58.76%로 내려왔다. 코인마켓캡 집계 기준으로 11월 17일 59.3%, 24일 58.6%, 25일 58.5%였다. 제공사에 따라 26일 값은 57.3~58.8%로 갈린다.",
    "알트코인 시즌 지수는 17일 49, 24일 58, 25일 52, 26일 58이다. 75 이상이 알트시즌, 25 이하가 비트코인 시즌이므로 58은 중립 구간이다. 올해 최고치는 9월 27일의 64였다.",

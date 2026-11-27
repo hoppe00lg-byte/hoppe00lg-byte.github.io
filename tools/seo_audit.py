@@ -78,6 +78,46 @@ def article_id_of(rel):
     return (m.group(1), m.group(2)) if m else (None, None)
 
 
+def check_intl_covers(problems: list[str], notes: list[str]) -> None:
+    """외국어판(en·zh·ja) 커버 이미지가 그 언어 카드인지 확인합니다.
+
+    한국어 제목을 박아 만든 카드 한 장을 외국어판이 같이 쓰면 기사 첫 화면에 한글이 남습니다.
+    발행 스크립트가 "coverCard": true 로 표시한 기사는 번역 뒤 그 언어 카드를 따로 그려
+    {ID}.{lang}.jpg 로 써야 합니다(tools/cover_card.py → tools/i18n_data.py).
+    """
+    for lang in ("en", "zh", "ja"):
+        path = os.path.join(ROOT, "data", f"articles.{lang}.json")
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding="utf-8") as f:
+            arts = json.load(f)
+        for a in arts:
+            cover = str(a.get("coverImage") or "").lstrip("/")
+            if not cover:
+                continue
+            if a.get("coverCard"):
+                stem = os.path.splitext(cover)[0]
+                if not stem.endswith(f".{lang}"):
+                    problems.append(f"{lang}: {a['id']} 커버가 언어별 카드가 아님 — {cover}")
+                elif not os.path.exists(os.path.join(ROOT, cover)):
+                    problems.append(f"{lang}: {a['id']} 언어별 커버 파일 없음 — {cover}")
+            elif not os.path.exists(os.path.join(ROOT, cover)):
+                problems.append(f"{lang}: {a['id']} 커버 파일 없음 — {cover}")
+            else:
+                # 표시가 없는 커버라도 흰/종이색 바탕에 글자만 있는 카드형이면 확인을 남깁니다.
+                try:
+                    from PIL import Image
+                    im = Image.open(os.path.join(ROOT, cover)).convert("RGB").resize((160, 90))
+                    colors = im.getcolors(160 * 90) or []
+                    top = max(colors)[0] if colors else 0
+                    rgb = max(colors)[1] if colors else (0, 0, 0)
+                    if top > 0.25 * 160 * 90 and sum(rgb) > 600:
+                        notes.append(f"{lang}: {a['id']} 커버가 카드형 이미지로 보입니다 — "
+                                     f"한국어 글자가 박혀 있으면 data/articles.json 에 \"coverCard\": true 를 넣으세요")
+                except Exception:  # noqa: BLE001
+                    pass
+
+
 def audit(quiet=False):
     articles = {a["id"]: a for a in load("articles.json")}
     problems = []
@@ -250,11 +290,16 @@ def audit(quiet=False):
         if n_items == 0:
             problems.append(f"{folder or '.'}/feed.xml: 항목 0개")
 
+    notes: list[str] = []
+    check_intl_covers(problems, notes)
+
     if not quiet:
         print("페이지", counts["pages"], "· 사이트맵 URL", counts.get("sitemap_urls", 0),
               "· 기사 ko/en/zh/ja", counts["articles_ko"], counts["articles_en"],
               counts["articles_zh"], counts["articles_ja"])
         print("피드 항목 ko/en/zh/ja", counts["feed_ko"], counts["feed_en"], counts["feed_zh"], counts["feed_ja"])
+    for n in notes[:20]:
+        print("· (확인)", n)
     for p in problems:
         print("·", p)
     print(f"다국어 SEO 점검: 문제 {len(problems)}건")

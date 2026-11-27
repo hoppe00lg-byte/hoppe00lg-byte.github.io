@@ -11,7 +11,7 @@
   python3 tools/i18n_data.py --lang en   # 한 언어만
   python3 tools/i18n_data.py --no-mt     # 캐시만 사용(네트워크 없이)
 """
-import json, os, re, sys, argparse
+import hashlib, json, os, re, sys, argparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import i18n_core as C
 
@@ -162,6 +162,75 @@ def fix_body(body):
     return body
 
 
+# ---------------------------------------------------------------- 언어별 커버 카드
+# 한국어 제목을 그려 넣은 카드 한 장을 en·zh·ja 가 같이 쓰면 외국어 기사에 한글이 남는다.
+# 'coverCard': true 인 기사는 그 언어 제목·부제로 카드를 한 장 더 그려 {ID}.{lang}.jpg 로 쓴다.
+COVER_REG = os.path.join(ROOT, "tools", "i18n_covers.json")
+_cover_reg = None
+
+
+def _cover_registry() -> dict:
+    global _cover_reg
+    if _cover_reg is None:
+        try:
+            with open(COVER_REG, encoding="utf-8") as f:
+                _cover_reg = json.load(f)
+        except Exception:  # noqa: BLE001
+            _cover_reg = {}
+    return _cover_reg
+
+
+def _save_cover_registry():
+    try:
+        with open(COVER_REG, "w", encoding="utf-8") as f:
+            json.dump(_cover_registry(), f, ensure_ascii=False, indent=0, sort_keys=True)
+    except Exception:  # noqa: BLE001
+        pass
+
+
+def _drop_cover_dup(body: str, cover_rel: str) -> str:
+    """본문에 똑같이 한 번 더 들어간 커버 이미지 문단을 뺍니다(헤드에 이미 크게 나온다)."""
+    if not body or not cover_rel:
+        return body
+    pat = re.compile(r"^!\[[^\]]*\]\(/?" + re.escape(cover_rel.lstrip("/")) + r"\)$")
+    parts = [p for p in body.split("\n\n") if not pat.match(p.strip())]
+    return re.sub(r"\n{3,}", "\n\n", "\n\n".join(parts))
+
+
+def localize_cover(b: dict, lang: str, src_cover: str) -> dict:
+    """번역이 끝난 기사(b)의 커버를 그 언어 카드로 바꿉니다. 실패하면 그대로 돌려줍니다."""
+    if not b.get("coverCard"):
+        return b
+    src = (src_cover or b.get("coverImage") or "").lstrip("/")
+    if not src or src.startswith("http"):
+        return b
+    try:
+        import cover_card  # tools/cover_card.py
+    except Exception as e:  # noqa: BLE001
+        print(f"  ! {lang} {b.get('id')}: 커버 카드 모듈을 읽지 못했습니다 — {e}")
+        return b
+    base = re.sub(rf"\.{lang}(?=\.[A-Za-z0-9]+$)", "", src)  # 이미 언어별이면 원본으로
+    rel = cover_card.variant_rel(base, lang)
+    out = os.path.join(ROOT, rel)
+    stamp = hashlib.sha1((b.get("title", "") + "\n" + b.get("deck", "")).encode("utf-8")).hexdigest()[:12]
+    reg = _cover_registry()
+    key = f"{lang}/{b.get('id')}"
+    if os.environ.get("IB_COVER_FORCE") != "1" and os.path.exists(out) and (reg.get(key) or {}).get("h") == stamp:
+        b["coverImage"] = "/" + rel
+    else:
+        done = cover_card.render(out, b.get("title", ""), b.get("deck", ""),
+                                 b.get("category", ""), (b.get("publishedAt") or "")[:10], lang=lang)
+        if not done:
+            print(f"  ! {lang} {b.get('id')}: 커버 카드를 그리지 못했습니다(폰트 없음) — 한글 카드가 남습니다")
+            return b
+        reg[key] = {"h": stamp, "file": rel}
+        _save_cover_registry()
+        b["coverImage"] = "/" + rel
+    b["body"] = _drop_cover_dup(b.get("body", ""), base)
+    b["body"] = _drop_cover_dup(b.get("body", ""), rel)
+    return b
+
+
 def category_labels(lang: str) -> dict:
     """카테고리 이름·설명의 확정 표기(data/i18n/category-labels.json). 없으면 빈 사전."""
     path = os.path.join(DATA, "i18n", "category-labels.json")
@@ -224,6 +293,7 @@ def build_articles(lang):
         if C.article_source_lang(a) == lang:
             # 이 언어 독자를 위해 직접 쓴 기사 — 기계번역하지 않습니다.
             localize_urls(b)
+            localize_cover(b, lang, a.get("coverImage") or "")
             out.append(b)
             total += 1
             continue
@@ -274,6 +344,7 @@ def build_articles(lang):
         elif isinstance(fc, str) and fc:
             b["factCheck"] = tr_units([fc], lang)[0]
         localize_urls(b)
+        localize_cover(b, lang, a.get("coverImage") or "")
         out.append(b)
         total += 1
     dump(f"articles.{lang}.json", out)

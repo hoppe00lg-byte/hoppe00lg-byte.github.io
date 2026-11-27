@@ -724,10 +724,30 @@ def write_article_pages(site, articles):
 
 
 def write_og(site):
+    """공유 카드(1200×630) — 한국어 og.png 와 외국어판 og.{lang}.png 를 함께 그립니다.
+
+    외국어판이 한국어 슬로건이 박힌 og.png 를 같이 쓰면 공유 카드에 한글이 남습니다.
+    data/site.{lang}.json 의 제호·설명·슬로건으로 그 언어판을 만듭니다.
+    """
+    cases = [("og.png", site, "ko")]
+    for lang in ("en", "zh", "ja"):
+        try:
+            with open(os.path.join(ROOT, "data", f"site.{lang}.json"), encoding="utf-8") as f:
+                cases.append((f"og.{lang}.png", json.load(f), lang))
+        except Exception:
+            pass
+    for name, doc, lang in cases:
+        try:
+            _write_og_image(name, doc, lang)
+        except Exception as e:  # noqa: BLE001
+            warnings.append(f"{name}를 만들지 못했습니다: {e}")
+
+
+def _write_og_image(name, site, lang):
     try:
-        from PIL import Image, ImageDraw, ImageFont
+        from PIL import Image, ImageDraw
     except Exception:
-        warnings.append("Pillow가 없어 og.png를 만들지 못했습니다.")
+        warnings.append("Pillow가 없어 og 이미지를 만들지 못했습니다.")
         return
     W, H = 1200, 630
     bg = (23, 20, 15)
@@ -742,39 +762,52 @@ def write_og(site):
     d.ellipse([820, 300, 1240, 720], outline=(60, 52, 42), width=1)
     d.ellipse([880, 360, 1180, 660], outline=(48, 42, 34), width=1)
 
-    serif_candidates = [
-        "/usr/share/fonts/pickle-hwp/NotoSerifCJKkr-Regular.otf",
-        os.path.join(ROOT, "..", "NotoSansKR-Bold.otf"),
-        "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
-    ]
-    sans_candidates = [
-        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
-    ]
-
-    def font(paths, size):
-        for p in paths:
-            if os.path.exists(p):
+    def font(text, size, kind="serif"):
+        try:
+            import cover_card
+            face = cover_card.pick_face(kind, lang, text or "INSIGHT BRIEF")
+            if face:
+                return cover_card._pil_font(face[0], face[1], size)
+        except Exception:
+            pass
+        for p_ in ("/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+                   "/usr/share/fonts/pickle-hwp/NotoSansCJKkr-Regular.otf"):
+            if os.path.exists(p_):
                 try:
-                    return ImageFont.truetype(p, size)
+                    from PIL import ImageFont
+                    return ImageFont.truetype(p_, size)
                 except Exception:
                     pass
+        from PIL import ImageFont
         return ImageFont.load_default()
 
-    f_name = font(serif_candidates, 96)
-    f_tag = font(serif_candidates, 30)
-    f_small = font(sans_candidates, 22)
+    brand = site["brand"]
+    tagline = brand.get("tagline") or ""
+    slogan = brand.get("slogan") or ""
 
-    d.text((80, 118), site["brand"]["name"], font=f_name, fill=(251, 249, 244))
-    d.text((84, 250), site["brand"]["tagline"], font=f_tag, fill=(200, 190, 172))
-    d.text((84, 320), site["brand"]["slogan"], font=f_tag, fill=(140, 130, 112))
+    def fit(text, size, max_w, kind="serif"):
+        for s_ in (size, int(size * 0.88), int(size * 0.78), int(size * 0.68), int(size * 0.6)):
+            f = font(text, s_, kind)
+            if d.textlength(text, font=f) <= max_w:
+                return f
+        return font(text, int(size * 0.55), kind)
+
+    f_name = font(brand["name"], 96, "serif")
+    f_tag = fit(tagline, 30, W - 170, "serif")
+    f_slog = fit(slogan, 30, W - 170, "serif")
+    f_small = font("ECONOMY", 22, "sans")
+
+    d.text((80, 118), brand["name"], font=f_name, fill=(251, 249, 244))
+    d.text((84, 250), tagline, font=f_tag, fill=(200, 190, 172))
+    d.text((84, 320), slogan, font=f_slog, fill=(140, 130, 112))
     d.line([(84, 400), (520, 400)], fill=(179, 38, 30), width=4)
     d.text((84, 440), "ECONOMY  ·  TRADE  ·  AI  ·  INVESTIGATION", font=f_small, fill=(120, 110, 96))
-    d.text((84, 520), site["baseUrl"].replace("https://", ""), font=f_small, fill=(90, 82, 70))
+    d.text((84, 520), (site.get("baseUrl") or "").replace("https://", ""), font=f_small, fill=(90, 82, 70))
 
-    out = os.path.join(ROOT, "assets", "img", "og.png")
+    out = os.path.join(ROOT, "assets", "img", name)
     os.makedirs(os.path.dirname(out), exist_ok=True)
     img.save(out, "PNG")
-    print("  og.png 1200x630")
+    print(f"  {name} 1200x630")
 
 
 def main():
