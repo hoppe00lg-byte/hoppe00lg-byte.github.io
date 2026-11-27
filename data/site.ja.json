@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "電力供給の6割が消える：データセンター激増で突きつけられた物理的コストの限界",
+   "articleId": "energy-loss-efficiency-grid-cost-20261128"
+  },
+  {
    "text": "2026年12月全国4,215戸供給：南楊州新都市入札と日本の家計が意識すべき税・実質コスト",
    "articleId": "namyangju-3rd-new-town-dec-2026-analysis-20261128"
   },
@@ -94,14 +98,6 @@
   {
    "text": "夜間山火事の教訓：インフラの制約と限界が露呈した消火活動の現状",
    "articleId": "sejong-mountain-fire-night-response-20261128"
-  },
-  {
-   "text": "AIセキュリティの防壁：エームインテリジェンスが示すデータ保護の新基準",
-   "articleId": "aim-intelligence-security-tech-analysis-20261128"
-  },
-  {
-   "text": "米国の過剰生産関税が突きつける「経済的自傷」の代償と日本への波及リスク",
-   "articleId": "trump-tariff-overcapacity-analysis-20261128"
   }
  ],
  "editorNote": {

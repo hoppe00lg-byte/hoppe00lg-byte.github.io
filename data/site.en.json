@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "The physics of power loss: Why 60% of U.S. primary energy fails to reach the grid",
+   "articleId": "energy-loss-efficiency-grid-cost-20261128"
+  },
+  {
    "text": "Navigating the December 2026 housing market: A strategic look at the 4,215 unit offering in South Korea",
    "articleId": "namyangju-3rd-new-town-dec-2026-analysis-20261128"
   },
@@ -94,14 +98,6 @@
   {
    "text": "Nighttime wildfire response challenges and the critical gap in emergency infrastructure",
    "articleId": "sejong-mountain-fire-night-response-20261128"
-  },
-  {
-   "text": "Securing the AI frontier: Aim Intelligence wins top honors at the K-Digital Grand Championship",
-   "articleId": "aim-intelligence-security-tech-analysis-20261128"
-  },
-  {
-   "text": "Trump’s new overcapacity tariffs trigger cost shocks for US importers",
-   "articleId": "trump-tariff-overcapacity-analysis-20261128"
   }
  ],
  "editorNote": {

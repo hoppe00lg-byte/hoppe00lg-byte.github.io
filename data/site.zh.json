@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "能源转化的隐形成本：电力物理效率与工业数据中心承载力",
+   "articleId": "energy-loss-efficiency-grid-cost-20261128"
+  },
+  {
    "text": "韩国12月第一周房产市场扫描：4215套新房入市与税负预判",
    "articleId": "namyangju-3rd-new-town-dec-2026-analysis-20261128"
   },
@@ -94,14 +98,6 @@
   {
    "text": "夜间森林火灾的防控盲点：从世宗市山林事故看应急响应的实效与挑战",
    "articleId": "sejong-mountain-fire-night-response-20261128"
-  },
-  {
-   "text": "安全漏洞检测技术的价值，Aim Intelligence 对 K-Digital 锦标赛的报道",
-   "articleId": "aim-intelligence-security-tech-analysis-20261128"
-  },
-  {
-   "text": "特朗普“过剩产能关税”：美国进口成本跳涨与贸易成本重构分析",
-   "articleId": "trump-tariff-overcapacity-analysis-20261128"
   }
  ],
  "editorNote": {

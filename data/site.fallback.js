@@ -85,6 +85,10 @@ window.__SITE__ = {
  ],
  "ticker": [
   {
+   "text": "전력 생산 1차 에너지 60% 소실, 데이터센터 전력난과 에너지 비용의 물리적 구조",
+   "articleId": "energy-loss-efficiency-grid-cost-20261128"
+  },
+  {
    "text": "2026년 12월 첫째 주 전국 4,215가구 분양, 남양주 왕숙 등 청약 실익 분석",
    "articleId": "namyangju-3rd-new-town-dec-2026-analysis-20261128"
   },
@@ -95,14 +99,6 @@ window.__SITE__ = {
   {
    "text": "야간 산불 대응의 사각지대: 2026년 11월 27일 세종시 산불과 소방 인력 배치 기준의 간극",
    "articleId": "sejong-mountain-fire-night-response-20261128"
-  },
-  {
-   "text": "보안 취약점 탐지 기술의 가치, K-디지털 챔피언십 대상 에임인텔리전스 톺아보기",
-   "articleId": "aim-intelligence-security-tech-analysis-20261128"
-  },
-  {
-   "text": "관세 20% 인상 시 수입 원가 14.5% 상승…트럼프 '과잉생산 관세'의 경제학",
-   "articleId": "trump-tariff-overcapacity-analysis-20261128"
   }
  ],
  "editorNote": {

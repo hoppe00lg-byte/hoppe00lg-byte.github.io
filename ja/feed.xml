@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 07:04:48 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 08:00:31 +0900</lastBuildDate>
+    <item>
+      <title>電力供給の6割が消える：データセンター激増で突きつけられた物理的コストの限界</title>
+      <link>https://insightbriefnews.com/ja/a/energy-loss-efficiency-grid-cost-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/energy-loss-efficiency-grid-cost-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 07:56:37 +0900</pubDate>
+      <category>エネルギー・気候</category>
+      <description>米エネルギー情報局（EIA）の2025年データによれば、発電のために投入された1次エネルギーの約60%が変換・送電過程で損失している。この「物理的ロス」は、AIデータセンターの拡大や日本の電気料金構造に直結する深刻な経営リスクとなっている。</description>
+    </item>
     <item>
       <title>2026年12月全国4,215戸供給：南楊州新都市入札と日本の家計が意識すべき税・実質コスト</title>
       <link>https://insightbriefnews.com/ja/a/namyangju-3rd-new-town-dec-2026-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:37:24 +0900</pubDate>
       <category>不動産・税金</category>
       <description>オ・セフンソウル市場とキム・ウンヘ議員が12月1日水原で政策共助を宣言した。首都圏住宅梯子復元のための規制緩和と供給対策の実質的な効用性を見てみる。</description>
-    </item>
-    <item>
-      <title>EU長期予算案1.78兆ユーロ調整、ウクラ支援分担難航</title>
-      <link>https://insightbriefnews.com/ja/a/eu-budget-ukraine-funding-crisis-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/eu-budget-ukraine-funding-crisis-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:29:13 +0900</pubDate>
-      <category>国際・地政学</category>
-      <description>EU 27カ国が2028年から7年間適用される1兆7,800億ユーロ規模の長期予算案合意のため、ブリュッセルで緊急会議に突入した。フランス大統領を控えたマリン・ルペン議員の負傷とウクライナの支援条件が交渉の主な変数として作用している。</description>
     </item>
   </channel>
 </rss>

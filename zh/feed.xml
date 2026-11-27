@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 07:04:47 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 08:00:30 +0900</lastBuildDate>
+    <item>
+      <title>能源转化的隐形成本：电力物理效率与工业数据中心承载力</title>
+      <link>https://insightbriefnews.com/zh/a/energy-loss-efficiency-grid-cost-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/energy-loss-efficiency-grid-cost-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 07:56:37 +0900</pubDate>
+      <category>能源·气候</category>
+      <description>美国能源信息署(EIA)2025年数据显示，从一次能源投入到最终用户消费，约60%的能源在转化与传输中耗损。这一物理局限直接决定了AI数据中心等高耗能产业的用能成本结构。</description>
+    </item>
     <item>
       <title>韩国12月第一周房产市场扫描：4215套新房入市与税负预判</title>
       <link>https://insightbriefnews.com/zh/a/namyangju-3rd-new-town-dec-2026-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:29:13 +0900</pubDate>
       <category>国际·地缘</category>
       <description>欧盟27国在布鲁塞尔召开紧急会议，商定价值1.78万亿欧元的长期预算计划，该计划将从2028年起适用7年。法国总统大选前议员勒庞的崛起以及支持乌克兰的条件成为谈判的主要变数。</description>
-    </item>
-    <item>
-      <title>高桥洋子首尔个人演唱会利润结构的另一面</title>
-      <link>https://insightbriefnews.com/zh/a/takahashi-yoko-seoul-concert-analysis-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/takahashi-yoko-seoul-concert-analysis-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:28:14 +0900</pubDate>
-      <category>韩流·文化</category>
-      <description>凭借动画《新世纪福音战士》主题曲赚钱了30多年的高桥阳子将在韩国举办她的首次个人表演。我们分析了日本内容在韩国流行音乐市场的盈利能力，重点关注门票力和 IP 利用策略。</description>
     </item>
   </channel>
 </rss>
