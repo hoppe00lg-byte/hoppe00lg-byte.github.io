@@ -65,6 +65,14 @@ def html_files():
 
 
 def page_url(rel):
+    """그 페이지의 canonical 주소.
+
+    첫 페이지는 2026-11-28 부터 /index.html 이 아니라 /(폴더 주소)를 정본으로 씁니다
+    (상단 메뉴·로고 링크가 / 로 바뀌면서 canonical 도 같이 맞춘 결과).
+    """
+    if rel in ("index.html", "en/index.html", "zh/index.html", "ja/index.html"):
+        head = rel[:-len("index.html")]
+        return f"{BASE}/{head}"
     return f"{BASE}/{rel}"
 
 
