@@ -44,6 +44,14 @@ DEFAULT_GLOBAL_REPORT = os.path.abspath(os.path.join(
     ROOT, "..", "pickle-automation", "reports", "resell-margin", "global-latest.json"))
 DEFAULT_CARDS_REPORT = os.path.abspath(os.path.join(
     ROOT, "..", "pickle-automation", "reports", "resell-margin", "cards-latest.json"))
+DEFAULT_JA_GOODS = os.path.abspath(os.path.join(
+    ROOT, "..", "pickle-automation", "reports", "resell-margin", "ja-goods-latest.json"))
+DEFAULT_JA_LUX = os.path.abspath(os.path.join(
+    ROOT, "..", "pickle-automation", "reports", "resell-margin", "ja-lux-latest.json"))
+DEFAULT_JA_CARDS = os.path.abspath(os.path.join(
+    ROOT, "..", "pickle-automation", "reports", "resell-margin", "ja-cards-latest.json"))
+DEFAULT_US_CARDS = os.path.abspath(os.path.join(
+    ROOT, "..", "pickle-automation", "reports", "resell-margin", "us-cards-latest.json"))
 
 GOODS_OUT = "goods-picks.json"
 LUX_OUT = "lux-picks.json"
@@ -88,15 +96,15 @@ def age_hours(iso: str) -> float | None:
     return (datetime.now(KST) - gen).total_seconds() / 3600
 
 
-def write_doc(doc: dict, name: str) -> list[str]:
+def write_doc(doc: dict, name: str, targets: tuple[str, ...] = ("", "en", "zh", "ja")) -> list[str]:
+    """targets: "" = 루트 data/, 그 밖엔 언어 폴더(en·zh·ja)."""
     text = json.dumps(doc, ensure_ascii=False, indent=1) + "\n"
-    paths = [os.path.join(DATA, name)]
-    for lang in LANGS:
-        d = os.path.join(ROOT, lang, "data")
-        if os.path.isdir(d):
-            paths.append(os.path.join(d, name))
     written = []
-    for p in paths:
+    for lang in targets:
+        d = os.path.join(ROOT, lang, "data") if lang else DATA
+        if lang and not os.path.isdir(d):
+            continue
+        p = os.path.join(d, name)
         os.makedirs(os.path.dirname(p), exist_ok=True)
         with open(p, "w", encoding="utf-8") as f:
             f.write(text)
@@ -376,7 +384,8 @@ def build_cards_doc(report: dict, top: int) -> dict:
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
-def sync_one(kind: str, doc: dict, out: str, args, label: str) -> int:
+def sync_one(kind: str, doc: dict, out: str, args, label: str,
+             targets: tuple[str, ...] = ("", "en", "zh", "ja")) -> int:
     if not doc["items"]:
         print(f"[{label}] 옮길 항목이 없습니다(리포트 items 비어 있음). 이전 파일을 그대로 둡니다.")
         return 3
@@ -393,7 +402,7 @@ def sync_one(kind: str, doc: dict, out: str, args, label: str) -> int:
     if args.check:
         print(f"[{label}] --check: 파일을 쓰지 않았습니다.")
         return 0
-    for rel in write_doc(doc, out):
+    for rel in write_doc(doc, out, targets):
         print(f"  · {rel}")
     return 0
 
@@ -410,6 +419,12 @@ def main() -> int:
     ap.add_argument("--only", default="", help="goods,lux,cards 중 골라서")
     ap.add_argument("--check", action="store_true", help="파일을 쓰지 않고 결과만 확인")
     ap.add_argument("--max-age-hours", type=float, default=36.0, help="이보다 오래된 리포트면 경고")
+    # 일본판(ja)·영문판(en) 기념카드 — 일본 현지 시세로 만든 리포트(ja_scanner / us_cards_scanner).
+    ap.add_argument("--ja-goods-report", default=DEFAULT_JA_GOODS, help="일본판 상품 리포트")
+    ap.add_argument("--ja-lux-report", default=DEFAULT_JA_LUX, help="일본판 명품 리포트")
+    ap.add_argument("--ja-cards-report", default=DEFAULT_JA_CARDS, help="일본판 기념카드 리포트")
+    ap.add_argument("--us-cards-report", default=DEFAULT_US_CARDS, help="영문판 기념카드 리포트")
+    ap.add_argument("--no-lang", default="", help="ja·en 사본을 만들지 않는다(쉼표)")
     # 예전 워크플로(resell-sync.yml)가 넘기던 인자 — 이제 쓰지 않지만 실행이 깨지지 않게 받아 둔다.
     ap.add_argument("--pokemon-report", default="", help=argparse.SUPPRESS)
     ap.add_argument("--top", type=int, default=0, help=argparse.SUPPRESS)
@@ -419,6 +434,31 @@ def main() -> int:
     want = {x.strip() for x in args.only.split(",") if x.strip()} or {"goods", "lux", "cards"}
     codes: list[int] = []
 
+    skip_lang = {x.strip() for x in args.no_lang.split(",") if x.strip()}
+    # 일본판·영문판 카드 리포트가 있으면 그 언어 사본은 그쪽이 대신한다(한국 사본을 덮어쓰지 않게).
+    ja_docs: dict[str, dict] = {}
+    for kind, path in (("goods", args.ja_goods_report), ("lux", args.ja_lux_report),
+                       ("cards", args.ja_cards_report)):
+        if os.path.exists(path):
+            d = load(path)
+            if d.get("items"):
+                ja_docs[kind] = d
+            else:
+                print(f"[ja:{kind}] 리포트에 아이템이 없습니다: {path}")
+    us_cards = load(args.us_cards_report) if os.path.exists(args.us_cards_report) else None
+    if us_cards and not us_cards.get("items"):
+        us_cards = None
+
+    def ko_targets(kind: str) -> tuple[str, ...]:
+        t = [""]
+        if "zh" not in skip_lang:
+            t.append("zh")
+        if "en" not in skip_lang and not (kind == "cards" and us_cards):
+            t.append("en")
+        if "ja" not in skip_lang and kind not in ja_docs:
+            t.append("ja")
+        return tuple(t)
+
     if "goods" in want or "lux" in want:
         if not os.path.exists(args.global_report):
             print(f"[global] 리포트가 없습니다: {args.global_report} — 상품·명품 섹션은 이전 데이터를 그대로 둡니다.")
@@ -427,9 +467,11 @@ def main() -> int:
             g = load(args.global_report)
             sneaker = load(args.report) if os.path.exists(args.report) else None
             if "goods" in want:
-                codes.append(sync_one("goods", build_goods_doc(g, sneaker, args.goods_top), GOODS_OUT, args, "goods"))
+                codes.append(sync_one("goods", build_goods_doc(g, sneaker, args.goods_top), GOODS_OUT,
+                                      args, "goods", ko_targets("goods")))
             if "lux" in want:
-                codes.append(sync_one("lux", build_lux_doc(g, args.lux_top), LUX_OUT, args, "lux"))
+                codes.append(sync_one("lux", build_lux_doc(g, args.lux_top), LUX_OUT,
+                                      args, "lux", ko_targets("lux")))
 
     if "cards" in want:
         if not os.path.exists(args.cards_report) and args.pokemon_report and os.path.exists(args.pokemon_report):
@@ -439,7 +481,23 @@ def main() -> int:
             codes.append(0)
         else:
             c = load(args.cards_report)
-            codes.append(sync_one("cards", build_cards_doc(c, args.cards_top), CARDS_OUT, args, "cards"))
+            codes.append(sync_one("cards", build_cards_doc(c, args.cards_top), CARDS_OUT,
+                                  args, "cards", ko_targets("cards")))
+
+    # 일본판(ja) — ja_scanner 가 만든 리포트를 그 폴더 사본으로.
+    for kind, out in (("goods", GOODS_OUT), ("lux", LUX_OUT), ("cards", CARDS_OUT)):
+        d = ja_docs.get(kind)
+        if not d or kind not in want:
+            continue
+        doc = dict(d)
+        doc["syncedAt"] = datetime.now(KST).isoformat(timespec="seconds")
+        codes.append(sync_one(f"ja:{kind}", doc, out, args, f"ja:{kind}", ("ja",)))
+
+    # 영문판(en) 기념카드 — 미국 시장가 리포트를 en/data/cards-picks.json 으로.
+    if us_cards and "cards" in want:
+        doc = dict(us_cards)
+        doc["syncedAt"] = datetime.now(KST).isoformat(timespec="seconds")
+        codes.append(sync_one("en:cards", doc, CARDS_OUT, args, "en:cards", ("en",)))
 
     for code in codes:
         if code not in (0, 3):

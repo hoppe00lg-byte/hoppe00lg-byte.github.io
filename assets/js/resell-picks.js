@@ -83,23 +83,23 @@
       hw: '仅迁移商品名、型号代码与价格等公开数据，不含个人信息。'
     },
     ja: {
-      kicker: 'SECTION 01 · GOODS', title: '商品 実測マージン',
-      sub: '米国・日本・欧州のブランド公式ストアとセレクトショップの実売価格を、型番・レゴのセット番号・ナイキの商品コードで韓国の販売価格と照合し、国際送料・関税/付加税・手数料を差し引いた純利益を計算しました。',
-      stamp: '基準 {date} · $1 = {usd}ウォン · ¥1 = {jpy}ウォン',
+      kicker: 'SECTION 01 · GOODS', title: '商品 日本仕入れマージン',
+      sub: '日本の最安値で仕入れて韓国で売るときの純利益です。スニーカーはSNKRDUNKの最安出品、電子機器・キャンプ・生活用品は価格.comの最安店（税込）で仕入れ、韓国エヌリの販売価格から国際送料・関税/付加税・手数料を引いて計算します。',
+      stamp: '基準 {date} · ¥1 = {jpy}ウォン · $1 = {usd}ウォン',
       statWatched: '監視アイテム', statMatched: '価格確認', statPos: '純利益プラス', statBest: '最高純利益',
       unit: '件',
       all: 'すべて',
       catSneakers: 'スニーカー', catElectronics: '電子機器', catCamping: 'キャンプ', catHousehold: '生活用品',
       catLego: 'レゴ', catFigure: 'フィギュア',
-      colFrom: '海外価格', colCost: '総コスト', colDom: '韓国価格', colTax: '関税・付加税', colMargin: '純利益',
+      colFrom: '仕入れ(日本)', colCost: '総コスト', colDom: '韓国販売価格', colTax: '関税・付加税', colMargin: '純利益',
       originUS: '米国', originJP: '日本', originEU: '欧州', originUK: '英国', originCA: 'カナダ', rrp: '定価基準',
-      linkBuy: '海外商品', linkDom: '韓国価格', fill: '計算機に入れる',
+      linkBuy: '仕入れ先', linkDom: '韓国価格', fill: '計算機に入れる',
       fillDone: '計算機に入力しました。送料や手数料を変えて確認できます。',
       negAll: '本日照合した {n} 件のうち純利益がプラスのものはありません。下表はそれでも最良の順です。',
       some: '{n} 件のうち {p} 件だけが純利益プラスです。',
-      note1: '<b>海外価格</b>はブランド公式ストアが公開する実売価格です。レゴは公式定価しか取得できないため<b>定価基準</b>と表示し、韓国の出品価格が定価の1.6倍を超える廃盤・希少セットは順位から外しました。',
-      note2: '<b>韓国価格</b>はEnuriで同じ型番が名前に含まれる出品の中央値です。実際の成約はこれより低いことがあります。',
-      note3: '<b>関税・付加税</b>は米国200ドル・日本/欧州/英国150ドルの免税枠（商品価格基準）を超えた場合のみ発生します。バッグ・時計は200万ウォンを超える部分に個別消費税20%と教育税30%が加わります。欧州・英国の価格は現地付加税を除いた輸出購入ベースです。',
+      note1: '<b>仕入れ(日本)</b>は日本の実売価格です。スニーカーはSNKRDUNKの最安出品、電子機器・キャンプ・生活用品は価格.comの最安店（税込・新品）で、型番が一致したものだけを使っています。',
+      note2: '<b>韓国販売価格</b>は韓国エヌリの最安出品の中央値です。実際の成約はこれより低いことがあります。',
+      note3: '<b>関税・付加税</b>は韓国の個人使用免税枠（日本発送150ドル）を超えた場合に、品目別8〜13%＋付加税10%＋通関手数料がかかります。日本で輸出免税（リファンド方式・2026年11月1日〜、税抜5,000円以上）を使えた場合は消費税相当額が戻りますが、ここでは税込で保守的に計算しています。',
       hw: '商品名・型番・価格のみを公開データから移しています。個人情報は含みません。'
     }
   }[LANG];
@@ -154,19 +154,19 @@
       hw: '仅迁移商品名、货号与价格等公开数据，不含个人信息。'
     },
     ja: {
-      kicker: 'SECTION 02 · LUXURY', title: 'ラグジュアリー・コンテンポラリー 実測マージン',
-      sub: 'Ami・Moncler・Thom Browne・Isabel Marant など欧州・英国ブランド公式ストアとセレクトショップの実売価格を型番で韓国の販売価格と照合し、現地付加税を除いた輸出購入価格に国際送料・関税/付加税・手数料を反映しました。',
-      stamp: '基準 {date} · €1 = {eur}ウォン · £1 = {gbp}ウォン · $1 = {usd}ウォン',
+      kicker: 'SECTION 02 · LUXURY', title: 'ラグジュアリー 日本仕入れマージン',
+      sub: 'SNKRDUNKの最安出品（型番と色が一致したもの）で仕入れ、韓国エヌリの販売価格で売るときの純利益です。国際送料・関税/付加税・手数料を引いています。',
+      stamp: '基準 {date} · ¥1 = {jpy}ウォン · $1 = {usd}ウォン',
       statWatched: '監視アイテム', statMatched: '価格確認', statPos: '純利益プラス', statBest: '最高純利益',
-      unit: '件', all: '', colFrom: '海外価格', colCost: '総コスト', colDom: '韓国価格', colTax: '関税・付加税', colMargin: '純利益',
+      unit: '件', all: '', colFrom: '仕入れ(日本)', colCost: '総コスト', colDom: '韓国販売価格', colTax: '関税・付加税', colMargin: '純利益',
       originUS: '米国', originJP: '日本', originEU: '欧州', originUK: '英国', originCA: 'カナダ', rrp: '定価基準',
-      linkBuy: '海外商品', linkDom: '韓国価格', fill: '計算機に入れる',
+      linkBuy: '仕入れ先', linkDom: '韓国価格', fill: '計算機に入れる',
       fillDone: '計算機に入力しました。送料や手数料を変えて確認できます。',
       negAll: '本日照合した {n} 件のうち純利益がプラスのものはありません。下表はそれでも最良の順です。',
       some: '{n} 件のうち {p} 件だけが純利益プラスです。',
-      note1: '<b>海外価格</b>はブランド公式ストア・セレクトショップの実売価格で、現地付加税20%を除いた輸出購入ベースです。',
-      note2: '<b>韓国価格</b>はEnuriで同じ型番が名前に含まれる出品の中央値です。偽物・別シーズンでないか支払い前に確認してください。',
-      note3: '<b>関税・付加税</b>は欧州・英国発送の商品価格が150ドルを超える場合にかかります（衣類13%・バッグ8%＋付加税10%）。バッグ・時計は200万ウォンを超える部分に個別消費税20%と教育税30%が加わります。',
+      note1: '<b>仕入れ(日本)</b>はSNKRDUNKの最安出品です。同じ型番でも色・シーズン・状態が混ざるため、ブランド・型番・色の語がすべて一致する出品だけを使い、1件だけ極端に安い場合は中央値側を採っています。',
+      note2: '<b>韓国販売価格</b>はエヌリで同じ品番が名前に含まれる出品の中央値です。偽物・別シーズンでないか支払い前に確認してください。',
+      note3: '<b>関税・付加税</b>は日本発送の商品価格が150ドルを超える場合にかかります（衣類13%・バッグ8%＋付加税10%）。バッグ・時計は200万ウォンを超える部分に個別消費税20%と教育税30%が加わります。',
       hw: '商品名・型番・価格のみを公開データから移しています。個人情報は含みません。'
     }
   }[LANG];
@@ -191,21 +191,21 @@
       hw: '카드명·세트·판본 코드·가격만 공개 데이터로 옮겼습니다. 개인정보는 담지 않습니다.'
     },
     en: {
-      kicker: 'SECTION 03 · TRADING CARDS', title: 'Trading cards: Japan → Korea price gap',
-      sub: 'Pokémon, One Piece and Yu-Gi-Oh! compared only within the same Japanese printing code. What is left after international shipping, duty and KREAM fees when you buy at a Japanese card shop and sell at the Korean price.',
-      stamp: 'As of {date} · ¥1 = ₩{fx}',
+      kicker: 'SECTION 03 · TRADING CARDS', title: 'Trading cards: Japan → US market',
+      sub: 'Japanese-printing cards bought at Cardrush (tax included) and sold to US collectors at the PriceCharting Ungraded price, after eBay’s 13.25% card fee, US import duty and shipping. Only the same printing code and rarity are compared.',
+      stamp: 'As of {date} · ¥1 = ₩{fx} · ¥100 = US${usdjpy}',
       statCards: 'Cards watched', statResolved: 'Prices confirmed', statPos: 'Positive margin', statBest: 'Best margin',
       unit: 'cards', all: 'All',
       gamePokemon: 'Pokémon', gameOnepiece: 'One Piece', gameYugioh: 'Yu-Gi-Oh!',
-      colJp: 'Japan price', colKr: 'Korea price', colSell: 'Sale price (−10%)', colFee: 'Duty & shipping', colCost: 'Total cost', colMargin: 'Net margin',
+      colJp: 'Buy (Cardrush, ¥)', colKr: 'US market (Ungraded)', colSell: 'Net after eBay fee', colFee: 'Duty & shipping', colCost: 'Total cost', colMargin: 'Net margin',
       bep: 'Break-even buy price', bepBelow: 'Cheapest copy below break-even', confirm: 'Check the printing',
-      linkJp: 'Japan listing', linkKr: 'Korea price', fill: 'Fill the calculator',
+      linkJp: 'Cardrush listing', linkKr: 'PriceCharting', fill: 'Fill the calculator',
       fillDone: 'Values are in the calculator. Change the buy and sale prices to test it yourself.',
-      allNeg: 'At today’s Japanese retail prices all {n} confirmed cards are negative. These trades only pay when you buy below the break-even price printed on each card.',
+      allNeg: 'All {n} confirmed cards are negative at today’s Japanese retail prices. These trades only pay when you buy below the break-even price printed on each card.',
       some: 'Only {p} of {n} confirmed cards clear a positive margin.',
-      note1: 'The <b>Korea price</b> is the lowest KREAM asking price that TCGIndex records for the same Japanese printing code, and the sale price is set 10% below it. Actual trades can close lower.',
-      note2: '<b>Duty and shipping</b> include Japan proxy international shipping and the domestic courier. Cards carry 0% duty; above US$150 of goods, 10% VAT and a ₩4,000 clearance fee apply.',
-      note3: 'You only make money buying below the <b>break-even price</b>. One Piece and Yu-Gi-Oh! share a code between parallel, promo and reprint versions, so only pages with the identical printing code are used and <b>rows where the Korean price exceeds 12× the Japanese price are dropped</b>. ⚠️ marks rows where grade or artwork may differ.',
+      note1: 'The <b>US market</b> price is PriceCharting’s “Ungraded” figure for the same Japanese printing (it is built from actual eBay sales, not asking prices). PSA-graded prices are not used.',
+      note2: '<b>Duty and shipping</b> include the 12.5% US duty on goods of Japanese origin, a $3.00 clearance fee, airmail from Japan and tracked delivery to the buyer. The US$800 de minimis exemption (Section 321) has been suspended for every country since 29 Aug 2025 and was made indefinite on 24 June 2026 (repealed from 1 July 2027), so low-value parcels now pay duty.',
+      note3: '<b>eBay</b> charges 13.25% on the first $7,500 of a trading-card sale plus $0.40 per order. Yu-Gi-Oh! Japanese (OCG) cards have no PriceCharting coverage and drop out of the list.',
       hw: 'Only card name, set, printing code and prices come from public data. No personal information is included.'
     },
     zh: {
@@ -227,21 +227,21 @@
       hw: '仅迁移卡名、系列、版次代码与价格等公开数据，不含个人信息。'
     },
     ja: {
-      kicker: 'SECTION 03 · TRADING CARDS', title: 'トレカ 日韓価格差',
-      sub: 'ポケモン・ワンピース・遊戯王を、同じ日本語版・同じ版コード同士でのみ比較します。日本のカードショップで買い、韓国価格で売るとき、国際送料・関税/付加税・KREAM手数料を引いて残る金額です。',
+      kicker: 'SECTION 03 · TRADING CARDS', title: 'トレカ 日本国内リセール',
+      sub: 'カードラッシュの販売価格（税込）で仕入れ、SNKRDUNKで売ったときの手取りと純利益です。スニダンの販売手数料9.5%、スニダンまでの送料、振込手数料を引いています。同じセットコード・同じレアリティの出品だけを比べます。',
       stamp: '基準 {date} · ¥1 = {fx}ウォン',
       statCards: '確認カード', statResolved: '価格確定', statPos: '純利益プラス', statBest: '最高純利益',
       unit: '種', all: 'すべて',
       gamePokemon: 'ポケモン', gameOnepiece: 'ワンピース', gameYugioh: '遊戯王',
-      colJp: '日本買値', colKr: '韓国参考価格', colSell: '売値（−10%）', colFee: '関税・送料', colCost: '総コスト', colMargin: '純利益',
-      bep: '損益分岐の買値', bepBelow: '最安在庫が分岐線以下', confirm: '版の確認が必要',
-      linkJp: '日本の商品', linkKr: '韓国価格', fill: '計算機に入れる',
-      fillDone: '計算機に入力しました。買値と売値を変えて確認できます。',
-      allNeg: '本日の日本カードショップ小売価格では、確定 {n} 種すべてマイナスです。各カードの損益分岐買値より安く買えたときだけ残ります。',
+      colJp: '仕入れ（カードラッシュ）', colKr: 'スニダン最安', colSell: '手取り', colFee: '手数料・送料', colCost: '仕入れ総額', colMargin: '純利益',
+      bep: '損益分岐の仕入れ値', bepBelow: '最安が分岐線以下', confirm: '版の確認が必要',
+      linkJp: '仕入れ先（カードラッシュ）', linkKr: 'スニダン出品', fill: '計算機に入れる',
+      fillDone: '計算機に入力しました。仕入れ値と売値を変えて確認できます。',
+      allNeg: '本日の小売価格では確定 {n} 種すべてマイナスです。各カードの損益分岐の仕入れ値より安く買えたときだけ残ります。',
       some: '確定 {n} 種のうち {p} 種が純利益プラスです。',
-      note1: '<b>韓国参考価格</b>はTCGIndexが日本語版の版ページに記録したKREAMの最安出品価格で、売値はそこから10%下げています。実際の成約はさらに低いことがあります。',
-      note2: '<b>関税・送料</b>には日本の転送業者の国際送料と韓国国内宅配が入っています。カードの関税は0%、商品価格が150ドルを超えると付加税10%と通関手数料4,000ウォンがかかります。',
-      note3: '<b>損益分岐買値</b>より安く買わないと残りません。ワンピース・遊戯王は同じコードでもパラレル・プロモ・再録の版があり価格が数倍違うため、版コードが同じページのみを使い、<b>韓国価格が日本価格の12倍を超える行は除外</b>しています。⚠️はグレード・絵柄の違いの可能性が大きい行です。',
+      note1: '<b>仕入れ</b>はカードラッシュの販売価格（税込・在庫あり・状態B/Cを除く）、<b>売値</b>はSNKRDUNKの最安出品です。同じセットコード・同じレアリティでないと数倍違うため、版が一致する出品だけを使っています。',
+      note2: '<b>手数料</b>はスニダンの販売手数料9.5%（会員ランクREGULAR）＋スニダンまでの送料約500円＋振込手数料300円です。ランクが上がると手数料は7.0%まで下がります。',
+      note3: '仕入れは税込です。日本国内で転売する場合、消費税の免税は使えません（免税・リファンドは海外へ持ち出す場合のみ）。海外から取り寄せて日本で売る場合は、小売16,666円以下なら関税・消費税が免除され、超えると10%の消費税がかかります（個人使用・0.6掛けの目安／転売目的では適用外）。',
       hw: 'カード名・セット・版コード・価格のみを公開データから移しています。個人情報は含みません。'
     }
   }[LANG];
@@ -288,7 +288,7 @@
       return d.toLocaleString(LOCALE, { year: 'numeric', month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
     } catch (e) { return String(iso).slice(0, 16); }
   }
-  function base() { return /^\/(en|zh|ja)\//.test(location.pathname) ? '../' : ''; }
+  function base() { return ''; }   /* 각 언어 페이지는 자기 폴더의 data/ 를 읽는다 */
   function fresh(d) {
     var age = (Date.now() - new Date(d.generatedAt || d.date).getTime()) / 36e5;
     return !(isFinite(age) && age > 240);      /* 열흘 넘게 끊긴 데이터는 내보내지 않습니다 */
@@ -300,12 +300,13 @@
     var pos = (d.scan && d.scan.positive) || 0;
     var best = (d.scan && d.scan.best) || 0;
     var stamp = tpl(T.stamp, stampMap);
+    var basis = (d.basis && d.basis.labels && d.basis.labels[LANG]) || '';
     var row = '<div class="rs-pk-head">' +
       '<div class="rs-pk-title">' +
         '<span class="kicker">' + esc(T.kicker) + '</span>' +
         '<h2>' + esc(T.title) + '</h2>' +
         '<p class="rs-pk-sub">' + esc(T.sub) + '</p>' +
-        '<p class="rs-pk-stamp">' + esc(stamp) + '</p>' +
+        '<p class="rs-pk-stamp">' + esc(stamp) + (basis ? ' · <b>' + esc(basis) + '</b>' : '') + '</p>' +
       '</div>' +
       '<div class="rs-pk-stats">' +
         stats.map(function (s) {
@@ -437,11 +438,23 @@
     return it.nameKo || it.nameEn || it.nameJp;
   }
 
+  function cv(v, cur) {
+    var x = Number(v || 0);
+    if (cur === 'JPY') return '\u00a5' + nf(Math.round(x));
+    if (cur === 'USD') return SYM.USD + nf(x, 2);
+    return krw(x);
+  }
+  function sg(v, cur) {
+    var x = Number(v || 0);
+    return (x > 0 ? '+' : x < 0 ? '\u2212' : '') + cv(Math.abs(x), cur);
+  }
   function cardRow(it) {
     var margin = it.margin || 0;
     var cls = margin >= 0 ? 'pos' : 'neg';
     var bep = (it.bep === 0 || it.bep) ? it.bep : null;
     var below = bep != null && it.jp && it.jp <= bep;
+    var cJp = it.jpCur || 'JPY', cKr = it.krCur || 'KRW', cSell = it.sellCur || cKr;
+    var cFee = it.feeCur || cKr, cCost = it.costCur || 'KRW', mCur = it.marginCur || 'KRW';
     return '<article class="rs-pk-card" data-cat="' + esc(it.game) + '">' +
       '<div class="rs-pk-top">' +
         '<span class="rs-pk-rank">' + String(it.rank).padStart(2, '0') + '</span>' +
@@ -452,20 +465,21 @@
         (below ? '<span class="rs-pk-flag">' + esc(C.bepBelow) + '</span>' : '') +
       '</div>' +
       '<h3 class="rs-pk-name">' + esc(cardName(it)) + '</h3>' +
-      (it.setKo && LANG === 'ko' ? '<p class="rs-pk-sku">' + esc(it.setKo) + '</p>' : '') +
+      (it.setKo && LANG === 'ko' ? '<p class="rs-pk-sku">' + esc(it.setKo) + '</p>'
+        : (it.krTitle && LANG !== 'ko' ? '<p class="rs-pk-sku">' + esc(it.krTitle) + '</p>' : '')) +
       '<dl class="rs-pk-rows">' +
-        '<div><dt>' + esc(C.colJp) + '</dt><dd>' + yen(it.jp) + (it.jpCond && it.jpCond !== '기준' ? ' \u00b7 ' + esc(it.jpCond) : '') + '</dd></div>' +
-        '<div><dt>' + esc(C.colKr) + '</dt><dd>' + krw(it.kr) + '</dd></div>' +
-        '<div><dt>' + esc(C.colSell) + '</dt><dd>' + krw(it.sell) + '</dd></div>' +
-        '<div><dt>' + esc(C.colFee) + '</dt><dd>' + krw(it.customs || 0) + ' \u00b7 ' + krw(it.shipping || 0) + '</dd></div>' +
-        '<div><dt>' + esc(C.colCost) + '</dt><dd>' + krw(it.invested) + '</dd></div>' +
+        '<div><dt>' + esc(C.colJp) + '</dt><dd>' + cv(it.jp, cJp) + (it.jpCond && it.jpCond !== '기준' ? ' \u00b7 ' + esc(it.jpCond) : '') + '</dd></div>' +
+        '<div><dt>' + esc(C.colKr) + '</dt><dd>' + cv(it.kr, cKr) + '</dd></div>' +
+        '<div><dt>' + esc(C.colSell) + '</dt><dd>' + cv(it.sell, cSell) + '</dd></div>' +
+        '<div><dt>' + esc(C.colFee) + '</dt><dd>' + cv(it.customs || 0, cFee) + ' \u00b7 ' + cv(it.shipping || 0, cFee) + '</dd></div>' +
+        '<div><dt>' + esc(C.colCost) + '</dt><dd>' + cv(it.invested, cCost) + '</dd></div>' +
       '</dl>' +
       '<div class="rs-pk-margin ' + cls + '">' +
         '<span class="k">' + esc(C.colMargin) + '</span>' +
-        '<b>' + signed(margin) + '<i>' + esc(CURRENCY === 'KRW' ? '\uc6d0' : 'KRW') + '</i></b>' +
+        '<b>' + sg(margin, mCur) + (mCur === 'KRW' ? '<i>' + esc(CURRENCY === 'KRW' ? '\uc6d0' : 'KRW') + '</i>' : '') + '</b>' +
         '<span class="r">ROI ' + pct(it.roi) + '</span>' +
       '</div>' +
-      '<p class="rs-pk-bep"><span>' + esc(C.bep) + '</span><b>' + (bep != null ? yen(bep) : '\u2014') + '</b></p>' +
+      '<p class="rs-pk-bep"><span>' + esc(C.bep) + '</span><b>' + (bep != null ? cv(bep, it.bepCur || 'JPY') : '\u2014') + '</b></p>' +
       '<p class="rs-pk-links">' +
         (it.jpUrl ? '<a href="' + esc(it.jpUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(C.linkJp) + ' \u2197</a>' : '') +
         (it.krUrl ? '<a href="' + esc(it.krUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(C.linkKr) + ' \u2197</a>' : '') +
@@ -478,7 +492,8 @@
     if (!CARDS || !d || !(d.items || []).length || !fresh(d)) return;
     var fx = d.fx || {};
     var s = d.scan || {};
-    var stamp = { date: fmtDate(d.generatedAt || d.date), fx: nf(fx.jpyKrw, 2) };
+    var stamp = { date: fmtDate(d.generatedAt || d.date), fx: nf(fx.jpyKrw, 2),
+                  usdjpy: nf(fx.usdJpy || (fx.usdKrw && fx.jpyKrw ? fx.usdKrw / fx.jpyKrw : 0), 2) };
     var stats = [
       { k: C.statCards, v: nf(s.cards || 0), unit: C.unit },
       { k: C.statResolved, v: nf(s.resolved || 0), unit: C.unit },
