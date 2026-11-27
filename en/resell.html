@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/resell.css?v=20261126a">
-<link rel="stylesheet" href="../assets/css/resell-picks.css?v=20261128a">
+<link rel="stylesheet" href="../assets/css/resell-picks.css?v=20261128b">
 <link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
 <script type="application/ld+json">
 {
@@ -38,8 +38,8 @@
   "url": "https://insightbriefnews.com/resell.html",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Any",
-  "inLanguage": "ko",
-  "description": "Free calculator for resellers: enter the purchase price in USD, JPY, EUR or CNY (or a domestic second-hand price), forwarding and international shipping, duty and VAT when the 150/200 USD list-clearance limit is exceeded, the selling platform fee and the domestic courier fee to get the expected settlement, net profit, return on cost and break-even purchase price, with a side-by-side comparison of KREAM, Bunjang, Naver Smart Store, Danggeun and Musinsa Used.",
+  "inLanguage": "en",
+  "description": "Free margin calculator for resellers in the United States: enter the purchase price in USD, EUR, GBP, JPY, CNY or KRW, forwarding and international shipping, duty above the US$800 Section 321 de minimis, the marketplace fee (eBay 13.6% + $0.40, StockX 9% + 3%, Poshmark 20%, Mercari 10%) and the courier fee to get settlement, net profit, return on cost and break-even purchase price, with the same sale price compared across six marketplaces.",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
   "isAccessibleForFree": true,
   "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
@@ -241,7 +241,7 @@
 
         <!-- ===== 해외직구 ===== -->
         <section class="rs-panel" id="rs-panel-abroad" role="tabpanel" aria-labelledby="rs-tab-abroad">
-          <p class="rs-panel-lead">Use this when you buy second-hand locally and relist on eBay, StockX or Mercari. There is no import duty, but purchase shipping, the marketplace fee and the courier cost eat into the margin. Put both sides’ fees in and see which route leaves more.</p>
+          <p class="rs-panel-lead">Use this when you buy in dollars, yen, euros or pounds, receive the parcel through a forwarder and resell it in the United States. Section 321 clears a shipment up to US$800 with no duty, so most single items carry no import charge; above that, duty follows the HTS code. No federal VAT is charged at import — marketplaces collect state sales tax from the buyer at checkout. Goods bought to resell are not personal-use imports, so tick “for resale” if you declare them.</p>
 
           <div class="rs-group">
             <div class="rs-group-head"><span class="no">01</span><h3>Purchase</h3><span>Price paid and exchange rate</span></div>
@@ -271,7 +271,7 @@
                   <option value="8.5" data-key="shoes" selected>Sneakers & shoes — 8.5% duty</option><option value="16.5" data-key="apparel">Clothing — 16.5% duty</option><option value="8.1" data-key="bag">Bags & wallets — 8.1% duty</option><option value="2" data-key="tech">Tech & electronics — ~2% duty</option><option value="0" data-key="watch">Watches & jewellery — 0% duty</option><option value="5" data-key="sports">Sports & hobby — ~5% duty</option><option value="0" data-key="card">Trading cards — 0% duty</option>
                   <option value="" data-key="custom">Custom</option>
                 </select>
-                <span class="hint" id="rs-a-cat-hint">13% duty plus 10% VAT makes 24.3% of the customs value.</span>
+                <span class="hint" id="rs-a-cat-hint">Duty 8.5% of the customs value; there is no US VAT at import.</span>
               </div>
             </div>
           </div>
@@ -321,7 +321,7 @@
                   <option value="ebay" selected>eBay — most categories 13.6% + $0.40</option><option value="ebaycards">eBay — trading cards 13.25%</option><option value="ebaysneakers">eBay — sneakers $150+ 8%</option><option value="stockx">StockX 9% + 3% processing</option><option value="poshmark">Poshmark 20%</option><option value="mercurius">Mercari US 10%</option>
                   <option value="custom">Custom</option>
                 </select>
-                <span class="hint" id="rs-a-platform-hint">Picking a platform fills in its fee rate.</span>
+                <span class="hint" id="rs-a-platform-hint">eBay: 13.6% + $0.40 · StockX: 12% · Poshmark 20%</span>
               </div>
               <div class="rs-field">
                 <label for="rs-a-fee">Fee rate <i>%</i></label>
@@ -330,7 +330,7 @@
               <div class="rs-field">
                 <label for="rs-a-fixed">Fixed fee <i>USD</i></label>
                 <input id="rs-a-fixed" class="num" type="text" inputmode="decimal" value="0.40">
-                <span class="hint">KREAM adds a basic fee of ₩2,500 (₩2,750 including VAT).</span>
+                <span class="hint">eBay adds $0.40 per order; StockX has a $5 minimum.</span>
               </div>
               <div class="rs-field">
                 <label for="rs-a-shipout">Seller-paid delivery <i>USD</i></label>
@@ -353,7 +353,7 @@
 
         <!-- ===== 국내 중고 ===== -->
         <section class="rs-panel" id="rs-panel-domestic" role="tabpanel" aria-labelledby="rs-tab-domestic" hidden>
-          <p class="rs-panel-lead">Use this when you buy on Danggeun or Bunjang and relist on KREAM or another platform. Inside Korea there is no duty, but the purchase shipping, the platform fee and the courier cost when you sell eat into the margin. Try changing the fees on both sides.</p>
+          <p class="rs-panel-lead">Use this when you buy second-hand locally and relist on eBay, StockX or Mercari. There is no import duty, but purchase shipping, the marketplace fee and the courier cost eat into the margin. Put both sides’ fees in and see which route leaves more.</p>
 
           <div class="rs-group">
             <div class="rs-group-head"><span class="no">01</span><h3>Purchase</h3><span>Price paid and incoming shipping</span></div>
@@ -392,7 +392,7 @@
               <div class="rs-field">
                 <label for="rs-d-fixed">Fixed fee <i>USD</i></label>
                 <input id="rs-d-fixed" class="num" type="text" inputmode="decimal" value="0.40">
-                <span class="hint">KREAM adds a basic fee of ₩2,500 (₩2,750 including VAT).</span>
+                <span class="hint">eBay adds $0.40 per order; StockX has a $5 minimum.</span>
               </div>
               <div class="rs-field">
                 <label for="rs-d-shipout">Seller-paid delivery <i>USD</i></label>
@@ -567,8 +567,8 @@
 
 <div class="rs-toast" id="rs-toast" role="status" aria-live="polite"></div>
 <script src="../assets/js/monetize.js?v=20261126a" defer></script>
-<script src="../assets/js/resell.js?v=20261128a" defer></script>
-<script src="../assets/js/resell-picks.js?v=20261128a" defer></script>
+<script src="../assets/js/resell.js?v=20261128b" defer></script>
+<script src="../assets/js/resell-picks.js?v=20261128b" defer></script>
 <script src="../assets/js/nav.js?v=20261124c"></script>
 <script src="data/i18n.fallback.js?v=20261124a"></script>
 <script src="../assets/js/i18n.js?v=20261124a"></script>

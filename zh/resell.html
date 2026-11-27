@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/resell.css?v=20261126a">
-<link rel="stylesheet" href="../assets/css/resell-picks.css?v=20261128a">
+<link rel="stylesheet" href="../assets/css/resell-picks.css?v=20261128b">
 <link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
 <script type="application/ld+json">
 {
@@ -38,8 +38,8 @@
   "url": "https://insightbriefnews.com/resell.html",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Any",
-  "inLanguage": "ko",
-  "description": "Free calculator for resellers: enter the purchase price in USD, JPY, EUR or CNY (or a domestic second-hand price), forwarding and international shipping, duty and VAT when the 150/200 USD list-clearance limit is exceeded, the selling platform fee and the domestic courier fee to get the expected settlement, net profit, return on cost and break-even purchase price, with a side-by-side comparison of KREAM, Bunjang, Naver Smart Store, Danggeun and Musinsa Used.",
+  "inLanguage": "zh-Hans",
+  "description": "面向中国个人卖家的免费利润计算器：以人民币计价，输入美元、日元、欧元、英镑或韩元的进价、转运与国际运费、超过个人邮寄限值（1,000 元，港澳台 800 元）的行邮税、平台手续费（闲鱼 0.6%、鱼小铺 1.6%、得物约 2~5%）与快递费，得出结算额、净利润、成本回报率与盈亏平衡进价，并在同一售价下比较各平台。",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
   "isAccessibleForFree": true,
   "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
@@ -241,7 +241,7 @@
 
         <!-- ===== 해외직구 ===== -->
         <section class="rs-panel" id="rs-panel-abroad" role="tabpanel" aria-labelledby="rs-tab-abroad">
-          <p class="rs-panel-lead">在国内二手平台买入，再挂到另一个平台时使用。没有行邮税，但买入运费、平台手续费与卖出快递费会吃掉利润。把两边的费率都填进去，看哪条路线剩下更多。</p>
+          <p class="rs-panel-lead">在海外网站用美元、日元、欧元或英镑下单，经转运公司收货，再在国内卖出时使用。个人邮寄进境物品每次限值 1,000 元（寄自港澳台 800 元），应征税额 50 元以下免征；超过限值或税额的，按 13% / 20% / 50% 的行邮税计征。用于转售的物品不属于个人自用，申报时请按实际用途填写。</p>
 
           <div class="rs-group">
             <div class="rs-group-head"><span class="no">01</span><h3>采购</h3><span>买入价与适用汇率</span></div>
@@ -271,7 +271,7 @@
                   <option value="20" data-key="shoes" selected>运动鞋·鞋类 — 行邮税 20%</option><option value="20" data-key="apparel">服装 — 行邮税 20%</option><option value="20" data-key="bag">包袋·钱包 — 行邮税 20%</option><option value="13" data-key="tech">数码·电子 — 行邮税 13%</option><option value="50" data-key="watch">手表·珠宝 — 行邮税 50%</option><option value="20" data-key="sports">运动·爱好 — 行邮税 20%</option><option value="0" data-key="card">集换卡 — 关税 0%</option>
                   <option value="" data-key="custom">Custom</option>
                 </select>
-                <span class="hint" id="rs-a-cat-hint">关税 13% 加增值税 10%，相当于完税价格的 24.3%。</span>
+                <span class="hint" id="rs-a-cat-hint">行邮税 20% 按完税价格计征，个人物品不另征增值税。</span>
               </div>
             </div>
           </div>
@@ -321,7 +321,7 @@
                   <option value="xianyu" selected>闲鱼 0.6%（单笔最高60元）</option><option value="xianyupb">闲鱼鱼小铺 1.6%</option><option value="dewu">得物 Dewu 约 2~5%</option><option value="taobao">淘宝 支付手续费 0.6%</option>
                   <option value="custom">Custom</option>
                 </select>
-                <span class="hint" id="rs-a-platform-hint">选择平台后自动填入费率。</span>
+                <span class="hint" id="rs-a-platform-hint">闲鱼 0.6% · 鱼小铺 1.6% · 得物约 5%</span>
               </div>
               <div class="rs-field">
                 <label for="rs-a-fee">手续费率 <i>%</i></label>
@@ -330,7 +330,7 @@
               <div class="rs-field">
                 <label for="rs-a-fixed">固定手续费 <i>韩元</i></label>
                 <input id="rs-a-fixed" class="num" type="text" inputmode="decimal" value="0">
-                <span class="hint">KREAM 另收基本手续费 2,500韩元（含增值税 2,750韩元）。</span>
+                <span class="hint">闲鱼按成交额 0.6%（单笔最高 60 元）；鱼小铺 1.6%。</span>
               </div>
               <div class="rs-field">
                 <label for="rs-a-shipout">卖家承担运费 <i>韩元</i></label>
@@ -353,7 +353,7 @@
 
         <!-- ===== 국내 중고 ===== -->
         <section class="rs-panel" id="rs-panel-domestic" role="tabpanel" aria-labelledby="rs-tab-domestic" hidden>
-          <p class="rs-panel-lead">在 Danggeun、闪电市场买入后到 KREAM 等平台重新上架时使用。韩国境内交易没有关税与增值税，但采购运费、平台手续费和出售时的快递费都会侵蚀利润。可以把买进和卖出的费率都换一换。</p>
+          <p class="rs-panel-lead">在国内二手平台买入，再挂到另一个平台时使用。没有行邮税，但买入运费、平台手续费与卖出快递费会吃掉利润。把两边的费率都填进去，看哪条路线剩下更多。</p>
 
           <div class="rs-group">
             <div class="rs-group-head"><span class="no">01</span><h3>采购</h3><span>买入价与收货运费</span></div>
@@ -392,7 +392,7 @@
               <div class="rs-field">
                 <label for="rs-d-fixed">固定手续费 <i>韩元</i></label>
                 <input id="rs-d-fixed" class="num" type="text" inputmode="decimal" value="0">
-                <span class="hint">KREAM 另收基本手续费 2,500韩元（含增值税 2,750韩元）。</span>
+                <span class="hint">闲鱼按成交额 0.6%（单笔最高 60 元）；鱼小铺 1.6%。</span>
               </div>
               <div class="rs-field">
                 <label for="rs-d-shipout">卖家承担运费 <i>韩元</i></label>
@@ -567,8 +567,8 @@
 
 <div class="rs-toast" id="rs-toast" role="status" aria-live="polite"></div>
 <script src="../assets/js/monetize.js?v=20261126a" defer></script>
-<script src="../assets/js/resell.js?v=20261128a" defer></script>
-<script src="../assets/js/resell-picks.js?v=20261128a" defer></script>
+<script src="../assets/js/resell.js?v=20261128b" defer></script>
+<script src="../assets/js/resell-picks.js?v=20261128b" defer></script>
 <script src="../assets/js/nav.js?v=20261124c"></script>
 <script src="data/i18n.fallback.js?v=20261124a"></script>
 <script src="../assets/js/i18n.js?v=20261124a"></script>

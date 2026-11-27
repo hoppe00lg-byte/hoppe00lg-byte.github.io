@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/resell.css?v=20261126a">
-<link rel="stylesheet" href="../assets/css/resell-picks.css?v=20261128a">
+<link rel="stylesheet" href="../assets/css/resell-picks.css?v=20261128b">
 <link rel="stylesheet" href="../assets/css/nav.css?v=20261125a">
 <script type="application/ld+json">
 {
@@ -38,8 +38,8 @@
   "url": "https://insightbriefnews.com/resell.html",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Any",
-  "inLanguage": "ko",
-  "description": "Free calculator for resellers: enter the purchase price in USD, JPY, EUR or CNY (or a domestic second-hand price), forwarding and international shipping, duty and VAT when the 150/200 USD list-clearance limit is exceeded, the selling platform fee and the domestic courier fee to get the expected settlement, net profit, return on cost and break-even purchase price, with a side-by-side comparison of KREAM, Bunjang, Naver Smart Store, Danggeun and Musinsa Used.",
+  "inLanguage": "ja",
+  "description": "日本の個人転売者向け無料計算機：円・ドル・ユーロ・ポンド・ウォンで仕入価格を入力し、転送・国際送料、課税価格1万円（小売16,666円が目安）を超える場合の関税と消費税10%、販売手数料（メルカリ10%、スニダン9.5%、ヤフオク10%、ラクマ10%、Yahoo!フリマ5%）と送料を反映して、精算額・純利益・コスト利益率・損益分岐の買値を算出します。",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
   "isAccessibleForFree": true,
   "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
@@ -241,7 +241,7 @@
 
         <!-- ===== 해외직구 ===== -->
         <section class="rs-panel" id="rs-panel-abroad" role="tabpanel" aria-labelledby="rs-tab-abroad">
-          <p class="rs-panel-lead">国内の中古を買って別のプラットフォームに出すときに使います。関税はかかりませんが、仕入れ送料・販売手数料・発送送料が利益を削ります。両側の手数料を入れて、どちらが残るか比べてください。</p>
+          <p class="rs-panel-lead">ドル・円・ユーロ・ポンドで買い、転送業者で受け取って国内で売るときに使います。個人使用の輸入は課税価格1万円以下（小売価格16,666円が目安）なら免税で、それを超えると関税と消費税10%がかかります。課税価格は小売価格×0.6で計算します。転売目的の輸入は個人使用の免税が使えないため、必要に応じて「転売用」にチェックしてください。</p>
 
           <div class="rs-group">
             <div class="rs-group-head"><span class="no">01</span><h3>仕入</h3><span>買った値段と適用レート</span></div>
@@ -271,7 +271,7 @@
                   <option value="30" data-key="shoes" selected>スニーカー・靴 — 関税 30%</option><option value="10" data-key="apparel">衣類 — 関税 10%</option><option value="12" data-key="bag">バッグ・財布 — 関税 12%</option><option value="0" data-key="tech">家電・ガジェット — 関税 0%</option><option value="5" data-key="watch">時計・ジュエリー — 関税 5%</option><option value="5" data-key="sports">スポーツ・ホビー — 関税 5%</option><option value="0" data-key="card">トレカ — 関税 0%</option>
                   <option value="" data-key="custom">Custom</option>
                 </select>
-                <span class="hint" id="rs-a-cat-hint">関税13%と付加価値税10%で、課税価格の24.3%が税負担です。</span>
+                <span class="hint" id="rs-a-cat-hint">関税 10% と消費税 10% で課税価格の約 16% が税負担の目安です。</span>
               </div>
             </div>
           </div>
@@ -321,7 +321,7 @@
                   <option value="mercari" selected>メルカリ 10%</option><option value="snkrdunk">スニダン 9.5〜7.0%</option><option value="yahooauc">ヤフオク 10%</option><option value="rakuma">ラクマ 10〜4.5%</option><option value="yahooflea">Yahoo!フリマ 5%</option>
                   <option value="custom">Custom</option>
                 </select>
-                <span class="hint" id="rs-a-platform-hint">プラットフォームを選ぶと手数料率が入ります。</span>
+                <span class="hint" id="rs-a-platform-hint">メルカリ 10% · スニダン 9.5% · ヤフオク 10%</span>
               </div>
               <div class="rs-field">
                 <label for="rs-a-fee">手数料率 <i>%</i></label>
@@ -330,7 +330,7 @@
               <div class="rs-field">
                 <label for="rs-a-fixed">固定手数料 <i>ウォン</i></label>
                 <input id="rs-a-fixed" class="num" type="text" inputmode="decimal" value="0">
-                <span class="hint">KREAMは基本手数料2,500ウォン（税込2,750ウォン）が別にかかります。</span>
+                <span class="hint">メルカリ・ヤフオクは販売手数料10%、振込手数料はメルカリ200円。</span>
               </div>
               <div class="rs-field">
                 <label for="rs-a-shipout">売り手負担の送料 <i>ウォン</i></label>
@@ -353,7 +353,7 @@
 
         <!-- ===== 국내 중고 ===== -->
         <section class="rs-panel" id="rs-panel-domestic" role="tabpanel" aria-labelledby="rs-tab-domestic" hidden>
-          <p class="rs-panel-lead">タンジュンやバンジャンで買い、KREAMなど別のプラットフォームに再出品するときに使います。国内取引なので関税・付加価値税はかかりませんが、仕入時の送料・手数料・販売時の宅配料が利益を削ります。仕入先と販売先の手数料を入れ替えて試してください。</p>
+          <p class="rs-panel-lead">国内の中古を買って別のプラットフォームに出すときに使います。関税はかかりませんが、仕入れ送料・販売手数料・発送送料が利益を削ります。両側の手数料を入れて、どちらが残るか比べてください。</p>
 
           <div class="rs-group">
             <div class="rs-group-head"><span class="no">01</span><h3>仕入</h3><span>買った値段と受け取り送料</span></div>
@@ -392,7 +392,7 @@
               <div class="rs-field">
                 <label for="rs-d-fixed">固定手数料 <i>ウォン</i></label>
                 <input id="rs-d-fixed" class="num" type="text" inputmode="decimal" value="0">
-                <span class="hint">KREAMは基本手数料2,500ウォン（税込2,750ウォン）が別にかかります。</span>
+                <span class="hint">メルカリ・ヤフオクは販売手数料10%、振込手数料はメルカリ200円。</span>
               </div>
               <div class="rs-field">
                 <label for="rs-d-shipout">売り手負担の送料 <i>ウォン</i></label>
@@ -567,8 +567,8 @@
 
 <div class="rs-toast" id="rs-toast" role="status" aria-live="polite"></div>
 <script src="../assets/js/monetize.js?v=20261126a" defer></script>
-<script src="../assets/js/resell.js?v=20261128a" defer></script>
-<script src="../assets/js/resell-picks.js?v=20261128a" defer></script>
+<script src="../assets/js/resell.js?v=20261128b" defer></script>
+<script src="../assets/js/resell-picks.js?v=20261128b" defer></script>
 <script src="../assets/js/nav.js?v=20261124c"></script>
 <script src="data/i18n.fallback.js?v=20261124a"></script>
 <script src="../assets/js/i18n.js?v=20261124a"></script>
