@@ -96,6 +96,18 @@
   [
    "Jeonju 3,572.33",
    "the previous week 3,572.33"
+  ],
+  [
+   "Tea Chrysosys",
+   "Teck Resources"
+  ],
+  [
+   "Chrysosys",
+   "Teck Resources"
+  ],
+  [
+   "Tichrysosys",
+   "Teck Resources"
   ]
  ],
  "zh": [
@@ -166,6 +178,18 @@
   [
    "re:(?i)\\bGIMP\\b",
    "泡菜溢价"
+  ],
+  [
+   "Tea Chrysosys",
+   "泰克资源（Teck Resources）"
+  ],
+  [
+   "Chrysosys",
+   "泰克资源"
+  ],
+  [
+   "Tichrysosys",
+   "泰克资源"
   ]
  ],
  "ja": [
@@ -252,6 +276,14 @@
   [
    "re:(?i)\\bGIMP\\b",
    "キムチプレミアム"
+  ],
+  [
+   "ティクリソシス",
+   "テック・リソーシズ"
+  ],
+  [
+   "チクリソシス",
+   "テック・リソーシズ"
   ]
  ]
 }
