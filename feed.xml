@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 02:57:41 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 03:58:11 +0900</lastBuildDate>
+    <item>
+      <title>은행 75%가 답한 유동성 관리 전략, 미 연준의 9월 조사 결과가 던진 질문</title>
+      <link>https://insightbriefnews.com/a/fed-reserve-survey-banks-strategy-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/fed-reserve-survey-banks-strategy-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 03:57:33 +0900</pubDate>
+      <category>경제·금융</category>
+      <description>미 연준이 2026년 9월 18일부터 28일까지 은행권의 지급준비금 관리 전략을 조사했다. 전체 은행권 준비금의 75%를 점유한 금융기관들의 실무적 대응이 금융 시장 변동성에 미칠 영향력을 점검한다.</description>
+    </item>
     <item>
       <title>2026년 블랙 프라이데이 티켓 시장: 3자 플랫폼의 할인 구조와 데이터 수익 모델</title>
       <link>https://insightbriefnews.com/a/black-friday-ticket-market-2026-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 14:50:00 +0900</pubDate>
       <category>재난·안전</category>
       <description>전기장판·전기난로 화재는 5년에 2,354건, 37명이 숨졌다. 전기장판 부주의 화재 532건 중 87%는 &#x27;사용·설치&#x27;로 적혔다. 그런데 안전기준 KC 60335-2-17은 열선과 표면의 온도는 숫자로 정하면서, 일정 시간이 지나면 스스로 꺼지는 장치를 요구하지 않는다. 인증 이후 제품이 인증받은 그대로인지 보는 창은 해마다 겨울의 시판 조사뿐이고, 그 창에서 전기요·전기장판이 매년 걸린다.</description>
-    </item>
-    <item>
-      <title>3.25%는 오늘 오지 않는다 — 12월 15일 오후 3시와 각자의 재산정일</title>
-      <link>https://insightbriefnews.com/a/bok-325-loan-reset-date-dec15-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/bok-325-loan-reset-date-dec15-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 14:25:00 +0900</pubDate>
-      <category>경제·금융</category>
-      <description>한국은행이 기준금리를 연 3.00%에서 3.25%로 올렸다. 다만 이미 대출을 받은 변동금리 차주가 이 결정을 체감하는 날은 오늘이 아니다. 은행 조달비용이 12월 15일 공시를 거쳐 지표금리에 들어가고, 개인의 대출금리는 약정한 금리변동주기가 돌아오는 날에야 다시 계산된다. 그사이 5년 고정형 금리는 변동형보다 낮아졌다.</description>
     </item>
   </channel>
 </rss>

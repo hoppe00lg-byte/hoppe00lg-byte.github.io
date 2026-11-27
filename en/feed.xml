@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 02:57:46 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 03:58:49 +0900</lastBuildDate>
+    <item>
+      <title>Fed survey reveals reserve management strategies among major banking institutions</title>
+      <link>https://insightbriefnews.com/en/a/fed-reserve-survey-banks-strategy-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/fed-reserve-survey-banks-strategy-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 03:57:33 +0900</pubDate>
+      <category>Economy &amp; Finance</category>
+      <description>The Federal Reserve Board analyzed liquidity and balance sheet strategies from banks holding 75% of total system reserves. Conducted in September 2026, the survey provides crucial insights into how financial institutions navigate inflation and market volatility.</description>
+    </item>
     <item>
       <title>Black Friday ticket strategies and the data-driven economics of live entertainment</title>
       <link>https://insightbriefnews.com/en/a/black-friday-ticket-market-2026-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 14:50:00 +0900</pubDate>
       <category>Disaster &amp; Safety</category>
       <description>Fires from electric heating mats and electric heaters killed 37 people and injured 219 in five years, 2,354 fires in all. Of the 532 mat fires attributed to carelessness, 87% were recorded as &#x27;use or installation&#x27;. Yet safety standard KC 60335-2-17 fixes the heating wire and surface temperatures in numbers and does not require a device that cuts the power after a set time. After certification, the only window onto whether a product is still the product that was certified is the market survey each winter — and every year electric underblankets and mats are caught in it.</description>
-    </item>
-    <item>
-      <title>3.25% does not arrive today — December 15 at 3 p.m., and then your own reset date</title>
-      <link>https://insightbriefnews.com/en/a/bok-325-loan-reset-date-dec15-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/bok-325-loan-reset-date-dec15-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 14:25:00 +0900</pubDate>
-      <category>Economy &amp; Finance</category>
-      <description>The Bank of Korea raised its policy rate from 3.00% to 3.25%. But the day an existing variable-rate borrower feels that decision is not today. The bank&#x27;s funding cost enters the benchmark index through a Dec 15 disclosure, and a borrower&#x27;s rate is recalculated only when the reset date written into the contract comes around. In the meantime, the five-year fixed rate has fallen below the variable rate.</description>
     </item>
   </channel>
 </rss>

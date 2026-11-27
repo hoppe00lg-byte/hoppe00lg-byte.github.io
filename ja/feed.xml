@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 02:57:48 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 03:58:50 +0900</lastBuildDate>
+    <item>
+      <title>米銀行の準備金管理戦略、75%が共有する「流動性防衛」の実態と教訓</title>
+      <link>https://insightbriefnews.com/ja/a/fed-reserve-survey-banks-strategy-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/fed-reserve-survey-banks-strategy-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 03:57:33 +0900</pubDate>
+      <category>経済・金融</category>
+      <description>連邦準備制度理事会（FRB）が2026年9月18日から28日にかけて実施した銀行幹部調査で、全体の準備金の約75%を占める金融機関の運用実態が明らかになった。高インフレ下での保守的な資産管理戦略が、日本の家計や輸入価格に与える影響を検証する。</description>
+    </item>
     <item>
       <title>2026年ブラックフライデー：チケット流通市場の価格戦略とデータ収益モデルの深層</title>
       <link>https://insightbriefnews.com/ja/a/black-friday-ticket-market-2026-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 15:15:00 +0900</pubDate>
       <category>貿易・原材料</category>
       <description>インドネシアの鉱山会社は2027年に5億湿量トンを超える採掘を申請し、政府は11月15日に受け付けを締め切ったまま数字を示していない。クォータが削るのは鉱石であって精錬ニッケルではなく、製錬所はフィリピン鉱石を輸入して埋める。LMEニッケル3か月物は11月13日の1万6,230ドルから25日には1万5,210ドルへ下がり、LME倉庫の27万5,604トンのうち7万9,266トンが釜山と光陽にある。</description>
-    </item>
-    <item>
-      <title>時間が来れば切れる装置は基準にない — 電気マット5年2,354件、死者37人</title>
-      <link>https://insightbriefnews.com/ja/a/electric-mat-auto-off-standard-gap.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/electric-mat-auto-off-standard-gap.html</guid>
-      <pubDate>Thu, 26 Nov 2026 14:50:00 +0900</pubDate>
-      <category>災害・安全</category>
-      <description>電気マットと電気ストーブによる火災は5年間で2,354件、37人が亡くなった。電気マットの不注意による火災532件のうち87%は「使用・設置」と記録されている。しかし安全基準KC 60335-2-17は発熱線と表面の温度を数字で定めるだけで、設定時間後に電源が切れる装置を求めていない。認証後に製品が認証時のままだかを見る窓は、毎年冬の市場調査だけであり、その窓で敷き電気毛布や電気マットが毎年引っかかる。</description>
     </item>
   </channel>
 </rss>

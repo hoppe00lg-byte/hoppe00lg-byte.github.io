@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "美联储披露银行流动性调查：75%准备金掌握在保守策略手中",
+   "articleId": "fed-reserve-survey-banks-strategy-20261128"
+  },
+  {
    "text": "2026年黑色星期五：欧美票务市场的折扣逻辑与数据变现模型",
    "articleId": "black-friday-ticket-market-2026-20261128"
   },
@@ -94,10 +98,6 @@
   {
    "text": "中国电动车高端化浪潮：百万级奢华背后潜藏的能源与电网挑战",
    "articleId": "china-ev-premium-market-energy-efficiency-20261128"
-  },
-  {
-   "text": "横穿人行道重伤事故：为何行人保护义务缺失引发家庭财务危机",
-   "articleId": "pedestrian-accident-loss-analysis-20261128"
   }
  ],
  "editorNote": {

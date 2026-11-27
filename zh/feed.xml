@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 02:57:47 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 03:58:50 +0900</lastBuildDate>
+    <item>
+      <title>美联储披露银行流动性调查：75%准备金掌握在保守策略手中</title>
+      <link>https://insightbriefnews.com/zh/a/fed-reserve-survey-banks-strategy-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/fed-reserve-survey-banks-strategy-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 03:57:33 +0900</pubDate>
+      <category>经济·金融</category>
+      <description>美联储于2026年9月针对掌控全美75%准备金的银行进行专项调查。在CPI同比上涨3.8%的背景下，全球供应链与金融市场正面临结算策略的深度重构。</description>
+    </item>
     <item>
       <title>2026年黑色星期五：欧美票务市场的折扣逻辑与数据变现模型</title>
       <link>https://insightbriefnews.com/zh/a/black-friday-ticket-market-2026-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 14:50:00 +0900</pubDate>
       <category>灾难·安全</category>
       <description>五年间电热垫和电暖器引发火灾2354起，37人死亡、219人受伤。电热垫火灾中归因于“疏忽”的532起里，87%被记为“使用、安装”不当。但安全标准KC 60335-2-17只把发热线和表面温度写成数字，并不要求产品在设定时间后自行断电。认证之后，能看见产品是否仍与认证时一致的窗口，只有每年冬天的市场调查——而每年都有电热毯和电热垫在这个窗口里被查出。</description>
-    </item>
-    <item>
-      <title>3.25%不会在今天到来 —— 12月15日下午3点，以及各自的重新定价日</title>
-      <link>https://insightbriefnews.com/zh/a/bok-325-loan-reset-date-dec15-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/bok-325-loan-reset-date-dec15-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 14:25:00 +0900</pubDate>
-      <category>经济·金融</category>
-      <description>韩国银行将基准利率从3.00%上调至3.25%。但对已经贷款的浮动利率借款人来说，感受到这一决定的日子并不是今天。银行的资金成本要经过12月15日的公布才进入指标利率，个人的贷款利率要等项目约定的利率变动周期到来才重新计算。在此期间，5年期固定利率已经低于浮动利率。</description>
     </item>
   </channel>
 </rss>

@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "은행 75%가 답한 유동성 관리 전략, 미 연준의 9월 조사 결과가 던진 질문",
+   "articleId": "fed-reserve-survey-banks-strategy-20261128"
+  },
+  {
    "text": "2026년 블랙 프라이데이 티켓 시장: 3자 플랫폼의 할인 구조와 데이터 수익 모델",
    "articleId": "black-friday-ticket-market-2026-20261128"
   },
@@ -94,10 +98,6 @@
   {
    "text": "중국 전기차 4억 원대 시대, 초고급화 뒤에 숨겨진 전력 효율과 에너지 비용",
    "articleId": "china-ev-premium-market-energy-efficiency-20261128"
-  },
-  {
-   "text": "횡단보도 12대 중과실 사고, 뇌신경 손상 피해자의 향후 1년 경제적 손실 계산",
-   "articleId": "pedestrian-accident-loss-analysis-20261128"
   }
  ],
  "editorNote": {

@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "米銀行の準備金管理戦略、75%が共有する「流動性防衛」の実態と教訓",
+   "articleId": "fed-reserve-survey-banks-strategy-20261128"
+  },
+  {
    "text": "2026年ブラックフライデー：チケット流通市場の価格戦略とデータ収益モデルの深層",
    "articleId": "black-friday-ticket-market-2026-20261128"
   },
@@ -94,10 +98,6 @@
   {
    "text": "中国EVの極端な二極化、4億円超高級車が突きつける電力グリッドの重い課題",
    "articleId": "china-ev-premium-market-energy-efficiency-20261128"
-  },
-  {
-   "text": "横断歩道の重大事故、被害世帯が直面する経済的損失と損害賠償の現実",
-   "articleId": "pedestrian-accident-loss-analysis-20261128"
   }
  ],
  "editorNote": {

@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "Fed survey reveals reserve management strategies among major banking institutions",
+   "articleId": "fed-reserve-survey-banks-strategy-20261128"
+  },
+  {
    "text": "Black Friday ticket strategies and the data-driven economics of live entertainment",
    "articleId": "black-friday-ticket-market-2026-20261128"
   },
@@ -94,10 +98,6 @@
   {
    "text": "Chinese automakers launch $1.5M luxury EVs amid global energy grid pressures",
    "articleId": "china-ev-premium-market-energy-efficiency-20261128"
-  },
-  {
-   "text": "Financial impact of severe pedestrian accidents: A case study on long-term income loss and liability",
-   "articleId": "pedestrian-accident-loss-analysis-20261128"
   }
  ],
  "editorNote": {
