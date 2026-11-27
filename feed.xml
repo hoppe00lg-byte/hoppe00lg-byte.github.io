@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 07:56:48 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 08:53:23 +0900</lastBuildDate>
+    <item>
+      <title>40주년 맞은 신촌블루스 엄인호가 경고한 AI 음악 의존의 경제학</title>
+      <link>https://insightbriefnews.com/a/sinchon-blues-ai-music-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/sinchon-blues-ai-music-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 08:52:16 +0900</pubDate>
+      <category>K-컬쳐·엔터</category>
+      <description>데뷔 40주년을 맞은 밴드 신촌블루스의 리더 엄인호가 AI 시대 창작의 본질을 짚었다. 음악 산업 내 수익 구조의 변화 속에서 인간 창작자가 지켜야 할 가치를 1986년부터의 기록으로 살펴본다.</description>
+    </item>
     <item>
       <title>전력 생산 1차 에너지 60% 소실, 데이터센터 전력난과 에너지 비용의 물리적 구조</title>
       <link>https://insightbriefnews.com/a/energy-loss-efficiency-grid-cost-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:37:24 +0900</pubDate>
       <category>부동산·생활세금</category>
       <description>오세훈 서울시장과 김은혜 의원이 12월 1일 수원에서 정책 공조를 선언했다. 수도권 주거 사다리 복원을 위한 규제 완화와 공급 대책의 실질적 효용성을 짚어본다.</description>
-    </item>
-    <item>
-      <title>EU 장기 예산안 1.78조 유로 조정, 우크라 지원 분담 난항</title>
-      <link>https://insightbriefnews.com/a/eu-budget-ukraine-funding-crisis-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/eu-budget-ukraine-funding-crisis-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:29:13 +0900</pubDate>
-      <category>국제·지정학</category>
-      <description>EU 27개국이 2028년부터 7년간 적용될 1조 7,800억 유로 규모의 장기 예산안 합의를 위해 브뤼셀에서 긴급 회의에 돌입했다. 프랑스 대선을 앞둔 마린 르펜 의원의 부상과 우크라이나 지원 조건이 협상의 주요 변수로 작용하고 있다.</description>
     </item>
   </channel>
 </rss>

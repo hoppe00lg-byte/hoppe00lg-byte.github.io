@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 08:00:30 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 08:57:35 +0900</lastBuildDate>
+    <item>
+      <title>新村布鲁斯 (Sinchon Blues) 的 Eom In-ho 在成立 40 周年之际警告依赖人工智能音乐的经济学</title>
+      <link>https://insightbriefnews.com/zh/a/sinchon-blues-ai-music-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/sinchon-blues-ai-music-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 08:52:16 +0900</pubDate>
+      <category>韩流·文化</category>
+      <description>新村布鲁斯乐队队长严仁浩在庆祝出道40周年时指出了人工智能时代创作的本质。我们根据 1986 年的记录，研究在音乐产业利润结构发生变化的情况下，人类创作者必须保持的价值观。</description>
+    </item>
     <item>
       <title>能源转化的隐形成本：电力物理效率与工业数据中心承载力</title>
       <link>https://insightbriefnews.com/zh/a/energy-loss-efficiency-grid-cost-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:37:24 +0900</pubDate>
       <category>房产·个税</category>
       <description>首尔市长吴世勋和众议员金恩惠于12月1日在水原宣布了政策合作。我们关注放松管制和供应措施以恢复首都圈住房阶梯的实际效果。</description>
-    </item>
-    <item>
-      <title>欧盟长期预算调整1.78万亿欧元，分摊支持乌克兰困难重重</title>
-      <link>https://insightbriefnews.com/zh/a/eu-budget-ukraine-funding-crisis-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/eu-budget-ukraine-funding-crisis-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:29:13 +0900</pubDate>
-      <category>国际·地缘</category>
-      <description>欧盟27国在布鲁塞尔召开紧急会议，商定价值1.78万亿欧元的长期预算计划，该计划将从2028年起适用7年。法国总统大选前议员勒庞的崛起以及支持乌克兰的条件成为谈判的主要变数。</description>
     </item>
   </channel>
 </rss>

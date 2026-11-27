@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 08:00:31 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 08:57:36 +0900</lastBuildDate>
+    <item>
+      <title>新村ブルースの厳仁浩が鳴らす警告、AI音楽依存の経済学</title>
+      <link>https://insightbriefnews.com/ja/a/sinchon-blues-ai-music-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/sinchon-blues-ai-music-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 08:52:16 +0900</pubDate>
+      <category>Kカルチャー</category>
+      <description>韓国ブルースの巨匠・厳仁浩が2026年11月26日のインタビューで、AI音楽生成への過度な依存に懸念を示した。1986年の結成から40年を迎えた新村ブルースの歩みを通じ、プラットフォームが75%割引を実施するデジタル時代における人間固有の創作価値を考察する。</description>
+    </item>
     <item>
       <title>電力供給の6割が消える：データセンター激増で突きつけられた物理的コストの限界</title>
       <link>https://insightbriefnews.com/ja/a/energy-loss-efficiency-grid-cost-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:38:52 +0900</pubDate>
       <category>バイオ・健康</category>
       <description>英国NHS病院のインフルエンザ入院率がコロナ19以前のレベルを超えたことが分かった。保健当局は医療スタッフと訪問者のマスク着用を勧告し、冬季病院の過負荷に備えている。</description>
-    </item>
-    <item>
-      <title>水原政策セミナー、ソウル・京畿不動産規制解法分析</title>
-      <link>https://insightbriefnews.com/ja/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:37:24 +0900</pubDate>
-      <category>不動産・税金</category>
-      <description>オ・セフンソウル市場とキム・ウンヘ議員が12月1日水原で政策共助を宣言した。首都圏住宅梯子復元のための規制緩和と供給対策の実質的な効用性を見てみる。</description>
     </item>
   </channel>
 </rss>

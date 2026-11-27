@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "The 40-year legacy of Sinchon Blues: Why human artistry triumphs over AI in the modern music economy",
+   "articleId": "sinchon-blues-ai-music-analysis-20261128"
+  },
+  {
    "text": "The physics of power loss: Why 60% of U.S. primary energy fails to reach the grid",
    "articleId": "energy-loss-efficiency-grid-cost-20261128"
   },
@@ -94,10 +98,6 @@
   {
    "text": "Costa Rica bars UN Gaza rapporteur amid rising geopolitical trade friction",
    "articleId": "costa-rica-denies-un-rapporteur-entry-geopolitics-20261128"
-  },
-  {
-   "text": "Nighttime wildfire response challenges and the critical gap in emergency infrastructure",
-   "articleId": "sejong-mountain-fire-night-response-20261128"
   }
  ],
  "editorNote": {

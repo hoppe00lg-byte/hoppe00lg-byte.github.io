@@ -85,6 +85,10 @@ window.__SITE__ = {
  ],
  "ticker": [
   {
+   "text": "40주년 맞은 신촌블루스 엄인호가 경고한 AI 음악 의존의 경제학",
+   "articleId": "sinchon-blues-ai-music-analysis-20261128"
+  },
+  {
    "text": "전력 생산 1차 에너지 60% 소실, 데이터센터 전력난과 에너지 비용의 물리적 구조",
    "articleId": "energy-loss-efficiency-grid-cost-20261128"
   },
@@ -95,10 +99,6 @@ window.__SITE__ = {
   {
    "text": "UN 보고관 입국 거부한 코스타리카와 2026년 11월 관세·안보 지정학 리스크",
    "articleId": "costa-rica-denies-un-rapporteur-entry-geopolitics-20261128"
-  },
-  {
-   "text": "야간 산불 대응의 사각지대: 2026년 11월 27일 세종시 산불과 소방 인력 배치 기준의 간극",
-   "articleId": "sejong-mountain-fire-night-response-20261128"
   }
  ],
  "editorNote": {

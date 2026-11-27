@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "新村ブルースの厳仁浩が鳴らす警告、AI音楽依存の経済学",
+   "articleId": "sinchon-blues-ai-music-analysis-20261128"
+  },
+  {
    "text": "電力供給の6割が消える：データセンター激増で突きつけられた物理的コストの限界",
    "articleId": "energy-loss-efficiency-grid-cost-20261128"
   },
@@ -94,10 +98,6 @@
   {
    "text": "コスタリカの国連報告官入国拒否と2026年11月、日本の家計を脅かす地政学的リスク",
    "articleId": "costa-rica-denies-un-rapporteur-entry-geopolitics-20261128"
-  },
-  {
-   "text": "夜間山火事の教訓：インフラの制約と限界が露呈した消火活動の現状",
-   "articleId": "sejong-mountain-fire-night-response-20261128"
   }
  ],
  "editorNote": {
