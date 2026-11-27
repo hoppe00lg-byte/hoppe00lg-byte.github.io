@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 03:58:50 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:00:26 +0900</lastBuildDate>
+    <item>
+      <title>安全漏洞检测技术的价值，Aim Intelligence 对 K-Digital 锦标赛的报道</title>
+      <link>https://insightbriefnews.com/zh/a/aim-intelligence-security-tech-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/aim-intelligence-security-tech-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 04:59:59 +0900</pubDate>
+      <category>AI·科技</category>
+      <description>2026年11月27日，人工智能安全公司Aim Intelligence在第五届K-Digital Grand Champions上获得大奖。实时幻觉检测和数据泄露预防解决方案已成为关键的市场需求。</description>
+    </item>
+    <item>
+      <title>特朗普“过剩产能关税”：美国进口成本跳涨与贸易成本重构分析</title>
+      <link>https://insightbriefnews.com/zh/a/trump-tariff-overcapacity-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/trump-tariff-overcapacity-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 04:58:53 +0900</pubDate>
+      <category>贸易·原材料</category>
+      <description>特朗普政府计划对14个经济体征收最高20%的额外关税，叠加既有税率后，中国出口商品面临最高45%的关税负担。这一政策导致制造业利润空间遭大幅挤压，甚至面临盈亏平衡点崩塌的风险。</description>
+    </item>
     <item>
       <title>美联储披露银行流动性调查：75%准备金掌握在保守策略手中</title>
       <link>https://insightbriefnews.com/zh/a/fed-reserve-survey-banks-strategy-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 16:45:00 +0900</pubDate>
       <category>AI·科技</category>
       <description>在SEMI与麦肯锡的2026年半导体供应链调查中，基板材料交期从10周拉长到30周，封装组装设备从23周拉长到37周。在基板链条上，部分加工设备下单后的交期从6个月变成30个月，而这些设备里的日本精密零件要等半年。三星电机投入6.78万亿韩元建设的新世宗生产线，要到2028年9月才量产。</description>
-    </item>
-    <item>
-      <title>申请书上是5亿吨，公告里没有数字——把镍价按在1万5,000美元的是釜山和光阳的7万9,266吨</title>
-      <link>https://insightbriefnews.com/zh/a/nickel-quota-2027-korea-warehouse-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/nickel-quota-2027-korea-warehouse-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 15:15:00 +0900</pubDate>
-      <category>贸易·原材料</category>
-      <description>印尼矿企申请2027年开采超过5亿湿吨，政府11月15日截止申请后仍未公布数字。配额削减的是矿石而非精炼镍，因为冶炼厂会进口菲律宾矿石。LME三个月期镍从11月13日的1万6,230美元跌至25日的1万5,210美元，LME仓库27万5,604吨中有7万9,266吨在釜山和光阳。</description>
-    </item>
-    <item>
-      <title>没有标准要求它到时自动断电 —— 电热垫五年2354起火灾、37人死亡</title>
-      <link>https://insightbriefnews.com/zh/a/electric-mat-auto-off-standard-gap.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/electric-mat-auto-off-standard-gap.html</guid>
-      <pubDate>Thu, 26 Nov 2026 14:50:00 +0900</pubDate>
-      <category>灾难·安全</category>
-      <description>五年间电热垫和电暖器引发火灾2354起，37人死亡、219人受伤。电热垫火灾中归因于“疏忽”的532起里，87%被记为“使用、安装”不当。但安全标准KC 60335-2-17只把发热线和表面温度写成数字，并不要求产品在设定时间后自行断电。认证之后，能看见产品是否仍与认证时一致的窗口，只有每年冬天的市场调查——而每年都有电热毯和电热垫在这个窗口里被查出。</description>
     </item>
   </channel>
 </rss>

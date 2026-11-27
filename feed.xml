@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 03:58:11 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:00:15 +0900</lastBuildDate>
+    <item>
+      <title>보안 취약점 탐지 기술의 가치, K-디지털 챔피언십 대상 에임인텔리전스 톺아보기</title>
+      <link>https://insightbriefnews.com/a/aim-intelligence-security-tech-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/aim-intelligence-security-tech-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 04:59:59 +0900</pubDate>
+      <category>AI·테크</category>
+      <description>2026년 11월 27일, AI 보안 기업 에임인텔리전스가 제5회 K-디지털 그랜드 챔피언십에서 대상을 수상했다. 실시간 환각 탐지 및 데이터 유출 차단 솔루션이 시장의 핵심 요구 사항으로 자리 잡았다.</description>
+    </item>
+    <item>
+      <title>관세 20% 인상 시 수입 원가 14.5% 상승…트럼프 &#x27;과잉생산 관세&#x27;의 경제학</title>
+      <link>https://insightbriefnews.com/a/trump-tariff-overcapacity-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/trump-tariff-overcapacity-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 04:58:53 +0900</pubDate>
+      <category>무역·원자재</category>
+      <description>미국이 14개국에 대해 최대 20%의 과잉생산 관세를 예고하며 국내 제조 원가에 비상이 걸렸다. 누적 관세율이 45%에 달할 경우 기업의 마진은 사실상 증발할 것으로 보인다.</description>
+    </item>
     <item>
       <title>은행 75%가 답한 유동성 관리 전략, 미 연준의 9월 조사 결과가 던진 질문</title>
       <link>https://insightbriefnews.com/a/fed-reserve-survey-banks-strategy-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 16:45:00 +0900</pubDate>
       <category>AI·테크</category>
       <description>SEMI와 맥킨지의 2026 반도체 공급망 조사에서 기판 소재 납기는 10주에서 30주로, 조립·패키징 장비는 23주에서 37주로 늘었다. 기판 공급망에서는 일부 가공 장비의 주문 후 납기가 6개월에서 30개월로, 그 장비에 들어가는 일본산 정밀 부품의 납기가 반년으로 길어졌다. 삼성전기가 6조7,800억 원을 걸고 세우는 세종 라인의 양산은 2028년 9월이다.</description>
-    </item>
-    <item>
-      <title>신청서에는 5억 톤, 발표문에는 숫자가 없다 — 니켈을 1만5,000달러에 묶어 둔 7만9,266톤</title>
-      <link>https://insightbriefnews.com/a/nickel-quota-2027-korea-warehouse-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/nickel-quota-2027-korea-warehouse-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 15:15:00 +0900</pubDate>
-      <category>무역·원자재</category>
-      <description>인도네시아 광산들은 2027년에 5억 습량톤 넘게 캐겠다고 신청했고, 정부는 11월 15일 접수를 마감한 뒤 아직 숫자를 내놓지 않았다. 쿼터를 조여도 세계 정제 니켈이 줄지 않는 이유는 제련소가 필리핀 광석을 수입해서다. LME 니켈 3개월물은 11월 13일 16,230달러에서 25일 15,210달러로 내렸고, 창고 27만5,604톤 가운데 7만9,266톤은 부산·광양에 있다.</description>
-    </item>
-    <item>
-      <title>시간이 되면 꺼지는 장치는 기준에 없다 — 전기장판 5년 2,354건, 사망 37명</title>
-      <link>https://insightbriefnews.com/a/electric-mat-auto-off-standard-gap.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/electric-mat-auto-off-standard-gap.html</guid>
-      <pubDate>Thu, 26 Nov 2026 14:50:00 +0900</pubDate>
-      <category>재난·안전</category>
-      <description>전기장판·전기난로 화재는 5년에 2,354건, 37명이 숨졌다. 전기장판 부주의 화재 532건 중 87%는 &#x27;사용·설치&#x27;로 적혔다. 그런데 안전기준 KC 60335-2-17은 열선과 표면의 온도는 숫자로 정하면서, 일정 시간이 지나면 스스로 꺼지는 장치를 요구하지 않는다. 인증 이후 제품이 인증받은 그대로인지 보는 창은 해마다 겨울의 시판 조사뿐이고, 그 창에서 전기요·전기장판이 매년 걸린다.</description>
     </item>
   </channel>
 </rss>

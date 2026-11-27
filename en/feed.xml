@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 03:58:49 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:00:26 +0900</lastBuildDate>
+    <item>
+      <title>Securing the AI frontier: Aim Intelligence wins top honors at the K-Digital Grand Championship</title>
+      <link>https://insightbriefnews.com/en/a/aim-intelligence-security-tech-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/aim-intelligence-security-tech-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 04:59:59 +0900</pubDate>
+      <category>AI &amp; Tech</category>
+      <description>On November 27, 2026, Aim Intelligence secured the grand prize for its AI vulnerability detection technology. As high-profile cloud breaches hit the US Air Force and judicial integrity is compromised by AI hallucinations, the demand for robust security guardrails has become a global imperative.</description>
+    </item>
+    <item>
+      <title>Trump’s new overcapacity tariffs trigger cost shocks for US importers</title>
+      <link>https://insightbriefnews.com/en/a/trump-tariff-overcapacity-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/trump-tariff-overcapacity-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 04:58:53 +0900</pubDate>
+      <category>Trade &amp; Commodities</category>
+      <description>The administration is imposing up to 20% levies on 14 trading partners to combat alleged overproduction. With cumulative tariffs reaching 45% for some goods, US manufacturers face severe margin compression.</description>
+    </item>
     <item>
       <title>Fed survey reveals reserve management strategies among major banking institutions</title>
       <link>https://insightbriefnews.com/en/a/fed-reserve-survey-banks-strategy-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 16:45:00 +0900</pubDate>
       <category>AI &amp; Tech</category>
       <description>In the 2026 semiconductor supply chain survey by SEMI and McKinsey, substrate material lead times went from 10 weeks to 30 and assembly and packaging equipment from 23 weeks to 37. In the substrate chain some processing equipment now takes 30 months after a purchase order instead of six, and the Japanese precision parts inside that equipment take half a year. Samsung Electro-Mechanics&#x27; new Sejong line, backed by 6.78 trillion won, starts mass production in September 2028.</description>
-    </item>
-    <item>
-      <title>The application says 500 million tonnes. The announcement has no number — what holds nickel at $15,000 is 79,266 tonnes in Busan and Gwangyang</title>
-      <link>https://insightbriefnews.com/en/a/nickel-quota-2027-korea-warehouse-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/nickel-quota-2027-korea-warehouse-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 15:15:00 +0900</pubDate>
-      <category>Trade &amp; Commodities</category>
-      <description>Indonesian miners applied to dig more than 500 million wet tonnes in 2027, and the government closed applications on 15 November without publishing a figure. A quota cuts ore, not refined nickel, because smelters import Philippine ore. LME three-month nickel fell from $16,230 on 13 November to $15,210 on 25 November, and 79,266 tonnes of the 275,604 tonnes in LME warehouses sit in Busan and Gwangyang.</description>
-    </item>
-    <item>
-      <title>No standard requires the mat to switch itself off — 2,354 fires in five years, 37 deaths</title>
-      <link>https://insightbriefnews.com/en/a/electric-mat-auto-off-standard-gap.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/electric-mat-auto-off-standard-gap.html</guid>
-      <pubDate>Thu, 26 Nov 2026 14:50:00 +0900</pubDate>
-      <category>Disaster &amp; Safety</category>
-      <description>Fires from electric heating mats and electric heaters killed 37 people and injured 219 in five years, 2,354 fires in all. Of the 532 mat fires attributed to carelessness, 87% were recorded as &#x27;use or installation&#x27;. Yet safety standard KC 60335-2-17 fixes the heating wire and surface temperatures in numbers and does not require a device that cuts the power after a set time. After certification, the only window onto whether a product is still the product that was certified is the market survey each winter — and every year electric underblankets and mats are caught in it.</description>
     </item>
   </channel>
 </rss>

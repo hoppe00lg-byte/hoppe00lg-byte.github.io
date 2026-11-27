@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 03:58:50 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:00:27 +0900</lastBuildDate>
+    <item>
+      <title>AIセキュリティの防壁：エームインテリジェンスが示すデータ保護の新基準</title>
+      <link>https://insightbriefnews.com/ja/a/aim-intelligence-security-tech-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/aim-intelligence-security-tech-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 04:59:59 +0900</pubDate>
+      <category>AI・テック</category>
+      <description>2026年11月27日、第5回K-デジタルグランドチャンピオンシップにてエームインテリジェンスが大賞を受賞。生成AIのハルシネーション（幻覚）とデータ流出を防ぐ技術が、コスト削減を求める日本企業の関心を集めている。</description>
+    </item>
+    <item>
+      <title>米国の過剰生産関税が突きつける「経済的自傷」の代償と日本への波及リスク</title>
+      <link>https://insightbriefnews.com/ja/a/trump-tariff-overcapacity-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/trump-tariff-overcapacity-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 04:58:53 +0900</pubDate>
+      <category>貿易・原材料</category>
+      <description>トランプ政権が14カ国を標的に最大20%の関税上乗せを画策。米国の輸入物価上昇と企業利益の消失は、円安下にある日本企業の調達コストにも深刻な影を落とす。</description>
+    </item>
     <item>
       <title>米銀行の準備金管理戦略、75%が共有する「流動性防衛」の実態と教訓</title>
       <link>https://insightbriefnews.com/ja/a/fed-reserve-survey-banks-strategy-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 20:15:00 +0900</pubDate>
       <category>経済・金融</category>
       <description>ビットコインドミナンスは11月12日60.61％から26日58.76％に下がった。同期間、アルトコインシーズン指数は49から58に上がったが、ベースライン75には17点足りない。比重が移ったところをたどると、イーサリアムも、アルトコインでもなくステープルコインが出てくる。</description>
-    </item>
-    <item>
-      <title>10週が30週に、6か月が30か月に——AI増設の列は三層になっている</title>
-      <link>https://insightbriefnews.com/ja/a/fcbga-equipment-lead-time-30-months-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/fcbga-equipment-lead-time-30-months-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 16:45:00 +0900</pubDate>
-      <category>AI・テック</category>
-      <description>SEMIとマッキンゼーが2026年にまとめた半導体サプライチェーン調査では、基板材料の納期が10週から30週へ、組立・パッケージング装置が23週から37週へ延びた。基板の現場では一部の加工装置が発注後6か月から30か月待ちとなり、その装置に入る日本製の精密部品は半年待ちになっている。サムスン電機が6兆7,800億ウォンを投じて建てる世宗の新ラインの量産開始は2028年9月だ。</description>
-    </item>
-    <item>
-      <title>申請書には5億トン、発表文には数字がない — ニッケルを1万5,000ドルに縛るのは釜山・光陽の7万9,266トンだ</title>
-      <link>https://insightbriefnews.com/ja/a/nickel-quota-2027-korea-warehouse-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/nickel-quota-2027-korea-warehouse-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 15:15:00 +0900</pubDate>
-      <category>貿易・原材料</category>
-      <description>インドネシアの鉱山会社は2027年に5億湿量トンを超える採掘を申請し、政府は11月15日に受け付けを締め切ったまま数字を示していない。クォータが削るのは鉱石であって精錬ニッケルではなく、製錬所はフィリピン鉱石を輸入して埋める。LMEニッケル3か月物は11月13日の1万6,230ドルから25日には1万5,210ドルへ下がり、LME倉庫の27万5,604トンのうち7万9,266トンが釜山と光陽にある。</description>
     </item>
   </channel>
 </rss>

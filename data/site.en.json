@@ -84,6 +84,14 @@
  ],
  "ticker": [
   {
+   "text": "Securing the AI frontier: Aim Intelligence wins top honors at the K-Digital Grand Championship",
+   "articleId": "aim-intelligence-security-tech-analysis-20261128"
+  },
+  {
+   "text": "Trump’s new overcapacity tariffs trigger cost shocks for US importers",
+   "articleId": "trump-tariff-overcapacity-analysis-20261128"
+  },
+  {
    "text": "Fed survey reveals reserve management strategies among major banking institutions",
    "articleId": "fed-reserve-survey-banks-strategy-20261128"
   },
@@ -94,10 +102,6 @@
   {
    "text": "Catholic Hospital Takeovers Threaten Reproductive Rights and Public Care in Australia",
    "articleId": "catholic-hospital-healthcare-access-australia-20261128"
-  },
-  {
-   "text": "Chinese automakers launch $1.5M luxury EVs amid global energy grid pressures",
-   "articleId": "china-ev-premium-market-energy-efficiency-20261128"
   }
  ],
  "editorNote": {
