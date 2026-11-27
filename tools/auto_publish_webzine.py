@@ -1315,7 +1315,14 @@ def write_variant_files(articles_today: list[dict]) -> int:
     return n
 
 
-def publish(articles_today: list[dict], commit: bool = True) -> bool:
+def publish(articles_today: list[dict], commit: bool = True, state: dict | None = None,
+            slots: dict | None = None) -> bool:
+    """기사 저장 → 빌드·점검 → (커밋) → 푸시.
+
+    state·slots 를 주면 "이 슬롯은 끝났다" 기록을 **커밋 직전에** 같이 써 넣는다.
+    (예전에는 커밋 뒤에 state 를 저장해서 워크플로 러너가 사라지면 기록이 통째로
+    사라졌고, 매회 같은 앞슬롯을 다시 집어 같은 사건을 두 번 쓰게 됐다.)
+    """
     # 국가별 원고를 먼저 써 둔다(i18n_data.py 가 기계번역 대신 읽는다).
     nvar = write_variant_files(articles_today)
     if nvar:
@@ -1353,6 +1360,13 @@ def publish(articles_today: list[dict], commit: bool = True) -> bool:
 
     git("config", "user.name", "insightbrief-bot")
     git("config", "user.email", "bot@insightbriefnews.com")
+    # 슬롯 기록은 커밋 안에 들어가야 다음 회차가 이어받는다(러너가 끝나면 디스크는 사라진다).
+    if state is not None and slots:
+        for aid, key in slots.items():
+            if key:
+                state.setdefault("done", {})[key] = aid
+        state["last_run"] = kst_now().isoformat(timespec="seconds")
+        save_json(STATE, state)
     git("add", "-A")
     git("commit", "-m", "Publish: " + ", ".join(ids))
     if git("push", "origin", "HEAD:main") != 0:
@@ -1436,7 +1450,11 @@ def main() -> int:
             log(f"· {budget_min:.0f}분 경과 — 남은 슬롯은 다음 회차로 넘깁니다.")
             break
         today = now.strftime("%Y-%m-%d")
-        used = set(((state.get("used") or {}).get(today, {}) or {}).get(cat) or [])
+        # 오늘 이미 다른 섹션에서 쓴 자료까지 뺀다(같은 사건이 두 섹션에 나오는 일 방지).
+        used = set()
+        for urls in (((state.get("used") or {}).get(today, {}) or {}).values()):
+            used.update(urls or [])
+        used.update(((state.get("used") or {}).get(today, {}) or {}).get(cat) or [])
         log(f"\n[{cat}] 근거 자료 수집…")
         pool = build_source_pool(cat, exclude=used)
         if len(pool) < 2:
@@ -1487,18 +1505,13 @@ def main() -> int:
 
     vmap = {a["id"]: list((a.get("_variants") or {}).keys()) for a in made}
     slots = {a["id"]: a.get("_slot") for a in made}  # publish() 가 _slot 을 지우기 전에 붙잡아 둔다
-    ok = publish(made, commit=not dry)
-    if ok and not dry:
-        for a in made:
-            key = slots.get(a["id"])
-            if key:
-                state["done"][key] = a["id"]
-            log(f"· 발행 완료: {a['id']} — https://insightbriefnews.com/a/{a['id']}.html")
-        state["last_run"] = now.isoformat(timespec="seconds")
-        save_json(STATE, state)
-    elif ok:
-        for a in made:
-            log(f"· (dry-run) 발행 예정: {a['id']} · 국가별 원고 {', '.join(vmap.get(a['id']) or []) or '없음'}")
+    ok = publish(made, commit=not dry, state=state, slots=slots)
+    for a in made:
+        tag = "발행 완료" if ok else ("(dry-run) 발행 예정" if dry else "발행 실패")
+        extra = f" — https://insightbriefnews.com/a/{a['id']}.html" if ok else ""
+        log(f"· {tag}: {a['id']} · 국가별 원고 {', '.join(vmap.get(a['id']) or []) or '없음'}{extra}")
+    if not ok and not dry:
+        log("· 슬롯 기록은 커밋되지 않았습니다 — 다음 회차가 같은 슬롯을 다시 시도합니다")
     return 0 if ok else 1
 
 
