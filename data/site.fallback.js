@@ -85,6 +85,10 @@ window.__SITE__ = {
  ],
  "ticker": [
   {
+   "text": "야간 산불 대응의 사각지대: 2026년 11월 27일 세종시 산불과 소방 인력 배치 기준의 간극",
+   "articleId": "sejong-mountain-fire-night-response-20261128"
+  },
+  {
    "text": "보안 취약점 탐지 기술의 가치, K-디지털 챔피언십 대상 에임인텔리전스 톺아보기",
    "articleId": "aim-intelligence-security-tech-analysis-20261128"
   },
@@ -95,14 +99,6 @@ window.__SITE__ = {
   {
    "text": "은행 75%가 답한 유동성 관리 전략, 미 연준의 9월 조사 결과가 던진 질문",
    "articleId": "fed-reserve-survey-banks-strategy-20261128"
-  },
-  {
-   "text": "2026년 블랙 프라이데이 티켓 시장: 3자 플랫폼의 할인 구조와 데이터 수익 모델",
-   "articleId": "black-friday-ticket-market-2026-20261128"
-  },
-  {
-   "text": "호주 가톨릭 병원의 종교적 신념, 환자의 임신 중절과 난임 치료권을 제한하는가",
-   "articleId": "catholic-hospital-healthcare-access-australia-20261128"
   }
  ],
  "editorNote": {

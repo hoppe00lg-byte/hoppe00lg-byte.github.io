@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 05:00:15 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 05:57:54 +0900</lastBuildDate>
+    <item>
+      <title>야간 산불 대응의 사각지대: 2026년 11월 27일 세종시 산불과 소방 인력 배치 기준의 간극</title>
+      <link>https://insightbriefnews.com/a/sejong-mountain-fire-night-response-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/sejong-mountain-fire-night-response-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 05:56:19 +0900</pubDate>
+      <category>재난·안전</category>
+      <description>27일 오후 11시 32분 세종시 전동면 노장리 야산에서 발생한 화재 대응 사례를 통해 야간 산불 진압 체계의 실효성을 검토한다. 투입된 진화대원 36명의 현장 활동과 법령상 배치 기준을 비교 분석했다.</description>
+    </item>
     <item>
       <title>보안 취약점 탐지 기술의 가치, K-디지털 챔피언십 대상 에임인텔리전스 톺아보기</title>
       <link>https://insightbriefnews.com/a/aim-intelligence-security-tech-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 20:15:00 +0900</pubDate>
       <category>경제·금융</category>
       <description>비트코인 도미넌스는 11월 12일 60.61%에서 26일 58.76%로 내려왔다. 같은 기간 알트코인 시즌 지수는 49에서 58로 올랐지만 기준선 75에는 17점 모자란다. 비중이 옮겨간 곳을 따라가면 이더리움도, 알트코인도 아닌 스테이블코인이 나온다.</description>
-    </item>
-    <item>
-      <title>10주가 30주, 6개월이 30개월 — AI 증설의 줄은 세 겹이다</title>
-      <link>https://insightbriefnews.com/a/fcbga-equipment-lead-time-30-months-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/fcbga-equipment-lead-time-30-months-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 16:45:00 +0900</pubDate>
-      <category>AI·테크</category>
-      <description>SEMI와 맥킨지의 2026 반도체 공급망 조사에서 기판 소재 납기는 10주에서 30주로, 조립·패키징 장비는 23주에서 37주로 늘었다. 기판 공급망에서는 일부 가공 장비의 주문 후 납기가 6개월에서 30개월로, 그 장비에 들어가는 일본산 정밀 부품의 납기가 반년으로 길어졌다. 삼성전기가 6조7,800억 원을 걸고 세우는 세종 라인의 양산은 2028년 9월이다.</description>
     </item>
   </channel>
 </rss>

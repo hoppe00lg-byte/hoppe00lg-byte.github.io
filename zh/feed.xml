@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 05:00:26 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 06:01:28 +0900</lastBuildDate>
+    <item>
+      <title>夜间森林火灾的防控盲点：从世宗市山林事故看应急响应的实效与挑战</title>
+      <link>https://insightbriefnews.com/zh/a/sejong-mountain-fire-night-response-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/sejong-mountain-fire-night-response-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 05:56:19 +0900</pubDate>
+      <category>灾难·安全</category>
+      <description>2026年11月27日深夜发生在世宗特别自治市的森林火灾，揭示了夜间山岳地形下应急指挥与装备部署的现实困境。在参与行动的36名消防人员的努力下，该起事故未造成人员伤亡。</description>
+    </item>
     <item>
       <title>安全漏洞检测技术的价值，Aim Intelligence 对 K-Digital 锦标赛的报道</title>
       <link>https://insightbriefnews.com/zh/a/aim-intelligence-security-tech-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 20:15:00 +0900</pubDate>
       <category>经济·金融</category>
       <description>比特币的统治地位从11月12日的60.61%下降到26日的58.76%。同一时期，山寨币季节指数从 49 上升至 58，但距离 75 的基线还差 17 个点。如果你追踪比例的变化，你会发现稳定币，而不是以太坊或山寨币。</description>
-    </item>
-    <item>
-      <title>从10周到30周，从6个月到30个月——AI扩产的队伍排了三层</title>
-      <link>https://insightbriefnews.com/zh/a/fcbga-equipment-lead-time-30-months-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/fcbga-equipment-lead-time-30-months-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 16:45:00 +0900</pubDate>
-      <category>AI·科技</category>
-      <description>在SEMI与麦肯锡的2026年半导体供应链调查中，基板材料交期从10周拉长到30周，封装组装设备从23周拉长到37周。在基板链条上，部分加工设备下单后的交期从6个月变成30个月，而这些设备里的日本精密零件要等半年。三星电机投入6.78万亿韩元建设的新世宗生产线，要到2028年9月才量产。</description>
     </item>
   </channel>
 </rss>

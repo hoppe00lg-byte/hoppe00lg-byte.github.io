@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "夜间森林火灾的防控盲点：从世宗市山林事故看应急响应的实效与挑战",
+   "articleId": "sejong-mountain-fire-night-response-20261128"
+  },
+  {
    "text": "安全漏洞检测技术的价值，Aim Intelligence 对 K-Digital 锦标赛的报道",
    "articleId": "aim-intelligence-security-tech-analysis-20261128"
   },
@@ -94,14 +98,6 @@
   {
    "text": "美联储披露银行流动性调查：75%准备金掌握在保守策略手中",
    "articleId": "fed-reserve-survey-banks-strategy-20261128"
-  },
-  {
-   "text": "2026年黑色星期五：欧美票务市场的折扣逻辑与数据变现模型",
-   "articleId": "black-friday-ticket-market-2026-20261128"
-  },
-  {
-   "text": "澳洲天主教医院扩张：宗教准则如何重构医疗服务准入边界",
-   "articleId": "catholic-hospital-healthcare-access-australia-20261128"
   }
  ],
  "editorNote": {

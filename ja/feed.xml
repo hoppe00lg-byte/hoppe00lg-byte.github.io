@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 05:00:27 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 06:01:29 +0900</lastBuildDate>
+    <item>
+      <title>夜間山火事の教訓：インフラの制約と限界が露呈した消火活動の現状</title>
+      <link>https://insightbriefnews.com/ja/a/sejong-mountain-fire-night-response-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/sejong-mountain-fire-night-response-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 05:56:19 +0900</pubDate>
+      <category>災害・安全</category>
+      <description>2026年11月27日深夜、韓国世宗特別自治市で発生した山火事は、夜間消火における重機・車両アクセスの難しさを突きつけた。36人の人員を動員した現場対応から、インフラと人命保護の距離を読み解く。</description>
+    </item>
     <item>
       <title>AIセキュリティの防壁：エームインテリジェンスが示すデータ保護の新基準</title>
       <link>https://insightbriefnews.com/ja/a/aim-intelligence-security-tech-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 22:15:00 +0900</pubDate>
       <category>AI・テック</category>
       <description>メタは11月24日、個人向けAIエージェント「Muse」を英国で公開した。米国での開始後にダウンロードは1,000万件を超えた。英国の規制機関4社は8日前に閣僚へ連名書簡を送り、公開前に規制機関と協議するよう求めた。公開当日には3機関がそれぞれ声明を出した。FCAが提案したサンドボックスでの共同テストはメタが断った。</description>
-    </item>
-    <item>
-      <title>ドミナンス58.8％の解剖 - ビットコインが出した席はアルトではなくドルが満たした</title>
-      <link>https://insightbriefnews.com/ja/a/btc-dominance-58-altseason-index-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/btc-dominance-58-altseason-index-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 20:15:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>ビットコインドミナンスは11月12日60.61％から26日58.76％に下がった。同期間、アルトコインシーズン指数は49から58に上がったが、ベースライン75には17点足りない。比重が移ったところをたどると、イーサリアムも、アルトコインでもなくステープルコインが出てくる。</description>
     </item>
   </channel>
 </rss>

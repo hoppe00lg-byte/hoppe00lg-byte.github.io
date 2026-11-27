@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 05:00:26 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 06:01:27 +0900</lastBuildDate>
+    <item>
+      <title>Nighttime wildfire response challenges and the critical gap in emergency infrastructure</title>
+      <link>https://insightbriefnews.com/en/a/sejong-mountain-fire-night-response-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/sejong-mountain-fire-night-response-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 05:56:19 +0900</pubDate>
+      <category>Disaster &amp; Safety</category>
+      <description>The November 27 wildfire in Sejong City highlights the logistical hurdles of midnight terrain navigation. With 36 personnel deployed, the incident underscores the disparity between regulatory staffing standards and the harsh reality of nocturnal disaster management.</description>
+    </item>
     <item>
       <title>Securing the AI frontier: Aim Intelligence wins top honors at the K-Digital Grand Championship</title>
       <link>https://insightbriefnews.com/en/a/aim-intelligence-security-tech-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 20:15:00 +0900</pubDate>
       <category>Economy &amp; Finance</category>
       <description>Bitcoin dominance fell from 60.61% on November 12 to 58.76% on the 26th. During the same period, the altcoin season index rose from 49 to 58, but is 17 points short of the baseline of 75. If you follow where the proportion has shifted, you will find stablecoins, not Ethereum or altcoins.</description>
-    </item>
-    <item>
-      <title>Ten weeks become thirty, six months become thirty — the AI build-out queues in three layers</title>
-      <link>https://insightbriefnews.com/en/a/fcbga-equipment-lead-time-30-months-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/fcbga-equipment-lead-time-30-months-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 16:45:00 +0900</pubDate>
-      <category>AI &amp; Tech</category>
-      <description>In the 2026 semiconductor supply chain survey by SEMI and McKinsey, substrate material lead times went from 10 weeks to 30 and assembly and packaging equipment from 23 weeks to 37. In the substrate chain some processing equipment now takes 30 months after a purchase order instead of six, and the Japanese precision parts inside that equipment take half a year. Samsung Electro-Mechanics&#x27; new Sejong line, backed by 6.78 trillion won, starts mass production in September 2028.</description>
     </item>
   </channel>
 </rss>
