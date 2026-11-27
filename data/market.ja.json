@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-11-26T12:00:00+09:00",
- "asOf": "2026-11-26",
- "asOfNote": "11月26日（木）正午基準です。為替レートは韓国輸出入銀行告示売買基準率(ウォン・ドル1,343.90ウォン・ウォン・円844.37ウォン・ウォン・元201.57ウォン)が反映され、有価(WTI・ブレント)・金・銀・中国3大先物取引所相場は長中値です。ドバイ油・LME公式価格は11月25日の値段が最新であり（亜鉛・鉛・ニッケル・錫は現物決済が、銅・アルミニウムは3ヶ月プレゼント）、調達庁放出価格は11月26日販売価格です。中国石油化学現物（SunSirs）・BDIは11月25日値で、CBOT穀物は11月26日近月終値（小麦・トウモロコシ3月水繰り）、CFR Japan（MOPJ）ナフサ評価価は11月23日値が最新公開値です。 SCFI・CCFIは毎週金曜日発表で11月20日の値段が最新です。クリプトは24時間取引で11月26日正午相場（コインゲコ）です。再生原材料は韓国環境公団2026年11月分(11/10調査、11/25掲示)が反映されました。韓国銀行物価指数は10月、指標ヌリ石油化学価格は2026年第3四半期が最新です。",
+ "updatedAt": "2026-11-27T11:10:00+09:00",
+ "asOf": "2026-11-27",
+ "asOfNote": "11月27日(金)午前11時10分目安です。為替レートは韓国輸出入銀行告示売買基準率(ウォン・ドル1,342.70ウォン・ウォン・円842.95ウォン・ウォン・元201.43ウォン)であり、有価は収穫感謝祭短縮場(11/26)終値(WTI 1月物85.64ドル2.3ドバイユー 11/26 87.00ドルです。金・銀は11/27午前の現物相場です。 LME公式価格は11月25日の値段が最新で（亜鉛・鉛・ニッケル・錫は現物決済が、銅・アルミニウムは3ヶ月プレゼント）、調達庁放出価格は11月27日販売価格です。中国の石油化学現物（SunSirs）とBDIは11月26日の値段で、中国の3大先物取引所は11月27日の午前中です。 CBOT穀物は感謝祭の休場で11月25日の夜セッション（韓国時間11/26夜明け）の値が最新で、CFR Japan（MOPJ）ナフサ評価家は11月25日です。 SCFI・CCFIは毎週金曜日発表で11月20日の値段が最新です（11/27発表は韓国時間午後3時頃）。クリプトは11月27日午前11時相場（コインゲコ）です。再生原材料は韓国環境公団2026年11月分(11/10調査、11/25掲示)が反映されました。韓国銀行物価指数は10月、指標ヌリ石油化学価格は2026年第3四半期が最新です。",
  "periods": {
   "default": "daily",
   "tabs": [
@@ -28,41 +28,41 @@
   ],
   "daily": {
    "label": "日次",
-   "asOf": "2026-11-26",
-   "range": "2026-11-26",
+   "asOf": "2026-11-27",
+   "range": "2026-11-27",
    "badge": "告示・章中",
-   "summary": "11月26日（木）正午基準です。ウォン・ドル売買基準率は1,343.90ウォン(+0.30ウォン)で保有権であり、有価はWTI 1月物 83.89ドル・ブレント 90.70ドルで前日精算街でほとんど動かなかった。代わりに金属が割れました — 金3,598.96ドル(+0.8%)・銀42.01ドル(+1.7%)は上がったが、LME錫が38,200ドル(−6.4%)に急落し、亜鉛−3.9%・銅3ヶ月−2.5%中国のプレゼントは逆に反騰し、SHFE銅+1.1%・DCE EG+4.7%・LLDPE+3.4%・PVC+2.2%で、調達庁の放出価格は錫−5.2%・銅−1.4%・アルミニウム+1.1%です。中国の現物はPVC +3.4%・PP −2.9%・LDPE −3.7%と交互になり、BDIは3,107ポイント(+1.3%)で10月2日以降最高値です。",
+   "summary": "11月27日(金)午前11時10分目安です。ウォン・ドル売買基準率は1,342.70ウォン（−1.20ウォン）に下がり、ウォン・円842.95ウォン・ウォン・元201.43ウォンです。原油価格は感謝祭のショートカットで引き上げられています - WTI 1月の水は11/25 83.68ドルから11/26 85.64ドル(+2.3%)に締め切り、ブレント92.32ドル・ドバイユ87.00ドル(+)金3,616.46ドル(+0.5%)・銀43.01ドル(+2.4%)で貴金属が強く、中国の贈り物は銅が92,220元(+3.9%)で急騰し、上海原油+1.1%・DCE EG+3.1%・LLD調達庁排出価はアルミニウム4,800,000ウォン(+3.5%)・銅17,900,000ウォン(+2.0%)・鉛2,990,000ウォン(+2.8%)で一斉に上がりました。中国の現物はPVC+2.5%・LDPE+1.3%に上がり、PP−2.4%・PC−1.7%に下がり、BDIは3,152ポイント(+1.5%)で、9月29日以降最高値です。",
    "historyStart": "2026-11-22"
   },
   "weekly": {
    "label": "週次",
-   "asOf": "2026-11-26",
-   "range": "2026-11-23～2026-11-26（進行中）",
+   "asOf": "2026-11-27",
+   "range": "2026-11-23 ~ 2026-11-27",
    "badge": "直前の週の金曜日に備えて",
-   "summary": "11月第4週第4取引日（11/26）正午までの流れです。直前の週金曜日（11/20）終値と比較すると、ブレント-2.0％・ドバイ-3.7％で、原油価格は依然として低く、WTIは+0.6％で定位置です。ウォンはドルに比べ1.0％弱い（1,330.80ウォン→1,343.90ウォン）で、金+1.7％・銀+1.8％で貴金属は上がりました。 LMEはアルミニウム現物-10.5%・銅現物-4.3%・亜鉛-4.1%・ニッケル-1.8%と弱く、中国石油化学現物はPP-4.5%・ベンゼン-2.9%・PC-0.9%に下げました。 BDIは7.2%上がり3,107ポイントで10月2日以降最高値です。 CBOT小麦・トウモロコシは3月水に繰り越され、直前の週と同じ契約で比較できなくて表から差し引いた（日刊票には載せます）。",
+   "summary": "11月第4週（11/23～11/27）締め切りの流れです。直前週金曜日(11/20)終値と比較すると、WTIが83.41→85.64ドルで2.7%上がり、ブレントは92.57→92.32ドル(−0.3%)・ドバイユは87.41→87.00ドル(−0.5%)。ウォンはドルに対して0.9％弱い（1,330.80→1,342.70ウォン）です。貴金属は金+2.2%・銀+4.2%と強かったし、LMEはアルミニウム現物−10.5%・銅−4.3%・亜鉛−4.1%に弱気が続きました（11/25公式基準）。中国の石油化学現物はPP −6.8%・PC −2.6%・ベンゼン −2.0%に下がり、BDIは2,898→3,152ポイントで8.8%上がり、今週の上昇幅が最も大きかった。",
    "highlights": [
     {
-     "title": "アルミニウム現物 −10.5%、今週の金属弱気の中心",
-     "text": "LMEアルミ製物が11/20 3,184.50ドルから11/25 2,849.00ドルに10.5%下がりました（3ヶ月2,760.00ドル）。同期間の銅現物 −4.3%、亜鉛 −4.1%、ニッケル −1.8%です。 11/25日には錫が40,825ドルから38,200ドルで6.4%急落し、調達庁の放出価も錫56,380,000ウォン(−5.2%)・銅17,550,000ウォン(−1.4%)で下落しました。"
+     "title": "WTI 85.64ドル - 感謝祭のショートカットで2.3％上昇",
+     "text": "WTI 1月の水が11/25決済83.68ドルから11/26短縮場85.64ドルに2.3%上がりました。ブレントも90.64→92.36ドルで1.9%上昇し、オフィネットドバイユー告示は11/25 84.19ドルから11/26 87.00ドルに3.3%走った。 11/27 アジア長は85.64ドルで補完です。"
     },
     {
-     "title": "ウォン 1,343.90ウォン — 週間 1.0% 弱い",
-     "text": "ウォン・ドル売買基準率が11/26 1,343.90ウォンで前日より0.30ウォン上がりました。直前週金曜日(11/20) 1,330.80ウォンと比べると13.10ウォン(1.0%)弱いです。ウォン・円844.37ウォン、ウォン・元201.57ウォンです。"
+     "title": "ウォン・ドル 1,342.70ウォン — 週間 0.9%弱",
+     "text": "ウォン・ドル売買基準率が11/27 1,342.70ウォンで前日より1.20ウォン下がりました。直前週金曜日(11/20) 1,330.80ウォンと比べると11.90ウォン(0.9%)弱いです。ウォン・円842.95ウォン、ウォン・元201.43ウォンです。"
     },
     {
-     "title": "中国石油化学現物、PP・LDPE・HDPE同伴下落",
-     "text": "11/25 中国の現物はPP 9,633.33元(−2.9%)、LDPE 10,366.67元(−3.7%)、HDPE 10,100.00元(−2.4%)でオレフィン系列が一斉に下がった。上がりました。 PCは13,983.33元（−0.5%）、トルエンは6,083.33元（−2.5%）です。"
+     "title": "中国の銅の贈り物92,220元（+3.9％）",
+     "text": "SHFE銅が11/27午前92,220元で前日決済88,770元より3.9%上がりました。上海原油600.70元(+1.1%)、DCE EG 5,289元(+3.1%)、LLDPE 8,314元(+1.8%)が共に上がった。引き上げられました。"
     },
     {
-     "title": "BDI 3,107 — 2ヶ月ぶりの最高値",
-     "text": "バルティック乾貨物運賃指数が11/25 3,107ポイント(+1.3%)で10月2日以降最高値を再び高めました。ケープサイズ5,014(+1.5%)、パナマックス2,223(+2.0%)、スプラマックス1,814(+0.2%)で全線形が上がりました。"
+     "title": "BDI 3,152 — 9月29日以降の最高値",
+     "text": "バルティック乾貨物運賃指数が11/26 3,152ポイント(+45, +1.45%)で9月29日以降最高値を高めました。ケープサイズ5,100(+86)、パナマックス2,273(+50)、スプラマックス1,816(+2)で全線形が上がりました。"
     }
    ],
    "groups": [
     {
      "label": "ENERGY & FX — 原価・為替レート",
      "prevHeader": "直前の週金曜日（11/20）",
-     "nowHeader": "今週（11/25枚）",
+     "nowHeader": "今週(11/27)",
      "rows": [
       {
        "code": "WTI",
@@ -72,11 +72,11 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 83.41,
-       "price": 83.89,
-       "changePct": 0.58,
-       "change": 0.48,
-       "note": "1月の水11/20決済83.41ドル→11/26枚のうち83.89ドル。",
-       "date": "2026-11-26",
+       "price": 85.64,
+       "changePct": 2.67,
+       "change": 2.23,
+       "note": "1月水 11/20 決済 83.41ドル → 11/26 短縮場終値 85.64ドル(11/27 アジア長補完)。",
+       "date": "2026-11-27",
        "sourceName": "Sina Finance NYMEX リアルタイム",
        "sourceUrl": "https://finance.sina.com.cn/futures/quotes/CL.shtml"
       },
@@ -88,11 +88,11 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 92.57,
-       "price": 90.7,
-       "changePct": -2.02,
-       "change": -1.87,
-       "note": "11/20決済92.57ドル→11/26近月連続90.70ドル。",
-       "date": "2026-11-26",
+       "price": 92.32,
+       "changePct": -0.27,
+       "change": -0.25,
+       "note": "11/20 92.57ドル→11/26 92.36ドル→11/27アジア長92.32ドル。",
+       "date": "2026-11-27",
        "sourceName": "シナファイナンスICEリアルタイム相場",
        "sourceUrl": "https://finance.sina.com.cn/futures/quotes/OIL.shtml"
       },
@@ -104,11 +104,11 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 87.41,
-       "price": 84.19,
-       "changePct": -3.68,
-       "change": -3.22,
-       "note": "オピネット11/20 87.41ドル→11/25 84.19ドル。",
-       "date": "2026-11-25",
+       "price": 87.0,
+       "changePct": -0.47,
+       "change": -0.41,
+       "note": "オピネット11/20 87.41ドル→11/26 87.00ドル。",
+       "date": "2026-11-26",
        "sourceName": "オピネット（韓国石油公社）国際原油価格",
        "sourceUrl": "https://www.opinet.co.kr/gloptotSelect.do"
       },
@@ -120,11 +120,11 @@
        "unit": "USD/t",
        "decimals": 2,
        "prev": 805.88,
-       "price": 809.0,
-       "changePct": 0.39,
-       "change": 3.12,
-       "note": "11/20 805.88ドル→11/23 809.00ドル。 11/24 評価者は公開前です。",
-       "date": "2026-11-23",
+       "price": 801.25,
+       "changePct": -0.57,
+       "change": -4.63,
+       "note": "11/20 805.88ドル→11/25 801.25ドル。 11/26 評価者は公開前です。",
+       "date": "2026-11-25",
        "sourceName": "CommodityScope ナフサ CFR Japan 評価",
        "sourceUrl": "https://commodityscope.com/prices/japan-cfr-naphtha"
       },
@@ -136,11 +136,11 @@
        "unit": "ウォン",
        "decimals": 2,
        "prev": 1330.8,
-       "price": 1343.9,
-       "changePct": 0.98,
-       "change": 13.1,
-       "note": "11/20 1,330.80ウォン → 11/26 告示 1,343.90ウォン。",
-       "date": "2026-11-26",
+       "price": 1342.7,
+       "changePct": 0.89,
+       "change": 11.9,
+       "note": "11/20告示1,330.80ウォン→11/27告示1,342.70ウォン。",
+       "date": "2026-11-27",
        "sourceName": "韓国輸出入銀行通知売買基準率",
        "sourceUrl": "https://www.koreaexim.go.kr/ir/HPHKIR020M01?apino=2&viewtype=C"
       }
@@ -149,7 +149,7 @@
     {
      "label": "METALS — 金属・貴金属",
      "prevHeader": "直前の週金曜日（11/20）",
-     "nowHeader": "今週（11/25枚）",
+     "nowHeader": "今週(11/27)",
      "rows": [
       {
        "code": "AU",
@@ -159,11 +159,11 @@
        "unit": "USD/oz",
        "decimals": 2,
        "prev": 3538.19,
-       "price": 3598.96,
-       "changePct": 1.72,
-       "change": 60.77,
-       "note": "11/20 3,538.19ドル→11/26 3,598.96ドル（現物）。",
-       "date": "2026-11-26",
+       "price": 3616.46,
+       "changePct": 2.21,
+       "change": 78.27,
+       "note": "11/20 3,538.19ドル→11/27午前現物3,616.46ドル。",
+       "date": "2026-11-27",
        "sourceName": "GoldPrice.comリアルタイムスポット",
        "sourceUrl": "https://www.goldprice.com/"
       },
@@ -175,11 +175,11 @@
        "unit": "USD/oz",
        "decimals": 2,
        "prev": 41.26,
-       "price": 42.01,
-       "changePct": 1.82,
-       "change": 0.75,
-       "note": "11/20 41.26ドル→11/26 42.01ドル（現物）。",
-       "date": "2026-11-26",
+       "price": 43.01,
+       "changePct": 4.24,
+       "change": 1.75,
+       "note": "11/20 41.26ドル→11/27午前現物43.01ドル。",
+       "date": "2026-11-27",
        "sourceName": "GoldPrice.comリアルタイムスポット",
        "sourceUrl": "https://www.goldprice.com/"
       },
@@ -194,7 +194,7 @@
        "price": 11703.0,
        "changePct": -4.31,
        "change": -527.5,
-       "note": "11/20 12,230.50ドル→11/25 11,703.00ドル（LME現物）。 3ヶ月は11,758.00ドル。",
+       "note": "LME 現物 11/20 12,230.50ドル → 11/25 11,703.00ドル(11/26公式が三重市)。",
        "date": "2026-11-25",
        "sourceName": "韓国物価情報（KPI）LME現物相場",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -210,7 +210,7 @@
        "price": 2849.0,
        "changePct": -10.54,
        "change": -335.5,
-       "note": "11/20 3,184.50ドル→11/25 2,849.00ドル（LME現物）。 3ヶ月は2,760.00ドル。",
+       "note": "LME 現物 11/20 3,184.50ドル → 11/25 2,849.00ドル(11/26公式が三重市)。",
        "date": "2026-11-25",
        "sourceName": "韓国物価情報（KPI）LME現物相場",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -226,7 +226,7 @@
        "price": 3520.5,
        "changePct": -4.07,
        "change": -149.5,
-       "note": "11/20 3,670.00ドル→11/24 3,665.00ドル。",
+       "note": "LMEスポット11/20 3,670.00ドル→11/25 3,520.50ドル。",
        "date": "2026-11-25",
        "sourceName": "韓国物価情報（KPI）LME現物相場",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -242,7 +242,7 @@
        "price": 15035.0,
        "changePct": -1.8,
        "change": -275.0,
-       "note": "11/20 15,310.00ドル→11/24 15,060.00ドル。",
+       "note": "LMEスポット11/20 15,310.00ドル→11/25 15,035.00ドル。",
        "date": "2026-11-25",
        "sourceName": "韓国物価情報（KPI）LME現物相場",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -252,7 +252,7 @@
     {
      "label": "PETROCHEM — 石油化学・プラスチック (中国現物)",
      "prevHeader": "直前の週金曜日（11/20）",
-     "nowHeader": "今週（11/25枚）",
+     "nowHeader": "今週(11/27)",
      "rows": [
       {
        "code": "BZ",
@@ -262,11 +262,11 @@
        "unit": "RMB/t",
        "decimals": 2,
        "prev": 7536.67,
-       "price": 7320.0,
-       "change": -216.67,
-       "changePct": -2.87,
-       "note": "11/20 7,536.67元→11/25 7,320.00元。",
-       "date": "2026-11-25",
+       "price": 7383.33,
+       "change": -153.34,
+       "changePct": -2.03,
+       "note": "中国の現物11/20 7,536.67元→11/26 7,383.33元。",
+       "date": "2026-11-26",
        "sourceName": "SunSirs・同花顺 中国 現物家",
        "sourceUrl": "https://www.sunsirs.com/"
       },
@@ -278,11 +278,11 @@
        "unit": "RMB/t",
        "decimals": 2,
        "prev": 10083.33,
-       "price": 9633.33,
-       "change": -450.0,
-       "changePct": -4.46,
-       "note": "11/20 10,083.33元→11/25 9,633.33元。",
-       "date": "2026-11-25",
+       "price": 9400.0,
+       "change": -683.33,
+       "changePct": -6.78,
+       "note": "中国の現物11/20 10,083.33元→11/26 9,400.00元。",
+       "date": "2026-11-26",
        "sourceName": "SunSirs・同花顺 中国 現物家",
        "sourceUrl": "https://www.sunsirs.com/"
       },
@@ -294,11 +294,11 @@
        "unit": "RMB/t",
        "decimals": 2,
        "prev": 14116.67,
-       "price": 13983.33,
-       "change": -133.34,
-       "changePct": -0.94,
-       "note": "11/20 14,116.67元→11/25 13,983.33元。",
-       "date": "2026-11-25",
+       "price": 13750.0,
+       "change": -366.67,
+       "changePct": -2.6,
+       "note": "中国の現物11/20 14,116.67元→11/26 13,750.00元。",
+       "date": "2026-11-26",
        "sourceName": "SunSirs・隆众资讯 中国のスポット",
        "sourceUrl": "https://www.sunsirs.com/"
       }
@@ -307,7 +307,7 @@
     {
      "label": "SHIPPING & GRAINS — 海運・穀物",
      "prevHeader": "直前の週金曜日（11/20）",
-     "nowHeader": "今週（11/25枚）",
+     "nowHeader": "今週(11/27)",
      "rows": [
       {
        "code": "BDI",
@@ -317,11 +317,11 @@
        "unit": "ポイント",
        "decimals": 0,
        "prev": 2898,
-       "price": 3107,
-       "changePct": 7.21,
-       "change": 209,
-       "note": "11/20 2,898 → 11/24 3,068.",
-       "date": "2026-11-25",
+       "price": 3152,
+       "changePct": 8.76,
+       "change": 254,
+       "note": "11/20 2,898ポイント→11/26 3,152ポイント。 9月29日以降の最高値。",
+       "date": "2026-11-26",
        "sourceName": "バルティック海運取引所 (Reuters・TradingEconomics まとめ)",
        "sourceUrl": "https://ko.tradingeconomics.com/commodity/baltic"
       },
@@ -333,11 +333,11 @@
        "unit": "ポイント",
        "decimals": 0,
        "prev": 4502,
-       "price": 5014,
-       "changePct": 11.37,
-       "change": 512,
-       "note": "11/20 4,502 → 11/24 4,942.",
-       "date": "2026-11-25",
+       "price": 5100,
+       "changePct": 13.28,
+       "change": 598,
+       "note": "11/20 4,502ポイント→11/26 5,100ポイント。",
+       "date": "2026-11-26",
        "sourceName": "Hellenic Shipping News 週間バルティック指数レポート（47週目）",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -349,11 +349,11 @@
        "unit": "ポイント",
        "decimals": 0,
        "prev": 2140,
-       "price": 2223,
-       "changePct": 3.88,
-       "change": 83,
-       "note": "11/20 2,140 → 11/24 2,179.",
-       "date": "2026-11-25",
+       "price": 2273,
+       "changePct": 6.21,
+       "change": 133,
+       "note": "11/20 2,140ポイント→11/26 2,273ポイント。",
+       "date": "2026-11-26",
        "sourceName": "Hellenic Shipping News 週間バルティック指数レポート（47週目）",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -365,11 +365,11 @@
        "unit": "ポイント",
        "decimals": 0,
        "prev": 1810,
-       "price": 1814,
-       "changePct": 0.22,
-       "change": 4,
-       "note": "11/20 1,810 → 11/24 1,811.",
-       "date": "2026-11-25",
+       "price": 1816,
+       "changePct": 0.33,
+       "change": 6,
+       "note": "11/20 1,810ポイント→11/26 1,816ポイント。",
+       "date": "2026-11-26",
        "sourceName": "Hellenic Shipping News 週間バルティック指数レポート（47週目）",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -384,7 +384,7 @@
        "price": 1243.25,
        "changePct": 1.84,
        "change": 22.5,
-       "note": "11/20 1,220.75セント→11/24 1,234.00セント。",
+       "note": "CBOT大豆1月水11/20 1,220.75セント→11/25夜セッション1,243.25セント（11/26休場）。",
        "date": "2026-11-26",
        "sourceName": "CME CBOT終値（KOIMA・Reutersまとめ）",
        "sourceUrl": "https://www.koimaindex.com/koimaindex/koima/price/retrieveList.do"
@@ -393,40 +393,44 @@
     }
    ],
    "chips": {
-    "label": "石油化学日刊（SunSirs 中国現物・11/25）",
-    "note": "SunSirs 11/25 現物価格等落率です（11/26 ビュー）。",
+    "label": "石油化学日刊（SunSirs 中国現物・11/26）",
+    "note": "SunSirs 11/26 現物価格等落率です（11/27 参照）。",
     "items": [
      {
       "name": "PVC",
-      "changePct": 3.44
+      "changePct": 2.52
+     },
+     {
+      "name": "プロピレン",
+      "changePct": 1.39
+     },
+     {
+      "name": "LDPE",
+      "changePct": 1.29
      },
      {
       "name": "ベンゼン",
-      "changePct": 0.0
+      "changePct": 0.87
      },
      {
       "name": "ABS",
-      "changePct": 0.0
-     },
-     {
-      "name": "スチレン",
-      "changePct": -0.11
-     },
-     {
-      "name": "PC",
-      "changePct": -0.47
+      "changePct": -0.29
      },
      {
       "name": "HDPE",
-      "changePct": -2.42
+      "changePct": -0.5
      },
      {
       "name": "トルエン",
-      "changePct": -2.51
+      "changePct": -1.1
+     },
+     {
+      "name": "PC",
+      "changePct": -1.67
      },
      {
       "name": "PP",
-      "changePct": -2.86
+      "changePct": -2.42
      }
     ],
     "sourceName": "SunSirs中国のスポット",
@@ -1486,22 +1490,22 @@
  "weeklyTrend": [
   {
    "name": "WTI",
-   "changePct": -3.03,
+   "changePct": 2.67,
    "unit": "週次"
   },
   {
    "name": "ブレント",
-   "changePct": -5.29,
+   "changePct": -0.27,
    "unit": "週次"
   },
   {
    "name": "ゴールド",
-   "changePct": 0.87,
+   "changePct": 2.21,
    "unit": "週次"
   },
   {
    "name": "銀",
-   "changePct": 0.07,
+   "changePct": 4.24,
    "unit": "週次"
   }
  ],
@@ -1510,124 +1514,124 @@
    "id": "wti",
    "code": "WTI",
    "name": "西部テキサス重質油",
-   "price": 83.89,
+   "price": 85.64,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 0.21,
-   "changePct": 0.25,
-   "changeBasis": "前日(11/25) 精算家対比",
+   "change": 0.0,
+   "changePct": 0.0,
+   "changeBasis": "前日(11/26) 短縮場精算家に備え",
    "contract": "2027年1月水",
-   "date": "2026-11-26",
-   "sourceName": "Yahoo Finance NYMEX 1月水・オフィネット精算家",
+   "date": "2026-11-27",
+   "sourceName": "Yahoo Finance NYMEX 1月の水",
    "sourceUrl": "https://finance.yahoo.com/quote/CL=F",
-   "note": "NYMEX 1月水 11/25 決済 83.68ドル（オフィネット告示と一致） → 11/26 アジア長（韓国時間11:24） 83.89ドル。ブレント−WTI 6.81ドル。"
+   "note": "収穫感謝祭短縮場(11/26)から11/25精算 83.68ドル→85.64ドルに2.3%上がりました。 11/27 アジア長（韓国時間 11:10）は同じ85.64ドルとなります。ブレント−WTI 6.68ドル。"
   },
   {
    "id": "brent",
    "code": "BRENT",
    "name": "北海ブレントオイル",
-   "price": 90.7,
+   "price": 92.32,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 0.06,
-   "changePct": 0.07,
-   "changeBasis": "前日(11/25) 終値対比",
+   "change": -0.04,
+   "changePct": -0.04,
+   "changeBasis": "前日(11/26) 終値対比",
    "contract": "近月連続(ICE)",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "sourceName": "Yahoo ファイナンスICEブレント 近月連続",
    "sourceUrl": "https://finance.yahoo.com/quote/BZ=F",
-   "note": "ICEブレント近月連続11/25終値90.64ドル→11/26アジア長90.70ドルで保有券です。オフィネットが告示した11/25ブレントプレゼント94.61ドルとは契約月・基準が違いそのまま比較しませんでした。"
+   "note": "ICEブレント近月連続は11/25 90.64ドル→11/26 92.36ドルで1.9%上がり、11/27アジア長92.32ドルです。オフィネットが告示した11/26ブレントプレゼント96.57ドルとは契約月・基準が違いそのまま比較しませんでした。"
   },
   {
    "id": "dubai",
    "code": "DUBAI",
    "name": "ドバイユ",
-   "price": 84.19,
+   "price": 87.0,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 1.59,
-   "changePct": 1.92,
-   "changeBasis": "前日(11/24)に備え",
+   "change": 2.81,
+   "changePct": 3.34,
+   "changeBasis": "前日(11/25) 対比",
    "contract": "現物（シンガポール取引見積り）",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "sourceName": "オピネット（韓国石油公社）国際原油価格",
    "sourceUrl": "https://www.opinet.co.kr/gloptotSelect.do",
-   "note": "オフィネット通知11/25 84.19ドル（11/24 82.60ドル）。同じ表のブレントギフト94.61ドル、WTIギフト83.68ドル。"
+   "note": "オフィネット通知11/26 87.00ドル（11/25 84.19ドル）。同じ表のブレントプレゼント 96.57ドル、WTIプレゼントは休場で御告（0）です。"
   },
   {
    "id": "usdkrw",
    "code": "USD/KRW",
    "name": "ウォン・ドル",
-   "price": 1343.9,
+   "price": 1342.7,
    "unit": "ウォン",
    "decimals": 2,
-   "change": 0.3,
-   "changePct": 0.02,
-   "changeBasis": "前日告示(11/25)に備え",
-   "date": "2026-11-26",
+   "change": -1.2,
+   "changePct": -0.09,
+   "changeBasis": "前日告示(11/26)に備え",
+   "date": "2026-11-27",
    "sourceName": "韓国輸出入銀行通知売買基準率",
-   "sourceUrl": "https://www.koreaexim.go.kr/site/main/index002",
-   "note": "韓国輸出入銀行の売買基準率11/26通知1,343.90ウォン。前日（11/25）1,343.60ウォン対比0.30ウォン上昇（保有権）。"
+   "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
+   "note": "韓国輸出入銀行の売買基準率11/27通知1,342.70ウォン。前日(11/26) 1,343.90ウォン比1.20ウォン下落(0.09%)。長中市場為替レートは1,342ウォン前後です。"
   },
   {
    "id": "jpykrw100",
    "code": "JPY/KRW",
    "name": "ウォン・円（100円）",
-   "price": 844.37,
+   "price": 842.95,
    "unit": "ウォン/100円",
    "decimals": 2,
-   "change": 0.96,
-   "changePct": 0.11,
-   "changeBasis": "前日告示(11/25)に備え",
-   "date": "2026-11-26",
+   "change": -1.42,
+   "changePct": -0.17,
+   "changeBasis": "前日告示(11/26)に備え",
+   "date": "2026-11-27",
    "sourceName": "韓国輸出入銀行通知売買基準率",
-   "sourceUrl": "https://www.koreaexim.go.kr/site/main/index002",
-   "note": "100円目安。 11/26告示844.37ウォンで前日(11/25) 843.41ウォン対比0.96ウォン上昇。"
+   "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
+   "note": "100円目安。 11/27告示842.95ウォンで前日(11/26) 844.37ウォン対比1.42ウォン下落。"
   },
   {
    "id": "cnykrw",
    "code": "CNY/KRW",
    "name": "ウォン・元",
-   "price": 201.57,
+   "price": 201.43,
    "unit": "元/元",
    "decimals": 2,
-   "change": -0.13,
-   "changePct": -0.06,
-   "changeBasis": "前日告示(11/25)に備え",
-   "date": "2026-11-26",
+   "change": -0.14,
+   "changePct": -0.07,
+   "changeBasis": "前日告示(11/26)に備え",
+   "date": "2026-11-27",
    "sourceName": "韓国輸出入銀行通知売買基準率",
-   "sourceUrl": "https://www.koreaexim.go.kr/site/main/index002",
-   "note": "人民元（CNH）基準。 11/26告示 201.57ウォンで前日(11/25) 201.70ウォン比0.13ウォン下落。"
+   "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
+   "note": "人民元（CNH）基準。 11/27告示 201.43ウォンで前日(11/26) 201.57ウォン比0.14ウォン下落。"
   },
   {
    "id": "btc",
    "code": "BTC",
    "name": "ビットコイン",
-   "price": 60806,
+   "price": 61199,
    "unit": "USD",
    "decimals": 0,
-   "change": 1616.0,
-   "changePct": 2.73,
+   "change": 341.0,
+   "changePct": 0.56,
    "changeBasis": "24時間コントラスト（コインゲコ）",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "sourceName": "コインゲコ(CoinGecko) 現物相場",
    "sourceUrl": "https://www.coingecko.com/en/coins/bitcoin",
-   "note": "コインゲコドル現物60,806ドル（24時間+2.73％）。同じビジュアルアップビットウォン8,148万6,000ウォン。"
+   "note": "コインゲコドル現物 61,199ドル(24時間+0.56%)。同じビジュアルアップビットウォン8,217万9,875ウォン。"
   },
   {
    "id": "eth",
    "code": "ETH",
    "name": "イーシャリアム",
-   "price": 1700,
+   "price": 1715,
    "unit": "USD",
    "decimals": 0,
-   "change": 43.0,
-   "changePct": 2.62,
+   "change": 13.0,
+   "changePct": 0.74,
    "changeBasis": "24時間コントラスト（コインゲコ）",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "sourceName": "コインゲコ(CoinGecko) 現物相場",
    "sourceUrl": "https://www.coingecko.com/en/coins/ethereum",
-   "note": "コインゲコドル現物 1,700.13ドル(24時間+2.62%)。同じビジュアルアップビットウォン227万8,000ウォン。"
+   "note": "コインゲコドルの現物 1,714.71ドル(24時間+0.74%)。同じビジュアルアップビットウォン230万2,550ウォン。"
   }
  ],
  "commodities": [
@@ -1637,15 +1641,15 @@
    "nameEn": "Gold",
    "group": "metal",
    "grade": "スポット 1トロイオンズ",
-   "price": 3598.96,
+   "price": 3616.46,
    "unit": "USD/oz",
-   "change": 29.91,
-   "changePct": 0.84,
-   "changeBasis": "前日(11/25) スナップショット対比",
-   "date": "2026-11-26",
+   "change": 17.5,
+   "changePct": 0.49,
+   "changeBasis": "前日(11/26) スナップショット対比",
+   "date": "2026-11-27",
    "sourceName": "Swissquote リアルタイムスポット（XAU/USD）",
    "sourceUrl": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD",
-   "note": "Swissquote 現物 3,598.96ドル（11:57、枚数・売り中間値）。前日午前3,569.05ドルより0.8％上がりました。"
+   "note": "Swissquote 現物 3,616.46ドル（11:10、枚数・売り中間値）。前日午前3,598.96ドルより0.5％上がりました。"
   },
   {
    "code": "AG",
@@ -1653,15 +1657,15 @@
    "nameEn": "Silver",
    "group": "metal",
    "grade": "スポット 1トロイオンズ",
-   "price": 42.01,
+   "price": 43.01,
    "unit": "USD/oz",
-   "change": 0.72,
-   "changePct": 1.74,
-   "changeBasis": "前日(11/25) スナップショット対比",
-   "date": "2026-11-26",
+   "change": 1.0,
+   "changePct": 2.38,
+   "changeBasis": "前日(11/26) スナップショット対比",
+   "date": "2026-11-27",
    "sourceName": "Swissquote リアルタイムスポット（XAG/USD）",
    "sourceUrl": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAG/USD",
-   "note": "Swissquote 現物 42.01ドル(11:57)。前日午前41.29ドルに対して1.7％​​上昇。"
+   "note": "Swissquote 現物 43.01ドル(11:10)。前日午前42.01ドル対比2.4％上昇。"
   },
   {
    "code": "CU",
@@ -1769,16 +1773,16 @@
    "nameEn": "Copper · PPS",
    "group": "metal",
    "grade": "備蓄品の販売価格（税込）",
-   "price": 17550000,
+   "price": 17900000,
    "unit": "円/トン",
    "decimals": 0,
-   "change": -250000,
-   "changePct": -1.4,
-   "changeBasis": "前日発表(11/25)",
-   "date": "2026-11-26",
+   "change": 350000,
+   "changePct": 1.99,
+   "changeBasis": "前日(11/26) 放出がコントラスト",
+   "date": "2026-11-27",
    "sourceName": "調達庁備蓄材料原材料販売価格",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "調達庁 11/26 販売価（99.99％以上、税込・実需要業者限度）。 11/25 17,800,000ウォンで1.4%下がりました。"
+   "note": "調達庁 11/27 販売価（99.99％以上、税込・実需要業者限度）。 11/26 17,550,000ウォンで2.0%アップしました。"
   },
   {
    "code": "AL-PPS",
@@ -1786,16 +1790,16 @@
    "nameEn": "Aluminum · PPS",
    "group": "metal",
    "grade": "備蓄品の販売価格（税込）",
-   "price": 4640000,
+   "price": 4800000,
    "unit": "円/トン",
    "decimals": 0,
-   "change": 50000,
-   "changePct": 1.09,
-   "changeBasis": "前日発表(11/25)",
-   "date": "2026-11-26",
+   "change": 160000,
+   "changePct": 3.45,
+   "changeBasis": "前日(11/26) 放出がコントラスト",
+   "date": "2026-11-27",
    "sourceName": "調達庁備蓄材料原材料販売価格",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "調達庁11/26販売価格（西区山、税金を含む）。 11/25 4,590,000ウォンで1.1%アップしました。"
+   "note": "調達庁11/27販売価格（西区山、税金を含む）。 11/26 4,640,000ウォンで3.5%アップしました。秘書区産は4,770,000ウォンです。"
   },
   {
    "code": "PB-PPS",
@@ -1803,16 +1807,16 @@
    "nameEn": "Lead · PPS",
    "group": "metal",
    "grade": "備蓄品の販売価格（税込）",
-   "price": 2910000,
+   "price": 2990000,
    "unit": "円/トン",
    "decimals": 0,
-   "change": 0,
-   "changePct": 0.0,
-   "changeBasis": "前日発表(11/25)",
-   "date": "2026-11-26",
+   "change": 80000,
+   "changePct": 2.75,
+   "changeBasis": "前日(11/26) 放出がコントラスト",
+   "date": "2026-11-27",
    "sourceName": "調達庁備蓄材料原材料販売価格",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "調達庁11/26販売価格（99.99％以上）。前日と同じです。"
+   "note": "調達庁11/27販売価格（99.99％以上）。 11/26 2,910,000ウォンで2.8%アップしました。"
   },
   {
    "code": "SN-PPS",
@@ -1823,13 +1827,13 @@
    "price": 56380000,
    "unit": "円/トン",
    "decimals": 0,
-   "change": -3110000,
-   "changePct": -5.23,
-   "changeBasis": "前日発表(11/25)",
+   "change": 0.0,
+   "changePct": 0.0,
+   "changeBasis": "11/26 販売価格",
    "date": "2026-11-26",
    "sourceName": "調達庁備蓄材料原材料販売価格",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "調達庁11/26販売価格（99.90％以上）。 11/25 59,490,000ウォンで5.2%下げました（LME注釈急落反映）。"
+   "note": "11/27 販売公告には注釈項目がなく、11/26 販売価(56,380,000ウォン)をそのまま残しました。"
   },
   {
    "code": "NAP",
@@ -1837,15 +1841,15 @@
    "nameEn": "Naphtha",
    "group": "petrochem",
    "grade": "CFR Japan公開評価者",
-   "price": 809.0,
+   "price": 801.25,
    "unit": "USD/t",
-   "change": 3.12,
-   "changePct": 0.39,
-   "changeBasis": "新規評価が未公表（11/20値維持）",
-   "date": "2026-11-23",
-   "sourceName": "CommodityScopeナフサ評価者",
-   "sourceUrl": "https://commodityscope.com/markets",
-   "note": "CommodityScope CFR Japan評価は11/23 809.00ドル(+3.13)。 11/24 評価者はまだ公開前です。"
+   "change": 13.0,
+   "changePct": 1.65,
+   "changeBasis": "直前の評価者（11/24）",
+   "date": "2026-11-25",
+   "sourceName": "CommodityScope ナフサ CFR Japan 評価",
+   "sourceUrl": "https://commodityscope.com/markets/naphtha-japan-cfr",
+   "note": "CFR Japanの評価は11/25 801.25ドル/トン(+13.00、+1.6%)。 11/26 評価者はまだ公開されていません。"
   },
   {
    "code": "NAP-SG",
@@ -1853,16 +1857,16 @@
    "nameEn": "Naphtha · Singapore",
    "group": "petrochem",
    "grade": "国際石油製品価格（バレルベース）",
-   "price": 86.44,
+   "price": 88.09,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 0.2,
-   "changePct": 0.23,
-   "changeBasis": "前日(11/20)に備え",
-   "date": "2026-11-23",
+   "change": 2.23,
+   "changePct": 2.6,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "オピネット（韓国石油公社）国際石油製品価格",
    "sourceUrl": "https://www.opinet.co.kr/glopopdSelect.do",
-   "note": "オフィネット国際石油製品価格のシンガポールナフサ現物86.44ドル/バレル（トン当たり727.09ドル）。"
+   "note": "オフィネットシンガポールナフサ現物11/26 88.09ドル/バレル（11/25 85.86ドル）。同じ表のガソリン91.72・経由135.82ドルです。"
   },
   {
    "code": "C2",
@@ -1886,15 +1890,15 @@
    "nameEn": "Propylene",
    "group": "petrochem",
    "grade": "クラス1",
-   "price": 9199.0,
+   "price": 9326.5,
    "unit": "RMB/t",
-   "change": -82.5,
-   "changePct": -0.89,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": 127.5,
+   "changePct": 1.39,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "SunSirs中国のスポット",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国プロピレン11/25 9,199.00元（11/24 9,281.50元）。 11月上旬の11,220元のコントラストは−18%です。"
+   "note": "中国プロピレン11/26 9,326.50元（11/25 9,199.00元）。"
   },
   {
    "code": "BZ",
@@ -1902,15 +1906,15 @@
    "nameEn": "Benzene",
    "group": "petrochem",
    "grade": "1級（純度99.90％以上）",
-   "price": 7320.0,
+   "price": 7383.33,
    "unit": "RMB/t",
-   "change": 0.0,
-   "changePct": 0.0,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": 63.33,
+   "changePct": 0.87,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "SunSirs中国のスポット",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国純粋なベンゼン 11/25 7,320.00元で前日と同じです。"
+   "note": "中国純ベンゼン11/26 7,383.33元（11/25 7,320.00元）。"
   },
   {
    "code": "TOL",
@@ -1918,15 +1922,15 @@
    "nameEn": "Toluene",
    "group": "petrochem",
    "grade": "クラス1",
-   "price": 6083.33,
+   "price": 6016.67,
    "unit": "RMB/t",
-   "change": -156.67,
-   "changePct": -2.51,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": -66.66,
+   "changePct": -1.1,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "SunSirs中国のスポット",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国トルエン11/25 6,083.33元（11/24 6,240.00元）。"
+   "note": "中国トルエン11/26 6,016.67元（11/25 6,083.33元）。"
   },
   {
    "code": "SM",
@@ -1936,13 +1940,13 @@
    "grade": "1級（純度99.8％以上）",
    "price": 9310.0,
    "unit": "RMB/t",
-   "change": -10.0,
-   "changePct": -0.11,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": 0.0,
+   "changePct": 0.0,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "SunSirs中国のスポット",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国スチレンモノマー11/25 9,310.00元（11/24 9,320.00元）。"
+   "note": "中国スチレンモノマー11/26 9,310.00元（11/25 9,310.00元）。"
   },
   {
    "code": "PC",
@@ -1950,15 +1954,15 @@
    "nameEn": "Polycarbonate",
    "group": "petrochem",
    "grade": "一般評価",
-   "price": 13983.33,
+   "price": 13750.0,
    "unit": "RMB/t",
-   "change": -66.67,
-   "changePct": -0.47,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": -233.33,
+   "changePct": -1.67,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "SunSirs中国のスポット",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国ポリカーボネート11/25 13,983.33元（11/24 14,050.00元）。 11月上旬14,966.67元比−6.6%です。"
+   "note": "中国ポリカーボネート11/26 13,750.00元（11/25 13,983.33元）。"
   },
   {
    "code": "PMMA",
@@ -1970,11 +1974,11 @@
    "unit": "RMB/t",
    "change": 0.0,
    "changePct": 0.0,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "SunSirs中国のスポット",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国PMMA 11/25 14,733.33元で前日と同じです。"
+   "note": "中国PMMA 11/26 14,733.33元（11/25 14,733.33元）。"
   },
   {
    "code": "PP",
@@ -1982,15 +1986,15 @@
    "nameEn": "PP",
    "group": "petrochem",
    "grade": "L5E89(ラピア)",
-   "price": 9633.33,
+   "price": 9400.0,
    "unit": "RMB/t",
-   "change": -283.34,
-   "changePct": -2.86,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": -233.33,
+   "changePct": -2.42,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "SunSirs中国のスポット",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国PP 11/25 9,633.33元（11/24 9,916.67元）。"
+   "note": "中国PP 11/26 9,400.00元（11/25 9,633.33元）。"
   },
   {
    "code": "LDPE",
@@ -1998,15 +2002,15 @@
    "nameEn": "LDPE",
    "group": "petrochem",
    "grade": "2426H(フィルム)",
-   "price": 10366.67,
+   "price": 10500.0,
    "unit": "RMB/t",
-   "change": -400.0,
-   "changePct": -3.72,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": 133.33,
+   "changePct": 1.29,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "SunSirs中国のスポット",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国LDPE 11/25 10,366.67元（11/24 10,766.67元）。"
+   "note": "中国LDPE 11/26 10,500.00元（11/25 10,366.67元）。"
   },
   {
    "code": "HDPE",
@@ -2014,15 +2018,15 @@
    "nameEn": "HDPE",
    "group": "petrochem",
    "grade": "5000S（射出）",
-   "price": 10100.0,
+   "price": 10037.5,
    "unit": "RMB/t",
-   "change": -250.0,
-   "changePct": -2.42,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": -50.0,
+   "changePct": -0.5,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "SunSirs中国のスポット",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国HDPE 11/25 10,100.00元（11/24 10,350.00元）。"
+   "note": "中国HDPE 11/26 10,037.50元（11/25 10,087.50元）。"
   },
   {
    "code": "ABS",
@@ -2030,15 +2034,15 @@
    "nameEn": "ABS",
    "group": "petrochem",
    "grade": "一般評価",
-   "price": 11433.33,
+   "price": 11400.0,
    "unit": "RMB/t",
-   "change": 0.0,
-   "changePct": 0.0,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": -33.33,
+   "changePct": -0.29,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "SunSirs中国のスポット",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国ABS 11/25 11,433.33元で前日と同じです。"
+   "note": "中国ABS 11/26 11,400.00元（11/25 11,433.33元）。"
   },
   {
    "code": "PVC",
@@ -2046,15 +2050,15 @@
    "nameEn": "PVC",
    "group": "petrochem",
    "grade": "SG5",
-   "price": 4955.0,
+   "price": 5080.0,
    "unit": "RMB/t",
-   "change": 165.0,
-   "changePct": 3.44,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": 125.0,
+   "changePct": 2.52,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "SunSirs中国のスポット",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国PVC 11/25 4,955.00元（11/24 4,790.00元）。この日の上昇幅上位アイテムです。"
+   "note": "中国PVC 11/26 5,080.00元（11/25 4,955.00元）。"
   },
   {
    "code": "BDI",
@@ -2062,16 +2066,16 @@
    "nameEn": "Baltic Dry Index",
    "group": "shipping",
    "grade": "総合指数（ケープ40％・パナマックス30％・スプラマックス30％）",
-   "price": 3107,
+   "price": 3152,
    "unit": "ポイント",
    "decimals": 0,
-   "change": 39,
-   "changePct": 1.27,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": 45,
+   "changePct": 1.45,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "バルティック海運取引所（Reuters引用）",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "バルティック乾貨物運賃指数 11/25 3,107ポイント(+39)。 10月2日以降の最高値です。"
+   "note": "バルティック乾貨物運賃指数 11/26 3,152ポイント(+45, +1.45%)。 9月29日以降の最高値です。ケープサイズ5,100・パナマックス2,273(+50)・スプラマックス1,816(+2)。"
   },
   {
    "code": "BCI",
@@ -2079,16 +2083,16 @@
    "nameEn": "Capesize Index",
    "group": "shipping",
    "grade": "15万トン級鉄鉱石・石炭",
-   "price": 5014,
+   "price": 5100,
    "unit": "ポイント",
    "decimals": 0,
-   "change": 72,
-   "changePct": 1.46,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": 86,
+   "changePct": 1.72,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "バルティック海運取引所（Reuters引用）",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "ケープサイズ 11/25 5,014ポイント(+72)。 10月2日以降の最高値です。"
+   "note": "バルティックケープサイズ11/26 5,100ポイント（+86）。"
   },
   {
    "code": "BPI",
@@ -2096,16 +2100,16 @@
    "nameEn": "Panamax Index",
    "group": "shipping",
    "grade": "6～7万t級穀物・石炭",
-   "price": 2223,
+   "price": 2273,
    "unit": "ポイント",
    "decimals": 0,
-   "change": 44,
-   "changePct": 2.02,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": 50,
+   "changePct": 2.25,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "バルティック海運取引所（Reuters引用）",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "パナマックス11/25 2,223ポイント（+44）。 10月20日以降の最高値です。"
+   "note": "バルティックパナマックス11/26 2,273ポイント（+50）。"
   },
   {
    "code": "BSI",
@@ -2113,16 +2117,16 @@
    "nameEn": "Supramax Index",
    "group": "shipping",
    "grade": "4.8～6万t級",
-   "price": 1814,
+   "price": 1816,
    "unit": "ポイント",
    "decimals": 0,
-   "change": 3,
-   "changePct": 0.17,
-   "changeBasis": "前日(11/24)に備え",
-   "date": "2026-11-25",
+   "change": 2,
+   "changePct": 0.11,
+   "changeBasis": "前日(11/25) 対比",
+   "date": "2026-11-26",
    "sourceName": "バルティック海運取引所（Reuters引用）",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "スプラマックス 11/25 1,814ポイント(+3)。"
+   "note": "バルティックスプラマックス11/26 1,816ポイント（+2）。"
   },
   {
    "code": "FAO-FPI",
@@ -2211,37 +2215,37 @@
   },
   {
    "code": "ZW",
-   "name": "CBOT小脈（12月水）",
+   "name": "CBOT小脈（3月水）",
    "nameEn": "Wheat",
    "group": "agri",
-   "grade": "CME CBOTプレゼント・2026年12月物",
+   "grade": "CME CBOTプレゼント・2027年3月物",
    "price": 586.5,
    "unit": "¢/bu",
    "decimals": 2,
    "change": -1.0,
    "changePct": -0.17,
-   "changeBasis": "前日(11/25) 終値対比",
+   "changeBasis": "直前の取引日（11/25）終値対比",
    "date": "2026-11-26",
    "sourceName": "Yahoo ファイナンスCBOT小麦（3月水）",
    "sourceUrl": "https://finance.yahoo.com/quote/ZW=F",
-   "note": "CBOT小脈3月水に繰り越された。 11/25終値587.50セント→11/26 586.50セント（韓国時間04:19）。"
+   "note": "CBOT小脈3月水（2027年）基準です。 11/25夜セッション終値587.50セント→11/26夜明け586.50セント。 11/26は感謝祭の休場、11/27夜間は韓国時間午前10時再開。"
   },
   {
    "code": "ZC",
-   "name": "CBOTトウモロコシ（12月水）",
+   "name": "CBOTトウモロコシ（3月水）",
    "nameEn": "Corn",
    "group": "agri",
-   "grade": "CME CBOTプレゼント・2026年12月物",
+   "grade": "CME CBOTプレゼント・2027年3月物",
    "price": 456.25,
    "unit": "¢/bu",
    "decimals": 2,
    "change": -0.25,
    "changePct": -0.05,
-   "changeBasis": "前日(11/25) 終値対比",
+   "changeBasis": "直前の取引日（11/25）終値対比",
    "date": "2026-11-26",
    "sourceName": "Yahoo ファイナンスCBOTトウモロコシ（3月水）",
    "sourceUrl": "https://finance.yahoo.com/quote/ZC=F",
-   "note": "CBOTトウモロコシ3月水に繰り越された（12月水439.75セントと契約月が異なる）。 11/25 456.50 → 11/26 456.25セント。"
+   "note": "CBOTトウモロコシ3月水（2027年）基準です。 12月の水（439.75セント）と契約月が異なります。 11/25 456.50→11/26夜明け456.25セント。 11/26は感謝祭の休場。"
   },
   {
    "code": "ZS",
@@ -2254,11 +2258,11 @@
    "decimals": 2,
    "change": -0.75,
    "changePct": -0.06,
-   "changeBasis": "前日(11/25) 終値対比",
+   "changeBasis": "直前の取引日（11/25）終値対比",
    "date": "2026-11-26",
    "sourceName": "Yahoo Finance CBOT大豆（1月水）",
    "sourceUrl": "https://finance.yahoo.com/quote/ZS=F",
-   "note": "CBOT大豆 1月の水 11/25 1,244.00 → 11/26 1,243.25セントで補完です。"
+   "note": "CBOT大豆 1月の水 11/25 1,244.00 → 11/26 夜明け 1,243.25セントで補完です。 11/26は感謝祭の休場。"
   },
   {
    "code": "SHFE-CU",
@@ -2266,16 +2270,16 @@
    "nameEn": "Copper · SHFE",
    "group": "chinafutures",
    "grade": "cu2701（2027年1月水）主力契約",
-   "price": 90730,
+   "price": 92220,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 970,
-   "changePct": 1.08,
-   "changeBasis": "前日(11/25) 精算家対比",
-   "date": "2026-11-26",
+   "change": 3450,
+   "changePct": 3.89,
+   "changeBasis": "前日(11/26) 精算家対比",
+   "date": "2026-11-27",
    "sourceName": "シナファイナンス中国ギフト遅延価格",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/CU0.shtml",
-   "note": "SHFE銅主力11/26午前10:36 90,730元。 11/25決算89,760元対比1.1％反騰しました。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-CU.shtml",
+   "note": "SHFE銅主力11/27午前92,220元。 11/26決済は88,770元に対して3.9％上昇しました。この日の上昇幅上位アイテムです。"
   },
   {
    "code": "SHFE-AL",
@@ -2283,16 +2287,16 @@
    "nameEn": "Aluminum · SHFE",
    "group": "chinafutures",
    "grade": "al2701（2027年1月水）主力契約",
-   "price": 21260,
+   "price": 21365,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 240,
-   "changePct": 1.14,
-   "changeBasis": "前日(11/25) 精算家対比",
-   "date": "2026-11-26",
+   "change": 365,
+   "changePct": 1.74,
+   "changeBasis": "前日(11/26) 精算家対比",
+   "date": "2026-11-27",
    "sourceName": "シナファイナンス中国ギフト遅延価格",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/AL0.shtml",
-   "note": "SHFEアルミ11/26午前21,260元（11/25決済21,020元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-AL.shtml",
+   "note": "SHFEアルミ11/27午前21,365元（11/26決済21,000元）。"
   },
   {
    "code": "SHFE-SC",
@@ -2300,16 +2304,16 @@
    "nameEn": "Crude Oil · INE/SHFE",
    "group": "chinafutures",
    "grade": "sc2701（2027年1月水）主力契約",
-   "price": 595.1,
+   "price": 600.7,
    "unit": "RMB/bbl",
    "decimals": 1,
-   "change": 17.2,
-   "changePct": 2.98,
-   "changeBasis": "前日(11/25) 精算家対比",
-   "date": "2026-11-26",
+   "change": 6.7,
+   "changePct": 1.13,
+   "changeBasis": "前日(11/26) 精算家対比",
+   "date": "2026-11-27",
    "sourceName": "シナファイナンス中国ギフト遅延価格",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SC0.shtml",
-   "note": "上海原油（SC）11/26午前595.10元（11/25決済577.90元）。国際油価の反騰に伴い3.0％上昇しました。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-SC.shtml",
+   "note": "上海原油（SC）11/27午前600.70元（11/26決済594.00元）。国際油が強気に沿って600元を超えました。"
   },
   {
    "code": "DCE-PP",
@@ -2317,16 +2321,16 @@
    "nameEn": "PP · DCE",
    "group": "chinafutures",
    "grade": "pp2701（2027年1月水）主力契約",
-   "price": 8737,
+   "price": 8849,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 170,
-   "changePct": 1.98,
-   "changeBasis": "前日(11/25) 精算家対比",
-   "date": "2026-11-26",
+   "change": 87,
+   "changePct": 0.99,
+   "changeBasis": "前日(11/26) 精算家対比",
+   "date": "2026-11-27",
    "sourceName": "シナファイナンス中国ギフト遅延価格",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/PP0.shtml",
-   "note": "DCE PP 11/26午前8,737元（11/25決済8,567元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-PP.shtml",
+   "note": "DCE PP 11/27午前8,849元（11/26決済8,762元）。"
   },
   {
    "code": "DCE-L",
@@ -2334,16 +2338,16 @@
    "nameEn": "LLDPE · DCE",
    "group": "chinafutures",
    "grade": "l2701（2027年1月水）主力契約",
-   "price": 8163,
+   "price": 8314,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 267,
-   "changePct": 3.38,
-   "changeBasis": "前日(11/25) 精算家対比",
-   "date": "2026-11-26",
+   "change": 145,
+   "changePct": 1.78,
+   "changeBasis": "前日(11/26) 精算家対比",
+   "date": "2026-11-27",
    "sourceName": "シナファイナンス中国ギフト遅延価格",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/L0.shtml",
-   "note": "DCE LLDPE 11/26午前8,163元（11/25決済7,896元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-L.shtml",
+   "note": "DCE LLDPE 11/27午前8,314元（11/26決済8,169元）。"
   },
   {
    "code": "DCE-V",
@@ -2351,16 +2355,16 @@
    "nameEn": "PVC · DCE",
    "group": "chinafutures",
    "grade": "v2701（2027年1月水）主力契約",
-   "price": 5048,
+   "price": 5062,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 109,
-   "changePct": 2.21,
-   "changeBasis": "前日(11/25) 精算家対比",
-   "date": "2026-11-26",
+   "change": 14,
+   "changePct": 0.28,
+   "changeBasis": "前日(11/26) 精算家対比",
+   "date": "2026-11-27",
    "sourceName": "シナファイナンス中国ギフト遅延価格",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/V0.shtml",
-   "note": "DCE PVC 11/26午前5,048元（11/25決済4,939元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-V.shtml",
+   "note": "DCE PVC 11/27午前5,062元（11/26決済5,048元）。"
   },
   {
    "code": "DCE-EG",
@@ -2368,16 +2372,16 @@
    "nameEn": "EG · DCE",
    "group": "chinafutures",
    "grade": "eg2701（2027年1月水）主力契約",
-   "price": 5163,
+   "price": 5289,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 233,
-   "changePct": 4.73,
-   "changeBasis": "前日(11/25) 精算家対比",
-   "date": "2026-11-26",
+   "change": 160,
+   "changePct": 3.12,
+   "changeBasis": "前日(11/26) 精算家対比",
+   "date": "2026-11-27",
    "sourceName": "シナファイナンス中国ギフト遅延価格",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/EG0.shtml",
-   "note": "DCEモノエチレングリコール11/26午前5,163元（11/25精算4,930元）。この日の上昇幅が最も大きい。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-EG.shtml",
+   "note": "DCEモノエチレングリコール11/27午前5,289元（11/26精算5,129元）。この日の上昇幅上位アイテムです。"
   },
   {
    "code": "ZCE-TA",
@@ -2385,16 +2389,16 @@
    "nameEn": "PTA · ZCE",
    "group": "chinafutures",
    "grade": "TA701（2027年1月水）主力契約",
-   "price": 6068,
+   "price": 6088,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 50,
-   "changePct": 0.83,
-   "changeBasis": "前日(11/25) 精算家対比",
-   "date": "2026-11-26",
+   "change": 12,
+   "changePct": 0.2,
+   "changeBasis": "前日(11/26) 精算家対比",
+   "date": "2026-11-27",
    "sourceName": "シナファイナンス中国ギフト遅延価格",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/TA0.shtml",
-   "note": "ZCE PTA 11/26午前6,068元（11/25決済6,018元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/ZCE-TA.shtml",
+   "note": "ZCE PTA 11/27午前6,088元（11/26決済6,076元）。"
   },
   {
    "code": "ZCE-MA",
@@ -2402,16 +2406,16 @@
    "nameEn": "Methanol · ZCE",
    "group": "chinafutures",
    "grade": "MA701（2027年1月水）主力契約",
-   "price": 3153,
+   "price": 3150,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 24,
-   "changePct": 0.77,
-   "changeBasis": "前日(11/25) 精算家対比",
-   "date": "2026-11-26",
+   "change": -16,
+   "changePct": -0.51,
+   "changeBasis": "前日(11/26) 精算家対比",
+   "date": "2026-11-27",
    "sourceName": "シナファイナンス中国ギフト遅延価格",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/MA0.shtml",
-   "note": "ZCEメタノール11/26午前3,153元（11/25決済3,129元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/ZCE-MA.shtml",
+   "note": "ZCEメタノール11/27午前3,150元（11/26精算3,166元）で小幅ダウンしました。"
   },
   {
    "code": "SCFI",
@@ -2654,30 +2658,31 @@
  ],
  "notes": [
   "すべての価格は無料の公開元で確認された値です。有料指数専用品目は見積もらず表記しなかった。",
-  "LME亜鉛・鉛・ニッケル・錫はLME公式現物(Cash)決済家(11/25:亜鉛3,520.50・鉛1,792.00・ニッケル15,035.00・錫38,200.00ドル)銅 11,758.00・アルミニウム 2,760.00ドル）と基準が異なります。出所はLME公式価格をそのまま移したウェストメタル(Westmetall)の表です。",
+  "LME亜鉛・鉛・ニッケル・錫はLME公式現物（Cash）決済家（11/25：亜鉛3,520.50・鉛1,792.00・ニッケル15,035.00・錫38,200.00ドル）で、表の銅・アル・3銅 11,758.00・アルミニウム 2,760.00ドル）と基準が異なります。 11/26 公式家は、照会の時点でまだ公開されておらず、11/25 の値を維持しました。出所はLME公式価格をそのまま移したウェストメタル(Westmetall)の表です。",
   "石油化学・プラスチック原料は中国国内現物価（元/トン）で、韓国輸入交渉家とは等級・物量・運賃によって差があります。",
-  "ナフサは二つに載せました。 CFR Japan(MOPJ)公開評価価格は809.00ドル/トン(11/23)で、オピネット(韓国石油公社)国際石油製品価格のシンガポール現物は86.44ドル/バレル(11/23、トン当たり727.09ドル)です。単位が異なり、直接比較できません。",
-  "BDI・ケープサイズ・パナマックス・スプラマックスはバルティック海運取引所指数で11月25日（水）終値です（BDI 3,107・BCI 5,014・BPI 2,223・BSI 1,814）。韓国時間21時ごろ発表分まで反映しました。",
+  "ナフサは二つに載せました。 CFR Japan(MOPJ)公開評価価は801.25ドル/トン(11/25、+1.6%)で、オピネット(韓国石油公社)国際石油製品価格のシンガポール現物は88.09ドル/バレル(11/26、前日85.86ドル)です。単位が異なり、直接比較できません。",
+  "BDI・ケープサイズ・パナマックス・スプラマックスはバルティック海運取引所指数で11月26日（木）終値です（BDI 3,152・BCI 5,100・BPI 2,273・BSI 1,816）。 BDIは9月29日以降の最高値です。",
   "FAO 食糧・穀物価格指数は月間指数で2026年10月の値（11月6日発表）です。 FAO発表は食料133.9（−1.6ポイント、−1.2％）、穀物116.8（−5.5ポイント、−4.5％）であり、KREI画面表記（食糧−1.7ポイント）と小幅差があります。",
-  "CBOT小麦・トウモロコシは3月水に繰り越され、11/26近月連続終値をセント/ブッシェルで積み、大豆は1月水です。 12月の水（小麦569.75・トウモロコシ434.00セント）とは契約月が異なり、値をそのまま比較することはできません。国内輸入単価は農水産物貿易情報の2026年10月通関基準ドル/トンです。",
+  "CBOT小麦・トウモロコシは3月水に繰り越され、近月連続終値をセント/ブッシェルで積み、大豆は1月水です。 11月26日は感謝祭の休場であり、11/25夜セッション（韓国時間11/26夜明け）の値が最新であり、11月27日夜間長は韓国時間午前10時に再開されました。国内輸入単価は農水産物貿易情報の2026年10月通関基準ドル/トンです。",
   "クリプトは24時間取引で基準日が異なります。価格・登落率はコインゲッコドル現物と24時間変動率であり、ウォン価格は同じ視覚アップビットウォンマーケット基準です。",
   "LME銅・アルミニウムは3ヶ月先物価格を基準とし、現物決済価格は各項目備考に書いています。",
-  "調達庁備蓄物資放出価は付加税含む・登録実需要業者限度内販売価で、LME国際相場と直接比較することはできません。",
+  "調達庁備蓄物資放出価は付加税含む・登録実需要業者限度内販売価で、LME国際相場と直接比較することはできません。 11/27公告にはアルミニウム・銅・鉛のみあり、錫は11/26値を維持しました。",
   "韓国石油化学協会(KPIA) 原料・樹脂価格は無料で確認できず入れませんでした。 kpia.or.krは接続エラー（500・503）が発生し、協会資料がkcia.kr（韓国化学産業協会）に移され、協会価格・統計DBは有料利用者（年120万ウォン、機器2台）専用です。見積もりは入れなかった。",
-  "為替レートは韓国輸出入銀行告示売買基準率（営業日1回、午前11時前後告示）であり、銀行窓口・カード決済為替レートとは異なります。 11/26告示はウォン・ドル1,343.90ウォン・ウォン・円844.37ウォン・ウォン・元201.57ウォンです。 11/25告示（1,343.60・843.41・201.70）でウォン・ドルとウォン・円は小幅に上がり、ウォン・元は下がりました。",
-  "中国ギフトは上海先物取引所(SHFE)・大連商品取引所(DCE)・鄭州商品取引所(ZCE)主力契約をシナファイナンス遅延相場で読んだ値です。 11月26日午前(韓国時間10:36) 場中値であり、前日値は11月25日精算家です。",
+  "為替レートは韓国輸出入銀行告示売買基準率（営業日1回、午前11時前後告示）であり、銀行窓口・カード決済為替レートとは異なります。 11/27告示はウォン・ドル1,342.70ウォン・ウォン・円842.95ウォン・ウォン・元201.43ウォンで、11/26(1,343.90・844.37・201.57)より全て小幅下げました。",
+  "中国ギフトは上海先物取引所(SHFE)・大連商品取引所(DCE)・鄭州商品取引所(ZCE)主力契約をシナファイナンス遅延相場で読んだ値です。 11月27日の午前中の値で、前日の値は11月26日の決済です。",
   "SHFE銅・アルミニウムは元/トン、上海原油(SC)は元/バレルです。 LMEドル表記と為替レート・付加税・等級が異なり、直接比較することはできません。",
-  "DCE PP・LLDPE・PVC・EGとZCE PTA・メタノールの登落額は11月25日精算価との差で計算しました。",
+  "DCE PP・LLDPE・PVC・EGとZCE PTA・メタノールの登落額は11月26日精算価との差で計算しました。",
   "SCFI・CCFIは、上海海運取引所（SSE）が毎週金曜日に発表するコンテナ運賃指数です。総合指数のみが公開され、航路別詳細指数は有料加入者に提供されます。",
   "SMM量産銅プレミアムは、SMM公開記事に記載されている数字を掲載しました（11/23ワラント平均450ドル/トン、前日対−45ドル）。 11/24の公開値は確認できず、11/23の値を維持し、ダッシュボードの値はログイン後にのみ表示されます。",
   "KOMIS(韓国資源情報サービス)画面は今回の更新でも値が確認できず、LME公式告示をそのまま移したウエストメタル(Westmetall)表で非鉄6種を満たしました。現物決済価格と3ヶ月先物価格を区分して表記しました。",
   "指標ヌリ 石油化学原材料価格は韓国化学産業協会(KCIA)調査で2012年からCFR東北アジア基準であり、公開表の最新値は2026年第3四半期平均(10月30日更新)です。国内ウォンの実取引ではありません。",
-  "KAMIS卸売価格は卸売市場中卸売である販売価格（全国平均）で11月25日調査分まで確認しました（米商品20kg 59,640ウォン、11/13以降と同じ）。豆（白豆国産40kg）は、11月20日の調査分が最新の確認値とそのまま残しました。",
+  "KAMIS卸売価格は卸売市場中卸売である販売価格（全国平均）で11月25日調査分まで確認しました（米商品20kg 59,640ウォン、11/13以降と同じ）。豆（白豆国産40kg）は、11月20日の調査分が最新の確認値とそのまま残しました。 11/26以降、調査分は今回の照会で確認できませんでした。",
   "韓国銀行生産者物価指数・輸入物価指数は2026年10月暫定値(2020=100)です。生産者物価は11月20日、輸入物価指数は11月13日発表されました。",
   "関税庁輸出入貿易統計(tradedata.go.kr)の品目・HSコード別最近月輸入単価は公開初画面で確認されず、今回の更新に入れませんでした。",
   "SCI99(intl.sci99.com)の稼働率・在庫指標は有料会員専用なので入れませんでした。同じサイト公開価格センターのPP・LLDPE値は、既存の中国現物（SunSirs）と品目が重なって表に入れていません。",
   "韓国非鉄金属協会（nonferrous.or.kr）は、LME 6個の非鉄金属（銅・アルミニウム・亜鉛・鉛・ニッケル・錫）の現物相場と月平均、亜鉛塊内需販売価格を公開します。亜鉛塊内需価は高麗亜鉛が提供する付加税別途国内流通基準価です。",
   "協会サイトのLME在庫量、貴金属（金・銀）相場、週間・月間市況コメントは公開メニューで確認できませんでした。統計情報の非鉄統計・価格情報掲示板 下位統計画面はサーバーエラー（VBScript 800a0009）で開かれず、投稿で上がった価格・統計資料のみ使用しました。",
-  "再生原材料は、韓国環境公団「リサイクル可能資源価格調査」（国家承認統計第392001号）の月間公示値です。毎月10日調査・26日公表で、単位はウォン/kg（付加価値税含む、物流費を除く）であり、全国平均です。廃止・鉄スクラップは中間加工業者の未加工原料買取価格、廃プラスチック・廃ガラス瓶・廃金属缶は中間加工後の販売行為なので、同じ品目でも実際の取引価格と異なる場合があります。 2026年11月分は11月25日循環資源情報センターに掲示され、ABSフレークは未公表(―)と表から差し引かれました。"
+  "再生原材料は、韓国環境公団「リサイクル可能資源価格調査」（国家承認統計第392001号）の月間公示値です。毎月10日調査・26日公表で、単位はウォン/kg（付加価値税含む、物流費を除く）であり、全国平均です。廃止・鉄スクラップは中間加工業者の未加工原料買取価格、廃プラスチック・廃ガラス瓶・廃金属缶は中間加工後の販売行為なので、同じ品目でも実際の取引価格と異なる場合があります。 2026年11月分は11月25日循環資源情報センターに掲示され、ABSフレークは未公表(―)と表から差し引かれました。",
+  "中国の現物は SunSirs 日次リスト (11/26) 値です。 HDPE 10,037.50元、PVC 5,080.00元、PP 9,400.00元、LDPE 10,500.00元などです。"
  ]
 }

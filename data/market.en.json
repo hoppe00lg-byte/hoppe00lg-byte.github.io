@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-11-26T12:00:00+09:00",
- "asOf": "2026-11-26",
- "asOfNote": "As of noon on Thursday, November 26th. The exchange rate reflects the trading base rate announced by the Export-Import Bank of Korea (won/dollar 1,343.90 won, won/yen 844.37 won, won/yuan 201.57 won), and the prices of oil (WTI/Brent), gold, silver, and China's three major futures exchanges are intraday prices. The official prices of Dubai crude oil and LME are the latest as of November 25th (spot settlement prices for zinc, lead, nickel, and tin, and 3-month futures prices for copper and aluminum), and the Public Procurement Service release price is the sales price as of November 26th. China's petrochemical spot (SunSirs) and BDI prices are as of November 25th, CBOT grains' close month prices on November 26th (wheat and corn carried over to March), and CFR Japan (MOPJ) naphtha valuation prices as of November 23rd are the latest published values. SCFI and CCFI are released every Friday, so the values ​​as of November 20 are the most recent. Crypto is traded 24 hours a day, so the price is at noon on November 26th (CoinGecko). Recycled raw materials reflect the Korea Environment Corporation's November 2026 data (surveyed on 11/10, published on 11/25). The latest Bank of Korea price index is from October, and the latest index Nuri petrochemical prices is from the third quarter of 2026.",
+ "updatedAt": "2026-11-27T11:10:00+09:00",
+ "asOf": "2026-11-27",
+ "asOfNote": "As of 11:10 a.m. on Friday, November 27th. The exchange rate is the trading base rate announced by the Export-Import Bank of Korea (won/dollar 1,342.70 won, won/yen 842.95 won, won/yuan 201.43 won), and the oil price is the closing price of the shortened Thanksgiving day (11/26) (WTI January contract $85.64, Brent $92.32) and Dubai oil announced by Offinet on 11/26. It's $87.00. Gold and silver spot prices as of the morning of 11/27. The LME official price is the latest value as of November 25th (spot settlement price for zinc, lead, nickel, and tin, 3-month futures price for copper and aluminum), and the Public Procurement Service release price is the sale price as of November 27th. China's petrochemical spot (SunSirs) and BDI prices are as of November 26th, and China's three major futures exchanges have intraday values ​​as of the morning of November 27th. Due to the Thanksgiving holiday, CBOT grain prices are the latest from the night session of November 25th (early morning on November 26th, Korean time), and CFR Japan (MOPJ) naphtha valuation prices are from November 25th. SCFI and CCFI are released every Friday, so the values ​​as of November 20th are the most recent (announcement on November 27th is around 3pm Korean time). Crypto price is as of 11 am on November 27th (CoinGecko). Recycled raw materials reflect the Korea Environment Corporation's November 2026 data (surveyed on 11/10, published on 11/25). The latest Bank of Korea price index is from October, and the latest index Nuri petrochemical prices is from the third quarter of 2026.",
  "periods": {
   "default": "daily",
   "tabs": [
@@ -28,41 +28,41 @@
   ],
   "daily": {
    "label": "Daily",
-   "asOf": "2026-11-26",
-   "range": "2026-11-26",
+   "asOf": "2026-11-27",
+   "range": "2026-11-27",
    "badge": "Notice/Intraday",
-   "summary": "As of noon on Thursday, November 26th. The won/dollar trading base rate was flat at 1,343.90 won (+0.30 won), and the oil price barely moved from the previous day's settlement price at $83.89 for WTI and $90.70 for Brent for January contract. Instead, metals split — gold rose by $3,598.96 (+0.8%) and silver by $42.01 (+1.7%), but LME tin plunged to $38,200 (-6.4%), zinc by -3.9%, copper 3-month by -2.5% and aluminum spot by -8.7%. Chinese futures rebounded in the opposite direction, SHFE copper +1.1%, DCE EG +4.7%, LLDPE +3.4%, PVC +2.2%, and Public Procurement Service emission prices were tin -5.2%, copper -1.4%, aluminum +1.1%. Chinese spot prices were mixed at PVC +3.4%, PP −2.9%, and LDPE −3.7%, and BDI was 3,107 points (+1.3%), the highest since October 2.",
+   "summary": "As of 11:10 a.m. on Friday, November 27th. The standard won/dollar trading rate was lowered to 1,342.70 won (−1.20 won), and the won/yen is 842.95 won, and the won/yuan is 201.43 won. Oil prices are maintaining the values ​​they jumped during the shortened Thanksgiving market — WTI January contract closed at $85.64 (+2.3%) on 11/26 from $83.68 on 11/25, and Brent $92.32 and Dubai crude contract closed at $87.00 (+3.3%). Precious metals were strong with gold at $3,616.46 (+0.5%) and silver at $43.01 (+2.4%), and in Chinese futures, copper soared to 92,220 yuan (+3.9%) and Shanghai crude oil +1.1%, DCE EG +3.1%, and LLDPE +1.8% rose together. The Public Procurement Service's emission prices rose all at once to KRW 4,800,000 (+3.5%) for aluminum, KRW 17,900,000 (+2.0%) for copper, and KRW 2,990,000 (+2.8%) for lead. Chinese spot prices rose to +2.5% for PVC and +1.3% for LDPE and fell for -2.4% for PP and -1.7% for PC, and BDI was 3,152 points (+1.5%), the highest since September 29.",
    "historyStart": "2026-11-22"
   },
   "weekly": {
    "label": "Weekly",
-   "asOf": "2026-11-26",
-   "range": "2026-11-23 ~ 2026-11-26 (In Progress)",
+   "asOf": "2026-11-27",
+   "range": "2026-11-23 ~ 2026-11-27",
    "badge": "Compared to the previous Friday",
-   "summary": "This is the flow as of noon on the fourth trading day of the fourth week of November (11/26). Compared to the closing price of the previous Friday (11/20), oil prices are still low at Brent -2.0% and Dubai -3.7%, and WTI is still at +0.6%. The won weakened by 1.0% against the dollar (KRW 1,330.80 → KRW 1,343.90), and precious metals rose by +1.7% in gold and +1.8% in silver. LME was weak at -10.5% for aluminum, -4.3% for copper, -4.1% for zinc, and -1.8% for nickel, while Chinese petrochemical spot was down at -4.5% for PP, -2.9% for benzene, and -0.9% for PC. BDI rose 7.2% to 3,107 points, the highest since October 2. CBOT wheat and corn were carried over to March and could not be compared with the same contract from the previous week, so they were removed from the table (they are included in the daily table).",
+   "summary": "This is the closing flow for the fourth week of November (11/23~11/27). Compared to the closing price of the previous Friday (11/20), WTI rose 2.7% from 83.41 to $85.64, Brent rose from 92.57 to $92.32 (-0.3%), and Dubai Oil remained flat from 87.41 to $87.00 (-0.5%). The won is 0.9% weaker than the dollar (1,330.80 → 1,342.70 won). Precious metals were strong at +2.2% for gold and +4.2% for silver, while the LME continued to be weak at -10.5% for aluminum, -4.3% for copper, and -4.1% for zinc (based on 11/25 official prices). Chinese petrochemical spot prices fell to PP -6.8%, PC -2.6%, and benzene -2.0%, and BDI rose 8.8% from 2,898 to 3,152 points, showing the largest increase this week.",
    "highlights": [
     {
-     "title": "Aluminum spot -10.5%, center of metals weakness this week",
-     "text": "LME aluminum spot fell 10.5% from $3,184.50 on 11/20 to $2,849.00 on 11/25 (3 months $2,760.00). During the same period, spot copper was -4.3%, zinc -4.1%, and nickel -1.8%. On the day of 11/25, tin fell 6.4% from $40,825 to $38,200, and the Public Procurement Service's emission price also fell to 56,380,000 won (-5.2%) for tin and 17,550,000 won (-1.4%) for copper."
+     "title": "WTI $85.64 — surges 2.3% on shortened Thanksgiving day",
+     "text": "WTI January contract rose 2.3% from $83.68 settled on 11/25 to $85.64 shortened on 11/26. Brent also rose 1.9% from 90.64 to $92.36, and Offinet Dubai Oil price jumped 3.3% from $84.19 on 11/25 to $87.00 on 11/26. The 11/27 Asian session was flat at $85.64."
     },
     {
-     "title": "Won 1,343.90 Won — weekly weakening 1.0%",
-     "text": "The standard won/dollar trading rate was 1,343.90 won on 11/26, up 0.30 won from the previous day. Compared to 1,330.80 won on the previous Friday (11/20), it is 13.10 won (1.0%) weaker. The won/yen is 844.37 won, and the won/yuan is 201.57 won."
+     "title": "Won/Dollar 1,342.70 Won — Weekly weakness of 0.9%",
+     "text": "The standard won/dollar trading rate was 1,342.70 won on 11/27, down 1.20 won from the previous day. Compared to 1,330.80 won on the previous Friday (11/20), it is 11.90 won (0.9%) weaker. The won/yen is 842.95 won, and the won/yuan is 201.43 won."
     },
     {
-     "title": "China’s petrochemical spot, PP, LDPE, and HDPE decline together",
-     "text": "11/25 Chinese spot price, PP 9,633.33 yuan (-2.9%), LDPE 10,366.67 yuan (-3.7%), HDPE 10,100.00 yuan (-2.4%), all olefin series fell, and only PVC rose to 4,955 yuan (+3.4%). PC is 13,983.33 yuan (−0.5%), and toluene is 6,083.33 yuan (−2.5%)."
+     "title": "Chinese copper futures 92,220 yuan (+3.9%) — led by late-week rebound",
+     "text": "SHFE copper was at 92,220 yuan on the morning of 11/27, up 3.9% from the previous day's settlement of 88,770 yuan. Shanghai crude oil rose 600.70 yuan (+1.1%), DCE EG 5,289 yuan (+3.1%), and LLDPE 8,314 yuan (+1.8%), and the Public Procurement Service's emission price also increased to 17,900,000 won (+2.0%) for copper and 4,800,000 won (+3.5%) for aluminum."
     },
     {
-     "title": "BDI 3,107 — highest in two months",
-     "text": "The Baltic dry cargo rate index again rose to 3,107 points (+1.3%) on 11/25, the highest since October 2. All lines rose to 5,014 (+1.5%) for Capesize, 2,223 (+2.0%) for Panamax, and 1,814 (+0.2%) for Supramax."
+     "title": "BDI 3,152 — highest since September 29",
+     "text": "The Baltic dry cargo rate index rose to 3,152 points (+45, +1.45%) on 11/26, the highest since September 29. All ships increased to 5,100 (+86) for Capesize, 2,273 (+50) for Panamax, and 1,816 (+2) for Supramax."
     }
    ],
    "groups": [
     {
      "label": "ENERGY & FX — Oil prices and exchange rates",
      "prevHeader": "Friday of the previous week (11/20)",
-     "nowHeader": "This week (11/25 intraday)",
+     "nowHeader": "This week (11/27)",
      "rows": [
       {
        "code": "WTI",
@@ -72,11 +72,11 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 83.41,
-       "price": 83.89,
-       "changePct": 0.58,
-       "change": 0.48,
-       "note": "January contract 11/20 settlement $83.41 → 11/26 intraday price $83.89.",
-       "date": "2026-11-26",
+       "price": 85.64,
+       "changePct": 2.67,
+       "change": 2.23,
+       "note": "January contract 11/20 settlement $83.41 → 11/26 short-term closing price $85.64 (11/27 Asian market flat).",
+       "date": "2026-11-27",
        "sourceName": "Sina Finance NYMEX live quotes",
        "sourceUrl": "https://finance.sina.com.cn/futures/quotes/CL.shtml"
       },
@@ -88,11 +88,11 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 92.57,
-       "price": 90.7,
-       "changePct": -2.02,
-       "change": -1.87,
-       "note": "11/20 settlement $92.57 → 11/26 consecutive previous month $90.70.",
-       "date": "2026-11-26",
+       "price": 92.32,
+       "changePct": -0.27,
+       "change": -0.25,
+       "note": "11/20 $92.57 → 11/26 $92.36 → 11/27 Asian market $92.32.",
+       "date": "2026-11-27",
        "sourceName": "Sina Finance ICE real-time price",
        "sourceUrl": "https://finance.sina.com.cn/futures/quotes/OIL.shtml"
       },
@@ -104,11 +104,11 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 87.41,
-       "price": 84.19,
-       "changePct": -3.68,
-       "change": -3.22,
-       "note": "Offinet 11/20 $87.41 → 11/25 $84.19.",
-       "date": "2026-11-25",
+       "price": 87.0,
+       "changePct": -0.47,
+       "change": -0.41,
+       "note": "Offinet 11/20 $87.41 → 11/26 $87.00.",
+       "date": "2026-11-26",
        "sourceName": "Offinet (Korea National Oil Corporation) international crude oil price",
        "sourceUrl": "https://www.opinet.co.kr/gloptotSelect.do"
       },
@@ -120,11 +120,11 @@
        "unit": "USD/t",
        "decimals": 2,
        "prev": 805.88,
-       "price": 809.0,
-       "changePct": 0.39,
-       "change": 3.12,
-       "note": "11/20 $805.88 → 11/23 $809.00. The 11/24 evaluation price is before disclosure.",
-       "date": "2026-11-23",
+       "price": 801.25,
+       "changePct": -0.57,
+       "change": -4.63,
+       "note": "11/20 $805.88 → 11/25 $801.25. 11/26 Evaluation price is before disclosure.",
+       "date": "2026-11-25",
        "sourceName": "CommodityScope Naphtha CFR Japan Evaluation Price",
        "sourceUrl": "https://commodityscope.com/prices/japan-cfr-naphtha"
       },
@@ -136,11 +136,11 @@
        "unit": "KRW",
        "decimals": 2,
        "prev": 1330.8,
-       "price": 1343.9,
-       "changePct": 0.98,
-       "change": 13.1,
-       "note": "11/20 1,330.80 won → 11/26 notice 1,343.90 won.",
-       "date": "2026-11-26",
+       "price": 1342.7,
+       "changePct": 0.89,
+       "change": 11.9,
+       "note": "11/20 notice 1,330.80 won → 11/27 notice 1,342.70 won.",
+       "date": "2026-11-27",
        "sourceName": "Korea Export-Import Bank announced sales standard rate",
        "sourceUrl": "https://www.koreaexim.go.kr/ir/HPHKIR020M01?apino=2&viewtype=C"
       }
@@ -149,7 +149,7 @@
     {
      "label": "METALS — Metals and precious metals",
      "prevHeader": "Friday of the previous week (11/20)",
-     "nowHeader": "This week (11/25 intraday)",
+     "nowHeader": "This week (11/27)",
      "rows": [
       {
        "code": "AU",
@@ -159,11 +159,11 @@
        "unit": "USD/oz",
        "decimals": 2,
        "prev": 3538.19,
-       "price": 3598.96,
-       "changePct": 1.72,
-       "change": 60.77,
-       "note": "11/20 $3,538.19 → 11/26 $3,598.96 (spot).",
-       "date": "2026-11-26",
+       "price": 3616.46,
+       "changePct": 2.21,
+       "change": 78.27,
+       "note": "11/20 $3,538.19 → 11/27 morning spot $3,616.46.",
+       "date": "2026-11-27",
        "sourceName": "GoldPrice.com Real-Time Spot",
        "sourceUrl": "https://www.goldprice.com/"
       },
@@ -175,11 +175,11 @@
        "unit": "USD/oz",
        "decimals": 2,
        "prev": 41.26,
-       "price": 42.01,
-       "changePct": 1.82,
-       "change": 0.75,
-       "note": "11/20 $41.26 → 11/26 $42.01 (spot).",
-       "date": "2026-11-26",
+       "price": 43.01,
+       "changePct": 4.24,
+       "change": 1.75,
+       "note": "11/20 $41.26 → 11/27 morning spot $43.01.",
+       "date": "2026-11-27",
        "sourceName": "GoldPrice.com Real-Time Spot",
        "sourceUrl": "https://www.goldprice.com/"
       },
@@ -194,7 +194,7 @@
        "price": 11703.0,
        "changePct": -4.31,
        "change": -527.5,
-       "note": "11/20 $12,230.50 → 11/25 $11,703.00 (LME spot). 3 months is $11,758.00.",
+       "note": "LME spot 11/20 $12,230.50 → 11/25 $11,703.00 (11/26 official price not posted).",
        "date": "2026-11-25",
        "sourceName": "Korea Price Information (KPI) LME spot price",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -210,7 +210,7 @@
        "price": 2849.0,
        "changePct": -10.54,
        "change": -335.5,
-       "note": "11/20 $3,184.50 → 11/25 $2,849.00 (LME spot). 3 months is $2,760.00.",
+       "note": "LME spot 11/20 $3,184.50 → 11/25 $2,849.00 (11/26 official price not posted).",
        "date": "2026-11-25",
        "sourceName": "Korea Price Information (KPI) LME spot price",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -226,7 +226,7 @@
        "price": 3520.5,
        "changePct": -4.07,
        "change": -149.5,
-       "note": "11/20 $3,670.00 → 11/24 $3,665.00.",
+       "note": "LME spot 11/20 $3,670.00 → 11/25 $3,520.50.",
        "date": "2026-11-25",
        "sourceName": "Korea Price Information (KPI) LME spot price",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -242,7 +242,7 @@
        "price": 15035.0,
        "changePct": -1.8,
        "change": -275.0,
-       "note": "11/20 $15,310.00 → 11/24 $15,060.00.",
+       "note": "LME spot 11/20 $15,310.00 → 11/25 $15,035.00.",
        "date": "2026-11-25",
        "sourceName": "Korea Price Information (KPI) LME spot price",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -252,7 +252,7 @@
     {
      "label": "PETROCHEM — Petrochemicals and plastics (China spot)",
      "prevHeader": "Friday of the previous week (11/20)",
-     "nowHeader": "This week (11/25 intraday)",
+     "nowHeader": "This week (11/27)",
      "rows": [
       {
        "code": "BZ",
@@ -262,11 +262,11 @@
        "unit": "RMB/t",
        "decimals": 2,
        "prev": 7536.67,
-       "price": 7320.0,
-       "change": -216.67,
-       "changePct": -2.87,
-       "note": "11/20 7,536.67 yuan → 11/25 7,320.00 yuan.",
-       "date": "2026-11-25",
+       "price": 7383.33,
+       "change": -153.34,
+       "changePct": -2.03,
+       "note": "Chinese spot 11/20 7,536.67 yuan → 11/26 7,383.33 yuan.",
+       "date": "2026-11-26",
        "sourceName": "SunSirs·同花顺 China spot price",
        "sourceUrl": "https://www.sunsirs.com/"
       },
@@ -278,11 +278,11 @@
        "unit": "RMB/t",
        "decimals": 2,
        "prev": 10083.33,
-       "price": 9633.33,
-       "change": -450.0,
-       "changePct": -4.46,
-       "note": "11/20 10,083.33 yuan → 11/25 9,633.33 yuan.",
-       "date": "2026-11-25",
+       "price": 9400.0,
+       "change": -683.33,
+       "changePct": -6.78,
+       "note": "Chinese spot 11/20 10,083.33 yuan → 11/26 9,400.00 yuan.",
+       "date": "2026-11-26",
        "sourceName": "SunSirs·同花顺 China spot price",
        "sourceUrl": "https://www.sunsirs.com/"
       },
@@ -294,11 +294,11 @@
        "unit": "RMB/t",
        "decimals": 2,
        "prev": 14116.67,
-       "price": 13983.33,
-       "change": -133.34,
-       "changePct": -0.94,
-       "note": "11/20 14,116.67 yuan → 11/25 13,983.33 yuan.",
-       "date": "2026-11-25",
+       "price": 13750.0,
+       "change": -366.67,
+       "changePct": -2.6,
+       "note": "Chinese spot 11/20 14,116.67 yuan → 11/26 13,750.00 yuan.",
+       "date": "2026-11-26",
        "sourceName": "SunSirs·隆众资讯 China spot price",
        "sourceUrl": "https://www.sunsirs.com/"
       }
@@ -307,7 +307,7 @@
     {
      "label": "SHIPPING & GRAINS — Shipping & Grains",
      "prevHeader": "Friday of the previous week (11/20)",
-     "nowHeader": "This week (11/25 intraday)",
+     "nowHeader": "This week (11/27)",
      "rows": [
       {
        "code": "BDI",
@@ -317,11 +317,11 @@
        "unit": "pts",
        "decimals": 0,
        "prev": 2898,
-       "price": 3107,
-       "changePct": 7.21,
-       "change": 209,
-       "note": "11/20 2,898 → 11/24 3,068.",
-       "date": "2026-11-25",
+       "price": 3152,
+       "changePct": 8.76,
+       "change": 254,
+       "note": "11/20 2,898 points → 11/26 3,152 points. Highest since September 29th.",
+       "date": "2026-11-26",
        "sourceName": "Baltic Shipping Exchange (organized by Reuters·TradingEconomics)",
        "sourceUrl": "https://ko.tradingeconomics.com/commodity/baltic"
       },
@@ -333,11 +333,11 @@
        "unit": "pts",
        "decimals": 0,
        "prev": 4502,
-       "price": 5014,
-       "changePct": 11.37,
-       "change": 512,
-       "note": "11/20 4,502 → 11/24 4,942.",
-       "date": "2026-11-25",
+       "price": 5100,
+       "changePct": 13.28,
+       "change": 598,
+       "note": "11/20 4,502 points → 11/26 5,100 points.",
+       "date": "2026-11-26",
        "sourceName": "Hellenic Shipping News Weekly Baltic Index Report (Week 47)",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -349,11 +349,11 @@
        "unit": "pts",
        "decimals": 0,
        "prev": 2140,
-       "price": 2223,
-       "changePct": 3.88,
-       "change": 83,
-       "note": "11/20 2,140 → 11/24 2,179.",
-       "date": "2026-11-25",
+       "price": 2273,
+       "changePct": 6.21,
+       "change": 133,
+       "note": "11/20 2,140 points → 11/26 2,273 points.",
+       "date": "2026-11-26",
        "sourceName": "Hellenic Shipping News Weekly Baltic Index Report (Week 47)",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -365,11 +365,11 @@
        "unit": "pts",
        "decimals": 0,
        "prev": 1810,
-       "price": 1814,
-       "changePct": 0.22,
-       "change": 4,
-       "note": "11/20 1,810 → 11/24 1,811.",
-       "date": "2026-11-25",
+       "price": 1816,
+       "changePct": 0.33,
+       "change": 6,
+       "note": "11/20 1,810 points → 11/26 1,816 points.",
+       "date": "2026-11-26",
        "sourceName": "Hellenic Shipping News Weekly Baltic Index Report (Week 47)",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -384,7 +384,7 @@
        "price": 1243.25,
        "changePct": 1.84,
        "change": 22.5,
-       "note": "11/20 1,220.75 cents → 11/24 1,234.00 cents.",
+       "note": "CBOT soybean January contract 11/20 1,220.75 cents → 11/25 night session 1,243.25 cents (closed 11/26).",
        "date": "2026-11-26",
        "sourceName": "CME CBOT closing price (KOIMA·Reuters summary)",
        "sourceUrl": "https://www.koimaindex.com/koimaindex/koima/price/retrieveList.do"
@@ -393,40 +393,44 @@
     }
    ],
    "chips": {
-    "label": "Petrochemical Daily (SunSirs China Spot · 11/25)",
-    "note": "SunSirs 11/25 spot price fluctuation rate (viewed 11/26).",
+    "label": "Petrochemical Daily (SunSirs China Spot · 11/26)",
+    "note": "SunSirs 11/26 spot price fluctuation rate (viewed 11/27).",
     "items": [
      {
       "name": "PVC",
-      "changePct": 3.44
+      "changePct": 2.52
+     },
+     {
+      "name": "propylene",
+      "changePct": 1.39
+     },
+     {
+      "name": "LDPE",
+      "changePct": 1.29
      },
      {
       "name": "Benzene",
-      "changePct": 0.0
+      "changePct": 0.87
      },
      {
       "name": "ABS",
-      "changePct": 0.0
-     },
-     {
-      "name": "Styrene",
-      "changePct": -0.11
-     },
-     {
-      "name": "PC",
-      "changePct": -0.47
+      "changePct": -0.29
      },
      {
       "name": "HDPE",
-      "changePct": -2.42
+      "changePct": -0.5
      },
      {
       "name": "Toluene",
-      "changePct": -2.51
+      "changePct": -1.1
+     },
+     {
+      "name": "PC",
+      "changePct": -1.67
      },
      {
       "name": "PP",
-      "changePct": -2.86
+      "changePct": -2.42
      }
     ],
     "sourceName": "SunSirs China Spot Price",
@@ -1486,22 +1490,22 @@
  "weeklyTrend": [
   {
    "name": "WTI",
-   "changePct": -3.03,
+   "changePct": 2.67,
    "unit": "Weekly"
   },
   {
    "name": "Brent",
-   "changePct": -5.29,
+   "changePct": -0.27,
    "unit": "Weekly"
   },
   {
    "name": "Gold",
-   "changePct": 0.87,
+   "changePct": 2.21,
    "unit": "Weekly"
   },
   {
    "name": "Silver",
-   "changePct": 0.07,
+   "changePct": 4.24,
    "unit": "Weekly"
   }
  ],
@@ -1510,124 +1514,124 @@
    "id": "wti",
    "code": "WTI",
    "name": "West Texas Intermediate Crude Oil",
-   "price": 83.89,
+   "price": 85.64,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 0.21,
-   "changePct": 0.25,
-   "changeBasis": "Compared to the settlement price of the previous day (11/25)",
+   "change": 0.0,
+   "changePct": 0.0,
+   "changeBasis": "Compared to the shortened book settlement price of the previous day (11/26)",
    "contract": "January 2027 contract",
-   "date": "2026-11-26",
-   "sourceName": "Yahoo Finance NYMEX January contract · Offinet settlement price",
+   "date": "2026-11-27",
+   "sourceName": "Yahoo Finance NYMEX January contract",
    "sourceUrl": "https://finance.yahoo.com/quote/CL=F",
-   "note": "NYMEX January 11/25 settlement $83.68 (consistent with Offinet notice) → 11/26 Asian market (11:24 Korean time) $83.89. Brent−WTI $6.81."
+   "note": "From the shortened Thanksgiving day (11/26), the price rose 2.3% from 11/25 settlement $83.68 → $85.64. The 11/27 Asian market (11:10 Korean time) was flat at $85.64. Brent−WTI $6.68."
   },
   {
    "id": "brent",
    "code": "BRENT",
    "name": "North Sea Brent crude oil",
-   "price": 90.7,
+   "price": 92.32,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 0.06,
-   "changePct": 0.07,
-   "changeBasis": "Compared to the closing price of the previous day (11/25)",
+   "change": -0.04,
+   "changePct": -0.04,
+   "changeBasis": "Compared to the closing price of the previous day (11/26)",
    "contract": "Nearby Month Consecutive (ICE)",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "sourceName": "Yahoo Finance ICE Brent Front Month Consecutive",
    "sourceUrl": "https://finance.yahoo.com/quote/BZ=F",
-   "note": "ICE Brent front-month consecutive close at $90.64 on 11/25 → $90.70 on 11/26 in Asia, flat. The contract month and standard are different from the 11/25 Brent futures price of $94.61 announced by Offinet, so it was not directly compared."
+   "note": "ICE Brent front-month continuation rose 1.9% from 11/25 $90.64 → 11/26 $92.36, and 11/27 Asian market $92.32. The contract month and standard are different from the 11/26 Brent futures price of $96.57 announced by Offinet, so it was not directly compared."
   },
   {
    "id": "dubai",
    "code": "DUBAI",
    "name": "Dubai Oil",
-   "price": 84.19,
+   "price": 87.0,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 1.59,
-   "changePct": 1.92,
-   "changeBasis": "Compared to the previous day (11/24)",
+   "change": 2.81,
+   "changePct": 3.34,
+   "changeBasis": "Compared to the previous day (11/25)",
    "contract": "Spot (estimated Singapore transaction price)",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "sourceName": "Offinet (Korea National Oil Corporation) international crude oil price",
    "sourceUrl": "https://www.opinet.co.kr/gloptotSelect.do",
-   "note": "Offinet Notice 11/25 $84.19 (11/24 $82.60). In the same table, Brent futures are $94.61 and WTI futures are $83.68."
+   "note": "Offinet Notice 11/26 $87.00 (11/25 $84.19). In the same table, Brent futures are at $96.57, and WTI futures are closed and unannounced (0)."
   },
   {
    "id": "usdkrw",
    "code": "USD/KRW",
    "name": "Won·Dollar",
-   "price": 1343.9,
+   "price": 1342.7,
    "unit": "KRW",
    "decimals": 2,
-   "change": 0.3,
-   "changePct": 0.02,
-   "changeBasis": "In preparation for the previous day’s notice (11/25)",
-   "date": "2026-11-26",
+   "change": -1.2,
+   "changePct": -0.09,
+   "changeBasis": "Compared to the previous day’s notice (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Korea Export-Import Bank announced sales standard rate",
-   "sourceUrl": "https://www.koreaexim.go.kr/site/main/index002",
-   "note": "Korea Export-Import Bank trading standard rate announced on 11/26 1,343.90 won. Up 0.30 won compared to the previous day (11/25) 1,343.60 won (flat rate)."
+   "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
+   "note": "Korea Export-Import Bank trading standard rate announced on 11/27 1,342.70 won. Down 1.20 won (0.09%) from 1,343.90 won the previous day (11/26). The intraday market exchange rate is around 1,342 won."
   },
   {
    "id": "jpykrw100",
    "code": "JPY/KRW",
    "name": "Won·Yen (100 yen)",
-   "price": 844.37,
+   "price": 842.95,
    "unit": "Won/100 yen",
    "decimals": 2,
-   "change": 0.96,
-   "changePct": 0.11,
-   "changeBasis": "In preparation for the previous day’s notice (11/25)",
-   "date": "2026-11-26",
+   "change": -1.42,
+   "changePct": -0.17,
+   "changeBasis": "Compared to the previous day’s notice (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Korea Export-Import Bank announced sales standard rate",
-   "sourceUrl": "https://www.koreaexim.go.kr/site/main/index002",
-   "note": "Based on 100 yen. The price announced on 11/26 was 844.37 won, an increase of 0.96 won compared to 843.41 won on the previous day (11/25)."
+   "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
+   "note": "Based on 100 yen. 842.95 won announced on 11/27, down 1.42 won from 844.37 won the previous day (11/26)."
   },
   {
    "id": "cnykrw",
    "code": "CNY/KRW",
    "name": "Won/Yuan",
-   "price": 201.57,
+   "price": 201.43,
    "unit": "won/yuan",
    "decimals": 2,
-   "change": -0.13,
-   "changePct": -0.06,
-   "changeBasis": "In preparation for the previous day’s notice (11/25)",
-   "date": "2026-11-26",
+   "change": -0.14,
+   "changePct": -0.07,
+   "changeBasis": "Compared to the previous day’s notice (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Korea Export-Import Bank announced sales standard rate",
-   "sourceUrl": "https://www.koreaexim.go.kr/site/main/index002",
-   "note": "Based on Yuan (CNH). The price announced on 11/26 was 201.57 won, down 0.13 won from the previous day (11/25) 201.70 won."
+   "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
+   "note": "Based on Yuan (CNH). The price announced on 11/27 was 201.43 won, down 0.14 won from the previous day (11/26) 201.57 won."
   },
   {
    "id": "btc",
    "code": "BTC",
    "name": "Bitcoin",
-   "price": 60806,
+   "price": 61199,
    "unit": "USD",
    "decimals": 0,
-   "change": 1616.0,
-   "changePct": 2.73,
+   "change": 341.0,
+   "changePct": 0.56,
    "changeBasis": "24-hour readiness (CoinGecko)",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "sourceName": "CoinGecko spot price",
    "sourceUrl": "https://www.coingecko.com/en/coins/bitcoin",
-   "note": "CoinGecko dollar spot $60,806 (+2.73% in 24 hours). At the same time, Upbit won 81,486,000 won."
+   "note": "CoinGecko dollar spot $61,199 (+0.56% in 24 hours). At the same time, Upbit won 82,179,875 won."
   },
   {
    "id": "eth",
    "code": "ETH",
    "name": "Ethereum",
-   "price": 1700,
+   "price": 1715,
    "unit": "USD",
    "decimals": 0,
-   "change": 43.0,
-   "changePct": 2.62,
+   "change": 13.0,
+   "changePct": 0.74,
    "changeBasis": "24-hour readiness (CoinGecko)",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "sourceName": "CoinGecko spot price",
    "sourceUrl": "https://www.coingecko.com/en/coins/ethereum",
-   "note": "CoinGecko dollar spot $1,700.13 (+2.62% in 24 hours). At the same time, Upbit won 2.278 million won."
+   "note": "CoinGecko dollar spot $1,714.71 (+0.74% in 24 hours). At the same time, Upbit won was 2,302,550 won."
   }
  ],
  "commodities": [
@@ -1637,15 +1641,15 @@
    "nameEn": "Gold",
    "group": "metal",
    "grade": "1 troy ounce spot",
-   "price": 3598.96,
+   "price": 3616.46,
    "unit": "USD/oz",
-   "change": 29.91,
-   "changePct": 0.84,
-   "changeBasis": "Compared to the snapshot of the previous day (11/25)",
-   "date": "2026-11-26",
+   "change": 17.5,
+   "changePct": 0.49,
+   "changeBasis": "Compared to the snapshot of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Swissquote Real-Time Spot (XAU/USD)",
    "sourceUrl": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD",
-   "note": "Swissquote spot $3,598.96 (11:57, median buy/sell price). It rose 0.8% from $3,569.05 the previous morning."
+   "note": "Swissquote spot $3,616.46 (11:10, median buy/sell price). It rose 0.5% from $3,598.96 the previous morning."
   },
   {
    "code": "AG",
@@ -1653,15 +1657,15 @@
    "nameEn": "Silver",
    "group": "metal",
    "grade": "1 troy ounce spot",
-   "price": 42.01,
+   "price": 43.01,
    "unit": "USD/oz",
-   "change": 0.72,
-   "changePct": 1.74,
-   "changeBasis": "Compared to the snapshot of the previous day (11/25)",
-   "date": "2026-11-26",
+   "change": 1.0,
+   "changePct": 2.38,
+   "changeBasis": "Compared to the snapshot of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Swissquote Real-Time Spot (XAG/USD)",
    "sourceUrl": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAG/USD",
-   "note": "Swissquote spot $42.01 (11:57). Up 1.7% from $41.29 the previous morning."
+   "note": "Swissquote Spot $43.01 (11:10). Up 2.4% from $42.01 the previous morning."
   },
   {
    "code": "CU",
@@ -1769,16 +1773,16 @@
    "nameEn": "Copper · PPS",
    "group": "metal",
    "grade": "Selling price of stockpiled goods (including VAT)",
-   "price": 17550000,
+   "price": 17900000,
    "unit": "won/ton",
    "decimals": 0,
-   "change": -250000,
-   "changePct": -1.4,
-   "changeBasis": "Compared to the previous day’s announcement (11/25)",
-   "date": "2026-11-26",
+   "change": 350000,
+   "changePct": 1.99,
+   "changeBasis": "Compared to the emission price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sales price of raw materials stockpiled by the Public Procurement Service",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "Public Procurement Service 11/26 sales price (99.99% or more, VAT included, actual customer limit). 11/25 Down 1.4% from 17,800,000 won."
+   "note": "Public Procurement Service 11/27 sales price (99.99% or more, VAT included, actual customer limit). It rose 2.0% from 11/26 17,550,000 won."
   },
   {
    "code": "AL-PPS",
@@ -1786,16 +1790,16 @@
    "nameEn": "Aluminum · PPS",
    "group": "metal",
    "grade": "Selling price of stockpiled goods (including VAT)",
-   "price": 4640000,
+   "price": 4800000,
    "unit": "won/ton",
    "decimals": 0,
-   "change": 50000,
-   "changePct": 1.09,
-   "changeBasis": "Compared to the previous day’s announcement (11/25)",
-   "date": "2026-11-26",
+   "change": 160000,
+   "changePct": 3.45,
+   "changeBasis": "Compared to the emission price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sales price of raw materials stockpiled by the Public Procurement Service",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "Public Procurement Service 11/26 selling price (made in Western Europe, VAT included). It rose 1.1% from 11/25 4,590,000 won."
+   "note": "Public Procurement Service 11/27 selling price (made in Western Europe, VAT included). It rose 3.5% from 11/26 4,640,000 won. Non-Western products cost 4,770,000 won."
   },
   {
    "code": "PB-PPS",
@@ -1803,16 +1807,16 @@
    "nameEn": "Lead · PPS",
    "group": "metal",
    "grade": "Selling price of stockpiled goods (including VAT)",
-   "price": 2910000,
+   "price": 2990000,
    "unit": "won/ton",
    "decimals": 0,
-   "change": 0,
-   "changePct": 0.0,
-   "changeBasis": "Compared to the previous day’s announcement (11/25)",
-   "date": "2026-11-26",
+   "change": 80000,
+   "changePct": 2.75,
+   "changeBasis": "Compared to the emission price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sales price of raw materials stockpiled by the Public Procurement Service",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "Public Procurement Service 11/26 sales price (over 99.99%). Same as the day before."
+   "note": "Public Procurement Service 11/27 sales price (over 99.99%). It rose 2.8% from 2,910,000 won on 11/26."
   },
   {
    "code": "SN-PPS",
@@ -1823,13 +1827,13 @@
    "price": 56380000,
    "unit": "won/ton",
    "decimals": 0,
-   "change": -3110000,
-   "changePct": -5.23,
-   "changeBasis": "Compared to the previous day’s announcement (11/25)",
+   "change": 0.0,
+   "changePct": 0.0,
+   "changeBasis": "11/26 sale price (not posted in 11/27 announcement)",
    "date": "2026-11-26",
    "sourceName": "Sales price of raw materials stockpiled by the Public Procurement Service",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "Public Procurement Service 11/26 sales price (over 99.90%). It fell 5.2% from 59,490,000 won on 11/25 (reflecting the sharp drop in LME tin)."
+   "note": "There was no comment item in the 11/27 sales notice, so the 11/26 sale price (KRW 56,380,000) was left as is."
   },
   {
    "code": "NAP",
@@ -1837,15 +1841,15 @@
    "nameEn": "Naphtha",
    "group": "petrochem",
    "grade": "CFR Japan public evaluation price",
-   "price": 809.0,
+   "price": 801.25,
    "unit": "USD/t",
-   "change": 3.12,
-   "changePct": 0.39,
-   "changeBasis": "New evaluation price not announced (11/20 value maintained)",
-   "date": "2026-11-23",
-   "sourceName": "CommodityScope Naphtha Assessment",
-   "sourceUrl": "https://commodityscope.com/markets",
-   "note": "CommodityScope CFR Japan valuation 11/23 $809.00 (+3.13). The 11/24 evaluation price has not yet been released."
+   "change": 13.0,
+   "changePct": 1.65,
+   "changeBasis": "Compared to the previous evaluation price (11/24)",
+   "date": "2026-11-25",
+   "sourceName": "CommodityScope Naphtha CFR Japan Evaluation Price",
+   "sourceUrl": "https://commodityscope.com/markets/naphtha-japan-cfr",
+   "note": "CFR Japan valuation 11/25 USD 801.25/ton (+13.00, +1.6%). The 11/26 evaluation price has not been released yet."
   },
   {
    "code": "NAP-SG",
@@ -1853,16 +1857,16 @@
    "nameEn": "Naphtha · Singapore",
    "group": "petrochem",
    "grade": "International petroleum product prices (per barrel)",
-   "price": 86.44,
+   "price": 88.09,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 0.2,
-   "changePct": 0.23,
-   "changeBasis": "Compared to the previous day (11/20)",
-   "date": "2026-11-23",
+   "change": 2.23,
+   "changePct": 2.6,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "Offinet (Korea National Oil Corporation) International Petroleum Product Prices",
    "sourceUrl": "https://www.opinet.co.kr/glopopdSelect.do",
-   "note": "Offinet International Petroleum Product Price Singapore naphtha spot $86.44/barrel ($727.09 per ton)."
+   "note": "Offinet Singapore naphtha spot 11/26 $88.09/barrel (11/25 $85.86). In the same table, gasoline is $91.72 and diesel is $135.82."
   },
   {
    "code": "C2",
@@ -1886,15 +1890,15 @@
    "nameEn": "Propylene",
    "group": "petrochem",
    "grade": "Grade 1",
-   "price": 9199.0,
+   "price": 9326.5,
    "unit": "RMB/t",
-   "change": -82.5,
-   "changePct": -0.89,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": 127.5,
+   "changePct": 1.39,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "Chinese propylene 11/25 9,199.00 yuan (11/24 9,281.50 yuan). Compared to 11,220 yuan in early November, it is -18%."
+   "note": "China propylene 11/26 9,326.50 yuan (11/25 9,199.00 yuan)."
   },
   {
    "code": "BZ",
@@ -1902,15 +1906,15 @@
    "nameEn": "Benzene",
    "group": "petrochem",
    "grade": "Grade 1 (purity 99.90% or higher)",
-   "price": 7320.0,
+   "price": 7383.33,
    "unit": "RMB/t",
-   "change": 0.0,
-   "changePct": 0.0,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": 63.33,
+   "changePct": 0.87,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "Chinese pure benzene 11/25 7,320.00 yuan, same as the previous day."
+   "note": "Chinese pure benzene 11/26 7,383.33 yuan (11/25 7,320.00 yuan)."
   },
   {
    "code": "TOL",
@@ -1918,15 +1922,15 @@
    "nameEn": "Toluene",
    "group": "petrochem",
    "grade": "Grade 1",
-   "price": 6083.33,
+   "price": 6016.67,
    "unit": "RMB/t",
-   "change": -156.67,
-   "changePct": -2.51,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": -66.66,
+   "changePct": -1.1,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "Chinese toluene 11/25 6,083.33 yuan (11/24 6,240.00 yuan)."
+   "note": "Chinese toluene 11/26 6,016.67 yuan (11/25 6,083.33 yuan)."
   },
   {
    "code": "SM",
@@ -1936,13 +1940,13 @@
    "grade": "Grade 1 (purity 99.8% or higher)",
    "price": 9310.0,
    "unit": "RMB/t",
-   "change": -10.0,
-   "changePct": -0.11,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": 0.0,
+   "changePct": 0.0,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "Chinese styrene monomer 11/25 9,310.00 yuan (11/24 9,320.00 yuan)."
+   "note": "Chinese styrene monomer 11/26 9,310.00 yuan (11/25 9,310.00 yuan)."
   },
   {
    "code": "PC",
@@ -1950,15 +1954,15 @@
    "nameEn": "Polycarbonate",
    "group": "petrochem",
    "grade": "Normal rating",
-   "price": 13983.33,
+   "price": 13750.0,
    "unit": "RMB/t",
-   "change": -66.67,
-   "changePct": -0.47,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": -233.33,
+   "changePct": -1.67,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "Chinese polycarbonate 11/25 13,983.33 yuan (11/24 14,050.00 yuan). It is −6.6% compared to 14,966.67 yuan in early November."
+   "note": "Chinese polycarbonate 11/26 13,750.00 yuan (11/25 13,983.33 yuan)."
   },
   {
    "code": "PMMA",
@@ -1970,11 +1974,11 @@
    "unit": "RMB/t",
    "change": 0.0,
    "changePct": 0.0,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "China PMMA 11/25 14,733.33 yuan, the same as the previous day."
+   "note": "China PMMA 11/26 14,733.33 yuan (11/25 14,733.33 yuan)."
   },
   {
    "code": "PP",
@@ -1982,15 +1986,15 @@
    "nameEn": "PP",
    "group": "petrochem",
    "grade": "L5E89 (Raffia)",
-   "price": 9633.33,
+   "price": 9400.0,
    "unit": "RMB/t",
-   "change": -283.34,
-   "changePct": -2.86,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": -233.33,
+   "changePct": -2.42,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "China PP 11/25 9,633.33 yuan (11/24 9,916.67 yuan)."
+   "note": "China PP 11/26 9,400.00 Yuan (11/25 9,633.33 Yuan)."
   },
   {
    "code": "LDPE",
@@ -1998,15 +2002,15 @@
    "nameEn": "LDPE",
    "group": "petrochem",
    "grade": "2426H (Film)",
-   "price": 10366.67,
+   "price": 10500.0,
    "unit": "RMB/t",
-   "change": -400.0,
-   "changePct": -3.72,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": 133.33,
+   "changePct": 1.29,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "China LDPE 11/25 10,366.67 yuan (11/24 10,766.67 yuan)."
+   "note": "China LDPE 11/26 10,500.00 yuan (11/25 10,366.67 yuan)."
   },
   {
    "code": "HDPE",
@@ -2014,15 +2018,15 @@
    "nameEn": "HDPE",
    "group": "petrochem",
    "grade": "5000S (injection)",
-   "price": 10100.0,
+   "price": 10037.5,
    "unit": "RMB/t",
-   "change": -250.0,
-   "changePct": -2.42,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": -50.0,
+   "changePct": -0.5,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "China HDPE 11/25 10,100.00 Yuan (11/24 10,350.00 Yuan)."
+   "note": "China HDPE 11/26 10,037.50 yuan (11/25 10,087.50 yuan)."
   },
   {
    "code": "ABS",
@@ -2030,15 +2034,15 @@
    "nameEn": "ABS",
    "group": "petrochem",
    "grade": "Normal rating",
-   "price": 11433.33,
+   "price": 11400.0,
    "unit": "RMB/t",
-   "change": 0.0,
-   "changePct": 0.0,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": -33.33,
+   "changePct": -0.29,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "China ABS 11/25 11,433.33 yuan, same as the previous day."
+   "note": "China ABS 11/26 11,400.00 yuan (11/25 11,433.33 yuan)."
   },
   {
    "code": "PVC",
@@ -2046,15 +2050,15 @@
    "nameEn": "PVC",
    "group": "petrochem",
    "grade": "SG5",
-   "price": 4955.0,
+   "price": 5080.0,
    "unit": "RMB/t",
-   "change": 165.0,
-   "changePct": 3.44,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": 125.0,
+   "changePct": 2.52,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "SunSirs China Spot Price",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "Chinese PVC 11/25 4,955.00 yuan (11/24 4,790.00 yuan). This is the item with the highest increase on this day."
+   "note": "Chinese PVC 11/26 5,080.00 yuan (11/25 4,955.00 yuan)."
   },
   {
    "code": "BDI",
@@ -2062,16 +2066,16 @@
    "nameEn": "Baltic Dry Index",
    "group": "shipping",
    "grade": "Composite Index (Cape 40%, Panamax 30%, Supramax 30%)",
-   "price": 3107,
+   "price": 3152,
    "unit": "pts",
    "decimals": 0,
-   "change": 39,
-   "changePct": 1.27,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": 45,
+   "changePct": 1.45,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "Baltic Shipping Exchange (as cited by Reuters)",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "Baltic Dry Cargo Freight Index 11/25 3,107 points (+39). It is the highest since October 2nd."
+   "note": "Baltic Dry Cargo Freight Index 11/26 3,152 points (+45, +1.45%). It is the highest since September 29th. Cape size 5,100, Panamax 2,273 (+50), Supramax 1,816 (+2)."
   },
   {
    "code": "BCI",
@@ -2079,16 +2083,16 @@
    "nameEn": "Capesize Index",
    "group": "shipping",
    "grade": "150,000 tons of iron ore and coal",
-   "price": 5014,
+   "price": 5100,
    "unit": "pts",
    "decimals": 0,
-   "change": 72,
-   "changePct": 1.46,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": 86,
+   "changePct": 1.72,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "Baltic Shipping Exchange (as cited by Reuters)",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "Capesize 11/25 5,014 points (+72). It is the highest since October 2nd."
+   "note": "Baltic Capesize 11/26 5,100 points (+86)."
   },
   {
    "code": "BPI",
@@ -2096,16 +2100,16 @@
    "nameEn": "Panamax Index",
    "group": "shipping",
    "grade": "60,000 to 70,000 tons of grain and coal",
-   "price": 2223,
+   "price": 2273,
    "unit": "pts",
    "decimals": 0,
-   "change": 44,
-   "changePct": 2.02,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": 50,
+   "changePct": 2.25,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "Baltic Shipping Exchange (as cited by Reuters)",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "Panamax 11/25 2,223 points (+44). It is the highest since October 20th."
+   "note": "Baltic Panamax 11/26 2,273 points (+50)."
   },
   {
    "code": "BSI",
@@ -2113,16 +2117,16 @@
    "nameEn": "Supramax Index",
    "group": "shipping",
    "grade": "48,000 to 60,000 tons",
-   "price": 1814,
+   "price": 1816,
    "unit": "pts",
    "decimals": 0,
-   "change": 3,
-   "changePct": 0.17,
-   "changeBasis": "Compared to the previous day (11/24)",
-   "date": "2026-11-25",
+   "change": 2,
+   "changePct": 0.11,
+   "changeBasis": "Compared to the previous day (11/25)",
+   "date": "2026-11-26",
    "sourceName": "Baltic Shipping Exchange (as cited by Reuters)",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "Supramax 11/25 1,814 points (+3)."
+   "note": "Baltic Supramax 11/26 1,816 points (+2)."
   },
   {
    "code": "FAO-FPI",
@@ -2211,37 +2215,37 @@
   },
   {
    "code": "ZW",
-   "name": "CBOT Wheat (December contract)",
+   "name": "CBOT Wheat (March contract)",
    "nameEn": "Wheat",
    "group": "agri",
-   "grade": "CME CBOT Futures · December 2026",
+   "grade": "CME CBOT Futures March 2027",
    "price": 586.5,
    "unit": "¢/bu",
    "decimals": 2,
    "change": -1.0,
    "changePct": -0.17,
-   "changeBasis": "Compared to the closing price of the previous day (11/25)",
+   "changeBasis": "Compared to the closing price of the previous trading day (11/25)",
    "date": "2026-11-26",
    "sourceName": "Yahoo Finance CBOT Wheat (March contract)",
    "sourceUrl": "https://finance.yahoo.com/quote/ZW=F",
-   "note": "CBOT wheat was carried over to March contract. 11/25 closing price 587.50 cents → 11/26 586.50 cents (Korean time 04:19)."
+   "note": "Based on CBOT wheat March contract (2027). 11/25 night session closing price 587.50 cents → 11/26 morning session closing price 586.50 cents. Closed on 11/26 for Thanksgiving, night market on 11/27 resumes at 10 a.m. Korean time."
   },
   {
    "code": "ZC",
-   "name": "CBOT Corn (December contract)",
+   "name": "CBOT Corn (March contract)",
    "nameEn": "Corn",
    "group": "agri",
-   "grade": "CME CBOT Futures · December 2026",
+   "grade": "CME CBOT Futures March 2027",
    "price": 456.25,
    "unit": "¢/bu",
    "decimals": 2,
    "change": -0.25,
    "changePct": -0.05,
-   "changeBasis": "Compared to the closing price of the previous day (11/25)",
+   "changeBasis": "Compared to the closing price of the previous trading day (11/25)",
    "date": "2026-11-26",
    "sourceName": "Yahoo Finance CBOT Corn (March contract)",
    "sourceUrl": "https://finance.yahoo.com/quote/ZC=F",
-   "note": "CBOT corn was carried over to March (contract month is different from December 439.75 cents). 11/25 456.50 → 11/26 456.25 cents."
+   "note": "Based on CBOT corn March contract (2027). The contract month is different from the December contract (439.75 cents). 11/25 456.50 → 11/26 456.25 cents in the morning. Closed on 11/26 for Thanksgiving."
   },
   {
    "code": "ZS",
@@ -2254,11 +2258,11 @@
    "decimals": 2,
    "change": -0.75,
    "changePct": -0.06,
-   "changeBasis": "Compared to the closing price of the previous day (11/25)",
+   "changeBasis": "Compared to the closing price of the previous trading day (11/25)",
    "date": "2026-11-26",
    "sourceName": "Yahoo Finance CBOT Soybean (January contract)",
    "sourceUrl": "https://finance.yahoo.com/quote/ZS=F",
-   "note": "CBOT soybean January contract 11/25 1,244.00 → 11/26 1,243.25 cents, flat."
+   "note": "CBOT soybean January contract 11/25 1,244.00 → 11/26 morning, unchanged at 1,243.25 cents. Closed on 11/26 for Thanksgiving."
   },
   {
    "code": "SHFE-CU",
@@ -2266,16 +2270,16 @@
    "nameEn": "Copper · SHFE",
    "group": "chinafutures",
    "grade": "cu2701 (January 2027) main contract",
-   "price": 90730,
+   "price": 92220,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 970,
-   "changePct": 1.08,
-   "changeBasis": "Compared to the settlement price of the previous day (11/25)",
-   "date": "2026-11-26",
+   "change": 3450,
+   "changePct": 3.89,
+   "changeBasis": "Compared to the settlement price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sina Finance Chinese futures delayed price",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/CU0.shtml",
-   "note": "SHFE copper flagship 11/26 10:36 AM 90,730 yuan. It rebounded 1.1% from the 11/25 settlement of 89,760 yuan."
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-CU.shtml",
+   "note": "SHFE copper flagship 11/27 92,220 yuan in the morning. It rose 3.9% compared to 88,770 yuan settled on 11/26. This is the item with the highest increase on this day."
   },
   {
    "code": "SHFE-AL",
@@ -2283,16 +2287,16 @@
    "nameEn": "Aluminum · SHFE",
    "group": "chinafutures",
    "grade": "al2701 (January 2027) main contract",
-   "price": 21260,
+   "price": 21365,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 240,
-   "changePct": 1.14,
-   "changeBasis": "Compared to the settlement price of the previous day (11/25)",
-   "date": "2026-11-26",
+   "change": 365,
+   "changePct": 1.74,
+   "changeBasis": "Compared to the settlement price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sina Finance Chinese futures delayed price",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/AL0.shtml",
-   "note": "SHFE Aluminum 11/26 21,260 yuan in the morning (11/25 settlement 21,020 yuan)."
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-AL.shtml",
+   "note": "SHFE Aluminum 11/27 am 21,365 yuan (11/26 settlement 21,000 yuan)."
   },
   {
    "code": "SHFE-SC",
@@ -2300,16 +2304,16 @@
    "nameEn": "Crude Oil · INE/SHFE",
    "group": "chinafutures",
    "grade": "sc2701 (January 2027) main contract",
-   "price": 595.1,
+   "price": 600.7,
    "unit": "RMB/bbl",
    "decimals": 1,
-   "change": 17.2,
-   "changePct": 2.98,
-   "changeBasis": "Compared to the settlement price of the previous day (11/25)",
-   "date": "2026-11-26",
+   "change": 6.7,
+   "changePct": 1.13,
+   "changeBasis": "Compared to the settlement price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sina Finance Chinese futures delayed price",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SC0.shtml",
-   "note": "Shanghai crude oil (SC) 11/26 am 595.10 yuan (11/25 settlement 577.90 yuan). It rose 3.0% following the rebound in international oil prices."
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-SC.shtml",
+   "note": "Shanghai crude oil (SC) 600.70 yuan in the morning on 11/27 (594.00 yuan settled on 11/26). Following the strength of international oil prices, it exceeded 600 yuan."
   },
   {
    "code": "DCE-PP",
@@ -2317,16 +2321,16 @@
    "nameEn": "PP · DCE",
    "group": "chinafutures",
    "grade": "pp2701 (January 2027) main contract",
-   "price": 8737,
+   "price": 8849,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 170,
-   "changePct": 1.98,
-   "changeBasis": "Compared to the settlement price of the previous day (11/25)",
-   "date": "2026-11-26",
+   "change": 87,
+   "changePct": 0.99,
+   "changeBasis": "Compared to the settlement price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sina Finance Chinese futures delayed price",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/PP0.shtml",
-   "note": "DCE PP 11/26 8,737 yuan in the morning (11/25 settlement 8,567 yuan)."
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-PP.shtml",
+   "note": "DCE PP 11/27 8,849 yuan in the morning (11/26 settlement 8,762 yuan)."
   },
   {
    "code": "DCE-L",
@@ -2334,16 +2338,16 @@
    "nameEn": "LLDPE · DCE",
    "group": "chinafutures",
    "grade": "l2701 (January 2027) main contract",
-   "price": 8163,
+   "price": 8314,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 267,
-   "changePct": 3.38,
-   "changeBasis": "Compared to the settlement price of the previous day (11/25)",
-   "date": "2026-11-26",
+   "change": 145,
+   "changePct": 1.78,
+   "changeBasis": "Compared to the settlement price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sina Finance Chinese futures delayed price",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/L0.shtml",
-   "note": "DCE LLDPE 11/26 8,163 yuan in the morning (11/25 settlement 7,896 yuan)."
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-L.shtml",
+   "note": "DCE LLDPE 11/27 8,314 yuan in the morning (11/26 settlement 8,169 yuan)."
   },
   {
    "code": "DCE-V",
@@ -2351,16 +2355,16 @@
    "nameEn": "PVC · DCE",
    "group": "chinafutures",
    "grade": "v2701 (January 2027) main contract",
-   "price": 5048,
+   "price": 5062,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 109,
-   "changePct": 2.21,
-   "changeBasis": "Compared to the settlement price of the previous day (11/25)",
-   "date": "2026-11-26",
+   "change": 14,
+   "changePct": 0.28,
+   "changeBasis": "Compared to the settlement price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sina Finance Chinese futures delayed price",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/V0.shtml",
-   "note": "DCE PVC 11/26 5,048 yuan in the morning (11/25 settlement 4,939 yuan)."
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-V.shtml",
+   "note": "DCE PVC 11/27 5,062 yuan in the morning (11/26 settlement 5,048 yuan)."
   },
   {
    "code": "DCE-EG",
@@ -2368,16 +2372,16 @@
    "nameEn": "EG · DCE",
    "group": "chinafutures",
    "grade": "eg2701 (January 2027) main contract",
-   "price": 5163,
+   "price": 5289,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 233,
-   "changePct": 4.73,
-   "changeBasis": "Compared to the settlement price of the previous day (11/25)",
-   "date": "2026-11-26",
+   "change": 160,
+   "changePct": 3.12,
+   "changeBasis": "Compared to the settlement price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sina Finance Chinese futures delayed price",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/EG0.shtml",
-   "note": "DCE monoethylene glycol 11/26 5,163 yuan in the morning (11/25 settlement 4,930 yuan). The increase on this day was the largest."
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-EG.shtml",
+   "note": "DCE monoethylene glycol 11/27 am 5,289 yuan (11/26 settlement 5,129 yuan). This is the item with the highest increase on this day."
   },
   {
    "code": "ZCE-TA",
@@ -2385,16 +2389,16 @@
    "nameEn": "PTA · ZCE",
    "group": "chinafutures",
    "grade": "TA701 (January 2027) main contract",
-   "price": 6068,
+   "price": 6088,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 50,
-   "changePct": 0.83,
-   "changeBasis": "Compared to the settlement price of the previous day (11/25)",
-   "date": "2026-11-26",
+   "change": 12,
+   "changePct": 0.2,
+   "changeBasis": "Compared to the settlement price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sina Finance Chinese futures delayed price",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/TA0.shtml",
-   "note": "ZCE PTA 11/26 6,068 yuan in the morning (11/25 settlement 6,018 yuan)."
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/ZCE-TA.shtml",
+   "note": "ZCE PTA 11/27 6,088 yuan in the morning (11/26 settlement 6,076 yuan)."
   },
   {
    "code": "ZCE-MA",
@@ -2402,16 +2406,16 @@
    "nameEn": "Methanol · ZCE",
    "group": "chinafutures",
    "grade": "MA701 (January 2027) main contract",
-   "price": 3153,
+   "price": 3150,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 24,
-   "changePct": 0.77,
-   "changeBasis": "Compared to the settlement price of the previous day (11/25)",
-   "date": "2026-11-26",
+   "change": -16,
+   "changePct": -0.51,
+   "changeBasis": "Compared to the settlement price of the previous day (11/26)",
+   "date": "2026-11-27",
    "sourceName": "Sina Finance Chinese futures delayed price",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/MA0.shtml",
-   "note": "ZCE methanol 11/26 3,153 yuan in the morning (11/25 settlement 3,129 yuan)."
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/ZCE-MA.shtml",
+   "note": "ZCE methanol fell slightly to 3,150 yuan on the morning of 11/27 (3,166 yuan settled on 11/26)."
   },
   {
    "code": "SCFI",
@@ -2654,30 +2658,31 @@
  ],
  "notes": [
   "All prices are confirmed from free and public sources. Paid index-only items are not estimated and not indicated.",
-  "The LME zinc, lead, nickel, and tin are the LME official spot (Cash) settlement price (11/25: zinc 3,520.50, lead 1,792.00, nickel 15,035.00, tin $38,200.00), and the copper and aluminum in the table are the 3-month futures official price (11/25: copper) 11,758.00·Aluminum $2,760.00), so the standards are different. The source is the Westmetall table, which is a direct translation of the LME official price.",
+  "The LME zinc, lead, nickel, and tin are the LME official spot (Cash) settlement price (11/25: zinc 3,520.50, lead 1,792.00, nickel 15,035.00, tin $38,200.00), and the copper and aluminum in the table are the 3-month futures official price (11/25: copper) 11,758.00·Aluminum $2,760.00), so the standards are different. The 11/26 official price had not yet been published at the time of inquiry, so the 11/25 value was retained. The source is the Westmetall table, which is a direct translation of the LME official price.",
   "Petrochemical and plastic raw materials are priced at domestic Chinese spot prices (yuan/ton), which differ from Korean import negotiators depending on grade, volume, and freight.",
-  "Nafta was carried in two ways. The CFR Japan (MOPJ) public valuation is $809.00/ton (11/23), and the Singapore spot price of Offinet (Korea National Oil Corporation) international petroleum product price is $86.44/barrel (11/23, $727.09 per ton). The units are different so they cannot be compared directly.",
-  "BDI, Capesize, Panamax, and Supramax are the Baltic Shipping Exchange indices and are the closing prices on Wednesday, November 25 (BDI 3,107, BCI 5,014, BPI 2,223, BSI 1,814). We even reflected the announcement made around 21:00 Korean time.",
+  "Nafta was carried in two ways. The CFR Japan (MOPJ) public valuation is $801.25/ton (11/25, +1.6%), and the Singapore spot price of Offinet (Korea National Oil Corporation) international petroleum product price is $88.09/barrel (11/26, $85.86 the previous day). The units are different so they cannot be directly compared.",
+  "BDI, Capesize, Panamax, and Supramax are the Baltic Shipping Exchange indices and are the closing prices on Thursday, November 26 (BDI 3,152, BCI 5,100, BPI 2,273, BSI 1,816). BDI is at its highest since September 29th.",
   "The FAO food and grain price index is a monthly index and is the October 2026 value (announced on November 6). The FAO announcement is 133.9 (−1.6 points, −1.2%) for food and 116.8 (−5.5 points, −4.5%) for grains, which is slightly different from the KREI screen display (−1.7 points for food).",
-  "CBOT wheat and corn were carried over to the March contract, carrying the 11/26 consecutive closing prices in cents/bushel, and soybeans were carried over to the January contract. The contract month is different from the December contract (wheat 569.75, corn 434.00 cents), so the prices cannot be directly compared. The domestic import price is USD/ton based on customs clearance in October 2026 according to the Agricultural and Fishery Products Trade Information.",
+  "CBOT wheat and corn are carried forward to March, carrying the closing prices of previous months in cents/bushel, and soybeans are carried to January. Since November 26th is closed for Thanksgiving, the 11/25 night session (11/26 dawn Korean time) values ​​are the latest, and the night session on November 27th resumed at 10 a.m. Korean time. The domestic import price is USD/ton based on customs clearance in October 2026 according to the Agricultural and Fishery Products Trade Information.",
   "Crypto is traded 24 hours a day and has different reference days. The price and fluctuation rate are based on the CoinGecko dollar spot and 24-hour fluctuation rate, and the won price is based on the Upbit won market at the same time.",
   "LME copper and aluminum are based on 3-month futures prices, and spot settlement prices are written in the notes for each item.",
-  "The Public Procurement Service's stockpile release price includes VAT and is a sales price within the limits of registered actual consumers, and cannot be directly compared with the LME international price.",
+  "The Public Procurement Service's stockpile release price includes VAT and is a sales price within the limits of registered actual consumers, and cannot be directly compared with the LME international price. In the 11/27 announcement, there were only aluminum, copper, and lead, so tin maintained its value of 11/26.",
   "Korea Petrochemical Association (KPIA) raw material and resin prices were not included because they cannot be checked for free. kpia.or.kr had a connection error (500·503) and the association's data was moved to kcia.kr (Korea Chemical Industry Association), and the association's price and statistics DB is only for paid users (1.2 million won per year, 2 devices). No estimates were included.",
-  "The exchange rate is the trading standard rate announced by the Export-Import Bank of Korea (announced once a business day, around 11 a.m.), and is different from the exchange rate at bank counters and card payments. The 11/26 notice is 1,343.90 won for won/dollar, 844.37 won for won/yen, and 201.57 won for won/yuan. At the 11/25 notice (1,343.60, 843.41, 201.70), the won, dollar and won and yen rose slightly, while the won and yuan fell.",
-  "Chinese futures are the values ​​of the main contracts of the Shanghai Futures Exchange (SHFE), Dalian Commodity Exchange (DCE), and Zhengzhou Commodity Exchange (ZCE) read at the Sina Finance delayed price. This is the intraday value on the morning of November 26th (10:36 Korean time), and the previous day's value is the settlement price on November 25th.",
+  "The exchange rate is the trading standard rate announced by the Export-Import Bank of Korea (announced once a business day, around 11 a.m.), and is different from the exchange rate at bank counters and card payments. The 11/27 notice was 1,342.70 won/dollar, 842.95 won/yen, 201.43 won/yuan, all slightly lower than 11/26 (1,343.90, 844.37, 201.57).",
+  "Chinese futures are the values ​​of the main contracts of the Shanghai Futures Exchange (SHFE), Dalian Commodity Exchange (DCE), and Zhengzhou Commodity Exchange (ZCE) read at the Sina Finance delayed price. This is the intraday value on the morning of November 27th, and the previous day's value is the settlement price on November 26th.",
   "SHFE copper/aluminum is yuan/ton, Shanghai Crude Oil (SC) is yuan/barrel. The LME dollar notation and the exchange rate, VAT, and rating are different, so direct comparison is not possible.",
-  "The fluctuations of DCE PP·LLDPE·PVC·EG and ZCE PTA·methanol were calculated as the difference from the settlement price on November 25.",
+  "The fluctuations of DCE PP·LLDPE·PVC·EG and ZCE PTA·methanol were calculated as the difference from the settlement price on November 26.",
   "SCFI·CCFI is a container freight index released every Friday by the Shanghai Shipping Exchange (SSE). Only the comprehensive index is released, and detailed indices for each route are provided to paid subscribers.",
   "The SMM production copper premium carried the figure specified in the SMM public article (11/23 warrant average of $450/ton, −$45 compared to the previous day). The 11/24 public value could not be confirmed, so the 11/23 value was kept, and the dashboard value is only visible after logging in.",
   "The KOMIS (Korea Resources Information Service) screen could not confirm the values ​​even in this update, so 6 types of non-ferrous metals were filled in with the Westmetall table, which was copied directly from the LME official notice. Spot settlement price and 3-month futures price are shown separately.",
   "Index Nuri petrochemical raw material prices are based on CFR Northeast Asia since 2012 based on a survey by the Korea Chemical Industry Association (KCIA), and the latest value in the public table is the average for the third quarter of 2026 (updated on October 30). This is not the actual price of domestic won.",
-  "KAMIS wholesale price is the wholesale market middleman sales price (national average), confirmed as of November 25th (59,640 won for 20 kg of rice product, the same since 11/13). For soybeans (40kg of domestically produced white beans), the November 20th survey was the latest confirmed value, so I left it as is.",
+  "KAMIS wholesale price is the wholesale market middleman sales price (national average), confirmed as of November 25th (59,640 won for 20 kg of rice product, the same since 11/13). For soybeans (40kg of domestically produced white beans), the November 20th survey was the latest confirmed value, so I left it as is. Surveys conducted after 11/26 were not confirmed in this inquiry.",
   "The Bank of Korea's producer price index and import price index are provisional values for October 2026 (2020=100). The producer price index was announced on November 20th, and the import price index was announced on November 13th.",
   "Import unit prices for the most recent month by item and HS code from the Korea Customs Service's export and import trade statistics (tradedata.go.kr) were not confirmed on the first public screen, so they were not included in this update.",
   "The operation rate and inventory indicators of SCI99 (intl.sci99.com) were not included because they are for paid members only. The PP·LLDPE values ​​from the public price center on the same site are not included in the table because the items overlap with the existing Chinese spot products (SunSirs).",
   "The Korea Nonferrous Metals Association (nonferrous.or.kr) discloses the spot prices of the six LME nonferrous metals (copper, aluminum, zinc, lead, nickel, and tin) and the monthly average and domestic sales prices of zinc ingots. The domestic price of zinc ingots is the standard domestic distribution price excluding VAT provided by Korea Zinc.",
   "The LME inventory, precious metals (gold and silver) prices, and weekly and monthly market status comments on the association site could not be confirmed in the public menu. The statistical information sub-statistics screen of the non-ferrous metal statistics and price information bulletin board could not be opened due to a server error (VBScript 800a0009), so only the price and statistics data posted in the bulletin board was used.",
-  "Recycled raw materials are monthly published values ​​from the Korea Environment Corporation’s “Recyclable Resources Price Survey” (National Approved Statistics No. 392001). It is surveyed on the 10th of each month and announced on the 26th, and the unit is KRW/kg (including value-added tax, excluding logistics costs) and is the national average. Waste paper and steel scrap are the purchase price of unprocessed raw materials from intermediate processing companies, and waste plastic, waste glass bottles, and waste metal cans are the sales price after intermediate processing, so the actual transaction price may be different even for the same item. The November 2026 version was posted on the Circulating Resources Information Center on November 25, and ABS flakes were omitted from the table as they were not announced (-)."
+  "Recycled raw materials are monthly published values ​​from the Korea Environment Corporation’s “Recyclable Resources Price Survey” (National Approved Statistics No. 392001). It is surveyed on the 10th of each month and announced on the 26th, and the unit is KRW/kg (including value-added tax, excluding logistics costs) and is the national average. Waste paper and steel scrap are the purchase price of unprocessed raw materials from intermediate processing companies, and waste plastic, waste glass bottles, and waste metal cans are the sales price after intermediate processing, so the actual transaction price may be different even for the same item. The November 2026 version was posted on the Circulating Resources Information Center on November 25, and ABS flakes were omitted from the table as they were not announced (-).",
+  "Chinese spot is the SunSirs daily list (11/26) value. HDPE 10,037.50 yuan, PVC 5,080.00 yuan, PP 9,400.00 yuan, LDPE 10,500.00 yuan, etc., and the fluctuation rate is the value compared to 11/25 revealed by SunSirs in the same table."
  ]
 }

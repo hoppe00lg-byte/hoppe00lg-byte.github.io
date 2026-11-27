@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-11-26T12:00:00+09:00",
- "asOf": "2026-11-26",
- "asOfNote": "截至 11 月 26 日星期四中午。汇率反映韩国进出口银行公布的交易基准汇率（韩元/美元1,343.90韩元、韩元/日元844.37韩元、韩元/人民币201.57韩元），石油（WTI/布伦特）、黄金、白银、中国三大期货交易所的价格均为盘中价格。迪拜原油和LME的官方价格为截至11月25日的最新价格（锌、铅、镍和锡的现货结算价，铜和铝的3个月期货价格），公共采购服务发布价格为截至11月26日的销售价格。中国石化现货(SunSirs)和BDI价格为截至11月25日的价格，CBOT谷物11月26日的收盘价格(小麦和玉米结转到3月)，以及CFR日本(MOPJ)石脑油估价为截至11月23日的最新公布值。 SCFI和CCFI每​​周五发布，因此截至11月20日的数值是最新的。加密货币每天 24 小时交易，因此价格为 11 月 26 日中午（CoinGecko）。回收原材料反映了韩国环境公社2026年11月的数据（11月10日调查，11月25日发布）。最新的韩国央行价格指数为10月份，最新的Nuri石化价格指数为2026年第三季度。",
+ "updatedAt": "2026-11-27T11:10:00+09:00",
+ "asOf": "2026-11-27",
+ "asOfNote": "截至 11 月 27 日星期五上午 11:10。汇率为韩国进出口银行公布的交易基准汇率（韩元/美元1,342.70韩元，韩元/日元842.95韩元，韩元/人民币201.43韩元），油价为Offinet公布的缩短的感恩节（11/26）收盘价（WTI 1月合约85.64美元，布伦特92.32美元）和迪拜石油11/26。价格为 87.00 美元。截至11月27日上午的黄金和白银现货价格。 LME官方价格为截至11月25日的最新值（锌、铅、镍和锡的现货结算价，铜和铝的3个月期货价格），公共采购服务发布价格为截至11月27日的销售价格。中国石化现货（SunSirs）和BDI价格截至11月26日，中国三大期货交易所盘中价格截至11月27日上午。由于感恩节假期，CBOT谷物价格最新为11月25日夜盘（韩国时间11月26日凌晨）起，CFR日本（MOPJ）石脑油估价价格为11月25日起。 SCFI和CCFI每​​周五发布，因此截至11月20日的数值是最新的（11月27日公布是韩国时间下午3点左右）。 Crypto price is as of 11 am on November 27th (CoinGecko).回收原材料反映了韩国环境公社2026年11月的数据（11月10日调查，11月25日发布）。最新的韩国央行价格指数为10月份，最新的Nuri石化价格指数为2026年第三季度。",
  "periods": {
   "default": "daily",
   "tabs": [
@@ -28,41 +28,41 @@
   ],
   "daily": {
    "label": "日线",
-   "asOf": "2026-11-26",
-   "range": "2026-11-26",
+   "asOf": "2026-11-27",
+   "range": "2026-11-27",
    "badge": "通知/盘中",
-   "summary": "截至 11 月 26 日星期四中午。韩元/美元交易基准汇率持平于 1,343.90 韩元（+0.30 韩元），油价与前一天的结算价相比几乎没有变化，WTI 1 月合约为 83.89 美元，布伦特原油为 90.70 美元。相反，金属出现分裂——黄金上涨 3,598.96 美元（+0.8%），白银上涨 42.01 美元（+1.7%），但 LME 锡价暴跌至 38,200 美元（-6.4%），锌价上涨-3.9%，3 个月期铜上涨-2.5%，铝现货下跌-8.7%。中国期货反方向反弹，上海期货交易所铜+1.1%，大商所EG+4.7%，LLDPE+3.4%，PVC+2.2%，公共采购服务排放价格为锡-5.2%，铜-1.4%，铝+1.1%。中国现货价格涨跌互现，PVC +3.4%、PP -2.9%、LDPE -3.7%，BDI 为 3,107 点（+1.3%），创 10 月 2 日以来最高水平。",
+   "summary": "截至 11 月 27 日星期五上午 11:10。 The standard won/dollar trading rate was lowered to 1,342.70 won (−1.20 won), and the won/yen is 842.95 won, and the won/yuan is 201.43 won.油价维持感恩节市场缩短期间的涨幅——WTI 1 月合约从 11 月 25 日的 83.68 美元收于 11 月 26 日的 85.64 美元（+2.3%），布伦特原油合约收于 92.32 美元，迪拜原油合约收于 87.00 美元（+3.3%）。贵金属走强，黄金报3,616.46美元（+0.5%），白银报43.01美元（+2.4%），中国期货中，铜飙升至92,220元（+3.9%），上海原油+1.1%，大商所EG+3.1%，LLDPE+1.8%共同上涨。公共采购院的排放价格一次性上涨至铝480万韩元（+3.5%）、铜1790万韩元（+2.0%）、铅299万韩元（+2.8%）。中国PVC现货价格上涨至+2.5%，LDPE上涨+1.3%，PP现货价格下跌-2.4%，PC现货价格下跌-1.7%，BDI为3,152点（+1.5%），创9月29日以来最高水平。",
    "historyStart": "2026-11-22"
   },
   "weekly": {
    "label": "周",
-   "asOf": "2026-11-26",
-   "range": "2026年11月23日 ~ 2026年11月26日（进行中）",
+   "asOf": "2026-11-27",
+   "range": "2026-11-23 ~ 2026-11-27",
    "badge": "与上周五相比",
-   "summary": "这是截至11月第四周（11/26）第四个交易日中午的流量。与上周五（11/20）收盘价相比，布伦特油价仍处于低位-2.0%，迪拜油价-3.7%，WTI仍处于+0.6%。韩元兑美元贬值1.0%（1,330.80韩元 → 1,343.90韩元），贵金属黄金上涨+1.7%，白银上涨+1.8%。 LME 铝、铜、锌和镍均走弱至-10.5%、-4.3%、-4.1%和-1.8%，而中国石化现货的PP 、苯和PC 均下跌至-4.5%、-2.9%和-0.9%。 BDI上涨7.2%至3,107点，为10月2日以来最高。CBOT小麦和玉米结转至3月份，无法与上周的同一合约进行比较，因此被从表中删除（包含在日线表中）。",
+   "summary": "This is the closing flow for the fourth week of November (11/23~11/27).与上周五（11/20）收盘价相比，WTI从83.41美元上涨2.7%至85.64美元，布伦特原油从92.57美元上涨至92.32美元（-0.3%），迪拜石油从87.41美元上涨至87.00美元（-0.5%）。 The won is 0.9% weaker than the dollar (1,330.80 → 1,342.70 won).贵金属黄金上涨2.2%，白银上涨4.2%，而LME继续疲软，铝为-10.5%，铜为-4.3%，锌为-4.1%（基于11/25官方价格）。中国石化现货价格跌至PP -6.8%、PC -2.6%、苯-2.0%，BDI上涨8.8%，从2,898点至3,152点，呈现本周最大涨幅。",
    "highlights": [
     {
-     "title": "铝现货-10.5%，本周金属疲软的中心",
-     "text": "LME 铝现货下跌 10.5%，从 11/20 的 3,184.50 美元跌至 11/25 的 2,849.00 美元（3 个月 2,760.00 美元）。同期现货铜为-4.3%，锌为-4.1%，镍为-1.8%。 11/25当天，锡从40,825美元下跌6.4%至38,200美元，公共采购院的排放价格也跌至锡56,380,000韩元（-5.2%）和铜17,550,000韩元（-1.4%）。"
+     "title": "WTI $85.64 — surges 2.3% on shortened Thanksgiving day",
+     "text": "WTI January contract rose 2.3% from $83.68 settled on 11/25 to $85.64 shortened on 11/26. Brent also rose 1.9% from 90.64 to $92.36, and Offinet Dubai Oil price jumped 3.3% from $84.19 on 11/25 to $87.00 on 11/26. 11/27 亚洲时段持平于 85.64 美元。"
     },
     {
-     "title": "韩元 1,343.90 韩元 — 每周下跌 1.0%",
-     "text": "11月26日韩元/美元标准交易价为1,343.90韩元，较前一日上涨0.30韩元。与上周五（11/20）的 1,330.80 韩元相比，下跌了 13.10 韩元（1.0%）。韩元/日元为844.37韩元，韩元/人民币为201.57韩元。"
+     "title": "Won/Dollar 1,342.70 Won — Weekly weakness of 0.9%",
+     "text": "The standard won/dollar trading rate was 1,342.70 won on 11/27, down 1.20 won from the previous day. Compared to 1,330.80 won on the previous Friday (11/20), it is 11.90 won (0.9%) weaker. The won/yen is 842.95 won, and the won/yuan is 201.43 won."
     },
     {
-     "title": "中国石化现货PP、LDPE、HDPE齐跌",
-     "text": "11/25中国现货价，PP 9,633.33元(-2.9%)，LDPE 10,366.67元(-3.7%)，HDPE 10,100.00元(-2.4%)，所有烯烃系列下跌，仅PVC上涨至4,955元(+3.4%)。 PC为13,983.33元（-0.5%），甲苯为6,083.33元（-2.5%）。"
+     "title": "Chinese copper futures 92,220 yuan (+3.9%) — led by late-week rebound",
+     "text": "SHFE copper was at 92,220 yuan on the morning of 11/27, up 3.9% from the previous day's settlement of 88,770 yuan.上海原油上涨600.70元（+1.1%），大商所EG上涨5,289元（+3.1%），LLDPE上涨8,314元（+1.8%），公共采购院排放价格也上涨至铜1790万韩元（+2.0%）和铝480万韩元（+3.5%）。"
     },
     {
-     "title": "BDI 3,107——两个月来最高",
-     "text": "波罗的海干货运价指数于11月25日再次上涨至3,107点（+1.3%），为10月2日以来的最高水平。好望角型船所有航线上涨至5,014点（+1.5%），巴拿马型船上涨至2,223点（+2.0%），超灵便型船上涨至1,814点（+0.2%）。"
+     "title": "BDI 3,152 — 9 月 29 日以来最高",
+     "text": "波罗的海干货运价指数于11月26日升至3,152点（+45，+1.45%），为9月29日以来的最高水平。好望角型船所有船舶增加至5,100艘（+86），巴拿马型船增加至2,273艘（+50），超灵便型船增加至1,816艘（+2）。"
     }
    ],
    "groups": [
     {
      "label": "能源与外汇 — 石油价格和汇率",
      "prevHeader": "上周星期五 (11/20)",
-     "nowHeader": "本周（11/25盘中）",
+     "nowHeader": "本周（11/27）",
      "rows": [
       {
        "code": "WTI",
@@ -72,11 +72,11 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 83.41,
-       "price": 83.89,
-       "changePct": 0.58,
-       "change": 0.48,
-       "note": "1月合约11/20结算价83.41美元→11/26日内价格83.89美元。",
-       "date": "2026-11-26",
+       "price": 85.64,
+       "changePct": 2.67,
+       "change": 2.23,
+       "note": "1月合约11/20结算价83.41美元→11/26短期收盘价85.64美元（11/27亚洲市场持平）。",
+       "date": "2026-11-27",
        "sourceName": "新浪财经 NYMEX 实时行情",
        "sourceUrl": "https://finance.sina.com.cn/futures/quotes/CL.shtml"
       },
@@ -88,11 +88,11 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 92.57,
-       "price": 90.7,
-       "changePct": -2.02,
-       "change": -1.87,
-       "note": "11/20 结算 $92.57 → 11/26 连续上个月 $90.70。",
-       "date": "2026-11-26",
+       "price": 92.32,
+       "changePct": -0.27,
+       "change": -0.25,
+       "note": "11/20 $92.57 → 11/26 $92.36 → 11/27 亚洲市场 $92.32。",
+       "date": "2026-11-27",
        "sourceName": "新浪财经ICE实时价格",
        "sourceUrl": "https://finance.sina.com.cn/futures/quotes/OIL.shtml"
       },
@@ -104,11 +104,11 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 87.41,
-       "price": 84.19,
-       "changePct": -3.68,
-       "change": -3.22,
-       "note": "Offinet 11/20 $87.41 → 11/25 $84.19。",
-       "date": "2026-11-25",
+       "price": 87.0,
+       "changePct": -0.47,
+       "change": -0.41,
+       "note": "Offinet 11/20 $87.41 → 11/26 $87.00。",
+       "date": "2026-11-26",
        "sourceName": "Offinet（韩国国家石油公司）国际原油价格",
        "sourceUrl": "https://www.opinet.co.kr/gloptotSelect.do"
       },
@@ -120,11 +120,11 @@
        "unit": "USD/t",
        "decimals": 2,
        "prev": 805.88,
-       "price": 809.0,
-       "changePct": 0.39,
-       "change": 3.12,
-       "note": "11/20 805.88 美元 → 11/23 809.00 美元。 11/24评估价为披露前的价格。",
-       "date": "2026-11-23",
+       "price": 801.25,
+       "changePct": -0.57,
+       "change": -4.63,
+       "note": "11/20 805.88 美元 → 11/25 801.25 美元。 11/26 评估价为披露前的价格。",
+       "date": "2026-11-25",
        "sourceName": "CommodityScope 石脑油 CFR 日本评估价",
        "sourceUrl": "https://commodityscope.com/prices/japan-cfr-naphtha"
       },
@@ -136,11 +136,11 @@
        "unit": "韩元",
        "decimals": 2,
        "prev": 1330.8,
-       "price": 1343.9,
-       "changePct": 0.98,
-       "change": 13.1,
-       "note": "11/20 1,330.80韩元 → 11/26通知 1,343.90韩元。",
-       "date": "2026-11-26",
+       "price": 1342.7,
+       "changePct": 0.89,
+       "change": 11.9,
+       "note": "11/20 notice 1,330.80 won → 11/27 notice 1,342.70 won.",
+       "date": "2026-11-27",
        "sourceName": "韩国进出口银行公布销售标准费率",
        "sourceUrl": "https://www.koreaexim.go.kr/ir/HPHKIR020M01?apino=2&viewtype=C"
       }
@@ -149,7 +149,7 @@
     {
      "label": "金属 — 金属和贵金属",
      "prevHeader": "上周星期五 (11/20)",
-     "nowHeader": "本周（11/25盘中）",
+     "nowHeader": "本周（11/27）",
      "rows": [
       {
        "code": "AU",
@@ -159,11 +159,11 @@
        "unit": "USD/oz",
        "decimals": 2,
        "prev": 3538.19,
-       "price": 3598.96,
-       "changePct": 1.72,
-       "change": 60.77,
-       "note": "11/20 $3,538.19 → 11/26 $3,598.96（现货）。",
-       "date": "2026-11-26",
+       "price": 3616.46,
+       "changePct": 2.21,
+       "change": 78.27,
+       "note": "11/20 $3,538.19 → 11/27 morning spot $3,616.46.",
+       "date": "2026-11-27",
        "sourceName": "GoldPrice.com 实时现货",
        "sourceUrl": "https://www.goldprice.com/"
       },
@@ -175,11 +175,11 @@
        "unit": "USD/oz",
        "decimals": 2,
        "prev": 41.26,
-       "price": 42.01,
-       "changePct": 1.82,
-       "change": 0.75,
-       "note": "11/20 $41.26 → 11/26 $42.01（现货）。",
-       "date": "2026-11-26",
+       "price": 43.01,
+       "changePct": 4.24,
+       "change": 1.75,
+       "note": "11/20 $41.26 → 11/27 上午现货 $43.01。",
+       "date": "2026-11-27",
        "sourceName": "GoldPrice.com 实时现货",
        "sourceUrl": "https://www.goldprice.com/"
       },
@@ -194,7 +194,7 @@
        "price": 11703.0,
        "changePct": -4.31,
        "change": -527.5,
-       "note": "11/20 $12,230.50 → 11/25 $11,703.00（伦敦金属交易所现货）。 3 个月为 11,758.00 美元。",
+       "note": "LME 现货 11/20 $12,230.50 → 11/25 $11,703.00（11/26 官方价格未公布）。",
        "date": "2026-11-25",
        "sourceName": "韩国价格信息（KPI）LME现货价格",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -210,7 +210,7 @@
        "price": 2849.0,
        "changePct": -10.54,
        "change": -335.5,
-       "note": "11/20 $3,184.50 → 11/25 $2,849.00（伦敦金属交易所现货）。 3 个月为 2,760.00 美元。",
+       "note": "LME 现货 11/20 $3,184.50 → 11/25 $2,849.00（11/26 官方价格未公布）。",
        "date": "2026-11-25",
        "sourceName": "韩国价格信息（KPI）LME现货价格",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -226,7 +226,7 @@
        "price": 3520.5,
        "changePct": -4.07,
        "change": -149.5,
-       "note": "11/20 $3,670.00 → 11/24 $3,665.00。",
+       "note": "LME 现货 11/20 $3,670.00 → 11/25 $3,520.50。",
        "date": "2026-11-25",
        "sourceName": "韩国价格信息（KPI）LME现货价格",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -242,7 +242,7 @@
        "price": 15035.0,
        "changePct": -1.8,
        "change": -275.0,
-       "note": "11/20 $15,310.00 → 11/24 $15,060.00。",
+       "note": "LME 现货 11/20 15,310.00 美元 → 11/25 15,035.00 美元。",
        "date": "2026-11-25",
        "sourceName": "韩国价格信息（KPI）LME现货价格",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
@@ -252,7 +252,7 @@
     {
      "label": "PETROCHEM — 石化和塑料（中国现货）",
      "prevHeader": "上周星期五 (11/20)",
-     "nowHeader": "本周（11/25盘中）",
+     "nowHeader": "本周（11/27）",
      "rows": [
       {
        "code": "BZ",
@@ -262,11 +262,11 @@
        "unit": "RMB/t",
        "decimals": 2,
        "prev": 7536.67,
-       "price": 7320.0,
-       "change": -216.67,
-       "changePct": -2.87,
-       "note": "11/20 7,536.67元 → 11/25 7,320.00元。",
-       "date": "2026-11-25",
+       "price": 7383.33,
+       "change": -153.34,
+       "changePct": -2.03,
+       "note": "中国现货11/20 7,536.67元→11/26 7,383.33元。",
+       "date": "2026-11-26",
        "sourceName": "SunSirs·同花顺中国现货价格",
        "sourceUrl": "https://www.sunsirs.com/"
       },
@@ -278,11 +278,11 @@
        "unit": "RMB/t",
        "decimals": 2,
        "prev": 10083.33,
-       "price": 9633.33,
-       "change": -450.0,
-       "changePct": -4.46,
-       "note": "11/20 10,083.33元 → 11/25 9,633.33元。",
-       "date": "2026-11-25",
+       "price": 9400.0,
+       "change": -683.33,
+       "changePct": -6.78,
+       "note": "Chinese spot 11/20 10,083.33 yuan → 11/26 9,400.00 yuan.",
+       "date": "2026-11-26",
        "sourceName": "SunSirs·同花顺中国现货价格",
        "sourceUrl": "https://www.sunsirs.com/"
       },
@@ -294,11 +294,11 @@
        "unit": "RMB/t",
        "decimals": 2,
        "prev": 14116.67,
-       "price": 13983.33,
-       "change": -133.34,
-       "changePct": -0.94,
-       "note": "11/20 14,116.67元 → 11/25 13,983.33元。",
-       "date": "2026-11-25",
+       "price": 13750.0,
+       "change": -366.67,
+       "changePct": -2.6,
+       "note": "中国现货11/20 14,116.67元→11/26 13,750.00元。",
+       "date": "2026-11-26",
        "sourceName": "太阳先生·隆众资讯中国现货价格",
        "sourceUrl": "https://www.sunsirs.com/"
       }
@@ -307,7 +307,7 @@
     {
      "label": "运输和谷物 — 运输和谷物",
      "prevHeader": "上周星期五 (11/20)",
-     "nowHeader": "本周（11/25盘中）",
+     "nowHeader": "本周（11/27）",
      "rows": [
       {
        "code": "BDI",
@@ -317,11 +317,11 @@
        "unit": "点",
        "decimals": 0,
        "prev": 2898,
-       "price": 3107,
-       "changePct": 7.21,
-       "change": 209,
-       "note": "11/20 2,898 → 11/24 3,068.",
-       "date": "2026-11-25",
+       "price": 3152,
+       "changePct": 8.76,
+       "change": 254,
+       "note": "11/20 2,898 点 → 11/26 3,152 点。为9月29日以来最高。",
+       "date": "2026-11-26",
        "sourceName": "波罗的海航运交易所（路透社·TradingEconomics整理）",
        "sourceUrl": "https://ko.tradingeconomics.com/commodity/baltic"
       },
@@ -333,11 +333,11 @@
        "unit": "点",
        "decimals": 0,
        "prev": 4502,
-       "price": 5014,
-       "changePct": 11.37,
-       "change": 512,
-       "note": "11/20 4,502 → 11/24 4,942.",
-       "date": "2026-11-25",
+       "price": 5100,
+       "changePct": 13.28,
+       "change": 598,
+       "note": "11/20 4,502 点 → 11/26 5,100 点。",
+       "date": "2026-11-26",
        "sourceName": "希腊航运新闻每周波罗的海指数报告（第 47 周）",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -349,11 +349,11 @@
        "unit": "点",
        "decimals": 0,
        "prev": 2140,
-       "price": 2223,
-       "changePct": 3.88,
-       "change": 83,
-       "note": "11/20 2,140 → 11/24 2,179.",
-       "date": "2026-11-25",
+       "price": 2273,
+       "changePct": 6.21,
+       "change": 133,
+       "note": "11/20 2,140 点 → 11/26 2,273 点。",
+       "date": "2026-11-26",
        "sourceName": "希腊航运新闻每周波罗的海指数报告（第 47 周）",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -365,11 +365,11 @@
        "unit": "点",
        "decimals": 0,
        "prev": 1810,
-       "price": 1814,
-       "changePct": 0.22,
-       "change": 4,
-       "note": "11/20 1,810 → 11/24 1,811.",
-       "date": "2026-11-25",
+       "price": 1816,
+       "changePct": 0.33,
+       "change": 6,
+       "note": "11/20 1,810 点 → 11/26 1,816 点。",
+       "date": "2026-11-26",
        "sourceName": "希腊航运新闻每周波罗的海指数报告（第 47 周）",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -384,7 +384,7 @@
        "price": 1243.25,
        "changePct": 1.84,
        "change": 22.5,
-       "note": "11/20 1,220.75 美分 → 11/24 1,234.00 美分。",
+       "note": "CBOT 大豆 1 月合约 11/20 1,220.75 美分 → 11/25 夜间交易时段 1,243.25 美分（11/26 收盘）。",
        "date": "2026-11-26",
        "sourceName": "CME CBOT收盘价（KOIMA·路透社摘要）",
        "sourceUrl": "https://www.koimaindex.com/koimaindex/koima/price/retrieveList.do"
@@ -393,40 +393,44 @@
     }
    ],
    "chips": {
-    "label": "石化日报（SunSirs中国现货·11/25）",
-    "note": "《太阳先生》11/25现货价格波动率（11/26查看）。",
+    "label": "石化日报（SunSirs中国现货·11/26）",
+    "note": "《太阳先生》11/26现货价格波动率（11/27查看）。",
     "items": [
      {
       "name": "PVC",
-      "changePct": 3.44
+      "changePct": 2.52
+     },
+     {
+      "name": "丙烯",
+      "changePct": 1.39
+     },
+     {
+      "name": "LDPE",
+      "changePct": 1.29
      },
      {
       "name": "苯",
-      "changePct": 0.0
+      "changePct": 0.87
      },
      {
       "name": "ABS",
-      "changePct": 0.0
-     },
-     {
-      "name": "苯乙烯",
-      "changePct": -0.11
-     },
-     {
-      "name": "PC",
-      "changePct": -0.47
+      "changePct": -0.29
      },
      {
       "name": "HDPE",
-      "changePct": -2.42
+      "changePct": -0.5
      },
      {
       "name": "甲苯",
-      "changePct": -2.51
+      "changePct": -1.1
+     },
+     {
+      "name": "PC",
+      "changePct": -1.67
      },
      {
       "name": "PP",
-      "changePct": -2.86
+      "changePct": -2.42
      }
     ],
     "sourceName": "太阳先生中国现货价格",
@@ -1486,22 +1490,22 @@
  "weeklyTrend": [
   {
    "name": "WTI",
-   "changePct": -3.03,
+   "changePct": 2.67,
    "unit": "周"
   },
   {
    "name": "布伦特",
-   "changePct": -5.29,
+   "changePct": -0.27,
    "unit": "周"
   },
   {
    "name": "黄金",
-   "changePct": 0.87,
+   "changePct": 2.21,
    "unit": "周"
   },
   {
    "name": "银",
-   "changePct": 0.07,
+   "changePct": 4.24,
    "unit": "周"
   }
  ],
@@ -1510,124 +1514,124 @@
    "id": "wti",
    "code": "WTI",
    "name": "西德克萨斯中质原油",
-   "price": 83.89,
+   "price": 85.64,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 0.21,
-   "changePct": 0.25,
-   "changeBasis": "与前一日结算价相比（11/25）",
+   "change": 0.0,
+   "changePct": 0.0,
+   "changeBasis": "与前一日（11/26）缩短的账面结算价相比",
    "contract": "2027年1月合同",
-   "date": "2026-11-26",
-   "sourceName": "雅虎财经 NYMEX 1月合约·Offinet结算价",
+   "date": "2026-11-27",
+   "sourceName": "雅虎财经 NYMEX 1 月合约",
    "sourceUrl": "https://finance.yahoo.com/quote/CL=F",
-   "note": "NYMEX 1月11/25结算价83.68美元（与Offinet通知一致）→ 11/26亚洲市场（韩国时间11:24）83.89美元。布伦特原油-WTI 6.81 美元。"
+   "note": "从缩短的感恩节（11/26）开始，价格从 11/25 结算价 83.68 美元 → 85.64 美元上涨 2.3%。 11/27亚洲市场（韩国时间11:10）持平于85.64美元。布伦特原油-WTI 6.68 美元。"
   },
   {
    "id": "brent",
    "code": "BRENT",
    "name": "北海布伦特原油",
-   "price": 90.7,
+   "price": 92.32,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 0.06,
-   "changePct": 0.07,
-   "changeBasis": "与前一日收盘价相比（11/25）",
+   "change": -0.04,
+   "changePct": -0.04,
+   "changeBasis": "与前一日收盘价相比（11/26）",
    "contract": "近一个月连续 (ICE)",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "sourceName": "雅虎财经 ICE 布伦特近月连续",
    "sourceUrl": "https://finance.yahoo.com/quote/BZ=F",
-   "note": "ICE 布伦特原油近月连续收于 11 月 25 日 90.64 美元→ 11 月 26 日亚洲收盘于 90.70 美元，持平。合约月份和标准与Offinet公布的11/25布伦特期货价格94.61美元不同，因此没有直接比较。"
+   "note": "ICE 布伦特原油近月延续上涨 1.9%，从 11/25 的 90.64 美元 → 11/26 的 92.36 美元，以及 11/27 亚洲市场的 92.32 美元。合约月份和标准与Offinet公布的11/26布伦特期货价格96.57美元不同，因此没有直接比较。"
   },
   {
    "id": "dubai",
    "code": "DUBAI",
    "name": "迪拜石油公司",
-   "price": 84.19,
+   "price": 87.0,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 1.59,
-   "changePct": 1.92,
-   "changeBasis": "与前一天相比（11/24）",
+   "change": 2.81,
+   "changePct": 3.34,
+   "changeBasis": "与前一天相比（11/25）",
    "contract": "现货（预计新加坡成交价）",
-   "date": "2026-11-25",
+   "date": "2026-11-26",
    "sourceName": "Offinet（韩国国家石油公司）国际原油价格",
    "sourceUrl": "https://www.opinet.co.kr/gloptotSelect.do",
-   "note": "Offinet 通知 11/25 84.19 美元（11/24 82.60 美元）。在同一张表中，布伦特原油期货价格为 94.61 美元，WTI 期货价格为 83.68 美元。"
+   "note": "Offinet 通知 11/26 87.00 美元（11/25 84.19 美元）。在同一张表中，布伦特原油期货价格为 96.57 美元，WTI 期货已休市且未公布 (0)。"
   },
   {
    "id": "usdkrw",
    "code": "USD/KRW",
    "name": "韩元·美元",
-   "price": 1343.9,
+   "price": 1342.7,
    "unit": "韩元",
    "decimals": 2,
-   "change": 0.3,
-   "changePct": 0.02,
-   "changeBasis": "准备前一天的通知（11/25）",
-   "date": "2026-11-26",
+   "change": -1.2,
+   "changePct": -0.09,
+   "changeBasis": "与前一天的通知相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "韩国进出口银行公布销售标准费率",
-   "sourceUrl": "https://www.koreaexim.go.kr/site/main/index002",
-   "note": "韩国进出口银行11月26日公布交易标准汇率1,343.90韩元。比前一天（11/25）上涨0.30韩元1,343.60韩元（统一费率）。"
+   "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
+   "note": "韩国进出口银行11月27日公布交易标准汇率1,342.70韩元。比前一天 (11/26) 的 1,343.90 韩元下跌 1.20 韩元 (0.09%)。盘中市场汇率约为1,342韩元。"
   },
   {
    "id": "jpykrw100",
    "code": "JPY/KRW",
    "name": "元·日元（100日元）",
-   "price": 844.37,
+   "price": 842.95,
    "unit": "韩元/100日元",
    "decimals": 2,
-   "change": 0.96,
-   "changePct": 0.11,
-   "changeBasis": "准备前一天的通知（11/25）",
-   "date": "2026-11-26",
+   "change": -1.42,
+   "changePct": -0.17,
+   "changeBasis": "与前一天的通知相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "韩国进出口银行公布销售标准费率",
-   "sourceUrl": "https://www.koreaexim.go.kr/site/main/index002",
-   "note": "以 100 日元为基准。 11/26公布的价格为844.37韩元，比前一天（11/25）的843.41韩元上涨了0.96韩元。"
+   "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
+   "note": "以 100 日元为基准。 11/27公布的价格为842.95韩元，比前一天（11/26）的844.37韩元下降了1.42韩元。"
   },
   {
    "id": "cnykrw",
    "code": "CNY/KRW",
    "name": "韩元，元",
-   "price": 201.57,
+   "price": 201.43,
    "unit": "韩元/元",
    "decimals": 2,
-   "change": -0.13,
-   "changePct": -0.06,
-   "changeBasis": "准备前一天的通知（11/25）",
-   "date": "2026-11-26",
+   "change": -0.14,
+   "changePct": -0.07,
+   "changeBasis": "与前一天的通知相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "韩国进出口银行公布销售标准费率",
-   "sourceUrl": "https://www.koreaexim.go.kr/site/main/index002",
-   "note": "以人民币 (CNH) 为基础。 11/26公布的价格为201.57韩元，比前一天（11/25）201.70韩元下降了0.13韩元。"
+   "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
+   "note": "以人民币 (CNH) 为基础。 11/27公布的价格为201.43韩元，比前一天（11/26）201.57韩元下降了0.14韩元。"
   },
   {
    "id": "btc",
    "code": "BTC",
    "name": "比特币",
-   "price": 60806,
+   "price": 61199,
    "unit": "USD",
    "decimals": 0,
-   "change": 1616.0,
-   "changePct": 2.73,
+   "change": 341.0,
+   "changePct": 0.56,
    "changeBasis": "24 小时准备就绪 (CoinGecko)",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "sourceName": "CoinGecko 现货价格",
    "sourceUrl": "https://www.coingecko.com/en/coins/bitcoin",
-   "note": "CoinGecko 美元现货 60,806 美元（24 小时内上涨 2.73%）。与此同时，Upbit赢得了81,486,000韩元。"
+   "note": "CoinGecko 美元现货 61,199 美元（24 小时内上涨 0.56%）。与此同时，Upbit赢得了82,179,875韩元。"
   },
   {
    "id": "eth",
    "code": "ETH",
    "name": "以太坊",
-   "price": 1700,
+   "price": 1715,
    "unit": "USD",
    "decimals": 0,
-   "change": 43.0,
-   "changePct": 2.62,
+   "change": 13.0,
+   "changePct": 0.74,
    "changeBasis": "24 小时准备就绪 (CoinGecko)",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "sourceName": "CoinGecko 现货价格",
    "sourceUrl": "https://www.coingecko.com/en/coins/ethereum",
-   "note": "CoinGecko 美元现货 1,700.13 美元（24 小时内上涨 2.62%）。与此同时，Upbit赢得了227.8万韩元。"
+   "note": "CoinGecko 美元现货 1,714.71 美元（24 小时内上涨 0.74%）。与此同时，Upbit赢得了2,302,550韩元。"
   }
  ],
  "commodities": [
@@ -1637,15 +1641,15 @@
    "nameEn": "Gold",
    "group": "metal",
    "grade": "1 金衡盎司现货",
-   "price": 3598.96,
+   "price": 3616.46,
    "unit": "USD/oz",
-   "change": 29.91,
-   "changePct": 0.84,
-   "changeBasis": "与前一天的快照相比（11/25）",
-   "date": "2026-11-26",
+   "change": 17.5,
+   "changePct": 0.49,
+   "changeBasis": "与前一天的快照相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "瑞讯实时现货（XAU/美元）",
    "sourceUrl": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD",
-   "note": "瑞讯现货 3,598.96 美元（11:57，买入/卖出中位价）。较前一早的 3,569.05 美元上涨 0.8%。"
+   "note": "瑞讯现货 3,616.46 美元（11:10，买入/卖出中位价）。较前一早的 3,598.96 美元上涨 0.5%。"
   },
   {
    "code": "AG",
@@ -1653,15 +1657,15 @@
    "nameEn": "Silver",
    "group": "metal",
    "grade": "1 金衡盎司现货",
-   "price": 42.01,
+   "price": 43.01,
    "unit": "USD/oz",
-   "change": 0.72,
-   "changePct": 1.74,
-   "changeBasis": "与前一天的快照相比（11/25）",
-   "date": "2026-11-26",
+   "change": 1.0,
+   "changePct": 2.38,
+   "changeBasis": "与前一天的快照相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "瑞讯实时现货（XAG/美元）",
    "sourceUrl": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAG/USD",
-   "note": "瑞讯现货 42.01 美元 (11:57)。较前一早的 41.29 美元上涨 1.7%。"
+   "note": "瑞讯现货 43.01 美元 (11:10)。较前一早的 42.01 美元上涨 2.4%。"
   },
   {
    "code": "CU",
@@ -1769,16 +1773,16 @@
    "nameEn": "Copper · PPS",
    "group": "metal",
    "grade": "库存商品售价（含增值税）",
-   "price": 17550000,
+   "price": 17900000,
    "unit": "韩元/吨",
    "decimals": 0,
-   "change": -250000,
-   "changePct": -1.4,
-   "changeBasis": "与前一日公告相比（11/25）",
-   "date": "2026-11-26",
+   "change": 350000,
+   "changePct": 1.99,
+   "changeBasis": "与前一日（11/26）发行价格相比",
+   "date": "2026-11-27",
    "sourceName": "公共采购部门库存原材料的销售价格",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "公共采购服务 11/26 销售价格（99.99% 或以上，含增值税，实际客户限额）。 11/25 比 17,800,000 韩元下降 1.4%。"
+   "note": "公共采购服务 11/27 销售价格（99.99% 或以上，含增值税，实际客户限额）。较11月26日的17,550,000韩元上涨2.0%。"
   },
   {
    "code": "AL-PPS",
@@ -1786,16 +1790,16 @@
    "nameEn": "Aluminum · PPS",
    "group": "metal",
    "grade": "库存商品售价（含增值税）",
-   "price": 4640000,
+   "price": 4800000,
    "unit": "韩元/吨",
    "decimals": 0,
-   "change": 50000,
-   "changePct": 1.09,
-   "changeBasis": "与前一日公告相比（11/25）",
-   "date": "2026-11-26",
+   "change": 160000,
+   "changePct": 3.45,
+   "changeBasis": "与前一日（11/26）发行价格相比",
+   "date": "2026-11-27",
    "sourceName": "公共采购部门库存原材料的销售价格",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "公共采购服务 11/26 售价（西欧制造，含增值税）。较11月25日的4,590,000韩元上涨1.1%。"
+   "note": "公共采购服务 11/27 售价（西欧制造，含增值税）。较11月26日的4,640,000韩元上涨3.5%。非西方产品花费4,770,000韩元。"
   },
   {
    "code": "PB-PPS",
@@ -1803,16 +1807,16 @@
    "nameEn": "Lead · PPS",
    "group": "metal",
    "grade": "库存商品售价（含增值税）",
-   "price": 2910000,
+   "price": 2990000,
    "unit": "韩元/吨",
    "decimals": 0,
-   "change": 0,
-   "changePct": 0.0,
-   "changeBasis": "与前一日公告相比（11/25）",
-   "date": "2026-11-26",
+   "change": 80000,
+   "changePct": 2.75,
+   "changeBasis": "与前一日（11/26）发行价格相比",
+   "date": "2026-11-27",
    "sourceName": "公共采购部门库存原材料的销售价格",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "公共采购服务 11/26 销售价格（超过 99.99%）。和前一天一样。"
+   "note": "公共采购服务 11/27 销售价格（超过 99.99%）。较11月26日的2,910,000韩元上涨2.8%。"
   },
   {
    "code": "SN-PPS",
@@ -1823,13 +1827,13 @@
    "price": 56380000,
    "unit": "韩元/吨",
    "decimals": 0,
-   "change": -3110000,
-   "changePct": -5.23,
-   "changeBasis": "与前一日公告相比（11/25）",
+   "change": 0.0,
+   "changePct": 0.0,
+   "changeBasis": "11/26销售价格（未在11/27公告中发布）",
    "date": "2026-11-26",
    "sourceName": "公共采购部门库存原材料的销售价格",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "公共采购服务 11/26 销售价格（超过 99.90%）。较11月25日的59,490,000韩元下跌5.2%（反映LME锡大幅下跌）。"
+   "note": "11/27销售通知中没有评论项目，因此11/26销售价格（56,380,000韩元）保持原样。"
   },
   {
    "code": "NAP",
@@ -1837,15 +1841,15 @@
    "nameEn": "Naphtha",
    "group": "petrochem",
    "grade": "CFR日本公开评估价",
-   "price": 809.0,
+   "price": 801.25,
    "unit": "USD/t",
-   "change": 3.12,
-   "changePct": 0.39,
-   "changeBasis": "新评估价未公布（11/20维持原价）",
-   "date": "2026-11-23",
-   "sourceName": "CommodityScope 石脑油评估",
-   "sourceUrl": "https://commodityscope.com/markets",
-   "note": "CommodityScope CFR 日本估值 11/23 809.00 美元 (+3.13)。 11/24评估价尚未公布。"
+   "change": 13.0,
+   "changePct": 1.65,
+   "changeBasis": "与之前的评估价格相比（11/24）",
+   "date": "2026-11-25",
+   "sourceName": "CommodityScope 石脑油 CFR 日本评估价",
+   "sourceUrl": "https://commodityscope.com/markets/naphtha-japan-cfr",
+   "note": "CFR日本估价11/25 801.25美元/吨（+13.00，+1.6%）。 11/26评估价尚未公布。"
   },
   {
    "code": "NAP-SG",
@@ -1853,16 +1857,16 @@
    "nameEn": "Naphtha · Singapore",
    "group": "petrochem",
    "grade": "国际石油产品价格（每桶）",
-   "price": 86.44,
+   "price": 88.09,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 0.2,
-   "changePct": 0.23,
-   "changeBasis": "与前一天相比（11/20）",
-   "date": "2026-11-23",
+   "change": 2.23,
+   "changePct": 2.6,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "Offinet（韩国国家石油公司）国际石油产品价格",
    "sourceUrl": "https://www.opinet.co.kr/glopopdSelect.do",
-   "note": "Offinet国际石油产品价格新加坡石脑油现货86.44美元/桶（每吨727.09美元）。"
+   "note": "Offinet 新加坡石脑油现货 11/26 88.09 美元/桶（11/25 85.86 美元）。在同一张表中，汽油为 91.72 美元，柴油为 135.82 美元。"
   },
   {
    "code": "C2",
@@ -1886,15 +1890,15 @@
    "nameEn": "Propylene",
    "group": "petrochem",
    "grade": "一年级",
-   "price": 9199.0,
+   "price": 9326.5,
    "unit": "RMB/t",
-   "change": -82.5,
-   "changePct": -0.89,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": 127.5,
+   "changePct": 1.39,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "太阳先生中国现货价格",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国丙烯11/25 9,199.00元(11/24 9,281.50元)。与11月初的11220元相比，下降-18%。"
+   "note": "中国丙烯11/26 9,326.50元(11/25 9,199.00元)。"
   },
   {
    "code": "BZ",
@@ -1902,15 +1906,15 @@
    "nameEn": "Benzene",
    "group": "petrochem",
    "grade": "1 级（纯度 99.90% 或更高）",
-   "price": 7320.0,
+   "price": 7383.33,
    "unit": "RMB/t",
-   "change": 0.0,
-   "changePct": 0.0,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": 63.33,
+   "changePct": 0.87,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "太阳先生中国现货价格",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国纯苯 11/25 7,320.00元，与上一交易日持平。"
+   "note": "中国纯苯11/26 7,383.33元(11/25 7,320.00元)。"
   },
   {
    "code": "TOL",
@@ -1918,15 +1922,15 @@
    "nameEn": "Toluene",
    "group": "petrochem",
    "grade": "一年级",
-   "price": 6083.33,
+   "price": 6016.67,
    "unit": "RMB/t",
-   "change": -156.67,
-   "changePct": -2.51,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": -66.66,
+   "changePct": -1.1,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "太阳先生中国现货价格",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国甲苯11/25 6,083.33元(11/24 6,240.00元)。"
+   "note": "中国甲苯11/26 6,016.67元(11/25 6,083.33元)。"
   },
   {
    "code": "SM",
@@ -1936,13 +1940,13 @@
    "grade": "1 级（纯度 99.8% 或更高）",
    "price": 9310.0,
    "unit": "RMB/t",
-   "change": -10.0,
-   "changePct": -0.11,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": 0.0,
+   "changePct": 0.0,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "太阳先生中国现货价格",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国苯乙烯单体11/25 9,310.00元(11/24 9,320.00元)。"
+   "note": "中国苯乙烯单体11/26 9,310.00元(11/25 9,310.00元)。"
   },
   {
    "code": "PC",
@@ -1950,15 +1954,15 @@
    "nameEn": "Polycarbonate",
    "group": "petrochem",
    "grade": "正常评级",
-   "price": 13983.33,
+   "price": 13750.0,
    "unit": "RMB/t",
-   "change": -66.67,
-   "changePct": -0.47,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": -233.33,
+   "changePct": -1.67,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "太阳先生中国现货价格",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国聚碳酸酯11/25 13,983.33元(11/24 14,050.00元)。与11月初的14,966.67元相比，下降了-6.6%。"
+   "note": "中国聚碳酸酯11/26 13,750.00元(11/25 13,983.33元)。"
   },
   {
    "code": "PMMA",
@@ -1970,11 +1974,11 @@
    "unit": "RMB/t",
    "change": 0.0,
    "changePct": 0.0,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "太阳先生中国现货价格",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国PMMA 11/25 14,733.33元，与上一交易日持平。"
+   "note": "中国PMMA 11/26 14,733.33元(11/25 14,733.33元)。"
   },
   {
    "code": "PP",
@@ -1982,15 +1986,15 @@
    "nameEn": "PP",
    "group": "petrochem",
    "grade": "L5E89（拉菲草）",
-   "price": 9633.33,
+   "price": 9400.0,
    "unit": "RMB/t",
-   "change": -283.34,
-   "changePct": -2.86,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": -233.33,
+   "changePct": -2.42,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "太阳先生中国现货价格",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国PP 11/25 9,633.33元（11/24 9,916.67元）。"
+   "note": "中国PP 11/26 9,400.00元（11/25 9,633.33元）。"
   },
   {
    "code": "LDPE",
@@ -1998,15 +2002,15 @@
    "nameEn": "LDPE",
    "group": "petrochem",
    "grade": "2426H（电影）",
-   "price": 10366.67,
+   "price": 10500.0,
    "unit": "RMB/t",
-   "change": -400.0,
-   "changePct": -3.72,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": 133.33,
+   "changePct": 1.29,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "太阳先生中国现货价格",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国LDPE 11/25 10,366.67元(11/24 10,766.67元)。"
+   "note": "中国LDPE 11/26 10,500.00元(11/25 10,366.67元)。"
   },
   {
    "code": "HDPE",
@@ -2014,15 +2018,15 @@
    "nameEn": "HDPE",
    "group": "petrochem",
    "grade": "5000S（注射）",
-   "price": 10100.0,
+   "price": 10037.5,
    "unit": "RMB/t",
-   "change": -250.0,
-   "changePct": -2.42,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": -50.0,
+   "changePct": -0.5,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "太阳先生中国现货价格",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国HDPE 11/25 10,100.00 元 (11/24 10,350.00 元)。"
+   "note": "中国HDPE 11/26 10,037.50元(11/25 10,087.50元)。"
   },
   {
    "code": "ABS",
@@ -2030,15 +2034,15 @@
    "nameEn": "ABS",
    "group": "petrochem",
    "grade": "正常评级",
-   "price": 11433.33,
+   "price": 11400.0,
    "unit": "RMB/t",
-   "change": 0.0,
-   "changePct": 0.0,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": -33.33,
+   "changePct": -0.29,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "太阳先生中国现货价格",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国ABS 11/25 11,433.33元，与上一交易日持平。"
+   "note": "中国ABS 11/26 11,400.00元（11/25 11,433.33元）。"
   },
   {
    "code": "PVC",
@@ -2046,15 +2050,15 @@
    "nameEn": "PVC",
    "group": "petrochem",
    "grade": "SG5",
-   "price": 4955.0,
+   "price": 5080.0,
    "unit": "RMB/t",
-   "change": 165.0,
-   "changePct": 3.44,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": 125.0,
+   "changePct": 2.52,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "太阳先生中国现货价格",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "中国PVC 11/25 4,955.00元(11/24 4,790.00元)。这是当天涨幅最高的商品。"
+   "note": "中国PVC 11/26 5,080.00元(11/25 4,955.00元)。"
   },
   {
    "code": "BDI",
@@ -2062,16 +2066,16 @@
    "nameEn": "Baltic Dry Index",
    "group": "shipping",
    "grade": "综合指数（海角型 40%、巴拿马型 30%、超灵便型 30%）",
-   "price": 3107,
+   "price": 3152,
    "unit": "点",
    "decimals": 0,
-   "change": 39,
-   "changePct": 1.27,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": 45,
+   "changePct": 1.45,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "波罗的海航运交易所（路透社援引）",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "波罗的海干货运价指数 11/25 3,107 点 (+39)。这是10月2日以来的最高值。"
+   "note": "波罗的海干货运价指数11/26 3,152点（+45，+1.45%）。 It is the highest since September 29th.好望角型散货船 5,100，巴拿马型散货船 2,273 (+50)，超灵便型散货船 1,816 (+2)。"
   },
   {
    "code": "BCI",
@@ -2079,16 +2083,16 @@
    "nameEn": "Capesize Index",
    "group": "shipping",
    "grade": "15万吨铁矿石和煤炭",
-   "price": 5014,
+   "price": 5100,
    "unit": "点",
    "decimals": 0,
-   "change": 72,
-   "changePct": 1.46,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": 86,
+   "changePct": 1.72,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "波罗的海航运交易所（路透社援引）",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "海岬型船 11/25 5,014 点 (+72)。这是10月2日以来的最高值。"
+   "note": "Baltic Capesize 11/26 5,100 points (+86)."
   },
   {
    "code": "BPI",
@@ -2096,16 +2100,16 @@
    "nameEn": "Panamax Index",
    "group": "shipping",
    "grade": "6万吨至7万吨粮食和煤炭",
-   "price": 2223,
+   "price": 2273,
    "unit": "点",
    "decimals": 0,
-   "change": 44,
-   "changePct": 2.02,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": 50,
+   "changePct": 2.25,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "波罗的海航运交易所（路透社援引）",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "巴拿马型船 11/25 2,223 点 (+44)。这是10月20日以来的最高值。"
+   "note": "Baltic Panamax 11/26 2,273 points (+50)."
   },
   {
    "code": "BSI",
@@ -2113,16 +2117,16 @@
    "nameEn": "Supramax Index",
    "group": "shipping",
    "grade": "48,000 至 60,000 吨",
-   "price": 1814,
+   "price": 1816,
    "unit": "点",
    "decimals": 0,
-   "change": 3,
-   "changePct": 0.17,
-   "changeBasis": "与前一天相比（11/24）",
-   "date": "2026-11-25",
+   "change": 2,
+   "changePct": 0.11,
+   "changeBasis": "与前一天相比（11/25）",
+   "date": "2026-11-26",
    "sourceName": "波罗的海航运交易所（路透社援引）",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "超灵便型 11/25 1,814 点 (+3)。"
+   "note": "波罗的海超灵便型船舶 11/26 1,816 点 (+2)。"
   },
   {
    "code": "FAO-FPI",
@@ -2211,37 +2215,37 @@
   },
   {
    "code": "ZW",
-   "name": "CBOT 小麦（12 月合约）",
+   "name": "CBOT 小麦（3 月合约）",
    "nameEn": "Wheat",
    "group": "agri",
-   "grade": "芝加哥商品交易所 CBOT 期货·2026 年 12 月",
+   "grade": "CME CBOT Futures March 2027",
    "price": 586.5,
    "unit": "¢/bu",
    "decimals": 2,
    "change": -1.0,
    "changePct": -0.17,
-   "changeBasis": "与前一日收盘价相比（11/25）",
+   "changeBasis": "与前一交易日收盘价相比（11/25）",
    "date": "2026-11-26",
    "sourceName": "雅虎财经 CBOT 小麦（3 月合约）",
    "sourceUrl": "https://finance.yahoo.com/quote/ZW=F",
-   "note": "CBOT小麦转入3月合约。 11/25 收盘价 587.50 美分 → 11/26 586.50 美分（韩国时间 04:19）。"
+   "note": "基于 CBOT 小麦 3 月合约（2027 年）。 11/25 晚间收盘价 587.50 美分 → 11/26 早盘收盘价 586.50 美分。 11/26 感恩节休市，11/27 夜市于韩国时间上午 10 点恢复。"
   },
   {
    "code": "ZC",
-   "name": "CBOT 玉米（12 月合约）",
+   "name": "CBOT Corn (March contract)",
    "nameEn": "Corn",
    "group": "agri",
-   "grade": "芝加哥商品交易所 CBOT 期货·2026 年 12 月",
+   "grade": "CME CBOT Futures March 2027",
    "price": 456.25,
    "unit": "¢/bu",
    "decimals": 2,
    "change": -0.25,
    "changePct": -0.05,
-   "changeBasis": "与前一日收盘价相比（11/25）",
+   "changeBasis": "与前一交易日收盘价相比（11/25）",
    "date": "2026-11-26",
    "sourceName": "雅虎财经 CBOT 玉米（3 月合约）",
    "sourceUrl": "https://finance.yahoo.com/quote/ZC=F",
-   "note": "CBOT 玉米结转至 3 月（合约月份不同于 12 月 439.75 美分）。 11/25 456.50 → 11/26 456.25 美分。"
+   "note": "Based on CBOT corn March contract (2027).该合约月份与 12 月合约（439.75 美分）不同。 11/25 456.50 → 11/26 456.25 早上。 Closed on 11/26 for Thanksgiving."
   },
   {
    "code": "ZS",
@@ -2254,11 +2258,11 @@
    "decimals": 2,
    "change": -0.75,
    "changePct": -0.06,
-   "changeBasis": "与前一日收盘价相比（11/25）",
+   "changeBasis": "与前一交易日收盘价相比（11/25）",
    "date": "2026-11-26",
    "sourceName": "雅虎财经 CBOT 大豆（一月合约）",
    "sourceUrl": "https://finance.yahoo.com/quote/ZS=F",
-   "note": "CBOT 大豆 1 月合约 11/25 1,244.00 → 11/26 1,243.25 美分，持平。"
+   "note": "CBOT 大豆 1 月合约 11/25 1,244.00 → 11/26 早盘，持平于 1,243.25 美分。 Closed on 11/26 for Thanksgiving."
   },
   {
    "code": "SHFE-CU",
@@ -2266,16 +2270,16 @@
    "nameEn": "Copper · SHFE",
    "group": "chinafutures",
    "grade": "cu2701（2027年1月）主力合约",
-   "price": 90730,
+   "price": 92220,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 970,
-   "changePct": 1.08,
-   "changeBasis": "与前一日结算价相比（11/25）",
-   "date": "2026-11-26",
+   "change": 3450,
+   "changePct": 3.89,
+   "changeBasis": "与前一日结算价相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "新浪财经 中国期货延迟报价",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/CU0.shtml",
-   "note": "SHFE铜旗舰11/26 10:36 AM 90,730元。较11/25结算价89,760元反弹1.1%。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-CU.shtml",
+   "note": "SHFE铜11/27早间旗舰92220元。较11月26日结算价88,770元上涨3.9%。这是当天涨幅最高的商品。"
   },
   {
    "code": "SHFE-AL",
@@ -2283,16 +2287,16 @@
    "nameEn": "Aluminum · SHFE",
    "group": "chinafutures",
    "grade": "al2701（2027年1月）主力合约",
-   "price": 21260,
+   "price": 21365,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 240,
-   "changePct": 1.14,
-   "changeBasis": "与前一日结算价相比（11/25）",
-   "date": "2026-11-26",
+   "change": 365,
+   "changePct": 1.74,
+   "changeBasis": "与前一日结算价相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "新浪财经 中国期货延迟报价",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/AL0.shtml",
-   "note": "上期铝11/26早盘21,260元（11/25结算21,020元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-AL.shtml",
+   "note": "上期铝11/27上午21,365元（11/26结算21,000元）。"
   },
   {
    "code": "SHFE-SC",
@@ -2300,16 +2304,16 @@
    "nameEn": "Crude Oil · INE/SHFE",
    "group": "chinafutures",
    "grade": "sc2701（2027年1月）主力合约",
-   "price": 595.1,
+   "price": 600.7,
    "unit": "RMB/bbl",
    "decimals": 1,
-   "change": 17.2,
-   "changePct": 2.98,
-   "changeBasis": "与前一日结算价相比（11/25）",
-   "date": "2026-11-26",
+   "change": 6.7,
+   "changePct": 1.13,
+   "changeBasis": "与前一日结算价相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "新浪财经 中国期货延迟报价",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SC0.shtml",
-   "note": "上海原油（SC）11/26上午595.10元（11/25结算577.90元）。跟随国际油价反弹上涨3.0%。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-SC.shtml",
+   "note": "上海原油（SC）11/27早盘600.70元（11/26结算594.00元）。跟随国际油价走强，突破600元。"
   },
   {
    "code": "DCE-PP",
@@ -2317,16 +2321,16 @@
    "nameEn": "PP · DCE",
    "group": "chinafutures",
    "grade": "pp2701（2027年1月）主力合约",
-   "price": 8737,
+   "price": 8849,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 170,
-   "changePct": 1.98,
-   "changeBasis": "与前一日结算价相比（11/25）",
-   "date": "2026-11-26",
+   "change": 87,
+   "changePct": 0.99,
+   "changeBasis": "与前一日结算价相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "新浪财经 中国期货延迟报价",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/PP0.shtml",
-   "note": "大商所PP 11/26早盘8,737元（11/25结算8,567元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-PP.shtml",
+   "note": "DCE PP 11/27 8,849 yuan in the morning (11/26 settlement 8,762 yuan)."
   },
   {
    "code": "DCE-L",
@@ -2334,16 +2338,16 @@
    "nameEn": "LLDPE · DCE",
    "group": "chinafutures",
    "grade": "l2701（2027年1月）主力合约",
-   "price": 8163,
+   "price": 8314,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 267,
-   "changePct": 3.38,
-   "changeBasis": "与前一日结算价相比（11/25）",
-   "date": "2026-11-26",
+   "change": 145,
+   "changePct": 1.78,
+   "changeBasis": "与前一日结算价相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "新浪财经 中国期货延迟报价",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/L0.shtml",
-   "note": "大商所LLDPE 11/26早间8,163元（11/25结算7,896元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-L.shtml",
+   "note": "DCE LLDPE 11/27 8,314 yuan in the morning (11/26 settlement 8,169 yuan)."
   },
   {
    "code": "DCE-V",
@@ -2351,16 +2355,16 @@
    "nameEn": "PVC · DCE",
    "group": "chinafutures",
    "grade": "v2701（2027年1月）主力合约",
-   "price": 5048,
+   "price": 5062,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 109,
-   "changePct": 2.21,
-   "changeBasis": "与前一日结算价相比（11/25）",
-   "date": "2026-11-26",
+   "change": 14,
+   "changePct": 0.28,
+   "changeBasis": "与前一日结算价相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "新浪财经 中国期货延迟报价",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/V0.shtml",
-   "note": "大商所PVC 11/26早间5,048元（11/25结算4,939元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-V.shtml",
+   "note": "DCE PVC 11/27 5,062 yuan in the morning (11/26 settlement 5,048 yuan)."
   },
   {
    "code": "DCE-EG",
@@ -2368,16 +2372,16 @@
    "nameEn": "EG · DCE",
    "group": "chinafutures",
    "grade": "eg2701（2027年1月）主力合约",
-   "price": 5163,
+   "price": 5289,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 233,
-   "changePct": 4.73,
-   "changeBasis": "与前一日结算价相比（11/25）",
-   "date": "2026-11-26",
+   "change": 160,
+   "changePct": 3.12,
+   "changeBasis": "与前一日结算价相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "新浪财经 中国期货延迟报价",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/EG0.shtml",
-   "note": "大商所单乙二醇11/26早间5,163元（11/25结算4,930元）。这一天的涨幅是最大的。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-EG.shtml",
+   "note": "DCE monoethylene glycol 11/27 am 5,289 yuan (11/26 settlement 5,129 yuan).这是当天涨幅最高的商品。"
   },
   {
    "code": "ZCE-TA",
@@ -2385,16 +2389,16 @@
    "nameEn": "PTA · ZCE",
    "group": "chinafutures",
    "grade": "TA701（2027年1月）主力合约",
-   "price": 6068,
+   "price": 6088,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 50,
-   "changePct": 0.83,
-   "changeBasis": "与前一日结算价相比（11/25）",
-   "date": "2026-11-26",
+   "change": 12,
+   "changePct": 0.2,
+   "changeBasis": "与前一日结算价相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "新浪财经 中国期货延迟报价",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/TA0.shtml",
-   "note": "郑商所PTA 11/26早盘6,068元（11/25结算6,018元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/ZCE-TA.shtml",
+   "note": "ZCE PTA 11/27 6,088 yuan in the morning (11/26 settlement 6,076 yuan)."
   },
   {
    "code": "ZCE-MA",
@@ -2402,16 +2406,16 @@
    "nameEn": "Methanol · ZCE",
    "group": "chinafutures",
    "grade": "MA701（2027年1月）主力合约",
-   "price": 3153,
+   "price": 3150,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 24,
-   "changePct": 0.77,
-   "changeBasis": "与前一日结算价相比（11/25）",
-   "date": "2026-11-26",
+   "change": -16,
+   "changePct": -0.51,
+   "changeBasis": "与前一日结算价相比（11/26）",
+   "date": "2026-11-27",
    "sourceName": "新浪财经 中国期货延迟报价",
-   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/MA0.shtml",
-   "note": "郑商所甲醇11/26早盘3,153元（11/25结算3,129元）。"
+   "sourceUrl": "https://finance.sina.com.cn/futures/quotes/ZCE-MA.shtml",
+   "note": "ZCE methanol fell slightly to 3,150 yuan on the morning of 11/27 (3,166 yuan settled on 11/26)."
   },
   {
    "code": "SCFI",
@@ -2654,30 +2658,31 @@
  ],
  "notes": [
   "所有价格均由免费和公共来源确认。付费的仅索引项目不会被估计，也不会被指示。",
-  "LME锌、铅、镍、锡为LME官方现货（现金）结算价（11/25：锌3,520.50、铅1,792.00、镍15,035.00、锡38,200.00美元），表中铜、铝为3个月期货官方价（11/25：铜） 11,758.00·铝$2,760.00)，所以标准不同。来源为 Westmetal 表，该表是 LME 官方价格的直接翻译。",
+  "LME锌、铅、镍、锡为LME官方现货（现金）结算价（11/25：锌3,520.50、铅1,792.00、镍15,035.00、锡38,200.00美元），表中铜、铝为3个月期货官方价（11/25：铜） 11,758.00·铝$2,760.00)，所以标准不同。 The 11/26 official price had not yet been published at the time of inquiry, so the 11/25 value was retained.来源为 Westmetal 表，该表是 LME 官方价格的直接翻译。",
   "石化和塑料原材料按中国国内现货价格（元/吨）定价，根据等级、数量和运费与韩国进口谈判者有所不同。",
-  "北美自由贸易协定以两种方式实施。 CFR日本（MOPJ）公开估价为809.00美元/吨（11/23），Offinet（韩国国家石油公司）国际石油产品新加坡现货价格为86.44美元/桶（11/23，每吨727.09美元）。单位不同，不能直接比较。",
-  "BDI、好望角型船、巴拿马型船和超灵便型船是波罗的海航运交易所指数，是 11 月 25 日星期三的收盘价（BDI 3,107、BCI 5,014、BPI 2,223、BSI 1,814）。我们甚至反映了韩国时间 21:00 左右发布的公告。",
+  "北美自由贸易协定以两种方式实施。 CFR日本（MOPJ）公开估价为801.25美元/吨（11/25，+1.6%），Offinet（韩国国家石油公司）国际石油产品新加坡现货价格为88.09美元/桶（11/26，前一日85.86美元）。 The units are different so they cannot be directly compared.",
+  "BDI、好望角型船、巴拿马型船和超灵便型船是波罗的海航运交易所指数，是 11 月 26 日星期四的收盘价（BDI 3,152、BCI 5,100、BPI 2,273、BSI 1,816）。 BDI 创 9 月 29 日以来最高水平。",
   "粮农组织食品和谷物价格指数为月度指数，为2026年10月值（11月6日公布）。粮农组织公布的食品得分为 133.9（-1.6 点，-1.2%），谷物得分为 116.8（-5.5 点，-4.5%），与 KREI 屏幕显示（食品为-1.7 点）略有不同。",
-  "CBOT 小麦和玉米转入 3 月合约，以美分/蒲式耳为单位计算 11/26 连续收盘价，大豆转入 1 月合约。该合约月份与12月合约不同（小麦569.75美分，玉米434.00美分），因此价格不能直接比较。国内进口价格为美元/吨，以农渔产品贸易信息2026年10月清关为准。",
+  "CBOT 小麦和玉米结转到 3 月份，以美分/蒲式耳为单位结转前几个月的收盘价，大豆则结转到 1 月份。由于11月26日因感恩节休市，11/25夜间场（韩国时间11/26黎明）数值为最晚，11月27日夜间场于韩国时间上午10点恢复。国内进口价格为美元/吨，以农渔产品贸易信息2026年10月清关为准。",
   "加密货币每天 24 小时进行交易，并且有不同的参考日。价格和波动率基于CoinGecko美元现货和24小时波动率，韩元价格同时基于Upbit韩元市场。",
   "LME铜和铝以3个月期货价格为基础，现货结算价格写在每项附注中。",
-  "公共采购部门的库存释放价格包含增值税，是注册实际消费者限额内的销售价格，不能与LME国际价格直接比较。",
+  "公共采购部门的库存释放价格包含增值税，是注册实际消费者限额内的销售价格，不能与LME国际价格直接比较。 In the 11/27 announcement, there were only aluminum, copper, and lead, so tin maintained its value of 11/26.",
   "韩国石油化学协会（KPIA）原材料和树脂价格不包括在内，因为它们无法免费检查。 kpia.or.kr出现连接错误（500·503），协会的数据被转移到kcia.kr（韩国化学工业协会），并且协会的价格和统计数据库仅适用于付费用户（每年120万韩元，2台设备）。没有包括估计值。",
-  "汇率为韩国进出口银行公布的交易标准汇率（每个工作日上午11点左右公布一次），与银行柜台和银行卡支付的汇率不同。 11/26通知为韩元/美元1,343.90韩元，韩元/日元844.37韩元，韩元/人民币201.57韩元。 11/25公告（1,343.60,843.41,201.70），韩元、美元、韩元、日元小幅上涨，韩元、人民币下跌。",
-  "中国期货是上海期货交易所（SHFE）、大连商品交易所（DCE）和郑州商品交易所（ZCE）主力合约按新浪财经延迟价读取的价值。这是11月26日上午（韩国时间10:36）的盘中价值，前一天的价值是11月25日的结算价。",
+  "汇率为韩国进出口银行公布的交易标准汇率（每个工作日上午11点左右公布一次），与银行柜台和银行卡支付的汇率不同。 The 11/27 notice was 1,342.70 won/dollar, 842.95 won/yen, 201.43 won/yuan, all slightly lower than 11/26 (1,343.90, 844.37, 201.57).",
+  "中国期货是上海期货交易所（SHFE）、大连商品交易所（DCE）、郑州商品交易所（ZCE）主力合约按新浪财经延迟价读取的价值。 This is the intraday value on the morning of November 27th, and the previous day's value is the settlement price on November 26th.",
   "SHFE铜/铝为元/吨，上海原油(SC)为元/桶。 LME 美元符号和汇率、增值税和评级不同，因此无法直接比较。",
-  "大商所PP·LLDPE·PVC·EG、郑商所PTA·甲醇波动按11月25日结算价差价计算。",
+  "大商所PP·LLDPE·PVC·EG、郑商所PTA·甲醇波动按11月26日结算价差价计算。",
   "SCFI·CCFI是上海航运交易所（SSE）每周五发布的集装箱运价指数。仅发布综合指数，向付费订阅者提供各航线的详细指数。",
   "SMM产量铜溢价为SMM公开文章中的数据（11/23仓单均价450美元/吨，较前一交易日-45美元）。 11/24的公共值无法确认，因此保留11/23的值，并且只有登录后才能看到仪表板值。",
   "KOMIS（韩国资源信息服务）屏幕即使在本次更新中也无法确认数值，因此6种有色金属都用Westmetal表填写，该表直接复制自LME官方通知。现货结算价和3个月期货价格分别显示。",
   "Nuri石化原料价格指数根据韩国化学工业协会（KCIA）的调查，自2012年以来以CFR东北亚为基础，公开表中的最新值为2026年第三季度的平均值（10月30日更新）。这不是国内韩元的实际价格。",
-  "KAMIS批发价是11月25日确认的批发市场中间商销售价格（全国平均）（20公斤大米产品59,640韩元，自11/13以来保持不变）。对于大豆（40公斤国产白豆），11月20日的调查是最新确认值，所以我保持原样。",
+  "KAMIS批发价是截至11月25日确认的批发市场中间商销售价格（全国平均）（20公斤大米产品为59,640韩元，自11/13以来一直如此）。对于大豆（40公斤国产白豆），11月20日的调查是最新确认值，所以我保持原样。 Surveys conducted after 11/26 were not confirmed in this inquiry.",
   "韩国银行生产者物价指数和进口物价指数为2026年10月暂值（2020年=100）。生产者价格指数于11月20日公布，进口价格指数于11月13日公布。",
   "韩国关税厅进出口贸易统计数据(tradedata.go.kr)中最近一个月按品目的进口单价和HS编码未在第一个公共屏幕上确认，因此未包含在本次更新中。",
   "SCI99（intl.sci99.com）的开工率和库存指标未包含在内，因为它们仅适用于付费会员。来自同一网站的公开价格中心的PP·LLDPE值未包含在表中，因为该项目与现有的中国现货产品（SunSirs）重叠。",
   "韩国有色金属协会(nonferrous.or.kr)披露了LME六种有色金属(铜、铝、锌、铅、镍、锡)的现货价格以及锌锭的月均价格和国内销售价格。国内锌锭价格为韩国锌业公司提供的不含增值税的标准国内分销价格。",
   "公共菜单中无法确认协会网站上的 LME 库存、贵金属（黄金和白银）价格以及每周和每月的市场状况评论。由于服务器错误（VBScript 800a0009），有色金属统计及价格信息公告牌的统计信息子统计画面无法打开，因此仅使用公告牌中发布的价格和统计数据。",
-  "再生原材料是韩国环境公社“可再生资源价格调查”（国家批准统计第392001号）每月公布的数值。每月10日调查，26日公布，单位为韩元/kg（含增值税，不含物流费用），为全国平均水平。废纸、废钢是中间加工企业未加工原材料的采购价，废塑料、废玻璃瓶、废金属罐是中间加工后的销售价，所以即使是同一种商品，实际成交价格也可能不同。 2026 年 11 月版本于 11 月 25 日发布在循环资源信息中心，ABS 薄片因未公布而从表中省略 (-)。"
+  "再生原材料是韩国环境公社“可再生资源价格调查”（国家批准统计第392001号）每月公布的数值。每月10日调查，26日公布，单位为韩元/kg（含增值税，不含物流费用），为全国平均水平。废纸、废钢是中间加工企业未加工原材料的采购价，废塑料、废玻璃瓶、废金属罐是中间加工后的销售价，所以即使是同一种商品，实际成交价格也可能不同。 2026 年 11 月版本于 11 月 25 日发布在循环资源信息中心，ABS 薄片因未公布而从表中省略 (-)。",
+  "Chinese spot is the SunSirs daily list (11/26) value. HDPE 10,037.50元、PVC 5,080.00元、PP 9,400.00元、LDPE 10,500.00元等，波动幅度为同表中SunSirs公布的相对于11/25的数值。"
  ]
 }
