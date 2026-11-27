@@ -1,10 +1,10 @@
 {
  "_note": "HTML 요소 단위 번역 — 문장이 <b>·<a> 로 쪼개져 사전 한 줄로 자연스럽게 옮길 수 없는 문단만 담습니다. 한국어 원본 요소에 data-ib-block=\"키\" 를 달면 /en/ /zh/ /ja/ 페이지에서 아래 HTML 로 통째로 바뀝니다. 안쪽 href 는 언어 폴더 기준으로 자동 변환됩니다.",
  "article.noscript": {
-  "ko": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>이 리포트를 읽으려면 JavaScript가 필요합니다. <a href=\"index.html\">전체 리포트 목록</a>으로 돌아가세요.</p>\n    </div>",
-  "en": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>This report needs JavaScript. <a href=\"index.html\">Back to all reports</a>.</p>\n    </div>",
-  "zh": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>阅读本报道需要启用 JavaScript。<a href=\"index.html\">返回全部报道</a>。</p>\n    </div>",
-  "ja": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>このレポートを読むには JavaScript が必要です。<a href=\"index.html\">レポート一覧に戻る</a>。</p>\n    </div>"
+  "ko": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>이 리포트를 읽으려면 JavaScript가 필요합니다. <a href=\"./\">전체 리포트 목록</a>으로 돌아가세요.</p>\n    </div>",
+  "en": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>This report needs JavaScript. <a href=\"./\">Back to all reports</a>.</p>\n    </div>",
+  "zh": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>阅读本报道需要启用 JavaScript。<a href=\"./\">返回全部报道</a>。</p>\n    </div>",
+  "ja": "<div class=\"container\" style=\"padding:40px 0;text-align:center\">\n      <p>このレポートを読むには JavaScript が必要です。<a href=\"./\">レポート一覧に戻る</a>。</p>\n    </div>"
  },
  "forms.dek": {
   "ko": "근로계약서·사직서·회의록 같은 실무 서식부터 <b>B/L Instruction(선적지시서)·선하증권(B/L)·원산지증명</b>, 급여·재고·퇴직금 <b>자동계산</b>, 업종별 창업 사업계획서, NDA·MOU·정관·임대차계약서, 이력서·자소서·경조 카드·영문 인보이스·PPT까지 <b>10개 카테고리 138종</b>을 한 페이지에 모았습니다. 카드의 미리보기에서 서식을 고르고 <b>바로 편집하기</b>를 누르면, 왼쪽 입력란과 오른쪽 A4 문서가 함께 열립니다. <b>손글씨 서명과 도장</b>을 넣어 인쇄·PDF로 저장하거나 <b>서명 요청 링크</b>로 상대방 서명을 받을 수 있습니다.",
@@ -25,10 +25,10 @@
   "ja": "<p style=\"font-size:14px;line-height:1.8\"><b>このページの書式ジェネレーターは JavaScript で動作します。</b>JavaScript を有効にすると、文書書式23種（雇用契約書・退職届・休職願・始末書・経緯書・引継書・議事録・見積依頼書・納品確認書など）、貿易・物流8種（B/L インストラクション・船荷証券・原産地証明・パッキングリスト・貨物保険・検収確認書）、自動計算19種（給与・年次有給・家計簿・粗利・在庫・取引先台帳・退職金・資金日報）、事業計画・報告16種、契約・法務26種（NDA・MOU・定款・議事録・賃貸）、履歴書・自己PR10種、挨拶状・カード8種、英文書式16種、PPT10種、オンライン印鑑2種が使えます。</p>\n        <p style=\"margin-top:10px;font-size:13px\">貿易書式（PI・CI・PL）は<a href=\"biz.html\">事業者ツール</a>、給与計算は<a href=\"salary.html\">給与計算機</a>をご利用ください。</p>"
  },
  "market.noscript": {
-  "ko": "<p>시황표를 보려면 JavaScript가 필요합니다. <a href=\"index.html\">전체 리포트 목록</a>으로 돌아가세요.</p>",
-  "en": "<p>The market board needs JavaScript. <a href=\"index.html\">Back to all reports</a>.</p>",
-  "zh": "<p>查看行情表需要启用 JavaScript。<a href=\"index.html\">返回全部报道</a>。</p>",
-  "ja": "<p>市況表を見るには JavaScript が必要です。<a href=\"index.html\">レポート一覧に戻る</a>。</p>"
+  "ko": "<p>시황표를 보려면 JavaScript가 필요합니다. <a href=\"./\">전체 리포트 목록</a>으로 돌아가세요.</p>",
+  "en": "<p>The market board needs JavaScript. <a href=\"./\">Back to all reports</a>.</p>",
+  "zh": "<p>查看行情表需要启用 JavaScript。<a href=\"./\">返回全部报道</a>。</p>",
+  "ja": "<p>市況表を見るには JavaScript が必要です。<a href=\"./\">レポート一覧に戻る</a>。</p>"
  },
  "global.dek": {
   "ko": "수출입하며 실제로 매일 쓰는 세 가지를 한 페이지에 모았습니다. <b>상대 국가를 고르면 그 나라 말과 예절로 쓴 무역 이메일</b>이 바로 나오고, <b>출장지를 고르면 일비·숙박 상한·면세 한도·전압·단위</b>가 한 번에 정리되며, <b>미국·중국·일본·영국·인도·베트남 기업의 등록·재무·선적 이력</b>을 공식 사이트에서 확인할 수 있습니다. 회원가입 없이 브라우저에서만 동작하고, 입력한 값은 서버로 전송되지 않습니다.",

@@ -3400,7 +3400,7 @@
    "market": "yahoo",
    "sourceName": "Yahoo Finance · BTC-USD",
    "sourceUrl": "https://finance.yahoo.com/quote/BTC-USD/history",
-   "note": "Dollar spot closing price (UTC daily). The won price and kimchi premium in the table are based on Upbit.",
+   "note": "Dollar spot closing price (UTC daily). The won price and Kimchi Premium in the table are based on Upbit.",
    "points": [
     [
      "2025-10-23",

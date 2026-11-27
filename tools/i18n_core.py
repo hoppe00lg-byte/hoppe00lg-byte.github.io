@@ -243,6 +243,50 @@ def rfc822(iso):
     return d.strftime("%a, %d %b %Y %H:%M:%S %z")
 
 
+# ---------------------------------------------------------------- 번역 교정 규칙
+# data/i18n/fixes.json — 기계번역이 반복해서 틀리는 표현을 고칩니다.
+#   ["잘못된 표기", "바른 표기"]            단순 치환
+#   ["re:정규식", "바꿀 문자열"]             정규식(뒤의 (?!) 부정전망 등으로 예외를 둡니다)
+FIXES_PATH = os.path.join(ROOT, "data", "i18n", "fixes.json")
+_fixes = {}
+_fixes_re = {}
+
+
+def load_fixes(lang):
+    if lang not in _fixes:
+        plain, regs = [], []
+        path = FIXES_PATH
+        data = {}
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                data = json.load(f)
+        for bad, good in (data.get(lang) or []):
+            if not bad:
+                continue
+            if bad.startswith("re:"):
+                try:
+                    regs.append((re.compile(bad[3:]), good))
+                except re.error as e:
+                    raise RuntimeError(f"fixes.json {lang}: 정규식 오류 {bad!r} — {e}")
+            else:
+                plain.append((bad, good))
+        _fixes[lang], _fixes_re[lang] = plain, regs
+    return _fixes[lang], _fixes_re[lang]
+
+
+def apply_fixes(text, lang):
+    """번역 결과에 교정 규칙을 차례로 적용합니다(사전과 데이터 번역 양쪽에 쓰입니다)."""
+    if not text:
+        return text
+    plain, regs = load_fixes(lang)
+    for bad, good in plain:
+        if bad in text:
+            text = text.replace(bad, good)
+    for rx, good in regs:
+        text = rx.sub(good, text)
+    return text
+
+
 # ---------------------------------------------------------------- 마크다운
 
 MD_MARKERS = ("## ", "### ", "> ", "- ", "* ")

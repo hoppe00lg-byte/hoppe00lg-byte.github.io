@@ -91,7 +91,7 @@ def website_ld(site, lang):
     """첫 페이지의 WebSite 구조화 데이터(사이트 이름·언어·발행처)."""
     brand = site.get("brand") or {}
     name = brand.get("name") or "INSIGHT BRIEF"
-    home = f"{BASE}/" if lang == "ko" else f"{BASE}/{lang}/index.html"
+    home = f"{BASE}/" if lang == "ko" else f"{BASE}/{lang}/"
     node = {
         "@context": "https://schema.org",
         "@type": "WebSite",

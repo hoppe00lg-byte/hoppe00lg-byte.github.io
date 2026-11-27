@@ -568,7 +568,7 @@
        "change": -924.01,
        "note": "10月の平均は年中最高（14,532ドル）。 11/20 現物は12,230.50ドル",
        "date": "2026-11-20",
-       "sourceName": "LME月平均（Westmetallクリーンアップ）",
+       "sourceName": "LME月平均（Westmetall集計）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -584,7 +584,7 @@
        "change": 84.19,
        "note": "11月の平均が10月より高い。 11/20 現物 3,184.50ドル",
        "date": "2026-11-20",
-       "sourceName": "LME月平均（Westmetallクリーンアップ）",
+       "sourceName": "LME月平均（Westmetall集計）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -600,7 +600,7 @@
        "change": -28.63,
        "note": "9月 4,019.70 → 10月 3,820.43 → 11月 3,791.80で2ヶ月目下落",
        "date": "2026-11-20",
-       "sourceName": "LME月平均（Westmetallクリーンアップ）",
+       "sourceName": "LME月平均（Westmetall集計）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -616,7 +616,7 @@
        "change": 282.0,
        "note": "11月に反騰。 11/20 現物 15,310ドル",
        "date": "2026-11-20",
-       "sourceName": "LME月平均（Westmetallクリーンアップ）",
+       "sourceName": "LME月平均（Westmetall集計）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -873,7 +873,7 @@
        "change": -825.7,
        "note": "1月29日史上最高5,318.40ドル（終値）比33.9％低い。現物基準年初比−18.99％",
        "date": "2026-11-20",
-       "sourceName": "GoldPrice 2026 年間相場定理 (COMEX 標準兵器)",
+       "sourceName": "GoldPrice 2026 年間相場まとめ (COMEX 標準兵器)",
        "sourceUrl": "https://goldoilprice.com/historical/gold/2026"
       },
       {
@@ -904,7 +904,7 @@
        "change": 426.71,
        "note": "10月の月平均14,532.48ドル(+23.1%)が年中高点。 11月急落で年間上昇分のほとんど返却",
        "date": "2026-11-20",
-       "sourceName": "LME月平均（Westmetallクリーンアップ）",
+       "sourceName": "LME月平均（Westmetall集計）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -920,7 +920,7 @@
        "change": 309.05,
        "note": "年中最高は6月（3,458.64ドル月平均）",
        "date": "2026-11-20",
-       "sourceName": "LME月平均（Westmetallクリーンアップ）",
+       "sourceName": "LME月平均（Westmetall集計）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -936,7 +936,7 @@
        "change": 510.26,
        "note": "9月4,019.70ドルが年中高点",
        "date": "2026-11-20",
-       "sourceName": "LME月平均（Westmetallクリーンアップ）",
+       "sourceName": "LME月平均（Westmetall集計）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -952,7 +952,7 @@
        "change": 431.19,
        "note": "5月18,805ドルが年中高点、以後2桁下落",
        "date": "2026-11-20",
-       "sourceName": "LME月平均（Westmetallクリーンアップ）",
+       "sourceName": "LME月平均（Westmetall集計）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       }
      ]
@@ -1679,7 +1679,7 @@
    "changePct": -2.46,
    "changeBasis": "前日公式家（11/24）対比",
    "date": "2026-11-25",
-   "sourceName": "LME公式（Westmetallクリーンアップ）",
+   "sourceName": "LME公式（Westmetall集計）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash",
    "note": "LME 3ヶ月公式が11/25 11,758.00ドル（現物決済11,703.00ドル、在庫336,750トン）。 11/24 12,055.00ドルに対して2.5％下落。"
   },
@@ -1695,7 +1695,7 @@
    "changePct": -1.04,
    "changeBasis": "前日公式家（11/24）対比",
    "date": "2026-11-25",
-   "sourceName": "LME公式（Westmetallクリーンアップ）",
+   "sourceName": "LME公式（Westmetall集計）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Al_cash",
    "note": "LME 3ヶ月公式が11/25 2,760.00ドル（現物決済2,849.00ドル、在庫219,200トン）。 11/24 2,789.00ドルに対して1.0％下落。"
   },
@@ -1712,7 +1712,7 @@
    "changePct": -3.94,
    "changeBasis": "前日(11/24) 現物コントラスト",
    "date": "2026-11-25",
-   "sourceName": "LME公式（Westmetallクリーンアップ）",
+   "sourceName": "LME公式（Westmetall集計）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Zn_cash",
    "note": "LME現物決済は11/25 3,520.50ドル（3ヶ月3,394.00ドル、在庫143,450トン）。 11/24 3,665.00ドルに対して3.9％下落。"
   },
@@ -1729,7 +1729,7 @@
    "changePct": 0.34,
    "changeBasis": "前日(11/24) 現物コントラスト",
    "date": "2026-11-25",
-   "sourceName": "LME公式（Westmetallクリーンアップ）",
+   "sourceName": "LME公式（Westmetall集計）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Pb_cash",
    "note": "LME現物決済は11/25 1,792.00ドル(3ヶ月1,827.00ドル、在庫256,675トン)。 11/24 1,786.00ドルに比べて小幅上昇。"
   },
@@ -1746,7 +1746,7 @@
    "changePct": -0.17,
    "changeBasis": "前日(11/24) 現物コントラスト",
    "date": "2026-11-25",
-   "sourceName": "LME公式（Westmetallクリーンアップ）",
+   "sourceName": "LME公式（Westmetall集計）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Ni_cash",
    "note": "LME現物決済は11/25 15,035.00ドル(3ヶ月15,210.00ドル、在庫275,604トン)。 11/24 15,060.00ドルとほぼ同じです。"
   },
@@ -1763,7 +1763,7 @@
    "changePct": -6.43,
    "changeBasis": "前日(11/24) 現物コントラスト",
    "date": "2026-11-25",
-   "sourceName": "LME公式（Westmetallクリーンアップ）",
+   "sourceName": "LME公式（Westmetall集計）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash",
    "note": "LME現物決済は11/25 38,200.00ドル(3ヶ月38,050.00ドル、在庫3,805トン)。 11/24 40,825.00ドルで6.4%急落しました。"
   },
@@ -2428,7 +2428,7 @@
    "decimals": 2,
    "change": -68.54,
    "changePct": -1.92,
-   "changeBasis": "全州(11/13)",
+   "changeBasis": "先週(11/13)",
    "date": "2026-11-20",
    "sourceName": "上海海運取引所（SSE）SCFI",
    "sourceUrl": "https://en.sse.net.cn/indices/scfinew.jsp",
@@ -2445,7 +2445,7 @@
    "decimals": 2,
    "change": 3.94,
    "changePct": 0.21,
-   "changeBasis": "全州(11/13)",
+   "changeBasis": "先週(11/13)",
    "date": "2026-11-20",
    "sourceName": "上海海運取引所（SSE）CCFI",
    "sourceUrl": "https://en.sse.net.cn/indices/ccfinew.jsp",
@@ -2464,7 +2464,7 @@
    "changePct": -2.76,
    "changeBasis": "前日(11/24)に備え",
    "date": "2026-11-25",
-   "sourceName": "LME公式（Westmetallクリーンアップ）",
+   "sourceName": "LME公式（Westmetall集計）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash",
    "note": "LME現物決済は11/25 11,703.00ドル(11/24 12,035.00ドル)。"
   },
@@ -2481,7 +2481,7 @@
    "changePct": -8.7,
    "changeBasis": "前日(11/24)に備え",
    "date": "2026-11-25",
-   "sourceName": "LME公式（Westmetallクリーンアップ）",
+   "sourceName": "LME公式（Westmetall集計）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Al_cash",
    "note": "LME現物決済は11/25 2,849.00ドル(11/24 3,120.50ドル)。 8.7%急落しました。"
   },

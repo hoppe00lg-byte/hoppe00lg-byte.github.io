@@ -80,7 +80,7 @@ TEMPLATE = r"""<!DOCTYPE html>
   <div class="masthead">
     <div class="container">
       <div class="brand">
-        <a href="../index.html" aria-label="INSIGHT BRIEF">
+        <a href="../" aria-label="INSIGHT BRIEF">
           <span class="mark" aria-hidden="true"></span>
           <span class="name">INSIGHT <em>BRIEF</em></span>
         </a>
@@ -92,7 +92,7 @@ TEMPLATE = r"""<!DOCTYPE html>
       </div>
       <div class="mast-tools">
         <a class="btn btn-ghost btn-sm" href="../contact.html#tip">[[tip]]</a>
-        <a class="btn btn-accent btn-sm" href="../index.html#subscribe">[[subscribe]]</a>
+        <a class="btn btn-accent btn-sm" href="../#subscribe">[[subscribe]]</a>
       </div>
     </div>
   </div>
@@ -101,13 +101,13 @@ TEMPLATE = r"""<!DOCTYPE html>
 <div class="nav-wrap">
   <div class="container">
     <ul class="nav" id="site-nav">
-      <li><a href="../index.html">[[navAll]]</a></li>
-      <li><a href="../index.html?cat=investigative">[[navInvest]]</a></li>
-      <li><a href="../index.html?cat=economy">[[navEconomy]]</a></li>
-      <li><a href="../index.html?cat=trade">[[navTrade]]</a></li>
+      <li><a href="../">[[navAll]]</a></li>
+      <li><a href="../?cat=investigative">[[navInvest]]</a></li>
+      <li><a href="../?cat=economy">[[navEconomy]]</a></li>
+      <li><a href="../?cat=trade">[[navTrade]]</a></li>
       <li><a href="../market.html">[[navMarket]]</a></li>
-      <li><a href="../index.html?cat=ai">[[navAI]]</a></li>
-      <li><a href="../index.html?cat=fire">[[navFire]]</a></li>
+      <li><a href="../?cat=ai">[[navAI]]</a></li>
+      <li><a href="../?cat=fire">[[navFire]]</a></li>
       <li><a href="../lotto.html">[[navLotto]]</a></li>
       <li><a href="../saju.html">[[navSaju]]</a></li>
       <li><a href="../salary.html">[[navSalary]]</a></li>
@@ -120,7 +120,7 @@ TEMPLATE = r"""<!DOCTYPE html>
       <li><a class="nav-ad" href="../ad.html">[[navAd]]</a></li>
       <li><a class="nav-contact" href="../contact.html">[[navContact]]</a></li>
     </ul>
-    <form class="search search-desktop" role="search" action="../index.html" method="get">
+    <form class="search search-desktop" role="search" action="../" method="get">
       <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
       <input type="search" name="q" placeholder="[[searchPh]]" aria-label="[[searchAria]]" autocomplete="off">
     </form>
@@ -585,11 +585,11 @@ TEMPLATE = r"""<!DOCTYPE html>
       <div class="f-col">
         <h4>[[footerSections]]</h4>
         <ul>
-          <li><a href="../index.html?cat=investigative">[[navInvest]]</a></li>
-          <li><a href="../index.html?cat=economy">[[navEconomy]]</a></li>
-          <li><a href="../index.html?cat=trade">[[navTrade]]</a></li>
+          <li><a href="../?cat=investigative">[[navInvest]]</a></li>
+          <li><a href="../?cat=economy">[[navEconomy]]</a></li>
+          <li><a href="../?cat=trade">[[navTrade]]</a></li>
           <li><a href="../market.html">[[navMarket]]</a></li>
-          <li><a href="../index.html?cat=ai">[[navAI]]</a></li>
+          <li><a href="../?cat=ai">[[navAI]]</a></li>
         </ul>
       </div>
       <div class="f-col">
@@ -599,6 +599,11 @@ TEMPLATE = r"""<!DOCTYPE html>
           <li><a href="../contact.html#tip">[[footerTip]]</a></li>
           <li><a href="../ad.html">[[footerAd]]</a></li>
           <li><a href="../lotto.html">[[navLotto]]</a></li>
+          <li><a href="../saju.html">[[navSaju]]</a></li>
+          <li><a href="../music.html">[[navMusic]]</a></li>
+          <li><a href="../creator.html">[[navCreator]]</a></li>
+          <li><a href="../style.html">[[navStyle]]</a></li>
+          <li><a href="../links.html">[[navLinks]]</a></li>
           <li><a href="../salary.html">[[navSalary]]</a></li>
           <li><a href="tax.html">[[navTax]]</a></li>
           <li><a href="../biz.html">[[navBiz]]</a></li>
@@ -656,8 +661,8 @@ EN = {
     "tip": "Send a tip",
     "subscribe": "Weekly briefing",
     "navAll": "All", "navInvest": "Investigations", "navEconomy": "Economy", "navTrade": "Trade & Commodities",
-    "navMarket": "Market board", "navAI": "AI & Tech", "navFire": "Fire & Safety", "navLotto": "Lotto generator",
-    "navSaju": "Fortune reading", "navSalary": "Payroll calculator", "navTax": "Tax & closing",
+    "navMarket": "Market board", "navAI": "AI & Tech", "navFire": "Disaster & Safety", "navLotto": "Lotto generator",
+    "navSaju": "Fortune reading", "navMusic": "AI music & lyrics", "navCreator": "Blog & Shorts studio", "navStyle": "Style & outfit brief", "navLinks": "Gear we use", "navSalary": "Payroll calculator", "navTax": "Tax & closing",
     "navBiz": "Business tools", "navForms": "Forms & e-sign", "navLaw": "Law reference", "navSeller": "Seller tools", "navExperts": "Experts", "navSitemapLink": "Sitemap",
     "navAd": "Advertise", "navContact": "Contact",
     "searchPh": "Search articles", "searchAria": "Search articles",
@@ -754,8 +759,8 @@ ZH = {
     "tip": "提供线索",
     "subscribe": "订阅周报",
     "navAll": "全部", "navInvest": "调查报道", "navEconomy": "经济金融", "navTrade": "贸易大宗",
-    "navMarket": "行情板", "navAI": "人工智能", "navFire": "消防与安全", "navLotto": "彩票生成器",
-    "navSaju": "八字排盘", "navSalary": "薪酬计算器", "navTax": "财税决算",
+    "navMarket": "行情板", "navAI": "人工智能", "navFire": "灾难·安全", "navLotto": "彩票生成器",
+    "navSaju": "八字排盘", "navMusic": "AI音乐·歌词", "navCreator": "博客·短视频工作室", "navStyle": "穿搭·风格推荐", "navLinks": "推荐商品·用品", "navSalary": "薪酬计算器", "navTax": "财税决算",
     "navBiz": "经营者工具", "navForms": "表单与电子签", "navLaw": "商事法律参考", "navSeller": "卖家工具", "navExperts": "专家匹配", "navSitemapLink": "网站地图",
     "navAd": "广告合作", "navContact": "联系编辑部",
     "searchPh": "搜索文章", "searchAria": "搜索文章",
@@ -852,8 +857,8 @@ JA = {
     "tip": "情報提供",
     "subscribe": "週次ブリーフ",
     "navAll": "すべて", "navInvest": "調査報道", "navEconomy": "経済・金融", "navTrade": "貿易・資源",
-    "navMarket": "市況ボード", "navAI": "AI・テック", "navFire": "消防・安全", "navLotto": "宝くじ生成",
-    "navSaju": "四柱推命", "navSalary": "給与計算", "navTax": "税務・決算",
+    "navMarket": "市況ボード", "navAI": "AI・テック", "navFire": "災害・安全", "navLotto": "宝くじ生成",
+    "navSaju": "四柱推命", "navMusic": "AI音楽・歌詞", "navCreator": "ブログ・ショート制作", "navStyle": "ファッション・スタイル", "navLinks": "おすすめ商品・用品", "navSalary": "給与計算", "navTax": "税務・決算",
     "navBiz": "事業者ツール", "navForms": "書式・電子署名", "navLaw": "企業法務", "navSeller": "EC事業者ツール", "navExperts": "専門家マッチング", "navSitemapLink": "サイトマップ",
     "navAd": "広告・提携", "navContact": "お問い合わせ",
     "searchPh": "記事を検索", "searchAria": "記事を検索",

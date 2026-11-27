@@ -568,7 +568,7 @@
        "change": -924.01,
        "note": "10 月份的平均值是一年中最高的（14,532 美元）。 11/20 现货价格为 12,230.50 美元",
        "date": "2026-11-20",
-       "sourceName": "LME月平均值（Westmetal定理）",
+       "sourceName": "LME月平均值（Westmetal汇总）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -584,7 +584,7 @@
        "change": 84.19,
        "note": "11月的平均值高于10月。 11/20 现货 $3,184.50",
        "date": "2026-11-20",
-       "sourceName": "LME月平均值（Westmetal定理）",
+       "sourceName": "LME月平均值（Westmetal汇总）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -600,7 +600,7 @@
        "change": -28.63,
        "note": "9月4,019.70→10月3,820.43→11月3,791.80，连续第二个月下降",
        "date": "2026-11-20",
-       "sourceName": "LME月平均值（Westmetal定理）",
+       "sourceName": "LME月平均值（Westmetal汇总）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -616,7 +616,7 @@
        "change": 282.0,
        "note": "11月反弹。 11/20 现货 $15,310",
        "date": "2026-11-20",
-       "sourceName": "LME月平均值（Westmetal定理）",
+       "sourceName": "LME月平均值（Westmetal汇总）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -904,7 +904,7 @@
        "change": 426.71,
        "note": "10月份月均价为14,532.48美元（+23.1%），为年内最高点。由于11月份的大幅下跌，大部分年度涨幅被取消。",
        "date": "2026-11-20",
-       "sourceName": "LME月平均值（Westmetal定理）",
+       "sourceName": "LME月平均值（Westmetal汇总）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -920,7 +920,7 @@
        "change": 309.05,
        "note": "一年中最高的月份是 6 月（月平均值为 3,458.64 美元）",
        "date": "2026-11-20",
-       "sourceName": "LME月平均值（Westmetal定理）",
+       "sourceName": "LME月平均值（Westmetal汇总）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -936,7 +936,7 @@
        "change": 510.26,
        "note": "9 月份 4,019.70 美元是年内最高点",
        "date": "2026-11-20",
-       "sourceName": "LME月平均值（Westmetal定理）",
+       "sourceName": "LME月平均值（Westmetal汇总）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -952,7 +952,7 @@
        "change": 431.19,
        "note": "5月份的18,805美元是年内的最高点，随后出现两位数的下跌。",
        "date": "2026-11-20",
-       "sourceName": "LME月平均值（Westmetal定理）",
+       "sourceName": "LME月平均值（Westmetal汇总）",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       }
      ]
@@ -1679,7 +1679,7 @@
    "changePct": -2.46,
    "changeBasis": "与前一天的官方价格相比（11/24）",
    "date": "2026-11-25",
-   "sourceName": "LME官方价格（韦斯特金属定理）",
+   "sourceName": "LME官方价格（韦斯特金属汇总）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash",
    "note": "LME 3个月官方价格11/25 $11,758.00（现货付款$11,703.00，库存336,750吨）。 11/24 从 12,055.00 美元下跌 2.5%。"
   },
@@ -1695,7 +1695,7 @@
    "changePct": -1.04,
    "changeBasis": "与前一天的官方价格相比（11/24）",
    "date": "2026-11-25",
-   "sourceName": "LME官方价格（韦斯特金属定理）",
+   "sourceName": "LME官方价格（韦斯特金属汇总）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Al_cash",
    "note": "LME 3个月官方价格11/25 $2,760.00（现货付款$2,849.00，库存219,200吨）。 11/24 从 2,789.00 美元下跌 1.0%。"
   },
@@ -1712,7 +1712,7 @@
    "changePct": -3.94,
    "changeBasis": "与前一日现货价格相比（11/24）",
    "date": "2026-11-25",
-   "sourceName": "LME官方价格（韦斯特金属定理）",
+   "sourceName": "LME官方价格（韦斯特金属汇总）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Zn_cash",
    "note": "LME现货结算价11/25 $3,520.50（3个月$3,394.00，库存143,450吨）。 11/24 从 3,665.00 美元下跌 3.9%。"
   },
@@ -1729,7 +1729,7 @@
    "changePct": 0.34,
    "changeBasis": "与前一日现货价格相比（11/24）",
    "date": "2026-11-25",
-   "sourceName": "LME官方价格（韦斯特金属定理）",
+   "sourceName": "LME官方价格（韦斯特金属汇总）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Pb_cash",
    "note": "LME现货结算价11/25 $1,792.00（3个月$1,827.00，库存256,675吨）。与 11/24 相比略有增加 1,786.00 美元。"
   },
@@ -1746,7 +1746,7 @@
    "changePct": -0.17,
    "changeBasis": "与前一日现货价格相比（11/24）",
    "date": "2026-11-25",
-   "sourceName": "LME官方价格（韦斯特金属定理）",
+   "sourceName": "LME官方价格（韦斯特金属汇总）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Ni_cash",
    "note": "LME现货结算价11/25 $15,035.00 (3个月$15,210.00，库存275,604吨)。 11/24 几乎等于 15,060.00 美元。"
   },
@@ -1763,7 +1763,7 @@
    "changePct": -6.43,
    "changeBasis": "与前一日现货价格相比（11/24）",
    "date": "2026-11-25",
-   "sourceName": "LME官方价格（韦斯特金属定理）",
+   "sourceName": "LME官方价格（韦斯特金属汇总）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash",
    "note": "LME现货结算价11/25 $38,200.00（3个月$38,050.00，库存3,805吨）。 11/24 从 40,825.00 美元下跌 6.4%。"
   },
@@ -2428,7 +2428,7 @@
    "decimals": 2,
    "change": -68.54,
    "changePct": -1.92,
-   "changeBasis": "全州 (11/13)",
+   "changeBasis": "前一周 (11/13)",
    "date": "2026-11-20",
    "sourceName": "上海航运交易所（上交所）SCFI",
    "sourceUrl": "https://en.sse.net.cn/indices/scfinew.jsp",
@@ -2445,7 +2445,7 @@
    "decimals": 2,
    "change": 3.94,
    "changePct": 0.21,
-   "changeBasis": "全州 (11/13)",
+   "changeBasis": "前一周 (11/13)",
    "date": "2026-11-20",
    "sourceName": "上海航运交易所 (SSE) CCFI",
    "sourceUrl": "https://en.sse.net.cn/indices/ccfinew.jsp",
@@ -2464,7 +2464,7 @@
    "changePct": -2.76,
    "changeBasis": "与前一天相比（11/24）",
    "date": "2026-11-25",
-   "sourceName": "LME官方价格（韦斯特金属定理）",
+   "sourceName": "LME官方价格（韦斯特金属汇总）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash",
    "note": "LME 现货结算价 11/25 11,703.00 美元（11/24 12,035.00 美元）。"
   },
@@ -2481,7 +2481,7 @@
    "changePct": -8.7,
    "changeBasis": "与前一天相比（11/24）",
    "date": "2026-11-25",
-   "sourceName": "LME官方价格（韦斯特金属定理）",
+   "sourceName": "LME官方价格（韦斯特金属汇总）",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Al_cash",
    "note": "LME 现货结算价 11/25 2,849.00 美元（11/24 3,120.50 美元）。暴跌8.7%。"
   },

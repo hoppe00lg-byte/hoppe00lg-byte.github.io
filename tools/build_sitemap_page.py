@@ -166,42 +166,42 @@ SECTIONS = [
                  "zh": "以数据和访谈追踪经济·金融、贸易·原材料、AI·科技、灾难·安全现场。",
                  "ja": "経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追います。"},
         "items": [
-            {"href": "index.html",
+            {"href": "./",
              "title": {"ko": "전체 기사", "en": "All stories", "zh": "全部报道", "ja": "すべての記事"},
              "desc": {"ko": "발행한 모든 리포트를 최신순으로 봅니다.",
                       "en": "Every report we have published, newest first.",
                       "zh": "按最新顺序查看已发布的全部报道。",
                       "ja": "公開した全レポートを新しい順に。"},
              "tag": {"ko": "전체", "en": "All", "zh": "全部", "ja": "すべて"}},
-            {"href": "index.html?cat=ai",
+            {"href": "./?cat=ai",
              "title": {"ko": "AI·테크", "en": "AI & Tech", "zh": "AI·科技", "ja": "AI・テック"},
              "desc": {"ko": "기술이 바꾸는 일의 방식 — 모델·반도체·자동화 현장.",
                       "en": "How technology changes the way work is done: models, chips, automation.",
                       "zh": "技术如何改变工作方式：模型、芯片、自动化现场。",
                       "ja": "技術が仕事のやり方をどう変えるか。モデル・半導体・自動化の現場。"},
              "tag": {"ko": "분류", "en": "Desk", "zh": "分类", "ja": "分野"}},
-            {"href": "index.html?cat=economy",
+            {"href": "./?cat=economy",
              "title": {"ko": "경제·금융", "en": "Economy & Finance", "zh": "经济·金融", "ja": "経済・金融"},
              "desc": {"ko": "금리·물가·가계의 숫자를 데이터로 읽습니다.",
                       "en": "Rates, prices and household numbers, read through data.",
                       "zh": "用数据读懂利率、物价与家庭收支。",
                       "ja": "金利・物価・家計の数字をデータで読みます。"},
              "tag": {"ko": "분류", "en": "Desk", "zh": "分类", "ja": "分野"}},
-            {"href": "index.html?cat=trade",
+            {"href": "./?cat=trade",
              "title": {"ko": "무역·원자재", "en": "Trade & Commodities", "zh": "贸易·原材料", "ja": "貿易・原材料"},
              "desc": {"ko": "원료와 공급망의 흐름, 수출입 판가를 다룹니다.",
                       "en": "Raw materials, supply chains and export pricing.",
                       "zh": "原材料与供应链的走向、进出口价格。",
                       "ja": "原材料とサプライチェーンの流れ、輸出入価格。"},
              "tag": {"ko": "분류", "en": "Desk", "zh": "分类", "ja": "分野"}},
-            {"href": "index.html?cat=fire",
+            {"href": "./?cat=fire",
              "title": {"ko": "재난·안전", "en": "Disaster & Safety", "zh": "灾难·安全", "ja": "災害・安全"},
              "desc": {"ko": "소방 현장에서 보는 재난 예방과 대응.",
                       "en": "Disaster prevention and response seen from the fire ground.",
                       "zh": "从消防现场看灾难预防与应对。",
                       "ja": "消防現場から見る災害予防と対応。"},
              "tag": {"ko": "분류", "en": "Desk", "zh": "分类", "ja": "分野"}},
-            {"href": "index.html?cat=investigative",
+            {"href": "./?cat=investigative",
              "title": {"ko": "주간 탐사보도", "en": "Weekly investigations", "zh": "每周调查报道", "ja": "週刊調査報道"},
              "desc": {"ko": "기록과 인터뷰로 확인한 탐사보도를 모았습니다.",
                       "en": "Investigations confirmed by records and interviews, collected each week.",
@@ -626,7 +626,7 @@ def header_block(lang):
   <div class="masthead">
     <div class="container">
       <div class="brand">
-        <a href="index.html" aria-label="{e(d['homeAria'])}">
+        <a href="./" aria-label="{e(d['homeAria'])}">
           <span class="mark" aria-hidden="true"></span>
           <span class="name" data-brand-name>INSIGHT <em>BRIEF</em></span>
         </a>
@@ -637,7 +637,7 @@ def header_block(lang):
         </div>
       </div>
       <div class="mast-tools">
-        <a class="btn btn-ghost btn-sm" href="index.html">{e(d['home'])}</a>
+        <a class="btn btn-ghost btn-sm" href="./">{e(d['home'])}</a>
         <a class="btn btn-accent btn-sm" href="contact.html#tip">{e(d['tip'])}</a>
         <button class="icon-btn search-toggle" type="button" aria-label="{e(d['searchOpen'])}" aria-expanded="false" aria-controls="search-mobile">
           <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"></circle><path d="m20 20-3.6-3.6" fill="none" stroke="currentColor" stroke-width="1.7"></path></svg>
@@ -727,7 +727,7 @@ def latest_block(lang):
         '  <ol class="sm-latest">',
         "\n".join(rows),
         '  </ol>',
-        f'  <a class="sm-more" href="index.html">{e(d["latest_more"])} →</a>',
+        f'  <a class="sm-more" href="./">{e(d["latest_more"])} →</a>',
         f'  <p class="sm-note">{d["xml_note"]}</p>',
         '</section>',
     ])

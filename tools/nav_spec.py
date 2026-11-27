@@ -118,28 +118,9 @@ GROUPS = [
             {"key": "forms", "href": "forms.html",
              "label": {"ko": "서식·전자서명 138종", "en": "Forms & e-signature (138)",
                        "zh": "表单·电子签名 138种", "ja": "書式・電子署名 138種"}},
-            # 생활·엔터테인먼트 도구는 한 단계 안쪽으로 — 경제·무역 전문 매체의 메뉴 무게를 덜어냅니다.
-            {"key": "util-head", "href": None,
-             "group": {"ko": "생활·유틸리티 툴", "en": "Life & utility tools",
-                       "zh": "生活·实用工具", "ja": "生活・ユーティリティツール"}},
-            {"key": "saju", "href": "saju.html",
-             "label": {"ko": "만세력·신년운세", "en": "Saju & new-year fortune",
-                       "zh": "四柱·新年运势", "ja": "四柱推命・新年占い"}},
-            {"key": "lotto", "href": "lotto.html",
-             "label": {"ko": "로또 번호 생성기", "en": "Lotto number generator",
-                       "zh": "彩票号码生成器", "ja": "ロト番号生成器"}},
-            {"key": "music", "href": "music.html",
-             "label": {"ko": "AI 음악·가사 생성기", "en": "AI music & lyric writer",
-                       "zh": "AI 音乐·歌词生成器", "ja": "AI音楽・歌詞生成"}},
-            {"key": "creator", "href": "creator.html",
-             "label": {"ko": "블로그·쇼츠 스튜디오", "en": "Blog & Shorts studio",
-                       "zh": "博客·短视频工作室", "ja": "ブログ・ショート制作"}},
-            {"key": "style", "href": "style.html",
-             "label": {"ko": "패션·스타일 추천", "en": "Style & outfit brief",
-                       "zh": "穿搭·风格推荐", "ja": "ファッション・スタイル提案"}},
-            {"key": "links", "href": "links.html",
-             "label": {"ko": "추천 상품·용품", "en": "Gear we use",
-                       "zh": "推荐商品·用品", "ja": "おすすめ商品・用品"}},
+            # 생활·엔터테인먼트 도구(만세력·로또·AI 음악·블로그 스튜디오·스타일·추천 상품)는
+            # 상단 메뉴에서 내리고 푸터(app.js 푸터 '무료 도구' 줄)로 옮겼습니다(2026-11-28 사용자 요청).
+            # 상단은 뉴스·시황·무역/세무·법률·리셀 전문 메뉴만 남깁니다.
         ],
     },
     {
@@ -208,6 +189,20 @@ def esc(value):
             .replace(">", "&gt;").replace('"', "&quot;"))
 
 
+def href_for(href, prefix="", home=None):
+    """내비 링크 주소를 만듭니다.
+    index.html 로 끝나는 주소는 폴더 주소(home)로 바꿉니다 —
+    '/index.html' 대신 '/' (언어판은 '/en/')로 통일하기 위해서입니다(2026-11-28)."""
+    home = home or prefix or "./"
+    if href is None:
+        return home
+    if href == "index.html":
+        return home
+    if href.startswith("index.html"):
+        return home + href[len("index.html"):]
+    return (prefix or "") + href
+
+
 def render(lang="ko", prefix="", active=None):
     """상단 내비 <ul id="site-nav"> 전체 마크업을 돌려줍니다.
 
@@ -220,6 +215,7 @@ def render(lang="ko", prefix="", active=None):
     prefix = (prefix or "").strip()
     if prefix and not prefix.endswith("/"):
         prefix += "/"
+    home = prefix or "./"   # index.html 대신 폴더 주소("/" · "../" · "./")를 씁니다.
     act_group, act_sub = (active or (None, None))
 
     out = ["<ul class=\"nav\" id=\"site-nav\">"]
@@ -230,8 +226,8 @@ def render(lang="ko", prefix="", active=None):
             cls = "nav-top is-active" if g_on else "nav-top"
             cur = " aria-current=\"page\"" if g_on else ""
             out.append("      <li class=\"nav-group nav-group-single\" data-nav=\"%s\">" % key)
-            out.append("        <a class=\"%s\" href=\"%s%s\"%s>%s</a>"
-                       % (cls, prefix, g["href"], cur, esc(label(g, lang))))
+            out.append("        <a class=\"%s\" href=\"%s\"%s>%s</a>"
+                       % (cls, href_for(g["href"], prefix, home), cur, esc(label(g, lang))))
             out.append("      </li>")
             continue
 
@@ -256,8 +252,8 @@ def render(lang="ko", prefix="", active=None):
             cur = " aria-current=\"page\"" if on else ""
             badge = it.get("badge")
             text = ("<span class=\"nav-badge\">%s</span>" % esc(badge) if badge else "") + esc(label(it, lang))
-            out.append("          <a href=\"%s%s\" data-nav-key=\"%s\"%s%s>%s</a>"
-                       % (prefix, it["href"], it["key"], a_cls, cur, text))
+            out.append("          <a href=\"%s\" data-nav-key=\"%s\"%s%s>%s</a>"
+                       % (href_for(it["href"], prefix, home), it["key"], a_cls, cur, text))
         out.append("        </div>")
         out.append("      </li>")
     out.append("    </ul>")

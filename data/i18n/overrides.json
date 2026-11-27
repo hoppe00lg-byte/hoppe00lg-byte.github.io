@@ -4186,16 +4186,6 @@
 "关于·编辑原则",
 "紹介・編集方針"
 ],
-"소방 현장에서 보는 재난과 대응": [
-"Disaster and response from the fire scene",
-"从消防一线看灾难与应急",
-"消防の現場から見る災害と対応"
-],
-"소방·안전": [
-"Fire & Safety",
-"消防·安全",
-"消防・安全"
-],
 "손익분기 그래프": [
 "Break-even chart",
 "盈亏平衡图表",
@@ -5972,9 +5962,9 @@
 "災害・安全"
 ],
 "재난·안전 현장에서 보는 예방과 대응": [
-"Prevention and response seen from the disaster and safety desk",
-"从灾难·安全现场看预防与应对",
-"災害・安全の現場から見る予防と対応"
+"Prevention and response, seen from disaster sites",
+"从灾难现场看预防与应急",
+"災害の現場から見る予防と対応"
 ],
 "재사용 불가분 포함해 넉넉히": [
 "Include the part that cannot be reused",
@@ -7770,6 +7760,36 @@
 "5 steps",
 "5步",
 "5ステップ"
+],
+"무료 도구 · 블로그·쇼츠 스튜디오": [
+"Free tools · Blog & Shorts studio",
+"免费工具 · 博客·短视频工作室",
+"無料ツール・ブログ・ショート制作"
+],
+"기사에 등장하는 회사·인물·수치는 취재·발행 시점에 확인한 공개 자료와 당사자 진술을 근거로 하며, 이후 변경될 수 있습니다. 본 사이트의 정보는 참고용이며 투자·법률·의료 등 최종 판단의 근거로 사용할 수 없습니다.": [
+"Companies, people and figures in our articles are based on public records and statements confirmed at the time of reporting and publication, and may change afterwards. Our content is for reference only and cannot be used as the basis for investment, legal or medical decisions.",
+"文章中出现的公司、人物与数字，均以采访和发布时核实的公开资料及当事方陈述为依据，之后可能发生变化。本刊内容仅供参考，不能作为投资、法律或医疗等最终判断的依据。",
+"記事に登場する会社・人物・数値は、取材・公開時点で確認した公開資料と当事者の発言に基づいており、その後変更されることがあります。本誌の内容は参考情報であり、投資・法律・医療などの最終判断の根拠として使用することはできません。"
+],
+"무료 도구 · 추천 상품·용품 (쿠팡 파트너스)": [
+"Free tools · Gear we use (Coupang Partners)",
+"免费工具 · 推荐商品·用品（Coupang Partners）",
+"無料ツール・おすすめ商品・用品（Coupang Partners）"
+],
+"무료 도구 · 세무·결산 자체처리 툴": [
+"Free tool · do your own tax & closing",
+"免费工具 · 自行处理税务·决算",
+"無料ツール・税務・決算の自己処理"
+],
+"정보보호 공시": [
+"Cybersecurity disclosure",
+"信息安全公示",
+"情報保護の公示"
+],
+"정보보호산업법": [
+"Cybersecurity Industry Act",
+"信息保护产业法",
+"情報保護産業法"
 ]
 }
 }

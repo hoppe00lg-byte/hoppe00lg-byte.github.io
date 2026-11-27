@@ -61,7 +61,12 @@ def folder_of(relpath: str) -> str:
 
 
 def page_url(relpath: str) -> str:
-    return BASE + "/" + urllib.parse.quote(relpath.replace(os.sep, "/"))
+    """페이지의 절대 주소. index.html 은 폴더 주소(/)로 씁니다."""
+    rel = relpath.replace(os.sep, "/")
+    if rel.endswith("index.html"):
+        folder = rel[: -len("index.html")]
+        return BASE + ("/" + folder if folder else "/")
+    return BASE + "/" + urllib.parse.quote(rel)
 
 
 def absolute(src: str, relpath: str) -> str:

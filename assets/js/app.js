@@ -12,6 +12,8 @@
      그 밖의 페이지(index.html, article.html?id=...)에서는 현재 폴더가 루트입니다. */
   var BASE = /\/a\/[^\/]+\.html$/.test(window.location.pathname || '') ? '../' : '';
   function U(path) { return BASE + path; }
+  /* 홈(전체 기사) 링크는 폴더 주소('/' · '../')로 만듭니다 — /index.html 을 만들지 않습니다. */
+  function UH(q) { return (BASE || './') + (q || ''); }
 
   var state = {
     site: null,
@@ -2337,7 +2339,7 @@
         '<span class="ib-promo-kicker">' + esc(t.nlKicker) + '</span>' +
         '<h3 class="ib-promo-title">' + esc(t.nlTitle) + '</h3>' +
         '<p class="ib-promo-desc">' + esc(t.nlDesc) + '</p>' +
-        '<span class="ib-promo-acts"><a class="ib-promo-cta" href="' + attr(U('index.html#subscribe')) + '">' + esc(t.nlCta) + '</a></span>' +
+        '<span class="ib-promo-acts"><a class="ib-promo-cta" href="' + attr(UH('#subscribe')) + '">' + esc(t.nlCta) + '</a></span>' +
         '<span class="ib-promo-note">' + esc(t.nlNote) + '</span>' +
       '</aside>';
   }
@@ -2525,7 +2527,7 @@
         var params = new URLSearchParams();
         if (state.cat !== 'all' && state.page === 'home') params.set('cat', state.cat);
         if (v) params.set('q', v);
-        window.location.href = U('index.html') + (params.toString() ? '?' + params.toString() : '');
+        window.location.href = UH(params.toString() ? '?' + params.toString() : '');
       });
       var input = f.querySelector('input');
       if (input) input.value = state.q || '';
@@ -2573,7 +2575,7 @@
     if (!el) return;
     var b = state.site.brand, f = state.site.footer || {};
     var cats = (state.site.categories || []).map(function (c) {
-      var li = '<li><a href="' + U('index.html?cat=' + encodeURIComponent(c.id)) + '">' + esc(c.label) + '</a></li>';
+      var li = '<li><a href="' + UH('?cat=' + encodeURIComponent(c.id)) + '">' + esc(c.label) + '</a></li>';
       if (c.id === 'trade') li += '<li><a href="' + U('market.html') + '">원자재 시황</a></li>';
       return li;
     }).join('');
@@ -2599,6 +2601,7 @@
             '<li><a href="' + U('biz.html') + '">무료 도구 · 1인 사업자 툴 5종</a></li>' +
             '<li><a href="' + U('seller.html') + '">무료 도구 · 셀러·마케터 툴 4종</a></li>' +
             '<li><a href="' + U('music.html') + '">무료 도구 · AI 음악 가사·프롬프트</a></li>' +
+            '<li><a href="' + U('creator.html') + '">무료 도구 · 블로그·쇼츠 스튜디오</a></li>' +
             '<li><a href="' + U('style.html') + '">무료 도구 · 체형·스타일 추천</a></li>' +
             '<li><a href="' + U('feed.xml') + '">' + T('RSS 피드') + '</a></li>' +
             '<li><a href="' + U('sitemap.html') + '">' + T('사이트맵') + '</a></li>' +
@@ -2664,7 +2667,7 @@
           '</div>' +
           '<div class="hero-aside">' + (state.site.categories || []).map(function (cat) {
             var count = state.articles.filter(function (a) { return a.category === cat.id; }).length;
-            return '<a class="brief" href="' + U('index.html?cat=' + encodeURIComponent(cat.id)) + '">' +
+            return '<a class="brief" href="' + UH('?cat=' + encodeURIComponent(cat.id)) + '">' +
               '<h4>' + esc(cat.label) + ' <span style="color:var(--muted);font-weight:600">' + count + '</span></h4>' +
               '<p>' + esc(cat.desc || '') + '</p></a>';
           }).join('') + '</div>';
@@ -2684,12 +2687,12 @@
     var head = $('#latest-head');
     if (head) {
       if (q) {
-        head.innerHTML = '<h2>“' + esc(state.q) + '” 검색 결과</h2><div class="sh-right"><b>' + list.length + '</b>건 <a class="all-link" href="' + U('index.html') + '">전체 보기</a></div>';
+        head.innerHTML = '<h2>“' + esc(state.q) + '” 검색 결과</h2><div class="sh-right"><b>' + list.length + '</b>건 <a class="all-link" href="' + UH() + '">전체 보기</a></div>';
       } else if (state.cat !== 'all') {
         var cc = catOf(state.cat);
         head.innerHTML = '<h2>' + esc(cc.label) + '</h2><div class="sh-right">' + esc(cc.desc || '') + ' · <b>' + list.length + '</b>건' +
           (state.cat === 'trade' ? ' <a class="all-link" href="' + U('market.html') + '">원자재 시황표 →</a>' : '') +
-          ' <a class="all-link" href="' + U('index.html') + '">전체 보기</a></div>';
+          ' <a class="all-link" href="' + UH() + '">전체 보기</a></div>';
         /* 기사 탭 위에 시황표 안내 한 줄 — 큰 시황판은 '원자재 시황' 탭으로 옮겼습니다. */
         if (state.cat === 'trade' && !q) {
           var noteEl = document.getElementById('cat-market-note');
@@ -2714,7 +2717,7 @@
     if (grid) {
       grid.innerHTML = list.length
         ? list.map(cardHTML).join('')
-        : '<div class="empty" style="grid-column:1/-1"><h3>해당하는 리포트가 없습니다</h3><p>다른 검색어를 입력하거나 <a href="' + U('index.html') + '" style="color:var(--accent)">전체 리포트</a>를 둘러보세요.</p></div>';
+        : '<div class="empty" style="grid-column:1/-1"><h3>해당하는 리포트가 없습니다</h3><p>다른 검색어를 입력하거나 <a href="' + UH() + '" style="color:var(--accent)">전체 리포트</a>를 둘러보세요.</p></div>';
     }
 
     var note = $('#editor-note');
@@ -2921,7 +2924,7 @@
               }).join('') + '</ul>' +
             '</section>' : '') +
           (a.tags && a.tags.length ? '<div class="tags">' + a.tags.map(function (t) {
-            return '<a href="' + U('index.html?q=' + encodeURIComponent(t)) + '">#' + esc(t) + '</a>';
+            return '<a href="' + UH('?q=' + encodeURIComponent(t)) + '">#' + esc(t) + '</a>';
           }).join('') + '</div>' : '') +
           '<div class="article-foot">' +
             '<div class="author-box"><div class="avatar">' + esc(String(a.author || 'I').slice(0, 1)) + '</div>' +
@@ -2969,7 +2972,7 @@
       '<span class="kicker" style="justify-content:center">NOT FOUND</span>' +
       '<h1 style="font-family:var(--serif);font-size:clamp(28px,4vw,40px);margin:16px 0 10px;letter-spacing:-.03em">' + esc(LBL.notFoundTitle) + '</h1>' +
       '<p style="color:var(--ink-3);font-size:14px">' + esc(LBL.notFoundBody) + '</p>' +
-      '<div style="margin-top:20px"><a class="btn" href="' + U('index.html') + '">' + esc(LBL.notFoundCta) + '</a></div>' +
+      '<div style="margin-top:20px"><a class="btn" href="' + UH() + '">' + esc(LBL.notFoundCta) + '</a></div>' +
       '</div>' +
       '<section class="container" style="max-width:1120px;padding-bottom:60px"><div class="section-head"><h2>' + esc(LBL.latest) + '</h2></div>' +
       '<div class="grid grid-3">' + latest.map(cardHTML).join('') + '</div></section>';

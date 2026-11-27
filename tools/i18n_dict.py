@@ -134,10 +134,8 @@ def build(langs=None, no_mt=False):
         trans = C.translate(todo, lang)
         strings = dict(over_and_mt(over, todo, trans, lang))
         for k, v in list(strings.items()):
-            for bad, good in (fixes.get(lang) or []):
-                if bad in v:
-                    v = v.replace(bad, good)
-            strings[k] = repair_hangul(v, strings, over, lang)
+            strings[k] = C.apply_fixes(v, lang)
+            strings[k] = repair_hangul(strings[k], strings, over, lang)
         pats = [{"re": p["ko"], "rep": p[lang]} for p in patterns]
         doc = {
             "lang": lang,

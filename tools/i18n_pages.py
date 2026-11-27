@@ -238,6 +238,13 @@ def rewrite_urls(src, assets_prefix, rel_prefix):
             return m.group(0)
         if v.startswith("assets/"):
             return f'{attr}="{assets_prefix}{v}"'
+        # 홈을 가리키는 './'(폴더 주소)는 그 페이지의 폴더 기준으로 다시 씁니다.
+        if v in ("./", "."):
+            return f'{attr}="{rel_prefix or "./"}"'
+        if v.startswith("./"):
+            rest = v[2:]
+            # '#구독'·'?cat=' 처럼 폴더 주소 뒤에 붙은 앵커·질의도 폴더 기준으로 옮깁니다.
+            return f'{attr}="{rel_prefix}{rest}"' if rel_prefix else f'{attr}="./{rest}"'
         return f'{attr}="{rel_prefix}{v}"'
     return re.sub(r'\b(href|src)="([^"]*)"', repl, src)
 
@@ -269,6 +276,11 @@ def tidy_head(src):
     return head + rest
 
 
+def homeize(path_rel):
+    """'index.html' 을 빼고 폴더 주소로 — /index.html 대신 / · /en/ 을 쓰기 위해서입니다."""
+    return path_rel[: -len("index.html")] if path_rel.endswith("index.html") else path_rel
+
+
 def depth_prefix(page_lang, path_rel):
     """사이트 루트까지의 상대 경로. 예: /en/ → '../', /en/a/x.html → '../../', /a/x.html → '../'"""
     dirs = path_rel.count("/")
@@ -282,17 +294,19 @@ def switch_block(page_lang, path_rel, page_file=None, locales=None):
     """
     root = depth_prefix(page_lang, path_rel)
     same = path_rel.split("/")[-1]
+    home = homeize(path_rel)
     langs = [("ko", C.KO), ("en", C.LANGS["en"]), ("zh", C.LANGS["zh"]), ("ja", C.LANGS["ja"])]
     if locales:
         langs = [(code, meta) for code, meta in langs if code in locales]
     items = []
     for code, meta in langs:
+        is_index = path_rel.endswith("index.html")
         if code == page_lang:
-            href = same
+            href = (home or "./") if is_index else same
         elif code == "ko":
-            href = root + path_rel
+            href = (root + home) if is_index else root + path_rel
         else:
-            href = root + code + "/" + path_rel
+            href = (root + code + "/" + home) if is_index else root + code + "/" + path_rel
         cls = ' class="is-on" aria-current="true"' if code == page_lang else ""
         items.append(
             f'<a href="{href}" hreflang="{meta["htmlLang"]}" lang="{meta["htmlLang"]}"{cls}>{meta["label"]}</a>'
@@ -308,9 +322,10 @@ def head_block(page_lang, path_rel, page_file=None, locales=None):
         langs = [(code, meta) for code, meta in langs if code in locales]
 
     def url(code):
+        p = homeize(path_rel)
         if code == "ko":
-            return f"{BASE_URL}/{path_rel}"
-        return f"{BASE_URL}/{code}/{path_rel}"
+            return f"{BASE_URL}/{p}"
+        return f"{BASE_URL}/{code}/{p}"
 
     links = "".join(
         f'<link rel="alternate" hreflang="{meta["htmlLang"]}" href="{url(code)}">\n'
@@ -660,7 +675,7 @@ def article_noscript_localized(site, a, lang):
         f'{summary}\n'
         f'      <p style="margin-top:20px;font-size:13px;color:var(--ink-3)">{e(a.get("author") or "")} · {e(a["publishedAt"][:10])}</p>\n'
         f'      <p style="margin-top:16px;font-size:13px;color:var(--ink-3)">{e(t("본문 전체를 읽으려면 JavaScript를 켜 주세요."))}</p>\n'
-        f'      <p style="margin-top:12px"><a href="../index.html">{e(t("전체 리포트 목록"))}</a></p>\n'
+        f'      <p style="margin-top:12px"><a href="../">{e(t("전체 리포트 목록"))}</a></p>\n'
         '    </div>\n  </noscript>'
     )
 
@@ -807,7 +822,7 @@ def build_lang(lang, ko_site=None, ko_articles=None):
     for name in PAGE_FILES:
         if not os.path.exists(os.path.join(ROOT, name)):
             continue
-        url = f"{BASE_URL}/{lang}/{name}"
+        url = f"{BASE_URL}/{lang}/" if name == "index.html" else f"{BASE_URL}/{lang}/{name}"
         write(os.path.join(out_dir, name), lang_page(name, lang, name, url, site=site))
         n += 1
     na = build_lang_articles(lang, site, articles)

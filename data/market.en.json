@@ -458,7 +458,7 @@
      "text": "The FAO food price index in October was 133.9 (−1.2%), with grains at 116.8 (−4.5%), led by wheat and corn. The domestic import price is $299.69 (-0.13%) for wheat, $273.46 (+1.23%) for corn, and $555.61 (+1.82%) for soybeans."
     },
     {
-     "title": "Exchange rate is flat, NAFTA is -10%",
+     "title": "Exchange rate is flat, Naphtha is -10%",
      "text": "The monthly average of won and dollar is almost unchanged from 1,337.66 won in October to 1,338.91 won from 1 to 20 November. Naphtha (CFR Japan) is -10.4% from 991.98 → $888.69. Petrochemical PC was +1.70% in October and returned to -0.94% in the third week of November."
     }
    ],
@@ -568,7 +568,7 @@
        "change": -924.01,
        "note": "The October average is the highest of the year ($14,532). 11/20 Spot is $12,230.50",
        "date": "2026-11-20",
-       "sourceName": "LME monthly average (Westmetall theorem)",
+       "sourceName": "LME monthly average (compiled by Westmetall)",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -584,7 +584,7 @@
        "change": 84.19,
        "note": "The average in November is higher than in October. 11/20 Spot $3,184.50",
        "date": "2026-11-20",
-       "sourceName": "LME monthly average (Westmetall theorem)",
+       "sourceName": "LME monthly average (compiled by Westmetall)",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -600,7 +600,7 @@
        "change": -28.63,
        "note": "4,019.70 in September → 3,820.43 in October → 3,791.80 in November, falling for the second month",
        "date": "2026-11-20",
-       "sourceName": "LME monthly average (Westmetall theorem)",
+       "sourceName": "LME monthly average (compiled by Westmetall)",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -616,7 +616,7 @@
        "change": 282.0,
        "note": "Rebound in November. 11/20 Spot $15,310",
        "date": "2026-11-20",
-       "sourceName": "LME monthly average (Westmetall theorem)",
+       "sourceName": "LME monthly average (compiled by Westmetall)",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -904,7 +904,7 @@
        "change": 426.71,
        "note": "The monthly average in October was $14,532.48 (+23.1%), the highest point of the year. Most of the annual gains were canceled due to the sharp decline in November.",
        "date": "2026-11-20",
-       "sourceName": "LME monthly average (Westmetall theorem)",
+       "sourceName": "LME monthly average (compiled by Westmetall)",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -920,7 +920,7 @@
        "change": 309.05,
        "note": "The highest month of the year is June (monthly average of $3,458.64)",
        "date": "2026-11-20",
-       "sourceName": "LME monthly average (Westmetall theorem)",
+       "sourceName": "LME monthly average (compiled by Westmetall)",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -936,7 +936,7 @@
        "change": 510.26,
        "note": "$4,019.70 in September was the highest point of the year",
        "date": "2026-11-20",
-       "sourceName": "LME monthly average (Westmetall theorem)",
+       "sourceName": "LME monthly average (compiled by Westmetall)",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       },
       {
@@ -952,7 +952,7 @@
        "change": 431.19,
        "note": "$18,805 in May was the highest point of the year, followed by a double-digit decline.",
        "date": "2026-11-20",
-       "sourceName": "LME monthly average (Westmetall theorem)",
+       "sourceName": "LME monthly average (compiled by Westmetall)",
        "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=averages"
       }
      ]
@@ -1679,7 +1679,7 @@
    "changePct": -2.46,
    "changeBasis": "Compared to the previous day’s official price (11/24)",
    "date": "2026-11-25",
-   "sourceName": "LME official price (Westmetall theorem)",
+   "sourceName": "LME official price (compiled by Westmetall)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash",
    "note": "LME 3-month official price 11/25 $11,758.00 ($11,703.00 spot payment, 336,750 tons in inventory). 11/24 Down 2.5% from $12,055.00."
   },
@@ -1695,7 +1695,7 @@
    "changePct": -1.04,
    "changeBasis": "Compared to the previous day’s official price (11/24)",
    "date": "2026-11-25",
-   "sourceName": "LME official price (Westmetall theorem)",
+   "sourceName": "LME official price (compiled by Westmetall)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Al_cash",
    "note": "LME 3-month official price 11/25 $2,760.00 ($2,849.00 spot payment, 219,200 tons in inventory). 11/24 Down 1.0% from $2,789.00."
   },
@@ -1712,7 +1712,7 @@
    "changePct": -3.94,
    "changeBasis": "Compared to the spot price of the previous day (11/24)",
    "date": "2026-11-25",
-   "sourceName": "LME official price (Westmetall theorem)",
+   "sourceName": "LME official price (compiled by Westmetall)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Zn_cash",
    "note": "LME spot settlement price 11/25 $3,520.50 (3 months $3,394.00, inventory 143,450 tons). 11/24 Down 3.9% from $3,665.00."
   },
@@ -1729,7 +1729,7 @@
    "changePct": 0.34,
    "changeBasis": "Compared to the spot price of the previous day (11/24)",
    "date": "2026-11-25",
-   "sourceName": "LME official price (Westmetall theorem)",
+   "sourceName": "LME official price (compiled by Westmetall)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Pb_cash",
    "note": "LME spot settlement price 11/25 $1,792.00 (3 months $1,827.00, inventory 256,675 tons). Slight increase compared to 11/24 $1,786.00."
   },
@@ -1746,7 +1746,7 @@
    "changePct": -0.17,
    "changeBasis": "Compared to the spot price of the previous day (11/24)",
    "date": "2026-11-25",
-   "sourceName": "LME official price (Westmetall theorem)",
+   "sourceName": "LME official price (compiled by Westmetall)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Ni_cash",
    "note": "LME spot settlement price 11/25 $15,035.00 ($15,210.00 for 3 months, inventory 275,604 tons). 11/24 Almost equal to $15,060.00."
   },
@@ -1763,7 +1763,7 @@
    "changePct": -6.43,
    "changeBasis": "Compared to the spot price of the previous day (11/24)",
    "date": "2026-11-25",
-   "sourceName": "LME official price (Westmetall theorem)",
+   "sourceName": "LME official price (compiled by Westmetall)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash",
    "note": "LME spot settlement price 11/25 $38,200.00 (3 months $38,050.00, inventory 3,805 tons). 11/24 It fell 6.4% from $40,825.00."
   },
@@ -1837,7 +1837,7 @@
   },
   {
    "code": "NAP",
-   "name": "NAFTA (MOPJ)",
+   "name": "Naphtha (MOPJ)",
    "nameEn": "Naphtha",
    "group": "petrochem",
    "grade": "CFR Japan public evaluation price",
@@ -2428,7 +2428,7 @@
    "decimals": 2,
    "change": -68.54,
    "changePct": -1.92,
-   "changeBasis": "Jeonju (11/13)",
+   "changeBasis": "last week (11/13)",
    "date": "2026-11-20",
    "sourceName": "Shanghai Shipping Exchange (SSE) SCFI",
    "sourceUrl": "https://en.sse.net.cn/indices/scfinew.jsp",
@@ -2445,7 +2445,7 @@
    "decimals": 2,
    "change": 3.94,
    "changePct": 0.21,
-   "changeBasis": "Jeonju (11/13)",
+   "changeBasis": "last week (11/13)",
    "date": "2026-11-20",
    "sourceName": "Shanghai Shipping Exchange (SSE) CCFI",
    "sourceUrl": "https://en.sse.net.cn/indices/ccfinew.jsp",
@@ -2464,7 +2464,7 @@
    "changePct": -2.76,
    "changeBasis": "Compared to the previous day (11/24)",
    "date": "2026-11-25",
-   "sourceName": "LME official price (Westmetall theorem)",
+   "sourceName": "LME official price (compiled by Westmetall)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash",
    "note": "LME spot settlement price 11/25 $11,703.00 (11/24 $12,035.00)."
   },
@@ -2481,7 +2481,7 @@
    "changePct": -8.7,
    "changeBasis": "Compared to the previous day (11/24)",
    "date": "2026-11-25",
-   "sourceName": "LME official price (Westmetall theorem)",
+   "sourceName": "LME official price (compiled by Westmetall)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Al_cash",
    "note": "LME spot settlement price 11/25 $2,849.00 (11/24 $3,120.50). It plummeted 8.7%."
   },
@@ -2660,7 +2660,7 @@
   "All prices are confirmed from free and public sources. Paid index-only items are not estimated and not indicated.",
   "LME zinc, lead, nickel, and tin are the LME official spot (Cash) settlement price (11/25: zinc 3,520.50, lead 1,792.00, nickel 15,035.00, tin $38,200.00), and the copper and aluminum in the table are the 3-month futures official price (11/25: copper) 11,758.00·Aluminum $2,760.00), so the standards are different. The 11/26 official price had not yet been published at the time of inquiry, so the 11/25 value was retained. The source is the Westmetall table, which is a direct translation of the LME official price.",
   "Petrochemical and plastic raw materials are priced at domestic Chinese spot prices (yuan/ton), which differ from Korean import negotiators depending on grade, volume, and freight.",
-  "Nafta was carried in two ways. The CFR Japan (MOPJ) public valuation is $801.25/ton (11/25, +1.6%), and the Singapore spot price of Offinet (Korea National Oil Corporation) international petroleum product price is $88.09/barrel (11/26, $85.86 the previous day). The units are different so they cannot be directly compared.",
+  "Naphtha was carried in two ways. The CFR Japan (MOPJ) public valuation is $801.25/ton (11/25, +1.6%), and the Singapore spot price of Offinet (Korea National Oil Corporation) international petroleum product price is $88.09/barrel (11/26, $85.86 the previous day). The units are different so they cannot be directly compared.",
   "BDI, Capesize, Panamax, and Supramax are the Baltic Shipping Exchange indices and are the closing prices on Thursday, November 26 (BDI 3,152, BCI 5,100, BPI 2,273, BSI 1,816). BDI is at its highest since September 29th.",
   "The FAO food and grain price index is a monthly index and is the October 2026 value (announced on November 6). The FAO announcement is 133.9 (−1.6 points, −1.2%) for food and 116.8 (−5.5 points, −4.5%) for grains, which is slightly different from the KREI screen display (−1.7 points for food).",
   "CBOT wheat and corn are carried forward to March, carrying the closing prices of previous months in cents/bushel, and soybeans are carried to January. Since November 26th is closed for Thanksgiving, the 11/25 night session (11/26 dawn Korean time) values ​​are the latest, and the night session on November 27th resumed at 10 a.m. Korean time. The domestic import price is USD/ton based on customs clearance in October 2026 according to the Agricultural and Fishery Products Trade Information.",

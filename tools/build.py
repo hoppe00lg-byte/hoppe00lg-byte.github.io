@@ -231,9 +231,12 @@ HISTORY = {"data": None}
 # 메뉴 정의는 tools/nav_spec.py 한 곳에 있고, tools/apply_nav.py · tools/i18n_pages.py ·
 # tools/build_tax_pages.py 가 그 정의를 그대로 씁니다. 여기서는 페이지마다 메뉴가
 # 빠지지 않았는지만 확인합니다.
-NAV_REQUIRED = ("index.html", "market.html", "salary.html", "tax.html", "biz.html",
-                "forms.html", "law.html", "seller.html", "lotto.html", "saju.html", "music.html", "creator.html", "style.html", "freight.html",
-                "sourcing.html", "mfg-cost.html", "resell.html", "review-reply.html", "sitemap.html", "about.html", "ad.html", "contact.html")
+# 생활·엔터 도구(lotto·saju·music·creator·style·links)는 상단 메뉴에서 빼고 푸터로 옮겼으므로
+# 여기서는 전문 메뉴만 확인합니다(2026-11-28).
+NAV_REQUIRED = ("market.html", "salary.html", "tax.html", "biz.html",
+                "forms.html", "law.html", "seller.html", "freight.html",
+                "sourcing.html", "mfg-cost.html", "resell.html", "review-reply.html", "exhibitions.html",
+                "insurance.html", "sitemap.html", "about.html", "ad.html", "contact.html")
 
 
 def validate_nav():
@@ -504,8 +507,7 @@ def write_sitemap(site, articles):
     base = (site.get("baseUrl") or "").rstrip("/")
     today = datetime.date.today().isoformat()
     pages = [
-        ("index.html", "1.0"),
-        ("market.html", "0.9"),
+        ("index.html", "1.0"),        ("market.html", "0.9"),
         ("lotto.html", "0.8"),
         ("saju.html", "0.8"),
         ("music.html", "0.8"),
@@ -539,6 +541,9 @@ def write_sitemap(site, articles):
         groups.append((f"a/{a['id']}.html", a["publishedAt"][:10], "0.8", article_locales(a)))
 
     def url_for(folder, path):
+        """index.html 은 폴더 주소(/ , /en/ 등)로 씁니다 — /index.html 로 끝나는 중복 주소를 만들지 않습니다."""
+        if path == "index.html":
+            return f"{base}/{folder}/" if folder else f"{base}/"
         return f"{base}/{folder}/{path}" if folder else f"{base}/{path}"
 
     rows = []
@@ -564,7 +569,7 @@ def write_sitemap(site, articles):
         cat_urls = []
         for l in ALL_LANGS:
             folder = LANG_FOLDER[l]
-            loc = f"{base}/{folder}/index.html?cat={c['id']}" if folder else f"{base}/index.html?cat={c['id']}"
+            loc = f"{base}/{folder}/?cat={c['id']}" if folder else f"{base}/?cat={c['id']}"
             cat_urls.append((loc, HREFLANG[l]))
         cat_alts = "".join(
             f'\n    <xhtml:link rel="alternate" hreflang="{hl}" href="{html.escape(loc)}"/>'
@@ -600,6 +605,11 @@ def prefix_relative_urls(markup, prefix):
         v = val.strip()
         if not v or v.startswith(ABSOLUTE_PREFIXES) or v.startswith("/"):
             return m.group(0)
+        # 홈 폴더 주소('./')는 한 단계 올리고, 앵커·질의는 폴더 기준으로 유지합니다.
+        if v in ("./", "."):
+            return f'{tag}="{prefix}"'
+        if v.startswith("./"):
+            return f'{tag}="{prefix}{v[2:]}"'
         return f'{tag}="{prefix}{v}"'
     return REL_ATTR_RE.sub(repl, markup)
 
@@ -663,7 +673,7 @@ def article_noscript(site, a):
         f'{summary}\n'
         f'      <p style="margin-top:20px;font-size:13px;color:var(--ink-3)">{e(a.get("author") or "")} · {e(a["publishedAt"][:10])}</p>\n'
         '      <p style="margin-top:16px;font-size:13px;color:var(--ink-3)">본문 전체를 읽으려면 JavaScript를 켜 주세요.</p>\n'
-        '      <p style="margin-top:12px"><a href="../index.html">전체 리포트 목록</a></p>\n'
+        '      <p style="margin-top:12px"><a href="../">전체 리포트 목록</a></p>\n'
         '    </div>\n  </noscript>'
     )
 
