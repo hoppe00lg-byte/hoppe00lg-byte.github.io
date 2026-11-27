@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 01:52:53 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 02:24:34 +0900</lastBuildDate>
+    <item>
+      <title>호주 가톨릭 병원의 종교적 신념, 환자의 임신 중절과 난임 치료권을 제한하는가</title>
+      <link>https://insightbriefnews.com/a/catholic-hospital-healthcare-access-australia-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/catholic-hospital-healthcare-access-australia-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 02:23:10 +0900</pubDate>
+      <category>바이오·헬스</category>
+      <description>가톨릭 병원이 공공 의료를 인수하며 낙태와 난임 시술의 지리적 사막화가 발생하고 있다. 2012년 아일랜드의 비극적 사례처럼, 종교적 신념이 응급 의료 현장의 판단을 왜곡하는 구조적 위기가 호주에서도 나타난다.</description>
+    </item>
     <item>
       <title>중국 전기차 4억 원대 시대, 초고급화 뒤에 숨겨진 전력 효율과 에너지 비용</title>
       <link>https://insightbriefnews.com/a/china-ev-premium-market-energy-efficiency-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 10:45:00 +0900</pubDate>
       <category>AI·테크</category>
       <description>구글 딥마인드가 2026년 11월 24일 캐글에 공개한 &#x27;인류의 첫 번째 시험(HFE)&#x27;은 어려운 문제가 아니라 세고 읽는 문제 544개를 136개 &#x27;가족&#x27;으로 묶었다. 상위 5개 모델의 단일 정답률은 96~98%였지만, 가족마다 16번의 시도가 모두 맞아야 하는 규칙에서는 평균 85.8%로 떨어졌다. 격차는 7.6~80.1%포인트이고, 이 표에 한국 모델은 없다.</description>
-    </item>
-    <item>
-      <title>철광석은 86.9달러로 4년 만의 최저인데 — 고로의 원료비를 다시 올린 것은 273달러짜리 원료탄이다</title>
-      <link>https://insightbriefnews.com/a/iron-ore-four-year-low-coking-coal-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/iron-ore-four-year-low-coking-coal-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 09:45:00 +0900</pubDate>
-      <category>무역·원자재</category>
-      <description>11월 17일 싱가포르 철광석이 톤당 86.9달러로 거의 4년 만의 최저를 찍었다. 중국 항구에는 1억5,375만톤이 쌓였고 이익을 내는 고로는 10%뿐이며, 기니는 남아공과 캐나다를 제치고 세계 3위 수출국이 됐다. 그런데 포스코의 3분기 철광석 단가는 전분기보다 11% 내린 85달러였는데 원료탄은 4% 오른 248달러였다. 2027년 계약을 협상하는 쪽의 기준값이 한국 고로의 기준값이기도 하다.</description>
     </item>
   </channel>
 </rss>

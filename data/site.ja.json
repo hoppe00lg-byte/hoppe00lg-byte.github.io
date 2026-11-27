@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "宗教的信条が奪う公的医療の権利：豪州のカトリック系病院による医療制限の危機",
+   "articleId": "catholic-hospital-healthcare-access-australia-20261128"
+  },
+  {
    "text": "中国EVの極端な二極化、4億円超高級車が突きつける電力グリッドの重い課題",
    "articleId": "china-ev-premium-market-energy-efficiency-20261128"
   },
@@ -94,18 +98,6 @@
   {
    "text": "マクロン仏大統領の「ドーピング肉」発言が揺さぶるブラジル産食肉供給網の脆弱性",
    "articleId": "brazil-meat-trade-row-2026-20261128"
-  },
-  {
-   "text": "横断歩道での12大重過失事故：日本の家計にも影響する損害賠償と法的リスクの構造",
-   "articleId": "traffic-accident-compensation-analysis-2026-20261128"
-  },
-  {
-   "text": "欧州のスタジアム暴力と物流リスク：日本企業の調達コストに及ぼす影響",
-   "articleId": "european-stadium-violence-logistics-risk-20261128"
-  },
-  {
-   "text": "2025年の米国エネルギーの60％消失、電力網効率の物理的限界とコスト構造",
-   "articleId": "us-energy-loss-and-efficiency-analysis-20261127"
   }
  ],
  "editorNote": {

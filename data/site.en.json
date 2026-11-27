@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "Catholic Hospital Takeovers Threaten Reproductive Rights and Public Care in Australia",
+   "articleId": "catholic-hospital-healthcare-access-australia-20261128"
+  },
+  {
    "text": "Chinese automakers launch $1.5M luxury EVs amid global energy grid pressures",
    "articleId": "china-ev-premium-market-energy-efficiency-20261128"
   },
@@ -94,18 +98,6 @@
   {
    "text": "Brazil disputes French labeling of meat as 'doped' amid intensifying trade friction",
    "articleId": "brazil-meat-trade-row-2026-20261128"
-  },
-  {
-   "text": "Pedestrian safety liability: Analyzing compensation for severe neurological injury",
-   "articleId": "traffic-accident-compensation-analysis-2026-20261128"
-  },
-  {
-   "text": "Rising stadium violence in Europe poses new logistics risks for US exporters",
-   "articleId": "european-stadium-violence-logistics-risk-20261128"
-  },
-  {
-   "text": "60% of US energy lost by 2025, physical limits to grid efficiency and cost structure",
-   "articleId": "us-energy-loss-and-efficiency-analysis-20261127"
   }
  ],
  "editorNote": {

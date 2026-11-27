@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 01:57:20 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 02:24:38 +0900</lastBuildDate>
+    <item>
+      <title>Catholic Hospital Takeovers Threaten Reproductive Rights and Public Care in Australia</title>
+      <link>https://insightbriefnews.com/en/a/catholic-hospital-healthcare-access-australia-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/catholic-hospital-healthcare-access-australia-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 02:23:10 +0900</pubDate>
+      <category>Health &amp; Bio</category>
+      <description>As Catholic healthcare operators absorb public hospitals across Australia, key services like abortion, contraception, and IVF are facing severe regional bans. Reports from 2026 highlight mounting systemic risks as religious doctrine supersedes standard emergency medical protocols.</description>
+    </item>
     <item>
       <title>Chinese automakers launch $1.5M luxury EVs amid global energy grid pressures</title>
       <link>https://insightbriefnews.com/en/a/china-ev-premium-market-energy-efficiency-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 11:30:00 +0900</pubDate>
       <category>Trade &amp; Commodities</category>
       <description>USTR named 14 economies that supplied about 60% of US goods imports in 2025 and floated duties from 10% to 40%. The &#x27;net of&#x27; clauses, the exemptions and one hearing in January decide what any importer actually pays.</description>
-    </item>
-    <item>
-      <title>97.8% and 63.0% — the AI that gets it right once and the AI that gets it right sixteen times</title>
-      <link>https://insightbriefnews.com/en/a/hfe-reliability-floor-544-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/hfe-reliability-floor-544-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 10:45:00 +0900</pubDate>
-      <category>AI &amp; Tech</category>
-      <description>Google DeepMind published Humanity&#x27;s First Exam (HFE) on Kaggle on November 24, 2026: 544 prompts about counting and reading, not hard problems, grouped into 136 families. The top five models score 96% to 98% on a single attempt, but under a rule that needs all sixteen attempts in a family to be right they average 85.8%. The gap runs from 7.6 to 80.1 points, and no Korean model is on the board.</description>
     </item>
   </channel>
 </rss>

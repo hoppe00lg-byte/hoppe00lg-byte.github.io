@@ -85,6 +85,10 @@ window.__SITE__ = {
  ],
  "ticker": [
   {
+   "text": "호주 가톨릭 병원의 종교적 신념, 환자의 임신 중절과 난임 치료권을 제한하는가",
+   "articleId": "catholic-hospital-healthcare-access-australia-20261128"
+  },
+  {
    "text": "중국 전기차 4억 원대 시대, 초고급화 뒤에 숨겨진 전력 효율과 에너지 비용",
    "articleId": "china-ev-premium-market-energy-efficiency-20261128"
   },
@@ -95,18 +99,6 @@ window.__SITE__ = {
   {
    "text": "마크롱의 '도핑된 고기' 발언과 브라질-EU 간 177개 시장 공급망 갈등",
    "articleId": "brazil-meat-trade-row-2026-20261128"
-  },
-  {
-   "text": "횡단보도 12대 중과실 사고, 뇌신경 손상 피해자의 경제적 손실과 배상 범위",
-   "articleId": "traffic-accident-compensation-analysis-2026-20261128"
-  },
-  {
-   "text": "유럽 축구장 폭력 사태 확산과 기업 공급망 리스크 관리",
-   "articleId": "european-stadium-violence-logistics-risk-20261128"
-  },
-  {
-   "text": "2025년 미국 에너지의 60% 소실, 전력망 효율의 물리적 한계와 비용 구조",
-   "articleId": "us-energy-loss-and-efficiency-analysis-20261127"
   }
  ],
  "editorNote": {

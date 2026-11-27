@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 01:57:22 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 02:24:40 +0900</lastBuildDate>
+    <item>
+      <title>宗教的信条が奪う公的医療の権利：豪州のカトリック系病院による医療制限の危機</title>
+      <link>https://insightbriefnews.com/ja/a/catholic-hospital-healthcare-access-australia-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/catholic-hospital-healthcare-access-australia-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 02:23:10 +0900</pubDate>
+      <category>バイオ・健康</category>
+      <description>オーストラリアではカトリック系医療機関が公共病院を統合する動きが加速しており、2026年11月27日の報告で、妊娠中絶や不妊治療といった必須医療へのアクセスが地域的に遮断される「医療砂漠化」が深刻化していることが明らかになった。宗教的教義が医療判断を凌駕する現状は、患者の安全を脅かす構造的なリスクを孕んでいる。</description>
+    </item>
     <item>
       <title>中国EVの極端な二極化、4億円超高級車が突きつける電力グリッドの重い課題</title>
       <link>https://insightbriefnews.com/ja/a/china-ev-premium-market-energy-efficiency-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 14:25:00 +0900</pubDate>
       <category>経済・金融</category>
       <description>韓国銀行は基準金利を3.00%から3.25%へ引き上げた。だが、すでに借りている変動金利の住宅ローン借り手がこの決定を実感する日は今日ではない。銀行の調達コストが12月15日の公表を経て指標金利に入り、個人の貸出金利は約定した金利変動周期が巡ってくる日に初めて計算し直される。その間に、5年固定金利は変動金利より安くなった。</description>
-    </item>
-    <item>
-      <title>97.8%と63.0% —— 一度だけ正解するAIと、十六度とも正解するAI</title>
-      <link>https://insightbriefnews.com/ja/a/hfe-reliability-floor-544-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/hfe-reliability-floor-544-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 10:45:00 +0900</pubDate>
-      <category>AI・テック</category>
-      <description>グーグル・ディープマインドが2026年11月24日にKaggleで公開した「人類最初の試験（HFE）」は、難しい問題ではなく、数える・読む問題544問を136の「家族」にまとめたものだ。上位5モデルの単一正答率は96〜98%だったが、家族ごとに16回の試行がすべて正解でなければならない規則では平均85.8%に落ちた。差は7.6〜80.1ポイントで、この表に韓国のモデルはない。</description>
     </item>
   </channel>
 </rss>
