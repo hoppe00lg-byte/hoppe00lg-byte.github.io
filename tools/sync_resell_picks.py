@@ -337,6 +337,8 @@ def pick_global_row(it: dict, rank: int) -> dict | None:
     cat = str(it.get("cat") or "")
     intl = int(it.get("intl_shipping_krw") or 0)
     card_fee = int(it.get("card_fee_krw") or 0)
+    # 통관수수료(4,000원)는 계산기에 별도 칸이 없어 '기타 비용'에 함께 넣는다 — 화면과 스캐너 순마진을 같게.
+    customs_fee = int(it.get("customs_fee_krw") or 0)
     shipout = int(it.get("domestic_shipping_krw") or 0)
     fee_krw = float(it.get("sell_fee_krw") or 0)
     fee_pct = round(fee_krw / sell * 100, 2) if sell else 0.0
@@ -378,7 +380,7 @@ def pick_global_row(it: dict, rank: int) -> dict | None:
             "fee": fee_pct,
             "fixed": 0,
             "shipout": shipout,
-            "other": card_fee,
+            "other": card_fee + customs_fee,
         },
     }
 
