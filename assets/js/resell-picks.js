@@ -491,7 +491,7 @@
       negAll: '오늘 확인된 {n}개 품목 중 순마진이 플러스인 것은 없습니다. 표는 그래도 가장 나은 순서입니다.',
       some: '{n}개 품목 가운데 {p}개만 순마진이 플러스입니다.',
       noteTitle: '이 숫자를 읽는 법',
-      note1: '<b>해외가</b>는 브랜드 공식 스토어가 공개한 상품 데이터의 실제 판매가입니다. 레고는 공식 소비자가(RRP)라 <b>정가 기준</b>으로 표시했고, 국내 등록가가 정가의 2.2배를 넘는 단종·희소 세트는 순위에서 뺐습니다.',
+      note1: '<b>해외가</b>는 브랜드 공식 스토어가 공개한 상품 데이터의 실제 판매가입니다. 레고는 공식 소비자가(RRP)라 <b>정가 기준</b>으로 표시했고, 국내 등록가가 정가의 1.6배를 넘는 단종·희소 세트는 순위에서 뺐습니다.',
       note2: '<b>국내 시세</b>는 에누리 가격비교에서 모델명이 일치하는 매물만 골라 중앙값을 쓴 값입니다. 최저가 하나를 쓰면 사은품·부품 매물에 끌려가므로 중앙값을 씁니다. 실제 체결가는 이보다 낮을 수 있습니다.',
       note3: '<b>관부가세</b>는 미국 $200·일본 $150 면세 한도(물품가 기준)를 넘을 때만 붙습니다. 국제배송은 배대지 예시 요율, 정산은 판매가에서 플랫폼 수수료와 국내 택배를 뺀 값입니다.',
       hw: '품목명·모델 코드·가격만 공개 데이터로 옮겼습니다. 개인정보는 담지 않습니다.'
@@ -513,7 +513,7 @@
       negAll: 'None of the {n} matched items clears a positive net margin today. The list is still the best order.',
       some: 'Only {p} of {n} items clear a positive net margin.',
       noteTitle: 'How to read these numbers',
-      note1: '<b>Overseas</b> is the live price published by the brand store. LEGO sets are marked <b>at RRP</b> because that is the only machine-readable price; retired sets whose Korean listing exceeds 2.2× RRP are dropped from the ranking.',
+      note1: '<b>Overseas</b> is the live price published by the brand store. LEGO sets are marked <b>at RRP</b> because that is the only machine-readable price; retired sets whose Korean listing exceeds 1.6× RRP are dropped from the ranking.',
       note2: '<b>Korea price</b> is the median of Enuri listings whose name carries the same model code. A single lowest price would be dragged down by accessory and part listings. Real trades can close lower.',
       note3: '<b>Duty and VAT</b> apply only above the US$200 (US) / US$150 (Japan) personal-use threshold. International shipping uses proxy-warehouse sample rates; settlement deducts platform fee and domestic courier.',
       hw: 'Only product name, model code and prices come from public data. No personal information is included.'
@@ -535,7 +535,7 @@
       negAll: '今日匹配的 {n} 个商品中，净利润为正的为零。下表仍为最优顺序。',
       some: '{n} 个商品中仅 {p} 个净利润为正。',
       noteTitle: '数字怎么看',
-      note1: '<b>海外价</b>取自品牌官网公开的实时售价。乐高仅有官方定价可用，故标注<b>按定价</b>；韩国标价超过定价 2.2 倍的停产稀有套装已从排名剔除。',
+      note1: '<b>海外价</b>取自品牌官网公开的实时售价。乐高仅有官方定价可用，故标注<b>按定价</b>；韩国标价超过定价 1.6 倍的停产稀有套装已从排名剔除。',
       note2: '<b>韩国价格</b>取 Enuri 上名称含同一型号代码的标价中位数。用单一最低价会被配件、赠品标价带偏。实际成交可能更低。',
       note3: '<b>关税与增值税</b>仅在超过美国 200 美元 / 日本 150 美元个人自用免税额度时计征。国际运费采用转运公司示例费率；结算为售价扣除平台手续费与韩国国内快递费。',
       hw: '仅迁移商品名、型号代码与价格等公开数据，不含个人信息。'
@@ -557,7 +557,7 @@
       negAll: '本日照合した {n} 件のうち純利益がプラスのものはありません。下表はそれでも最良の順です。',
       some: '{n} 件のうち {p} 件だけが純利益プラスです。',
       noteTitle: '数字の読み方',
-      note1: '<b>海外価格</b>はブランド公式ストアが公開する実売価格です。レゴは公式定価しか取得できないため<b>定価基準</b>と表示し、韓国の出品価格が定価の2.2倍を超える廃盤・希少セットは順位から外しました。',
+      note1: '<b>海外価格</b>はブランド公式ストアが公開する実売価格です。レゴは公式定価しか取得できないため<b>定価基準</b>と表示し、韓国の出品価格が定価の1.6倍を超える廃盤・希少セットは順位から外しました。',
       note2: '<b>韓国価格</b>はEnuriで同じ型番が名前に含まれる出品の中央値です。最安値1件だけを使うと付属品・部品の出品に引っ張られるため中央値を使います。実際の成約はこれより低いことがあります。',
       note3: '<b>関税・付加税</b>は米国200ドル・日本150ドルの免税枠（商品価格基準）を超えた場合のみ発生します。国際送料は転送業者の例示料率、精算は販売価格からプラットフォーム手数料と国内宅配を引いた額です。',
       hw: '商品名・型番・価格のみを公開データから移しています。個人情報は含みません。'
