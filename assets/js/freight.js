@@ -189,7 +189,7 @@
     { id: 'smlines', name: 'SM Lines', local: { ko: 'SM상선', en: 'SM Lines', ja: 'SMライン', zh: 'SM商船' }, group: 'kr', url: 'https://www.smlines.com/' },
     { id: 'evergreen', name: 'Evergreen', local: { ko: '에버그린', en: 'Evergreen', ja: 'エバーグリーン', zh: '长荣海运' }, group: 'tw', url: 'https://www.evergreen-line.com/' },
     { id: 'yangming', name: 'Yang Ming', local: { ko: '양밍', en: 'Yang Ming', ja: '陽明海運', zh: '阳明海运' }, group: 'tw', url: 'https://www.yangming.com/' },
-    { id: 'wanhai', name: 'Wan Hai', local: { ko: '완하이', en: 'Wan Hai', ja: '万海航运', zh: '万海航运' }, group: 'tw', url: 'https://www.wanhai.com/' },
+    { id: 'wanhai', name: 'Wan Hai', local: { ko: '완하이', en: 'Wan Hai', ja: 'ワンハイ', zh: '万海航运' }, group: 'tw', url: 'https://www.wanhai.com/' },
     { id: 'maersk', name: 'Maersk', local: { ko: '머스크', en: 'Maersk', ja: 'マースク', zh: '马士基' }, group: 'global', url: 'https://www.maersk.com/transportation-services/maersk-spot' },
     { id: 'msc', name: 'MSC', local: { ko: 'MSC', en: 'MSC', ja: 'MSC', zh: 'MSC' }, group: 'global', url: 'https://www.msc.com/en/quote' },
     { id: 'one', name: 'ONE', local: { ko: 'ONE', en: 'ONE', ja: 'ONE', zh: 'ONE' }, group: 'global', url: 'https://www.one-line.com/one-ecom' },
