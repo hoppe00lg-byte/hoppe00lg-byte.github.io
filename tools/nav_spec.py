@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""상단 내비게이션(4개 대표 메뉴 드롭다운)의 단일 정의.
+"""상단 내비게이션(5개 대표 메뉴 드롭다운)의 단일 정의.
 
   · 모든 페이지(한국어 · /en/ · /zh/ · /ja/ · /a/ 기사 · tax.html · law.html)가
     같은 마크업을 쓰도록 여기서만 내용을 고칩니다.
@@ -9,8 +9,11 @@
   · tools/build_tax_pages.py — 국가별 세무·결산 페이지를 만들 때 반영
   · tools/build_sitemap_page.py — 사이트맵 페이지를 만들 때 반영
 
-구조 (2026-11-24 재배치: 관련 기능끼리 묶어 한눈에 찾도록)
-  그룹 4개 = 뉴스·리포트 / 무역·조달·시황 / 세무·법률·생활 / 안내·사이트맵
+구조 (2026-11-24 재배치 · 2026-11-28 5번째 그룹 추가)
+  그룹 5개 = 뉴스·리포트 / 무역·조달·시황 / 세무·법률·툴 / 크리에이터·라이프 / 안내·사이트맵
+  · 크리에이터·라이프(2026-11-28 사용자 요청): 푸터로 내렸던 만세력·로또·AI 음악·
+    블로그/쇼츠·스타일·추천상품 6개를 상단 5번째 드롭다운으로 다시 모았습니다.
+    /en/ /zh/ /ja/ 에서는 한글이 한 글자도 남지 않도록 언어별 라벨을 모두 적어 둡니다.
 
   · href 는 페이지 기준 상대 경로(prefix 를 붙여 완성)로 적습니다.
   · /en/ /zh/ /ja/ 에서는 한글이 한 글자도 남지 않도록 언어별 라벨을 모두 적어 둡니다.
@@ -119,8 +122,35 @@ GROUPS = [
              "label": {"ko": "서식·전자서명 138종", "en": "Forms & e-signature (138)",
                        "zh": "表单·电子签名 138种", "ja": "書式・電子署名 138種"}},
             # 생활·엔터테인먼트 도구(만세력·로또·AI 음악·블로그 스튜디오·스타일·추천 상품)는
-            # 상단 메뉴에서 내리고 푸터(app.js 푸터 '무료 도구' 줄)로 옮겼습니다(2026-11-28 사용자 요청).
-            # 상단은 뉴스·시황·무역/세무·법률·리셀 전문 메뉴만 남깁니다.
+            # 아래 '크리에이터·라이프' 그룹으로 모았습니다(2026-11-28 사용자 요청).
+        ],
+    },
+    {
+        # --- 5번째 그룹: 크리에이터 · 라이프 (2026-11-28) -----------------------
+        # 푸터로 내렸던 생활·엔터 도구 6개를 다시 상단으로 모은 그룹입니다.
+        # 뉴스·시황·무역·세무 같은 전문 메뉴와 섞이지 않게 맨 뒤(안내 앞)에 둡니다.
+        "key": "creator",
+        "label": {"ko": "크리에이터 · 라이프", "en": "Creator & Life",
+                  "zh": "创作者 · 生活", "ja": "クリエイター・生活"},
+        "items": [
+            {"key": "saju", "href": "saju.html",
+             "label": {"ko": "만세력·2027 신년운세", "en": "Saju chart & 2027 forecast",
+                       "zh": "四柱排盘·2027运势", "ja": "四柱推命・2027年運勢"}},
+            {"key": "lotto", "href": "lotto.html",
+             "label": {"ko": "로또 6/45 번호 생성기", "en": "Lotto 6/45 number generator",
+                       "zh": "彩票 6/45 选号器", "ja": "ロト6/45 数字生成"}},
+            {"key": "music", "href": "music.html",
+             "label": {"ko": "AI 음악·BGM 생성기", "en": "AI music & BGM maker",
+                       "zh": "AI 音乐·BGM 生成器", "ja": "AI音楽・BGM作成"}},
+            {"key": "creator", "href": "creator.html",
+             "label": {"ko": "블로그·쇼츠 스튜디오", "en": "Blog & Shorts studio",
+                       "zh": "博客·短视频工作室", "ja": "ブログ・ショート動画制作"}},
+            {"key": "style", "href": "style.html",
+             "label": {"ko": "체형·스타일 추천", "en": "Style & outfit brief",
+                       "zh": "体型·穿搭推荐", "ja": "体型・スタイル提案"}},
+            {"key": "links", "href": "links.html",
+             "label": {"ko": "추천 상품·용품 (쿠팡)", "en": "Gear picks (Coupang)",
+                       "zh": "推荐商品·用品 (Coupang)", "ja": "おすすめ商品・用品 (Coupang)"}},
         ],
     },
     {
@@ -161,11 +191,12 @@ FILE_ACTIVE = {
     "insurance.html": ("life", "insurance"),
     "law.html": ("life", "law"),
     "forms.html": ("life", "forms"),
-    "saju.html": ("life", "saju"),
-    "lotto.html": ("life", "lotto"),
-    "music.html": ("life", "music"),
-    "style.html": ("life", "style"),
-    "links.html": ("life", "links"),
+    "saju.html": ("creator", "saju"),
+    "lotto.html": ("creator", "lotto"),
+    "music.html": ("creator", "music"),
+    "creator.html": ("creator", "creator"),
+    "style.html": ("creator", "style"),
+    "links.html": ("creator", "links"),
     "sitemap.html": ("guide", "sitemap"),
     "about.html": ("guide", "about"),
     "ad.html": ("guide", "ad"),

@@ -1,5 +1,5 @@
 /* =========================================================
-   INSIGHT BRIEF — 상단 내비게이션 (4개 대표 메뉴 드롭다운)
+   INSIGHT BRIEF — 상단 내비게이션 (5개 대표 메뉴 드롭다운)
    · 한국어 · /en/ · /zh/ · /ja/ · 기사 페이지 공통
    · style.css 의 .nav 규칙 위에 덮어씁니다. (이 파일이 가장 나중에 로드)
    · 기본은 CSS 만으로도 열립니다(:hover · :focus-within).
@@ -120,19 +120,24 @@ html[lang="zh-Hans"] .nav-panel a,
 html[lang="zh"] .nav-panel a,
 html[lang="ja"] .nav-panel a{font-size:12.5px;letter-spacing:0}
 
-/* ---- 좁은 화면: 가로 스크롤 없이 4칸 그리드, 패널은 바 전체 폭 ---- */
+/* ---- 좁은 화면: 가로 스크롤 없이 5칸 그리드, 패널은 바 전체 폭 ---- */
 @media (max-width:900px){
   .nav-wrap .container{padding-right:var(--pad,18px)}
   .nav#site-nav,
   .nav{
-    display:grid;grid-template-columns:repeat(4,minmax(0,1fr));
+    display:grid;grid-template-columns:repeat(5,minmax(0,1fr));
     width:100%;gap:0;padding-right:0;overflow:visible;
   }
   .nav-group{position:static;display:block}
   .nav .nav-top{
-    width:100%;height:100%;justify-content:center;gap:4px;
-    padding:11px 3px 10px;font-size:12px;letter-spacing:-.03em;
+    width:100%;height:100%;justify-content:center;gap:3px;
+    padding:11px 3px 10px;font-size:11.5px;letter-spacing:-.04em;
   }
+  /* 라틴·중국어·일어 라벨은 글자 폭이 달라 따로 맞춥니다(한 줄 유지). */
+  html[lang="en"] .nav .nav-top{font-size:11px;letter-spacing:-.02em}
+  html[lang="zh-Hans"] .nav .nav-top,
+  html[lang="zh"] .nav .nav-top,
+  html[lang="ja"] .nav .nav-top{font-size:11.5px;letter-spacing:-.03em}
   .nav .nav-top::after{left:4px;right:4px;height:2px}
   .nav-caret{width:8px;height:5px}
   .nav-panel{
@@ -152,12 +157,33 @@ html[lang="ja"] .nav-panel a{font-size:12.5px;letter-spacing:0}
   .nav-panel a.is-active{border-left:0;box-shadow:inset 3px 0 0 var(--accent)}
   .nav-panel a + a{border-top:1px solid rgba(23,20,15,.06)}
 }
-/* 아주 좁은 화면(390px 등): 2+2 두 줄로 나눠 긴 라벨이 잘리지 않게 */
-@media (max-width:520px){
+/* 5번째 그룹이 늘어난 만큼, 좁은 화면(900px 이하)에서는 라벨이 한 줄에 들어가도록
+   글자를 조금 줄입니다(라벨 잘림·줄바꿈 방지). */
+
+/* 680px 이하: 다섯 칸이 좁아 '크리에이터 · 라이프'가 들어가지 않으므로 3칸(두 줄)으로. */
+@media (max-width:680px){
+  .nav#site-nav,
+  .nav{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .nav .nav-top{
+    font-size:12.5px;letter-spacing:-.03em;padding:10px 4px 9px;
+    border-top:1px solid rgba(23,20,15,.06);
+  }
+  html[lang="en"] .nav .nav-top{font-size:12px}
+  html[lang="zh-Hans"] .nav .nav-top,
+  html[lang="zh"] .nav .nav-top,
+  html[lang="ja"] .nav .nav-top{font-size:12.5px}
+  .nav-group:nth-child(-n+3) .nav-top{border-top:0}
+}
+/* 430px 이하(작은 폰): 2칸 바둑판. 5개라 마지막 '안내·사이트맵'은
+   두 칸을 다 써서 빈 칸이 생기지 않게 합니다. */
+@media (max-width:430px){
   .nav#site-nav,
   .nav{grid-template-columns:repeat(2,minmax(0,1fr))}
   .nav-group{grid-column:auto}
-  .nav .nav-top{font-size:12.5px;padding:10px 3px 9px;justify-content:center}
+  .nav .nav-top{font-size:12.5px;letter-spacing:-.02em;padding:10px 3px 9px;justify-content:center;
+    border-top:1px solid rgba(23,20,15,.06)}
+  .nav-group:nth-child(-n+2) .nav-top{border-top:0}
+  .nav-group:last-child{grid-column:1/-1}
 }
 @media (max-width:360px){
   .nav .nav-top{font-size:11px;letter-spacing:-.05em}

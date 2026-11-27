@@ -2594,15 +2594,9 @@
             '<li><a href="' + U('contact.html#tip') + '">독자 제보</a></li>' +
             '<li><a href="' + U('ad.html') + '">광고·스폰서 단가표</a></li>' +
             '<li><a href="' + U('ad.html') + '#b2b">B2B 소싱·원가 의뢰</a></li>' +
-            '<li><a href="' + U('links.html') + '">추천 상품·용품 (쿠팡 파트너스)</a></li>' +
-            '<li><a href="' + U('lotto.html') + '">무료 도구 · 로또 번호 생성기</a></li>' +
-            '<li><a href="' + U('saju.html') + '">무료 도구 · 만세력·2027 신년운세</a></li>' +
             '<li><a href="' + U('salary.html') + '">무료 도구 · 급여·노무 계산기</a></li>' +
             '<li><a href="' + U('biz.html') + '">무료 도구 · 1인 사업자 툴 5종</a></li>' +
             '<li><a href="' + U('seller.html') + '">무료 도구 · 셀러·마케터 툴 4종</a></li>' +
-            '<li><a href="' + U('music.html') + '">무료 도구 · AI 음악 가사·프롬프트</a></li>' +
-            '<li><a href="' + U('creator.html') + '">무료 도구 · 블로그·쇼츠 스튜디오</a></li>' +
-            '<li><a href="' + U('style.html') + '">무료 도구 · 체형·스타일 추천</a></li>' +
             '<li><a href="' + U('feed.xml') + '">' + T('RSS 피드') + '</a></li>' +
             '<li><a href="' + U('sitemap.html') + '">' + T('사이트맵') + '</a></li>' +
             '<li><a href="' + U('sitemap.xml') + '">sitemap.xml</a></li>' +

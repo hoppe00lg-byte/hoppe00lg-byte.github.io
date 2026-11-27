@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""상단 내비게이션(4개 대표 메뉴)을 이미 있는 모든 HTML 페이지에 반영합니다(멱등).
+"""상단 내비게이션(5개 대표 메뉴)을 이미 있는 모든 HTML 페이지에 반영합니다(멱등).
 
   python3 tools/apply_nav.py            # 전체 반영
   python3 tools/apply_nav.py --check    # 바뀔 파일만 확인(쓰지 않음)
 
 하는 일
-  1) <ul class="nav" id="site-nav"> … </ul> 를 tools/nav_spec.py 의 4개 메뉴로 교체
+  1) <ul class="nav" id="site-nav"> … </ul> 를 tools/nav_spec.py 의 5개 메뉴로 교체
      (한국어 · /en/ · /zh/ · /ja/ · /a/ 기사 · tax.html · law.html 모두)
   2) <head> 에 assets/css/nav.css 를, </body> 앞에 assets/js/nav.js 를 한 번만 넣기
   3) 현재 페이지 표시(.is-active / aria-current) 자동 계산
@@ -24,7 +24,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nav_spec
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-NAV_CSS_VER = "20261125a"
+NAV_CSS_VER = "20261128a"
 NAV_JS_VER = "20261124c"
 
 UL_RE = re.compile(r'<ul class="nav" id="site-nav">.*?</ul>', re.S)

@@ -231,12 +231,13 @@ HISTORY = {"data": None}
 # 메뉴 정의는 tools/nav_spec.py 한 곳에 있고, tools/apply_nav.py · tools/i18n_pages.py ·
 # tools/build_tax_pages.py 가 그 정의를 그대로 씁니다. 여기서는 페이지마다 메뉴가
 # 빠지지 않았는지만 확인합니다.
-# 생활·엔터 도구(lotto·saju·music·creator·style·links)는 상단 메뉴에서 빼고 푸터로 옮겼으므로
-# 여기서는 전문 메뉴만 확인합니다(2026-11-28).
+# 생활·엔터 도구(lotto·saju·music·creator·style·links)는 상단 5번째 섹션 '크리에이터 · 라이프'로
+# 모았고(2026-11-28), 푸터에서는 같은 링크를 걷어냈습니다. 여기서는 전문 메뉴만 확인합니다.
 NAV_REQUIRED = ("market.html", "salary.html", "tax.html", "biz.html",
                 "forms.html", "law.html", "seller.html", "freight.html",
                 "sourcing.html", "mfg-cost.html", "resell.html", "review-reply.html", "exhibitions.html",
-                "insurance.html", "sitemap.html", "about.html", "ad.html", "contact.html")
+                "insurance.html", "sitemap.html", "about.html", "ad.html", "contact.html",
+                "saju.html", "lotto.html", "music.html", "creator.html", "style.html", "links.html")
 
 
 def validate_nav():

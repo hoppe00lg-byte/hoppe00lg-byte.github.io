@@ -51,7 +51,7 @@ def e(value):
 TEXT = {
     "ko": {
         "title": "사이트맵 — 전체 지면·무료 도구 한눈에 | INSIGHT BRIEF",
-        "desc": "인사이트 브리프의 모든 지면과 무료 도구를 한 장에. 뉴스·리포트 5개 섹션, 조달청·기업검증 포털, 무역 이메일, 출장 허브, 마진·원가 계산기, 전시회 캘린더, 세무·법률·생활 도구, 최신 기사 목록.",
+        "desc": "인사이트 브리프의 모든 지면과 무료 도구를 한 장에. 뉴스·리포트 5개 섹션, 조달청·기업검증 포털, 무역 이메일, 출장 허브, 마진·원가 계산기, 전시회 캘린더, 세무·법률 도구, 크리에이터·라이프 도구, 최신 기사 목록.",
         "kicker": "SITEMAP · 전체 지면 안내",
         "h1": "사이트맵",
         "lead": "인사이트 브리프의 모든 지면과 무료 도구를 한 장에 모았습니다. 메뉴 안쪽에 있던 조달청·기업검증 포털, 무역 이메일, 출장 허브, 마진·원가 계산기까지 여기서 바로 찾아갈 수 있습니다.",
@@ -76,7 +76,7 @@ TEXT = {
     },
     "en": {
         "title": "Sitemap — every page and free tool | INSIGHT BRIEF",
-        "desc": "Every page and free tool of INSIGHT BRIEF in one place: five news desks, the procurement and company-check portal, trade email writer, business trip hub, margin and cost calculators, exhibition calendar, tax and law tools, and the latest stories.",
+        "desc": "Every page and free tool of INSIGHT BRIEF in one place: five news desks, the procurement and company-check portal, trade email writer, business trip hub, margin and cost calculators, exhibition calendar, tax and law tools, creator and life tools, and the latest stories.",
         "kicker": "SITEMAP · ALL PAGES",
         "h1": "Sitemap",
         "lead": "Every desk and every free tool of INSIGHT BRIEF on one page — including the ones that used to sit deep inside a menu: the procurement and company-check portal, the trade email writer, the business trip hub and the margin and cost calculators.",
@@ -101,7 +101,7 @@ TEXT = {
     },
     "zh": {
         "title": "网站地图 — 全部页面与免费工具 | INSIGHT BRIEF",
-        "desc": "把 INSIGHT BRIEF 的全部页面与免费工具集中在一页：五个新闻版面、采购厅·企业验证门户、贸易邮件撰写、出差中心、利润·成本计算器、展会日历、税务与法律工具，以及最新报道。",
+        "desc": "把 INSIGHT BRIEF 的全部页面与免费工具集中在一页：五个新闻版面、采购厅·企业验证门户、贸易邮件撰写、出差中心、利润·成本计算器、展会日历、税务与法律工具、创作者与生活工具，以及最新报道。",
         "kicker": "SITEMAP · 全部页面",
         "h1": "网站地图",
         "lead": "把 INSIGHT BRIEF 的所有版面和免费工具集中在一页。以前藏在菜单深处的采购厅·企业验证门户、贸易邮件、出差中心、利润·成本计算器，也能从这里直接打开。",
@@ -126,7 +126,7 @@ TEXT = {
     },
     "ja": {
         "title": "サイトマップ — 全ページと無料ツール | INSIGHT BRIEF",
-        "desc": "INSIGHT BRIEF の全ページと無料ツールを1ページに。5つのニュース面、調達庁・企業審査ポータル、貿易メール作成、出張ハブ、粗利・原価計算、展示会カレンダー、税務・法律ツール、最新記事まで。",
+        "desc": "INSIGHT BRIEF の全ページと無料ツールを1ページに。5つのニュース面、調達庁・企業審査ポータル、貿易メール作成、出張ハブ、粗利・原価計算、展示会カレンダー、税務・法律ツール、クリエイター・生活ツール、最新記事まで。",
         "kicker": "SITEMAP · 全ページ案内",
         "h1": "サイトマップ",
         "lead": "INSIGHT BRIEF のすべての紙面と無料ツールを1ページにまとめました。これまでメニューの奥にあった調達庁・企業審査ポータル、貿易メール、出張ハブ、粗利・原価計算もここから直接開けます。",
@@ -328,12 +328,12 @@ SECTIONS = [
     {
         "id": "life",
         "no": "03",
-        "title": {"ko": "세무·법률·생활", "en": "Tax, law & life",
-                  "zh": "税务·法律·生活", "ja": "税務・法律・生活"},
-        "desc": {"ko": "세금과 급여, 계약서와 내용증명, 생활 서식과 가벼운 운세까지.",
-                 "en": "Taxes and payroll, contracts and demand letters, everyday forms and a little fortune-telling.",
-                 "zh": "税金与工资、合同与催告书、日常表单，再加一点运势。",
-                 "ja": "税金と給与、契約書と内容証明、日常の書式、そして少しの占い。"},
+        "title": {"ko": "세무·법률·툴", "en": "Tax, law & tools",
+                  "zh": "税务·法律·工具", "ja": "税務・法律・ツール"},
+        "desc": {"ko": "세금과 급여, 계약서와 내용증명, 생활 서식과 리뷰 응대까지.",
+                 "en": "Taxes and payroll, contracts and demand letters, everyday forms and review replies.",
+                 "zh": "税金与工资、合同与催告书、日常表单与评论回复。",
+                 "ja": "税金と給与、契約書と内容証明、日常の書式とレビュー返信。"},
         "items": [
             {"href": "tax.html", "tool": True,
              "title": {"ko": "세금·연봉·건보 계산기", "en": "Tax, salary & health insurance",
@@ -375,22 +375,6 @@ SECTIONS = [
                       "zh": "从劳动合同到 B/L 指示书，手写签名、印章与 A4 PDF 保存。",
                       "ja": "労働契約書からB/L指示書まで、手書き署名・印鑑・A4 PDF保存。"},
              "tag": {"ko": "138종", "en": "138 forms", "zh": "138种", "ja": "138種"}},
-            {"href": "saju.html", "tool": True,
-             "title": {"ko": "무료 만세력·신년운세", "en": "Saju & new-year fortune",
-                       "zh": "四柱·新年运势", "ja": "四柱推命・新年占い"},
-             "desc": {"ko": "사주팔자와 2027 정미년 신년운세를 무료로 봅니다.",
-                      "en": "A free four-pillars reading and a 2027 new-year forecast.",
-                      "zh": "免费查看四柱八字与2027丁未年运势。",
-                      "ja": "四柱八字と2027丁未年の運勢を無料で。"},
-             "tag": {"ko": "무료", "en": "Free", "zh": "免费", "ja": "無料"}},
-            {"href": "creator.html", "tool": True,
-             "title": {"ko": "블로그·유튜브 콘텐츠 스튜디오", "en": "Blog & Shorts content studio",
-                       "zh": "博客·短视频内容工作室", "ja": "ブログ・ショート制作スタジオ"},
-             "desc": {"ko": "주제 한 줄로 고RPM 블로그 HTML과 세로 쇼츠 영상(.webm)·자막(.srt)을 만들고, 내 Blogger·YouTube 계정으로 바로 올립니다.",
-                      "en": "One topic becomes high-RPM blog HTML plus a vertical Shorts video (.webm) and subtitles (.srt), then posts to your own Blogger and YouTube.",
-                      "zh": "一行主题即可生成高 RPM 博客 HTML、竖屏短视频（.webm）与字幕（.srt），并直接发布到自己的 Blogger、YouTube。",
-                      "ja": "テーマ1行で高RPMブログHTMLと縦型ショート動画（.webm）・字幕（.srt）を作り、自分のBlogger・YouTubeへそのまま投稿できます。"},
-             "tag": {"ko": "무료", "en": "Free", "zh": "免费", "ja": "無料"}},
             {"href": "review-reply.html", "tool": True,
              "title": {"ko": "리뷰 답글 생성기", "en": "Review reply generator",
                        "zh": "评论回复生成器", "ja": "レビュー返信ジェネレーター"},
@@ -399,21 +383,25 @@ SECTIONS = [
                       "zh": "粘贴顾客评价并选择行业、星级与语气，即可生成三种可直接发布的回复（简短型、标准型、引导再次光临型），含一至三星投诉应对。",
                       "ja": "お客様のレビューを貼り、業種・星の数・口調を選ぶだけで、ネイバープレイス・出前アプリ・Googleマップにそのまま使える返信3種（短め・標準・再来店誘導）を作ります。低評価クレーム対応も。"},
              "tag": {"ko": "무료", "en": "Free", "zh": "免费", "ja": "無料"}},
-            {"href": "music.html", "tool": True,
-             "title": {"ko": "AI 음악 가사·프롬프트 생성기", "en": "AI music & lyric prompt generator",
-                       "zh": "AI 音乐·歌词提示词生成器", "ja": "AI音楽・歌詞プロンプト生成"},
-             "desc": {"ko": "장르·분위기·템포·보컬을 고르면 Suno·Flow Music용 영문 스타일 태그와 Verse/Chorus 가사를 바로 복사하게.",
-                      "en": "Pick genre, mood, tempo and vocal and copy English style tags plus Verse/Chorus lyrics for Suno and Flow Music.",
-                      "zh": "选好曲风、氛围、速度与唱腔，即可复制 Suno、Flow Music 用的英文风格标签和主歌/副歌歌词。",
-                      "ja": "ジャンル・雰囲気・テンポ・ボーカルを選ぶと、Suno・Flow Music用の英語スタイルタグとVerse/Chorus歌詞をすぐコピーできます。"},
-             "tag": {"ko": "무료", "en": "Free", "zh": "免费", "ja": "無料"}},
-            {"href": "style.html", "tool": True,
-             "title": {"ko": "체형·사진 기반 스타일 추천", "en": "Style & outfit brief",
-                       "zh": "穿搭·风格推荐", "ja": "ファッション・スタイル提案"},
-             "desc": {"ko": "BMI·체형과 사진 속 피부 톤을 참고해 2026 겨울~초봄 트렌드 코디 3세트·쇼핑 키워드·룩북 PNG까지. 사진은 기기 안에서만 처리.",
-                      "en": "BMI and body type plus skin tone read from your photo, turned into three trend-led outfits, shopping keywords and a lookbook PNG. The photo never leaves your device.",
-                      "zh": "参考 BMI、体型与照片中的肤色，给出2026冬~初春趋势的三套搭配、购物关键词与造型卡 PNG。照片仅在设备内处理。",
-                      "ja": "BMI・体型と写真の肌の色味を参考に、2026冬〜春先のトレンドコーデ3セット、ショッピングキーワード、ルックブックPNGまで。写真は端末内のみで処理。"},
+        ],
+    },
+    {
+        "id": "creator",
+        "no": "04",
+        "title": {"ko": "크리에이터·라이프", "en": "Creator & life",
+                  "zh": "创作者·生活", "ja": "クリエイター・生活"},
+        "desc": {"ko": "만세력과 로또, AI 음악, 블로그·쇼츠 스튜디오, 스타일 추천, 추천 상품까지 — 만들고 즐기는 도구.",
+                 "en": "Saju charts and lotto, AI music, the blog and Shorts studio, style picks and recommended gear — tools to make and enjoy.",
+                 "zh": "四柱排盘与彩票、AI 音乐、博客·短视频工作室、穿搭推荐与推荐商品——创作与生活工具。",
+                 "ja": "四柱推命とロト、AI音楽、ブログ・ショート制作、スタイル提案、おすすめ商品まで——作って楽しむツール。"},
+        "items": [
+            {"href": "saju.html", "tool": True,
+             "title": {"ko": "무료 만세력·신년운세", "en": "Saju & new-year fortune",
+                       "zh": "四柱·新年运势", "ja": "四柱推命・新年占い"},
+             "desc": {"ko": "사주팔자와 2027 정미년 신년운세를 무료로 봅니다.",
+                      "en": "A free four-pillars reading and a 2027 new-year forecast.",
+                      "zh": "免费查看四柱八字与2027丁未年运势。",
+                      "ja": "四柱八字と2027丁未年の運勢を無料で。"},
              "tag": {"ko": "무료", "en": "Free", "zh": "免费", "ja": "無料"}},
             {"href": "lotto.html", "tool": True,
              "title": {"ko": "로또 번호 생성기", "en": "Lotto number generator",
@@ -423,11 +411,42 @@ SECTIONS = [
                       "zh": "基于1,251期真实数据，每周六自动更新。",
                       "ja": "1,251回の実データに基づき、毎週土曜に自動更新。"},
              "tag": {"ko": "무료", "en": "Free", "zh": "免费", "ja": "無料"}},
+            {"href": "music.html", "tool": True,
+             "title": {"ko": "AI 음악 가사·프롬프트 생성기", "en": "AI music & lyric prompt generator",
+                       "zh": "AI 音乐·歌词提示词生成器", "ja": "AI音楽・歌詞プロンプト生成"},
+             "desc": {"ko": "장르·분위기·템포·보컬을 고르면 Suno·Flow Music용 영문 스타일 태그와 Verse/Chorus 가사를 바로 복사하게.",
+                      "en": "Pick genre, mood, tempo and vocal and copy English style tags plus Verse/Chorus lyrics for Suno and Flow Music.",
+                      "zh": "选好曲风、氛围、速度与唱腔，即可复制 Suno、Flow Music 用的英文风格标签和主歌/副歌歌词。",
+                      "ja": "ジャンル・雰囲気・テンポ・ボーカルを選ぶと、Suno・Flow Music用の英語スタイルタグとVerse/Chorus歌詞をすぐコピーできます。"},
+             "tag": {"ko": "무료", "en": "Free", "zh": "免费", "ja": "無料"}},
+            {"href": "creator.html", "tool": True,
+             "title": {"ko": "블로그·유튜브 콘텐츠 스튜디오", "en": "Blog & Shorts content studio",
+                       "zh": "博客·短视频内容工作室", "ja": "ブログ・ショート制作スタジオ"},
+             "desc": {"ko": "주제 한 줄로 고RPM 블로그 HTML과 세로 쇼츠 영상(.webm)·자막(.srt)을 만들고, 내 Blogger·YouTube 계정으로 바로 올립니다.",
+                      "en": "One topic becomes high-RPM blog HTML plus a vertical Shorts video (.webm) and subtitles (.srt), then posts to your own Blogger and YouTube.",
+                      "zh": "一行主题即可生成高 RPM 博客 HTML、竖屏短视频（.webm）与字幕（.srt），并直接发布到自己的 Blogger、YouTube。",
+                      "ja": "テーマ1行で高RPMブログHTMLと縦型ショート動画（.webm）・字幕（.srt）を作り、自分のBlogger・YouTubeへそのまま投稿できます。"},
+             "tag": {"ko": "무료", "en": "Free", "zh": "免费", "ja": "無料"}},
+            {"href": "style.html", "tool": True,
+             "title": {"ko": "체형·사진 기반 스타일 추천", "en": "Style & outfit brief",
+                       "zh": "穿搭·风格推荐", "ja": "ファッション・スタイル提案"},
+             "desc": {"ko": "BMI·체형과 사진 속 피부 톤을 참고해 2026 겨울~초봄 트렌드 코디 3세트·쇼핑 키워드·룩북 PNG까지. 사진은 기기 안에서만 처리.",
+                      "en": "BMI and body type plus skin tone read from your photo, turned into three trend-led outfits, shopping keywords and a lookbook PNG. The photo never leaves your device.",
+                      "zh": "参考 BMI、体型与照片中的肤色，给出2026冬~初春趋势的三套搭配、购物关键词与造型卡 PNG。照片仅在设备内处理。",
+                      "ja": "BMI・体型と写真の肌の色味を参考に、2026冬〜春先のトレンドコーデ3セット、ショッピングキーワード、ルックブックPNGまで。写真は端末内のみで処理。"},
+             "tag": {"ko": "무료", "en": "Free", "zh": "免费", "ja": "無料"}},
+            {"href": "links.html",
+             "title": {"ko": "추천 상품·용품", "en": "Recommended products", "zh": "推荐商品·用品", "ja": "おすすめ商品・用品"},
+             "desc": {"ko": "시츄 쫑이월드 링크와 쿠팡 파트너스 추천 상품.",
+                      "en": "Siyu Jjong's World links and Coupang Partners picks.",
+                      "zh": "诗秋·中吉世界链接与 Coupang Partners 推荐商品。",
+                      "ja": "シジュ・チョンイワールドのリンクとCoupang Partnersのおすすめ商品。"},
+             "tag": {"ko": "제휴", "en": "Partner", "zh": "合作", "ja": "提携"}},
         ],
     },
     {
         "id": "guide",
-        "no": "04",
+        "no": "05",
         "title": {"ko": "안내·사이트맵·문의", "en": "About, sitemap & contact",
                   "zh": "介绍·网站地图·咨询", "ja": "案内・サイトマップ・お問い合わせ"},
         "desc": {"ko": "매체 소개와 편집 원칙, 광고·제휴, 제보 창구, 그리고 검색엔진용 주소 목록.",
@@ -464,13 +483,6 @@ SECTIONS = [
                       "zh": "物流、税务、劳务、政策资金等11个领域免费比较报价。",
                       "ja": "物流・税務・労務・政策資金など11分野の無料比較見積。"},
              "tag": {"ko": "11개 분야", "en": "11 fields", "zh": "11个领域", "ja": "11分野"}},
-            {"href": "links.html",
-             "title": {"ko": "추천 상품·용품", "en": "Recommended products", "zh": "推荐商品·用品", "ja": "おすすめ商品・用品"},
-             "desc": {"ko": "시츄 쫑이월드 링크와 쿠팡 파트너스 추천 상품.",
-                      "en": "Siyu Jjong's World links and Coupang Partners picks.",
-                      "zh": "诗秋·中吉世界链接与 Coupang Partners 推荐商品。",
-                      "ja": "シジュ・チョンイワールドのリンクとCoupang Partnersのおすすめ商品。"},
-             "tag": {"ko": "제휴", "en": "Partner", "zh": "合作", "ja": "提携"}},
             {"href": "feed.xml",
              "title": {"ko": "RSS 피드", "en": "RSS feed", "zh": "RSS 订阅", "ja": "RSS フィード"},
              "desc": {"ko": "새 기사를 리더기로 받아 봅니다.",
@@ -490,10 +502,10 @@ SECTIONS = [
 ]
 
 JUMP = {
-    "ko": ["뉴스·리포트", "무역·조달·시황", "세무·법률·생활", "안내·연락", "최신 기사"],
-    "en": ["News", "Trade & procurement", "Tax, law & life", "About & contact", "Latest stories"],
-    "zh": ["新闻·报告", "贸易·采购·行情", "税务·法律·生活", "介绍·联系", "最新报道"],
-    "ja": ["ニュース", "貿易・調達・市況", "税務・法律・生活", "案内・連絡", "最新記事"],
+    "ko": ["뉴스·리포트", "무역·조달·시황", "세무·법률·툴", "크리에이터·라이프", "안내·연락", "최신 기사"],
+    "en": ["News", "Trade & procurement", "Tax, law & tools", "Creator & life", "About & contact", "Latest stories"],
+    "zh": ["新闻·报告", "贸易·采购·行情", "税务·法律·工具", "创作者·生活", "介绍·联系", "最新报道"],
+    "ja": ["ニュース", "貿易・調達・市況", "税務・法律・ツール", "クリエイター・生活", "案内・連絡", "最新記事"],
 }
 
 
@@ -768,7 +780,7 @@ def render(lang):
     asset = "" if lang == "ko" else "../"
     jumps = "\n".join(
         f'      <a href="#{sid}"><b>{i + 1:02d}</b>{e(label)}</a>'
-        for i, (sid, label) in enumerate(zip(["news", "trade", "life", "guide", "latest"], JUMP[lang]))
+        for i, (sid, label) in enumerate(zip(["news", "trade", "life", "creator", "guide", "latest"], JUMP[lang]))
     )
     i18n_scripts = ""
     if lang != "ko":
@@ -819,7 +831,7 @@ def render(lang):
 <script src="data/articles.fallback.js"></script>
 <script src="{asset}assets/js/monetize.js?v=20261123c"></script>
 <script src="{asset}assets/js/nav.js?v={NAV_JS_VER}"></script>{i18n_scripts}
-<script src="{asset}assets/js/app.js?v=20261124m"></script>
+<script src="{asset}assets/js/app.js?v=20261128a"></script>
 <!-- IB:CHAT-FLOAT -->
 <script src="{asset}assets/js/chat-float.js?v=20261124c" defer></script>
 <!-- /IB:CHAT-FLOAT -->
