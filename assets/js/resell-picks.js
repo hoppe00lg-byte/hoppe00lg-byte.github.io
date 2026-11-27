@@ -98,7 +98,7 @@
     }
   }[LANG];
 
-  var SYM = { KRW: '\u20a9', USD: 'US$', JPY: 'JPY ', EUR: '\u20ac', CNY: 'CN\u00a5' };
+  var SYM = { KRW: '\u20a9', USD: 'US$', JPY: 'JPY ', EUR: '\u20ac', GBP: '\u00a3', CAD: 'C$', SEK: 'kr ', CNY: 'CN\u00a5' };
 
   /* ---------------- 도우미 ---------------- */
   function $(id) { return document.getElementById(id); }
@@ -120,6 +120,9 @@
   function money(n, cur) {
     if (cur === 'USD') return SYM.USD + nf(n, 2);
     if (cur === 'EUR') return SYM.EUR + nf(n, 2);
+    if (cur === 'GBP') return SYM.GBP + nf(n, 2);
+    if (cur === 'CAD') return SYM.CAD + nf(n, 2);
+    if (cur === 'SEK') return SYM.SEK + nf(n, 2);
     if (cur === 'CNY') return SYM.CNY + nf(n, 2);
     if (cur === 'JPY') return SYM.JPY + nf(Math.round(n));
     return krw(n);
@@ -476,15 +479,15 @@
      ========================================================= */
   var GT = {
     ko: {
-      kicker: 'JP · US → KR', title: '해외직구 품목 실측 마진 TOP',
-      sub: '미국·일본 브랜드 공식 스토어의 실제 판매가와 국내 판매 등록가를 같은 시각에 조회해, 국제배송·관부가세·판매 수수료를 빼고 남는 순마진을 계산했습니다. 품목은 모델 코드(레고 세트번호·제품 모델명)로 맞췄습니다.',
+      kicker: 'US · JP · EU → KR', title: '해외직구·명품 컨템 실측 마진 TOP',
+      sub: '미국·일본·유럽 브랜드 공식몰과 편집샵의 실제 판매가를 국내 판매 등록가와 같은 시각에 조회해, 국제배송·관부가세·판매 수수료를 빼고 남는 순마진을 계산했습니다. 품목은 품번(스타일 코드)·레고 세트번호로 맞췄습니다.',
       stamp: '기준 {date} · 환율 $1 = {usd}원 · ¥1 = {jpy}원',
       statScan: '감시 품목', statMatched: '시세 확인', statPos: '순마진 플러스', statBest: '최고 순마진',
       unitItem: '개',
       colFrom: '해외가', colCost: '총원가', colDom: '국내 시세', colTax: '관부가세',
-      colMargin: '순마진', originUs: '미국', originJp: '일본', rrp: '정가 기준',
+      colMargin: '순마진', originUS: '미국', originJP: '일본', originEU: '유럽', originUK: '영국', originCA: '캐나다', rrp: '정가 기준',
       all: '전체',
-      catElectronics: '전자기기', catCamping: '캠핑', catHousehold: '생활용품', catLego: '레고', catFigure: '피규어',
+      catLux: '명품·컨템', catElectronics: '전자기기', catCamping: '캠핑', catHousehold: '생활용품', catLego: '레고', catFigure: '피규어',
       linkBuy: '해외 상품', linkDom: '국내 시세',
       fill: '계산기에 바로 채우기',
       fillDone: '계산기에 값을 넣었습니다. 배송·수수료를 바꿔 직접 확인해 보세요.',
@@ -494,19 +497,19 @@
       noteTitle: '이 숫자를 읽는 법',
       note1: '<b>해외가</b>는 브랜드 공식 스토어가 공개한 상품 데이터의 실제 판매가입니다. 레고는 공식 소비자가(RRP)라 <b>정가 기준</b>으로 표시했고, 국내 등록가가 정가의 1.6배를 넘는 단종·희소 세트는 순위에서 뺐습니다.',
       note2: '<b>국내 시세</b>는 에누리 가격비교에서 모델명이 일치하는 매물만 골라 중앙값을 쓴 값입니다. 최저가 하나를 쓰면 사은품·부품 매물에 끌려가므로 중앙값을 씁니다. 실제 체결가는 이보다 낮을 수 있습니다.',
-      note3: '<b>관부가세</b>는 미국 $200·일본 $150 면세 한도(물품가 기준)를 넘을 때만 붙습니다. 국제배송은 배대지 예시 요율, 정산은 판매가에서 플랫폼 수수료와 국내 택배를 뺀 값입니다.',
+      note3: '<b>관부가세</b>는 미국 $200·일본/유럽/영국 $150 면세 한도(물품가 기준)를 넘을 때만 붙습니다. 가방·시계는 200만 원을 넘는 초과분에 개별소비세 20%와 교육세 30%가 더 붙습니다. 유럽·영국 매장 가격은 현지 부가세(20%)를 뺀 수출 구매 기준으로 계산했습니다. 국제배송은 배대지 예시 요율, 정산은 판매가에서 플랫폼 수수료와 국내 택배를 뺀 값입니다.',
       hw: '품목명·모델 코드·가격만 공개 데이터로 옮겼습니다. 개인정보는 담지 않습니다.'
     },
     en: {
-      kicker: 'JP · US → KR', title: 'Overseas direct-buy picks by measured margin',
-      sub: 'Live prices from US and Japanese brand stores are matched by model code against Korean listing prices, then international shipping, duty and platform fees are taken out to leave the net margin.',
+      kicker: 'US · JP · EU → KR', title: 'Overseas & luxury picks by measured margin',
+      sub: 'Live prices from US, Japanese and European brand stores and concept shops are matched by style code against Korean listing prices, then international shipping, duty and platform fees are taken out to leave the net margin.',
       stamp: 'As of {date} · $1 = ₩{usd} · ¥1 = ₩{jpy}',
       statScan: 'Items watched', statMatched: 'Prices matched', statPos: 'Positive margin', statBest: 'Best margin',
       unitItem: 'items',
       colFrom: 'Overseas', colCost: 'Total cost', colDom: 'Korea price', colTax: 'Duty & VAT',
-      colMargin: 'Net margin', originUs: 'US', originJp: 'Japan', rrp: 'at RRP',
+      colMargin: 'Net margin', originUS: 'US', originJP: 'Japan', originEU: 'Europe', originUK: 'UK', originCA: 'Canada', rrp: 'at RRP',
       all: 'All',
-      catElectronics: 'Electronics', catCamping: 'Camping', catHousehold: 'Home goods', catLego: 'LEGO', catFigure: 'Figures',
+      catLux: 'Luxury', catElectronics: 'Electronics', catCamping: 'Camping', catHousehold: 'Home goods', catLego: 'LEGO', catFigure: 'Figures',
       linkBuy: 'Overseas listing', linkDom: 'Korea price',
       fill: 'Fill the calculator',
       fillDone: 'Values are in the calculator. Change shipping or fees to test it yourself.',
@@ -516,19 +519,19 @@
       noteTitle: 'How to read these numbers',
       note1: '<b>Overseas</b> is the live price published by the brand store. LEGO sets are marked <b>at RRP</b> because that is the only machine-readable price; retired sets whose Korean listing exceeds 1.6× RRP are dropped from the ranking.',
       note2: '<b>Korea price</b> is the median of Enuri listings whose name carries the same model code. A single lowest price would be dragged down by accessory and part listings. Real trades can close lower.',
-      note3: '<b>Duty and VAT</b> apply only above the US$200 (US) / US$150 (Japan) personal-use threshold. International shipping uses proxy-warehouse sample rates; settlement deducts platform fee and domestic courier.',
+      note3: '<b>Duty and VAT</b> apply only above the US$200 (US) / US$150 (Japan, Europe, UK) personal-use threshold. Bags and watches above ₩2m also carry 20% individual consumption tax on the excess plus 30% education tax. European and UK prices are taken ex-VAT (20%) for export purchase. International shipping uses proxy-warehouse sample rates; settlement deducts platform fee and domestic courier.',
       hw: 'Only product name, model code and prices come from public data. No personal information is included.'
     },
     zh: {
-      kicker: 'JP · US → KR', title: '海外直购商品 实测利润 TOP',
-      sub: '同时读取美国、日本品牌官网的实时售价与韩国销售标价，按型号代码匹配，扣除国际运费、关税与增值税、平台手续费后的净利润。',
+      kicker: 'US · JP · EU → KR', title: '海外直购·奢侈品 实测利润 TOP',
+      sub: '同时读取美国、日本、欧洲品牌官网与买手店的实时售价与韩国销售标价，按型号代码匹配，扣除国际运费、关税与增值税、平台手续费后的净利润。',
       stamp: '基准 {date} · 汇率 $1 = {usd} 韩元 · ¥1 = {jpy} 韩元',
       statScan: '监看商品', statMatched: '价格确认', statPos: '净利润为正', statBest: '最高净利润',
       unitItem: '个',
       colFrom: '海外价', colCost: '总成本', colDom: '韩国价格', colTax: '关税与增值税',
-      colMargin: '净利润', originUs: '美国', originJp: '日本', rrp: '按定价',
+      colMargin: '净利润', originUS: '美国', originJP: '日本', originEU: '欧洲', originUK: '英国', originCA: '加拿大', rrp: '按定价',
       all: '全部',
-      catElectronics: '电子设备', catCamping: '露营', catHousehold: '生活用品', catLego: '乐高', catFigure: '手办',
+      catLux: '奢侈品·设计师', catElectronics: '电子设备', catCamping: '露营', catHousehold: '生活用品', catLego: '乐高', catFigure: '手办',
       linkBuy: '海外商品', linkDom: '韩国价格',
       fill: '填入计算器',
       fillDone: '已填入计算器。可修改运费与手续费自行验证。',
@@ -538,19 +541,19 @@
       noteTitle: '数字怎么看',
       note1: '<b>海外价</b>取自品牌官网公开的实时售价。乐高仅有官方定价可用，故标注<b>按定价</b>；韩国标价超过定价 1.6 倍的停产稀有套装已从排名剔除。',
       note2: '<b>韩国价格</b>取 Enuri 上名称含同一型号代码的标价中位数。用单一最低价会被配件、赠品标价带偏。实际成交可能更低。',
-      note3: '<b>关税与增值税</b>仅在超过美国 200 美元 / 日本 150 美元个人自用免税额度时计征。国际运费采用转运公司示例费率；结算为售价扣除平台手续费与韩国国内快递费。',
+      note3: '<b>关税与增值税</b>仅在超过美国 200 美元 / 日本·欧洲·英国 150 美元个人自用免税额度时计征。包袋、手表超过 200 万韩元的部分另征 20% 个别消费税与 30% 教育税。欧洲、英国价格按扣除当地增值税（20%）的出口购买价计算。国际运费采用转运公司示例费率；结算为售价扣除平台手续费与韩国国内快递费。',
       hw: '仅迁移商品名、型号代码与价格等公开数据，不含个人信息。'
     },
     ja: {
-      kicker: 'JP · US → KR', title: '海外直輸入アイテム 実測マージン TOP',
-      sub: '米国・日本ブランド公式ストアの実売価格と韓国の販売価格を同時点で取得し、国際送料・関税/付加税・手数料を差し引いた純利益を計算しました。型番（レゴのセット番号・製品型番）で照合しています。',
+      kicker: 'US · JP · EU → KR', title: '海外直輸入・ラグジュアリー 実測マージン TOP',
+      sub: '米国・日本・欧州のブランド公式ストアとセレクトショップの実売価格と韓国の販売価格を同時点で取得し、国際送料・関税/付加税・手数料を差し引いた純利益を計算しました。型番（レゴのセット番号・製品型番）で照合しています。',
       stamp: '基準 {date} · 為替 $1 = {usd}ウォン · ¥1 = {jpy}ウォン',
       statScan: '監視アイテム', statMatched: '価格確認', statPos: '純利益プラス', statBest: '最高純利益',
       unitItem: '件',
       colFrom: '海外価格', colCost: '総コスト', colDom: '韓国価格', colTax: '関税・付加税',
-      colMargin: '純利益', originUs: '米国', originJp: '日本', rrp: '定価基準',
+      colMargin: '純利益', originUS: '米国', originJP: '日本', originEU: '欧州', originUK: '英国', originCA: 'カナダ', rrp: '定価基準',
       all: 'すべて',
-      catElectronics: '電子機器', catCamping: 'キャンプ', catHousehold: '生活用品', catLego: 'レゴ', catFigure: 'フィギュア',
+      catLux: 'ラグジュアリー', catElectronics: '電子機器', catCamping: 'キャンプ', catHousehold: '生活用品', catLego: 'レゴ', catFigure: 'フィギュア',
       linkBuy: '海外商品', linkDom: '韓国価格',
       fill: '計算機に入れる',
       fillDone: '計算機に入力しました。送料や手数料を変えて確認できます。',
@@ -560,16 +563,16 @@
       noteTitle: '数字の読み方',
       note1: '<b>海外価格</b>はブランド公式ストアが公開する実売価格です。レゴは公式定価しか取得できないため<b>定価基準</b>と表示し、韓国の出品価格が定価の1.6倍を超える廃盤・希少セットは順位から外しました。',
       note2: '<b>韓国価格</b>はEnuriで同じ型番が名前に含まれる出品の中央値です。最安値1件だけを使うと付属品・部品の出品に引っ張られるため中央値を使います。実際の成約はこれより低いことがあります。',
-      note3: '<b>関税・付加税</b>は米国200ドル・日本150ドルの免税枠（商品価格基準）を超えた場合のみ発生します。国際送料は転送業者の例示料率、精算は販売価格からプラットフォーム手数料と国内宅配を引いた額です。',
+      note3: '<b>関税・付加税</b>は米国200ドル・日本/欧州/英国150ドルの免税枠（商品価格基準）を超えた場合のみ発生します。バッグ・時計は200万ウォンを超える部分に個別消費税20%と教育税30%が加わります。欧州・英国の価格は現地付加税（20%）を除いた輸出購入ベースで計算しています。国際送料は転送業者の例示料率、精算は販売価格からプラットフォーム手数料と国内宅配を引いた額です。',
       hw: '商品名・型番・価格のみを公開データから移しています。個人情報は含みません。'
     }
   }[LANG];
 
   var CAT_LABEL = {
-    electronics: 'catElectronics', camping: 'catCamping', household: 'catHousehold',
+    lux: 'catLux', electronics: 'catElectronics', camping: 'catCamping', household: 'catHousehold',
     lego: 'catLego', figure: 'catFigure'
   };
-  var CAT_ORDER = ['electronics', 'camping', 'household', 'lego', 'figure'];
+  var CAT_ORDER = ['lux', 'electronics', 'camping', 'household', 'lego', 'figure'];
 
   function gCat(cat) { return GT[CAT_LABEL[cat] || ''] || cat; }
 
@@ -620,9 +623,8 @@
     var link = it.overseasUrl
       ? '<a href="' + esc(it.overseasUrl) + '" target="_blank" rel="noopener noreferrer" title="' + esc(GT.linkBuy) + '">' + esc(name) + '</a>'
       : esc(name);
-    var unit = cur === 'USD' ? SYM.USD : cur === 'JPY' ? '\u00a5' : '';
-    var priceTxt = unit ? unit + nf(it.price, cur === 'JPY' ? 0 : 2) : krw(it.price);
-    var originTxt = it.origin === 'JP' ? GT.originJp : GT.originUs;
+    var priceTxt = money(it.price, cur);
+    var originTxt = GT['origin' + (it.origin || 'US')] || GT.originUS;
     var links = '<p class="rs-pk-links">' +
       (it.overseasUrl ? '<a href="' + esc(it.overseasUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(GT.linkBuy) + ' \u2197</a>' : '') +
       (it.krUrl ? '<a href="' + esc(it.krUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(GT.linkDom) + ' \u2197</a>' : '') +

@@ -211,7 +211,7 @@
     <!-- IB:RESELL-POKE — 포켓몬 카드 국내외 시세 차익: data/pokemon-picks.json 을 assets/js/resell-picks.js 가 카드로 그립니다. -->
     <section class="rs-picks rs-picks--poke" id="rs-poke" hidden></section>
     <!-- /IB:RESELL-POKE -->
-    <!-- IB:RESELL-GLOBAL — 해외직구 품목(전자기기·캠핑·생활용품·레고/피규어) 실측 마진: data/global-picks.json 을 assets/js/resell-picks.js 가 카드로 그립니다. -->
+    <!-- IB:RESELL-GLOBAL — 해외직구·명품 품목(전자기기·캠핑·생활용품·레고/피규어·명품·컨템포러리) 실측 마진: data/global-picks.json 을 assets/js/resell-picks.js 가 카드로 그립니다. -->
     <section class="rs-picks rs-picks--global" id="rs-global" hidden></section>
     <!-- /IB:RESELL-GLOBAL -->
 
@@ -249,8 +249,9 @@
                 <div class="rs-inline">
                   <select id="rs-a-cur" aria-label="采购货币">
                     <option value="USD" selected>USD</option>
-                    <option value="JPY">JPY</option>
                     <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
                     <option value="CNY">CNY</option>
                   </select>
                   <input id="rs-a-price" class="num" type="text" inputmode="decimal" value="120" aria-label="采购价">

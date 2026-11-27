@@ -6,7 +6,7 @@
 <meta name="google-adsense-account" content="ca-pub-7853253075143438">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7853253075143438" crossorigin="anonymous"></script>
 <title>해외직구·중고 리셀 마진 계산기 — 정산액·순수익·손익분기 매입가 | INSIGHT BRIEF</title>
-<meta name="description" content="해외직구나 국내 중고로 산 물건을 크림·번개장터·네이버 스마트스토어·당근·무신사 유즈드에서 팔 때 예상 정산액과 순수익, 마진율(ROI), 손익분기 매입가를 실시간으로 계산합니다. 관부가세(신발·의류 13%, 테크·잡화 8%, 부가세 10%), 플랫폼 수수료, 국내 택배비를 반영합니다. 입력값은 브라우저 안에서만 계산됩니다.">
+<meta name="description" content="해외직구나 국내 중고로 산 물건을 크림·번개장터·네이버 스마트스토어·당근·무신사 유즈드에서 팔 때 예상 정산액과 순수익, 마진율(ROI), 손익분기 매입가를 실시간으로 계산합니다. 관부가세(신발·의류 13%, 테크·잡화·가방 8%, 부가세 10%, 가방·시계 200만 원 초과분 개별소비세·교육세), 플랫폼 수수료, 국내 택배비를 반영합니다. 브랜드 공식몰·편집샵 실측가로 계산한 해외직구·명품 품목 마진 순위도 함께 봅니다. 입력값은 브라우저 안에서만 계산됩니다.">
 <meta name="theme-color" content="#17140f">
 <link rel="canonical" href="https://insightbriefnews.com/resell.html">
 <meta property="og:type" content="website">
@@ -212,7 +212,7 @@
     <!-- IB:RESELL-POKE — 포켓몬 카드 국내외 시세 차익: data/pokemon-picks.json 을 assets/js/resell-picks.js 가 카드로 그립니다. -->
     <section class="rs-picks rs-picks--poke" id="rs-poke" hidden></section>
     <!-- /IB:RESELL-POKE -->
-    <!-- IB:RESELL-GLOBAL — 해외직구 품목(전자기기·캠핑·생활용품·레고/피규어) 실측 마진: data/global-picks.json 을 assets/js/resell-picks.js 가 카드로 그립니다. -->
+    <!-- IB:RESELL-GLOBAL — 해외직구·명품 품목(전자기기·캠핑·생활용품·레고/피규어·명품·컨템포러리) 실측 마진: data/global-picks.json 을 assets/js/resell-picks.js 가 카드로 그립니다. -->
     <section class="rs-picks rs-picks--global" id="rs-global" hidden></section>
     <!-- /IB:RESELL-GLOBAL -->
 
@@ -240,7 +240,7 @@
 
         <!-- ===== 해외직구 ===== -->
         <section class="rs-panel" id="rs-panel-abroad" role="tabpanel" aria-labelledby="rs-tab-abroad">
-          <p class="rs-panel-lead">달러·엔·유로·위안으로 산 물건을 배대지로 받아 국내에서 되팔 때 씁니다. 목록통관 면세 한도(미국에서 보낸 물품 200달러, 그 밖 150달러)를 넘으면 품목별 관세와 부가세가 붙습니다. 되팔 목적이면 자가사용 면세가 적용되지 않으니 아래 ‘판매용’을 체크하세요.</p>
+          <p class="rs-panel-lead">달러·유로·파운드·엔·위안으로 산 물건을 배대지로 받아 국내에서 되팔 때 씁니다. 목록통관 면세 한도(미국에서 보낸 물품 200달러, 그 밖 150달러)를 넘으면 품목별 관세와 부가세가 붙고, 가방·시계는 200만 원을 넘는 초과분에 개별소비세 20%와 교육세가 더 붙습니다. 되팔 목적이면 자가사용 면세가 적용되지 않으니 아래 ‘판매용’을 체크하세요.</p>
 
           <div class="rs-group">
             <div class="rs-group-head"><span class="no">01</span><h3>매입</h3><span>산 값과 적용 환율</span></div>
@@ -250,8 +250,9 @@
                 <div class="rs-inline">
                   <select id="rs-a-cur" aria-label="매입 통화">
                     <option value="USD" selected>USD</option>
-                    <option value="JPY">JPY</option>
                     <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="JPY">JPY</option>
                     <option value="CNY">CNY</option>
                   </select>
                   <input id="rs-a-price" class="num" type="text" inputmode="decimal" value="120" aria-label="매입가">

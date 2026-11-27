@@ -44,6 +44,7 @@ DEFAULT_GLOBAL_REPORT = os.path.abspath(os.path.join(ROOT, "..", "pickle-automat
 
 # 해외직구 품목 카테고리 → 계산기 프리셋(data-key). 관세율은 스캐너가 실제로 적용한 값을 그대로 씁니다.
 GLOBAL_CAT_FILL = {
+    "lux": "apparel",
     "electronics": "tech",
     "camping": "sports",
     "household": "custom",
@@ -105,6 +106,7 @@ def pick_row(it: dict, rank: int) -> dict | None:
         "domestic": int(round(domestic)),
         "invested": int(it.get("invested_krw") or 0),
         "customs": int(it.get("customs_total_krw") or 0),
+        "ict": int(it.get("customs_individual_tax_krw") or 0),
         "margin": margin,
         "roi": round(float(it.get("roi_pct") or 0.0), 1),
         "usUrl": str(it.get("us_url") or ""),
@@ -236,6 +238,7 @@ def pick_pokemon_row(it: dict, rank: int) -> dict | None:
         # 비용
         "invested": int(it.get("invested_krw") or 0),
         "customs": int(it.get("customs_total_krw") or 0),
+        "ict": int(it.get("customs_individual_tax_krw") or 0),
         "shipping": intl + shipout,
         "intl": intl,
         "sell": sell,
@@ -353,6 +356,7 @@ def pick_global_row(it: dict, rank: int) -> dict | None:
         "priceKind": "rrp" if str(it.get("price_kind")) == "rrp" else "live",
         "invested": invested,
         "customs": int(it.get("customs_total_krw") or 0),
+        "ict": int(it.get("customs_individual_tax_krw") or 0),
         "domestic": domestic,
         "sell": sell,
         "margin": margin,
@@ -507,7 +511,7 @@ def sync_global(args) -> int:
           f" · 순마진 플러스 {scan['positive']}개 · 화면 표시 {scan['shown']}개")
     print(f"  환율 USD/KRW {doc['fx']['usdKrw']:,.2f} · JPY/KRW {doc['fx']['jpyKrw']:,.4f} ({doc['fx']['source']})")
     for r in doc["items"]:
-        unit = "$" if r["cur"] == "USD" else "¥"
+        unit = {"USD": "$", "JPY": "¥", "EUR": "€", "GBP": "£", "CAD": "C$", "SEK": "kr "}.get(r["cur"], r["cur"] + " ")
         print(f"  {r['rank']}. [{r['catKo']}] {r['nameKo'][:30]} [{r['model']}]"
               f" {unit}{r['price']:,.2f} → 총원가 {won(r['invested'])} · 국내 {won(r['domestic'])}"
               f" · 순마진 {r['margin']:+,}원 (ROI {r['roi']:+.1f}%)")

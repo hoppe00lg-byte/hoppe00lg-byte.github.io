@@ -16,8 +16,8 @@
   var LIMIT_DEFAULT = 150;
   var LIMIT_US = 200;
 
-  var SYM = { KRW: '₩', USD: 'US$', JPY: 'JPY ', EUR: '€', CNY: 'CN¥' };
-  var FX = { USD: 1343.9, JPY: 8.4437, EUR: 1559.0, CNY: 201.57 };
+  var SYM = { KRW: '₩', USD: 'US$', JPY: 'JPY ', EUR: '€', GBP: '£', CAD: 'C$', SEK: 'kr ', CNY: 'CN¥' };
+  var FX = { USD: 1343.9, JPY: 8.4437, EUR: 1474.6, GBP: 1761.2, CAD: 943.7, SEK: 131.6, CNY: 201.57 };
   var FX_DATE = '';
 
   /* ---------------- 화면 문구 ---------------- */
