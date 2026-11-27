@@ -3,7 +3,7 @@
  "kind": "goods",
  "lang": "ja",
  "date": "2026-11-28",
- "generatedAt": "2026-11-28T05:56:59+09:00",
+ "generatedAt": "2026-11-28T08:36:59+09:00",
  "fx": {
   "usdKrw": 1343.84,
   "jpyKrw": 8.4371,
@@ -27,10 +27,10 @@
  },
  "scan": {
   "watched": 10,
-  "matched": 7,
-  "positive": 3,
-  "shown": 7,
-  "best": 99058
+  "matched": 6,
+  "positive": 2,
+  "shown": 6,
+  "best": 95392
  },
  "categories": [
   {
@@ -38,68 +38,15 @@
    "count": 3
   },
   {
-   "key": "electronics",
+   "key": "sneakers",
    "count": 2
   },
   {
-   "key": "sneakers",
-   "count": 2
+   "key": "electronics",
+   "count": 1
   }
  ],
  "items": [
-  {
-   "key": "jp_anker_737_chg",
-   "cat": "electronics",
-   "catKo": "전자기기",
-   "catEn": "Electronics",
-   "nameKo": "앤커 737 충전기 (GaNPrime 120W)",
-   "nameEn": "Anker 737 Charger (GaNPrime 120W)",
-   "nameJa": "Anker 737 充電器 (GaNPrime 120W)",
-   "model": "A2148N11",
-   "origin": "JP",
-   "cur": "JPY",
-   "price": 12480,
-   "priceKind": "live",
-   "buySource": "価格.com 最安(4店)",
-   "buyTitle": "737 Charger (GaNPrime 120W) A2148N11",
-   "invested": 118874,
-   "customs": 0,
-   "ict": 0,
-   "domestic": 232560,
-   "sell": 232560,
-   "margin": 99058,
-   "roi": 83.3,
-   "krName": "ANKER 737 파워뱅크 140W 파워코어 보조배터리 A1289 24000mAh",
-   "krN": 2,
-   "krLow": 232560,
-   "krHigh": 335420,
-   "overseasUrl": "https://kakaku.com/item/K0001460835/",
-   "krUrl": "https://www.enuri.com/catalog/144234094",
-   "fx": 8.4371,
-   "intl": 12000,
-   "cardFee": 1579,
-   "dutyPct": 8.0,
-   "taxable": false,
-   "sellFee": 11628,
-   "shipout": 3000,
-   "fill": {
-    "cur": "JPY",
-    "price": 12480,
-    "fx": 8.4371,
-    "local": 0,
-    "intl": 12000,
-    "forward": 0,
-    "cat": "tech",
-    "duty": 8.0,
-    "business": false,
-    "sell": 232560,
-    "fee": 5.0,
-    "fixed": 0,
-    "shipout": 3000,
-    "other": 1579
-   },
-   "rank": 1
-  },
   {
    "key": "jp_anker_737",
    "cat": "electronics",
@@ -151,7 +98,7 @@
     "shipout": 3000,
     "other": 1634
    },
-   "rank": 2
+   "rank": 1
   },
   {
    "key": "jp_helinox_chair1",
@@ -177,7 +124,7 @@
    "roi": 20.8,
    "krName": "헬리녹스 체어원 홈",
    "krN": 14,
-   "krLow": 127940,
+   "krLow": 126500,
    "krHigh": 319370,
    "overseasUrl": "https://kakaku.com/item/K0001036776/",
    "krUrl": "https://www.enuri.com/catalog/133791871",
@@ -204,7 +151,7 @@
     "shipout": 3000,
     "other": 1772
    },
-   "rank": 3
+   "rank": 2
   },
   {
    "key": "jp_dunk_panda",
@@ -257,7 +204,7 @@
     "shipout": 3000,
     "other": 873
    },
-   "rank": 4
+   "rank": 3
   },
   {
    "key": "jp_dunk_greyfog",
@@ -310,7 +257,7 @@
     "shipout": 3000,
     "other": 879
    },
-   "rank": 5
+   "rank": 4
   },
   {
    "key": "jp_helinox_chair1_hb",
@@ -363,7 +310,7 @@
     "shipout": 3000,
     "other": 2518
    },
-   "rank": 6
+   "rank": 5
   },
   {
    "key": "jp_helinox_cot1",
@@ -383,22 +330,22 @@
    "invested": 503417,
    "customs": 82075,
    "ict": 0,
-   "domestic": 383170,
-   "sell": 383170,
-   "margin": -142405,
-   "roi": -28.3,
-   "krName": "헬리녹스 코트원 컨버터블 레인보우 반다나 퀼트",
+   "domestic": 375000,
+   "sell": 375000,
+   "margin": -150167,
+   "roi": -29.8,
+   "krName": "헬리녹스 야전침대 Cot One Convertible 10630R1/10002810",
    "krN": 7,
-   "krLow": 375000,
+   "krLow": 364600,
    "krHigh": 420000,
    "overseasUrl": "https://kakaku.com/item/K0001036790/",
-   "krUrl": "https://www.enuri.com/catalog/129838201",
+   "krUrl": "https://www.enuri.com/catalog/128812324",
    "fx": 8.4371,
    "intl": 12000,
    "cardFee": 6049,
    "dutyPct": 8.0,
    "taxable": true,
-   "sellFee": 19158,
+   "sellFee": 18750,
    "shipout": 3000,
    "fill": {
     "cur": "JPY",
@@ -410,13 +357,13 @@
     "cat": "sports",
     "duty": 8.0,
     "business": true,
-    "sell": 383170,
+    "sell": 375000,
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
     "other": 10049
    },
-   "rank": 7
+   "rank": 6
   }
  ],
  "unmatched": [
@@ -431,6 +378,13 @@
    "key": "jp_dunk_blackpanda",
    "name_ko": "나이키 덩크 로우 블랙 팬더 2.0",
    "cat": "sneakers",
+   "reason": "한국 시세 미확인",
+   "detail": "국내 매칭 0건"
+  },
+  {
+   "key": "jp_anker_737_chg",
+   "name_ko": "앤커 737 충전기 (GaNPrime 120W)",
+   "cat": "electronics",
    "reason": "한국 시세 미확인",
    "detail": "국내 매칭 0건"
   },
@@ -604,5 +558,5 @@
    "side": "sell"
   }
  ],
- "syncedAt": "2026-11-28T06:05:39+09:00"
+ "syncedAt": "2026-11-28T08:40:21+09:00"
 }

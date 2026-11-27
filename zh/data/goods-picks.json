@@ -2,8 +2,8 @@
  "version": 2,
  "kind": "goods",
  "date": "2026-11-28",
- "generatedAt": "2026-11-28T04:27:59.714459+09:00",
- "syncedAt": "2026-11-28T06:05:39+09:00",
+ "generatedAt": "2026-11-28T08:32:47.548477+09:00",
+ "syncedAt": "2026-11-28T08:40:21+09:00",
  "fx": {
   "usdKrw": 1343.84,
   "jpyKrw": 8.4371,
@@ -13,7 +13,7 @@
  "scan": {
   "watched": 68,
   "matched": 61,
-  "positive": 13,
+  "positive": 12,
   "shown": 60,
   "best": 52906,
   "sneakers": 14,
@@ -218,9 +218,9 @@
    "invested": 125023,
    "customs": 0,
    "ict": 0,
-   "domestic": 162890,
-   "sell": 162890,
-   "margin": 26723,
+   "domestic": 162880,
+   "sell": 162880,
+   "margin": 26713,
    "roi": 21.4,
    "overseasUrl": "https://www.ankerjapan.com/products/d1402",
    "krUrl": "https://www.enuri.com/catalog/148138403",
@@ -234,7 +234,7 @@
     "cat": "tech",
     "duty": 8.0,
     "business": false,
-    "sell": 162890,
+    "sell": 162880,
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
@@ -519,46 +519,6 @@
   },
   {
    "rank": 13,
-   "key": "sneaker:II7405-004",
-   "cat": "sneakers",
-   "catKo": "스니커즈",
-   "catEn": "Sneakers",
-   "nameKo": "나이키 프리 메트콘 7",
-   "nameEn": "Nike Free Metcon 7",
-   "model": "II7405-004",
-   "origin": "US",
-   "cur": "USD",
-   "price": 94.97,
-   "priceKind": "live",
-   "invested": 148038,
-   "customs": 0,
-   "ict": 0,
-   "domestic": 159000,
-   "sell": 159000,
-   "margin": 12,
-   "roi": 0.0,
-   "match": "model",
-   "overseasUrl": "https://www.nike.com/us/t/II7405-004",
-   "krUrl": "https://www.nike.com/kr/t/II7405-402",
-   "fill": {
-    "cur": "USD",
-    "price": 94.97,
-    "fx": 1343.84,
-    "local": 0,
-    "intl": 18500,
-    "forward": 0,
-    "cat": "shoes",
-    "duty": 13.0,
-    "business": false,
-    "sell": 159000,
-    "fee": 5.0,
-    "fixed": 0,
-    "shipout": 3000,
-    "other": 1914
-   }
-  },
-  {
-   "rank": 14,
    "key": "sneaker:HF6999-014",
    "cat": "sneakers",
    "catKo": "스니커즈",
@@ -598,7 +558,7 @@
    }
   },
   {
-   "rank": 15,
+   "rank": 14,
    "key": "baseus_bowie",
    "cat": "electronics",
    "catKo": "전자기기",
@@ -637,7 +597,7 @@
    }
   },
   {
-   "rank": 16,
+   "rank": 15,
    "key": "sneaker:II7406-005",
    "cat": "sneakers",
    "catKo": "스니커즈",
@@ -677,7 +637,7 @@
    }
   },
   {
-   "rank": 17,
+   "rank": 16,
    "key": "gun_rg_rx78",
    "cat": "figure",
    "catKo": "피규어·프라모델",
@@ -716,7 +676,7 @@
    }
   },
   {
-   "rank": 18,
+   "rank": 17,
    "key": "sneaker:II7406-104",
    "cat": "sneakers",
    "catKo": "스니커즈",
@@ -756,7 +716,7 @@
    }
   },
   {
-   "rank": 19,
+   "rank": 18,
    "key": "sp_gigapower",
    "cat": "camping",
    "catKo": "캠핑용품",
@@ -795,7 +755,7 @@
    }
   },
   {
-   "rank": 20,
+   "rank": 19,
    "key": "helinox_chair2",
    "cat": "camping",
    "catKo": "캠핑용품",
@@ -834,7 +794,7 @@
    }
   },
   {
-   "rank": 21,
+   "rank": 20,
    "key": "sneaker:HJ1875-006",
    "cat": "sneakers",
    "catKo": "스니커즈",
@@ -874,7 +834,7 @@
    }
   },
   {
-   "rank": 22,
+   "rank": 21,
    "key": "sneaker:HQ2620-602",
    "cat": "sneakers",
    "catKo": "스니커즈",
@@ -914,7 +874,7 @@
    }
   },
   {
-   "rank": 23,
+   "rank": 22,
    "key": "lego_10305",
    "cat": "lego",
    "catKo": "레고",
@@ -953,7 +913,7 @@
    }
   },
   {
-   "rank": 24,
+   "rank": 23,
    "key": "sneaker:IO0667-400",
    "cat": "sneakers",
    "catKo": "스니커즈",
@@ -993,7 +953,7 @@
    }
   },
   {
-   "rank": 25,
+   "rank": 24,
    "key": "lego_10271",
    "cat": "lego",
    "catKo": "레고",
@@ -1032,7 +992,7 @@
    }
   },
   {
-   "rank": 26,
+   "rank": 25,
    "key": "sneaker:IB6545-700",
    "cat": "sneakers",
    "catKo": "스니커즈",
@@ -1072,7 +1032,7 @@
    }
   },
   {
-   "rank": 27,
+   "rank": 26,
    "key": "gun_mg_fa_unicorn",
    "cat": "figure",
    "catKo": "피규어·프라모델",
@@ -1111,7 +1071,7 @@
    }
   },
   {
-   "rank": 28,
+   "rank": 27,
    "key": "sneaker:IR1854-500",
    "cat": "sneakers",
    "catKo": "스니커즈",
@@ -1151,7 +1111,7 @@
    }
   },
   {
-   "rank": 29,
+   "rank": 28,
    "key": "jp_liberty5",
    "cat": "electronics",
    "catKo": "전자기기",
@@ -1190,7 +1150,7 @@
    }
   },
   {
-   "rank": 30,
+   "rank": 29,
    "key": "gun_mg_sf",
    "cat": "figure",
    "catKo": "피규어·프라모델",
@@ -1229,7 +1189,7 @@
    }
   },
   {
-   "rank": 31,
+   "rank": 30,
    "key": "anker_space1",
    "cat": "electronics",
    "catKo": "전자기기",
@@ -1268,7 +1228,7 @@
    }
   },
   {
-   "rank": 32,
+   "rank": 31,
    "key": "nemo_tensor_as",
    "cat": "camping",
    "catKo": "캠핑용품",
@@ -1307,7 +1267,7 @@
    }
   },
   {
-   "rank": 33,
+   "rank": 32,
    "key": "sneaker:IO4244-102",
    "cat": "sneakers",
    "catKo": "스니커즈",
@@ -1347,7 +1307,7 @@
    }
   },
   {
-   "rank": 34,
+   "rank": 33,
    "key": "sp_trek1400",
    "cat": "camping",
    "catKo": "캠핑용품",
@@ -1362,10 +1322,10 @@
    "invested": 100491,
    "customs": 0,
    "ict": 0,
-   "domestic": 61090,
-   "sell": 61090,
-   "margin": -45455,
-   "roi": -45.2,
+   "domestic": 59560,
+   "sell": 59560,
+   "margin": -46909,
+   "roi": -46.7,
    "overseasUrl": "https://www.snowpeak.com/products/trek-1400-titanium-cookset",
    "krUrl": "https://www.enuri.com/catalog/117871700",
    "fill": {
@@ -1378,7 +1338,7 @@
     "cat": "sports",
     "duty": 8.0,
     "business": false,
-    "sell": 61090,
+    "sell": 59560,
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
@@ -1386,7 +1346,7 @@
    }
   },
   {
-   "rank": 35,
+   "rank": 34,
    "key": "sp_trek900",
    "cat": "camping",
    "catKo": "캠핑용품",
@@ -1425,7 +1385,7 @@
    }
   },
   {
-   "rank": 36,
+   "rank": 35,
    "key": "lego_10274",
    "cat": "lego",
    "catKo": "레고",
@@ -1464,7 +1424,7 @@
    }
   },
   {
-   "rank": 37,
+   "rank": 36,
    "key": "sneaker:IR1853-500",
    "cat": "sneakers",
    "catKo": "스니커즈",
@@ -1504,7 +1464,7 @@
    }
   },
   {
-   "rank": 38,
+   "rank": 37,
    "key": "zoji_sjtg08",
    "cat": "household",
    "catKo": "생활용품",
@@ -1540,6 +1500,45 @@
     "fixed": 0,
     "shipout": 3000,
     "other": 1189
+   }
+  },
+  {
+   "rank": 38,
+   "key": "lego_10302",
+   "cat": "lego",
+   "catKo": "레고",
+   "catEn": "LEGO",
+   "nameKo": "레고 옵티머스 프라임",
+   "nameEn": "LEGO Optimus Prime",
+   "model": "10302",
+   "origin": "US",
+   "cur": "USD",
+   "price": 179.99,
+   "priceKind": "rrp",
+   "invested": 267006,
+   "customs": 0,
+   "ict": 0,
+   "domestic": 223090,
+   "sell": 223090,
+   "margin": -58070,
+   "roi": -21.7,
+   "overseasUrl": "https://brickset.com/sets/10302-1",
+   "krUrl": "https://www.enuri.com/catalog/143528978",
+   "fill": {
+    "cur": "USD",
+    "price": 179.99,
+    "fx": 1343.84,
+    "local": 0,
+    "intl": 21500,
+    "forward": 0,
+    "cat": "sports",
+    "duty": 8.0,
+    "business": false,
+    "sell": 223090,
+    "fee": 5.0,
+    "fixed": 0,
+    "shipout": 3000,
+    "other": 3628
    }
   },
   {
@@ -1583,45 +1582,6 @@
   },
   {
    "rank": 40,
-   "key": "lego_10295",
-   "cat": "lego",
-   "catKo": "레고",
-   "catEn": "LEGO",
-   "nameKo": "레고 크리에이터 포르쉐 911",
-   "nameEn": "LEGO Creator Porsche 911",
-   "model": "10295",
-   "origin": "US",
-   "cur": "USD",
-   "price": 169.99,
-   "priceKind": "rrp",
-   "invested": 253366,
-   "customs": 0,
-   "ict": 0,
-   "domestic": 206000,
-   "sell": 206000,
-   "margin": -60666,
-   "roi": -23.9,
-   "overseasUrl": "https://brickset.com/sets/10295-1",
-   "krUrl": "https://www.enuri.com/catalog/63404306",
-   "fill": {
-    "cur": "USD",
-    "price": 169.99,
-    "fx": 1343.84,
-    "local": 0,
-    "intl": 21500,
-    "forward": 0,
-    "cat": "sports",
-    "duty": 8.0,
-    "business": false,
-    "sell": 206000,
-    "fee": 5.0,
-    "fixed": 0,
-    "shipout": 3000,
-    "other": 3427
-   }
-  },
-  {
-   "rank": 41,
    "key": "sp_homecamp",
    "cat": "camping",
    "catKo": "캠핑용품",
@@ -1636,9 +1596,9 @@
    "invested": 151332,
    "customs": 0,
    "ict": 0,
-   "domestic": 92080,
-   "sell": 92080,
-   "margin": -66856,
+   "domestic": 92070,
+   "sell": 92070,
+   "margin": -66866,
    "roi": -44.2,
    "overseasUrl": "https://www.snowpeak.com/products/home-camp-burner",
    "krUrl": "https://www.enuri.com/catalog/121869792",
@@ -1652,7 +1612,7 @@
     "cat": "sports",
     "duty": 8.0,
     "business": false,
-    "sell": 92080,
+    "sell": 92070,
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
@@ -1660,7 +1620,7 @@
    }
   },
   {
-   "rank": 42,
+   "rank": 41,
    "key": "sp_cookset",
    "cat": "camping",
    "catKo": "캠핑용품",
@@ -1696,6 +1656,46 @@
     "fixed": 0,
     "shipout": 3000,
     "other": 2015
+   }
+  },
+  {
+   "rank": 42,
+   "key": "sneaker:IO6262-600",
+   "cat": "sneakers",
+   "catKo": "스니커즈",
+   "catEn": "Sneakers",
+   "nameKo": "코비 9 프로트로",
+   "nameEn": "Kobe 9 Protro",
+   "model": "IO6262-600",
+   "origin": "US",
+   "cur": "USD",
+   "price": 200.0,
+   "priceKind": "live",
+   "invested": 291300,
+   "customs": 0,
+   "ict": 0,
+   "domestic": 239000,
+   "sell": 239000,
+   "margin": -67250,
+   "roi": -23.1,
+   "match": "exact",
+   "overseasUrl": "https://www.nike.com/us/t/IO6262-600",
+   "krUrl": "https://www.nike.com/kr/t/IO6262-600",
+   "fill": {
+    "cur": "USD",
+    "price": 200.0,
+    "fx": 1343.84,
+    "local": 0,
+    "intl": 18500,
+    "forward": 0,
+    "cat": "shoes",
+    "duty": 13.0,
+    "business": false,
+    "sell": 239000,
+    "fee": 5.0,
+    "fixed": 0,
+    "shipout": 3000,
+    "other": 4032
    }
   },
   {
@@ -1856,29 +1856,29 @@
   },
   {
    "rank": 47,
-   "key": "lego_10302",
+   "key": "lego_10295",
    "cat": "lego",
    "catKo": "레고",
    "catEn": "LEGO",
-   "nameKo": "레고 옵티머스 프라임",
-   "nameEn": "LEGO Optimus Prime",
-   "model": "10302",
+   "nameKo": "레고 크리에이터 포르쉐 911",
+   "nameEn": "LEGO Creator Porsche 911",
+   "model": "10295",
    "origin": "US",
    "cur": "USD",
-   "price": 179.99,
+   "price": 169.99,
    "priceKind": "rrp",
-   "invested": 267006,
+   "invested": 253366,
    "customs": 0,
    "ict": 0,
-   "domestic": 198590,
-   "sell": 198590,
-   "margin": -81346,
-   "roi": -30.5,
-   "overseasUrl": "https://brickset.com/sets/10302-1",
-   "krUrl": "https://www.enuri.com/catalog/143528978",
+   "domestic": 185760,
+   "sell": 185760,
+   "margin": -79894,
+   "roi": -31.5,
+   "overseasUrl": "https://brickset.com/sets/10295-1",
+   "krUrl": "https://www.enuri.com/catalog/87248301",
    "fill": {
     "cur": "USD",
-    "price": 179.99,
+    "price": 169.99,
     "fx": 1343.84,
     "local": 0,
     "intl": 21500,
@@ -1886,11 +1886,11 @@
     "cat": "sports",
     "duty": 8.0,
     "business": false,
-    "sell": 198590,
+    "sell": 185760,
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
-    "other": 3628
+    "other": 3427
    }
   },
   {
@@ -2065,10 +2065,10 @@
    "invested": 300786,
    "customs": 0,
    "ict": 0,
-   "domestic": 197540,
-   "sell": 197540,
-   "margin": -116123,
-   "roi": -38.6,
+   "domestic": 198190,
+   "sell": 198190,
+   "margin": -115506,
+   "roi": -38.4,
    "overseasUrl": "https://brickset.com/sets/10300-1",
    "krUrl": "https://www.enuri.com/catalog/143528981",
    "fill": {
@@ -2081,7 +2081,7 @@
     "cat": "sports",
     "duty": 8.0,
     "business": false,
-    "sell": 197540,
+    "sell": 198190,
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
@@ -2104,12 +2104,12 @@
    "invested": 503537,
    "customs": 82158,
    "ict": 0,
-   "domestic": 383170,
-   "sell": 383170,
-   "margin": -142525,
-   "roi": -28.3,
+   "domestic": 375000,
+   "sell": 375000,
+   "margin": -150287,
+   "roi": -29.8,
    "overseasUrl": "https://www.helinox.com/products/cot-one-convertible",
-   "krUrl": "https://www.enuri.com/catalog/129838201",
+   "krUrl": "https://www.enuri.com/catalog/68413079",
    "fill": {
     "cur": "USD",
     "price": 279.97,
@@ -2120,7 +2120,7 @@
     "cat": "sports",
     "duty": 8.0,
     "business": true,
-    "sell": 383170,
+    "sell": 375000,
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
@@ -2143,10 +2143,10 @@
    "invested": 433292,
    "customs": 71154,
    "ict": 0,
-   "domestic": 292270,
-   "sell": 292270,
-   "margin": -158636,
-   "roi": -36.6,
+   "domestic": 288990,
+   "sell": 288990,
+   "margin": -161752,
+   "roi": -37.3,
    "overseasUrl": "https://www.helinox.com/products/lite-cot",
    "krUrl": "https://www.enuri.com/catalog/112488031",
    "fill": {
@@ -2159,7 +2159,7 @@
     "cat": "sports",
     "duty": 8.0,
     "business": true,
-    "sell": 292270,
+    "sell": 288990,
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
@@ -2338,10 +2338,10 @@
    "invested": 448536,
    "customs": 73550,
    "ict": 0,
-   "domestic": 255050,
-   "sell": 255050,
-   "margin": -209238,
-   "roi": -46.6,
+   "domestic": 252370,
+   "sell": 252370,
+   "margin": -211784,
+   "roi": -47.2,
    "overseasUrl": "https://brickset.com/sets/21318-1",
    "krUrl": "https://www.enuri.com/catalog/40630275",
    "fill": {
@@ -2354,7 +2354,7 @@
     "cat": "sports",
     "duty": 8.0,
     "business": true,
-    "sell": 255050,
+    "sell": 252370,
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,

@@ -3,7 +3,7 @@
  "kind": "lux",
  "lang": "ja",
  "date": "2026-11-28",
- "generatedAt": "2026-11-28T05:58:24+09:00",
+ "generatedAt": "2026-11-28T08:36:59+09:00",
  "fx": {
   "usdKrw": 1343.84,
   "jpyKrw": 8.4371,
@@ -30,7 +30,7 @@
   "matched": 8,
   "positive": 3,
   "shown": 8,
-  "best": 397094
+  "best": 362505
  },
  "categories": [
   {
@@ -57,10 +57,10 @@
    "invested": 1872553,
    "customs": 364971,
    "ict": 0,
-   "domestic": 2392260,
-   "sell": 2392260,
-   "margin": 397094,
-   "roi": 21.2,
+   "domestic": 2355850,
+   "sell": 2355850,
+   "margin": 362505,
+   "roi": 19.4,
    "krName": "몽클레르 마야 남성 패딩 / MAYA-1A53600-825",
    "krN": 23,
    "krLow": 1696130,
@@ -72,7 +72,7 @@
    "cardFee": 22102,
    "dutyPct": 13.0,
    "taxable": true,
-   "sellFee": 119613,
+   "sellFee": 117792,
    "shipout": 3000,
    "fill": {
     "cur": "JPY",
@@ -84,7 +84,7 @@
     "cat": "apparel",
     "duty": 13.0,
     "business": true,
-    "sell": 2392260,
+    "sell": 2355850,
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
@@ -170,7 +170,7 @@
    "krName": "스톤아일랜드 블랙 남성 크루넥 맨투맨 K2S15 6100021 S0210 V0029 158715068",
    "krN": 7,
    "krLow": 451430,
-   "krHigh": 1067690,
+   "krHigh": 1067680,
    "overseasUrl": "https://snkrdunk.com/apparels/909146",
    "krUrl": "https://www.enuri.com/catalog/148801638",
    "fx": 8.4371,
@@ -368,33 +368,33 @@
    "model": "L47445300",
    "origin": "JP",
    "cur": "JPY",
-   "price": 37628,
+   "price": 38418,
    "priceKind": "live",
    "buySource": "SNKRDUNK 最安",
-   "buyTitle": "Salomon XT-6 \"Alloy/Black/Dark Citron\"",
-   "invested": 421402,
-   "customs": 84669,
+   "buyTitle": "Salomon XT-6 \"Pewter/Black/Turmeric\"",
+   "invested": 429788,
+   "customs": 86289,
    "ict": 0,
    "domestic": 250170,
    "sell": 250170,
-   "margin": -186740,
-   "roi": -44.3,
+   "margin": -195126,
+   "roi": -45.4,
    "krName": "살로몬 XT-6 ADV L41252900",
    "krN": 32,
    "krLow": 128000,
-   "krHigh": 465490,
-   "overseasUrl": "https://snkrdunk.com/products/L47739000",
+   "krHigh": 465500,
+   "overseasUrl": "https://snkrdunk.com/products/L49205800",
    "krUrl": "https://www.enuri.com/catalog/112808542",
    "fx": 8.4371,
    "intl": 14500,
-   "cardFee": 4762,
+   "cardFee": 4862,
    "dutyPct": 13.0,
    "taxable": true,
    "sellFee": 12508,
    "shipout": 3000,
    "fill": {
     "cur": "JPY",
-    "price": 37628,
+    "price": 38418,
     "fx": 8.4371,
     "local": 0,
     "intl": 14500,
@@ -406,7 +406,7 @@
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
-    "other": 8762
+    "other": 8862
    },
    "rank": 7
   },
@@ -428,10 +428,10 @@
    "invested": 2937730,
    "customs": 570725,
    "ict": 0,
-   "domestic": 2392260,
-   "sell": 2392260,
-   "margin": -668083,
-   "roi": -22.7,
+   "domestic": 2355850,
+   "sell": 2355850,
+   "margin": -702672,
+   "roi": -23.9,
    "krName": "몽클레르 마야 남성 패딩 / MAYA-1A53600-825",
    "krN": 23,
    "krLow": 1696130,
@@ -443,7 +443,7 @@
    "cardFee": 34803,
    "dutyPct": 13.0,
    "taxable": true,
-   "sellFee": 119613,
+   "sellFee": 117792,
    "shipout": 3000,
    "fill": {
     "cur": "JPY",
@@ -455,7 +455,7 @@
     "cat": "apparel",
     "duty": 13.0,
     "business": true,
-    "sell": 2392260,
+    "sell": 2355850,
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
@@ -565,7 +565,7 @@
   {
    "source": "snkrdunk.com",
    "http": 200,
-   "objects": 43,
+   "objects": 42,
    "error": "",
    "key": "jp_ad_samba",
    "side": "buy"
@@ -581,7 +581,7 @@
   {
    "source": "snkrdunk.com",
    "http": 200,
-   "objects": 36,
+   "objects": 38,
    "error": "",
    "key": "jp_sl_xt6",
    "side": "buy"
@@ -595,5 +595,5 @@
    "side": "sell"
   }
  ],
- "syncedAt": "2026-11-28T06:05:39+09:00"
+ "syncedAt": "2026-11-28T08:40:21+09:00"
 }

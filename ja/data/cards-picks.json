@@ -3,7 +3,7 @@
  "kind": "cards",
  "lang": "ja",
  "date": "2026-11-28",
- "generatedAt": "2026-11-28T06:03:33+09:00",
+ "generatedAt": "2026-11-28T08:36:59+09:00",
  "fx": {
   "jpyKrw": 8.4371,
   "usdKrw": 1343.84,
@@ -35,7 +35,7 @@
   "resolved": 34,
   "positive": 7,
   "shown": 34,
-  "best": 35610
+  "best": 27465
  },
  "games": [
   {
@@ -71,23 +71,23 @@
    "jpStock": 9,
    "jpUrl": "https://www.cardrush.jp/product/43962",
    "jpSource": "カードラッシュ 販売価格(税込)",
-   "kr": 82000,
+   "kr": 73000,
    "krCur": "JPY",
    "krSource": "Yahoo!オークション 現在価格(中央値)",
    "krUrl": "https://auctions.yahoo.co.jp/search/search?p=%E3%83%96%E3%83%A9%E3%83%83%E3%82%AF%E3%83%9E%E3%82%B8%E3%82%B7%E3%83%A3%E3%83%B3%E3%82%AC%E3%83%BC%E3%83%AB%20DMMD-JP001",
-   "krTitle": "ヤフオク現在価格 中央値 (n=8)",
-   "sell": 73410,
+   "krTitle": "ヤフオク現在価格 中央値 (n=10)",
+   "sell": 65265,
    "sellCur": "JPY",
-   "customs": 7790,
+   "customs": 6935,
    "shipping": 800,
    "feeCur": "JPY",
    "invested": 37800,
    "costCur": "JPY",
-   "margin": 35610,
+   "margin": 27465,
    "marginCur": "JPY",
-   "marginKrw": 300445,
-   "roi": 94.2,
-   "bep": 73410,
+   "marginKrw": 231725,
+   "roi": 72.7,
+   "bep": 65265,
    "bepCur": "JPY",
    "extreme": false,
    "fill": {
@@ -100,7 +100,7 @@
     "cat": "card",
     "duty": 0,
     "business": false,
-    "sell": 73410,
+    "sell": 65265,
     "fee": 9.5,
     "fixed": 0,
     "shipout": 800,
@@ -1003,7 +1003,7 @@
    "jp": 3180,
    "jpCur": "JPY",
    "jpCond": "",
-   "jpStock": 46,
+   "jpStock": 45,
    "jpUrl": "https://www.cardrush-op.jp/product/13375",
    "jpSource": "カードラッシュ 販売価格(税込)",
    "kr": 2000,
@@ -2325,7 +2325,7 @@
   {
    "source": "auctions.yahoo.co.jp",
    "http": 200,
-   "objects": 38,
+   "objects": 36,
    "error": "",
    "card": "TRC1-JP000",
    "side": "sell_yahoo"
@@ -2373,7 +2373,7 @@
   {
    "source": "auctions.yahoo.co.jp",
    "http": 200,
-   "objects": 8,
+   "objects": 10,
    "error": "",
    "card": "DMMD-JP001",
    "side": "sell_yahoo"
@@ -2453,7 +2453,7 @@
   {
    "source": "auctions.yahoo.co.jp",
    "http": 200,
-   "objects": 10,
+   "objects": 12,
    "error": "",
    "card": "DP23-JP000",
    "side": "sell_yahoo"
@@ -2501,7 +2501,7 @@
   {
    "source": "auctions.yahoo.co.jp",
    "http": 200,
-   "objects": 18,
+   "objects": 20,
    "error": "",
    "card": "PGB1-JPS01",
    "side": "sell_yahoo"
@@ -2675,5 +2675,5 @@
    "side": "sell"
   }
  ],
- "syncedAt": "2026-11-28T06:05:39+09:00"
+ "syncedAt": "2026-11-28T08:40:21+09:00"
 }
