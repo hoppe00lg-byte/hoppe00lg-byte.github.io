@@ -231,7 +231,8 @@
     if (!el) return;
     for (var i = 0; i < el.options.length; i++) {
       if (el.options[i].getAttribute('data-key') === v) {
-        el.value = el.options[i].value;
+        /* option 값(관세율)이 겹쳐(8%가 여럿) value 로는 첫 항목이 잡힌다 — 순번으로 고릅니다. */
+        el.selectedIndex = i;
         el.dispatchEvent(new Event('change', { bubbles: true }));
         return;
       }
