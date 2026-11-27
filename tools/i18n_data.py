@@ -39,7 +39,19 @@ def lang_fixes(lang):
         if os.path.exists(path):
             with open(path, encoding="utf-8") as f:
                 data = json.load(f)
-        _fixes[lang] = [(a, b) for a, b in (data.get(lang) or []) if a]
+        # "re:..." 로 시작하는 앞자는 정규식 규칙(단어 경계가 필요한 용어용).
+        rules = []
+        for bad, good in (data.get(lang) or []):
+            if not bad:
+                continue
+            if bad.startswith("re:"):
+                try:
+                    rules.append((re.compile(bad[3:]), good))
+                except re.error:
+                    continue
+            else:
+                rules.append((bad, good))
+        _fixes[lang] = rules
     return _fixes[lang]
 
 
@@ -47,8 +59,11 @@ def apply_fixes(text, lang):
     if not text:
         return text
     for bad, good in lang_fixes(lang):
-        if bad in text:
-            text = text.replace(bad, good)
+        if isinstance(bad, str):
+            if bad in text:
+                text = text.replace(bad, good)
+        else:
+            text = bad.sub(good, text)
     return text
 
 
@@ -135,6 +150,8 @@ def translate_doc(doc, lang, skip=(), label=""):
         elif HANGUL.search(v):
             hit = dict_strings(lang).get(v)
             v = hit or v
+        # 고정 용어(납사·전주 대비·김프·정리 크레딧 등)는 번역 뒤 한 번 더 맞춘다.
+        v = apply_fixes(v, lang)
         set_path(doc, path, v)
     return len(texts)
 
@@ -298,6 +315,23 @@ def apply_native(b: dict, block: dict, lang: str) -> None:
         if block.get(key):
             b[key] = block[key]
     b["body"] = fix_body(block.get("body") or "")
+    # 직접 쓴 원고라도 확정 용어(고정 표기)는 한 번 더 맞춘다.
+    for key in ("title", "deck", "body"):
+        if isinstance(b[key], str):
+            b[key] = apply_fixes(b[key], lang)
+    if isinstance(b.get("summary"), list):
+        b["summary"] = [apply_fixes(s, lang) for s in b["summary"]]
+    if isinstance(b.get("tags"), list):
+        b["tags"] = [apply_fixes(t, lang) for t in b["tags"]]
+    # 자료 이름("연합뉴스 산업" 등)은 화면 '팩트체크 & 출처' 표에 그대로 보이므로 그 언어로 옮긴다.
+    # 주소(url)·날짜는 사실 정보라 그대로 둔다.
+    if isinstance(b.get("sources"), list) and b["sources"]:
+        names = [s.get("name") or "" if isinstance(s, dict) else "" for s in b["sources"]]
+        if any(names):
+            tr = tr_units(names, lang)
+            for s, n in zip(b["sources"], tr):
+                if isinstance(s, dict) and n:
+                    s["name"] = n
     fc = block.get("factCheck")
     if isinstance(fc, dict):
         b["factCheck"] = {

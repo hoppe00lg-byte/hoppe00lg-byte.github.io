@@ -72,6 +72,7 @@ LANGS = {
         "title_rule": "20~48자",
         "cliche": ["결론적으로", "시사한다", "방증한다", "주목된다", "전망이다", "가능성이 높다"],
         "fc_title": "팩트체크",
+        "img_alt": "기사 주제를 보여 주는 에디토리얼 이미지",
     },
     "en": {
         "name": "English",
@@ -85,6 +86,12 @@ LANGS = {
         "title_rule": "45~85 characters, sentence case, no date prefix",
         "cliche": ["In conclusion", "It remains to be seen", "Only time will tell", "This suggests that", "It is worth noting"],
         "fc_title": "Fact check",
+        "img_alt": "an editorial illustration for this story",
+        "glossary": """- 납사·나프타 → Naphtha (never NAFTA — NAFTA is a trade pact, not a feedstock)
+- 전주 대비 / 전주(지난주) → week-over-week (WoW) / the previous week (never the city name Jeonju)
+- 김프 / 김치 프리미엄 → Kimchi Premium (never GIMP)
+- ○○ 정리(작성·편집 크레딧) → 'Compiled by ○○' or 'Edited by ○○' (never theorem)
+- 전주시·전주정보문화산업진흥원처럼 도시 이름일 때만 Jeonju 로 쓴다.""",
     },
     "zh": {
         "name": "中文",
@@ -97,6 +104,7 @@ LANGS = {
         "title_rule": "18~34字, 不用日期开头",
         "cliche": ["总而言之", "综上所述", "由此可见", "值得关注的是"],
         "fc_title": "事实核查",
+        "img_alt": "与本文主题相关的编辑配图",
     },
     "ja": {
         "name": "日本語",
@@ -109,6 +117,7 @@ LANGS = {
         "title_rule": "24~42字、日付を頭に付けない",
         "cliche": ["結論として", "示唆する", "注目される", "可能性が高い", "と言えるだろう"],
         "fc_title": "ファクトチェック",
+        "img_alt": "記事のテーマを示す編集画像",
     },
 }
 NATIVE_DIR = DATA / "i18n-articles"  # 국가별 원고(빌드 입력) — 브라우저에 내려가지 않는 data/ 하위
@@ -880,9 +889,9 @@ PROMPT_LANG = """[작성 언어] {lang} — 제목·부제·소제목·요약·�
 본문:
 {ko_body}
 
-[현지 맥팽 — 이 나라 독자가 자기 돈과 제도로 읽도록]
+[현지 맥락 — 이 나라 독자가 자기 돈과 제도로 읽도록]
 {context}
-
+{glossary_line}
 [통화·환산]
 {fx_note}
 
@@ -971,6 +980,7 @@ def make_variant(article: dict, cat_id: str, lang: str, pool: list[dict]) -> dic
         ko_title=article.get("title", ""), ko_deck=article.get("deck", ""),
         ko_summary=" / ".join(article.get("summary") or []), ko_body=shorten(ko_body, 3200),
         context=spec["context"], fx_note=fx_note(lang), sources=format_sources(pool),
+        glossary_line=("\n[고정 용어 — 이 표기를 그대로 쓴다(다른 뜻으로 옮기지 않는다)]\n" + spec["glossary"] + "\n") if spec.get("glossary") else "",
         tool_name=tool_name, tool_url=tool_url, target=spec["target"],
         title_rule=spec["title_rule"], cliche=", ".join(spec["cliche"]),
         article_id=article["id"],
@@ -993,7 +1003,7 @@ def make_variant(article: dict, cat_id: str, lang: str, pool: list[dict]) -> dic
         except Exception as exc:  # noqa: BLE001
             log(f"    · {lang} 확장 생략: {exc}")
 
-    body = clean_body(data.get("body", ""), article["id"])
+    body = clean_body(data.get("body", ""), article["id"], alt=spec["img_alt"])
     # 한국어가 섞이면 그 언어판으로 내보내지 않는다(번역으로 매운다).
     if HANGUL_RE.search((data.get("title") or "") + body):
         log(f"    ! {lang} 원고에 한국어가 섞여 기계번역으로 대체합니다")
@@ -1005,7 +1015,7 @@ def make_variant(article: dict, cat_id: str, lang: str, pool: list[dict]) -> dic
             d3 = extract_json(call_gemini(prompt + "\n\n[재작성] 다음 상토어가 남았다: " + ", ".join(cliche)
                                           + ". 사실과 수치 중심으로 다시 쓰고 그 표현은 삭제한다.",
                                           max_output_tokens=14000)[0])
-            body3 = clean_body(d3.get("body", ""), article["id"])
+            body3 = clean_body(d3.get("body", ""), article["id"], alt=spec["img_alt"])
             if body3 and not HANGUL_RE.search((d3.get("title") or "") + body3):
                 data, body = d3, body3
         except QuotaExhausted:
@@ -1077,14 +1087,15 @@ def recent_titles(articles: list[dict], category: str, days: int = 7) -> list[st
     return "\n".join(out) or "- (없음)"
 
 
-def clean_body(body: str, article_id: str) -> str:
+def clean_body(body: str, article_id: str, alt: str = "기사 주제를 보여 주는 에디토리얼 이미지") -> str:
     body = (body or "").replace("\r\n", "\n").strip()
     # 이미지 경로 강제: 본문에 이미지 한 줄이 없으면 첫 문단 뒤에 넣는다.
+    # alt 문구는 그 언어로 넣어야 외국어판에 한국어가 섞이지 않는다.
     img = f"(assets/img/articles/{article_id}.jpg)"
     body = re.sub(r"\]\((?:\.\./)*assets/img/articles/[^)]*\)", "]" + img, body)
     if "assets/img/articles/" not in body:
         parts = body.split("\n\n", 1)
-        body = parts[0] + f"\n\n![기사 주제를 보여 주는 에디토리얼 이미지]{img}" + (
+        body = parts[0] + f"\n\n![{alt}]{img}" + (
             "\n\n" + parts[1] if len(parts) > 1 else "")
     body = re.sub(r"\n{3,}", "\n\n", body)
     return body
@@ -1409,7 +1420,6 @@ def main() -> int:
     log(f"· 국가별 원고 언어: {', '.join(langs)}")
     articles = load_json(ARTICLES, [])
     made: list[dict] = []
-    pool_cache: dict[str, list[dict]] = {}
     quota_out = False
     for key, cat in queue:
         if cat not in CATEGORIES:
@@ -1418,9 +1428,7 @@ def main() -> int:
         today = now.strftime("%Y-%m-%d")
         used = set(((state.get("used") or {}).get(today, {}) or {}).get(cat) or [])
         log(f"\n[{cat}] 근거 자료 수집…")
-        # 같은 섹션을 한 번에 여러 편 쓸 때는 이번 실행에서 모은 풀을 다시 쓴다(수집 시간 절약).
-        pool = pool_cache.get(cat) or build_source_pool(cat, exclude=used)
-        pool_cache[cat] = pool
+        pool = build_source_pool(cat, exclude=used)
         if len(pool) < 2:
             log(f"! {cat}: 근거 자료가 2건 미만 — 이번 슬롯은 건너뜁니다(자료 없는 기사는 쓰지 않는다).")
             continue
@@ -1457,7 +1465,6 @@ def main() -> int:
         for s in pool[:4]:
             if s.get("url") and s["url"] not in slot_used:
                 slot_used.append(s["url"])
-        pool_cache.pop(cat, None)
         if quota_out:
             break
 

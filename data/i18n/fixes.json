@@ -48,6 +48,50 @@
   [
    "wet tons",
    "wet tonnes"
+  ],
+  [
+   "re:(?i)\\bNAFTA\\b",
+   "Naphtha"
+  ],
+  [
+   "re:(?i)\\bGIMP\\b",
+   "Kimchi Premium"
+  ],
+  [
+   "re:(?i)\\bkimchi premium\\b",
+   "Kimchi Premium"
+  ],
+  [
+   "re:(?i)\\bWoW\\b(?!\\s*\\()",
+   "WoW (week-over-week)"
+  ],
+  [
+   "re:\\(([^()]{2,40}?)\\s+theorem\\)",
+   "(compiled by \\1)"
+  ],
+  [
+   "re:(?m)^([^\\n]{2,90}?)\\s+theorem\\.?\\s*$",
+   "Compiled by \\1"
+  ],
+  [
+   "re:(?i)\\btheorem\\b(?!\\s+(?:proves|proof|shows|holds|states|is\\b))",
+   "Compiled by"
+  ],
+  [
+   "re:\\bJeonju\\b(?=\\s*[-+]?[\\d,]+)",
+   "the previous week"
+  ],
+  [
+   "re:\\bJeonju\\b(?=\\s+(?:fell|rose|gained|lost|was|were|moved|dropped|climbed|advanced|declined|edged)\\b)",
+   "the previous week"
+  ],
+  [
+   "re:(?<=vs\\. )Jeonju\\b",
+   "the previous week"
+  ],
+  [
+   "re:(?<=vs )Jeonju\\b",
+   "the previous week"
   ]
  ],
  "zh": [
