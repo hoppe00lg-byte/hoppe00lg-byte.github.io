@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 02:24:40 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 02:57:48 +0900</lastBuildDate>
+    <item>
+      <title>2026年ブラックフライデー：チケット流通市場の価格戦略とデータ収益モデルの深層</title>
+      <link>https://insightbriefnews.com/ja/a/black-friday-ticket-market-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/black-friday-ticket-market-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 02:57:30 +0900</pubDate>
+      <category>Kカルチャー</category>
+      <description>2026年11月27日、ビルボードが公開したチケット販売データを分析。1次販売網とサードパーティプラットフォームによる価格決定メカニズムを解明し、消費者の購買パターンが収益化される構造を追跡する。</description>
+    </item>
     <item>
       <title>宗教的信条が奪う公的医療の権利：豪州のカトリック系病院による医療制限の危機</title>
       <link>https://insightbriefnews.com/ja/a/catholic-hospital-healthcare-access-australia-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 14:50:00 +0900</pubDate>
       <category>災害・安全</category>
       <description>電気マットと電気ストーブによる火災は5年間で2,354件、37人が亡くなった。電気マットの不注意による火災532件のうち87%は「使用・設置」と記録されている。しかし安全基準KC 60335-2-17は発熱線と表面の温度を数字で定めるだけで、設定時間後に電源が切れる装置を求めていない。認証後に製品が認証時のままだかを見る窓は、毎年冬の市場調査だけであり、その窓で敷き電気毛布や電気マットが毎年引っかかる。</description>
-    </item>
-    <item>
-      <title>3.25%は今日は届かない — 12月15日午後3時、そして各自の金利再計算日</title>
-      <link>https://insightbriefnews.com/ja/a/bok-325-loan-reset-date-dec15-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/bok-325-loan-reset-date-dec15-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 14:25:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>韓国銀行は基準金利を3.00%から3.25%へ引き上げた。だが、すでに借りている変動金利の住宅ローン借り手がこの決定を実感する日は今日ではない。銀行の調達コストが12月15日の公表を経て指標金利に入り、個人の貸出金利は約定した金利変動周期が巡ってくる日に初めて計算し直される。その間に、5年固定金利は変動金利より安くなった。</description>
     </item>
   </channel>
 </rss>

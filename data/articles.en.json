@@ -1,5 +1,88 @@
 [
  {
+  "id": "black-friday-ticket-market-2026-20261128",
+  "category": "culture",
+  "title": "Black Friday ticket strategies and the data-driven economics of live entertainment",
+  "deck": "As of November 27, 2026, third-party platforms are leveraging discount codes to harvest consumer purchasing data. This shift transforms ticket sales from simple transactions into essential assets for measuring price elasticity and marketing efficiency.",
+  "date": "2026-11-28",
+  "sample": false,
+  "author": "Insight Brief Desk",
+  "authorRole": "Insight Brief Desk",
+  "publishedAt": "2026-11-28T02:57:30+09:00",
+  "readMinutes": 7,
+  "tags": [
+   "Black Friday",
+   "Concert Tickets",
+   "Ticketmaster",
+   "Data Analytics",
+   "Music Industry",
+   "Billboard",
+   "Price Elasticity",
+   "Live Entertainment"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "K-CULTURE FILE 26",
+   "word": "TICKETING"
+  },
+  "coverImage": "/assets/img/articles/black-friday-ticket-market-2026-20261128.en.jpg",
+  "summary": [
+   "Billboard reported on November 27, 2026, that promo codes have become the primary strategy for consumers to secure affordable concert tickets during the Black Friday season.",
+   "While Live Nation and Ticketmaster dominate the primary market, third-party platforms like Vivid Seats and SeatGeek utilize discounts to capture valuable buyer behavior data.",
+   "This audited data allows organizers to optimize seating capacity and fine-tune pricing models, effectively using consumer habits to hedge against revenue volatility."
+  ],
+  "body": "## The evolving revenue landscape of concert ticketing\nAs of November 27, 2026, the Black Friday season has transcended retail goods, reshaping the revenue structures of the entertainment industry. Data released by Billboard highlights that while primary distributors like Live Nation and Ticketmaster maintain stability through programs such as the Face Value Exchange, the real-world purchasing experience is increasingly dictated by third-party platforms. Sites including Vivid Seats, SeatGeek, and TicketNetwork rely on promo codes and coupons to incentivize sales. These platforms operate under a business model where they receive commissions for conversions, effectively distributing a portion of the transaction value back to the consumer in exchange for specific, auditable data points.\n\n## Auditable data as a marketing asset\nBillboard’s November 27 report clarifies that ticketing platforms are collecting consumer payment data in formats suitable for accounting and analytical audits. For artists and concert promoters, this is more than just promotional activity; it is a critical tool for measuring ticket price elasticity. By analyzing how consumers react to specific discounts, organizers build foundational algorithms for future tours to maximize seat occupancy and clear inventory. The coupon codes utilized by fans function as key performance indicators (KPIs), allowing promoters to manage the volatility of live event revenue through data-backed adjustments.\n\n## Market fragmentation and strategic investment\nIn the 2026 entertainment landscape, the primary market controls the inventory, while third-party platforms provide necessary liquidity. Ticketmaster maintains a dominant position regarding data exclusivity, yet platforms like Vivid Seats are aggressively expanding their market share by using discount codes as a strategic weapon. For the average US consumer, this fragmentation necessitates cross-platform price comparisons. During the Black Friday period, the deep discounts offered by third-party retailers serve as a strategic investment to acquire long-term customer data, which is subsequently used to influence future pricing policies and capture consumer loyalty beyond a single transaction.\n\n## Historical demand and the impact of artistic success\nTicket pricing is inherently tied to an artist’s popularity and venue capacity. As evidenced by the record-breaking success of Taylor Swift’s rerecorded tracks in November 2021, when \"All Too Well (Taylor’s Version)\" became the longest No. 1 hit in the Billboard Hot 100 history, musical achievements act as the engine for ticket demand. Today’s Black Friday discounts act as a balancing mechanism, filling seats for tours that have moved past their initial peak demand. This interaction demonstrates that while marketing tools facilitate sales, the fundamental driver remains the artistic achievement and the cultural resonance of the performer.\n\n## The conversion of experience into value\nTechnological constraints are increasingly being used to enhance the premium nature of live music. Following reports from The Guardian on November 27, 2026, artists are adopting phone-free policies, such as those seen on recent tours, to transform concerts from simple \"seat occupancy\" into \"exclusive experiences.\" This restriction ironically increases the perceived value of the event, thereby boosting the resale value of tickets on secondary markets. Third-party platforms now incorporate these metrics, including audience immersion and restricted-access events, into their pricing models to establish higher premiums for high-demand shows.\n\n## Production optimization and the limits of technology\nWhile modern music production often utilizes generative AI tools to reduce costs—a trend observed in the latest releases from electronic acts in late 2026—the direct correlation between technical efficiency and ticket sales remains unconfirmed. Industry analysts note that while technology assists in back-end production, the primary driver for ticket purchases remains the artist’s brand and live performance art. Fans seeking to explore creative musical outputs or generate their own tracks can utilize tools such as the [AI Music & Lyric Generator](https://insightbriefnews.com/music.html) to understand the composition process behind current production trends.",
+  "sources": [
+   {
+    "name": "Billboard",
+    "date": "2026-11-27",
+    "url": "https://www.billboard.com/culture/product-recommendations/best-black-friday-ticket-deals-promo-codes-november-2026-1236389121/"
+   },
+   {
+    "name": "Billboard",
+    "date": "2026-11-27",
+    "url": "https://www.billboard.com/music/chart-beat/taylor-swift-all-too-well-chart-rewind-2021-1236389622/"
+   },
+   {
+    "name": "The Guardian Music",
+    "date": "2026-11-27",
+    "url": "https://www.theguardian.com/music/2026/nov/27/phoebe-bridgers-review-co-op-live-manchester"
+   }
+  ],
+  "factCheck": {
+   "title": "Fact check",
+   "confirmed": [
+    "Billboard reported on Nov 27, 2026, that third-party ticket platforms use promotional codes to collect auditable data.",
+    "Live Nation and Ticketmaster operate the Face Value Exchange for primary market stability.",
+    "Taylor Swift's 'All Too Well (Taylor's Version)' became the longest No. 1 song in Hot 100 history in 2021.",
+    "Phone-free policies are being used by some artists to create exclusive, immersive concert experiences."
+   ],
+   "unconfirmed": [
+    "The exact percentage of ticket price reduction directly attributable to specific Black Friday promo codes across all platforms.",
+    "The specific long-term impact of generative music tools on overall concert ticket sales revenue for emerging artists."
+   ],
+   "sources": [
+    {
+     "name": "Billboard",
+     "date": "2026-11-27",
+     "url": "https://www.billboard.com/culture/product-recommendations/best-black-friday-ticket-deals-promo-codes-november-2026-1236389121/"
+    },
+    {
+     "name": "Billboard",
+     "date": "2026-11-27",
+     "url": "https://www.billboard.com/music/chart-beat/taylor-swift-all-too-well-chart-rewind-2021-1236389622/"
+    },
+    {
+     "name": "The Guardian Music",
+     "date": "2026-11-27",
+     "url": "https://www.theguardian.com/music/2026/nov/27/phoebe-bridgers-review-co-op-live-manchester"
+    }
+   ]
+  },
+  "coverCard": true
+ },
+ {
   "id": "catholic-hospital-healthcare-access-australia-20261128",
   "category": "health",
   "title": "Catholic Hospital Takeovers Threaten Reproductive Rights and Public Care in Australia",
@@ -3514,7 +3597,7 @@
      "note": "Hankyoreh 2026-11-17, The Korea Economic Daily 2026-11-15"
     },
     {
-     "name": "Examples of phone response sites",
+     "name": "Case study on phone response",
      "note": "JoongAng Ilbo 2026-11-10, The Korea Economic Daily 2026-11-23"
     },
     {
@@ -4507,7 +4590,7 @@
    "Antropic negotiated to purchase the same assets entirely in stock for about $6 billion in August, but withdrew in early September. Amazon will sell Tranium outside of AWS starting in late 2027. In the performance announcement on October 29, it was revealed that sales commitments for Tranium and Graviton each increased more than 20 times in one year. The competitor is NVIDIA (86% share of data center AI chips), which has built the CUDA ecosystem.",
    "Korea's semiconductor exports from January to October reached a record high of $396.8 billion (42.7% of the total, +193.1%), but the total sales of Rebellion (sales of 32 billion won, operating loss of 120.5 billion won) and Furiosa AI (sales of 5.7 billion won, operating loss of 62.5 billion won) in 2025 are KRW 37.7 billion. It is won (about 28 million dollars). The place where the value is attached is not the chip, but the software layer that allows the chip to be replaced."
   ],
-  "body": "On November 23, 2026, what Amazon bought was not a company, but a set of technologies. Amazon announced, “We are purchasing the proprietary technology of the Decart Optimization Stack (DOS) and welcoming three co-founders and a team of AI researchers and engineers.” The amount was not disclosed. Bloomberg and Calcalist put it at $7.5 billion. As of November 24, the base selling rate was 1,346.60 won, which is about 10.1 trillion won, and with about 100 employees, it is 101 billion won per person.\n\n> \"Every leap forward in AI starts with getting more out of every chip.\"\n> — Peter DeSantis, Amazon Senior Vice President of Basic AI Models, Custom Semiconductors, and Quantum Computing, November 23, 2026\n\n![Above a canyon where two huge chips stand facing each other like buildings, a golden box of code blocks is being transported by a glass bridge. Below, people in work clothes walk in a line down the server rack hallway. Image · AI Illustration](/assets/img/articles/amazon-decart-chip-switching-cost-2026.jpg)\n\n## Two months when 6 billion became 7.5 billion\n\nThese assets did not originally belong to Amazon. Bloomberg reported in August that Antropic had negotiated to purchase Decart entirely in stock for $6 billion and completed due diligence. The expression of Calcalist, which announced its withdrawal on September 8, was, “After reviewing the business and technology, we decided not to purchase.” Globes reported that Antropic made the offer conditional on closing its development center in Israel and relocating to San Francisco, which Descartes rejected. The reasons vary depending on the report. The value went from 6 billion to 7.5 billion dollars in two months. Globes reported that the transaction will be completed in January 2027 after regulatory approval, and that the three founders will receive a significant portion of the payment after five years. There is no completion date for Amazon's announcement.\n\n## What did you buy and what did you not buy?\n\nThe object of Amazon’s announcement is not the company. It is “the proprietary technology behind DOS.” Videos and world models (Oasis 3, Lucy) are not mentioned. What lives is the code and people, and what remains is the company and its sales. DOS is not software tied to a specific chip in the first place. Reuters described DOS as “a software engine that makes AI systems run faster and move more easily between Nvidia, Amazon, and Google chips.” Nvidia also participated in Decart's $300 million round in May.\n\nHowever, the only chips mentioned in Amazon's announcement are Tranium and Graviton. There is no word on whether DOS will continue to support competing chips. The test method for the 1,600 tokens per second (200 in the industry) proposed by Decart is not disclosed.\n\n## The day Amazon sells chips\n\nThe reason for buying was revealed in the performance announcement on October 29th. “Customers continue to ask us to make Tranium available outside of AWS, and we plan to do so by the end of 2027,” CEO Andy Jassy said. The chip business grew by triple digits, and Tranium and Graviton contracts each increased more than 20 times in one year. Torch Neuron, an open source tool that runs on Tranium without modifying the existing PyTorch code, was also released. In his April shareholder letter, Jassy wrote that the externally sold chip business could be worth $50 billion a year.\n\nThe market still belongs to NVIDIA. According to Visual Capitalist estimates, the data center AI chip market share in the fourth quarter of 2025 is 86% for Nvidia, 10% for AMD, and 4% for Intel. The line of defense is not only about performance. This is the CUDA ecosystem that has been built since 2006. The Software Policy Research Institute analyzed that “even if competing chips offer similar performance, they increase switching costs and entrench dependency.” Those who want to sell chips must pay the customer's moving costs first. 10 trillion won is considered the moving cost.\n\n## Two numbers in Korea: 42.7% and 37.7 billion won\n\nKorea achieved a record high in hardware. According to the Ministry of Trade, Industry and Energy, semiconductor exports from January to October amounted to $396.8 billion, up 193.1% from a year ago and accounting for 42.7% of total exports. Annual exports exceeded 1 trillion dollars for the first time on November 19. High bandwidth memory (HBM) market share is 83.0% (2nd quarter), DRAM 65.6% (1st half).\n\nDomestic companies on the same floor are small. Rebellion has 2025 sales of 32 billion won, operating loss of 120.5 billion won, and corporate value of 3.4 trillion won (March). Furiosa AI has sales of 5.7 billion won and an operating loss of 62.5 billion won. The combined sales of the two companies, 37.7 billion won, is just over $28 million, or 1/268th of the $7.5 billion that Amazon spent on Decart. It is precisely this layer that both companies make. Rebellion boasts a torch.compile support SDK, and FuriosaAI boasts its own compiler. The Export-Import Bank's Overseas Economic Research Institute assessed that there is a gap of more than three years between them and leading companies in terms of capital, commercialization experience, and ecosystem.\n\n## place with value\n\nThe place where the value was attached was not the wafer or HBM. It was the cost for the customer to change chips. Some things remain unconfirmed. $7.5 billion is not a number disclosed by Amazon. When Tranium begins to move out of AWS in late 2027, the next question is who sets the price of the software running on the chip.\n",
+  "body": "On November 23, 2026, what Amazon bought was not a company, but a set of technologies. Amazon announced, “We are purchasing the proprietary technology of the Decart Optimization Stack (DOS) and welcoming three co-founders and a team of AI researchers and engineers.” The amount was not disclosed. Bloomberg and Calcalist put it at $7.5 billion. As of November 24, the base selling rate was 1,346.60 won, which is about 10.1 trillion won, and with about 100 employees, it is 101 billion won per person.\n\n> \"Every leap forward in AI starts with getting more out of every chip.\"\n> — Peter DeSantis, Amazon Senior Vice President of Basic AI Models, Custom Semiconductors, and Quantum Computing, November 23, 2026\n\n![Above a canyon where two huge chips stand facing each other like buildings, a golden box of code blocks is being moved by a glass bridge. Below, people in work clothes walk in a line down the server rack hallway. Image · AI Illustration](/assets/img/articles/amazon-decart-chip-switching-cost-2026.jpg)\n\n## Two months when 6 billion became 7.5 billion\n\nThese assets did not originally belong to Amazon. Bloomberg reported in August that Antropic had negotiated to purchase Decart entirely in stock for $6 billion and completed due diligence. The words of Calcalist, which announced its withdrawal on September 8, were, “After reviewing the business and technology, we decided not to purchase.” Globes reported that Antropic made the offer conditional on closing its development center in Israel and relocating to San Francisco, which Descartes rejected. The reasons vary depending on the report. The value went from 6 billion to 7.5 billion dollars in two months. Globes reported that the transaction will be completed in January 2027 after regulatory approval, and that the three founders will receive a significant portion of the payment after five years. There is no completion date for Amazon's announcement.\n\n## What did you buy and what did you not buy?\n\nThe object of Amazon’s announcement is not the company. It is “the proprietary technology behind DOS.” Videos and world models (Oasis 3, Lucy) are not mentioned. What lives is the code and people, and what remains is the company and its sales. DOS is not software tied to a specific chip in the first place. Reuters described DOS as “a software engine that makes AI systems run faster and move more easily between Nvidia, Amazon, and Google chips.” Nvidia also participated in Decart's $300 million round in May.\n\nHowever, the only chips mentioned in Amazon's announcement are Tranium and Graviton. There is no word on whether DOS will continue to support competing chips. The test method for the 1,600 tokens per second (200 in the industry) proposed by Decart is not disclosed.\n\n## The day Amazon sells chips\n\nThe reason for buying was revealed in the performance announcement on October 29th. “Customers continue to ask us to make Tranium available outside of AWS, and we plan to do so by the end of 2027,” CEO Andy Jassy said. The chip business grew by triple digits, and Tranium and Graviton contracts each increased more than 20 times in one year. Torch Neuron, an open source tool that runs on Tranium without modifying the existing PyTorch code, was also released. In his April shareholder letter, Jassy wrote that the externally sold chip business could be worth $50 billion a year.\n\nThe market still belongs to NVIDIA. According to Visual Capitalist estimates, the data center AI chip market share in the fourth quarter of 2025 is 86% for Nvidia, 10% for AMD, and 4% for Intel. The line of defense is not only about performance. This is the CUDA ecosystem that has been built since 2006. The Software Policy Research Institute analyzed that “even if competing chips offer similar performance, they increase switching costs and entrench dependency.” Those who want to sell chips must pay the customer's moving costs first. 10 trillion won is considered the moving cost.\n\n## Two numbers in Korea: 42.7% and 37.7 billion won\n\nKorea achieved a record high in hardware. According to the Ministry of Trade, Industry and Energy, semiconductor exports from January to October amounted to $396.8 billion, up 193.1% from a year ago and accounting for 42.7% of total exports. Annual exports exceeded 1 trillion dollars for the first time on November 19. High bandwidth memory (HBM) market share is 83.0% (2nd quarter), DRAM 65.6% (1st half).\n\nDomestic companies on the same level are small. Rebellion has 2025 sales of 32 billion won, operating loss of 120.5 billion won, and corporate value of 3.4 trillion won (March). Furiosa AI has sales of 5.7 billion won and an operating loss of 62.5 billion won. The combined sales of the two companies, 37.7 billion won, is just over $28 million, or 1/268th of the $7.5 billion that Amazon spent on Decart. It is precisely this layer that both companies make. Rebellion boasts a torch.compile support SDK, and FuriosaAI boasts its own compiler. The Export-Import Bank's Overseas Economic Research Institute assessed that there is a gap of more than three years between them and leading companies in terms of capital, commercialization experience, and ecosystem.\n\n## place with value\n\nThe place where the value was attached was not the wafer or HBM. It was the cost for the customer to change chips. Some things remain unconfirmed. $7.5 billion is not a number disclosed by Amazon. When Tranium begins to move out of AWS in late 2027, the next question is who sets the price of the software running on the chip.\n",
   "sources": [
    {
     "name": "Amazon — Amazon to purchase Decart's AI optimization technology to advance chip and model innovation for customers",

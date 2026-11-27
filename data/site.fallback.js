@@ -85,6 +85,10 @@ window.__SITE__ = {
  ],
  "ticker": [
   {
+   "text": "2026년 블랙 프라이데이 티켓 시장: 3자 플랫폼의 할인 구조와 데이터 수익 모델",
+   "articleId": "black-friday-ticket-market-2026-20261128"
+  },
+  {
    "text": "호주 가톨릭 병원의 종교적 신념, 환자의 임신 중절과 난임 치료권을 제한하는가",
    "articleId": "catholic-hospital-healthcare-access-australia-20261128"
   },
@@ -95,10 +99,6 @@ window.__SITE__ = {
   {
    "text": "횡단보도 12대 중과실 사고, 뇌신경 손상 피해자의 향후 1년 경제적 손실 계산",
    "articleId": "pedestrian-accident-loss-analysis-20261128"
-  },
-  {
-   "text": "마크롱의 '도핑된 고기' 발언과 브라질-EU 간 177개 시장 공급망 갈등",
-   "articleId": "brazil-meat-trade-row-2026-20261128"
   }
  ],
  "editorNote": {

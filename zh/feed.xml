@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 02:24:39 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 02:57:47 +0900</lastBuildDate>
+    <item>
+      <title>2026年黑色星期五：欧美票务市场的折扣逻辑与数据变现模型</title>
+      <link>https://insightbriefnews.com/zh/a/black-friday-ticket-market-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/black-friday-ticket-market-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 02:57:30 +0900</pubDate>
+      <category>韩流·文化</category>
+      <description>Billboard于2026年11月27日揭示了黑色星期五期间演唱会票务市场的促销机制。通过第三方平台的优惠券与数据共享，票务行业正经历从单纯零售到精准用户画像构建的数字化转型。</description>
+    </item>
     <item>
       <title>澳洲天主教医院扩张：宗教准则如何重构医疗服务准入边界</title>
       <link>https://insightbriefnews.com/zh/a/catholic-hospital-healthcare-access-australia-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 14:25:00 +0900</pubDate>
       <category>经济·金融</category>
       <description>韩国银行将基准利率从3.00%上调至3.25%。但对已经贷款的浮动利率借款人来说，感受到这一决定的日子并不是今天。银行的资金成本要经过12月15日的公布才进入指标利率，个人的贷款利率要等项目约定的利率变动周期到来才重新计算。在此期间，5年期固定利率已经低于浮动利率。</description>
-    </item>
-    <item>
-      <title>97.8%与63.0% —— 一次答对的AI，和十六次都答对的AI</title>
-      <link>https://insightbriefnews.com/zh/a/hfe-reliability-floor-544-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/hfe-reliability-floor-544-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 10:45:00 +0900</pubDate>
-      <category>AI·科技</category>
-      <description>谷歌DeepMind于2026年11月24日在Kaggle发布“人类的第一次考试（HFE）”：544道数数、读词的题被编成136个“家族”，不是更难的题，而是考“每次是否都对”。前五名模型单次正确率为96%~98%，但在一个家族十六次尝试必须全部正确的规则下平均只有85.8%。差距从7.6到80.1个百分点，榜上没有韩国模型。</description>
     </item>
   </channel>
 </rss>

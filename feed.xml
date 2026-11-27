@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 02:24:34 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 02:57:41 +0900</lastBuildDate>
+    <item>
+      <title>2026년 블랙 프라이데이 티켓 시장: 3자 플랫폼의 할인 구조와 데이터 수익 모델</title>
+      <link>https://insightbriefnews.com/a/black-friday-ticket-market-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/black-friday-ticket-market-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 02:57:30 +0900</pubDate>
+      <category>K-컬쳐·엔터</category>
+      <description>빌보드가 공개한 2026년 11월 27일 기준 티켓 할인 전략을 분석한다. 1차 유통망과 3자 플랫폼 간의 데이터 공유 및 수수료 구조를 통해 실질적인 티켓 수익화 과정을 추적한다.</description>
+    </item>
     <item>
       <title>호주 가톨릭 병원의 종교적 신념, 환자의 임신 중절과 난임 치료권을 제한하는가</title>
       <link>https://insightbriefnews.com/a/catholic-hospital-healthcare-access-australia-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 14:25:00 +0900</pubDate>
       <category>경제·금융</category>
       <description>한국은행이 기준금리를 연 3.00%에서 3.25%로 올렸다. 다만 이미 대출을 받은 변동금리 차주가 이 결정을 체감하는 날은 오늘이 아니다. 은행 조달비용이 12월 15일 공시를 거쳐 지표금리에 들어가고, 개인의 대출금리는 약정한 금리변동주기가 돌아오는 날에야 다시 계산된다. 그사이 5년 고정형 금리는 변동형보다 낮아졌다.</description>
-    </item>
-    <item>
-      <title>97.8%와 63.0% — 한 번 맞히는 AI와 열여섯 번 맞히는 AI</title>
-      <link>https://insightbriefnews.com/a/hfe-reliability-floor-544-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/hfe-reliability-floor-544-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 10:45:00 +0900</pubDate>
-      <category>AI·테크</category>
-      <description>구글 딥마인드가 2026년 11월 24일 캐글에 공개한 &#x27;인류의 첫 번째 시험(HFE)&#x27;은 어려운 문제가 아니라 세고 읽는 문제 544개를 136개 &#x27;가족&#x27;으로 묶었다. 상위 5개 모델의 단일 정답률은 96~98%였지만, 가족마다 16번의 시도가 모두 맞아야 하는 규칙에서는 평균 85.8%로 떨어졌다. 격차는 7.6~80.1%포인트이고, 이 표에 한국 모델은 없다.</description>
     </item>
   </channel>
 </rss>
