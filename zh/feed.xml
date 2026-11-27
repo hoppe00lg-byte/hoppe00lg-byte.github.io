@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 06:01:28 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 07:04:47 +0900</lastBuildDate>
+    <item>
+      <title>韩国12月第一周房产市场扫描：4215套新房入市与税负预判</title>
+      <link>https://insightbriefnews.com/zh/a/namyangju-3rd-new-town-dec-2026-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/namyangju-3rd-new-town-dec-2026-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 06:58:02 +0900</pubDate>
+      <category>房产·个税</category>
+      <description>2026年12月第一周，韩国全国12个项目共计4215套住宅启动认购。包括南杨州第三期新城在内的核心区域，正成为投资者评估资产配置与税务成本的关键地标。</description>
+    </item>
+    <item>
+      <title>联合国特使遭哥斯达黎加拒之门外：全球供应链与地缘政治壁垒激增</title>
+      <link>https://insightbriefnews.com/zh/a/costa-rica-denies-un-rapporteur-entry-geopolitics-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/costa-rica-denies-un-rapporteur-entry-geopolitics-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 06:56:28 +0900</pubDate>
+      <category>国际·地缘</category>
+      <description>哥斯达黎加政府以所谓“涉恐”为由拒绝联合国加沙问题特别报告员入境，引发国际外交争议。与此同时，美国关税政策及俄罗斯核潜艇扩张正加剧全球贸易不确定性，中国企业需审慎应对物流成本激增风险。</description>
+    </item>
     <item>
       <title>夜间森林火灾的防控盲点：从世宗市山林事故看应急响应的实效与挑战</title>
       <link>https://insightbriefnews.com/zh/a/sejong-mountain-fire-night-response-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:28:14 +0900</pubDate>
       <category>韩流·文化</category>
       <description>凭借动画《新世纪福音战士》主题曲赚钱了30多年的高桥阳子将在韩国举办她的首次个人表演。我们分析了日本内容在韩国流行音乐市场的盈利能力，重点关注门票力和 IP 利用策略。</description>
-    </item>
-    <item>
-      <title>1000万次下载、8天、1次被拒——AI 智能体的第一道国境</title>
-      <link>https://insightbriefnews.com/zh/a/muse-uk-launch-pre-approval-gap-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/muse-uk-launch-pre-approval-gap-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 22:15:00 +0900</pubDate>
-      <category>AI·科技</category>
-      <description>Meta 于 11 月 24 日在英国推出个人 AI 智能体“Muse”。美国上线后下载量已超过 1000 万次。英国四家监管机构在 8 天前向部长们发出联名信，要求企业在发布前先与监管沟通；发布当天又有三家机构分别发表声明。金融行为监管局提议在沙盒中共同测试 Muse，被 Meta 拒绝。</description>
-    </item>
-    <item>
-      <title>统治地位剖析 58.8% — 比特币留下的空间由美元而非山寨币填补</title>
-      <link>https://insightbriefnews.com/zh/a/btc-dominance-58-altseason-index-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/btc-dominance-58-altseason-index-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 20:15:00 +0900</pubDate>
-      <category>经济·金融</category>
-      <description>比特币的统治地位从11月12日的60.61%下降到26日的58.76%。同一时期，山寨币季节指数从 49 上升至 58，但距离 75 的基线还差 17 个点。如果你追踪比例的变化，你会发现稳定币，而不是以太坊或山寨币。</description>
     </item>
   </channel>
 </rss>

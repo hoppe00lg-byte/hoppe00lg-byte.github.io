@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 05:57:54 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 06:59:59 +0900</lastBuildDate>
+    <item>
+      <title>2026년 12월 첫째 주 전국 4,215가구 분양, 남양주 왕숙 등 청약 실익 분석</title>
+      <link>https://insightbriefnews.com/a/namyangju-3rd-new-town-dec-2026-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/namyangju-3rd-new-town-dec-2026-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 06:58:02 +0900</pubDate>
+      <category>부동산·생활세금</category>
+      <description>12월 첫째 주 전국 12개 단지에서 4,215가구가 청약을 시작한다. 3기 신도시 남양주 왕숙을 포함한 주요 공급지의 자산 요건과 분양가 대비 실질 세금 부담을 계산한다.</description>
+    </item>
+    <item>
+      <title>UN 보고관 입국 거부한 코스타리카와 2026년 11월 관세·안보 지정학 리스크</title>
+      <link>https://insightbriefnews.com/a/costa-rica-denies-un-rapporteur-entry-geopolitics-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/costa-rica-denies-un-rapporteur-entry-geopolitics-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 06:56:28 +0900</pubDate>
+      <category>국제·지정학</category>
+      <description>코스타리카가 가자지구 조사 UN 특별보고관의 입국을 불허하며 국제적 외교 마찰이 심화되고 있다. 동시에 트럼프 행정부의 관세 정책과 러시아의 군사 확장 전략이 글로벌 공급망의 불확실성을 가중시키는 중이다.</description>
+    </item>
     <item>
       <title>야간 산불 대응의 사각지대: 2026년 11월 27일 세종시 산불과 소방 인력 배치 기준의 간극</title>
       <link>https://insightbriefnews.com/a/sejong-mountain-fire-night-response-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:28:14 +0900</pubDate>
       <category>K-컬쳐·엔터</category>
       <description>애니메이션 &#x27;신세기 에반게리온&#x27; 주제가로 30년 넘게 수익을 창출해 온 다카하시 요코가 국내 첫 단독 공연을 연다. 티켓 파워와 IP 활용 전략을 중심으로 K-팝 시장 속 재팬 콘텐츠의 수익성을 분석했다.</description>
-    </item>
-    <item>
-      <title>1,000만 다운로드, 8일, 그리고 거절 1건 — AI 에이전트의 첫 국경</title>
-      <link>https://insightbriefnews.com/a/muse-uk-launch-pre-approval-gap-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/muse-uk-launch-pre-approval-gap-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 22:15:00 +0900</pubDate>
-      <category>AI·테크</category>
-      <description>메타가 11월 24일 개인 AI 에이전트 &#x27;뮤즈&#x27;를 영국에 출시했다. 미국 출시 뒤 다운로드는 1,000만 건을 넘었다. 영국 규제기관 네 곳은 8일 전 장관들에게 &#x27;출시 전에 먼저 상의하라&#x27;는 공동 서한을 보냈고, 출시 당일에는 세 기관이 각각 성명을 냈다. 금융감독청이 제안한 샌드박스 공동 테스트는 메타가 거절했다.</description>
-    </item>
-    <item>
-      <title>도미넌스 58.8%의 해부 — 비트코인이 내준 자리는 알트가 아니라 달러가 채웠다</title>
-      <link>https://insightbriefnews.com/a/btc-dominance-58-altseason-index-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/btc-dominance-58-altseason-index-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 20:15:00 +0900</pubDate>
-      <category>경제·금융</category>
-      <description>비트코인 도미넌스는 11월 12일 60.61%에서 26일 58.76%로 내려왔다. 같은 기간 알트코인 시즌 지수는 49에서 58로 올랐지만 기준선 75에는 17점 모자란다. 비중이 옮겨간 곳을 따라가면 이더리움도, 알트코인도 아닌 스테이블코인이 나온다.</description>
     </item>
   </channel>
 </rss>

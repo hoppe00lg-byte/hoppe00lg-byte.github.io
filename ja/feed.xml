@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 06:01:29 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 07:04:48 +0900</lastBuildDate>
+    <item>
+      <title>2026年12月全国4,215戸供給：南楊州新都市入札と日本の家計が意識すべき税・実質コスト</title>
+      <link>https://insightbriefnews.com/ja/a/namyangju-3rd-new-town-dec-2026-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/namyangju-3rd-new-town-dec-2026-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 06:58:02 +0900</pubDate>
+      <category>不動産・税金</category>
+      <description>2026年12月第1週、全国12団地で4,215戸の入札が開始される。南楊州王宿地区などの主要供給地を対象に、円安基調下での取得コストと税制上の留意点を分析する。</description>
+    </item>
+    <item>
+      <title>コスタリカの国連報告官入国拒否と2026年11月、日本の家計を脅かす地政学的リスク</title>
+      <link>https://insightbriefnews.com/ja/a/costa-rica-denies-un-rapporteur-entry-geopolitics-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/costa-rica-denies-un-rapporteur-entry-geopolitics-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 06:56:28 +0900</pubDate>
+      <category>国際・地政学</category>
+      <description>コスタリカ政府による国連特別報告官の入国拒否が、国際的な外交摩擦を激化させている。一方、トランプ政権の関税政策とロシアの軍拡は、日本の輸入価格と電気代に直接的なコスト押し上げ圧力として跳ね返っている。</description>
+    </item>
     <item>
       <title>夜間山火事の教訓：インフラの制約と限界が露呈した消火活動の現状</title>
       <link>https://insightbriefnews.com/ja/a/sejong-mountain-fire-night-response-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:29:13 +0900</pubDate>
       <category>国際・地政学</category>
       <description>EU 27カ国が2028年から7年間適用される1兆7,800億ユーロ規模の長期予算案合意のため、ブリュッセルで緊急会議に突入した。フランス大統領を控えたマリン・ルペン議員の負傷とウクライナの支援条件が交渉の主な変数として作用している。</description>
-    </item>
-    <item>
-      <title>高橋洋子ソウル単独コンサート収益構造の裏面</title>
-      <link>https://insightbriefnews.com/ja/a/takahashi-yoko-seoul-concert-analysis-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/takahashi-yoko-seoul-concert-analysis-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:28:14 +0900</pubDate>
-      <category>Kカルチャー</category>
-      <description>アニメ『新世紀エヴァンゲリオン』主題歌で30年以上収益を創出してきた高橋洋子が国内初の単独公演を開く。チケットパワーとIP活用戦略を中心にKポップ市場の中のジャパンコンテンツの収益性を分析した。</description>
-    </item>
-    <item>
-      <title>1000万ダウンロード、8日、そして拒否1件——AIエージェントの最初の国境</title>
-      <link>https://insightbriefnews.com/ja/a/muse-uk-launch-pre-approval-gap-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/muse-uk-launch-pre-approval-gap-2026.html</guid>
-      <pubDate>Thu, 26 Nov 2026 22:15:00 +0900</pubDate>
-      <category>AI・テック</category>
-      <description>メタは11月24日、個人向けAIエージェント「Muse」を英国で公開した。米国での開始後にダウンロードは1,000万件を超えた。英国の規制機関4社は8日前に閣僚へ連名書簡を送り、公開前に規制機関と協議するよう求めた。公開当日には3機関がそれぞれ声明を出した。FCAが提案したサンドボックスでの共同テストはメタが断った。</description>
     </item>
   </channel>
 </rss>

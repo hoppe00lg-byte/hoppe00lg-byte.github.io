@@ -84,6 +84,14 @@
  ],
  "ticker": [
   {
+   "text": "韩国12月第一周房产市场扫描：4215套新房入市与税负预判",
+   "articleId": "namyangju-3rd-new-town-dec-2026-analysis-20261128"
+  },
+  {
+   "text": "联合国特使遭哥斯达黎加拒之门外：全球供应链与地缘政治壁垒激增",
+   "articleId": "costa-rica-denies-un-rapporteur-entry-geopolitics-20261128"
+  },
+  {
    "text": "夜间森林火灾的防控盲点：从世宗市山林事故看应急响应的实效与挑战",
    "articleId": "sejong-mountain-fire-night-response-20261128"
   },
@@ -94,10 +102,6 @@
   {
    "text": "特朗普“过剩产能关税”：美国进口成本跳涨与贸易成本重构分析",
    "articleId": "trump-tariff-overcapacity-analysis-20261128"
-  },
-  {
-   "text": "美联储披露银行流动性调查：75%准备金掌握在保守策略手中",
-   "articleId": "fed-reserve-survey-banks-strategy-20261128"
   }
  ],
  "editorNote": {
