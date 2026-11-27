@@ -1418,6 +1418,11 @@ def main() -> int:
         log(f"· 밀린 슬롯 {len(due)}개 중 {len(queue)}편 발행: " + ", ".join(c for _, c in queue))
 
     log(f"· 국가별 원고 언어: {', '.join(langs)}")
+    started = time.time()
+    try:
+        budget_min = float(os.environ.get("IB_RUN_BUDGET_MIN", "19"))
+    except ValueError:
+        budget_min = 19.0
     articles = load_json(ARTICLES, [])
     made: list[dict] = []
     quota_out = False
@@ -1425,6 +1430,11 @@ def main() -> int:
         if cat not in CATEGORIES:
             log(f"! 알 수 없는 카테고리 {cat} — 건너뜀")
             continue
+        # 워크플로 제한(30분)에서 빌드·커밋 시간을 남기려고 새 기사 시작 전에 여유를 본다.
+        # 남은 슬롯은 건드리지 않으므로 다음 회차가 그대로 이어받는다.
+        if made and (time.time() - started) / 60 > budget_min:
+            log(f"· {budget_min:.0f}분 경과 — 남은 슬롯은 다음 회차로 넘깁니다.")
+            break
         today = now.strftime("%Y-%m-%d")
         used = set(((state.get("used") or {}).get(today, {}) or {}).get(cat) or [])
         log(f"\n[{cat}] 근거 자료 수집…")
@@ -1476,10 +1486,13 @@ def main() -> int:
         return 1
 
     vmap = {a["id"]: list((a.get("_variants") or {}).keys()) for a in made}
+    slots = {a["id"]: a.get("_slot") for a in made}  # publish() 가 _slot 을 지우기 전에 붙잡아 둔다
     ok = publish(made, commit=not dry)
     if ok and not dry:
         for a in made:
-            state["done"][a["_slot"]] = a["id"]
+            key = slots.get(a["id"])
+            if key:
+                state["done"][key] = a["id"]
             log(f"· 발행 완료: {a['id']} — https://insightbriefnews.com/a/{a['id']}.html")
         state["last_run"] = now.isoformat(timespec="seconds")
         save_json(STATE, state)
