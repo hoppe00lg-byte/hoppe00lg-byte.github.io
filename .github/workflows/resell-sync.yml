@@ -41,21 +41,27 @@ jobs:
               curl -fsSL --retry 3 -H "Accept: application/vnd.github.raw" "$url" -o "$out"
             fi
           }
-          fetch latest.json "$RUNNER_TEMP/resell-latest.json"
-          if [ ! -s "$RUNNER_TEMP/resell-latest.json" ]; then
-            echo "::error::마진 리포트를 받지 못했습니다. MARGIN_REPORT_TOKEN Secret(비공개 저장소 읽기)을 확인하세요."
+          fetch global-latest.json "$RUNNER_TEMP/global-latest.json"
+          if [ ! -s "$RUNNER_TEMP/global-latest.json" ]; then
+            echo "::error::직구·명품 리포트를 받지 못했습니다. MARGIN_REPORT_TOKEN Secret(비공개 저장소 읽기)을 확인하세요."
             exit 1
           fi
-          python3 -c "import json;d=json.load(open('$RUNNER_TEMP/resell-latest.json'));print('리포트',d.get('date'),d.get('generated_at'),'항목',len(d.get('items') or []))"
-          # 포켓몬 카드 리포트는 없을 수도 있습니다(스캔 실패·미실행). 있을 때만 동기화합니다.
-          fetch pokemon-latest.json "$RUNNER_TEMP/pokemon-latest.json" || echo "포켓몬 리포트 없음 — 스니커즈만 갱신"
+          python3 -c "import json;d=json.load(open('$RUNNER_TEMP/global-latest.json'));print('직구·명품',d.get('date'),d.get('generated_at'),'항목',len(d.get('items') or []))"
+          # 스니커즈(최신.json)·카드 리포트는 없을 수도 있습니다(스캔 실패·미실행). 있을 때만 씁니다.
+          fetch latest.json "$RUNNER_TEMP/resell-latest.json" || echo "스니커즈 리포트 없음 — 상품 섹션은 직구 품목만"
+          fetch cards-latest.json "$RUNNER_TEMP/cards-latest.json" || echo "카드 리포트 없음 — 카드 섹션은 이전 데이터 유지"
 
       - name: Sync resell picks into site data
         run: |
           set +e
-          POKE_ARG=""
-          if [ -s "$RUNNER_TEMP/pokemon-latest.json" ]; then POKE_ARG="--pokemon-report $RUNNER_TEMP/pokemon-latest.json"; fi
-          python3 tools/sync_resell_picks.py --report "$RUNNER_TEMP/resell-latest.json" --top 5 --pokemon-top 6 $POKE_ARG
+          ARGS=""
+          if [ -s "$RUNNER_TEMP/resell-latest.json" ]; then ARGS="$ARGS --report $RUNNER_TEMP/resell-latest.json"; fi
+          if [ -s "$RUNNER_TEMP/cards-latest.json" ]; then
+            ARGS="$ARGS --cards-report $RUNNER_TEMP/cards-latest.json"
+          else
+            ARGS="$ARGS --only goods,lux"
+          fi
+          python3 tools/sync_resell_picks.py --global-report "$RUNNER_TEMP/global-latest.json" $ARGS
           code=$?
           set -e
           if [ "$code" = "3" ]; then
@@ -66,7 +72,10 @@ jobs:
 
       - name: Commit and push if changed
         run: |
-          FILES="data/resell-picks.json en/data/resell-picks.json zh/data/resell-picks.json ja/data/resell-picks.json data/pokemon-picks.json en/data/pokemon-picks.json zh/data/pokemon-picks.json ja/data/pokemon-picks.json"
+          FILES="data/goods-picks.json data/lux-picks.json data/cards-picks.json"
+          for L in en zh ja; do
+            FILES="$FILES $L/data/goods-picks.json $L/data/lux-picks.json $L/data/cards-picks.json"
+          done
           if [ -z "$(git status --porcelain $FILES)" ]; then
             echo "변경 없음"
             exit 0
@@ -74,6 +83,6 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add $FILES
-          git commit -m "chore(resell): 오늘의 마진 아이템 갱신 $(date +%F)"
+          git commit -m "chore(resell): 3개 섹션 실측 목록 갱신 $(date +%F)"
           git pull --rebase --autostash origin main || true
           git push

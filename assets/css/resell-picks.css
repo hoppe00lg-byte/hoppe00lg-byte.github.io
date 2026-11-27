@@ -112,3 +112,47 @@
 @media (max-width:359px){
   .rs-pk-grid{grid-template-columns:1fr}
 }
+
+/* =========================================================
+   3개 섹션 공통 — 섹션 바로가기 · 시장 기준 · 섹션 구분
+   ========================================================= */
+.rs-secnav{position:sticky;top:calc(var(--rs-nav-h, 56px) + 0px);z-index:6;display:flex;flex-wrap:wrap;gap:6px;
+  margin-top:clamp(14px,2vw,20px);padding:7px;border:1px solid var(--ink);background:rgba(255,255,255,.96);
+  backdrop-filter:blur(4px)}
+.rs-secnav a{flex:1 1 0;min-width:120px;display:flex;align-items:baseline;gap:6px;justify-content:center;
+  text-decoration:none;color:var(--ink);border:1px solid var(--rule-2);background:#fff;padding:6px 8px;
+  font-family:var(--sans);font-size:12px;font-weight:800;letter-spacing:-.01em}
+.rs-secnav a b{font-family:var(--mono);font-size:9.5px;color:var(--accent);letter-spacing:.06em}
+.rs-secnav a i{font-style:normal;font-family:var(--mono);font-size:8.5px;color:var(--muted);letter-spacing:.08em}
+.rs-secnav a:hover{border-color:var(--ink);background:var(--paper-2)}
+.rs-secnav a.is-on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.rs-secnav a.is-on b{color:#ffd98a}
+.rs-secnav a.is-on i{color:#c9ced6}
+.rs-secnav a.is-calc{background:var(--paper-2)}
+
+.rs-basis{margin-top:10px;border:1px solid var(--rule-2);background:var(--paper-2);padding:11px 13px}
+.rs-basis .k{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.16em;color:var(--accent)}
+.rs-basis h3{margin:3px 0 0;font-family:var(--serif);font-size:14.5px;font-weight:800;letter-spacing:-.02em}
+.rs-basis ul{margin:6px 0 0;padding:0;list-style:none;display:grid;gap:3px}
+.rs-basis li{font-size:11.3px;line-height:1.7;color:var(--ink-3);word-break:keep-all}
+.rs-basis li b{color:var(--ink-2);font-weight:700;margin-right:6px;font-family:var(--mono);font-size:10.5px}
+
+.rs-picks--goods .rs-pk-grid{grid-template-columns:repeat(auto-fit,minmax(228px,1fr))}
+.rs-picks--lux .rs-pk-grid{grid-template-columns:repeat(auto-fit,minmax(228px,1fr))}
+.rs-picks--cards .rs-pk-grid{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.rs-picks--lux{margin-top:14px}
+.rs-picks--cards{margin-top:14px}
+
+.rs-anchor{display:block;height:0;scroll-margin-top:calc(var(--rs-nav-h, 56px) + 8px)}
+.rs-picks{scroll-margin-top:calc(var(--rs-nav-h, 56px) + 54px)}
+
+/* 구머로드 배너 */
+.ib-promo--gumroad{border-left:3px solid #ff90e8}
+
+@media (max-width:720px){
+  .rs-secnav{gap:4px;padding:5px;top:calc(var(--rs-nav-h, 52px))}
+  .rs-secnav a{min-width:0;flex:1 1 44%;font-size:11px;padding:5px 4px;gap:4px}
+  .rs-secnav a i{display:none}
+  .rs-picks--goods .rs-pk-grid,.rs-picks--lux .rs-pk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rs-picks--cards .rs-pk-grid{grid-template-columns:1fr}
+}

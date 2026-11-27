@@ -28,7 +28,7 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="assets/css/style.css?v=20261126a">
 <link rel="stylesheet" href="assets/css/resell.css?v=20261126a">
-<link rel="stylesheet" href="assets/css/resell-picks.css?v=20261127c">
+<link rel="stylesheet" href="assets/css/resell-picks.css?v=20261128a">
 <link rel="stylesheet" href="assets/css/nav.css?v=20261125a">
 <script type="application/ld+json">
 {
@@ -183,32 +183,46 @@
     <div class="rs-head">
       <span class="kicker">FREE TOOL · RESELL MARGIN</span>
       <h1>해외직구 · 중고 리셀<br>마진 계산기</h1>
-      <p class="dek">사서 다시 파는 일은 “얼마에 팔리나”보다 “내 손에 얼마가 남나”로 갈립니다. 매입가와 배송비, 관부가세, 플랫폼 수수료, 국내 택배비를 넣으면 예상 정산액과 순수익, 마진율(ROI), 손익분기 매입가가 바로 나옵니다. 같은 판매가로 크림·번개장터·네이버 스마트스토어·당근·무신사 유즈드를 나란히 놓고 어디에 올릴지 정하세요.</p>
+      <p class="dek">사서 다시 파는 일은 “얼마에 팔리나”보다 “내 손에 얼마가 남나”로 갈립니다. 매입가와 배송비, 관부가세, 플랫폼 수수료, 국내 택배비를 넣으면 예상 정산액과 순수익, 마진율(ROI), 손익분기 매입가가 바로 나옵니다. 이 페이지는 한국 기준 — 면세 한도 $150(미국 발송 $200), 부가세 10%, 크림·번개장터·스마트스토어·무신사 유즈드 수수료 — 으로 계산하고, 아래에 <b>상품 54종 · 명품 50종 · 기념카드(포켓몬·원피스·유희왕)</b> 실측 목록을 함께 둡니다.</p>
       <div class="rs-badges">
-        <span>무료</span><span>회원가입 없음</span><span>입력값 서버 전송 없음</span><span>실시간 계산</span><span>플랫폼 5곳 비교</span><span>4개 통화</span>
+        <span>무료</span><span>회원가입 없음</span><span>입력값 서버 전송 없음</span><span>실시간 계산</span><span>플랫폼 5곳 비교</span><span>4개 통화</span><span>3개 실측 섹션</span>
       </div>
     </div>
 
     <aside class="ib-promo ib-promo--b2b" aria-label="내 품목 전용 마진 스캐너 설치 의뢰">
       <span class="ib-promo-kicker">SCANNER SETUP · 100~300종 확장</span>
       <h3 class="ib-promo-title">이 화면을 내 취급 품목으로 돌리고 싶다면</h3>
-      <p class="ib-promo-desc">여기 54개 품목은 맛보기입니다. 내가 파는 품목 100~300종을 등록해, 내 PC에서 2시간마다 자동으로 시세를 다시 읽고 리포트와 엑셀 표로 남기는 설치 패키지를 크몽에서 진행합니다. 윈도우·맥 원클릭 실행과 설치 동행까지 포함됩니다.</p>
+      <p class="ib-promo-desc">여기 공개한 상품 54종·명품 50종·기념카드는 맛보기입니다. 내가 파는 품목 100~300종을 등록해, 내 PC에서 2시간마다 자동으로 시세를 다시 읽고 리포트와 엑셀 표로 남기는 설치 패키지를 크몽에서 진행합니다. 윈도우·맥 원클릭 실행과 설치 동행까지 포함됩니다.</p>
       <span class="ib-promo-acts"><a class="ib-promo-cta" href="https://kmong.com/@%EC%84%9C%EC%A7%84%ED%95%9C" data-gig="881939" target="_blank" rel="noopener noreferrer">내 품목 전용 스캐너 설치 보기</a><a class="ib-promo-cta ib-promo-cta--ghost" href="#rs-picks">오늘 스캔 결과 먼저 보기</a></span>
       <span class="ib-promo-note">설치 패키지 39,000원~ · 원격 설치 동행 99,000원~ · 크몽에서 진행</span>
     </aside>
 
     <!-- IB:RESELL-PROMO-TOP -->
-    <!-- IB:RESELL-PICKS — 오늘의 실측 마진 아이템: data/resell-picks.json 을 assets/js/resell-picks.js 가 카드로 그립니다. -->
-    <section class="rs-picks" id="rs-picks" hidden></section>
-    <!-- /IB:RESELL-PICKS -->
+    <!-- IB:RESELL-SECTIONS — 3개 섹션: 상품(goods-picks.json) · 명품(lux-picks.json) · 기념카드(cards-picks.json).
+         assets/js/resell-picks.js 가 각 JSON 을 읽어 카드로 그립니다. -->
+    <nav class="rs-secnav" id="rs-secnav" aria-label="리셀 3개 섹션 바로가기">
+      <a href="#rs-goods" class="is-on"><b>01</b> 상품 <i>GOODS</i></a>
+      <a href="#rs-lux"><b>02</b> 명품 <i>LUXURY</i></a>
+      <a href="#rs-cards"><b>03</b> 기념카드 <i>CARDS</i></a>
+      <a href="#rs-calc" class="is-calc"><b>04</b> 계산기 <i>CALC</i></a>
+    </nav>
 
-    <!-- IB:RESELL-POKE — 포켓몬 카드 국내외 시세 차익: data/pokemon-picks.json 을 assets/js/resell-picks.js 가 카드로 그립니다. -->
-    <section class="rs-picks rs-picks--poke" id="rs-poke" hidden></section>
-    <!-- /IB:RESELL-POKE -->
-    <!-- IB:RESELL-GLOBAL — 해외직구·명품 품목(전자기기·캠핑·생활용품·레고/피규어·명품·컨템포러리) 실측 마진: data/global-picks.json 을 assets/js/resell-picks.js 가 카드로 그립니다. -->
-    <section class="rs-picks rs-picks--global" id="rs-global" hidden></section>
-    <!-- /IB:RESELL-GLOBAL -->
+    <aside class="rs-basis" aria-label="이 페이지의 계산 기준">
+      <span class="k">MARKET BASIS · KOREA</span>
+      <h3>한국 시장 기준으로 계산합니다</h3>
+      <ul>
+        <li><b>통화</b> 원화(KRW). 매입은 달러·엔·유로·파운드·위안으로 넣습니다.</li>
+        <li><b>관부가세</b> 목록통관 면세 한도 $150(미국에서 보낸 물품 $200) · 부가세 10% · 통관수수료 4,000원</li>
+        <li><b>판매 수수료</b> 크림 6.6% + 2,750원 · 번개장터 6% · 네이버 스마트스토어 4.95% · 무신사 유즈드 15% + 7,000원 · 당근 0%</li>
+      </ul>
+    </aside>
 
+    <section class="rs-picks rs-picks--goods" id="rs-goods" hidden></section>
+    <section class="rs-picks rs-picks--lux" id="rs-lux" hidden></section>
+    <section class="rs-picks rs-picks--cards" id="rs-cards" hidden></section>
+    <!-- /IB:RESELL-SECTIONS -->
+
+    <span id="rs-calc" class="rs-anchor" aria-hidden="true"></span>
     <div class="rs-tabs" role="tablist" aria-label="매입 경로">
       <button class="rs-tab" type="button" role="tab" id="rs-tab-abroad" data-tab="abroad" aria-selected="true" aria-controls="rs-panel-abroad" tabindex="0">
         <span class="t-code">OVERSEAS · DIRECT PURCHASE</span>
@@ -571,8 +585,8 @@
 
 <div class="rs-toast" id="rs-toast" role="status" aria-live="polite"></div>
 <script src="assets/js/monetize.js?v=20261126a" defer></script>
-<script src="assets/js/resell.js?v=20261126a" defer></script>
-<script src="assets/js/resell-picks.js?v=20261127e" defer></script>
+<script src="assets/js/resell.js?v=20261128a" defer></script>
+<script src="assets/js/resell-picks.js?v=20261128a" defer></script>
 <script src="assets/js/nav.js?v=20261124c"></script>
 <!-- IB:CHAT-FLOAT -->
 <script src="assets/js/chat-float.js?v=20261124c" defer></script>

@@ -12,9 +12,65 @@
 
   var LOCALE = { ko: 'ko-KR', en: 'en-US', zh: 'zh-CN', ja: 'ja-JP' }[LANG];
   var PAGE_CUR = { ko: 'KRW', en: 'USD', zh: 'CNY', ja: 'JPY' }[LANG];
-  var VAT_RATE = 0.1;
-  var LIMIT_DEFAULT = 150;
-  var LIMIT_US = 200;
+
+  /* ---------------------------------------------------------------
+     나라별 기준 — 이 페이지의 계산기·기본값이 어느 시장을 따르는지
+       ko: 한국 목록통관 면세 $150(미국 $200) · 부가세 10% · 통관수수료 4,000원
+       en: 미국 Section 321 면세 $800 · 연방 부가세 없음(주 판매세는 별도) · 통관수수료 없음
+       zh: 중국 개인우편물 1회 한도 ¥1,000(홍콩·마카오 ¥800) · 행우세 13/20/50% · 세액 50위안 이하 면세
+       ja: 일본 면세 한도 과세가격 ¥10,000(=소매 ¥16,666) · 소비세 10% · 과세가격은 소매가×0.6
+     수수료·고정비는 각 시장 통화로 적는다(그 시장 페이지에서만 쓰인다).
+  --------------------------------------------------------------- */
+  var MKT = {
+    ko: {
+      cur: 'KRW', dec: 0, vat: 0.10, fee: 4000, tax: 'kr', limit: 150, limitUs: 200,
+      rates: { KRW: 1, USD: 1343.9, EUR: 1474.6, GBP: 1761.2, JPY: 8.4437, CNY: 201.57, CAD: 943.7 },
+      platforms: {
+        kream: { fee: 6.6, fixed: 2750, label: '크림 KREAM (Level 1)' },
+        bunjang: { fee: 6, fixed: 0, label: '번개장터' },
+        naver: { fee: 4.95, fixed: 0, label: '네이버 스마트스토어 (영세)' },
+        musinsa: { fee: 15, fixed: 7000, label: '무신사 유즈드 (위탁)' },
+        daangn: { fee: 0, fixed: 0, label: '당근·직거래' }
+      },
+      order: ['kream', 'bunjang', 'naver', 'musinsa', 'daangn']
+    },
+    en: {
+      cur: 'USD', dec: 2, vat: 0, fee: 0, tax: 'us', limit: 800, limitUs: 800,
+      rates: { KRW: 0.000744, USD: 1, EUR: 1.0973, GBP: 1.3105, JPY: 0.006282, CNY: 0.15, CAD: 0.702 },
+      platforms: {
+        ebay: { fee: 13.6, fixed: 0.40, label: 'eBay (most categories)' },
+        ebaycards: { fee: 13.25, fixed: 0.40, label: 'eBay (trading cards)' },
+        ebaysneakers: { fee: 8, fixed: 0, label: 'eBay (sneakers $150+)' },
+        stockx: { fee: 12, fixed: 5, label: 'StockX (9% + 3% processing)' },
+        poshmark: { fee: 20, fixed: 0, label: 'Poshmark (flat 20%)' },
+        mercurius: { fee: 10, fixed: 0, label: 'Mercari US (10%)' }
+      },
+      order: ['ebay', 'ebaycards', 'ebaysneakers', 'stockx', 'poshmark', 'mercurius']
+    },
+    zh: {
+      cur: 'CNY', dec: 2, vat: 0, fee: 0, tax: 'cn', limit: 1000, limitUs: 1000,
+      rates: { KRW: 0.00496, USD: 6.6667, EUR: 7.315, GBP: 8.737, JPY: 0.0419, CNY: 1, CAD: 4.68 },
+      platforms: {
+        xianyu: { fee: 0.6, fixed: 0, label: '闲鱼 (0.6%, 单笔最高60元)' },
+        xianyupb: { fee: 1.6, fixed: 0, label: '闲鱼鱼小铺 (1.6%)' },
+        dewu: { fee: 5, fixed: 0, label: '得物 Dewu (카테고리별 2~5%)' },
+        taobao: { fee: 0.6, fixed: 0, label: '淘宝 (支付手续费 0.6%)' }
+      },
+      order: ['xianyu', 'xianyupb', 'dewu', 'taobao']
+    },
+    ja: {
+      cur: 'JPY', dec: 0, vat: 0.10, fee: 0, tax: 'jp', limit: 16666, limitUs: 16666,
+      rates: { KRW: 0.1185, USD: 159.2, EUR: 174.7, GBP: 208.6, JPY: 1, CNY: 23.9, CAD: 111.9 },
+      platforms: {
+        mercari: { fee: 10, fixed: 0, label: 'メルカリ (10%)' },
+        snkrdunk: { fee: 9.5, fixed: 0, label: 'スニダン (9.5~7.0%)' },
+        yahooauc: { fee: 10, fixed: 0, label: 'ヤフオク (10%)' },
+        rakuma: { fee: 10, fixed: 0, label: 'ラクマ (10~4.5%)' },
+        yahooflea: { fee: 5, fixed: 0, label: 'Yahoo!フリマ (5%)' }
+      },
+      order: ['mercari', 'snkrdunk', 'yahooauc', 'rakuma', 'yahooflea']
+    }
+  }[LANG];
 
   var SYM = { KRW: '₩', USD: 'US$', JPY: 'JPY ', EUR: '€', GBP: '£', CAD: 'C$', SEK: 'kr ', CNY: 'CN¥' };
   var FX = { USD: 1343.9, JPY: 8.4437, EUR: 1474.6, GBP: 1761.2, CAD: 943.7, SEK: 131.6, CNY: 201.57 };
@@ -49,7 +105,7 @@
       grpCost: '투입', grpSell: '판매', grpProfit: '손익',
       warnZero: '매입가와 판매가를 넣으면 바로 계산됩니다.',
       best: '최고', selected: '선택', pctApplied: '{p}% + {w}원',
-      fxHint: '시황판 환율 USD {usd} · JPY {jpy} · CNY {cny} (1단위)',
+      fxHint: '시황판 환율 $1 = {usd}원 · ¥1 = {jpy}원',
       fxEditable: '직접 고쳐도 됩니다',
       eurHint: '유로는 시황판에 없어 참고값입니다. 직접 고쳐도 됩니다.',
       priceHint: '현지 배송비는 아래에서 따로 더합니다.',
@@ -70,9 +126,9 @@
       bep: 'Break-even purchase price', bepSub: 'above this you lose money',
       bepNone: 'out of range', bepFree: 'loses even at zero',
       freeBadge: 'Duty-free', taxBadge: 'Duty & VAT', bizBadge: 'Resale · taxed', domBadge: 'Domestic deal',
-      freeMsg: 'Goods value {goods} — under the {limit} limit, so no duty or VAT applies.',
-      taxMsg: 'Goods value {goods} — over the {limit} limit, so {rate}% duty and 10% VAT apply.',
-      bizMsg: 'Goods for resale are taxed whatever the value: {rate}% duty and 10% VAT.',
+      freeMsg: 'Goods value {goods} — under the {limit} de minimis (Section 321), so no duty applies.',
+      taxMsg: 'Goods value {goods} — over the {limit} de minimis, so {rate}% duty applies by HTS. No federal VAT.',
+      bizMsg: 'Goods imported for resale are a business import: {rate}% duty applies from the first dollar.',
       domMsg: 'Buying and selling inside Korea means no duty or VAT — only platform fees and courier costs.',
       limitLine: 'limit {limit} · goods {goods}',
       memoTarget: 'Sale price for {p}% margin', memoSaleMargin: 'Margin on sale price',
@@ -80,15 +136,15 @@
       tableTitle: 'Calculation detail', compareTitle: 'Settlement by platform', compareNote: 'Same sale price, only the platform changed. Fees and fixed fees differ.',
       colItem: 'Item', colAmount: 'Amount', colNote: 'Basis', colPlatform: 'Platform', colFee: 'Fee', colSettle: 'Settlement', colNet: 'Net profit', colRoi: 'ROI',
       rBuy: 'Purchase price', rBuySub: 'local currency × rate', rLocal: 'Local shipping', rLocalSub: 'inside the sending country',
-      rIntl: 'International shipping', rIntlSub: 'to Korea', rForward: 'Forwarder fee', rForwardSub: 'consolidation, inspection',
-      rDuty: 'Customs duty', rDutySub: 'customs value × rate', rVat: 'VAT', rVatSub: '(value + duty) × 10%',
+      rIntl: 'International shipping', rIntlSub: 'to the US', rForward: 'Forwarder fee', rForwardSub: 'consolidation, inspection',
+      rDuty: 'Customs duty', rDutySub: 'customs value × rate', rVat: 'VAT', rVatSub: 'no federal VAT at import',
       rOther: 'Other costs', rOtherSub: 'inspection, packing, ads', rCost: 'Total cost',
       rSell: 'Sale price', rSellSub: 'listing price', rFee: 'Platform fee', rFeeSub: 'price × rate + fixed',
       rShipout: 'Seller-paid delivery', rShipOutSub: 'to inspection centre or buyer', rSettle: 'Expected settlement', rNet: 'Net profit',
       grpCost: 'Cost', grpSell: 'Sale', grpProfit: 'Result',
       warnZero: 'Enter a purchase price and a sale price to see the result.',
       best: 'Best', selected: 'selected', pctApplied: '{p}% + {w}',
-      fxHint: 'Market board: USD {usd} · JPY {jpy} · CNY {cny} per unit',
+      fxHint: 'Market board rates: $1 = {usd} · ¥1 = {jpy} (in this page’s currency)',
       fxEditable: 'editable',
       eurHint: 'EUR is not on the market board; reference rate, editable.',
       priceHint: 'Local shipping is added separately below.',
@@ -109,18 +165,18 @@
       bep: '盈亏平衡采购价', bepSub: '高于此价就亏',
       bepNone: '超出计算范围', bepFree: '免费也亏',
       freeBadge: '免税 · 目录通关', taxBadge: '征税 · 进口申报', bizBadge: '转售 · 征税', domBadge: '国内交易',
-      freeMsg: '物品价值 {goods}，未超过 {limit} 限额，不征收关税与增值税。',
-      taxMsg: '物品价值 {goods}，已超过 {limit} 限额，需缴纳关税 {rate}% 与增值税 10%。',
-      bizMsg: '转售用途不论金额，一律征收关税 {rate}% 与增值税 10%。',
-      domMsg: '在韩国境内买卖不涉及关税与增值税，只需看平台手续费和快递费。',
+      freeMsg: '物品价值 {goods}，未超过 {limit} 限额，免征行邮税。',
+      taxMsg: '物品价值 {goods}，已超过 {limit} 限额，按行邮税 {rate}% 计征。',
+      bizMsg: '转售用途属商业进口，需按货物报关并缴纳关税与增值税（参考税率 {rate}%）。',
+      domMsg: '境内买卖不涉及行邮税，只需看平台手续费和快递费。',
       limitLine: '限额 {limit} · 物品价值 {goods}',
       memoTarget: '目标利润率 {p}% 的售价', memoSaleMargin: '占售价比的利润率',
       memoPerUnit: '投入成本倍数',
       tableTitle: '计算明细', compareTitle: '各平台结算比较', compareNote: '同一售价下只更换平台，差异仅在手续费与固定费用。',
       colItem: '项目', colAmount: '金额', colNote: '依据', colPlatform: '平台', colFee: '手续费', colSettle: '结算额', colNet: '净利润', colRoi: 'ROI',
       rBuy: '采购价', rBuySub: '当地货币 × 汇率', rLocal: '当地运费', rLocalSub: '发货国内配送',
-      rIntl: '国际运费', rIntlSub: '运至韩国', rForward: '转运公司费用', rForwardSub: '合箱·验货',
-      rDuty: '关税', rDutySub: '完税价格 × 税率', rVat: '增值税', rVatSub: '(完税价格+关税) × 10%',
+      rIntl: '国际运费', rIntlSub: '运至中国', rForward: '转运公司费用', rForwardSub: '合箱·验货',
+      rDuty: '行邮税', rDutySub: '完税价格 × 税率', rVat: '增值税', rVatSub: '个人物品不另征增值税',
       rOther: '其他费用', rOtherSub: '验货·包装·广告', rCost: '总投入成本',
       rSell: '售价', rSellSub: '挂牌价格', rFee: '平台手续费', rFeeSub: '售价 × 费率 + 固定费',
       rShipout: '卖家承担运费', rShipOutSub: '寄至检验中心或买家', rSettle: '预计结算额', rNet: '净利润',
@@ -148,25 +204,25 @@
       bep: '損益分岐の仕入価格', bepSub: 'これより高いと赤字',
       bepNone: '計算範囲外', bepFree: '0円でも赤字',
       freeBadge: '免税 · リスト通関', taxBadge: '課税 · 輸入申告', bizBadge: '転売用 · 課税', domBadge: '国内取引',
-      freeMsg: '物品価格 {goods}。限度 {limit} 以下なので関税・付加価値税はかかりません。',
-      taxMsg: '物品価格 {goods}。限度 {limit} を超えるため、関税 {rate}% と付加価値税 10% がかかります。',
-      bizMsg: '転売目的なら金額にかかわらず関税 {rate}% と付加価値税 10% がかかります。',
-      domMsg: '国内での売買は関税・付加価値税がかかりません。手数料と送料だけを見ます。',
+      freeMsg: '物品価格 {goods}。課税価格が限度（小売16,666円が目安）以下なので関税・消費税はかかりません。',
+      taxMsg: '物品価格 {goods}。免税限度を超えるため、関税 {rate}% と消費税 10% がかかります（課税価格は小売×0.6）。',
+      bizMsg: '転売目的の輸入は個人使用の免税が使えず、関税 {rate}% と消費税 10% がかかります。',
+      domMsg: '国内での売買は関税・消費税がかかりません。手数料と送料だけを見ます。',
       limitLine: '限度 {limit} · 物品価格 {goods}',
       memoTarget: '目標利益率 {p}% の販売価格', memoSaleMargin: '販売価格に対する粗利率',
       memoPerUnit: 'コスト倍率',
       tableTitle: '計算内訳', compareTitle: 'プラットフォーム別の精算比較', compareNote: '同じ販売価格でプラットフォームだけ変えた比較です。違いは手数料と固定費のみ。',
       colItem: '項目', colAmount: '金額', colNote: '根拠', colPlatform: 'プラットフォーム', colFee: '手数料', colSettle: '精算額', colNet: '純利益', colRoi: 'ROI',
       rBuy: '仕入価格', rBuySub: '現地通貨 × レート', rLocal: '現地送料', rLocalSub: '発送国内の配送',
-      rIntl: '国際送料', rIntlSub: '韓国まで', rForward: '転送業者手数料', rForwardSub: '同梱・検品',
-      rDuty: '関税', rDutySub: '課税価格 × 税率', rVat: '付加価値税', rVatSub: '(課税価格+関税) × 10%',
+      rIntl: '国際送料', rIntlSub: '日本まで', rForward: '転送業者手数料', rForwardSub: '同梱・検品',
+      rDuty: '関税', rDutySub: '課税価格 × 税率', rVat: '消費税', rVatSub: '(課税価格+関税) × 10%',
       rOther: 'その他費用', rOtherSub: '検品・梱包・広告', rCost: '総コスト',
       rSell: '販売価格', rSellSub: '出品価格', rFee: 'プラットフォーム手数料', rFeeSub: '販売価格 × 率 + 固定費',
       rShipout: '売り手負担の送料', rShipOutSub: '検品センター・購入者へ', rSettle: '見込み精算額', rNet: '純利益',
       grpCost: 'コスト', grpSell: '販売', grpProfit: '損益',
       warnZero: '仕入価格と販売価格を入れるとすぐ計算します。',
       best: '最良', selected: '選択中', pctApplied: '{p}% + {w}',
-      fxHint: '市況板レート：1単位 USD {usd} · JPY {jpy} · CNY {cny}',
+      fxHint: '市況レート：$1 = {usd}円 · ¥1 = {jpy}円（このページの通貨）',
       fxEditable: '手入力もできます',
       eurHint: 'ユーロは市況板にないため参考値です。手入力もできます。',
       priceHint: '現地送料は下で別に加えます。',
@@ -180,22 +236,11 @@
     }
   }[LANG];
 
-  /* ---------------- 플랫폼 프리셋 ---------------- */
-  var PLATFORMS = {
-    kream: { fee: 6.6, fixed: 2750,
-      label: { ko: '크림 KREAM (Level 1)', en: 'KREAM (Level 1)', zh: 'KREAM（Level 1）', ja: 'KREAM（Level 1）' } },
-    bunjang: { fee: 6, fixed: 0,
-      label: { ko: '번개장터', en: 'Bunjang', zh: '闪电市场 Bunjang', ja: 'バンジャン Bunjang' } },
-    naver: { fee: 4.95, fixed: 0,
-      label: { ko: '네이버 스마트스토어 (영세)', en: 'Naver Smart Store (small seller)', zh: 'Naver 智能商店（小规模）', ja: 'Naver スマートストア（零細）' } },
-    musinsa: { fee: 15, fixed: 7000,
-      label: { ko: '무신사 유즈드 (위탁)', en: 'Musinsa Used (consignment)', zh: 'Musinsa Used（委托销售）', ja: 'Musinsa Used（委託販売）' } },
-    daangn: { fee: 0, fixed: 0,
-      label: { ko: '당근·직거래', en: 'Danggeun / in person', zh: 'Danggeun／当面交易', ja: 'タンジュン／手渡し' } },
-    custom: { fee: 0, fixed: 0,
-      label: { ko: '직접 입력', en: 'Custom', zh: '自定义', ja: '手入力' } }
-  };
-  var COMPARE_ORDER = ['kream', 'bunjang', 'naver', 'musinsa', 'daangn'];
+  /* ---------------- 플랫폼 프리셋(이 나라 시장 기준) ---------------- */
+  var PLATFORMS = {};
+  MKT.order.forEach(function (k) { PLATFORMS[k] = MKT.platforms[k]; });
+  PLATFORMS.custom = { fee: 0, fixed: 0, label: LANG === 'ko' ? '직접 입력' : (LANG === 'en' ? 'Custom' : (LANG === 'zh' ? '自定义' : '手入力')) };
+  var COMPARE_ORDER = MKT.order.slice();
 
   /* ---------------- 도우미 ---------------- */
   function $(id) { return document.getElementById(id); }
@@ -211,8 +256,9 @@
     return Number(n).toLocaleString(LOCALE, dec ? { minimumFractionDigits: dec, maximumFractionDigits: dec } : { maximumFractionDigits: 0 });
   }
   function krw(n) {
-    var v = Math.round(n);
-    return (v < 0 ? '−' : '') + '₩' + fm(Math.abs(v));
+    var v = MKT.dec ? Math.round(n * 100) / 100 : Math.round(n);
+    var body = fm(Math.abs(v), MKT.dec);
+    return (v < 0 ? '−' : '') + (SYM[MKT.cur] || MKT.cur) + body;
   }
   function cur(n, c) {
     if (c === 'KRW') return krw(n);
@@ -226,25 +272,40 @@
   function tpl(t, map) {
     return String(t).replace(/\{(\w+)\}/g, function (m, k) { return map[k] != null ? map[k] : m; });
   }
-  function fxOf(c) { return FX[c] || FX.USD; }
-  function second(krwAmount) {
-    if (PAGE_CUR === 'KRW') return '≈ ' + cur(krwAmount / FX.USD, 'USD');
-    return '≈ ' + cur(krwAmount / fxOf(PAGE_CUR), PAGE_CUR);
+  function fxOf(c) { return MKT.rates[c] || MKT.rates.USD; }
+  function second(amount) {
+    /* 다른 통화로 한 번 더 보여 줍니다 — 페이지 밖 통화(원화·달러)로 감을 잡기 위해 */
+    if (PAGE_CUR === 'KRW') return '≈ ' + cur(amount / fxOf('USD'), 'USD');
+    var krwAmt = amount / fxOf('KRW');
+    return '≈ ' + cur(krwAmt, 'KRW');
   }
   function cls(n) { return n < 0 ? ' neg' : ' pos'; }
+  /* 한국판은 면세 한도를 달러로, 다른 나라판은 그 나라 통화로 보여 줍니다. */
+  function limitTxt(m) { return MKT.tax === 'kr' ? cur(m.limit, 'USD') : cur(m.limit, PAGE_CUR); }
+  function goodsTxt(m) { return MKT.tax === 'kr' ? cur(m.goodsUsd, 'USD') : cur(m.goodsKrw, PAGE_CUR); }
 
   /* ---------------- 핵심 계산 ---------------- */
   /* 해외직구: 세금은 (물품가+현지배송+국제운송) 기준, 면세 판정은 물품가(현지배송 포함)의 달러 환산액 */
   function abroadModel(p) {
-    var localKrw = p.local * p.fx;
-    var goodsKrw = p.price * p.fx;
-    var base = goodsKrw + localKrw + p.intl;     /* 과세가격 */
-    var goodsUsd = (p.price + p.local) * p.fx / fxOf('USD');
-    var limit = p.cur === 'USD' ? LIMIT_US : LIMIT_DEFAULT;
-    var taxable = p.business || goodsUsd > limit;
-    var duty = taxable ? base * p.dutyPct / 100 : 0;
-    var vat = taxable ? (base + duty) * VAT_RATE : 0;
-    var cost = base + p.forward + p.other + duty + vat;
+    var rate = p.fx > 0 ? p.fx : fxOf(p.cur);    /* 1 현지 통화 = ? 페이지 통화 */
+    var localKrw = p.local * rate;
+    var goodsKrw = p.price * rate;
+    var base = goodsKrw + localKrw + p.intl;     /* 과세가격(국제운송비 포함) */
+    var goodsUsd = (p.price + p.local) * rate / fxOf('USD');
+    /* 면세 한도는 이 나라 기준. 미국에서 보낸 물품(USD 결제)만 한국은 $200을 씁니다. */
+    var limit = (MKT.tax === 'kr' && p.cur === 'USD') ? MKT.limitUs : MKT.limit;
+    var taxable = p.business || goodsKrw > limit;
+    var duty = 0, vat = 0;
+    if (MKT.tax === 'jp') {
+      /* 일본: 과세가격 = 소매가×0.6, 소비세 10%는 (과세가격+관세)에 */
+      var cv = (goodsKrw + localKrw) * 0.6;
+      duty = taxable ? cv * p.dutyPct / 100 : 0;
+      vat = taxable ? (cv + duty) * MKT.vat : 0;
+    } else {
+      duty = taxable ? base * p.dutyPct / 100 : 0;
+      vat = taxable ? (base + duty) * MKT.vat : 0;
+    }
+    var cost = base + p.forward + p.other + duty + vat + (taxable ? MKT.fee : 0);
     var fee = p.sell * p.fee / 100 + p.fixed;
     var settle = p.sell - fee - p.shipout;
     return {
@@ -271,7 +332,7 @@
       forward: val('rs-a-forward'),
       dutyPct: val('rs-a-duty'),
       business: $('rs-a-business') ? $('rs-a-business').checked : false,
-      platform: selVal('rs-a-platform', 'kream'),
+      platform: selVal('rs-a-platform', MKT.order[0]),
       sell: val('rs-a-sell'),
       fee: val('rs-a-fee'),
       fixed: val('rs-a-fixed'),
@@ -285,7 +346,7 @@
     return {
       price: val('rs-d-price'),
       buyShip: val('rs-d-buy-ship'),
-      platform: selVal('rs-d-platform', 'bunjang'),
+      platform: selVal('rs-d-platform', MKT.order[0]),
       sell: val('rs-d-sell'),
       fee: val('rs-d-fee'),
       fixed: val('rs-d-fixed'),
@@ -423,10 +484,10 @@
         msg = tpl(T.bizMsg, { rate: fm(p.dutyPct, 1) });
       } else if (m.taxable) {
         badge = T.taxBadge; bcls = 'tax';
-        msg = tpl(T.taxMsg, { goods: cur(m.goodsUsd, 'USD'), limit: cur(m.limit, 'USD'), rate: fm(p.dutyPct, 1) });
+        msg = tpl(T.taxMsg, { goods: goodsTxt(m), limit: limitTxt(m), rate: fm(p.dutyPct, 1) });
       } else {
         badge = T.freeBadge; bcls = 'free';
-        msg = tpl(T.freeMsg, { goods: cur(m.goodsUsd, 'USD'), limit: cur(m.limit, 'USD') });
+        msg = tpl(T.freeMsg, { goods: goodsTxt(m), limit: limitTxt(m) });
       }
 
       out.innerHTML =
@@ -515,29 +576,36 @@
   /* ---------------- 힌트 갱신 ---------------- */
   function paintFxHints() {
     var a = $('rs-a-fx-hint');
-    if (a) a.textContent = tpl(T.fxHint, { usd: fm(FX.USD, 2), jpy: fm(FX.JPY, 2), cny: fm(FX.CNY, 2) }) + ' · ' + T.fxEditable;
+    if (!a) return;
+    /* 1단위가 이 페이지 통화로 얼마인지 보여 줍니다(예: $1 = ₩1,343.9). */
+    a.textContent = tpl(T.fxHint, { unit: SYM[PAGE_CUR] || PAGE_CUR,
+      usd: fm(fxOf('USD'), 2), jpy: fm(fxOf('JPY'), 4), cny: fm(fxOf('CNY'), 2) }) + ' · ' + T.fxEditable;
   }
 
   function paintCatHint() {
-    var el = $('rs-a-cat-hint'), duty = val('rs-a-duty');
-    if (el) el.textContent = tpl(T.catHint, { rate: fm(duty, 1), eff: fm(duty * 1.1 + 10, 1) });
+    var el = $('rs-a-cat-hint');
+    if (!el) return;
+    var duty = val('rs-a-duty');
+    var eff = MKT.tax === 'jp' ? (duty * 0.6 + 10) : (duty * (1 + MKT.vat) + MKT.vat * 100);
+    el.textContent = tpl(T.catHint, { rate: fm(duty, 1), eff: fm(eff, 1) });
   }
 
   function paintPriceHint() {
     var el = $('rs-a-price-hint');
     if (!el) return;
     var curC = selVal('rs-a-cur', 'USD');
-    if (curC === 'KRW') { el.textContent = T.priceHint; return; }
+    if (curC === PAGE_CUR) { el.textContent = T.priceHint; return; }
     var usd = val('rs-a-price') * val('rs-a-fx') / fxOf('USD');
-    var limit = curC === 'USD' ? LIMIT_US : LIMIT_DEFAULT;
-    el.textContent = tpl(T.priceHintUsd, { usd: cur(usd, 'USD'), limit: cur(limit, 'USD') });
+    var limitUsd = (MKT.tax === 'kr' && curC === 'USD') ? MKT.limitUs : MKT.limit;
+    var limitShown = (curC === 'USD' || MKT.tax === 'kr') ? cur(limitUsd, 'USD') : cur(limitUsd, PAGE_CUR);
+    el.textContent = tpl(T.priceHintUsd, { usd: cur(usd, 'USD'), limit: limitShown });
   }
 
   function paintPlatformHint(which) {
     var id = which === 'a' ? 'rs-a-platform-hint' : 'rs-d-platform-hint';
     var el = $(id);
     if (!el) return;
-    var key = selVal(which === 'a' ? 'rs-a-platform' : 'rs-d-platform', 'kream');
+    var key = selVal(which === 'a' ? 'rs-a-platform' : 'rs-d-platform', MKT.order[0]);
     var pl = PLATFORMS[key] || PLATFORMS.custom;
     if (key === 'custom') { el.textContent = T.customHint; return; }
     el.textContent = pl.fixed
@@ -546,7 +614,7 @@
   }
 
   function applyPlatform(which, silent) {
-    var key = selVal(which === 'a' ? 'rs-a-platform' : 'rs-d-platform', 'kream');
+    var key = selVal(which === 'a' ? 'rs-a-platform' : 'rs-d-platform', MKT.order[0]);
     var pl = PLATFORMS[key];
     if (!pl || key === 'custom') { paintPlatformHint(which); render(); return; }
     var feeId = which === 'a' ? 'rs-a-fee' : 'rs-d-fee';
@@ -580,6 +648,12 @@
           if (x.code === 'USD/KRW' && x.price > 0) { FX.USD = x.price; FX_DATE = x.date || ''; }
           if (x.code === 'CNY/KRW' && x.price > 0) FX.CNY = x.price;
           if (x.code === 'JPY/KRW' && x.price > 0) FX.JPY = x.price / 100;
+          /* 시황판(원화 기준)을 이 페이지 통화 기준으로 다시 계산합니다. */
+          var baseRate = { KRW: 1, USD: FX.USD, JPY: FX.JPY, CNY: FX.CNY, EUR: FX.EUR, GBP: FX.GBP, CAD: FX.CAD }[PAGE_CUR] || 1;
+          Object.keys(MKT.rates).forEach(function (c) {
+            var krwPer = { KRW: 1, USD: FX.USD, JPY: FX.JPY, CNY: FX.CNY, EUR: FX.EUR, GBP: FX.GBP, CAD: FX.CAD }[c];
+            if (krwPer) MKT.rates[c] = krwPer / baseRate;
+          });
         });
         /* 사용자가 고친 적이 없는 필드만 새 환율로 채웁니다. */
         ['rs-a-fx', 'rs-d-fx'].forEach(function (id) {
