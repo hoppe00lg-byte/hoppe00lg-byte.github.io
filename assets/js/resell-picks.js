@@ -291,7 +291,7 @@
   function base() { return /^\/(en|zh|ja)\//.test(location.pathname) ? '../' : ''; }
   function fresh(d) {
     var age = (Date.now() - new Date(d.generatedAt || d.date).getTime()) / 36e5;
-    return !(isFinite(age) && age > 96);       /* 나흘 넘게 끊긴 데이터는 내보내지 않습니다 */
+    return !(isFinite(age) && age > 240);      /* 열흘 넘게 끊긴 데이터는 내보내지 않습니다 */
   }
   function num(n) { return n > 0 ? '+' + nf(Math.round(n)) : '\u2212' + nf(Math.abs(Math.round(n))); }
 
