@@ -35,6 +35,7 @@ PAGES = [
     ("forms.html", "main", 0.8),
     ("404.html", "main", 0.4),
     ("exhibitions.html", "#ex-cal .ex-chip", 1.6),
+    ("review-reply.html", "#rv-cards .rv-card", 1.4),
 ]
 
 JS_COLLECT = r"""

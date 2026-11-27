@@ -233,7 +233,7 @@ HISTORY = {"data": None}
 # 빠지지 않았는지만 확인합니다.
 NAV_REQUIRED = ("index.html", "market.html", "salary.html", "tax.html", "biz.html",
                 "forms.html", "law.html", "seller.html", "lotto.html", "saju.html", "music.html", "creator.html", "style.html", "freight.html",
-                "sourcing.html", "mfg-cost.html", "resell.html", "sitemap.html", "about.html", "ad.html", "contact.html")
+                "sourcing.html", "mfg-cost.html", "resell.html", "review-reply.html", "sitemap.html", "about.html", "ad.html", "contact.html")
 
 
 def validate_nav():
@@ -512,6 +512,7 @@ def write_sitemap(site, articles):
         ("creator.html", "0.8"),
         ("style.html", "0.8"),
         ("freight.html", "0.8"),
+        ("review-reply.html", "0.9"),
         ("sourcing.html", "0.8"),
         ("mfg-cost.html", "0.8"),
         ("resell.html", "0.8"),

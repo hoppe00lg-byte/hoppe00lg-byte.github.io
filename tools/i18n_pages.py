@@ -31,7 +31,7 @@ BASE_URL = "https://insightbriefnews.com"
 
 PAGE_FILES = [
     "index.html", "article.html", "market.html", "biz.html", "seller.html", "links.html",
-    "lotto.html", "saju.html", "music.html", "style.html", "freight.html", "sourcing.html", "mfg-cost.html", "resell.html", "creator.html", "salary.html", "insurance.html", "forms.html", "experts.html", "about.html",
+    "lotto.html", "saju.html", "music.html", "review-reply.html", "style.html", "freight.html", "sourcing.html", "mfg-cost.html", "resell.html", "creator.html", "salary.html", "insurance.html", "forms.html", "experts.html", "about.html",
     "contact.html", "ad.html", "404.html", "global.html", "exhibitions.html",
 ]
 # 기사별 페이지 생성에 쓰는 원본
