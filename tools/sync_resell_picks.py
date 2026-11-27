@@ -410,6 +410,10 @@ def main() -> int:
     ap.add_argument("--only", default="", help="goods,lux,cards 중 골라서")
     ap.add_argument("--check", action="store_true", help="파일을 쓰지 않고 결과만 확인")
     ap.add_argument("--max-age-hours", type=float, default=36.0, help="이보다 오래된 리포트면 경고")
+    # 예전 워크플로(resell-sync.yml)가 넘기던 인자 — 이제 쓰지 않지만 실행이 깨지지 않게 받아 둔다.
+    ap.add_argument("--pokemon-report", default="", help=argparse.SUPPRESS)
+    ap.add_argument("--top", type=int, default=0, help=argparse.SUPPRESS)
+    ap.add_argument("--pokemon-top", type=int, default=0, help=argparse.SUPPRESS)
     args = ap.parse_args()
 
     want = {x.strip() for x in args.only.split(",") if x.strip()} or {"goods", "lux", "cards"}
@@ -417,8 +421,8 @@ def main() -> int:
 
     if "goods" in want or "lux" in want:
         if not os.path.exists(args.global_report):
-            print(f"[global] 리포트가 없습니다: {args.global_report}")
-            codes.append(2)
+            print(f"[global] 리포트가 없습니다: {args.global_report} — 상품·명품 섹션은 이전 데이터를 그대로 둡니다.")
+            codes.append(0)
         else:
             g = load(args.global_report)
             sneaker = load(args.report) if os.path.exists(args.report) else None
@@ -428,9 +432,11 @@ def main() -> int:
                 codes.append(sync_one("lux", build_lux_doc(g, args.lux_top), LUX_OUT, args, "lux"))
 
     if "cards" in want:
+        if not os.path.exists(args.cards_report) and args.pokemon_report and os.path.exists(args.pokemon_report):
+            args.cards_report = args.pokemon_report        # 예전 워크플로 호환(카드 리포트 이름만 달랐다)
         if not os.path.exists(args.cards_report):
-            print(f"[cards] 리포트가 없습니다: {args.cards_report}")
-            codes.append(2)
+            print(f"[cards] 리포트가 없습니다: {args.cards_report} — 카드 섹션은 이전 데이터를 그대로 둡니다.")
+            codes.append(0)
         else:
             c = load(args.cards_report)
             codes.append(sync_one("cards", build_cards_doc(c, args.cards_top), CARDS_OUT, args, "cards"))
