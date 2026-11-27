@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Fri, 27 Nov 2026 20:58:18 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 01:10:22 +0900</lastBuildDate>
+    <item>
+      <title>횡단보도 12대 중과실 사고, 뇌신경 손상 피해자의 경제적 손실과 배상 범위</title>
+      <link>https://insightbriefnews.com/a/traffic-accident-compensation-analysis-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/traffic-accident-compensation-analysis-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 01:01:02 +0900</pubDate>
+      <category>부동산·생활세금</category>
+      <description>2026년 11월 10일 발생한 부산 아파트 앞 횡단보도 사고는 12대 중과실에 해당한다. 전치 14주의 중상과 영구적 장애 가능성에 따른 민사상 배상액을 산정해 본다.</description>
+    </item>
+    <item>
+      <title>유럽 축구장 폭력 사태 확산과 기업 공급망 리스크 관리</title>
+      <link>https://insightbriefnews.com/a/european-stadium-violence-logistics-risk-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/european-stadium-violence-logistics-risk-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 00:59:41 +0900</pubDate>
+      <category>국제·지정학</category>
+      <description>2026년 11월 27일 마르세유 등 주요 도시에서 발생한 축구장 폭력 사태가 유럽 내 사회적 긴장감을 고조시키고 있다. UEFA는 조사관을 파견해 징계 절차에 착수했으며, 이는 기업의 물류 운영 환경에도 직간접적인 영향을 미칠 것으로 보인다.</description>
+    </item>
     <item>
       <title>디지털지급토큰, 스테이블코인이라는 이름이 사라진 이유</title>
       <link>https://insightbriefnews.com/a/digital-payment-token-stablecoin-law-2026.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 22:15:00 +0900</pubDate>
       <category>AI·테크</category>
       <description>한국인공지능·소프트웨어산업협회(KOSA)가 11월 24일 &#x27;AI사업 대가산정 참고자료(안)&#x27;을 공개했다. AI 직무 18개를 기존 SW기술자 평균임금 17개 직무에 붙였는데, 같은 검증 단계인 테스트 엔지니어는 IT테스터(월 405만 3,137원), 품질 검증 전문가는 IT품질관리자(월 1,104만 2,071원) 칸에 들어갔다. 가이드 반영은 2028년이고, 그 전에 2027년 정부 AI 예산 16조 4,000억 원이 발주된다.</description>
-    </item>
-    <item>
-      <title>인도향은 5%, 중국향은 2% — 값이 오르는 동안 유럽행 화물은 세관에 등록되기 시작했다</title>
-      <link>https://insightbriefnews.com/a/pvc-eu-registration-35-percent-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/pvc-eu-registration-35-percent-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 21:15:00 +0900</pubDate>
-      <category>무역·원자재</category>
-      <description>11월 대만 플라스틱공업은 인도향 PVC를 톤당 1,020달러, 중국향을 880달러로 올렸다. 그 사이 10월 27일부터 EU 세관은 한국산 PVC를 한 톤씩 등록하고 있다. 유럽은 한국 PVC 수출의 35.1%다. 제소장이 계산한 한국산 산업피해 제거 수준은 53%다.</description>
-    </item>
-    <item>
-      <title>4,697.51 — 고점에서 50.22%, 그 사이 사이드카는 102번 울렸다</title>
-      <link>https://insightbriefnews.com/a/kospi-4697-sidecar-102-volatility-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/kospi-4697-sidecar-102-volatility-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 20:45:00 +0900</pubDate>
-      <category>경제·금융</category>
-      <description>2026년 11월 25일 코스피는 6.16% 내린 4,697.51에 마감해 10개월여 만의 최저 종가를 기록했다. 장중 저점은 6월 19일 고점 대비 50.22% 낮은 수준으로, 2000년 이후 고점 대비 반토막은 네 번째다. 올해 사이드카는 102회, 하루 5% 이상 움직인 날은 43거래일이었다. 그 사이 개인은 1조4,232억 원을 샀고, 신용융자 잔고는 25조8,800억 원이 남았다.</description>
     </item>
   </channel>
 </rss>

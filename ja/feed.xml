@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 20:58:34 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 01:10:29 +0900</lastBuildDate>
+    <item>
+      <title>横断歩道での12大重過失事故：日本の家計にも影響する損害賠償と法的リスクの構造</title>
+      <link>https://insightbriefnews.com/ja/a/traffic-accident-compensation-analysis-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/traffic-accident-compensation-analysis-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 01:01:02 +0900</pubDate>
+      <category>不動産・税金</category>
+      <description>2026年11月10日に発生した歩行者事故は、運転手の注意義務違反が招いた重大な事態である。脳神経損傷を負った被害者の救済と、日本の家計が備えるべき賠償リスクについて考察する。</description>
+    </item>
+    <item>
+      <title>欧州のスタジアム暴力と物流リスク：日本企業の調達コストに及ぼす影響</title>
+      <link>https://insightbriefnews.com/ja/a/european-stadium-violence-logistics-risk-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/european-stadium-violence-logistics-risk-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 00:59:41 +0900</pubDate>
+      <category>国際・地政学</category>
+      <description>2026年11月27日に発生した欧州各地のスタジアムでの衝突は、単なるスポーツの騒乱を超え、域内の物流安定性を脅かしている。フランスの政治的不安が重なり、サプライチェーンのコスト管理における新たな不確実性として浮上した。</description>
+    </item>
     <item>
       <title>LINEだけでGoogleマップ運用が完結する時代へ——月4,980円の『テンポAIラボ』が示す、小規模店舗のMEO省力化</title>
       <link>https://insightbriefnews.com/ja/a/line-meo-tempo-ai-lab-2026.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Thu, 26 Nov 2026 09:05:00 +0900</pubDate>
       <category>経済・金融</category>
       <description>政府が11月5日、仮想資産所得課税を2029年1月に2年延ばし、損失3年繰越控除を推進すると明らかにした。 11月17日、基本控除250万ウォンの維持まで合意されたが、法定施行日はまだ2027年1月1日だ。定期国会は12月9日に終わり、本会議は12月1・2・9日となっている。</description>
-    </item>
-    <item>
-      <title>4,053,137ウォンと11,042,071ウォン —— AI事業の価格表が固まる日は2028年だ</title>
-      <link>https://insightbriefnews.com/ja/a/ai-project-wage-table-18-jobs-2028.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/ai-project-wage-table-18-jobs-2028.html</guid>
-      <pubDate>Wed, 25 Nov 2026 22:15:00 +0900</pubDate>
-      <category>AI・テック</category>
-      <description>韓国人工知能・ソフトウェア産業協会（KOSA）が11月24日に「AI事業対価算定参考資料（案）」を公開した。AI職務18個を既存のSW技術者平均賃金17職務に結び付け、同じ検証段階のテストエンジニアはITテスター（月405万3,137ウォン）、品質検証専門家はIT品質管理（月1,104万2,071ウォン）の欄に入った。ガイドへの反映は2028年で、その前に2027年の政府AI予算16兆4,000億ウォンが発注される。</description>
-    </item>
-    <item>
-      <title>インド向けは5％、中国向けは2％ — 値が上がるあいだ、欧州向けの貨物は税関に登録され始めた</title>
-      <link>https://insightbriefnews.com/ja/a/pvc-eu-registration-35-percent-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/pvc-eu-registration-35-percent-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 21:15:00 +0900</pubDate>
-      <category>貿易・原材料</category>
-      <description>11月、台湾プラスチック工業はインド向けPVCを1トン1,020ドル、中国向けを880ドルに引き上げた。その間、10月27日からEU税関は韓国産PVCを1トンずつ登録している。欧州は韓国PVC輸出の35.1％だ。訴状が算定した韓国産の産業被害除去水準は53％。</description>
     </item>
   </channel>
 </rss>

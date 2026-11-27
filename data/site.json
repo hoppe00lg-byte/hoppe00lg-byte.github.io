@@ -84,6 +84,14 @@
  ],
  "ticker": [
   {
+   "text": "횡단보도 12대 중과실 사고, 뇌신경 손상 피해자의 경제적 손실과 배상 범위",
+   "articleId": "traffic-accident-compensation-analysis-2026-20261128"
+  },
+  {
+   "text": "유럽 축구장 폭력 사태 확산과 기업 공급망 리스크 관리",
+   "articleId": "european-stadium-violence-logistics-risk-20261128"
+  },
+  {
    "text": "2025년 미국 에너지의 60% 소실, 전력망 효율의 물리적 한계와 비용 구조",
    "articleId": "us-energy-loss-and-efficiency-analysis-20261127"
   },
@@ -94,10 +102,6 @@
   {
    "text": "2026년 12월 1일 수원 정책 세미나, 서울·경기 부동산 규제 해법 분석",
    "articleId": "seoul-gyeonggi-real-estate-policy-seminar-2026-20261127"
-  },
-  {
-   "text": "2026년 11월 27일, 영국 병원 독감 입원율 팬데믹 이후 최고치 기록",
-   "articleId": "england-hospitals-flu-surge-nov-2026-20261127"
   }
  ],
  "editorNote": {

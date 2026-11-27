@@ -84,6 +84,14 @@
  ],
  "ticker": [
   {
+   "text": "Pedestrian safety liability: Analyzing compensation for severe neurological injury",
+   "articleId": "traffic-accident-compensation-analysis-2026-20261128"
+  },
+  {
+   "text": "Rising stadium violence in Europe poses new logistics risks for US exporters",
+   "articleId": "european-stadium-violence-logistics-risk-20261128"
+  },
+  {
    "text": "60% of US energy lost by 2025, physical limits to grid efficiency and cost structure",
    "articleId": "us-energy-loss-and-efficiency-analysis-20261127"
   },
@@ -94,10 +102,6 @@
   {
    "text": "Suwon Policy Seminar, Analysis of Real Estate Regulation Solutions in Seoul and Gyeonggi Province",
    "articleId": "seoul-gyeonggi-real-estate-policy-seminar-2026-20261127"
-  },
-  {
-   "text": "UK hospital flu admissions hit highest since pandemic",
-   "articleId": "england-hospitals-flu-surge-nov-2026-20261127"
   }
  ],
  "editorNote": {

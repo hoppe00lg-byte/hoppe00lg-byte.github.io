@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Fri, 27 Nov 2026 20:58:30 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 01:10:28 +0900</lastBuildDate>
+    <item>
+      <title>横穿人行道重伤赔偿：基于劳动能力丧失率的经济损失核算与刑事责任</title>
+      <link>https://insightbriefnews.com/zh/a/traffic-accident-compensation-analysis-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/traffic-accident-compensation-analysis-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 01:01:02 +0900</pubDate>
+      <category>房产·个税</category>
+      <description>2026年11月10日发生在釜山住宅区的人行道事故被归类为“12大严重过失”。受害者面临长期神经损伤，其民事赔偿预计将涉及巨额护理费及误工损失。</description>
+    </item>
+    <item>
+      <title>欧洲足球赛场暴力频发：中国贸易商应警惕物流供应链滞留风险</title>
+      <link>https://insightbriefnews.com/zh/a/european-stadium-violence-logistics-risk-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/european-stadium-violence-logistics-risk-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 00:59:41 +0900</pubDate>
+      <category>国际·地缘</category>
+      <description>2026年11月27日，欧洲多地足球场爆发群体冲突，社会动荡加剧。对于依赖欧洲物流网的中国出口企业而言，赛事期间的治安隐患已直接威胁货物周转效率与运营成本，物流风险防控刻不容缓。</description>
+    </item>
     <item>
       <title>为什么数字支付代币和稳定币这个名字消失了</title>
       <link>https://insightbriefnews.com/zh/a/digital-payment-token-stablecoin-law-2026.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 22:15:00 +0900</pubDate>
       <category>AI·科技</category>
       <description>韩国人工智能软件产业协会（KOSA）11月24日公开了《AI项目价格计算参考资料（案）》。它把18个AI职务挂到既有SW技术人员平均工资的17个职务上：同属验证阶段的测试工程师落在IT测试员（月405万3,137韩元）一栏，质量验证专家落在IT质量管理（月1,104万2,071韩元）一栏。正式指南要到2028年才收进去，而2027年政府AI预算16兆4,000亿韩元在那之前就已发包。</description>
-    </item>
-    <item>
-      <title>对印度涨5%，对中国涨2%——价格在涨，运往欧洲的货物却开始被海关逐一登记</title>
-      <link>https://insightbriefnews.com/zh/a/pvc-eu-registration-35-percent-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/pvc-eu-registration-35-percent-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 21:15:00 +0900</pubDate>
-      <category>贸易·原材料</category>
-      <description>11月，台湾塑胶工业把对印度的PVC报价提到每吨1,020美元，对中国880美元。与此同时，自10月27日起欧盟海关开始逐吨登记韩国产PVC。欧洲占韩国PVC出口的35.1%。诉状算出的韩国产业损害消除水平为53%。</description>
-    </item>
-    <item>
-      <title>4,697.51 — 距高点 50.22%，其间熔断机制触发 102 次</title>
-      <link>https://insightbriefnews.com/zh/a/kospi-4697-sidecar-102-volatility-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/kospi-4697-sidecar-102-volatility-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 20:45:00 +0900</pubDate>
-      <category>经济·金融</category>
-      <description>2026年11月25日，KOSPI收于4,697.51点，下跌6.16%，创下10个多月以来的最低收盘价。盘中低点较6月19日高点低50.22%，是2000年以来第四次较峰值腰斩。今年熔断机制（sidecar）触发102次，单日涨跌超过5%的交易日达43天。其间个人净买入1兆4,232亿韩元，信用交易融资余额仍剩25兆8,800亿韩元。</description>
     </item>
   </channel>
 </rss>
