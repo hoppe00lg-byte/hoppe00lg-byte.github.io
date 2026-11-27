@@ -71,6 +71,21 @@
 .rs-pk-links a{color:var(--ink-3);text-decoration:none;border-bottom:1px solid var(--rule-2)}
 .rs-pk-links a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 
+
+/* ---------- 해외직구 품목(전자기기·캠핑·생활용품·레고/피규어) 섹션 ---------- */
+.rs-picks--global{margin-top:12px}
+.rs-picks--global .rs-pk-grid{grid-template-columns:repeat(auto-fit,minmax(228px,1fr))}
+.rs-picks--global .rs-pk-card{background:#fdfdfe}
+.rs-pk-chip{appearance:none;cursor:pointer;border:1px solid var(--rule-2);background:#fff;color:var(--ink-3);
+  font-family:var(--sans);font-size:10.5px;font-weight:700;letter-spacing:.01em;padding:4px 9px;margin:9px 5px 0 0;transition:background .12s,color .12s,border-color .12s}
+.rs-pk-chip i{font-style:normal;font-family:var(--mono);font-size:9px;color:var(--muted);margin-left:2px}
+.rs-pk-chip:hover{border-color:var(--ink)}
+.rs-pk-chip.is-on{background:var(--ink);border-color:var(--ink);color:#fff}
+.rs-pk-chip.is-on i{color:#c9ced6}
+.rs-pk-chips{display:flex;flex-wrap:wrap;align-items:center}
+.rs-pk-tag.rs-pk-cat{border-color:var(--accent);color:var(--accent);background:#fff}
+.rs-pk-tag--rrp{border-style:dashed;color:var(--muted)}
+
 /* 채운 입력칸 표시 */
 .rs-field.rs-pk-flash{animation:rsPkFlash 1.3s ease-out}
 @keyframes rsPkFlash{
@@ -85,6 +100,7 @@
   .rs-pk-stat b{font-size:12.5px}
   .rs-pk-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
   .rs-picks--poke .rs-pk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .rs-picks--global .rs-pk-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .rs-pk-card{padding:9px 10px 10px}
   .rs-pk-name{font-size:12.5px}
   .rs-pk-rows dt{font-size:10px}

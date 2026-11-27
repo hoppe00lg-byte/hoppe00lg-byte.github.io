@@ -3,10 +3,14 @@
 """sync_resell_picks.py — 리셀 스캐너 결과를 웹진(resell.html)의 '오늘의 실측 마진 아이템' 데이터로 옮깁니다.
 
   python3 tools/sync_resell_picks.py                     # 최신 리포트 → data/resell-picks.json (+ en·zh·ja 사본)
-                                                        #   + reports/resell-margin/pokemon-latest.json → data/pokemon-picks.json
+                                                        #   + pokemon-latest.json → data/pokemon-picks.json
+                                                        #   + global-latest.json → data/global-picks.json
   python3 tools/sync_resell_picks.py --top 6             # 보여 줄 개수
   python3 tools/sync_resell_picks.py --check             # 파일을 쓰지 않고 결과만 확인
   python3 tools/sync_resell_picks.py --no-pokemon        # 포켓몬 카드 데이터는 건드리지 않음
+  python3 tools/sync_resell_picks.py --global-top 15     # 해외직구 품목(전자기기·캠핑·생활·레고)으로 올릴 개수(기본 15)
+  python3 tools/sync_resell_picks.py --no-global         # 해외직구 품목 데이터는 건드리지 않음
+  python3 tools/sync_resell_picks.py --global-only       # 해외직구 품목만 동기화
   python3 tools/sync_resell_picks.py --pokemon-only      # 포켓몬 카드만 동기화
   python3 tools/sync_resell_picks.py --pokemon-top 6     # 포켓몬 카드로 올릴 개수(기본 6)
   python3 tools/sync_resell_picks.py --report ../pickle-automation/reports/resell-margin/2026-11-26.json \
@@ -32,9 +36,20 @@ ROOT = os.path.abspath(os.path.join(HERE, ".."))
 DATA = os.path.join(ROOT, "data")
 OUT_NAME = "resell-picks.json"
 POKEMON_OUT_NAME = "pokemon-picks.json"
+GLOBAL_OUT_NAME = "global-picks.json"
 LANGS = ("en", "zh", "ja")
 DEFAULT_REPORT = os.path.abspath(os.path.join(ROOT, "..", "pickle-automation", "reports", "resell-margin", "latest.json"))
 DEFAULT_POKEMON_REPORT = os.path.abspath(os.path.join(ROOT, "..", "pickle-automation", "reports", "resell-margin", "pokemon-latest.json"))
+DEFAULT_GLOBAL_REPORT = os.path.abspath(os.path.join(ROOT, "..", "pickle-automation", "reports", "resell-margin", "global-latest.json"))
+
+# 해외직구 품목 카테고리 → 계산기 프리셋(data-key). 관세율은 스캐너가 실제로 적용한 값을 그대로 씁니다.
+GLOBAL_CAT_FILL = {
+    "electronics": "tech",
+    "camping": "sports",
+    "household": "custom",
+    "lego": "sports",
+    "figure": "sports",
+}
 KST = timezone(timedelta(hours=9))
 
 # 품목 → 계산기 프리셋(관세율·카테고리). 스캐너의 duty_rate_pct 와 같은 값을 씁니다.
@@ -299,6 +314,119 @@ def build_pokemon_doc(report: dict, top: int) -> dict:
     }
 
 
+# ---------------------------------------------------------------------------
+# 해외직구 품목(전자기기·캠핑·생활용품·레고/피규어) — 미국·일본 실측가 대비 국내 시세
+# ---------------------------------------------------------------------------
+def pick_global_row(it: dict, rank: int) -> dict | None:
+    """global-latest.json 항목 하나 → 웹진 카드 하나. 값이 빠진 항목은 버립니다."""
+    try:
+        price = float(it["price_local"])
+        invested = int(it["invested_krw"])
+        domestic = int(it["domestic_price_krw"])
+        sell = int(it["sell_price_krw"])
+        margin = int(it["net_margin_krw"])
+    except (KeyError, TypeError, ValueError):
+        return None
+    if price <= 0 or domestic <= 0 or invested <= 0:
+        return None
+
+    cur = str(it.get("currency") or "USD").upper()
+    cat = str(it.get("cat") or "")
+    intl = int(it.get("intl_shipping_krw") or 0)
+    card_fee = int(it.get("card_fee_krw") or 0)
+    shipout = int(it.get("domestic_shipping_krw") or 0)
+    fee_krw = float(it.get("sell_fee_krw") or 0)
+    fee_pct = round(fee_krw / sell * 100, 2) if sell else 0.0
+
+    return {
+        "rank": rank,
+        "key": str(it.get("key") or ""),
+        "cat": cat,
+        "catKo": str(it.get("catKo") or cat),
+        "catEn": str(it.get("catEn") or cat),
+        "nameKo": str(it.get("name_ko") or it.get("name_en") or ""),
+        "nameEn": str(it.get("name_en") or it.get("name_ko") or ""),
+        "model": str(it.get("model") or ""),
+        "origin": str(it.get("origin") or "US"),
+        "cur": cur,
+        "price": round(price, 2),
+        "priceKind": "rrp" if str(it.get("price_kind")) == "rrp" else "live",
+        "invested": invested,
+        "customs": int(it.get("customs_total_krw") or 0),
+        "domestic": domestic,
+        "sell": sell,
+        "margin": margin,
+        "roi": round(float(it.get("roi_pct") or 0.0), 1),
+        "overseasUrl": str(it.get("overseas_url") or ""),
+        "krUrl": str(it.get("kr_url") or ""),
+        # [계산기에 바로 채우기] — 해외직구 탭. 스캐너 계산을 그대로 재현하는 값입니다.
+        "fill": {
+            "cur": cur,
+            "price": round(price, 2),
+            "fx": round(float(it.get("fx_rate") or 0), 4),
+            "local": 0,
+            "intl": intl,
+            "forward": 0,
+            "cat": GLOBAL_CAT_FILL.get(cat, "custom"),
+            "duty": round(float(it.get("customs_duty_rate_pct") or 8), 1),
+            "business": bool(it.get("customs_taxable")),
+            "sell": sell,
+            "fee": fee_pct,
+            "fixed": 0,
+            "shipout": shipout,
+            "other": card_fee,
+        },
+    }
+
+
+def build_global_doc(report: dict, top: int) -> dict:
+    rows = []
+    for it in (report.get("items") or []):
+        row = pick_global_row(it, len(rows) + 1)
+        if row:
+            rows.append(row)
+    rows.sort(key=lambda r: (r["margin"], r["roi"]), reverse=True)
+    for i, r in enumerate(rows, 1):
+        r["rank"] = i
+    items = rows[:max(1, top)]
+
+    cats: dict[str, dict] = {}
+    for r in rows:
+        c = cats.setdefault(r["cat"], {"items": 0, "positive": 0, "best": -10 ** 12})
+        c["items"] += 1
+        if r["margin"] > 0:
+            c["positive"] += 1
+        c["best"] = max(c["best"], r["margin"])
+
+    fx = report.get("fx") or {}
+    counts = report.get("counts") or {}
+    return {
+        "version": 1,
+        "kind": "global",
+        "date": str(report.get("date") or ""),
+        "generatedAt": str(report.get("generated_at") or ""),
+        "syncedAt": datetime.now(KST).isoformat(timespec="seconds"),
+        "fx": {
+            "usdKrw": round(float(fx.get("usd_krw") or 0), 2),
+            "jpyKrw": round(float(fx.get("jpy_krw") or 0), 4),
+            "source": str(fx.get("source") or ""),
+            "live": bool(fx.get("live")),
+        },
+        "scan": {
+            "scanned": int(counts.get("items") or 0),
+            "matched": int(counts.get("matched") or 0),
+            "positive": sum(1 for r in rows if r["margin"] > 0),
+            "shown": len(items),
+            "best": rows[0]["margin"] if rows else 0,
+            "categories": [
+                {"key": k, "items": v["items"], "positive": v["positive"], "best": v["best"]}
+                for k, v in sorted(cats.items(), key=lambda kv: kv[1]["best"], reverse=True)
+            ],
+        },
+        "items": items,
+    }
+
+
 def write_doc(doc: dict, name: str = OUT_NAME) -> list[str]:
     written = []
     text = json.dumps(doc, ensure_ascii=False, indent=1) + "\n"
@@ -358,8 +486,42 @@ def sync_pokemon(args) -> int:
     return 0
 
 
+def sync_global(args) -> int:
+    print(f"[sync-global] 리포트: {os.path.relpath(args.global_report, ROOT) if args.global_report.startswith(ROOT) else args.global_report}")
+    if not os.path.exists(args.global_report):
+        print(f"[sync-global] 리포트가 없습니다: {args.global_report}")
+        return 2
+    report = load_report(args.global_report)
+    doc = build_global_doc(report, args.global_top)
+    if not doc["items"]:
+        print("[sync-global] 옮길 항목이 없습니다(리포트 items 비어 있음). 이전 파일을 그대로 둡니다.")
+        return 3
+
+    age = age_hours(doc)
+    if age is not None and args.max_age_hours and age > args.max_age_hours:
+        print(f"[sync-global] 주의: 리포트가 {age:.1f}시간 전 것입니다({doc['generatedAt']}). 그대로 옮깁니다.")
+
+    scan = doc["scan"]
+    print(f"[sync-global] {doc['date']} · 기준 {doc['generatedAt']}")
+    print(f"  감시 {scan['scanned']}개 품목 · 매칭 {scan['matched']}개"
+          f" · 순마진 플러스 {scan['positive']}개 · 화면 표시 {scan['shown']}개")
+    print(f"  환율 USD/KRW {doc['fx']['usdKrw']:,.2f} · JPY/KRW {doc['fx']['jpyKrw']:,.4f} ({doc['fx']['source']})")
+    for r in doc["items"]:
+        unit = "$" if r["cur"] == "USD" else "¥"
+        print(f"  {r['rank']}. [{r['catKo']}] {r['nameKo'][:30]} [{r['model']}]"
+              f" {unit}{r['price']:,.2f} → 총원가 {won(r['invested'])} · 국내 {won(r['domestic'])}"
+              f" · 순마진 {r['margin']:+,}원 (ROI {r['roi']:+.1f}%)")
+
+    if args.check:
+        print("[sync-global] --check: 파일을 쓰지 않았습니다.")
+        return 0
+    for rel in write_doc(doc, GLOBAL_OUT_NAME):
+        print(f"  · {rel}")
+    return 0
+
+
 def main() -> int:
-    ap = argparse.ArgumentParser(description="리셀·포켓몬 스캐너 결과를 웹진 데이터로 옮깁니다.")
+    ap = argparse.ArgumentParser(description="리셀·포켓몬·해외직구 품목 스캐너 결과를 웹진 데이터로 옮깁니다.")
     ap.add_argument("--report", default=DEFAULT_REPORT, help="스캐너 리포트 JSON(기본 latest.json)")
     ap.add_argument("--pokemon-report", default=DEFAULT_POKEMON_REPORT,
                     help="포켓몬 카드 리포트 JSON(기본 pokemon-latest.json)")
@@ -367,12 +529,19 @@ def main() -> int:
     ap.add_argument("--pokemon-top", type=int, default=6, help="포켓몬 카드로 올릴 개수(기본 6)")
     ap.add_argument("--check", action="store_true", help="파일을 쓰지 않고 결과만 확인")
     ap.add_argument("--max-age-hours", type=float, default=36.0, help="이보다 오래된 리포트면 경고(기본 36)")
+    ap.add_argument("--global-report", default=DEFAULT_GLOBAL_REPORT,
+                    help="해외직구 품목 리포트 JSON(기본 global-latest.json)")
+    ap.add_argument("--global-top", type=int, default=15, help="해외직구 품목으로 올릴 개수(기본 15)")
     ap.add_argument("--no-pokemon", action="store_true", help="포켓몬 카드 데이터는 건드리지 않음")
     ap.add_argument("--pokemon-only", action="store_true", help="포켓몬 카드만 동기화")
+    ap.add_argument("--no-global", action="store_true", help="해외직구 품목 데이터는 건드리지 않음")
+    ap.add_argument("--global-only", action="store_true", help="해외직구 품목만 동기화")
     args = ap.parse_args()
 
     if args.pokemon_only:
         return sync_pokemon(args)
+    if args.global_only:
+        return sync_global(args)
 
     if not os.path.exists(args.report):
         print(f"[sync-resell] 리포트가 없습니다: {args.report}")
@@ -405,10 +574,16 @@ def main() -> int:
                     print(f"  · {rel}")
             rc = 0
 
+    grc = 0
+    if not args.no_global:
+        grc = sync_global(args)
     if args.no_pokemon:
-        return rc
+        return rc if rc in (0, 3) else (grc or rc)
     prc = sync_pokemon(args)
-    return rc if rc in (0, 3) else prc
+    for code in (rc, grc, prc):
+        if code not in (0, 3):
+            return code
+    return 0
 
 
 if __name__ == "__main__":

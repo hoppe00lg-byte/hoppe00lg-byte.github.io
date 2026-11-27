@@ -15,7 +15,8 @@
   var CURRENCY = { ko: 'KRW', en: 'USD', zh: 'CNY', ja: 'JPY' }[LANG];
   var MOUNT = document.getElementById('rs-picks');
   var POKE = document.getElementById('rs-poke');
-  if (!MOUNT && !POKE) return;
+  var GLOB = document.getElementById('rs-global');
+  if (!MOUNT && !POKE && !GLOB) return;
 
   /* ---------------- 화면 문구 ---------------- */
   var T = {
@@ -466,7 +467,235 @@
     POKE.hidden = false;
   }
 
-  [MOUNT, POKE].forEach(function (el) {
+
+  /* =========================================================
+     해외직구 품목(전자기기·캠핑·생활용품·레고/피규어)
+     data/global-picks.json 을 읽어 별도 섹션(#rs-global)에 그립니다.
+     미국·일본 브랜드 공식 스토어의 실측가와 국내(에누리) 시세를 모델 코드로 맞춘 결과입니다.
+     ========================================================= */
+  var GT = {
+    ko: {
+      kicker: 'JP · US → KR', title: '해외직구 품목 실측 마진 TOP',
+      sub: '미국·일본 브랜드 공식 스토어의 실제 판매가와 국내 판매 등록가를 같은 시각에 조회해, 국제배송·관부가세·판매 수수료를 빼고 남는 순마진을 계산했습니다. 품목은 모델 코드(레고 세트번호·제품 모델명)로 맞췄습니다.',
+      stamp: '기준 {date} · 환율 $1 = {usd}원 · ¥1 = {jpy}원',
+      statScan: '감시 품목', statMatched: '시세 확인', statPos: '순마진 플러스', statBest: '최고 순마진',
+      unitItem: '개',
+      colFrom: '해외가', colCost: '총원가', colDom: '국내 시세', colTax: '관부가세',
+      colMargin: '순마진', originUs: '미국', originJp: '일본', rrp: '정가 기준',
+      all: '전체',
+      catElectronics: '전자기기', catCamping: '캠핑', catHousehold: '생활용품', catLego: '레고', catFigure: '피규어',
+      linkBuy: '해외 상품', linkDom: '국내 시세',
+      fill: '계산기에 바로 채우기',
+      fillDone: '계산기에 값을 넣었습니다. 배송·수수료를 바꿔 직접 확인해 보세요.',
+      none: '오늘은 매칭된 품목이 없습니다. 내일 다시 조회합니다.',
+      negAll: '오늘 확인된 {n}개 품목 중 순마진이 플러스인 것은 없습니다. 표는 그래도 가장 나은 순서입니다.',
+      some: '{n}개 품목 가운데 {p}개만 순마진이 플러스입니다.',
+      noteTitle: '이 숫자를 읽는 법',
+      note1: '<b>해외가</b>는 브랜드 공식 스토어가 공개한 상품 데이터의 실제 판매가입니다. 레고는 공식 소비자가(RRP)라 <b>정가 기준</b>으로 표시했고, 국내 등록가가 정가의 2.2배를 넘는 단종·희소 세트는 순위에서 뺐습니다.',
+      note2: '<b>국내 시세</b>는 에누리 가격비교에서 모델명이 일치하는 매물만 골라 중앙값을 쓴 값입니다. 최저가 하나를 쓰면 사은품·부품 매물에 끌려가므로 중앙값을 씁니다. 실제 체결가는 이보다 낮을 수 있습니다.',
+      note3: '<b>관부가세</b>는 미국 $200·일본 $150 면세 한도(물품가 기준)를 넘을 때만 붙습니다. 국제배송은 배대지 예시 요율, 정산은 판매가에서 플랫폼 수수료와 국내 택배를 뺀 값입니다.',
+      hw: '품목명·모델 코드·가격만 공개 데이터로 옮겼습니다. 개인정보는 담지 않습니다.'
+    },
+    en: {
+      kicker: 'JP · US → KR', title: 'Overseas direct-buy picks by measured margin',
+      sub: 'Live prices from US and Japanese brand stores are matched by model code against Korean listing prices, then international shipping, duty and platform fees are taken out to leave the net margin.',
+      stamp: 'As of {date} · $1 = ₩{usd} · ¥1 = ₩{jpy}',
+      statScan: 'Items watched', statMatched: 'Prices matched', statPos: 'Positive margin', statBest: 'Best margin',
+      unitItem: 'items',
+      colFrom: 'Overseas', colCost: 'Total cost', colDom: 'Korea price', colTax: 'Duty & VAT',
+      colMargin: 'Net margin', originUs: 'US', originJp: 'Japan', rrp: 'at RRP',
+      all: 'All',
+      catElectronics: 'Electronics', catCamping: 'Camping', catHousehold: 'Home goods', catLego: 'LEGO', catFigure: 'Figures',
+      linkBuy: 'Overseas listing', linkDom: 'Korea price',
+      fill: 'Fill the calculator',
+      fillDone: 'Values are in the calculator. Change shipping or fees to test it yourself.',
+      none: 'Nothing matched today. The scan runs again tomorrow.',
+      negAll: 'None of the {n} matched items clears a positive net margin today. The list is still the best order.',
+      some: 'Only {p} of {n} items clear a positive net margin.',
+      noteTitle: 'How to read these numbers',
+      note1: '<b>Overseas</b> is the live price published by the brand store. LEGO sets are marked <b>at RRP</b> because that is the only machine-readable price; retired sets whose Korean listing exceeds 2.2× RRP are dropped from the ranking.',
+      note2: '<b>Korea price</b> is the median of Enuri listings whose name carries the same model code. A single lowest price would be dragged down by accessory and part listings. Real trades can close lower.',
+      note3: '<b>Duty and VAT</b> apply only above the US$200 (US) / US$150 (Japan) personal-use threshold. International shipping uses proxy-warehouse sample rates; settlement deducts platform fee and domestic courier.',
+      hw: 'Only product name, model code and prices come from public data. No personal information is included.'
+    },
+    zh: {
+      kicker: 'JP · US → KR', title: '海外直购商品 实测利润 TOP',
+      sub: '同时读取美国、日本品牌官网的实时售价与韩国销售标价，按型号代码匹配，扣除国际运费、关税与增值税、平台手续费后的净利润。',
+      stamp: '基准 {date} · 汇率 $1 = {usd} 韩元 · ¥1 = {jpy} 韩元',
+      statScan: '监看商品', statMatched: '价格确认', statPos: '净利润为正', statBest: '最高净利润',
+      unitItem: '个',
+      colFrom: '海外价', colCost: '总成本', colDom: '韩国价格', colTax: '关税与增值税',
+      colMargin: '净利润', originUs: '美国', originJp: '日本', rrp: '按定价',
+      all: '全部',
+      catElectronics: '电子设备', catCamping: '露营', catHousehold: '生活用品', catLego: '乐高', catFigure: '手办',
+      linkBuy: '海外商品', linkDom: '韩国价格',
+      fill: '填入计算器',
+      fillDone: '已填入计算器。可修改运费与手续费自行验证。',
+      none: '今日没有匹配商品，明天再次扫描。',
+      negAll: '今日匹配的 {n} 个商品中，净利润为正的为零。下表仍为最优顺序。',
+      some: '{n} 个商品中仅 {p} 个净利润为正。',
+      noteTitle: '数字怎么看',
+      note1: '<b>海外价</b>取自品牌官网公开的实时售价。乐高仅有官方定价可用，故标注<b>按定价</b>；韩国标价超过定价 2.2 倍的停产稀有套装已从排名剔除。',
+      note2: '<b>韩国价格</b>取 Enuri 上名称含同一型号代码的标价中位数。用单一最低价会被配件、赠品标价带偏。实际成交可能更低。',
+      note3: '<b>关税与增值税</b>仅在超过美国 200 美元 / 日本 150 美元个人自用免税额度时计征。国际运费采用转运公司示例费率；结算为售价扣除平台手续费与韩国国内快递费。',
+      hw: '仅迁移商品名、型号代码与价格等公开数据，不含个人信息。'
+    },
+    ja: {
+      kicker: 'JP · US → KR', title: '海外直輸入アイテム 実測マージン TOP',
+      sub: '米国・日本ブランド公式ストアの実売価格と韓国の販売価格を同時点で取得し、国際送料・関税/付加税・手数料を差し引いた純利益を計算しました。型番（レゴのセット番号・製品型番）で照合しています。',
+      stamp: '基準 {date} · 為替 $1 = {usd}ウォン · ¥1 = {jpy}ウォン',
+      statScan: '監視アイテム', statMatched: '価格確認', statPos: '純利益プラス', statBest: '最高純利益',
+      unitItem: '件',
+      colFrom: '海外価格', colCost: '総コスト', colDom: '韓国価格', colTax: '関税・付加税',
+      colMargin: '純利益', originUs: '米国', originJp: '日本', rrp: '定価基準',
+      all: 'すべて',
+      catElectronics: '電子機器', catCamping: 'キャンプ', catHousehold: '生活用品', catLego: 'レゴ', catFigure: 'フィギュア',
+      linkBuy: '海外商品', linkDom: '韓国価格',
+      fill: '計算機に入れる',
+      fillDone: '計算機に入力しました。送料や手数料を変えて確認できます。',
+      none: '本日は照合できた商品がありません。明日また取得します。',
+      negAll: '本日照合した {n} 件のうち純利益がプラスのものはありません。下表はそれでも最良の順です。',
+      some: '{n} 件のうち {p} 件だけが純利益プラスです。',
+      noteTitle: '数字の読み方',
+      note1: '<b>海外価格</b>はブランド公式ストアが公開する実売価格です。レゴは公式定価しか取得できないため<b>定価基準</b>と表示し、韓国の出品価格が定価の2.2倍を超える廃盤・希少セットは順位から外しました。',
+      note2: '<b>韓国価格</b>はEnuriで同じ型番が名前に含まれる出品の中央値です。最安値1件だけを使うと付属品・部品の出品に引っ張られるため中央値を使います。実際の成約はこれより低いことがあります。',
+      note3: '<b>関税・付加税</b>は米国200ドル・日本150ドルの免税枠（商品価格基準）を超えた場合のみ発生します。国際送料は転送業者の例示料率、精算は販売価格からプラットフォーム手数料と国内宅配を引いた額です。',
+      hw: '商品名・型番・価格のみを公開データから移しています。個人情報は含みません。'
+    }
+  }[LANG];
+
+  var CAT_LABEL = {
+    electronics: 'catElectronics', camping: 'catCamping', household: 'catHousehold',
+    lego: 'catLego', figure: 'catFigure'
+  };
+  var CAT_ORDER = ['electronics', 'camping', 'household', 'lego', 'figure'];
+
+  function gCat(cat) { return GT[CAT_LABEL[cat] || ''] || cat; }
+
+  function gHead(d) {
+    var fx = d.fx || {};
+    var scan = d.scan || {};
+    var stamp = tpl(GT.stamp, {
+      date: fmtDate(d.generatedAt || d.date),
+      usd: nf(fx.usdKrw, 2), jpy: nf(fx.jpyKrw, 2)
+    });
+    var pos = scan.positive || 0;
+    var best = scan.best || 0;
+    var bestTxt = (best >= 0 ? '+' : '\u2212') + krw(Math.abs(best));
+    var stats = '' +
+      '<div class="rs-pk-stat"><span>' + esc(GT.statScan) + '</span><b>' + nf(scan.scanned || 0) + '<i>' + esc(GT.unitItem) + '</i></b></div>' +
+      '<div class="rs-pk-stat"><span>' + esc(GT.statMatched) + '</span><b>' + nf(scan.matched || 0) + '<i>' + esc(GT.unitItem) + '</i></b></div>' +
+      '<div class="rs-pk-stat' + (pos ? '' : ' is-flat') + '"><span>' + esc(GT.statPos) + '</span><b>' + nf(pos) + '<i>' + esc(GT.unitItem) + '</i></b></div>' +
+      '<div class="rs-pk-stat"><span>' + esc(GT.statBest) + '</span><b class="' + (best >= 0 ? 'pos' : 'neg') + '">' + bestTxt + '</b></div>';
+    return '<div class="rs-pk-head">' +
+      '<div class="rs-pk-title">' +
+        '<span class="kicker">' + esc(GT.kicker) + '</span>' +
+        '<h2>' + esc(GT.title) + '</h2>' +
+        '<p class="rs-pk-sub">' + esc(GT.sub) + '</p>' +
+        '<p class="rs-pk-stamp">' + esc(stamp) + '</p>' +
+      '</div>' +
+      '<div class="rs-pk-stats">' + stats + '</div>' +
+    '</div>';
+  }
+
+  function gChips(items) {
+    var cats = [];
+    items.forEach(function (it) { if (cats.indexOf(it.cat) < 0) cats.push(it.cat); });
+    cats.sort(function (a, b) { return CAT_ORDER.indexOf(a) - CAT_ORDER.indexOf(b); });
+    if (cats.length < 2) return '';
+    var html = '<button type="button" class="rs-pk-chip is-on" data-cat="all">' + esc(GT.all) + '</button>';
+    cats.forEach(function (c) {
+      var n = items.filter(function (x) { return x.cat === c; }).length;
+      html += '<button type="button" class="rs-pk-chip" data-cat="' + esc(c) + '">' + esc(gCat(c)) + ' <i>' + n + '</i></button>';
+    });
+    return '<div class="rs-pk-chips" role="group">' + html + '</div>';
+  }
+
+  function gCard(it) {
+    var cur = it.cur || 'USD';
+    var margin = it.margin;
+    var cls = margin >= 0 ? 'pos' : 'neg';
+    var name = LANG === 'ko' ? it.nameKo : it.nameEn;
+    var link = it.overseasUrl
+      ? '<a href="' + esc(it.overseasUrl) + '" target="_blank" rel="noopener noreferrer" title="' + esc(GT.linkBuy) + '">' + esc(name) + '</a>'
+      : esc(name);
+    var unit = cur === 'USD' ? SYM.USD : cur === 'JPY' ? '\u00a5' : '';
+    var priceTxt = unit ? unit + nf(it.price, cur === 'JPY' ? 0 : 2) : krw(it.price);
+    var originTxt = it.origin === 'JP' ? GT.originJp : GT.originUs;
+    var links = '<p class="rs-pk-links">' +
+      (it.overseasUrl ? '<a href="' + esc(it.overseasUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(GT.linkBuy) + ' \u2197</a>' : '') +
+      (it.krUrl ? '<a href="' + esc(it.krUrl) + '" target="_blank" rel="noopener noreferrer">' + esc(GT.linkDom) + ' \u2197</a>' : '') +
+      '</p>';
+    return '<article class="rs-pk-card" data-cat="' + esc(it.cat) + '">' +
+      '<div class="rs-pk-top">' +
+        '<span class="rs-pk-rank">' + String(it.rank).padStart(2, '0') + '</span>' +
+        '<span class="rs-pk-tag rs-pk-cat">' + esc(gCat(it.cat)) + '</span>' +
+        '<span class="rs-pk-tag">' + esc(originTxt) + '</span>' +
+        (it.priceKind === 'rrp' ? '<span class="rs-pk-tag rs-pk-tag--rrp">' + esc(GT.rrp) + '</span>' : '') +
+      '</div>' +
+      '<h3 class="rs-pk-name">' + link + '</h3>' +
+      (it.model ? '<p class="rs-pk-sku">' + esc(it.model) + '</p>' : '') +
+      '<dl class="rs-pk-rows">' +
+        '<div><dt>' + esc(GT.colFrom) + '</dt><dd>' + priceTxt + '</dd></div>' +
+        '<div><dt>' + esc(GT.colCost) + '</dt><dd>' + krw(it.invested) + '</dd></div>' +
+        '<div><dt>' + esc(GT.colDom) + '</dt><dd>' + krw(it.domestic) + '</dd></div>' +
+        '<div><dt>' + esc(GT.colTax) + '</dt><dd>' + krw(it.customs || 0) + '</dd></div>' +
+      '</dl>' +
+      '<div class="rs-pk-margin ' + cls + '">' +
+        '<span class="k">' + esc(GT.colMargin) + '</span>' +
+        '<b>' + signed(margin) + '<i>' + esc(CURRENCY === 'KRW' ? '\uc6d0' : 'KRW') + '</i></b>' +
+        '<span class="r">ROI ' + pct(it.roi) + '</span>' +
+      '</div>' +
+      links +
+      '<button type="button" class="rs-pk-fill" data-fill="' + esc(JSON.stringify(it.fill || {})) + '">' + esc(GT.fill) + ' \u2192</button>' +
+    '</article>';
+  }
+
+  function gNotes(d) {
+    var scan = d.scan || {};
+    var pos = scan.positive || 0;
+    var n = scan.matched || 0;
+    var warn = pos === 0 ? tpl(GT.negAll, { n: n }) : (pos < n ? tpl(GT.some, { n: n, p: pos }) : '');
+    return (warn ? '<p class="rs-pk-warn">' + esc(warn) + '</p>' : '') +
+      '<div class="rs-pk-notes">' +
+        '<b>' + esc(GT.noteTitle) + '</b>' +
+        '<p>' + GT.note1 + '</p>' +
+        '<p>' + GT.note2 + '</p>' +
+        '<p>' + GT.note3 + '</p>' +
+        '<p class="hw">' + esc(GT.hw) + '</p>' +
+      '</div>';
+  }
+
+  function renderGlobal(d) {
+    var items = (d && d.items) || [];
+    if (!GLOB || !items.length) return;
+    var age = (Date.now() - new Date(d.generatedAt || d.date).getTime()) / 36e5;
+    if (isFinite(age) && age > 96) return;
+    GLOB.innerHTML = gHead(d) + gChips(items) +
+      '<div class="rs-pk-grid">' + items.map(gCard).join('') + '</div>' + gNotes(d);
+    GLOB.hidden = false;
+  }
+
+  function gFilter(btn) {
+    if (!GLOB) return;
+    var cat = btn.getAttribute('data-cat');
+    var chips = GLOB.querySelectorAll('.rs-pk-chip');
+    for (var i = 0; i < chips.length; i++) chips[i].classList.toggle('is-on', chips[i] === btn);
+    var cards = GLOB.querySelectorAll('.rs-pk-card');
+    for (var j = 0; j < cards.length; j++) {
+      var card = cards[j];
+      card.hidden = cat !== 'all' && card.getAttribute('data-cat') !== cat;
+    }
+  }
+
+  if (GLOB) {
+    GLOB.addEventListener('click', function (e) {
+      var chip = e.target.closest ? e.target.closest('.rs-pk-chip') : null;
+      if (chip) { gFilter(chip); }
+    });
+  }
+
+  [MOUNT, POKE, GLOB].forEach(function (el) {
     if (!el) return;
     el.addEventListener('click', function (e) {
       var btn = e.target.closest ? e.target.closest('.rs-pk-fill') : null;
@@ -486,6 +715,10 @@
     fetch(base() + 'data/pokemon-picks.json', { cache: 'no-store' })
       .then(function (r) { return r.ok ? r.json() : null; })
       .then(function (d) { if (d) renderPoke(d); })
+      .catch(function () { /* 데이터가 없으면 섹션을 그리지 않습니다 */ });
+    fetch(base() + 'data/global-picks.json', { cache: 'no-store' })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (d) { if (d) renderGlobal(d); })
       .catch(function () { /* 데이터가 없으면 섹션을 그리지 않습니다 */ });
   }
 
