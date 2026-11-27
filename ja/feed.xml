@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Fri, 27 Nov 2026 19:57:25 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 20:19:14 +0900</lastBuildDate>
+    <item>
+      <title>LINEだけでGoogleマップ運用が完結する時代へ——月4,980円の『テンポAIラボ』が示す、小規模店舗のMEO省力化</title>
+      <link>https://insightbriefnews.com/ja/a/line-meo-tempo-ai-lab-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/line-meo-tempo-ai-lab-2026.html</guid>
+      <pubDate>Fri, 27 Nov 2026 20:10:00 +0900</pubDate>
+      <category>AI・テック</category>
+      <description>店を探すときにGoogleマップを使う人は60.2%、地図で見つけた店に実際に行った人は64.5%（ニュートラルワークス調べ・2025年）。一方で、口コミへの返信を期待する消費者は89%いるのに、返信している事業者は51%にとどまる（米ブライトローカル調べ・2026年）。返信・投稿・営業時間の更新を、パソコンの管理画面ではなくLINEの会話で済ませる個人運営のサービスが2026年秋に登場した。価格と「作業の置き場所」を変えた設計を、公開情報だけで読み解く。</description>
+    </item>
+    <item>
+      <title>デジタル支払いトークン、ステープルコインという名前が消えた理由</title>
+      <link>https://insightbriefnews.com/ja/a/digital-payment-token-stablecoin-law-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/digital-payment-token-stablecoin-law-2026.html</guid>
+      <pubDate>Fri, 27 Nov 2026 20:05:00 +0900</pubDate>
+      <category>経済・金融</category>
+      <description>金融委員会が11月24日に公開したデジタル資産法制定案は、ステープルコインを「デジタル支給トークン」と規定した。 100%準備資産の預金、銀行過半コンソーシアム、外国発行会社の国内支店要件まで――法が変えるのは名前ではなく支給決済のしきい値だ。</description>
+    </item>
     <item>
       <title>基準金利3.25％引き上げ、ローン利子はなぜ12月15日にも変わらないのか</title>
       <link>https://insightbriefnews.com/ja/a/bok-base-rate-325-cofix-reset-2026.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 21:15:00 +0900</pubDate>
       <category>貿易・原材料</category>
       <description>11月、台湾プラスチック工業はインド向けPVCを1トン1,020ドル、中国向けを880ドルに引き上げた。その間、10月27日からEU税関は韓国産PVCを1トンずつ登録している。欧州は韓国PVC輸出の35.1％だ。訴状が算定した韓国産の産業被害除去水準は53％。</description>
-    </item>
-    <item>
-      <title>4,697.51 — 高値から50.22%、その間にサイドカーは102回鳴った</title>
-      <link>https://insightbriefnews.com/ja/a/kospi-4697-sidecar-102-volatility-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/kospi-4697-sidecar-102-volatility-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 20:45:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>2026年11月25日、コスピは6.16%安の4,697.51で引け、10カ月余りぶりの安値終値となった。場中の安値は6月19日の高値から50.22%低く、2000年以降に高値から半減したのは4度目だ。今年のサイドカーは102回、1日の値動きが5%を超えた日は43取引日。その間、個人は1兆4,232億ウォンを買い、信用取引の融資残高は25兆8,800億ウォンが残った。</description>
-    </item>
-    <item>
-      <title>収益区間43.6%、2019年2月以降最低 — 実現価格の上でこの数字が出たのは初めてだ</title>
-      <link>https://insightbriefnews.com/ja/a/btc-profit-supply-43-6-2019-low-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/btc-profit-supply-43-6-2019-low-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 19:58:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>11月20日、ビットコイン収益区間供給が43.6％まで下がった。 2020年3月の暴落と2022年11月の弱世場よりも低い。ところが、過去３回は価格が実現価格の下であるときに出てきた数字であり、今回は実現価格より１１％上から出た。 11月、現物ETF純流出47億1,000万ドルがその差を作ったものと見られる。</description>
     </item>
   </channel>
 </rss>
