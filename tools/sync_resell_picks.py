@@ -231,7 +231,7 @@ def build_goods_doc(global_report: dict, sneaker_report: dict | None, top: int) 
     items = rows[:max(1, top)]
     g = global_report.get("counts") or {}
     unmatched = global_report.get("unmatched") or []
-    watched = n_goods + sum(1 for u in unmatched if str(u.get("cat")) != "lux")
+    watched = len(rows) + sum(1 for u in unmatched if str(u.get("cat")) != "lux")
     doc = base_doc("goods", global_report, ("usdKrw", "jpyKrw"))
     doc["scan"] = {
         "watched": watched, "matched": len(rows),
