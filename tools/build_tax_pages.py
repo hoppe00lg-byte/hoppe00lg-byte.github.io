@@ -975,7 +975,7 @@ def nav_block(loc):
     """상단 내비는 tools/nav_spec.py 한 곳에서 그립니다(5개 대표 메뉴)."""
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     import nav_spec
-    return nav_spec.render(loc, "", ("business", "tax"))  # /en/tax.html 등 같은 언어 폴더 기준
+    return nav_spec.render(loc, "", ("life", "tax"))  # /en/tax.html 등 같은 언어 폴더 기준
 
 
 def render(loc):
