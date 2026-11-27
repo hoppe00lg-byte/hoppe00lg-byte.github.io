@@ -34,6 +34,8 @@
 .fr-sec-head{display:flex;align-items:baseline;gap:10px;border-bottom:2px solid var(--ink);padding-bottom:7px;margin-bottom:12px;flex-wrap:wrap}
 .fr-sec-head h2{font-family:var(--serif);font-size:19px;font-weight:900;letter-spacing:-.03em}
 .fr-sec-head span{margin-left:auto;font-family:var(--mono);font-size:10px;color:var(--muted);letter-spacing:.06em}
+.fr-copy{font-family:var(--mono);font-size:10px;font-weight:700;letter-spacing:.04em;color:var(--muted);background:#fff;border:1px solid var(--rule-2);padding:3px 9px;cursor:pointer;white-space:nowrap}
+.fr-copy:hover{color:var(--ink);border-color:var(--ink)}
 .fr-calc{margin-top:clamp(22px,3vw,32px)}
 .fr-out{margin-top:clamp(22px,3vw,32px)}
 
@@ -81,6 +83,9 @@
 .fr-sum{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:10px;margin-bottom:12px}
 .fr-sum-card{border:1px solid var(--rule-2);border-top:3px solid var(--ink);background:#fff;padding:11px 13px}
 .fr-sum-card.best{border-top-color:var(--accent);background:#fffaf4}
+.fr-sum-card.route{border-top-color:var(--ink-3)}
+.fr-sum-card.route .v{font-size:15.5px;line-height:1.35;word-break:keep-all}
+.fr-sum-card.route .v b{color:var(--accent);font-weight:700;padding:0 3px}
 .fr-sum-card .k{font-family:var(--mono);font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--accent);text-transform:uppercase}
 .fr-sum-card .v{font-family:var(--serif);font-size:21px;font-weight:900;letter-spacing:-.03em;margin-top:3px;line-height:1.25}
 .fr-sum-card .s{margin-top:3px;font-size:10.5px;color:var(--muted);line-height:1.55}
@@ -145,6 +150,6 @@
 }
 @media print{
   .fr-table-wrap{overflow:visible}
-  .site-header,.nav-wrap,.site-footer,.fr-row-actions,.fr-btn{display:none!important}
+  .site-header,.nav-wrap,.site-footer,.fr-row-actions,.fr-btn,.fr-copy{display:none!important}
   .fr-table{min-width:0}
 }

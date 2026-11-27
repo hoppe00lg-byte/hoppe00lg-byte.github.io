@@ -12,14 +12,14 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="INSIGHT BRIEF">
 <meta property="og:title" content="Freight &amp; landing cost calculator — compare 3–4 carriers | INSIGHT BRIEF">
-<meta property="og:description" content="O/F·BAF·도착지 부대비용·내륙운송·통관수수료를 넣으면 선사별 총 물류비와 최저가 차액, 톤당 단가를 바로 비교합니다. 한국계·대만계 선사 견적 허브 포함.">
+<meta property="og:description" content="Pick the ports of loading and discharge (POL · POD), then enter O/F, BAF/CAF, destination charges, inland haulage and customs fees to compare each carrier's total landing cost, the gap to the cheapest and the cost per tonne.">
 <meta property="og:url" content="https://insightbriefnews.com/en/freight.html">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://insightbriefnews.com/assets/img/og.png">
 <meta name="twitter:image" content="https://insightbriefnews.com/assets/img/og.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="해상운임·수입물류비(Landing Cost) 비교 계산기">
-<meta name="twitter:description" content="선사 3~4곳의 총 수입물류비를 원화·달러로 나란히 비교. 최저가·차액·톤당 단가 자동 계산.">
+<meta name="twitter:title" content="Freight &amp; landing cost calculator">
+<meta name="twitter:description" content="Compare three or four carriers' total landing cost in USD and your currency, with the cheapest option, the gap and cost per tonne worked out. Pick POL and POD first.">
 <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
 <link rel="alternate" type="application/rss+xml" title="INSIGHT BRIEF RSS" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,18 +28,18 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/css/style.css?v=20261126a">
 <link rel="stylesheet" href="../assets/css/monetize.css?v=20261123m">
-<link rel="stylesheet" href="../assets/css/freight.css?v=20261126b">
+<link rel="stylesheet" href="../assets/css/freight.css?v=20261127a">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "WebApplication",
-  "name": "해상운임·수입물류비(Landing Cost) 비교 계산기",
-  "url": "https://insightbriefnews.com/freight.html",
+  "name": "Freight & landing cost calculator",
+  "url": "https://insightbriefnews.com/en/freight.html",
   "applicationCategory": "BusinessApplication",
   "operatingSystem": "Any",
-  "inLanguage": "ko",
-  "description": "선사별 해상운임(O/F)·유류·통화할증료(BAF/CAF)·도착지 부대비용·국내 내륙운송비·통관수수료를 입력해 총 수입물류비를 원화·달러로 비교하고, 최저가 선사·차액·톤당 단가를 계산하는 무료 도구. HMM·KMTC·장금상선·흥아라인·남성해운·SM상선·에버그린·양밍·완하이 등 주요 선사 공식 견적·스케줄 바로가기를 함께 제공합니다.",
-  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "KRW" },
+  "inLanguage": "en",
+  "description": "Choose the ports of loading and discharge (POL/POD) and enter ocean freight, BAF/CAF surcharges, destination charges, inland haulage and customs fees to compare total landing cost across carriers in USD and your currency, with the cheapest carrier, the gap and the cost per tonne and kg. Includes official quote and schedule links for Maersk, MSC, CMA CGM, Hapag-Lloyd, ONE, Evergreen, COSCO, OOCL, SITC, HMM, KMTC and Sinokor.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
   "isAccessibleForFree": true,
   "publisher": { "@type": "Organization", "name": "INSIGHT BRIEF", "url": "https://insightbriefnews.com" }
 }
@@ -188,17 +188,17 @@
     <div class="fr-head">
       <span class="kicker">FREE TOOL · LANDING COST</span>
       <h1>Freight & landing<br>cost calculator</h1>
-      <p class="dek">Paste the quotes you got from three or four carriers and this page adds ocean freight, BAF/CAF surcharges, destination charges, inland haulage and customs fees into one total landing cost, shown in your currency and in USD. It also ranks the cheapest carrier, the gap to the lowest and the cost per tonne and per kg.</p>
+      <p class="dek">Pick the port of loading and the port of discharge first, then paste the quotes you got from three or four carriers: this page adds ocean freight, BAF/CAF surcharges, destination charges, inland haulage and customs fees into one total landing cost, shown in your currency and in USD. It also ranks the cheapest carrier, the gap to the lowest and the cost per tonne and per kg.</p>
       <div class="fr-badges">
-        <span>Free</span><span>No sign-up</span><span>Nothing sent to a server</span><span>Ex. Los Angeles / Long Beach</span><span>Compare up to 4 carriers</span><span>FX filled automatically</span>
+        <span>Free</span><span>No sign-up</span><span>Nothing sent to a server</span><span>POL → POD route</span><span>Compare up to 4 carriers</span><span>FX filled automatically</span>
       </div>
     </div>
 
     <!-- 공통 조건 -->
     <section class="fr-cond" aria-labelledby="fr-cond-title">
       <div class="fr-cond-head">
-        <h2 id="fr-cond-title">공통 조건</h2>
-        <p>The port of loading, container type, exchange rate and cargo weight apply to every carrier the same way.</p>
+        <h2 id="fr-cond-title">Common conditions</h2>
+        <p>The ports of loading and discharge (POL · POD), container type, exchange rate and cargo weight apply to every carrier the same way.</p>
       </div>
       <div id="fr-global"></div>
     </section>
@@ -226,10 +226,11 @@
     <!-- 결과 -->
     <section class="fr-out" id="fr-out" aria-labelledby="fr-out-title" aria-live="polite" translate="no">
       <div class="fr-sec-head">
-        <h2 id="fr-out-title">비교 결과</h2>
+        <h2 id="fr-out-title">Comparison result</h2>
         <span id="fr-out-note"></span>
+        <button type="button" class="fr-copy" id="fr-copy">Copy summary</button>
       </div>
-      <div id="fr-summary"></div>
+      <div id="fr-summary" class="fr-sum"></div>
       <div class="fr-table-wrap">
         <table class="fr-table fr-result-table">
           <caption class="sr-only">Total landing cost by carrier</caption>
@@ -379,7 +380,7 @@
 
 <div class="fr-toast" id="fr-toast" role="status" aria-live="polite"></div>
 <script src="../assets/js/monetize.js?v=20261126a" defer></script>
-<script src="../assets/js/freight.js?v=20261126b" defer></script>
+<script src="../assets/js/freight.js?v=20261127a" defer></script>
 <script src="../assets/js/nav.js?v=20261124c"></script>
 <script src="data/i18n.fallback.js?v=20261124a"></script>
 <script src="../assets/js/i18n.js?v=20261124a"></script>

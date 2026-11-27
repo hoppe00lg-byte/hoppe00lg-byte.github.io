@@ -1,7 +1,7 @@
 /* =========================================================
    INSIGHT BRIEF — 해상운임·수입물류비(Landing Cost) 비교 계산기
    · 서버 호출 없음(환율 기본값만 사이트 시황 데이터에서 한 번 읽습니다).
-   · 페이지 언어에 따라 출발항·통화·선사 순서가 그 나라 실무에 맞게 바뀝니다.
+   · 출발항(POL)·도착항(POD)을 함께 고르고, 페이지 언어에 따라 항구·통화·선사 순서가 그 나라 실무에 맞게 바뀝니다.
    ========================================================= */
 (function () {
   'use strict';
@@ -19,7 +19,10 @@
 
   var UI = {
     ko: {
-      port: '출발항', ctype: '컨테이너 규격', fx: '환율 (1 USD = ?)', weight: '화물 중량', qty: '컨테이너 수량',
+      pol: '출발항 (POL)', pod: '도착항 (POD)', ctype: '컨테이너 규격', fx: '환율 (1 USD = ?)', weight: '화물 중량', qty: '컨테이너 수량',
+      customOpt: '직접 입력', customPh: '항구명 입력 (예: 자카르타)',
+      sumRoute: '구간 (출발 → 도착)', fxShort: '환율', bestTag: '최저가', gapTag: '최저가 대비', usdNote: '모든 금액 USD 기준',
+      copy: '요약 복사', copied: '구간·금액 요약을 복사했습니다', copyFail: '복사하지 못했습니다. 화면에서 직접 선택해 주세요.',
       unitKg: 'kg', unitEa: '대', fxHint: '시황판 원·달러 고시를 기본값으로 넣습니다. 직접 고쳐도 됩니다.',
       fxAuto: '시황판 기준', manual: '직접 입력',
       colCarrier: '선사', remove: '이 선사 빼기', add: '선사 추가', reset: '초기화',
@@ -39,7 +42,10 @@
       linkLabel: '공식 홈 열기', resetDone: '예시 값으로 되돌렸습니다'
     },
     en: {
-      port: 'Port of loading', ctype: 'Container type', fx: 'Exchange rate (1 USD = ?)', weight: 'Cargo weight', qty: 'Containers',
+      pol: 'Port of loading (POL)', pod: 'Port of discharge (POD)', ctype: 'Container type', fx: 'Exchange rate (1 USD = ?)', weight: 'Cargo weight', qty: 'Containers',
+      customOpt: 'Other (type it)', customPh: 'Port name (e.g. Jakarta)',
+      sumRoute: 'Route (POL → POD)', fxShort: 'Exchange rate', bestTag: 'cheapest', gapTag: 'vs cheapest', usdNote: 'All amounts in USD',
+      copy: 'Copy summary', copied: 'Route and prices copied', copyFail: 'Copy failed — select the text on screen instead.',
       unitKg: 'kg', unitEa: 'x', fxHint: 'Amounts are in USD on this page. Change the rate if you want totals in another currency.',
       fxAuto: 'from market board', manual: 'manual',
       colCarrier: 'Carrier', remove: 'Remove', add: 'Add carrier', reset: 'Reset',
@@ -59,7 +65,10 @@
       linkLabel: 'Open official site', resetDone: 'Reset to the sample values'
     },
     ja: {
-      port: '積出港', ctype: 'コンテナ規格', fx: '為替 (1 USD = ?)', weight: '貨物重量', qty: 'コンテナ本数',
+      pol: '積出港 (POL)', pod: '仕向港 (POD)', ctype: 'コンテナ規格', fx: '為替 (1 USD = ?)', weight: '貨物重量', qty: 'コンテナ本数',
+      customOpt: '直接入力', customPh: '港名を入力（例：ジャカルタ）',
+      sumRoute: '区間（積出 → 仕向）', fxShort: '為替', bestTag: '最安', gapTag: '最安との差', usdNote: '金額はすべてUSD建て',
+      copy: '概要をコピー', copied: '区間と金額の概要をコピーしました', copyFail: 'コピーできませんでした。画面から選択してください。',
       unitKg: 'kg', unitEa: '本', fxHint: '市況板のレートを初期値にしています。手入力もできます。',
       fxAuto: '市況板基準', manual: '手入力',
       colCarrier: '船社', remove: 'この船社を外す', add: '船社を追加', reset: 'リセット',
@@ -79,7 +88,10 @@
       linkLabel: '公式サイトを開く', resetDone: 'サンプル値に戻しました'
     },
     zh: {
-      port: '起运港', ctype: '集装箱规格', fx: '汇率 (1 USD = ?)', weight: '货物重量', qty: '集装箱数量',
+      pol: '起运港 (POL)', pod: '目的港 (POD)', ctype: '集装箱规格', fx: '汇率 (1 USD = ?)', weight: '货物重量', qty: '集装箱数量',
+      customOpt: '手动输入', customPh: '港口名称（例：雅加达）',
+      sumRoute: '航线（起运 → 目的）', fxShort: '汇率', bestTag: '最低价', gapTag: '与最低价差', usdNote: '金额均以美元计',
+      copy: '复制摘要', copied: '已复制航线与金额摘要', copyFail: '复制失败，请手动选择文字。',
       unitKg: 'kg', unitEa: '个', fxHint: '默认填入行情板汇率，也可手动修改。',
       fxAuto: '行情板基准', manual: '手动输入',
       colCarrier: '船公司', remove: '移除此船公司', add: '添加船公司', reset: '重置',
@@ -100,42 +112,72 @@
     }
   }[LANG];
 
-  /* ---------------- 출발항 (언어별) ---------------- */
-  var PORTS = {
-    ko: [
-      { id: 'busan', name: 'Busan', local: '부산항', un: 'KRPUS' },
-      { id: 'incheon', name: 'Incheon', local: '인천항', un: 'KRINC' },
-      { id: 'gwangyang', name: 'Gwangyang', local: '광양항', un: 'KRKAN' },
-      { id: 'pyeongtaek', name: 'Pyeongtaek', local: '평택항', un: 'KRPTK' },
-      { id: 'etc', name: 'Other', local: '기타 항구', un: '' }
-    ],
-    en: [
-      { id: 'lax', name: 'Los Angeles', local: 'Los Angeles', un: 'USLAX' },
-      { id: 'lgb', name: 'Long Beach', local: 'Long Beach', un: 'USLGB' },
-      { id: 'nyc', name: 'New York / Newark', local: 'New York', un: 'USNYC' },
-      { id: 'sav', name: 'Savannah', local: 'Savannah', un: 'USSAV' },
-      { id: 'rtm', name: 'Rotterdam', local: 'Rotterdam', un: 'NLRTM' },
-      { id: 'etc', name: 'Other', local: 'Other', un: '' }
-    ],
-    ja: [
-      { id: 'tyo', name: 'Tokyo', local: '東京', un: 'JPTYO' },
-      { id: 'yok', name: 'Yokohama', local: '横浜', un: 'JPYOK' },
-      { id: 'osa', name: 'Osaka', local: '大阪', un: 'JPOSA' },
-      { id: 'kob', name: 'Kobe', local: '神戸', un: 'JPUKB' },
-      { id: 'ngo', name: 'Nagoya', local: '名古屋', un: 'JPNGO' },
-      { id: 'etc', name: 'Other', local: 'その他', un: '' }
-    ],
-    zh: [
-      { id: 'sha', name: 'Shanghai', local: '上海', un: 'CNSHA' },
-      { id: 'nbo', name: 'Ningbo', local: '宁波', un: 'CNNGB' },
-      { id: 'tao', name: 'Qingdao', local: '青岛', un: 'CNTAO' },
-      { id: 'szn', name: 'Shenzhen', local: '深圳', un: 'CNSZX' },
-      { id: 'xmn', name: 'Xiamen', local: '厦门', un: 'CNXMN' },
-      { id: 'etc', name: 'Other', local: '其他', un: '' }
-    ]
+  /* ---------------- 항구 (출발항·도착항 공용, UN/LOCODE 기준) ---------------- */
+  var PORTS_ALL = [
+    { code: 'KRPUS', home: 'kr', n: { ko: '부산항', en: 'Busan', ja: '釜山', zh: '釜山' } },
+    { code: 'KRINC', home: 'kr', n: { ko: '인천항', en: 'Incheon', ja: '仁川', zh: '仁川' } },
+    { code: 'KRKAN', home: 'kr', n: { ko: '광양항', en: 'Gwangyang', ja: '光陽', zh: '光阳' } },
+    { code: 'KRPTK', home: 'kr', n: { ko: '평택항', en: 'Pyeongtaek', ja: '平沢', zh: '平泽' } },
+    { code: 'CNSHA', home: 'cn', n: { ko: '상하이', en: 'Shanghai', ja: '上海', zh: '上海' } },
+    { code: 'CNNGB', home: 'cn', n: { ko: '닝보', en: 'Ningbo', ja: '寧波', zh: '宁波' } },
+    { code: 'CNTAO', home: 'cn', n: { ko: '칭다오', en: 'Qingdao', ja: '青島', zh: '青岛' } },
+    { code: 'CNSZX', home: 'cn', n: { ko: '선전(옌톈)', en: 'Shenzhen (Yantian)', ja: '深圳（塩田）', zh: '深圳（盐田）' } },
+    { code: 'CNXMN', home: 'cn', n: { ko: '샤먼', en: 'Xiamen', ja: '廈門', zh: '厦门' } },
+    { code: 'JPTYO', home: 'jp', n: { ko: '도쿄', en: 'Tokyo', ja: '東京', zh: '东京' } },
+    { code: 'JPYOK', home: 'jp', n: { ko: '요코하마', en: 'Yokohama', ja: '横浜', zh: '横滨' } },
+    { code: 'JPOSA', home: 'jp', n: { ko: '오사카', en: 'Osaka', ja: '大阪', zh: '大阪' } },
+    { code: 'JPUKB', home: 'jp', n: { ko: '고베', en: 'Kobe', ja: '神戸', zh: '神户' } },
+    { code: 'JPNGO', home: 'jp', n: { ko: '나고야', en: 'Nagoya', ja: '名古屋', zh: '名古屋' } },
+    { code: 'SGSIN', home: 'sg', n: { ko: '싱가포르', en: 'Singapore', ja: 'シンガポール', zh: '新加坡' } },
+    { code: 'VNSGN', home: 'vn', n: { ko: '호치민(깟라이)', en: 'Ho Chi Minh (Cat Lai)', ja: 'ホーチミン（カットライ）', zh: '胡志明（吉莱）' } },
+    { code: 'THLCH', home: 'th', n: { ko: '방콕(런차방)', en: 'Bangkok (Laem Chabang)', ja: 'バンコク（レムチャバン）', zh: '曼谷（林查班）' } },
+    { code: 'USLAX', home: 'us', n: { ko: '로스앤젤레스', en: 'Los Angeles', ja: 'ロサンゼルス', zh: '洛杉矶' } },
+    { code: 'USLGB', home: 'us', n: { ko: '롱비치', en: 'Long Beach', ja: 'ロングビーチ', zh: '长滩' } },
+    { code: 'USNYC', home: 'us', n: { ko: '뉴욕·뉴저지', en: 'New York / New Jersey', ja: 'ニューヨーク／ニュージャージー', zh: '纽约／新泽西' } },
+    { code: 'USSAV', home: 'us', n: { ko: '사바나', en: 'Savannah', ja: 'サバンナ', zh: '萨凡纳' } },
+    { code: 'NLRTM', home: 'eu', n: { ko: '로테르담', en: 'Rotterdam', ja: 'ロッテルダム', zh: '鹿特丹' } },
+    { code: 'DEHAM', home: 'eu', n: { ko: '함부르크', en: 'Hamburg', ja: 'ハンブルク', zh: '汉堡' } },
+    { code: 'BEANR', home: 'eu', n: { ko: '앤트워프', en: 'Antwerp', ja: 'アントワープ', zh: '安特卫普' } },
+    { code: 'AEJEA', home: 'me', n: { ko: '제벨알리(두바이)', en: 'Jebel Ali (Dubai)', ja: 'ジェベルアリ（ドバイ）', zh: '杰贝阿里（迪拜）' } }
+  ];
+
+  /* 출발항: 그 나라 항구를 앞에 / 도착항: 가까운 해외 항구를 앞에 */
+  var POL_ORDER = {
+    ko: ['kr', 'cn', 'jp', 'us', 'eu', 'sg', 'vn', 'th', 'me'],
+    en: ['us', 'eu', 'cn', 'jp', 'kr', 'sg', 'vn', 'th', 'me'],
+    ja: ['jp', 'kr', 'cn', 'us', 'eu', 'sg', 'vn', 'th', 'me'],
+    zh: ['cn', 'kr', 'jp', 'us', 'eu', 'sg', 'vn', 'th', 'me']
+  }[LANG];
+  var POD_ORDER = {
+    ko: ['us', 'eu', 'cn', 'jp', 'sg', 'vn', 'th', 'me', 'kr'],
+    en: ['eu', 'cn', 'jp', 'kr', 'sg', 'vn', 'th', 'me', 'us'],
+    ja: ['us', 'cn', 'kr', 'eu', 'sg', 'vn', 'th', 'me', 'jp'],
+    zh: ['eu', 'us', 'kr', 'jp', 'sg', 'vn', 'th', 'me', 'cn']
   }[LANG];
 
-  function portOf(id) { for (var i = 0; i < PORTS.length; i++) if (PORTS[i].id === id) return PORTS[i]; return PORTS[0]; }
+  function pname(p) { return (p.n && p.n[LANG]) || p.n.en || p.code; }
+  function portByCode(code) {
+    for (var i = 0; i < PORTS_ALL.length; i++) if (PORTS_ALL[i].code === code) return PORTS_ALL[i];
+    return null;
+  }
+  function sortPorts(order) {
+    return PORTS_ALL.map(function (p, i) { return { p: p, i: i }; }).sort(function (a, b) {
+      var ia = order.indexOf(a.p.home), ib = order.indexOf(b.p.home);
+      if (ia < 0) ia = 99;
+      if (ib < 0) ib = 99;
+      return ia - ib || a.i - b.i;
+    }).map(function (x) { return x.p; });
+  }
+  /* 선택한 항구를 화면에 보일 이름으로 (직접 입력 포함) */
+  function portLabel(key) {
+    var code = state[key];
+    if (code === 'custom') {
+      var t = String(state[key + 'Name'] || '').replace(/^\s+|\s+$/g, '');
+      return t || UI.customOpt;
+    }
+    var p = portByCode(code);
+    return p ? pname(p) : UI.customOpt;
+  }
 
   /* ---------------- 선사 ---------------- */
   var CARRIERS = [
@@ -188,7 +230,7 @@
   /* ---------------- 상태 (언어별 기본값) ---------------- */
   var DEFAULTS = {
     ko: {
-      port: 'busan', ctype: '40ft GP', fx: 1343.6, fxAuto: true, weight: 18000, qty: 1,
+      pol: 'KRPUS', pod: 'USLAX', polName: '', podName: '', ctype: '40ft GP', fx: 1343.6, fxAuto: true, weight: 18000, qty: 1,
       cols: [
         { cid: 'hmm', of: 1820, baf: 310, dest: 180000, destCur: 'KRW', inland: 350000, customs: 120000 },
         { cid: 'kmtc', of: 1760, baf: 295, dest: 175000, destCur: 'KRW', inland: 340000, customs: 110000 },
@@ -196,7 +238,7 @@
       ]
     },
     en: {
-      port: 'lax', ctype: '40ft GP', fx: 1, fxAuto: true, weight: 18000, qty: 1,
+      pol: 'USLAX', pod: 'NLRTM', polName: '', podName: '', ctype: '40ft GP', fx: 1, fxAuto: true, weight: 18000, qty: 1,
       cols: [
         { cid: 'maersk', of: 1820, baf: 310, dest: 1800, destCur: 'USD', inland: 950, customs: 150 },
         { cid: 'msc', of: 1760, baf: 295, dest: 1750, destCur: 'USD', inland: 920, customs: 145 },
@@ -204,7 +246,7 @@
       ]
     },
     ja: {
-      port: 'tyo', ctype: '40ft GP', fx: 159.3, fxAuto: true, weight: 18000, qty: 1,
+      pol: 'JPTYO', pod: 'USLAX', polName: '', podName: '', ctype: '40ft GP', fx: 159.3, fxAuto: true, weight: 18000, qty: 1,
       cols: [
         { cid: 'one', of: 1180, baf: 240, dest: 62000, destCur: 'JPY', inland: 78000, customs: 24000 },
         { cid: 'maersk', of: 1240, baf: 255, dest: 60000, destCur: 'JPY', inland: 76000, customs: 23000 },
@@ -212,7 +254,7 @@
       ]
     },
     zh: {
-      port: 'sha', ctype: '40ft GP', fx: 6.66, fxAuto: true, weight: 18000, qty: 1,
+      pol: 'CNSHA', pod: 'NLRTM', polName: '', podName: '', ctype: '40ft GP', fx: 6.66, fxAuto: true, weight: 18000, qty: 1,
       cols: [
         { cid: 'cosco', of: 980, baf: 210, dest: 1450, destCur: 'CNY', inland: 2600, customs: 800 },
         { cid: 'oocl', of: 1010, baf: 215, dest: 1500, destCur: 'CNY', inland: 2550, customs: 780 },
@@ -241,13 +283,25 @@
   function money(n, dec) { return CUR.sym + (dec ? fmt2(n) : fmt(n)); }
 
   /* ---------------- 공통 조건 ---------------- */
+  function portField(key, label) {
+    var sel = state[key];
+    var opts = sortPorts(key === 'pod' ? POD_ORDER : POL_ORDER).map(function (p) {
+      return '<option value="' + p.code + '"' + (p.code === sel ? ' selected' : '') + '>' +
+        esc(pname(p)) + (p.code ? ' · ' + p.code : '') + '</option>';
+    }).join('');
+    opts += '<option value="custom"' + (sel === 'custom' ? ' selected' : '') + '>' + esc(UI.customOpt) + '</option>';
+    var h = '<div class="fr-field"><label for="fr-' + key + '">' + label + '</label>' +
+      '<select id="fr-' + key + '" data-port="' + key + '">' + opts + '</select></div>';
+    if (sel === 'custom') {
+      h += '<div class="fr-field"><label for="fr-' + key + '-name">' + label + ' <i>' + esc(UI.customOpt) + '</i></label>' +
+        '<input type="text" id="fr-' + key + '-name" data-portname="' + key + '" value="' + esc(state[key + 'Name'] || '') +
+        '" placeholder="' + esc(UI.customPh) + '"></div>';
+    }
+    return h;
+  }
+
   function renderGlobal() {
-    var h = '';
-    h += '<div class="fr-field"><label for="fr-port">' + UI.port + '</label><select id="fr-port">' +
-      PORTS.map(function (p) {
-        return '<option value="' + p.id + '"' + (p.id === state.port ? ' selected' : '') + '>' +
-          esc(p.local) + (p.un ? ' · ' + p.un : '') + '</option>';
-      }).join('') + '</select></div>';
+    var h = portField('pol', UI.pol) + portField('pod', UI.pod);
 
     h += '<div class="fr-field"><label for="fr-ctype">' + UI.ctype + '</label><select id="fr-ctype">' +
       ['20ft GP', '40ft GP', '40ft HQ', 'LCL'].map(function (c) {
@@ -344,6 +398,9 @@
     });
 
     summaryEl.innerHTML =
+      '<div class="fr-sum-card route"><span class="k">' + esc(UI.sumRoute) + '</span>' +
+      '<div class="v">' + esc(portLabel('pol')) + ' <b>→</b> ' + esc(portLabel('pod')) + '</div>' +
+      '<div class="s">' + esc(state.ctype) + ' · ' + fmt(state.qty) + UI.unitEa + ' · ' + fmt(state.weight) + ' ' + UI.unitKg + '</div></div>' +
       '<div class="fr-sum-card best"><span class="k">' + UI.sumBest + '</span>' +
       '<div class="v">' + esc(cname(bestCar)) + '</div>' +
       '<div class="s">' + UI.total + ' ' + money(best.total) + '</div></div>' +
@@ -379,9 +436,52 @@
     body += resRow(UI.perKg, UI.kgSub, function (r) { return r.perKg; }, { dec: true });
     rtbody.innerHTML = body;
 
-    var p = portOf(state.port);
-    outNote.textContent = p.local + ' → ' + state.ctype + ' · ' + fmt(state.qty) + UI.unitEa + ' · ' + UI.outNote;
+    outNote.textContent = portLabel('pol') + ' → ' + portLabel('pod') + ' · ' + state.ctype + ' · ' + fmt(state.qty) + UI.unitEa + ' · ' + UI.outNote;
     rankNote.textContent = UI.rankNote;
+  }
+
+  /* ---------------- 복사용 요약 (구간 포함) ---------------- */
+  function legacyCopy(txt) {
+    try {
+      var ta = document.createElement('textarea');
+      ta.value = txt;
+      ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed';
+      ta.style.top = '-1000px';
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = document.execCommand('copy');
+      document.body.removeChild(ta);
+      return ok;
+    } catch (e) { return false; }
+  }
+
+  function summaryText() {
+    var rows = calc();
+    if (!rows.length) return '';
+    var order = rows.map(function (r, i) { return { r: r, i: i }; })
+      .sort(function (a, b) { return a.r.total - b.r.total; });
+    var min = order[0].r.total;
+    var lines = [];
+    lines.push('INSIGHT BRIEF · ' + UI.total);
+    lines.push(portLabel('pol') + ' → ' + portLabel('pod') + ' · ' + state.ctype + ' · ' +
+      fmt(state.qty) + UI.unitEa + ' · ' + fmt(state.weight) + ' ' + UI.unitKg);
+    if (CUR.code === 'USD') lines.push(UI.usdNote);
+    else lines.push(UI.fxShort + ' 1 USD = ' + fmt2(state.fx) + ' ' + CUR.code);
+    order.forEach(function (o, k) {
+      var r = o.r;
+      var name = cname(carrierById(state.cols[o.i].cid));
+      var tail = k === 0 ? '  ← ' + UI.bestTag : '  ' + UI.gapTag + ' +' + money(r.total - min);
+      var inUsd = CUR.code === 'USD' ? '' : ' (US$' + fmt(r.usd) + ')';
+      lines.push((k + 1) + '. ' + name + ' ' + money(r.total) + inUsd + tail);
+    });
+    var mtMin = null, mtName = '';
+    rows.forEach(function (r, i) {
+      if (r.perMt != null && (mtMin == null || r.perMt < mtMin)) { mtMin = r.perMt; mtName = cname(carrierById(state.cols[i].cid)); }
+    });
+    if (mtMin != null) lines.push(UI.sumMt + ': ' + mtName + ' ' + money(mtMin));
+    lines.push('https://insightbriefnews.com/' + (LANG === 'ko' ? '' : LANG + '/') + 'freight.html');
+    return lines.join('\n');
   }
 
   /* ---------------- 선사 허브 ---------------- */
@@ -416,6 +516,10 @@
   function bind() {
     document.addEventListener('input', function (e) {
       var t = e.target;
+      if (t.hasAttribute && t.hasAttribute('data-portname')) {
+        state[t.getAttribute('data-portname') + 'Name'] = t.value;
+        renderResults(); return;
+      }
       if (t.id === 'fr-fx') {
         state.fx = num(t.value); state.fxAuto = false;
         var src = $('#fr-fx-src'); if (src) src.textContent = UI.manual;
@@ -433,7 +537,13 @@
     document.addEventListener('change', function (e) {
       var t = e.target;
       if (t.id === 'fr-ctype') { state.ctype = t.value; renderResults(); return; }
-      if (t.id === 'fr-port') { state.port = t.value; renderResults(); return; }
+      if (t.hasAttribute && t.getAttribute('data-port')) {
+        var pk = t.getAttribute('data-port');
+        state[pk] = t.value;
+        if (t.value !== 'custom') state[pk + 'Name'] = '';
+        renderGlobal(); renderResults();
+        return;
+      }
       if (t.classList && t.classList.contains('carrier-sel')) {
         var i = parseInt(t.getAttribute('data-col'), 10);
         if (state.cols[i]) { state.cols[i].cid = t.value; renderResults(); }
@@ -470,6 +580,17 @@
         state = JSON.parse(JSON.stringify(DEFAULTS));
         renderGlobal(); renderTable(); renderResults();
         toast(UI.resetDone);
+        return;
+      }
+      if (t.id === 'fr-copy') {
+        var txt = summaryText();
+        if (!txt) return;
+        var ok = function () { toast(UI.copied); };
+        var no = function () { toast(UI.copyFail); };
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(txt).then(ok, function () { legacyCopy(txt) ? ok() : no(); });
+        } else if (!legacyCopy(txt)) no();
+        return;
       }
     });
   }
@@ -505,6 +626,8 @@
 
   function init() {
     if (!globalEl || !thead) return;
+    var cb = document.getElementById('fr-copy');
+    if (cb) cb.textContent = UI.copy;
     renderGlobal();
     renderTable();
     renderResults();
