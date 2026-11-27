@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Fri, 27 Nov 2026 11:19:22 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 19:54:56 +0900</lastBuildDate>
+    <item>
+      <title>디지털지급토큰, 스테이블코인이라는 이름이 사라진 이유</title>
+      <link>https://insightbriefnews.com/a/digital-payment-token-stablecoin-law-2026.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/digital-payment-token-stablecoin-law-2026.html</guid>
+      <pubDate>Fri, 27 Nov 2026 20:05:00 +0900</pubDate>
+      <category>경제·금융</category>
+      <description>금융위원회가 11월 24일 공개한 디지털자산법 제정안은 스테이블코인을 &#x27;디지털지급토큰&#x27;으로 규정했다. 100% 준비자산 예치, 은행 과반 컨소시엄, 외국 발행사의 국내 지점 요건까지——법이 바꾸는 것은 이름이 아니라 지급결제의 문턱이다.</description>
+    </item>
     <item>
       <title>기준금리 3.25% 인상, 대출 이자는 왜 12월 15일에도 바뀌지 않나</title>
       <link>https://insightbriefnews.com/a/bok-base-rate-325-cofix-reset-2026.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Wed, 25 Nov 2026 20:45:00 +0900</pubDate>
       <category>경제·금융</category>
       <description>2026년 11월 25일 코스피는 6.16% 내린 4,697.51에 마감해 10개월여 만의 최저 종가를 기록했다. 장중 저점은 6월 19일 고점 대비 50.22% 낮은 수준으로, 2000년 이후 고점 대비 반토막은 네 번째다. 올해 사이드카는 102회, 하루 5% 이상 움직인 날은 43거래일이었다. 그 사이 개인은 1조4,232억 원을 샀고, 신용융자 잔고는 25조8,800억 원이 남았다.</description>
-    </item>
-    <item>
-      <title>수익 구간 43.6%, 2019년 2월 이후 최저 — 실현가격 위에서 이 숫자가 나온 건 처음이다</title>
-      <link>https://insightbriefnews.com/a/btc-profit-supply-43-6-2019-low-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/btc-profit-supply-43-6-2019-low-2026.html</guid>
-      <pubDate>Wed, 25 Nov 2026 19:58:00 +0900</pubDate>
-      <category>경제·금융</category>
-      <description>11월 20일 비트코인 수익 구간 공급이 43.6%까지 내려왔다. 2020년 3월 폭락과 2022년 11월 약세장 때보다 낮다. 그런데 과거 세 번은 가격이 실현가격 아래일 때 나온 숫자였고, 이번엔 실현가격보다 11% 위에서 나왔다. 11월 현물 ETF 순유출 47억1,000만 달러가 그 차이를 만든 것으로 보인다.</description>
     </item>
   </channel>
 </rss>
