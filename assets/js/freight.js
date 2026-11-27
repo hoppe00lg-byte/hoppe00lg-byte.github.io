@@ -308,7 +308,7 @@
         return '<option value="' + c + '"' + (c === state.ctype ? ' selected' : '') + '>' + c + '</option>';
       }).join('') + '</select></div>';
 
-    h += '<div class="fr-field"><label for="fr-fx">' + UI.fx + ' <i>' + CUR.code + '</i><i id="fr-fx-src">' + (state.fxAuto ? UI.fxAuto : UI.manual) + '</i></label>' +
+    h += '<div class="fr-field"><label for="fr-fx">' + UI.fx + ' <i>' + CUR.code + '</i><i id="fr-fx-src">' + (state.fxAuto ? ((state.fxDate ? state.fxDate + ' ' : '') + UI.fxAuto) : UI.manual) + '</i></label>' +
       '<input type="text" id="fr-fx" inputmode="decimal" value="' + esc(state.fx) + '" aria-describedby="fr-fx-hint">' +
       '<span class="hint" id="fr-fx-hint">' + UI.fxHint + '</span></div>';
 
@@ -577,7 +577,9 @@
         return;
       }
       if (t.id === 'fr-reset') {
+        var keepDate = state.fxDate;
         state = JSON.parse(JSON.stringify(DEFAULTS));
+        state.fxDate = keepDate;
         renderGlobal(); renderTable(); renderResults();
         toast(UI.resetDone);
         return;
@@ -616,6 +618,7 @@
         else if (CUR.code === 'CNY' && cnyKrw > 0) rate = usdKrw / cnyKrw;
         if (CUR.code === 'KRW') rate = usdKrw;
         state.fx = Math.round(rate * 100) / 100;
+        state.fxDate = date;
         var el = $('#fr-fx');
         if (el) el.value = state.fx;
         var src = $('#fr-fx-src');
