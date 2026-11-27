@@ -732,7 +732,7 @@ def _fake_response(prompt: str) -> str:
 
 
 def call_gemini(prompt: str, max_output_tokens: int = 12000, json_mode: bool = True,
-                temperature: float = 0.85) -> tuple[str, str]:
+                temperature: float = 0.85, timeout: int = 240, attempts: int = 2) -> tuple[str, str]:
     if os.environ.get("IB_FAKE_GEMINI") == "1":
         return _fake_response(prompt), "fake"
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
@@ -761,11 +761,11 @@ def call_gemini(prompt: str, max_output_tokens: int = 12000, json_mode: bool = T
     for model in chain:
         url = f"{API_ROOT}/models/{model}:generateContent?key={urllib.parse.quote(api_key)}"
         body = json.dumps(payload, ensure_ascii=False).encode("utf-8")
-        for attempt in range(2):
+        for attempt in range(max(1, attempts)):
             _pace()
             try:
                 req = urllib.request.Request(url, data=body, headers={"Content-Type": "application/json"})
-                with urllib.request.urlopen(req, timeout=240) as r:
+                with urllib.request.urlopen(req, timeout=timeout) as r:
                     data = json.loads(r.read().decode("utf-8"))
                 cand = (data.get("candidates") or [{}])[0]
                 text = "".join(p.get("text", "") for p in (cand.get("content") or {}).get("parts", []))
@@ -782,9 +782,9 @@ def call_gemini(prompt: str, max_output_tokens: int = 12000, json_mode: bool = T
                 if exc.code in (400, 403, 404):
                     break
                 if exc.code in (429, 500, 503, 504):
-                    if attempt >= 1:
+                    if attempt >= max(1, attempts) - 1:
                         break
-                    time.sleep([10, 25][attempt])
+                    time.sleep([10, 25][min(attempt, 1)])
                     continue
                 break
             except Exception as exc:  # noqa: BLE001
@@ -985,7 +985,7 @@ def make_variant(article: dict, cat_id: str, lang: str, pool: list[dict]) -> dic
         title_rule=spec["title_rule"], cliche=", ".join(spec["cliche"]),
         article_id=article["id"],
     )
-    data = extract_json(call_gemini(prompt, max_output_tokens=14000)[0])
+    data = extract_json(call_gemini(prompt, max_output_tokens=14000, timeout=120, attempts=1)[0])
 
     # 분량 미달이면 한 번만 확장을 청한다(자료에 근거한 절을 덧붙이기).
     have, unit = measure_body(data.get("body", ""), lang)
@@ -995,7 +995,7 @@ def make_variant(article: dict, cat_id: str, lang: str, pool: list[dict]) -> dic
                      f"자료에 근거한 H2 절을 본문 끝에 붙여 {spec['target']}로 만든다. 같은 키를 가진 JSON 전체를 다시 출력한다.\n"
                      + json.dumps({k: data.get(k) for k in ("title", "deck", "summary", "body")},
                                   ensure_ascii=False)[:12000])
-            d2 = extract_json(call_gemini(extra, max_output_tokens=14000)[0])
+            d2 = extract_json(call_gemini(extra, max_output_tokens=14000, timeout=120, attempts=1)[0])
             if measure_body(d2.get("body", ""), lang)[0] > have:
                 data = d2
         except QuotaExhausted:
@@ -1014,7 +1014,7 @@ def make_variant(article: dict, cat_id: str, lang: str, pool: list[dict]) -> dic
         try:
             d3 = extract_json(call_gemini(prompt + "\n\n[재작성] 다음 상토어가 남았다: " + ", ".join(cliche)
                                           + ". 사실과 수치 중심으로 다시 쓰고 그 표현은 삭제한다.",
-                                          max_output_tokens=14000)[0])
+                                          max_output_tokens=14000, timeout=120, attempts=1)[0])
             body3 = clean_body(d3.get("body", ""), article["id"], alt=spec["img_alt"])
             if body3 and not HANGUL_RE.search((d3.get("title") or "") + body3):
                 data, body = d3, body3
