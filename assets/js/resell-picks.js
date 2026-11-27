@@ -193,7 +193,7 @@
     en: {
       kicker: 'SECTION 03 · TRADING CARDS', title: 'Trading cards: Japan → US market',
       sub: 'Japanese-printing cards bought at Cardrush (tax included) and sold to US collectors at the PriceCharting Ungraded price, after eBay’s 13.25% card fee, US import duty and shipping. Only the same printing code and rarity are compared.',
-      stamp: 'As of {date} · ¥1 = ₩{fx} · ¥100 = US${usdjpy}',
+      stamp: 'As of {date} · ¥1 = ₩{fx} · US$1 = ¥{usdjpy}',
       statCards: 'Cards watched', statResolved: 'Prices confirmed', statPos: 'Positive margin', statBest: 'Best margin',
       unit: 'cards', all: 'All',
       gamePokemon: 'Pokémon', gameOnepiece: 'One Piece', gameYugioh: 'Yu-Gi-Oh!',
@@ -451,7 +451,7 @@
   function cardRow(it) {
     var margin = it.margin || 0;
     var cls = margin >= 0 ? 'pos' : 'neg';
-    var bep = (it.bep === 0 || it.bep) ? it.bep : null;
+    var bep = (it.bep && it.bep > 0) ? it.bep : null;
     var below = bep != null && it.jp && it.jp <= bep;
     var cJp = it.jpCur || 'JPY', cKr = it.krCur || 'KRW', cSell = it.sellCur || cKr;
     var cFee = it.feeCur || cKr, cCost = it.costCur || 'KRW', mCur = it.marginCur || 'KRW';
@@ -498,7 +498,8 @@
       { k: C.statCards, v: nf(s.cards || 0), unit: C.unit },
       { k: C.statResolved, v: nf(s.resolved || 0), unit: C.unit },
       { k: C.statPos, v: nf(s.positive || 0), unit: C.unit, flat: !s.positive },
-      { k: C.statBest, v: num(s.best || 0), cls: (s.best || 0) >= 0 ? 'pos' : 'neg' }
+      { k: C.statBest, v: sg(s.best || 0, ((d.items || [])[0] || {}).marginCur || 'KRW'),
+        cls: (s.best || 0) >= 0 ? 'pos' : 'neg' }
     ];
     var games = (d.games || []).map(function (g) { return { key: g.key, count: g.count }; });
     var warn = (s.positive || 0) === 0 ? tpl(C.allNeg, { n: s.resolved || 0 })
