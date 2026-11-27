@@ -85,6 +85,18 @@ window.__SITE__ = {
  ],
  "ticker": [
   {
+   "text": "중국 전기차 4억 원대 시대, 초고급화 뒤에 숨겨진 전력 효율과 에너지 비용",
+   "articleId": "china-ev-premium-market-energy-efficiency-20261128"
+  },
+  {
+   "text": "횡단보도 12대 중과실 사고, 뇌신경 손상 피해자의 향후 1년 경제적 손실 계산",
+   "articleId": "pedestrian-accident-loss-analysis-20261128"
+  },
+  {
+   "text": "마크롱의 '도핑된 고기' 발언과 브라질-EU 간 177개 시장 공급망 갈등",
+   "articleId": "brazil-meat-trade-row-2026-20261128"
+  },
+  {
    "text": "횡단보도 12대 중과실 사고, 뇌신경 손상 피해자의 경제적 손실과 배상 범위",
    "articleId": "traffic-accident-compensation-analysis-2026-20261128"
   },
@@ -95,14 +107,6 @@ window.__SITE__ = {
   {
    "text": "2025년 미국 에너지의 60% 소실, 전력망 효율의 물리적 한계와 비용 구조",
    "articleId": "us-energy-loss-and-efficiency-analysis-20261127"
-  },
-  {
-   "text": "2026-11-27 EU 장기 예산안 1.78조 유로 조정, 우크라 지원 분담 난항",
-   "articleId": "eu-budget-ukraine-funding-crisis-20261127"
-  },
-  {
-   "text": "2026년 12월 1일 수원 정책 세미나, 서울·경기 부동산 규제 해법 분석",
-   "articleId": "seoul-gyeonggi-real-estate-policy-seminar-2026-20261127"
   }
  ],
  "editorNote": {
