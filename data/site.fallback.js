@@ -85,6 +85,10 @@ window.__SITE__ = {
  ],
  "ticker": [
   {
+   "text": "20만 관객 모이는 스페인 '매드 쿨', 엔하이픈이 헤드라이너로 입증한 K팝 공연 경제학",
+   "articleId": "enhypen-mad-cool-2027-headliner-kpop-festival-revenue-20261128"
+  },
+  {
    "text": "주 2회 오르가즘과 사망률 50%의 상관관계, 건강 수명 연장을 위한 실질적 지표 분석",
    "articleId": "sex-health-mortality-analysis-20261128"
   },
@@ -95,10 +99,6 @@ window.__SITE__ = {
   {
    "text": "푸틴의 영토 논리에 반기 든 루카셴코, 몽골-타타르 역사까지 거론",
    "articleId": "lukashenko-putin-territory-geopolitical-impact-20261128"
-  },
-  {
-   "text": "20분 만에 잡힌 광주 육가공 공장 화재, 대응 1단계 발령의 기술적 경계선",
-   "articleId": "gwangju-meat-processing-fire-analysis-20261128"
   }
  ],
  "editorNote": {

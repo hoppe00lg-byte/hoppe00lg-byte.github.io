@@ -1,6 +1,108 @@
 /* 자동 생성 파일입니다. 직접 수정하지 말고 data/articles.json 을 고친 뒤 tools/build.py 를 실행하세요. */
 window.__ARTICLES__ = [
  {
+  "id": "enhypen-mad-cool-2027-headliner-kpop-festival-revenue-20261128",
+  "category": "culture",
+  "title": "20만 관객 모이는 스페인 '매드 쿨', 엔하이픈이 헤드라이너로 입증한 K팝 공연 경제학",
+  "deck": "2026년 11월 28일 빌리프랩은 엔하이픈이 내년 7월 스페인 '매드 쿨 2027'에 K팝 유일 헤드라이너로 참가한다고 밝혔다. 트와이스 지효 역시 칠레 비냐 델 마르 페스티벌에 K팝 솔로 최초 진출하며 글로벌 공연 시장의 수익 구조를 바꾼다.",
+  "date": "2026-11-28",
+  "sample": false,
+  "author": "인사이트 브리프 편집실",
+  "authorRole": "K-컬쳐·엔터팀",
+  "publishedAt": "2026-11-28T17:52:54+09:00",
+  "readMinutes": 7,
+  "tags": [
+   "엔하이픈",
+   "매드쿨2027",
+   "빌리프랩",
+   "지효",
+   "비냐델마르",
+   "페스티벌수익구조",
+   "헤드라이너",
+   "K팝공연"
+  ],
+  "views": 0,
+  "featured": false,
+  "cover": {
+   "label": "K-CULTURE FILE 08",
+   "word": "FESTIVAL"
+  },
+  "coverImage": "assets/img/articles/enhypen-mad-cool-2027-headliner-kpop-festival-revenue-20261128.jpg",
+  "summary": [
+   "엔하이픈이 2027년 7월 9일 스페인 마드리드에서 열리는 '매드 쿨 2027'에 K팝 가수 중 유일하게 헤드라이너로 무대에 오른다.",
+   "트와이스 지효는 2027년 2월 26일 칠레 '비냐 델 마르 페스티벌' 5일 차 무대에 오르며 K팝 솔로 가수 최초 참가 기록을 세운다.",
+   "대형 음악 축제의 출연은 단독 투어와 다른 티켓·스폰서십 레버리지를 일으키며 K팝 IP의 정량적 가치를 재평가하게 만든다."
+  ],
+  "body": "## 20만 관객의 무대, 엔하이픈이 쏘아 올린 글로벌 헤드라이너 전략\n\n2026년 11월 28일 빌리프랩은 그룹 엔하이픈이 내년 7월 7일부터 10일까지 스페인 마드리드에서 개최되는 '매드 쿨 2027(Mad Cool 2027)'의 헤드라이너로 출연한다고 공식 발표했다. 2016년 시작된 이 페스티벌은 매년 약 20만 명의 관객을 유치하는 스페인 대표 음악 축제 중 하나다. 엔하이픈은 축제 3일 차인 7월 9일 무대에 올라 테임 임팔라, 레이 등 세계적인 아티스트들과 어깨를 나란히 한다. 이는 단순히 해외 공연을 넘어, 페스티벌의 핵심 출연진인 '헤드라이너'로서 현지 대형 페스티벌 라인업의 최상단에 위치하게 되었음을 보여준다.\n\n![스페인 마드리드 매드 쿨 페스티벌 무대에 오를 엔하이픈의 공연 예고 이미지](assets/img/articles/enhypen-mad-cool-2027-headliner-kpop-festival-revenue-20261128.jpg)\n\n## K팝 페스티벌 IP의 시장 가치 산출\n\n과거 K팝 해외 공연이 팬덤 중심의 단독 콘서트에 의존했다면, 이제는 글로벌 페스티벌 IP에 통합되어 수익을 극대화하는 형태로 변모하고 있다. 매드 쿨과 같은 대형 페스티벌은 티켓 수익뿐만 아니라 스폰서십, 굿즈 판매, 식음료(F&B) 매출이 복합적으로 얽힌 구조를 가진다. 엔하이픈이 이번 라인업의 중심에 섰다는 것은 페스티벌 주최 측이 이들의 티켓 파워를 관객 동원력의 핵심 변수로 계산했음을 보여준다. 앞서 팝스타 두아 리파, 올리비아 로드리고 등이 거쳐 간 무대에 K팝 그룹이 간판 출연자로 이름을 올린 것은 페스티벌 시장 내 입지를 보여주는 지표다.\n\n## 칠레 비냐 델 마르 페스티벌, 새로운 시장 개척의 의미\n\n엔하이픈의 스페인 진출 소식이 알려진 같은 날, 이밋하우스는 그룹 트와이스 지효가 2027년 2월 22일부터 27일까지 칠레 비냐 델 마르에서 열리는 '2027 비냐 델 마르 페스티벌'에 출연한다고 밝혔다. 지효는 K팝 솔로 가수 중 최초로 이 무대에 오르며 축제 5일 차인 2월 26일 공연을 책임진다. 중남미 지역의 대형 음악 축제에 K팝 솔로 아티스트가 진입한 것은 기존 북미·유럽 중심의 K팝 공연 동선이 남미 대륙의 페스티벌 플랫폼으로 다양화되고 있음을 보여준다.\n\n## 페스티벌 경제와 아티스트 보컬 전략의 상관관계\n\n현대 음악 산업에서 페스티벌 출연은 단순한 무대 경험을 넘어, 새로운 음원 발매 전략과 맞물려 있다. 올리비아 로드리고는 11월 23일 내슈빌 브리지스톤 아레나 콘서트에서 신곡 'Miss This Christmas'를 라이브로 선보인 뒤 11월 중순 빌보드 핫 100 32위에 오른 기존 홀리데이 음원 'Take Me Home (4 Christmas)'에 이어 아마존 뮤직 독점 음원으로 발매했다. 2027년 그래미 어워즈 7개 부문 후보에 오른 팝스타의 이러한 음원·공연 연계 방식은, 대형 페스티벌 무대를 앞둔 K팝 아티스트들에게도 신곡을 실시간으로 시험하고 셋리스트를 다변화하는 벤치마킹 사례가 된다.\n\n## 기술 기반 음악 제작의 수익 효율성 분석\n\n페스티벌 무대의 중요성이 커질수록 아티스트는 공연마다 차별화된 사운드와 편곡을 요구받는다. 최근 영국 클럽 팝 신의 차세대 주자 Tsatsamis처럼 조지 마이클의 무대 매너와 프로듀서 Sophie의 비트를 융합하는 방식이나, 나이지리아 일로린 출신 프로듀서 라왈 하비브 콜라의 비트가 2022년 틱톡 바이럴을 타고 확산된 사례는 DIY 기반 댄스 음악의 파급력을 입증한다. 현장 대중성이 중시되는 페스티벌 무대에서 작곡 및 편곡의 빠른 시공간적 변환은 투입 비용을 낮추고 공연 기획의 효율을 올리는 핵심 요소다.\n\n## 라이브 투어 리스크와 페스티벌 플랫폼의 대조\n\n단독 투어는 무대 장치와 수송비, 대관료 등 고정 비용 리스크를 아티스트와 소속사가 온전히 부담해야 하는 구조다. 1994년 브릿팝 밴드 에코벨리가 오아시스와 함께 미국 투어를 치르며 멤버 신체 이상, 계약 defrauded(사기) 피해, 레이블 계약 해지 등을 겪은 역사는 단독 라이브 투어가 가진 재무적·물리적 위험성을 극명히 드러낸다. 반면 매드 쿨과 같이 이미 20만 명의 관객 기반을 갖춘 주최 측 플랫폼에 헤드라이너로 진입하는 것은 투어리스크를 낮추면서 아티스트의 출연 가치를 정량적으로 수령할 수 있는 대안적 수익 구조가 된다.\n\n## 라인업 수치 데이터와 페스티벌 수익 창출의 미래\n\n결국 엔하이픈과 지효의 행보는 데이터에 기반한 글로벌 공연 산업의 이동을 보여준다. 스페인 매드 쿨 2027의 7월 9일 헤드라이너 출격과 칠레 비냐 델 마르 2월 26일 무대는 각 국 관객 동원 데이터에 기초해 성사되었다. 계약상 구체적인 무대 보수 금액이나 비공개 수수료 비율은 공식 자료에 포함되지 않아 확인되지 않음으로 남아 있지만, 대형 페스티벌 라인업 수록 자체가 지표가 된다. 아티스트들은 무대 완성도를 위해 음악 기획 단계를 효율화해야 한다. AI 음악·가사 생성기를 활용해 공연의 완성도를 직접 계산·확인하기 바란다.\n\n더 보기: 유튜브 · AI 가수 세아(SEA) — 시티팝·발라드로 직접 만든 AI 보컬 곡 — https://www.youtube.com/@SEA-citypop\n\n직접 계산·확인하기: [AI 음악·가사 생성기](https://insightbriefnews.com/music.html)",
+  "sources": [
+   {
+    "name": "연합뉴스 문화",
+    "date": "2026-11-28",
+    "url": "https://www.yna.co.kr/view/AKR20261128032300005"
+   },
+   {
+    "name": "Billboard",
+    "date": "2026-11-28",
+    "url": "https://www.billboard.com/music/pop/olivia-rodrigo-miss-this-christmas-amazon-music-1236390458/"
+   },
+   {
+    "name": "The Guardian Music",
+    "date": "2026-11-27",
+    "url": "https://www.theguardian.com/music/2026/nov/27/the-weeks-best-new-tracks-and-the-act-you-need-to-know-the-pyrotechnic-emotions-of-club-pop-kid-tsatsamis"
+   },
+   {
+    "name": "The Guardian Music",
+    "date": "2026-11-27",
+    "url": "https://www.theguardian.com/music/2026/nov/27/we-had-a-drug-dealer-called-satan-on-our-tour-bus-britpop-stars-echobelly-on-debauchery-being-pals-with-oasis-and-their-spiritual-return"
+   },
+   {
+    "name": "The Guardian Music",
+    "date": "2026-11-27",
+    "url": "https://www.theguardian.com/world/2026/nov/27/mad-about-mara-the-diy-dance-movement-helping-young-nigerians-escape-the-daily-grind"
+   }
+  ],
+  "factCheck": {
+   "title": "팩트체크",
+   "confirmed": [
+    "엔하이픈은 2027년 7월 7~10일 스페인 마드리드에서 열리는 '매드 쿨 2027' 3일 차인 7월 9일 헤드라이너로 출연함",
+    "스페인 매드 쿨 페스티벌의 올해 관객 수는 약 20만 명임",
+    "트와이스 지효는 2027년 2월 22~27일 칠레 비냐 델 마르 페스티벌 5일 차인 2월 26일 K팝 솔로 최초로 출연함",
+    "올리비아 로드리고는 11월 23일 콘서트에서 'Miss This Christmas'를 처음 라이브로 공개함"
+   ],
+   "unconfirmed": [
+    "엔하이픈 및 트와이스 지효의 매드 쿨 및 비냐 델 마르 페스티벌 계약 보수액 및 수수료율 (확인되지 않음)"
+   ],
+   "sources": [
+    {
+     "name": "연합뉴스 문화",
+     "date": "2026-11-28",
+     "url": "https://www.yna.co.kr/view/AKR20261128032300005"
+    },
+    {
+     "name": "Billboard",
+     "date": "2026-11-28",
+     "url": "https://www.billboard.com/music/pop/olivia-rodrigo-miss-this-christmas-amazon-music-1236390458/"
+    },
+    {
+     "name": "The Guardian Music",
+     "date": "2026-11-27",
+     "url": "https://www.theguardian.com/music/2026/nov/27/the-weeks-best-new-tracks-and-the-act-you-need-to-know-the-pyrotechnic-emotions-of-club-pop-kid-tsatsamis"
+    },
+    {
+     "name": "The Guardian Music",
+     "date": "2026-11-27",
+     "url": "https://www.theguardian.com/music/2026/nov/27/we-had-a-drug-dealer-called-satan-on-our-tour-bus-britpop-stars-echobelly-on-debauchery-being-pals-with-oasis-and-their-spiritual-return"
+    },
+    {
+     "name": "The Guardian Music",
+     "date": "2026-11-27",
+     "url": "https://www.theguardian.com/world/2026/nov/27/mad-about-mara-the-diy-dance-movement-helping-young-nigerians-escape-the-daily-grind"
+    }
+   ]
+  },
+  "coverCard": true
+ },
+ {
   "id": "sex-health-mortality-analysis-20261128",
   "category": "health",
   "title": "주 2회 오르가즘과 사망률 50%의 상관관계, 건강 수명 연장을 위한 실질적 지표 분석",
