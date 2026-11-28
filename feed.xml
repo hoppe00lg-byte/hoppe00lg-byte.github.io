@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 11:35:21 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 11:54:42 +0900</lastBuildDate>
+    <item>
+      <title>병리학 AI의 새로운 좌표, 2026년 11월 25일 공개된 유전자 기반 벤치마크 모델의 한계</title>
+      <link>https://insightbriefnews.com/a/gene-informed-pathology-benchmark-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/gene-informed-pathology-benchmark-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 11:54:17 +0900</pubDate>
+      <category>AI·테크</category>
+      <description>병리학 파운데이션 모델의 신뢰성을 측정하기 위한 유전자 정보 기반의 새로운 벤치마킹 체계가 제시되었다. arXiv를 통해 공개된 이 방식은 기존 정성적 평가를 넘어 정량적 데이터 정합성을 추구한다.</description>
+    </item>
+    <item>
+      <title>4천 명 응시 보건의료인 국시, 전파탐지기·전신가리개 동원해 부정행위 원천 차단</title>
+      <link>https://insightbriefnews.com/a/health-pro-exam-security-upgrade-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/health-pro-exam-security-upgrade-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 11:53:18 +0900</pubDate>
+      <category>바이오·헬스</category>
+      <description>2026년 11월 28일 시행된 1·2급 응급구조사 등 보건의료인 국가시험에서 스마트기기 부정행위 방지를 위한 강화된 대책이 적용됐다. 전국 23개 시험장에서 전파탐지기와 무작위 통신 확인 등 전례 없는 보안망이 가동됐다.</description>
+    </item>
     <item>
       <title>821조 예산안과 잠재성장률 상향, 2026년 12월 경제의 변곡점</title>
       <link>https://insightbriefnews.com/a/market-stability-and-economic-indicators-2026-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 20:05:00 +0900</pubDate>
       <category>경제·금융</category>
       <description>금융위원회가 11월 24일 공개한 디지털자산법 제정안은 스테이블코인을 &#x27;디지털지급토큰&#x27;으로 규정했다. 100% 준비자산 예치, 은행 과반 컨소시엄, 외국 발행사의 국내 지점 요건까지——법이 바꾸는 것은 이름이 아니라 지급결제의 문턱이다.</description>
-    </item>
-    <item>
-      <title>기준금리 3.25% 인상, 대출 이자는 왜 12월 15일에도 바뀌지 않나</title>
-      <link>https://insightbriefnews.com/a/bok-base-rate-325-cofix-reset-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/bok-base-rate-325-cofix-reset-2026.html</guid>
-      <pubDate>Fri, 27 Nov 2026 09:15:00 +0900</pubDate>
-      <category>경제·금융</category>
-      <description>한국은행이 기준금리를 연 3.00%에서 3.25%로 올렸다. 그러나 변동형 주택담보대출 금리는 코픽스 공시와 차주별 재산정일을 거쳐야 바뀐다. 4분기 165조원 재산정 구간과 4%대 예금 특판이 동시에 나타나는 구조를 해부한다.</description>
-    </item>
-    <item>
-      <title>2025년 미국 에너지의 60% 소실, 전력망 효율의 물리적 한계와 비용 구조</title>
-      <link>https://insightbriefnews.com/a/us-energy-loss-and-efficiency-analysis-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/us-energy-loss-and-efficiency-analysis-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:48:27 +0900</pubDate>
-      <category>에너지·전력·기후</category>
-      <description>미 에너지정보청(EIA) 데이터에 따르면 2025년 미국은 34쿼드의 1차 에너지를 투입했으나 실질 전력 판매량은 14쿼드에 그쳤다. 에너지 손실의 95%가 발전 과정의 열 방출에서 기인하며 이는 전력 요금의 구조적 원가에 직결된다.</description>
     </item>
   </channel>
 </rss>

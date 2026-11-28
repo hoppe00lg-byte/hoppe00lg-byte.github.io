@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 11:35:38 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 11:54:56 +0900</lastBuildDate>
+    <item>
+      <title>病理AI的新标尺：基于基因数据的量化评估框架问世</title>
+      <link>https://insightbriefnews.com/zh/a/gene-informed-pathology-benchmark-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/gene-informed-pathology-benchmark-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 11:54:17 +0900</pubDate>
+      <category>AI·科技</category>
+      <description>2026年11月25日arXiv发布了一项基准测试框架，旨在通过基因表达数据量化病理学基础模型的准确性。该方案为解决病理AI的“黑箱”问题提供了可量化的生物学依据。</description>
+    </item>
+    <item>
+      <title>韩国医疗卫生执业资格考试升级安保：启用电波探测仪与全覆盖屏蔽服</title>
+      <link>https://insightbriefnews.com/zh/a/health-pro-exam-security-upgrade-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/health-pro-exam-security-upgrade-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 11:53:18 +0900</pubDate>
+      <category>生物·健康</category>
+      <description>2026年11月28日，韩国全国23个考场对约4,000名考生实施了前所未有的电子设备监控措施。针对医疗人员执业资格考试的作弊防范机制已成为当地考试产业的供应链新标准。</description>
+    </item>
     <item>
       <title>821万亿预算计划和潜在增长率提升，2026年12月经济拐点</title>
       <link>https://insightbriefnews.com/zh/a/market-stability-and-economic-indicators-2026-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 20:05:00 +0900</pubDate>
       <category>经济·金融</category>
       <description>金融服务委员会11月24日发布的《数字资产法》将稳定币定义为“数字支付代币”。从100%的储备资产存款、银行财团占多数，以及对外国发行人的国内分支机构要求——法律改变的不是名称，而是支付结算的门槛。</description>
-    </item>
-    <item>
-      <title>基准利率上调3.25%，为何12月15日贷款利息不变？</title>
-      <link>https://insightbriefnews.com/zh/a/bok-base-rate-325-cofix-reset-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/bok-base-rate-325-cofix-reset-2026.html</guid>
-      <pubDate>Fri, 27 Nov 2026 09:15:00 +0900</pubDate>
-      <category>经济·金融</category>
-      <description>韩国央行将基准利率从3.00%上调至3.25%。然而，可变抵押贷款的利率只有在 COFIX 公告和每个借款人的重新计算日期后才会改变。我们剖析第四季度165万亿韩元重新计算部分和4%存款优惠同时出现的结构。</description>
-    </item>
-    <item>
-      <title>到 2025 年，美国将损失 60% 的能源，电网效率和成本结构受到物理限制</title>
-      <link>https://insightbriefnews.com/zh/a/us-energy-loss-and-efficiency-analysis-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/us-energy-loss-and-efficiency-analysis-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:48:27 +0900</pubDate>
-      <category>能源·气候</category>
-      <description>根据美国能源信息署（EIA）的数据，2025年，美国投入了34夸脱的一次能源，但实际售电量仅为14夸脱。 95%的能量损失来自于发电过程中的热排放，这与电费的结构性成本直接相关。</description>
     </item>
   </channel>
 </rss>

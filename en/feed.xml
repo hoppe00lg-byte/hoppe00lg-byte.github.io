@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 11:35:34 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 11:54:55 +0900</lastBuildDate>
+    <item>
+      <title>A new gene-informed benchmark for validating pathology AI foundation models</title>
+      <link>https://insightbriefnews.com/en/a/gene-informed-pathology-benchmark-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/gene-informed-pathology-benchmark-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 11:54:17 +0900</pubDate>
+      <category>AI &amp; Tech</category>
+      <description>Researchers unveiled a quantitative benchmarking framework on November 25, 2026, to bridge the gap between visual pathology analysis and biological truth. This system assigns &#x27;BioScoring&#x27; to AI models to ensure clinical reliability.</description>
+    </item>
+    <item>
+      <title>High-tech security measures deployed for professional healthcare certification exams</title>
+      <link>https://insightbriefnews.com/en/a/health-pro-exam-security-upgrade-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/health-pro-exam-security-upgrade-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 11:53:18 +0900</pubDate>
+      <category>Health &amp; Bio</category>
+      <description>On November 28, 2026, over 4,000 candidates faced unprecedented electronic surveillance, including radio wave detectors and full-body shielding, during national health professional exams. The initiative aims to modernize integrity protocols for medical licensing.</description>
+    </item>
     <item>
       <title>The December 9 Fed Hike Is 99% Priced. Here Is How Much of It Reaches a Card, a Mortgage and a Savings Account</title>
       <link>https://insightbriefnews.com/en/a/fed-december-2026-hike-card-mortgage-prime-rate.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 00:59:41 +0900</pubDate>
       <category>World &amp; Geopolitics</category>
       <description>Violent clashes at stadiums in France and across Europe on November 27, 2026, are forcing supply chain managers to rethink transit routes. As UEFA launches investigations into the disorder, firms must account for local civil instability in their landed cost calculations.</description>
-    </item>
-    <item>
-      <title>Why the name digital payment token and stablecoin disappeared</title>
-      <link>https://insightbriefnews.com/en/a/digital-payment-token-stablecoin-law-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/digital-payment-token-stablecoin-law-2026.html</guid>
-      <pubDate>Fri, 27 Nov 2026 20:05:00 +0900</pubDate>
-      <category>Economy &amp; Finance</category>
-      <description>The Digital Asset Act enactment released by the Financial Services Commission on November 24 defined stable coins as ‘digital payment tokens.’ From 100% reserve asset deposit, a majority consortium of banks, and domestic branch requirements for foreign issuers—what the law changes is not the name, but the threshold for payment settlement.</description>
-    </item>
-    <item>
-      <title>Base interest rate increased by 3.25%, why does loan interest not change on December 15th?</title>
-      <link>https://insightbriefnews.com/en/a/bok-base-rate-325-cofix-reset-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/bok-base-rate-325-cofix-reset-2026.html</guid>
-      <pubDate>Fri, 27 Nov 2026 09:15:00 +0900</pubDate>
-      <category>Economy &amp; Finance</category>
-      <description>The Bank of Korea raised the base interest rate from 3.00% to 3.25%. However, the interest rate on variable mortgage loans is changed only after the COFIX announcement and the recalculation date for each borrower. We dissect the structure in which the 165 trillion won recalculation section in the fourth quarter and the 4% deposit special offer appear simultaneously.</description>
     </item>
   </channel>
 </rss>

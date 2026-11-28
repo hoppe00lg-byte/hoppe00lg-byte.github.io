@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 11:35:42 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 11:54:58 +0900</lastBuildDate>
+    <item>
+      <title>病理AIの評価に新指標、遺伝子データ連動型ベンチマークがもたらす信頼の再定義</title>
+      <link>https://insightbriefnews.com/ja/a/gene-informed-pathology-benchmark-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/gene-informed-pathology-benchmark-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 11:54:17 +0900</pubDate>
+      <category>AI・テック</category>
+      <description>2026年11月25日に公開された新しいベンチマーク手法は、病理学AIの診断根拠を遺伝子発現データで裏付ける。ブラックボックス化が懸念される医療AIの精度を定量化し、臨床現場での導入コスト最適化に貢献する。</description>
+    </item>
+    <item>
+      <title>4千人受験保健医療である国市、電波探知機・全身遮蔽動員して不正行為源泉遮断</title>
+      <link>https://insightbriefnews.com/ja/a/health-pro-exam-security-upgrade-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/health-pro-exam-security-upgrade-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 11:53:18 +0900</pubDate>
+      <category>バイオ・健康</category>
+      <description>2026年11月28日に施行された1・2級応急救助など保健医療である国家試験でスマート機器不正行為防止のための強化された対策が適用された。全国23の試験場で、電波探知機とランダム通信確認など、前例のない保安網が稼働した。</description>
+    </item>
     <item>
       <title>821兆ウォンの予算案と潜在成長率の上方修正、2026年12月経済の分岐点</title>
       <link>https://insightbriefnews.com/ja/a/market-stability-and-economic-indicators-2026-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 20:10:00 +0900</pubDate>
       <category>AI・テック</category>
       <description>店を探すときにGoogleマップを使う人は60.2%、地図で見つけた店に実際に行った人は64.5%（ニュートラルワークス調べ・2025年）。一方で、口コミへの返信を期待する消費者は89%いるのに、返信している事業者は51%にとどまる（米ブライトローカル調べ・2026年）。返信・投稿・営業時間の更新を、パソコンの管理画面ではなくLINEの会話で済ませる個人運営のサービスが2026年秋に登場した。価格と「作業の置き場所」を変えた設計を、公開情報だけで読み解く。</description>
-    </item>
-    <item>
-      <title>デジタル支払いトークン、ステープルコインという名前が消えた理由</title>
-      <link>https://insightbriefnews.com/ja/a/digital-payment-token-stablecoin-law-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/digital-payment-token-stablecoin-law-2026.html</guid>
-      <pubDate>Fri, 27 Nov 2026 20:05:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>金融委員会が11月24日に公開したデジタル資産法制定案は、ステープルコインを「デジタル支給トークン」と規定した。 100%準備資産の預金、銀行過半コンソーシアム、外国発行会社の国内支店要件まで――法が変えるのは名前ではなく支給決済のしきい値だ。</description>
-    </item>
-    <item>
-      <title>基準金利3.25％引き上げ、ローン利子はなぜ12月15日にも変わらないのか</title>
-      <link>https://insightbriefnews.com/ja/a/bok-base-rate-325-cofix-reset-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/bok-base-rate-325-cofix-reset-2026.html</guid>
-      <pubDate>Fri, 27 Nov 2026 09:15:00 +0900</pubDate>
-      <category>経済・金融</category>
-      <description>韓国銀行が基準金利を開いた3.00%から3.25%に上げた。しかし、変動型住宅担保ローン金利はコフィックス公示と借主別財産定日を経なければ変わる。第4四半期の165兆ウォン財産政区間と4%台預金特板が同時に現れる構造を解剖する。</description>
     </item>
   </channel>
 </rss>

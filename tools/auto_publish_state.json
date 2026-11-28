@@ -1,6 +1,6 @@
 {
  "_note": "자동 발행이 이미 끝낸 슬롯 기록(워크플로가 커밋). 2026-11-27 은 피클 예약 작업이 발행했으므로 넘김. 2026-11-28 00:20·00:40·01:40 은 수동 실행(46029601124/46036673275)이 이미 발행 — 기록 유실분 보정.",
- "last_run": "2026-11-28T10:10:08+09:00",
+ "last_run": "2026-11-28T11:55:06+09:00",
  "done": {
   "2026-11-27#06:30": "handover-2026-11-27",
   "2026-11-27#07:30": "handover-2026-11-27",
@@ -30,7 +30,9 @@
   "2026-11-28#06:40": "namyangju-3rd-new-town-dec-2026-analysis-20261128",
   "2026-11-28#07:40": "energy-loss-efficiency-grid-cost-20261128",
   "2026-11-28#08:40": "sinchon-blues-ai-music-analysis-20261128",
-  "2026-11-28#09:40": "market-stability-and-economic-indicators-2026-20261128"
+  "2026-11-28#09:40": "market-stability-and-economic-indicators-2026-20261128",
+  "2026-11-28#08:20": "health-pro-exam-security-upgrade-2026-20261128",
+  "2026-11-28#10:40": "gene-informed-pathology-benchmark-2026-20261128"
  },
  "used": {
   "2026-11-28": {
@@ -38,7 +40,11 @@
     "https://www.theguardian.com/commentisfree/2026/nov/27/calvary-catholic-healthcare-hospital-takeover-australia-abortion-ivf-ntwnfb",
     "https://www.theguardian.com/society/2026/nov/27/parents-urged-to-vaccinate-children-for-flu-as-hospital-cases-surge-in-england",
     "https://www.theguardian.com/society/2026/nov/26/nhs-hospitals-england-flu-spike-masks",
-    "https://www.theguardian.com/world/2026/nov/27/paramedics-blocked-attacked-by-settlers-west-bank"
+    "https://www.theguardian.com/world/2026/nov/27/paramedics-blocked-attacked-by-settlers-west-bank",
+    "https://www.yna.co.kr/view/AKR20261128028700530",
+    "https://www.theguardian.com/society/2026/nov/27/psychosomatic-illness-diagnoses-must-be-handled-with-great-care",
+    "https://www.yna.co.kr/view/AKR20261128028400064",
+    "https://www.yna.co.kr/view/AKR20261128027500065"
    ],
    "culture": [
     "https://www.billboard.com/culture/product-recommendations/best-black-friday-ticket-deals-promo-codes-november-2026-1236389121/",
@@ -70,7 +76,11 @@
     "https://www.yna.co.kr/view/AKR20261127156800017",
     "https://www.theguardian.com/technology/2026/nov/27/hackers-breach-us-air-force-cloud-computing",
     "https://www.theguardian.com/technology/2026/nov/26/dozens-of-court-cases-in-england-and-wales-affected-by-undisclosed-ai-use-in-2026",
-    "http://arxiv.org/abs/2611.34942v1"
+    "http://arxiv.org/abs/2611.34942v1",
+    "http://arxiv.org/abs/2611.34930v1",
+    "https://www.theguardian.com/technology/2026/nov/25/meta-insiders-concerned-push-to-ai-content-moderation",
+    "https://www.theguardian.com/technology/2026/nov/27/meta-whistleblower-sarah-wynn-williams-calls-on-burnham-to-go-further-with-ban-on-non-disclosure-agreements",
+    "https://www.theguardian.com/technology/2026/nov/26/jensen-huang-nvidia-tech"
    ],
    "fire": [
     "https://www.yna.co.kr/view/AKR20261128001451034",

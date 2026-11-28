@@ -85,6 +85,14 @@ window.__SITE__ = {
  ],
  "ticker": [
   {
+   "text": "병리학 AI의 새로운 좌표, 2026년 11월 25일 공개된 유전자 기반 벤치마크 모델의 한계",
+   "articleId": "gene-informed-pathology-benchmark-2026-20261128"
+  },
+  {
+   "text": "4천 명 응시 보건의료인 국시, 전파탐지기·전신가리개 동원해 부정행위 원천 차단",
+   "articleId": "health-pro-exam-security-upgrade-2026-20261128"
+  },
+  {
    "text": "821조 예산안과 잠재성장률 상향, 2026년 12월 경제의 변곡점",
    "articleId": "market-stability-and-economic-indicators-2026-20261128"
   },
@@ -95,10 +103,6 @@ window.__SITE__ = {
   {
    "text": "전력 생산 1차 에너지 60% 소실, 데이터센터 전력난과 에너지 비용의 물리적 구조",
    "articleId": "energy-loss-efficiency-grid-cost-20261128"
-  },
-  {
-   "text": "2026년 12월 첫째 주 전국 4,215가구 분양, 남양주 왕숙 등 청약 실익 분석",
-   "articleId": "namyangju-3rd-new-town-dec-2026-analysis-20261128"
   }
  ],
  "editorNote": {
