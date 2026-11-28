@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 09:16:22 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 10:09:56 +0900</lastBuildDate>
+    <item>
+      <title>Financial stability measures and GDP outlooks signal a shift in 2026 economic policy</title>
+      <link>https://insightbriefnews.com/en/a/market-stability-and-economic-indicators-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/market-stability-and-economic-indicators-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 10:09:29 +0900</pubDate>
+      <category>Economy &amp; Finance</category>
+      <description>Financial authorities are preparing to deploy market stabilization funds as a proactive defense mechanism. Meanwhile, the central bank is set to revise its potential growth rate upward, reflecting robust semiconductor-led export recovery.</description>
+    </item>
     <item>
       <title>Basic pension of 380,000 won, three sections from April 2027… Couple’s reduction 20% → 10% condition</title>
       <link>https://insightbriefnews.com/en/a/basic-pension-38man-april-2027.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:48:27 +0900</pubDate>
       <category>Energy &amp; Climate</category>
       <description>According to data from the U.S. Energy Information Administration (EIA), in 2025, the United States invested 34 quads of primary energy, but actual electricity sales amounted to only 14 quads. 95% of energy loss results from heat emissions during the power generation process, which is directly related to the structural cost of electricity bills.</description>
-    </item>
-    <item>
-      <title>UK hospital flu admissions hit highest since pandemic</title>
-      <link>https://insightbriefnews.com/en/a/england-hospitals-flu-surge-nov-2026-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/england-hospitals-flu-surge-nov-2026-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:38:52 +0900</pubDate>
-      <category>Health &amp; Bio</category>
-      <description>Flu hospitalization rates in UK NHS hospitals have exceeded pre-COVID-19 levels. Health authorities are preparing for hospital overload in the winter by recommending that medical staff and visitors wear masks.</description>
     </item>
   </channel>
 </rss>

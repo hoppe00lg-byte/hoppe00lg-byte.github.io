@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 09:16:32 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 10:09:59 +0900</lastBuildDate>
+    <item>
+      <title>821兆ウォンの予算案と潜在成長率の上方修正、2026年12月経済の分岐点</title>
+      <link>https://insightbriefnews.com/ja/a/market-stability-and-economic-indicators-2026-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/market-stability-and-economic-indicators-2026-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 10:09:29 +0900</pubDate>
+      <category>経済・金融</category>
+      <description>韓国金融当局が証券市場安定ファンドの即時稼働準備に着手し、市場対応力を強化している。韓国銀行は半導体輸出の好調を受け、実質GDPの反転に合わせて潜在成長率の推計値を上方修正する見通しだ。</description>
+    </item>
     <item>
       <title>基礎年金38万ウォン、2027年4月から3区間…夫婦減額20％→10％の条件</title>
       <link>https://insightbriefnews.com/ja/a/basic-pension-38man-april-2027.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 09:15:00 +0900</pubDate>
       <category>経済・金融</category>
       <description>韓国銀行が基準金利を開いた3.00%から3.25%に上げた。しかし、変動型住宅担保ローン金利はコフィックス公示と借主別財産定日を経なければ変わる。第4四半期の165兆ウォン財産政区間と4%台預金特板が同時に現れる構造を解剖する。</description>
-    </item>
-    <item>
-      <title>2025年の米国エネルギーの60％消失、電力網効率の物理的限界とコスト構造</title>
-      <link>https://insightbriefnews.com/ja/a/us-energy-loss-and-efficiency-analysis-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/us-energy-loss-and-efficiency-analysis-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:48:27 +0900</pubDate>
-      <category>エネルギー・気候</category>
-      <description>米エネルギー情報庁（EIA）データによると、2025年に米国は34クォードの1次エネルギーを投入したが、実質電力販売量は14クォードにとどまった。エネルギー損失の95％が発電プロセスの熱放出に起因し、これは電力料金の構造的コストに直結します。</description>
     </item>
   </channel>
 </rss>
