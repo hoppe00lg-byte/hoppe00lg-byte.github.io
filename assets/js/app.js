@@ -2065,10 +2065,56 @@
     return parts.join('\n');
   }
 
+  /* 본문 마크다운 표 — GitHub식 `| 셀 | 셀 |` + `| --- | --- |` 구분선을 <table>로 그립니다.
+     기사 작성 파이프라인이 비교표를 이 문법으로 넣기 때문에, 여기서 받아 주지 않으면
+     파이프 문자열이 문단으로 그대로 찍힙니다(2026-11-28 크립토카드 기사 모바일 화면 지적). */
+  var TABLE_SEP_CELL_RE = /^:?-{2,}:?$/;
+
+  function tableCells(line) {
+    var s = String(line == null ? '' : line).trim();
+    if (s.charAt(0) === '|') s = s.slice(1);
+    if (s.charAt(s.length - 1) === '|') s = s.slice(0, -1);
+    return s.split('|').map(function (c) { return c.trim(); });
+  }
+
+  function isTableSep(line) {
+    var cells = tableCells(line);
+    var solid = cells.filter(function (c) { return c !== ''; });
+    if (!solid.length) return false;
+    return solid.every(function (c) { return TABLE_SEP_CELL_RE.test(c.replace(/\s+/g, '')); });
+  }
+
+  function isTableStart(lines, i) {
+    if (!/^\s*\|/.test(lines[i] || '')) return false;
+    if (!/^\s*\|/.test(lines[i + 1] || '')) return false;
+    return isTableSep(lines[i + 1]);
+  }
+
+  /* 모바일에서는 표가 좁아 뭉개지므로 .table-wrap 안에서 가로로 넘겨 봅니다. */
+  function articleTableHTML(lines) {
+    var rows = lines.map(tableCells);
+    var head = rows.shift();
+    rows.shift();                       // 구분선
+    var cols = head.length;
+    var thead = '<thead><tr>' + head.map(function (c) {
+      return '<th scope="col">' + inline(c) + '</th>';
+    }).join('') + '</tr></thead>';
+    var tbody = rows.map(function (r) {
+      var cells = [];
+      for (var k = 0; k < cols; k++) {
+        var v = inline(r[k] == null ? '' : r[k]);
+        cells.push(k === 0 ? '<th scope="row">' + v + '</th>' : '<td>' + v + '</td>');
+      }
+      return '<tr>' + cells.join('') + '</tr>';
+    }).join('');
+    return '<div class="table-wrap"><table class="article-table">' + thead +
+      '<tbody>' + tbody + '</tbody></table></div>';
+  }
+
   function renderBody(md) {
     var lines = String(md || '').replace(/\r/g, '').split('\n');
     var out = [], i = 0, h2n = 0;
-    var blockRe = /^(##\s|###\s|>\s?|[-*]\s+|\d+\.\s+)/;
+    var blockRe = /^(##\s|###\s|>\s?|[-*]\s+|\d+\.\s+|\|)/;
     while (i < lines.length) {
       var line = lines[i];
       if (!line.trim()) { i++; continue; }
@@ -2098,8 +2144,22 @@
         out.push('<ol>' + oitems.map(function (t) { return '<li>' + inline(t) + '</li>'; }).join('') + '</ol>');
         continue;
       }
+      if (isTableStart(lines, i)) {
+        var trows = [];
+        while (i < lines.length && /^\s*\|/.test(lines[i])) {
+          // 빈 줄 없이 표가 연달아 오면 다음 표의 머리글 줄부터 끊어 따로 그립니다.
+          if (trows.length > 1 && isTableStart(lines, i)) break;
+          trows.push(lines[i]); i++;
+        }
+        if (trows.length >= 3) out.push(articleTableHTML(trows));
+        else out.push('<p>' + inline(trows.join(' ')) + '</p>');
+        continue;
+      }
       var p = [];
       while (i < lines.length && lines[i].trim() && !blockRe.test(lines[i])) { p.push(lines[i]); i++; }
+      // 표로 보이는 줄인데 구분선이 없어 표처럼 그리지 못한 경우 등,
+      // 걸러진 줄이 있으면 반드시 한 줄이라도 소비해 문단으로 내보냅니다(무한 루프 방지).
+      if (!p.length) { p.push(line); i++; }
       out.push(paragraphHTML(p.join(' ')));
     }
     return out.join('\n');

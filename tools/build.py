@@ -94,11 +94,68 @@ def validate(site, articles):
         if len(a.get("body", "")) < 400:
             warnings.append(f"articles.json[{label}]: 본문이 짧습니다 ({len(a.get('body',''))}자).")
 
+    check_body_tables(articles)
+
     feat = [a["id"] for a in articles if a.get("featured")]
     if len(feat) > 1:
         warnings.append("featured 기사가 2편 이상입니다. 첫 번째만 톱 스토리로 씁니다: " + ", ".join(feat))
     if not feat:
         warnings.append("featured 기사가 없습니다. 가장 최근 기사가 톱 스토리가 됩니다.")
+
+
+PIPE_LINE_RE = re.compile(r"^\s*\|.*\|\s*$")
+PIPE_SEP_CELL_RE = re.compile(r"^:?-{2,}:?$")
+
+
+def _table_cells(line):
+    s = line.strip()
+    if s.startswith("|"):
+        s = s[1:]
+    if s.endswith("|"):
+        s = s[:-1]
+    return [c.strip() for c in s.split("|")]
+
+
+def _is_sep_row(line):
+    cells = [c.replace(" ", "") for c in _table_cells(line) if c.strip()]
+    return bool(cells) and all(PIPE_SEP_CELL_RE.match(c) for c in cells)
+
+
+def check_body_tables(articles):
+    """본문 마크다운 표(| 셀 |)를 점검합니다.
+
+    웹진 본문은 assets/js/app.js 의 renderBody 가 그립니다. 표는
+    `| 머리글 | ... |` 줄 + `| --- | ... |` 구분선 + 본문 행 순서여야 표로 그려지고,
+    구분선이 빠지면 파이프 문자열이 문단으로 그대로 찍힙니다.
+    (2026-11-28 크립토카드 기사 모바일 화면에서 표가 깨져 보인 원인)
+    """
+    for a in articles:
+        lines = (a.get("body") or "").replace("\r", "").split("\n")
+        i = 0
+        while i < len(lines):
+            if not PIPE_LINE_RE.match(lines[i]):
+                i += 1
+                continue
+            rows = []
+            while i < len(lines) and PIPE_LINE_RE.match(lines[i]):
+                if len(rows) > 1 and _is_sep_row(lines[i]):
+                    break
+                rows.append(lines[i])
+                i += 1
+            label = a.get("id") or "?"
+            if len(rows) < 2 or not _is_sep_row(rows[1]):
+                errors.append(
+                    f"articles.json[{label}]: 본문 표에 구분선(| --- |)이 없어 표로 그려지지 않습니다"
+                    f" — 첫 줄: {rows[0].strip()[:40]}"
+                )
+                continue
+            head = len(_table_cells(rows[0]))
+            for r in rows[2:]:
+                n = len(_table_cells(r))
+                if n != head:
+                    warnings.append(
+                        f"articles.json[{label}]: 표 열 수가 머리글({head})과 다릅니다({n}) — {r.strip()[:40]}"
+                    )
 
 
 def validate_market(market):

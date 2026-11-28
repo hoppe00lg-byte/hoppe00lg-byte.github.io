@@ -607,7 +607,7 @@ def head_block(lang):
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@400;500;600;700;900&display=swap">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="{asset}assets/css/style.css?v=20261123p">
+<link rel="stylesheet" href="{asset}assets/css/style.css?v=20261128a">
 <link rel="stylesheet" href="{asset}assets/css/monetize.css?v=20261123m">
 <link rel="stylesheet" href="{asset}assets/css/nav.css?v={NAV_CSS_VER}">
 <link rel="stylesheet" href="{asset}assets/css/sitemap.css?v={CSS_VER}">
@@ -831,7 +831,7 @@ def render(lang):
 <script src="data/articles.fallback.js"></script>
 <script src="{asset}assets/js/monetize.js?v=20261123c"></script>
 <script src="{asset}assets/js/nav.js?v={NAV_JS_VER}"></script>{i18n_scripts}
-<script src="{asset}assets/js/app.js?v=20261128b"></script>
+<script src="{asset}assets/js/app.js?v=20261128c"></script>
 <!-- IB:CHAT-FLOAT -->
 <script src="{asset}assets/js/chat-float.js?v=20261124c" defer></script>
 <!-- /IB:CHAT-FLOAT -->
