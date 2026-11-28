@@ -831,7 +831,7 @@ def render(lang):
 <script src="data/articles.fallback.js"></script>
 <script src="{asset}assets/js/monetize.js?v=20261123c"></script>
 <script src="{asset}assets/js/nav.js?v={NAV_JS_VER}"></script>{i18n_scripts}
-<script src="{asset}assets/js/app.js?v=20261128a"></script>
+<script src="{asset}assets/js/app.js?v=20261128b"></script>
 <!-- IB:CHAT-FLOAT -->
 <script src="{asset}assets/js/chat-float.js?v=20261124c" defer></script>
 <!-- /IB:CHAT-FLOAT -->

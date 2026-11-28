@@ -51,8 +51,13 @@ SKIP_DIRS = {".git", "node_modules", "screenshots", "tools", "supabase", "data",
 
 
 def prefix_for(rel_path):
-    """사이트 루트까지의 상대 경로. /en/x.html → '../', /en/a/x.html → '../../', /a/x.html → '../'"""
+    """사이트 루트까지의 상대 경로. /en/x.html → '../', /en/a/x.html → '../../', /a/x.html → '../'
+
+    루트 404.html 은 없는 주소(/a/x.html, /en/foo/bar …)의 화면으로 대신 열리므로
+    상대 경로가 엉뚱한 폴더를 가리킵니다. 이 파일만 절대 경로('/')를 씁니다."""
     rel_path = rel_path.replace(os.sep, "/")
+    if rel_path == "404.html":
+        return "/"
     parts = rel_path.split("/")[:-1]
     return "../" * len(parts)
 

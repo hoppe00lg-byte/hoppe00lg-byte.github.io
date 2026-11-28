@@ -166,7 +166,7 @@
   /* 기사 id: /a/{id}.html 경로 또는 예전 article.html?id={id} 주소 둘 다 지원합니다. */
   function currentArticleId() {
     var params = new URLSearchParams(window.location.search);
-    var id = params.get('id');
+    var id = params.get('id') || params.get('slug');
     if (id) return id;
     var m = /\/a\/([^\/]+)\.html$/.exec(window.location.pathname || '');
     return m ? decodeURIComponent(m[1]) : null;
@@ -2875,7 +2875,10 @@
     if (!root) return;
 
     if (!a) {
-      renderMissing(root);
+      /* 주소에 기사 id가 없거나(예전 /article.html 직접 접속) 이 사이트에 없는 id입니다.
+         '리포트를 찾을 수 없습니다' 화면을 200 으로 보여 주면 검색엔진이 소프트 404 로 잡고
+         광고 심사에도 불리하므로, 그 언어의 첫 화면으로 바로 보냅니다. */
+      redirectMissingArticle(id);
       return;
     }
 
@@ -2958,6 +2961,43 @@
     mountAdsense();
     initComments(a.id);
     recordView(a);
+  }
+
+  /* 기사 주소를 찾지 못했을 때: 같은 언어의 비슷한 기사 → 그 언어 첫 화면 순서로 보냅니다. */
+  function redirectMissingArticle(id) {
+    var lang = IBLANG;
+    var home = UH();
+    if (id) {
+      var hit = closestArticleId(id);
+      if (hit) {
+        location.replace(U('a/' + encodeURIComponent(hit) + '.html'));
+        return;
+      }
+    }
+    location.replace(home);
+  }
+
+  /* id 오타·구주소를 살리기 위한 근접 id 찾기(대시 토큰 겹침 + 접두 일치). */
+  function closestArticleId(id) {
+    if (!id || !state.articles.length) return null;
+    var norm = function (s) {
+      return String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    };
+    var want = norm(id);
+    if (!want) return null;
+    var wantTokens = want.split(' ').filter(function (t) { return t.length > 2; });
+    var best = null, bestScore = 0;
+    state.articles.forEach(function (x) {
+      var have = norm(x.id);
+      if (have === want) { best = x.id; bestScore = 2; return; }
+      var score = 0;
+      if (have.indexOf(want) === 0 || want.indexOf(have) === 0) score += 1;
+      var haveTokens = have.split(' ');
+      var hit = wantTokens.filter(function (t) { return haveTokens.indexOf(t) !== -1; }).length;
+      if (wantTokens.length) score += hit / wantTokens.length;
+      if (score > bestScore) { bestScore = score; best = x.id; }
+    });
+    return bestScore >= 1 ? best : null;
   }
 
   function renderMissing(root) {

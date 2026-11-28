@@ -282,7 +282,12 @@ def homeize(path_rel):
 
 
 def depth_prefix(page_lang, path_rel):
-    """사이트 루트까지의 상대 경로. 예: /en/ → '../', /en/a/x.html → '../../', /a/x.html → '../'"""
+    """사이트 루트까지의 상대 경로. 예: /en/ → '../', /en/a/x.html → '../../', /a/x.html → '../'
+
+    루트 404.html 은 없는 주소의 화면으로 대신 열려 깊이가 정해져 있지 않으므로
+    이 파일만 절대 경로를 씁니다."""
+    if page_lang == "ko" and path_rel == "404.html":
+        return "/"
     dirs = path_rel.count("/")
     return "../" * (dirs + (0 if page_lang == "ko" else 1))
 
