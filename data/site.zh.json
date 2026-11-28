@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "每周两次高潮与死亡率降低50%的关联性：探讨性健康与医学数据的真实因果关系",
+   "articleId": "sex-health-mortality-analysis-20261128"
+  },
+  {
    "text": "2.4GW AI数据中心启动与15亿韩元贷款额度的经济博弈",
    "articleId": "ai-data-center-investment-mortgage-limit-analysis-20261128"
   },
@@ -94,10 +98,6 @@
   {
    "text": "韩国肉类加工工厂火灾引发警示：工业园区消防响应与资产保护评估",
    "articleId": "gwangju-meat-processing-fire-analysis-20261128"
-  },
-  {
-   "text": "病理AI的新标尺：基于基因数据的量化评估框架问世",
-   "articleId": "gene-informed-pathology-benchmark-2026-20261128"
   }
  ],
  "editorNote": {

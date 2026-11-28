@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "주 2회 오르가즘과 사망률 50%의 상관관계, 건강 수명 연장을 위한 실질적 지표 분석",
+   "articleId": "sex-health-mortality-analysis-20261128"
+  },
+  {
    "text": "2.4GW AI 데이터센터 착공과 15억 기준 주택담보대출의 경제학",
    "articleId": "ai-data-center-investment-mortgage-limit-analysis-20261128"
   },
@@ -94,10 +98,6 @@
   {
    "text": "20분 만에 잡힌 광주 육가공 공장 화재, 대응 1단계 발령의 기술적 경계선",
    "articleId": "gwangju-meat-processing-fire-analysis-20261128"
-  },
-  {
-   "text": "병리학 AI의 새로운 좌표, 2026년 11월 25일 공개된 유전자 기반 벤치마크 모델의 한계",
-   "articleId": "gene-informed-pathology-benchmark-2026-20261128"
   }
  ],
  "editorNote": {

@@ -84,6 +84,10 @@
  ],
  "ticker": [
   {
+   "text": "The correlation between orgasm frequency and mortality: A critical health analysis",
+   "articleId": "sex-health-mortality-analysis-20261128"
+  },
+  {
    "text": "The economics of a 2.4GW AI data center project and residential mortgage limits",
    "articleId": "ai-data-center-investment-mortgage-limit-analysis-20261128"
   },
@@ -94,10 +98,6 @@
   {
    "text": "Industrial fire response standards and the risk management of food processing facilities",
    "articleId": "gwangju-meat-processing-fire-analysis-20261128"
-  },
-  {
-   "text": "A new gene-informed benchmark for validating pathology AI foundation models",
-   "articleId": "gene-informed-pathology-benchmark-2026-20261128"
   }
  ],
  "editorNote": {

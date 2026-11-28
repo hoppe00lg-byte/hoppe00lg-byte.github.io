@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 14:00:52 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 16:09:48 +0900</lastBuildDate>
+    <item>
+      <title>주 2회 오르가즘과 사망률 50%의 상관관계, 건강 수명 연장을 위한 실질적 지표 분석</title>
+      <link>https://insightbriefnews.com/a/sex-health-mortality-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/sex-health-mortality-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 16:09:27 +0900</pubDate>
+      <category>바이오·헬스</category>
+      <description>웨일스 남성 900명을 대상으로 한 10년 추적 조사 결과, 주 2회 이상의 오르가즘은 사망 위험을 50% 낮추는 것으로 나타났다. 성생활이 단순한 삶의 질을 넘어 신체 건강에 미치는 의학적 수치와 상관관계를 정밀 분석한다.</description>
+    </item>
     <item>
       <title>2.4GW AI 데이터센터 착공과 15억 기준 주택담보대출의 경제학</title>
       <link>https://insightbriefnews.com/a/ai-data-center-investment-mortgage-limit-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 01:50:25 +0900</pubDate>
       <category>부동산·생활세금</category>
       <description>부산 횡단보도 사고로 전치 14주의 중상을 입은 40대 피해자의 사례를 통해 보행자 보호 의무 위반이 초래하는 막대한 가계 경제 손실과 배상 범위의 현실을 짚어본다. 사고 이후 1년 이상의 노동력 상실과 치료비 부담이 가계 재정에 미치는 영향을 분석했다.</description>
-    </item>
-    <item>
-      <title>마크롱의 &#x27;도핑된 고기&#x27; 발언과 브라질-EU 간 177개 시장 공급망 갈등</title>
-      <link>https://insightbriefnews.com/a/brazil-meat-trade-row-2026-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/brazil-meat-trade-row-2026-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 01:49:19 +0900</pubDate>
-      <category>국제·지정학</category>
-      <description>프랑스 대통령의 발언으로 브라질산 축산물 수입 제한이 가시화되면서 177개국에 육류를 수출하는 브라질의 무역 체계가 흔들리고 있다. EU의 검역 기준 강화가 기업의 공급망 비용에 미치는 영향을 분석한다.</description>
     </item>
   </channel>
 </rss>

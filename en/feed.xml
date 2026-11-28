@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 14:00:57 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 16:14:06 +0900</lastBuildDate>
+    <item>
+      <title>The correlation between orgasm frequency and mortality: A critical health analysis</title>
+      <link>https://insightbriefnews.com/en/a/sex-health-mortality-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/sex-health-mortality-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 16:09:27 +0900</pubDate>
+      <category>Health &amp; Bio</category>
+      <description>A decade-long study of 900 men reveals that those experiencing at least two orgasms per week saw a 50% reduction in mortality risk. Researchers now examine whether sexual activity is a primary driver of longevity or a byproduct of overall health.</description>
+    </item>
     <item>
       <title>The economics of a 2.4GW AI data center project and residential mortgage limits</title>
       <link>https://insightbriefnews.com/en/a/ai-data-center-investment-mortgage-limit-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 01:52:22 +0900</pubDate>
       <category>Energy &amp; Climate</category>
       <description>Chinese automakers unveiled luxury electric sedans priced past 2 million yuan at the Guangzhou Auto Show on November 27, 2026. The shift highlights growing power generation losses and grid stability challenges.</description>
-    </item>
-    <item>
-      <title>Financial impact of severe pedestrian accidents: A case study on long-term income loss and liability</title>
-      <link>https://insightbriefnews.com/en/a/pedestrian-accident-loss-analysis-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/pedestrian-accident-loss-analysis-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 01:50:25 +0900</pubDate>
-      <category>Property &amp; Tax</category>
-      <description>A 40-year-old pedestrian in Busan suffered critical injuries after being struck and crushed by a vehicle. This incident highlights the massive economic burden on households when pedestrian protection duties are violated, involving long-term disability and substantial medical costs.</description>
     </item>
   </channel>
 </rss>

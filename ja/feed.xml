@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 14:01:00 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 16:14:08 +0900</lastBuildDate>
+    <item>
+      <title>週2回オーガズムと死亡率50％の相関関係、健康寿命を延ばすための実質的な指標分析</title>
+      <link>https://insightbriefnews.com/ja/a/sex-health-mortality-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/sex-health-mortality-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 16:09:27 +0900</pubDate>
+      <category>バイオ・健康</category>
+      <description>ウェールズ男性900人を対象とした10年の追跡調査の結果、週2回以上のオーガズムは死亡リスクを50%下げることが分かった。性生活が単純な生活の質を超えて体の健康に及ぼす医学的な数値と相関関係を精密分析する。</description>
+    </item>
     <item>
       <title>2.4GW級AIデータセンター着工と15億ウォンの住宅ローン規制が示す家計の経済学</title>
       <link>https://insightbriefnews.com/ja/a/ai-data-center-investment-mortgage-limit-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 01:50:25 +0900</pubDate>
       <category>不動産・税金</category>
       <description>2026年11月10日に発生した横断歩道での重傷事故。歩行者保護義務違反が家計にもたらす逸失利益と介護負担を、日本の経済的視点から分析する。</description>
-    </item>
-    <item>
-      <title>マクロン仏大統領の「ドーピング肉」発言が揺さぶるブラジル産食肉供給網の脆弱性</title>
-      <link>https://insightbriefnews.com/ja/a/brazil-meat-trade-row-2026-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/brazil-meat-trade-row-2026-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 01:49:19 +0900</pubDate>
-      <category>国際・地政学</category>
-      <description>フランス大統領の放言が引き金となり、欧州連合（EU）によるブラジル産畜産物の輸入制限が現実味を帯びている。177カ国に輸出するブラジルの貿易体制に対するEUの検疫強化は、日本の家計と供給コストに直結する新たなリスクとして浮上した。</description>
     </item>
   </channel>
 </rss>

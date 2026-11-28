@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 14:00:59 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 16:14:07 +0900</lastBuildDate>
+    <item>
+      <title>每周两次高潮与死亡率降低50%的关联性：探讨性健康与医学数据的真实因果关系</title>
+      <link>https://insightbriefnews.com/zh/a/sex-health-mortality-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/sex-health-mortality-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 16:09:27 +0900</pubDate>
+      <category>生物·健康</category>
+      <description>根据2026年11月28日发布的长期追踪研究，每周至少获得两次高潮的中年男性死亡风险降低50%。专家指出，性频率与健康长寿之间虽有数据关联，但其医学因果关系与隐私保护机制仍需审慎评估。</description>
+    </item>
     <item>
       <title>2.4GW AI数据中心启动与15亿韩元贷款额度的经济博弈</title>
       <link>https://insightbriefnews.com/zh/a/ai-data-center-investment-mortgage-limit-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 01:50:25 +0900</pubDate>
       <category>房产·个税</category>
       <description>2026年11月10日釜山发生一起严重违规交通事故，导致一名40多岁行人重伤并造成长期经济损失。本篇分析将探讨此类12大严重过失事故背后的法律责任与家庭财务影响。</description>
-    </item>
-    <item>
-      <title>法国称巴西肉类含“兴奋剂”引发贸易摩擦，波及177国供应链体系</title>
-      <link>https://insightbriefnews.com/zh/a/brazil-meat-trade-row-2026-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/brazil-meat-trade-row-2026-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 01:49:19 +0900</pubDate>
-      <category>国际·地缘</category>
-      <description>法国总统马克龙对巴西肉类使用“兴奋剂”的指控，正引发欧盟与南方共同市场之间的贸易动荡。随着欧盟自2026年9月起加强对巴西肉类和禽类的准入限制，这一非关税壁垒正对全球177个市场的供应稳定性造成直接冲击。</description>
     </item>
   </channel>
 </rss>
