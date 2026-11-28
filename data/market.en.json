@@ -1616,7 +1616,7 @@
    "decimals": 0,
    "change": -1088,
    "changePct": -1.78,
-   "changeBasis": "24-hour comparison (CoinGecko, 11/28 11:16)",
+   "changeBasis": "24-hour readiness (CoinGecko, 11/28 11:16)",
    "date": "2026-11-28",
    "sourceName": "CoinGecko spot price",
    "sourceUrl": "https://www.coingecko.com/en/coins/bitcoin",
