@@ -305,6 +305,9 @@ def pick_card_row(it: dict, rank: int) -> dict | None:
         return None
     if jp <= 0 or kr <= 0 or sell <= 0:
         return None
+    # 이상치(허수 매물)로 표시된 항목은 화면으로 내보내지 않는다(스캐너 필터의 이중 안전장치).
+    if it.get("spike"):
+        return None
     fee_krw = float(it.get("sell_fee_krw") or 0)
     fee_pct = round(fee_krw / sell * 100, 2) if sell else 0.0
     intl = int(it.get("intl_shipping_krw") or 0)
@@ -345,7 +348,10 @@ def pick_card_row(it: dict, rank: int) -> dict | None:
 
 def build_cards_doc(report: dict, top: int) -> dict:
     rows = []
+    spike_ids = {str(s.get("id")) for s in (report.get("spikes") or []) if s.get("id")}
     for it in (report.get("items") or []):
+        if str(it.get("id")) in spike_ids:
+            continue
         r = pick_card_row(it, 0)
         if r:
             rows.append(r)
@@ -373,6 +379,7 @@ def build_cards_doc(report: dict, top: int) -> dict:
         "positive": sum(1 for r in rows if r["margin"] > 0), "shown": len(items),
         "best": rows[0]["margin"] if rows else 0,
         "buyable": int(counts.get("buyable_at_retail") or 0),
+        "spikes": len(spike_ids),
     }
     doc["games"] = sorted(
         [{"key": g, "count": sum(1 for r in rows if r["game"] == g)}

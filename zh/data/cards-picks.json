@@ -2,8 +2,8 @@
  "version": 2,
  "kind": "cards",
  "date": "2026-11-28",
- "generatedAt": "2026-11-28T14:47:16.950524+09:00",
- "syncedAt": "2026-11-28T14:54:29+09:00",
+ "generatedAt": "2026-11-28T15:02:24.049546+09:00",
+ "syncedAt": "2026-11-28T15:05:50+09:00",
  "fx": {
   "jpyKrw": 8.3693,
   "usdKrw": 1335.09,
@@ -25,16 +25,18 @@
    "국내 기준가는 KREAM 판매 등록가(최저)이며 실제 체결은 더 낮을 수 있음",
    "판매가는 국내 기준가에서 10% 낮춰 계산",
    "PSA·BGS 등 감정품과 상태 B·C 매물은 비교에서 제외",
-   "원피스·유희왕은 같은 코드 안에서도 일러스트(페러럴) 차이가 있어 결제 전 이미지 대조 필요"
+   "원피스·유희왕은 같은 코드 안에서도 일러스트(페러럴) 차이가 있어 결제 전 이미지 대조 필요",
+   "국내 기준가·순마진이 직전 리포트(최근 28일) 대비 100% 이상 또는 총원가 절반 이상 급등한 항목은 단일 매물 허수로 보고 제외"
   ]
  },
  "scan": {
   "cards": 38,
-  "resolved": 34,
-  "positive": 8,
-  "shown": 34,
-  "best": 388746,
-  "buyable": 8
+  "resolved": 33,
+  "positive": 7,
+  "shown": 33,
+  "best": 171581,
+  "buyable": 7,
+  "spikes": 1
  },
  "games": [
   {
@@ -43,7 +45,7 @@
   },
   {
    "key": "yugioh",
-   "count": 12
+   "count": 11
   },
   {
    "key": "onepiece",
@@ -53,56 +55,6 @@
  "items": [
   {
    "rank": 1,
-   "id": "TRC1-JP000",
-   "game": "yugioh",
-   "gameKo": "유희왕",
-   "gameEn": "Yu-Gi-Oh!",
-   "code": "TRC1-JP000",
-   "setKo": "트레이딩 카드 컬렉션 · 더 레어리티",
-   "cardNo": "",
-   "rarity": "HR",
-   "nameKo": "푸른 눈의 백룡",
-   "nameEn": "Blue-Eyes White Dragon",
-   "nameJp": "青眼の白龍",
-   "nameZh": "",
-   "lang": "ja",
-   "jp": 99800,
-   "jpCond": "기준",
-   "jpStock": 1,
-   "jpUrl": "https://www.cardrush.jp/product/4439",
-   "kr": 1595000,
-   "krAsOf": "2026-11-28",
-   "krUrl": "https://tcgindex.org/market/printings/sp%3Akream%3A976802",
-   "invested": 945761,
-   "customs": 88476,
-   "ict": 0,
-   "shipping": 13000,
-   "intl": 9500,
-   "sell": 1435500,
-   "margin": 388746,
-   "roi": 41.1,
-   "bep": 141458,
-   "bepGap": 41.7,
-   "extreme": false,
-   "fill": {
-    "cur": "JPY",
-    "price": 99800.0,
-    "fx": 8.3693,
-    "local": 0,
-    "intl": 9500,
-    "forward": 0,
-    "cat": "card",
-    "duty": 0.0,
-    "business": false,
-    "sell": 1435500,
-    "fee": 6.6,
-    "fixed": 2750,
-    "shipout": 3500,
-    "other": 12529
-   }
-  },
-  {
-   "rank": 2,
    "id": "LGB1-JPS03",
    "game": "yugioh",
    "gameKo": "유희왕",
@@ -152,7 +104,7 @@
    }
   },
   {
-   "rank": 3,
+   "rank": 2,
    "id": "AC02-JP000",
    "game": "yugioh",
    "gameKo": "유희왕",
@@ -202,7 +154,7 @@
    }
   },
   {
-   "rank": 4,
+   "rank": 3,
    "id": "PGB1-JPS01",
    "game": "yugioh",
    "gameKo": "유희왕",
@@ -252,7 +204,7 @@
    }
   },
   {
-   "rank": 5,
+   "rank": 4,
    "id": "DP23-JP000",
    "game": "yugioh",
    "gameKo": "유희왕",
@@ -302,7 +254,7 @@
    }
   },
   {
-   "rank": 6,
+   "rank": 5,
    "id": "PGB1-JPS02",
    "game": "yugioh",
    "gameKo": "유희왕",
@@ -352,7 +304,7 @@
    }
   },
   {
-   "rank": 7,
+   "rank": 6,
    "id": "HC01-JP003",
    "game": "yugioh",
    "gameKo": "유희왕",
@@ -402,7 +354,7 @@
    }
   },
   {
-   "rank": 8,
+   "rank": 7,
    "id": "PGB1-JPS03",
    "game": "yugioh",
    "gameKo": "유희왕",
@@ -452,7 +404,7 @@
    }
   },
   {
-   "rank": 9,
+   "rank": 8,
    "id": "20CP-JPS02",
    "game": "yugioh",
    "gameKo": "유희왕",
@@ -502,7 +454,7 @@
    }
   },
   {
-   "rank": 10,
+   "rank": 9,
    "id": "OP14-119-SEC",
    "game": "onepiece",
    "gameKo": "원피스",
@@ -552,7 +504,7 @@
    }
   },
   {
-   "rank": 11,
+   "rank": 10,
    "id": "OP13-120-SEC",
    "game": "onepiece",
    "gameKo": "원피스",
@@ -602,7 +554,7 @@
    }
   },
   {
-   "rank": 12,
+   "rank": 11,
    "id": "OP13-118-SEC",
    "game": "onepiece",
    "gameKo": "원피스",
@@ -652,7 +604,7 @@
    }
   },
   {
-   "rank": 13,
+   "rank": 12,
    "id": "sv8a-226",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -702,7 +654,7 @@
    }
   },
   {
-   "rank": 14,
+   "rank": 13,
    "id": "sv8a-236",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -752,7 +704,7 @@
    }
   },
   {
-   "rank": 15,
+   "rank": 14,
    "id": "sv8a-223",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -802,7 +754,7 @@
    }
   },
   {
-   "rank": 16,
+   "rank": 15,
    "id": "m1s-088",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -852,7 +804,7 @@
    }
   },
   {
-   "rank": 17,
+   "rank": 16,
    "id": "s12a-210",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -902,7 +854,7 @@
    }
   },
   {
-   "rank": 18,
+   "rank": 17,
    "id": "OP16-119-SEC",
    "game": "onepiece",
    "gameKo": "원피스",
@@ -952,7 +904,7 @@
    }
   },
   {
-   "rank": 19,
+   "rank": 18,
    "id": "sv8a-224",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1002,7 +954,7 @@
    }
   },
   {
-   "rank": 20,
+   "rank": 19,
    "id": "sv4a-348",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1052,7 +1004,7 @@
    }
   },
   {
-   "rank": 21,
+   "rank": 20,
    "id": "20CP-JPS03",
    "game": "yugioh",
    "gameKo": "유희왕",
@@ -1102,7 +1054,7 @@
    }
   },
   {
-   "rank": 22,
+   "rank": 21,
    "id": "sv8a-200",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1152,7 +1104,7 @@
    }
   },
   {
-   "rank": 23,
+   "rank": 22,
    "id": "sv2a-208",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1202,7 +1154,7 @@
    }
   },
   {
-   "rank": 24,
+   "rank": 23,
    "id": "sv2a-202",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1252,7 +1204,7 @@
    }
   },
   {
-   "rank": 25,
+   "rank": 24,
    "id": "sv2a-200",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1302,7 +1254,7 @@
    }
   },
   {
-   "rank": 26,
+   "rank": 25,
    "id": "sv5a-090",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1352,7 +1304,7 @@
    }
   },
   {
-   "rank": 27,
+   "rank": 26,
    "id": "m2a-246",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1402,7 +1354,7 @@
    }
   },
   {
-   "rank": 28,
+   "rank": 27,
    "id": "sv9a-087",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1452,7 +1404,7 @@
    }
   },
   {
-   "rank": 29,
+   "rank": 28,
    "id": "DMMD-JP001",
    "game": "yugioh",
    "gameKo": "유희왕",
@@ -1502,7 +1454,7 @@
    }
   },
   {
-   "rank": 30,
+   "rank": 29,
    "id": "sv2a-205",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1552,7 +1504,7 @@
    }
   },
   {
-   "rank": 31,
+   "rank": 30,
    "id": "G4-01",
    "game": "yugioh",
    "gameKo": "유희왕",
@@ -1602,7 +1554,7 @@
    }
   },
   {
-   "rank": 32,
+   "rank": 31,
    "id": "sv2a-201",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1652,7 +1604,7 @@
    }
   },
   {
-   "rank": 33,
+   "rank": 32,
    "id": "sv8a-217",
    "game": "pokemon",
    "gameKo": "포켓몬",
@@ -1702,7 +1654,7 @@
    }
   },
   {
-   "rank": 34,
+   "rank": 33,
    "id": "sv4a-347",
    "game": "pokemon",
    "gameKo": "포켓몬",
