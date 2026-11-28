@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 13:03:44 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 14:01:00 +0900</lastBuildDate>
+    <item>
+      <title>2.4GW級AIデータセンター着工と15億ウォンの住宅ローン規制が示す家計の経済学</title>
+      <link>https://insightbriefnews.com/ja/a/ai-data-center-investment-mortgage-limit-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/ai-data-center-investment-mortgage-limit-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 14:00:32 +0900</pubDate>
+      <category>不動産・税金</category>
+      <description>韓国の2026年11月28日の大規模インフラ投資と、住宅市場を分かつ15億ウォン（約178万円、2026-11-28時点）の融資境界線を分析する。国家主導のAI戦略と個人の資金計画の乖離を読み解く。</description>
+    </item>
     <item>
       <title>ルカシェンコ大統領の反旗と地政学的リスク：プーチン氏の「領土論理」への異議と日本経済への波及</title>
       <link>https://insightbriefnews.com/ja/a/lukashenko-putin-territory-geopolitical-impact-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 01:49:19 +0900</pubDate>
       <category>国際・地政学</category>
       <description>フランス大統領の放言が引き金となり、欧州連合（EU）によるブラジル産畜産物の輸入制限が現実味を帯びている。177カ国に輸出するブラジルの貿易体制に対するEUの検疫強化は、日本の家計と供給コストに直結する新たなリスクとして浮上した。</description>
-    </item>
-    <item>
-      <title>横断歩道での12大重過失事故：日本の家計にも影響する損害賠償と法的リスクの構造</title>
-      <link>https://insightbriefnews.com/ja/a/traffic-accident-compensation-analysis-2026-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/traffic-accident-compensation-analysis-2026-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 01:01:02 +0900</pubDate>
-      <category>不動産・税金</category>
-      <description>2026年11月10日に発生した歩行者事故は、運転手の注意義務違反が招いた重大な事態である。脳神経損傷を負った被害者の救済と、日本の家計が備えるべき賠償リスクについて考察する。</description>
     </item>
   </channel>
 </rss>

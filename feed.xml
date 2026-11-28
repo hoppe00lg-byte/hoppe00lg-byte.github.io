@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 12:59:22 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 14:00:52 +0900</lastBuildDate>
+    <item>
+      <title>2.4GW AI 데이터센터 착공과 15억 기준 주택담보대출의 경제학</title>
+      <link>https://insightbriefnews.com/a/ai-data-center-investment-mortgage-limit-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/ai-data-center-investment-mortgage-limit-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 14:00:32 +0900</pubDate>
+      <category>부동산·생활세금</category>
+      <description>강원 동해에 구축되는 2.4GW급 AI 데이터센터가 지역 경제에 미칠 파급력과, 현행 15억 원 기준 주택담보대출 규제가 실수요자의 자금 계획에 미치는 손익 구조를 분석한다.</description>
+    </item>
     <item>
       <title>푸틴의 영토 논리에 반기 든 루카셴코, 몽골-타타르 역사까지 거론</title>
       <link>https://insightbriefnews.com/a/lukashenko-putin-territory-geopolitical-impact-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 01:49:19 +0900</pubDate>
       <category>국제·지정학</category>
       <description>프랑스 대통령의 발언으로 브라질산 축산물 수입 제한이 가시화되면서 177개국에 육류를 수출하는 브라질의 무역 체계가 흔들리고 있다. EU의 검역 기준 강화가 기업의 공급망 비용에 미치는 영향을 분석한다.</description>
-    </item>
-    <item>
-      <title>횡단보도 12대 중과실 사고, 뇌신경 손상 피해자의 경제적 손실과 배상 범위</title>
-      <link>https://insightbriefnews.com/a/traffic-accident-compensation-analysis-2026-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/traffic-accident-compensation-analysis-2026-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 01:01:02 +0900</pubDate>
-      <category>부동산·생활세금</category>
-      <description>2026년 11월 10일 발생한 부산 아파트 앞 횡단보도 사고는 12대 중과실에 해당한다. 전치 14주의 중상과 영구적 장애 가능성에 따른 민사상 배상액을 산정해 본다.</description>
     </item>
   </channel>
 </rss>

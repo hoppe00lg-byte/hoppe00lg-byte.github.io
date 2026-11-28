@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 13:03:41 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 14:00:57 +0900</lastBuildDate>
+    <item>
+      <title>The economics of a 2.4GW AI data center project and residential mortgage limits</title>
+      <link>https://insightbriefnews.com/en/a/ai-data-center-investment-mortgage-limit-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/ai-data-center-investment-mortgage-limit-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 14:00:32 +0900</pubDate>
+      <category>Property &amp; Tax</category>
+      <description>As South Korea launches Asia’s largest 2.4GW AI infrastructure project, retail buyers face strict loan-to-value caps based on volatile property valuations. The 15 billion KRW threshold serves as a critical regulatory pivot point for financing.</description>
+    </item>
     <item>
       <title>Lukashenko challenges Putin’s territorial logic over Ukraine and historical claims</title>
       <link>https://insightbriefnews.com/en/a/lukashenko-putin-territory-geopolitical-impact-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 01:50:25 +0900</pubDate>
       <category>Property &amp; Tax</category>
       <description>A 40-year-old pedestrian in Busan suffered critical injuries after being struck and crushed by a vehicle. This incident highlights the massive economic burden on households when pedestrian protection duties are violated, involving long-term disability and substantial medical costs.</description>
-    </item>
-    <item>
-      <title>Brazil disputes French labeling of meat as &#x27;doped&#x27; amid intensifying trade friction</title>
-      <link>https://insightbriefnews.com/en/a/brazil-meat-trade-row-2026-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/brazil-meat-trade-row-2026-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 01:49:19 +0900</pubDate>
-      <category>World &amp; Geopolitics</category>
-      <description>President Macron’s inflammatory rhetoric has threatened supply chains for Brazilian meat exporters, who currently service 177 global markets. As EU import restrictions tighten, international importers are facing increased logistical costs and mounting regulatory uncertainty.</description>
     </item>
   </channel>
 </rss>
