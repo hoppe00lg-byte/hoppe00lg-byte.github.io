@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 18:14:50 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 19:51:03 +0900</lastBuildDate>
+    <item>
+      <title>海外加密卡支付详情将于2027年4月向国税厅报告……税款将于2029年到期</title>
+      <link>https://insightbriefnews.com/zh/a/crypto-card-carf-retail-payment-2027.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/crypto-card-carf-retail-payment-2027.html</guid>
+      <pubDate>Sat, 28 Nov 2026 19:50:16 +0900</pubDate>
+      <category>经济·金融</category>
+      <description>国税厅向国会报告称，将通过 CARF 的首次信息交换（2027 年）确保海外发行的加密卡的零售支付详细信息。虚拟资产征税将推迟到 2029 年，但交易的 CARF 报告将于 2026 年开始。我们总结了每个发卡国的信息交换时间以及目前无论是否延期都适用的海外金融账户和赠与税义务。</description>
+    </item>
     <item>
       <title>ENHYPEN领衔西班牙Mad Cool 2027：K-Pop全球巡演经济学的量化重构</title>
       <link>https://insightbriefnews.com/zh/a/enhypen-mad-cool-2027-headliner-kpop-festival-revenue-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 02:23:10 +0900</pubDate>
       <category>生物·健康</category>
       <description>随着公共医疗机构被天主教会接管，澳大利亚部分地区面临堕胎与辅助生殖服务的“地理性荒漠化”。2026年11月27日的调查显示，运营主体的宗教信仰正引发医疗决策权的结构性危机。</description>
-    </item>
-    <item>
-      <title>中国电动车高端化浪潮：百万级奢华背后潜藏的能源与电网挑战</title>
-      <link>https://insightbriefnews.com/zh/a/china-ev-premium-market-energy-efficiency-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/china-ev-premium-market-energy-efficiency-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 01:52:22 +0900</pubDate>
-      <category>能源·气候</category>
-      <description>2026年11月27日广州车展见证了比亚迪“仰望”系列发布208万人民币的顶奢车型。在电动车价格两极分化加剧的同时，AI与高阶智驾引发的电力需求激增，正对能源转换效率提出严峻拷问。</description>
     </item>
   </channel>
 </rss>

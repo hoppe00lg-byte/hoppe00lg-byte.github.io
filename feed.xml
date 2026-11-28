@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 18:14:30 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 19:50:24 +0900</lastBuildDate>
+    <item>
+      <title>해외 크립토카드 결제내역, 2027년 4월 국세청에 보고된다…세금은 2029년인데</title>
+      <link>https://insightbriefnews.com/a/crypto-card-carf-retail-payment-2027.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/crypto-card-carf-retail-payment-2027.html</guid>
+      <pubDate>Sat, 28 Nov 2026 19:50:16 +0900</pubDate>
+      <category>경제·금융</category>
+      <description>국세청이 CARF 첫 정보교환(2027년)을 통해 해외 발급 크립토카드의 소매 결제 내역을 확보하겠다고 국회에 보고했다. 가상자산 과세는 2029년 유예가 추진 중이지만 CARF 보고는 2026년 거래분부터 시작된다. 카드 발급 국가별 정보교환 시점과, 유예와 무관하게 지금 적용되는 해외금융계좌·증여세 의무를 정리했다.</description>
+    </item>
     <item>
       <title>20만 관객 모이는 스페인 &#x27;매드 쿨&#x27;, 엔하이픈이 헤드라이너로 입증한 K팝 공연 경제학</title>
       <link>https://insightbriefnews.com/a/enhypen-mad-cool-2027-headliner-kpop-festival-revenue-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 02:23:10 +0900</pubDate>
       <category>바이오·헬스</category>
       <description>가톨릭 병원이 공공 의료를 인수하며 낙태와 난임 시술의 지리적 사막화가 발생하고 있다. 2012년 아일랜드의 비극적 사례처럼, 종교적 신념이 응급 의료 현장의 판단을 왜곡하는 구조적 위기가 호주에서도 나타난다.</description>
-    </item>
-    <item>
-      <title>중국 전기차 4억 원대 시대, 초고급화 뒤에 숨겨진 전력 효율과 에너지 비용</title>
-      <link>https://insightbriefnews.com/a/china-ev-premium-market-energy-efficiency-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/china-ev-premium-market-energy-efficiency-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 01:52:22 +0900</pubDate>
-      <category>에너지·전력·기후</category>
-      <description>2026년 11월 27일 광저우 모터쇼에서 비야디의 4억 2천만 원대 전기차 &#x27;딩야오&#x27;가 공개됐다. 고가와 저가로 양극화된 중국 전기차 시장의 이면에는 전력망 효율과 탄소 규제라는 거대한 비용 과제가 놓여 있다.</description>
     </item>
   </channel>
 </rss>

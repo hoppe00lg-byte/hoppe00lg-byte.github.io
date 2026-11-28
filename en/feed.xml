@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 18:14:43 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 19:50:57 +0900</lastBuildDate>
+    <item>
+      <title>Overseas crypto card payment details will be reported to the National Tax Service in April 2027… Taxes are due in 2029</title>
+      <link>https://insightbriefnews.com/en/a/crypto-card-carf-retail-payment-2027.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/crypto-card-carf-retail-payment-2027.html</guid>
+      <pubDate>Sat, 28 Nov 2026 19:50:16 +0900</pubDate>
+      <category>Economy &amp; Finance</category>
+      <description>The National Tax Service reported to the National Assembly that it will secure retail payment details of overseas issued crypto cards through CARF&#x27;s first information exchange (2027). Virtual asset taxation is being postponed until 2029, but CARF reporting will begin for transactions in 2026. We have summarized the timing of information exchange for each card issuing country and the overseas financial account and gift tax obligations that are currently applied regardless of deferment.</description>
+    </item>
     <item>
       <title>Enhypen set to headline Mad Cool 2027 as K-pop transitions to global festival dominance</title>
       <link>https://insightbriefnews.com/en/a/enhypen-mad-cool-2027-headliner-kpop-festival-revenue-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 02:57:30 +0900</pubDate>
       <category>K-Culture</category>
       <description>As of November 27, 2026, third-party platforms are leveraging discount codes to harvest consumer purchasing data. This shift transforms ticket sales from simple transactions into essential assets for measuring price elasticity and marketing efficiency.</description>
-    </item>
-    <item>
-      <title>Catholic Hospital Takeovers Threaten Reproductive Rights and Public Care in Australia</title>
-      <link>https://insightbriefnews.com/en/a/catholic-hospital-healthcare-access-australia-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/catholic-hospital-healthcare-access-australia-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 02:23:10 +0900</pubDate>
-      <category>Health &amp; Bio</category>
-      <description>As Catholic healthcare operators absorb public hospitals across Australia, key services like abortion, contraception, and IVF are facing severe regional bans. Reports from 2026 highlight mounting systemic risks as religious doctrine supersedes standard emergency medical protocols.</description>
     </item>
   </channel>
 </rss>

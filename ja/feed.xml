@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 18:14:56 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 19:51:09 +0900</lastBuildDate>
+    <item>
+      <title>海外クリプトカード決済内訳、2027年4月国税庁に報告される…税金は2029年です。</title>
+      <link>https://insightbriefnews.com/ja/a/crypto-card-carf-retail-payment-2027.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/crypto-card-carf-retail-payment-2027.html</guid>
+      <pubDate>Sat, 28 Nov 2026 19:50:16 +0900</pubDate>
+      <category>経済・金融</category>
+      <description>国税庁がCARF初の情報交換（2027年）を通じて海外発行のクリプトカードの小売決済内訳を確保すると国会に報告した。仮想資産課税は2029年猶予が推進中だが、CARF報告は2026年取引分から始まる。カード発行国別情報交換時期と、猶予とは無関係に今適用される海外金融口座・贈与税義務をまとめた。</description>
+    </item>
     <item>
       <title>20万人が熱狂するスペイン「マッド・クール」でENHYPENがヘッドライナーに選出された意味とK-POP公演経済の転換点</title>
       <link>https://insightbriefnews.com/ja/a/enhypen-mad-cool-2027-headliner-kpop-festival-revenue-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 02:23:10 +0900</pubDate>
       <category>バイオ・健康</category>
       <description>オーストラリアではカトリック系医療機関が公共病院を統合する動きが加速しており、2026年11月27日の報告で、妊娠中絶や不妊治療といった必須医療へのアクセスが地域的に遮断される「医療砂漠化」が深刻化していることが明らかになった。宗教的教義が医療判断を凌駕する現状は、患者の安全を脅かす構造的なリスクを孕んでいる。</description>
-    </item>
-    <item>
-      <title>中国EVの極端な二極化、4億円超高級車が突きつける電力グリッドの重い課題</title>
-      <link>https://insightbriefnews.com/ja/a/china-ev-premium-market-energy-efficiency-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/china-ev-premium-market-energy-efficiency-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 01:52:22 +0900</pubDate>
-      <category>エネルギー・気候</category>
-      <description>2026年11月27日、広州モーターショーで公開された約4億2千万円（2026年11月27日時点の換算）の超高級EV「鼎曜」。中国市場で加速する高級化戦略は、AIと電動化がもたらす電力消費の増大と、気候変動による供給不安定化という構造的なコスト負担を浮き彫りにしている。</description>
     </item>
   </channel>
 </rss>
