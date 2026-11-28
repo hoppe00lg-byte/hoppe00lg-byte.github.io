@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 11:54:56 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 13:03:43 +0900</lastBuildDate>
+    <item>
+      <title>卢卡申科公开质疑普京领土主权逻辑：若依此论，俄罗斯疆土应归属蒙古</title>
+      <link>https://insightbriefnews.com/zh/a/lukashenko-putin-territory-geopolitical-impact-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/lukashenko-putin-territory-geopolitical-impact-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 12:58:01 +0900</pubDate>
+      <category>国际·地缘</category>
+      <description>2026年11月25日，白俄罗斯总统卢卡申科在接受法媒采访时，罕见地对普京的领土主权论调提出反驳。随着俄乌冲突进入长期化，这一盟友关系的微妙裂痕正引发周边市场及供应链层面的连锁评估。</description>
+    </item>
+    <item>
+      <title>韩国肉类加工工厂火灾引发警示：工业园区消防响应与资产保护评估</title>
+      <link>https://insightbriefnews.com/zh/a/gwangju-meat-processing-fire-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/gwangju-meat-processing-fire-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 12:56:30 +0900</pubDate>
+      <category>灾难·安全</category>
+      <description>2026年11月28日，韩国京畿道一肉类加工工厂发生火灾，消防部门启动一级响应机制。约20分钟内火势得到初步控制，未造成进一步蔓延。</description>
+    </item>
     <item>
       <title>病理AI的新标尺：基于基因数据的量化评估框架问世</title>
       <link>https://insightbriefnews.com/zh/a/gene-informed-pathology-benchmark-2026-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 01:01:02 +0900</pubDate>
       <category>房产·个税</category>
       <description>2026年11月10日发生在釜山住宅区的人行道事故被归类为“12大严重过失”。受害者面临长期神经损伤，其民事赔偿预计将涉及巨额护理费及误工损失。</description>
-    </item>
-    <item>
-      <title>欧洲足球赛场暴力频发：中国贸易商应警惕物流供应链滞留风险</title>
-      <link>https://insightbriefnews.com/zh/a/european-stadium-violence-logistics-risk-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/european-stadium-violence-logistics-risk-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 00:59:41 +0900</pubDate>
-      <category>国际·地缘</category>
-      <description>2026年11月27日，欧洲多地足球场爆发群体冲突，社会动荡加剧。对于依赖欧洲物流网的中国出口企业而言，赛事期间的治安隐患已直接威胁货物周转效率与运营成本，物流风险防控刻不容缓。</description>
-    </item>
-    <item>
-      <title>为什么数字支付代币和稳定币这个名字消失了</title>
-      <link>https://insightbriefnews.com/zh/a/digital-payment-token-stablecoin-law-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/digital-payment-token-stablecoin-law-2026.html</guid>
-      <pubDate>Fri, 27 Nov 2026 20:05:00 +0900</pubDate>
-      <category>经济·金融</category>
-      <description>金融服务委员会11月24日发布的《数字资产法》将稳定币定义为“数字支付代币”。从100%的储备资产存款、银行财团占多数，以及对外国发行人的国内分支机构要求——法律改变的不是名称，而是支付结算的门槛。</description>
     </item>
   </channel>
 </rss>

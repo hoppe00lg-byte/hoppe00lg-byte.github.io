@@ -1,6 +1,6 @@
 {
  "_note": "자동 발행이 이미 끝낸 슬롯 기록(워크플로가 커밋). 2026-11-27 은 피클 예약 작업이 발행했으므로 넘김. 2026-11-28 00:20·00:40·01:40 은 수동 실행(46029601124/46036673275)이 이미 발행 — 기록 유실분 보정.",
- "last_run": "2026-11-28T11:55:06+09:00",
+ "last_run": "2026-11-28T13:03:53+09:00",
  "done": {
   "2026-11-27#06:30": "handover-2026-11-27",
   "2026-11-27#07:30": "handover-2026-11-27",
@@ -32,7 +32,9 @@
   "2026-11-28#08:40": "sinchon-blues-ai-music-analysis-20261128",
   "2026-11-28#09:40": "market-stability-and-economic-indicators-2026-20261128",
   "2026-11-28#08:20": "health-pro-exam-security-upgrade-2026-20261128",
-  "2026-11-28#10:40": "gene-informed-pathology-benchmark-2026-20261128"
+  "2026-11-28#10:40": "gene-informed-pathology-benchmark-2026-20261128",
+  "2026-11-28#11:40": "gwangju-meat-processing-fire-analysis-20261128",
+  "2026-11-28#12:20": "lukashenko-putin-territory-geopolitical-impact-20261128"
  },
  "used": {
   "2026-11-28": {
@@ -86,13 +88,21 @@
     "https://www.yna.co.kr/view/AKR20261128001451034",
     "https://www.yna.co.kr/view/AKR20261128001400034",
     "https://www.theguardian.com/world/2026/nov/25/people-killed-fuel-tanker-crash-ignites-large-fire-cairo-highway",
-    "https://www.yna.co.kr/view/AKR20261128007100061"
+    "https://www.yna.co.kr/view/AKR20261128007100061",
+    "https://www.yna.co.kr/view/AKR20261128029251061",
+    "https://www.yna.co.kr/view/AKR20261128027900003",
+    "https://www.yna.co.kr/view/AKR20261128029500527",
+    "https://www.yna.co.kr/view/AKR20261128029800062"
    ],
    "world": [
     "https://www.aljazeera.com/video/newsfeed/2026/11/27/un-gaza-rapporteur-francesca-albanese-denied-entry-into-costa-rica?traffic_source=rss",
     "https://www.yna.co.kr/view/AKR20261128006000071",
     "https://www.aljazeera.com/news/2026/11/27/putin-unveils-new-russian-nuclear-powered-submarine-with-hypersonic-weapons?traffic_source=rss",
-    "https://www.bbc.co.uk/news/articles/c6rrg28npvzeo?at_medium=RSS&at_campaign=rss"
+    "https://www.bbc.co.uk/news/articles/c6rrg28npvzeo?at_medium=RSS&at_campaign=rss",
+    "https://www.yna.co.kr/view/AKR20261128029100009",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/28/bulgarians-demand-action-by-french-after-marseille-match-violence?traffic_source=rss",
+    "https://www.aljazeera.com/video/newsfeed/2026/11/28/francesca-albanese-seeks-apology-from-costa-rica-after-entry-ban?traffic_source=rss",
+    "https://www.bbc.co.uk/news/articles/c820q9wgrpyyo?at_medium=RSS&at_campaign=rss"
    ],
    "property": [
     "https://www.yna.co.kr/view/AKR20261127116200003",

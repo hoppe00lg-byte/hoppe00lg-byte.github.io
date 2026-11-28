@@ -6,7 +6,23 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 11:54:42 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 12:59:22 +0900</lastBuildDate>
+    <item>
+      <title>푸틴의 영토 논리에 반기 든 루카셴코, 몽골-타타르 역사까지 거론</title>
+      <link>https://insightbriefnews.com/a/lukashenko-putin-territory-geopolitical-impact-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/lukashenko-putin-territory-geopolitical-impact-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 12:58:01 +0900</pubDate>
+      <category>국제·지정학</category>
+      <description>벨라루스 대통령이 2026년 11월 25일 인터뷰에서 푸틴의 역사적 영유권 주장을 정면 비판했다. 동맹의 균열이 9년째 이어지는 전쟁 공급망과 협상 구도에 미칠 영향이 주목된다.</description>
+    </item>
+    <item>
+      <title>20분 만에 잡힌 광주 육가공 공장 화재, 대응 1단계 발령의 기술적 경계선</title>
+      <link>https://insightbriefnews.com/a/gwangju-meat-processing-fire-analysis-20261128.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/gwangju-meat-processing-fire-analysis-20261128.html</guid>
+      <pubDate>Sat, 28 Nov 2026 12:56:30 +0900</pubDate>
+      <category>재난·안전</category>
+      <description>2026년 11월 28일 오전 11시 27분 경기 광주시 목현동 육가공 공장에서 화재가 발생했다. 현장 출동 소방 당국은 인근 야산으로의 연소 확대 우려를 고려해 대응 1단계를 발령하고 20여 분 만에 주불을 진압했다.</description>
+    </item>
     <item>
       <title>병리학 AI의 새로운 좌표, 2026년 11월 25일 공개된 유전자 기반 벤치마크 모델의 한계</title>
       <link>https://insightbriefnews.com/a/gene-informed-pathology-benchmark-2026-20261128.html</link>
@@ -150,22 +166,6 @@
       <pubDate>Sat, 28 Nov 2026 01:01:02 +0900</pubDate>
       <category>부동산·생활세금</category>
       <description>2026년 11월 10일 발생한 부산 아파트 앞 횡단보도 사고는 12대 중과실에 해당한다. 전치 14주의 중상과 영구적 장애 가능성에 따른 민사상 배상액을 산정해 본다.</description>
-    </item>
-    <item>
-      <title>유럽 축구장 폭력 사태 확산과 기업 공급망 리스크 관리</title>
-      <link>https://insightbriefnews.com/a/european-stadium-violence-logistics-risk-20261128.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/european-stadium-violence-logistics-risk-20261128.html</guid>
-      <pubDate>Sat, 28 Nov 2026 00:59:41 +0900</pubDate>
-      <category>국제·지정학</category>
-      <description>2026년 11월 27일 마르세유 등 주요 도시에서 발생한 축구장 폭력 사태가 유럽 내 사회적 긴장감을 고조시키고 있다. UEFA는 조사관을 파견해 징계 절차에 착수했으며, 이는 기업의 물류 운영 환경에도 직간접적인 영향을 미칠 것으로 보인다.</description>
-    </item>
-    <item>
-      <title>디지털지급토큰, 스테이블코인이라는 이름이 사라진 이유</title>
-      <link>https://insightbriefnews.com/a/digital-payment-token-stablecoin-law-2026.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/digital-payment-token-stablecoin-law-2026.html</guid>
-      <pubDate>Fri, 27 Nov 2026 20:05:00 +0900</pubDate>
-      <category>경제·금융</category>
-      <description>금융위원회가 11월 24일 공개한 디지털자산법 제정안은 스테이블코인을 &#x27;디지털지급토큰&#x27;으로 규정했다. 100% 준비자산 예치, 은행 과반 컨소시엄, 외국 발행사의 국내 지점 요건까지——법이 바꾸는 것은 이름이 아니라 지급결제의 문턱이다.</description>
     </item>
   </channel>
 </rss>
