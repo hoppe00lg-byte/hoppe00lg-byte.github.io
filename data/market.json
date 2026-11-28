@@ -1,7 +1,7 @@
 {
- "updatedAt": "2026-11-27T11:10:00+09:00",
- "asOf": "2026-11-27",
- "asOfNote": "11월 27일(금) 오전 11시10분 기준입니다. 환율은 한국수출입은행 고시 매매기준율(원·달러 1,342.70원·원·엔 842.95원·원·위안 201.43원)이고, 유가는 추수감사절 단축장(11/26) 종가(WTI 1월물 85.64달러·브렌트 92.32달러)와 오피넷이 고시한 두바이유 11/26 87.00달러입니다. 금·은은 11/27 오전 현물 시세입니다. LME 공식가는 11월 25일 값이 최신이고(아연·납·니켈·주석은 현물 결제가, 구리·알루미늄은 3개월 선물), 조달청 방출가는 11월 27일 판매가입니다. 중국 석유화학 현물(SunSirs)과 BDI는 11월 26일 값이고, 중국 3대 선물거래소는 11월 27일 오전 장중 값입니다. CBOT 곡물은 추수감사절 휴장으로 11월 25일 밤 세션(한국시간 11/26 새벽) 값이 최신이고, CFR Japan(MOPJ) 나프타 평가가는 11월 25일치입니다. SCFI·CCFI는 매주 금요일 발표라 11월 20일 값이 최신입니다(11/27 발표는 한국시간 오후 3시경). 크립토는 11월 27일 오전 11시 시세(코인게코)입니다. 재생원자재는 한국환경공단 2026년 11월분(11/10 조사, 11/25 게시)이 반영됐습니다. 한국은행 물가지수는 10월, 지표누리 석유화학 가격은 2026년 3분기가 최신입니다.",
+ "updatedAt": "2026-11-28T11:10:00+09:00",
+ "asOf": "2026-11-28",
+ "asOfNote": "11월 28일(토) 오전 11시10분 기준입니다. 국내외 주식·환율 시장은 주말 휴장이라, 환율은 한국수출입은행 11월 27일 고시 매매기준율(원·달러 1,342.70원·원·엔 842.95원·원·위안 201.43원)을 그대로 두었고, 유가는 11월 27일(금) 뉴욕·런던 정산가(WTI 1월물 83.08달러·브렌트 1월물 95.44달러)와 오피넷이 고시한 두바이유 11/27 89.00달러입니다. 금·은은 11월 28일 오전 현물 시세입니다. LME 공식가는 11월 27일 값으로 모두 갱신했습니다(아연·납·니켈·주석은 현물 결제가, 구리·알루미늄은 3개월 선물). 조달청 방출가는 판매기간이 11월 27일인 공고가 최신이고(토요일 새 공고 없음), 중국 석유화학 현물(SunSirs)은 11월 27일 값입니다. 중국 3대 선물거래소는 11월 27일 종가, 발틱해운지수는 11월 27일 종가, SCFI·CCFI는 11월 27일 발표치(SCFI 3,569.54·CCFI 1,906.81)입니다. CBOT 곡물은 추수감사절(11/26) 휴장 뒤 11월 27일 반나절장 종가(소맥 3월물 591.00·옥수수 3월물 472.75·대두 1월물 1,266.25센트)이고, CFR Japan(MOPJ) 나프타 평가가는 11월 26일치(821.25달러)가 최신입니다. 크립토는 11월 28일 오전 11시16분 시세(코인게코·업비트)입니다. 재생원자재는 한국환경공단 2026년 11월분(11/10 조사, 11/25 게시)이 최신이고 다음 공표는 12월 26일입니다. 한국은행 물가지수는 10월, 지표누리 석유화학 가격은 2026년 3분기가 최신입니다.",
  "periods": {
   "default": "daily",
   "tabs": [
@@ -28,10 +28,10 @@
   ],
   "daily": {
    "label": "일간",
-   "asOf": "2026-11-27",
-   "range": "2026-11-27",
-   "badge": "고시·장중",
-   "summary": "11월 27일(금) 오전 11시10분 기준입니다. 원·달러 매매기준율은 1,342.70원(−1.20원)으로 내렸고 원·엔 842.95원·원·위안 201.43원입니다. 유가는 추수감사절 단축장에서 뛴 값이 유지되고 있습니다 — WTI 1월물은 11/25 83.68달러에서 11/26 85.64달러(+2.3%)로 마감했고, 브렌트 92.32달러·두바이유 87.00달러(+3.3%)입니다. 금 3,616.46달러(+0.5%)·은 43.01달러(+2.4%)로 귀금속이 강했고, 중국 선물은 구리가 92,220위안(+3.9%)으로 급등하며 상하이 원유 +1.1%·DCE EG +3.1%·LLDPE +1.8%가 동반 상승했습니다. 조달청 방출가는 알루미늄 4,800,000원(+3.5%)·구리 17,900,000원(+2.0%)·납 2,990,000원(+2.8%)으로 일제히 올랐습니다. 중국 현물은 PVC +2.5%·LDPE +1.3%로 오르고 PP −2.4%·PC −1.7%로 내렸으며, BDI는 3,152포인트(+1.5%)로 9월 29일 이후 최고치입니다.",
+   "asOf": "2026-11-28",
+   "range": "2026-11-28",
+   "badge": "주말 기준 (금요일 종가)",
+   "summary": "11월 28일(토) 기준입니다. 국내외 시장이 주말 휴장이라 환율은 11/27 고시(원·달러 1,342.70원·원·엔 842.95원·원·위안 201.43원)를 유지했고, 유가는 11/27 정산가로 마감했습니다 — WTI 1월물 83.08달러(−0.7%)·브렌트 95.44달러(−1.2%)·두바이유 89.00달러(+2.3%)입니다. 브렌트는 호르무즈 해협 유조선 피격 우려로 장중 11월 9일 이후 최고치까지 올랐다가 주말을 앞두고 차익 실현이 나왔고, 주간으로는 3% 올랐습니다. 귀금속은 금 3,653.50달러(+1.0%)·은 43.75달러(+1.7%)로 강세를 이었습니다. LME는 구리 3개월 12,330달러(+3.1%)·주석 현물 40,275달러(+4.8%)로 비철이 일제히 반등했고, 상하이 구리도 93,660위안(+4.9%)으로 동조했습니다. 중국 현물은 PP +1.8%·LDPE +1.0%로 플라스틱이 올랐고 PC·PMMA는 보합입니다. 해운은 SCFI가 3,569.54(+1.9%)로 3주 하락을 끊었고 CCFI는 1,906.81(−0.9%), BDI는 3,137(−0.5%)입니다.",
    "historyStart": "2026-11-22"
   },
   "weekly": {
@@ -39,23 +39,23 @@
    "asOf": "2026-11-27",
    "range": "2026-11-23 ~ 2026-11-27",
    "badge": "직전 주 금요일 대비",
-   "summary": "11월 넷째 주(11/23~11/27) 마감 흐름입니다. 직전 주 금요일(11/20) 종가와 비교하면 WTI가 83.41→85.64달러로 2.7% 올랐고, 브렌트는 92.57→92.32달러(−0.3%)·두바이유는 87.41→87.00달러(−0.5%)로 보합권입니다. 원화는 달러 대비 0.9% 약세(1,330.80→1,342.70원)입니다. 귀금속은 금 +2.2%·은 +4.2%로 강했고, LME는 알루미늄 현물 −10.5%·구리 −4.3%·아연 −4.1%로 약세가 이어졌습니다(11/25 공식가 기준). 중국 석유화학 현물은 PP −6.8%·PC −2.6%·벤젠 −2.0%로 내렸고, BDI는 2,898→3,152포인트로 8.8% 올라 이번 주 상승폭이 가장 컸습니다.",
+   "summary": "11월 넷째 주(11/23~11/27) 마감입니다. 직전 주 금요일(11/20) 종가와 비교하면 브렌트가 92.57→95.44달러로 3.1% 올라 11월 첫 주간 상승을 기록했고, WTI는 83.41→83.08달러로 0.4% 내렸습니다(브렌트−WTI 차 12.36달러). 두바이유는 87.41→89.00달러(+1.8%)입니다. 원화는 달러 대비 0.9% 약세(1,330.80→1,342.70원)입니다. 귀금속은 금 +3.3%·은 +6.0%로 강했고, LME는 알루미늄 현물 −6.3%로 약했지만 구리 +0.7%·니켈 +2.8%·아연 +0.2%로 주 후반 반등해 낙폭을 줄였습니다. 중국 석유화학 현물은 PP −5.1%·PC −2.6%·벤젠 −1.7%로 약세를 이어갔고, BDI는 2,898→3,137포인트로 8.3%(케이프 +11.6%·파나막스 +8.2%) 올랐습니다. SCFI는 11/27 3,569.54로 반등했지만 직전 주(11/20) 지수와 비교하면 아직 낮은 수준입니다.",
    "highlights": [
     {
-     "title": "WTI 85.64달러 — 추수감사절 단축장에서 2.3% 급등",
-     "text": "WTI 1월물이 11/25 정산 83.68달러에서 11/26 단축장 85.64달러로 2.3% 올랐습니다. 브렌트도 90.64→92.36달러로 1.9% 상승했고, 오피넷 두바이유 고시는 11/25 84.19달러에서 11/26 87.00달러로 3.3% 뛰었습니다. 11/27 아시아 장은 85.64달러로 보합입니다."
+     "title": "브렌트 95.44달러 — 주간 3.1%, 11월 첫 주간 상승",
+     "text": "브렌트 1월물이 11/27 95.44달러로 마감해 한 주 동안 3.1% 올랐습니다. 호르무즈 해협 유조선 공격과 사우디 에너지 설비 피격으로 공급 차질 우려가 커진 영향입니다. 장중 11월 9일 이후 최고치까지 올랐다가 금요일에는 1.2% 차익 실현이 나왔습니다. WTI는 83.08달러로 주간 0.4% 내렸고, 두바이유는 89.00달러(+1.8%)입니다."
     },
     {
-     "title": "원·달러 1,342.70원 — 주간 0.9% 약세",
-     "text": "원·달러 매매기준율이 11/27 1,342.70원으로 전일보다 1.20원 내렸습니다. 직전 주 금요일(11/20) 1,330.80원과 비교하면 11.90원(0.9%) 약세입니다. 원·엔 842.95원, 원·위안 201.43원입니다."
+     "title": "SCFI 3,569.54 — 3주 하락 끊고 반등",
+     "text": "상하이컨테이너운임지수가 11/27 3,569.54로 전주보다 65.76포인트(1.9%) 올랐습니다. 유럽 2,435달러(+182)·지중해 4,261달러(+583)·남미 3,612달러(+502)·중동 6,786달러(+116)가 올랐고, 미주 동안 8,262달러(−514)·미주 서안 6,357달러(−354)는 내렸습니다. CCFI는 1,906.81로 0.9% 내렸습니다."
     },
     {
-     "title": "중국 구리 선물 92,220위안(+3.9%) — 주 후반 반등 주도",
-     "text": "SHFE 구리가 11/27 오전 92,220위안으로 전일 정산 88,770위안보다 3.9% 올랐습니다. 상하이 원유 600.70위안(+1.1%), DCE EG 5,289위안(+3.1%), LLDPE 8,314위안(+1.8%)이 함께 올랐고, 조달청 방출가도 구리 17,900,000원(+2.0%)·알루미늄 4,800,000원(+3.5%)으로 인상됐습니다."
+     "title": "은 43.75달러 — 주간 6.0% 상승",
+     "text": "은 현물이 43.75달러로 한 주 동안 6.0% 올랐고, 금은 3,653.50달러로 3.3% 상승했습니다. 11/24 은 40.76달러까지 밀렸다가 사흘 만에 7% 넘게 반등했습니다."
     },
     {
-     "title": "BDI 3,152 — 9월 29일 이후 최고치",
-     "text": "발틱 건화물운임지수가 11/26 3,152포인트(+45, +1.45%)로 9월 29일 이후 최고치를 높였습니다. 케이프사이즈 5,100(+86), 파나막스 2,273(+50), 수프라막스 1,816(+2)로 전 선형이 올랐습니다."
+     "title": "BDI 3,137 — 주간 4.6% 상승, 케이프 5%↑",
+     "text": "발틱 건화물운임지수가 11/27 3,137포인트로 금요일에는 15포인트 내렸지만 주간으로 4.6% 올랐습니다. 케이프사이즈 5,023(주간 +5.1%)·파나막스 2,315(+7.7%)·수프라막스 1,818(+0.5%)입니다."
     }
    ],
    "groups": [
@@ -72,10 +72,10 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 83.41,
-       "price": 85.64,
-       "changePct": 2.67,
-       "change": 2.23,
-       "note": "1월물 11/20 정산 83.41달러 → 11/26 단축장 종가 85.64달러(11/27 아시아 장 보합).",
+       "price": 83.08,
+       "changePct": -0.4,
+       "change": -0.33,
+       "note": "1월물 11/20 정산 83.41달러 → 11/27 정산 83.08달러.",
        "date": "2026-11-27",
        "sourceName": "시나파이낸스 NYMEX 실시간 시세",
        "sourceUrl": "https://finance.sina.com.cn/futures/quotes/CL.shtml"
@@ -88,10 +88,10 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 92.57,
-       "price": 92.32,
-       "changePct": -0.27,
-       "change": -0.25,
-       "note": "11/20 92.57달러 → 11/26 92.36달러 → 11/27 아시아 장 92.32달러.",
+       "price": 95.44,
+       "changePct": 3.1,
+       "change": 2.87,
+       "note": "1월물 11/20 92.57달러 → 11/27 95.44달러.",
        "date": "2026-11-27",
        "sourceName": "시나파이낸스 ICE 실시간 시세",
        "sourceUrl": "https://finance.sina.com.cn/futures/quotes/OIL.shtml"
@@ -104,11 +104,11 @@
        "unit": "USD/bbl",
        "decimals": 2,
        "prev": 87.41,
-       "price": 87.0,
-       "changePct": -0.47,
-       "change": -0.41,
-       "note": "오피넷 11/20 87.41달러 → 11/26 87.00달러.",
-       "date": "2026-11-26",
+       "price": 89.0,
+       "changePct": 1.82,
+       "change": 1.59,
+       "note": "오피넷 11/20 87.41달러 → 11/27 89.00달러.",
+       "date": "2026-11-27",
        "sourceName": "오피넷(한국석유공사) 국제원유 가격",
        "sourceUrl": "https://www.opinet.co.kr/gloptotSelect.do"
       },
@@ -120,11 +120,11 @@
        "unit": "USD/t",
        "decimals": 2,
        "prev": 805.88,
-       "price": 801.25,
-       "changePct": -0.57,
-       "change": -4.63,
-       "note": "11/20 805.88달러 → 11/25 801.25달러. 11/26 평가가는 공개 전입니다.",
-       "date": "2026-11-25",
+       "price": 821.25,
+       "changePct": 1.91,
+       "change": 15.37,
+       "note": "11/20 805.88달러 → 11/26 821.25달러. 11/27 평가가는 미공개.",
+       "date": "2026-11-26",
        "sourceName": "CommodityScope 나프타 CFR Japan 평가가",
        "sourceUrl": "https://commodityscope.com/prices/japan-cfr-naphtha"
       },
@@ -159,10 +159,10 @@
        "unit": "USD/oz",
        "decimals": 2,
        "prev": 3538.19,
-       "price": 3616.46,
-       "changePct": 2.21,
-       "change": 78.27,
-       "note": "11/20 3,538.19달러 → 11/27 오전 현물 3,616.46달러.",
+       "price": 3653.5,
+       "changePct": 3.26,
+       "change": 115.31,
+       "note": "11/20 3,538.19달러 → 11/28 오전 현물 3,653.50달러.",
        "date": "2026-11-27",
        "sourceName": "GoldPrice.com 실시간 현물",
        "sourceUrl": "https://www.goldprice.com/"
@@ -175,10 +175,10 @@
        "unit": "USD/oz",
        "decimals": 2,
        "prev": 41.26,
-       "price": 43.01,
-       "changePct": 4.24,
-       "change": 1.75,
-       "note": "11/20 41.26달러 → 11/27 오전 현물 43.01달러.",
+       "price": 43.75,
+       "changePct": 6.03,
+       "change": 2.49,
+       "note": "11/20 41.26달러 → 11/28 오전 현물 43.75달러.",
        "date": "2026-11-27",
        "sourceName": "GoldPrice.com 실시간 현물",
        "sourceUrl": "https://www.goldprice.com/"
@@ -191,11 +191,11 @@
        "unit": "USD/t",
        "decimals": 2,
        "prev": 12230.5,
-       "price": 11703.0,
-       "changePct": -4.31,
-       "change": -527.5,
-       "note": "LME 현물 11/20 12,230.50달러 → 11/25 11,703.00달러(11/26 공식가 미게시).",
-       "date": "2026-11-25",
+       "price": 12311.5,
+       "changePct": 0.66,
+       "change": 81.0,
+       "note": "LME 현물 11/20 12,230.50달러 → 11/27 12,311.50달러.",
+       "date": "2026-11-27",
        "sourceName": "한국물가정보(KPI) LME 현물 시세",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
       },
@@ -207,11 +207,11 @@
        "unit": "USD/t",
        "decimals": 2,
        "prev": 3184.5,
-       "price": 2849.0,
-       "changePct": -10.54,
-       "change": -335.5,
-       "note": "LME 현물 11/20 3,184.50달러 → 11/25 2,849.00달러(11/26 공식가 미게시).",
-       "date": "2026-11-25",
+       "price": 2983.0,
+       "changePct": -6.33,
+       "change": -201.5,
+       "note": "LME 현물 11/20 3,184.50달러 → 11/27 2,983.00달러.",
+       "date": "2026-11-27",
        "sourceName": "한국물가정보(KPI) LME 현물 시세",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
       },
@@ -223,11 +223,11 @@
        "unit": "USD/t",
        "decimals": 2,
        "prev": 3670.0,
-       "price": 3520.5,
-       "changePct": -4.07,
-       "change": -149.5,
-       "note": "LME 현물 11/20 3,670.00달러 → 11/25 3,520.50달러.",
-       "date": "2026-11-25",
+       "price": 3677.0,
+       "changePct": 0.19,
+       "change": 7.0,
+       "note": "LME 현물 11/20 3,670.00달러 → 11/27 3,677.00달러.",
+       "date": "2026-11-27",
        "sourceName": "한국물가정보(KPI) LME 현물 시세",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
       },
@@ -239,11 +239,11 @@
        "unit": "USD/t",
        "decimals": 2,
        "prev": 15310.0,
-       "price": 15035.0,
-       "changePct": -1.8,
-       "change": -275.0,
-       "note": "LME 현물 11/20 15,310.00달러 → 11/25 15,035.00달러.",
-       "date": "2026-11-25",
+       "price": 15745.0,
+       "changePct": 2.84,
+       "change": 435.0,
+       "note": "LME 현물 11/20 15,310.00달러 → 11/27 15,745.00달러.",
+       "date": "2026-11-27",
        "sourceName": "한국물가정보(KPI) LME 현물 시세",
        "sourceUrl": "https://www.kpi.or.kr/www/lme.asp?CFG_CD=con_09"
       }
@@ -262,11 +262,11 @@
        "unit": "RMB/t",
        "decimals": 2,
        "prev": 7536.67,
-       "price": 7383.33,
-       "change": -153.34,
-       "changePct": -2.03,
-       "note": "중국 현물 11/20 7,536.67위안 → 11/26 7,383.33위안.",
-       "date": "2026-11-26",
+       "price": 7410.0,
+       "change": -126.67,
+       "changePct": -1.68,
+       "note": "중국 현물 11/20 7,536.67위안 → 11/27 7,410.00위안.",
+       "date": "2026-11-27",
        "sourceName": "SunSirs·同花顺 중국 현물가",
        "sourceUrl": "https://www.sunsirs.com/"
       },
@@ -278,11 +278,11 @@
        "unit": "RMB/t",
        "decimals": 2,
        "prev": 10083.33,
-       "price": 9400.0,
-       "change": -683.33,
-       "changePct": -6.78,
-       "note": "중국 현물 11/20 10,083.33위안 → 11/26 9,400.00위안.",
-       "date": "2026-11-26",
+       "price": 9566.67,
+       "change": -516.66,
+       "changePct": -5.12,
+       "note": "중국 현물 11/20 10,083.33위안 → 11/27 9,566.67위안.",
+       "date": "2026-11-27",
        "sourceName": "SunSirs·同花顺 중국 현물가",
        "sourceUrl": "https://www.sunsirs.com/"
       },
@@ -297,8 +297,8 @@
        "price": 13750.0,
        "change": -366.67,
        "changePct": -2.6,
-       "note": "중국 현물 11/20 14,116.67위안 → 11/26 13,750.00위안.",
-       "date": "2026-11-26",
+       "note": "중국 현물 11/20 14,116.67위안 → 11/27 13,750.00위안(보합).",
+       "date": "2026-11-27",
        "sourceName": "SunSirs·隆众资讯 중국 현물가",
        "sourceUrl": "https://www.sunsirs.com/"
       }
@@ -317,11 +317,11 @@
        "unit": "포인트",
        "decimals": 0,
        "prev": 2898,
-       "price": 3152,
-       "changePct": 8.76,
-       "change": 254,
-       "note": "11/20 2,898포인트 → 11/26 3,152포인트. 9월 29일 이후 최고치.",
-       "date": "2026-11-26",
+       "price": 3137,
+       "changePct": 8.25,
+       "change": 239,
+       "note": "11/20 2,898포인트 → 11/27 3,137포인트.",
+       "date": "2026-11-27",
        "sourceName": "발틱해운거래소 (Reuters·TradingEconomics 정리)",
        "sourceUrl": "https://ko.tradingeconomics.com/commodity/baltic"
       },
@@ -333,11 +333,11 @@
        "unit": "포인트",
        "decimals": 0,
        "prev": 4502,
-       "price": 5100,
-       "changePct": 13.28,
-       "change": 598,
-       "note": "11/20 4,502포인트 → 11/26 5,100포인트.",
-       "date": "2026-11-26",
+       "price": 5023,
+       "changePct": 11.57,
+       "change": 521,
+       "note": "11/20 4,502포인트 → 11/27 5,023포인트.",
+       "date": "2026-11-27",
        "sourceName": "Hellenic Shipping News 주간 발틱 지수 리포트(47주차)",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -349,11 +349,11 @@
        "unit": "포인트",
        "decimals": 0,
        "prev": 2140,
-       "price": 2273,
-       "changePct": 6.21,
-       "change": 133,
-       "note": "11/20 2,140포인트 → 11/26 2,273포인트.",
-       "date": "2026-11-26",
+       "price": 2315,
+       "changePct": 8.18,
+       "change": 175,
+       "note": "11/20 2,140포인트 → 11/27 2,315포인트.",
+       "date": "2026-11-27",
        "sourceName": "Hellenic Shipping News 주간 발틱 지수 리포트(47주차)",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -365,11 +365,11 @@
        "unit": "포인트",
        "decimals": 0,
        "prev": 1810,
-       "price": 1816,
-       "changePct": 0.33,
-       "change": 6,
-       "note": "11/20 1,810포인트 → 11/26 1,816포인트.",
-       "date": "2026-11-26",
+       "price": 1818,
+       "changePct": 0.44,
+       "change": 8,
+       "note": "11/20 1,810포인트 → 11/27 1,818포인트.",
+       "date": "2026-11-27",
        "sourceName": "Hellenic Shipping News 주간 발틱 지수 리포트(47주차)",
        "sourceUrl": "https://www.hellenicshippingnews.com/wp-content/uploads/2026/11/ADVANCED-MARKET-REPORT-WEEK-47.pdf"
       },
@@ -381,11 +381,11 @@
        "unit": "¢/bu",
        "decimals": 2,
        "prev": 1220.75,
-       "price": 1243.25,
-       "changePct": 1.84,
-       "change": 22.5,
-       "note": "CBOT 대두 1월물 11/20 1,220.75센트 → 11/25 밤 세션 1,243.25센트(11/26 휴장).",
-       "date": "2026-11-26",
+       "price": 1266.25,
+       "changePct": 3.73,
+       "change": 45.5,
+       "note": "CBOT 대두 1월물 11/20 1,220.75센트 → 11/27 1,266.25센트.",
+       "date": "2026-11-27",
        "sourceName": "CME CBOT 종가 (KOIMA·Reuters 정리)",
        "sourceUrl": "https://www.koimaindex.com/koimaindex/koima/price/retrieveList.do"
       }
@@ -393,44 +393,48 @@
     }
    ],
    "chips": {
-    "label": "석유화학 일간 (SunSirs 중국 현물 · 11/26)",
-    "note": "SunSirs 11/26 현물 가격 등락률입니다(11/27 조회).",
+    "label": "석유화학 일간 (SunSirs 중국 현물 · 11/27)",
+    "note": "SunSirs 11/27 현물 가격 등락률입니다(11/28 조회). 톨루엔·PC·PMMA는 보합입니다.",
     "items": [
      {
-      "name": "PVC",
-      "changePct": 2.52
+      "name": "PP",
+      "changePct": 1.77
      },
      {
       "name": "프로필렌",
-      "changePct": 1.39
+      "changePct": 1.64
      },
      {
       "name": "LDPE",
-      "changePct": 1.29
+      "changePct": 0.95
      },
      {
       "name": "벤젠",
-      "changePct": 0.87
+      "changePct": 0.36
      },
      {
       "name": "ABS",
-      "changePct": -0.29
+      "changePct": 0.15
      },
      {
       "name": "HDPE",
-      "changePct": -0.5
+      "changePct": 0.12
+     },
+     {
+      "name": "PVC",
+      "changePct": 0.1
      },
      {
       "name": "톨루엔",
-      "changePct": -1.1
+      "changePct": 0.0
      },
      {
       "name": "PC",
-      "changePct": -1.67
+      "changePct": 0.0
      },
      {
-      "name": "PP",
-      "changePct": -2.42
+      "name": "PMMA",
+      "changePct": 0.0
      }
     ],
     "sourceName": "SunSirs 중국 현물가",
@@ -1490,22 +1494,22 @@
  "weeklyTrend": [
   {
    "name": "WTI",
-   "changePct": 2.67,
+   "changePct": -0.4,
    "unit": "주간"
   },
   {
    "name": "브렌트",
-   "changePct": -0.27,
+   "changePct": 3.1,
    "unit": "주간"
   },
   {
    "name": "금",
-   "changePct": 2.21,
+   "changePct": 3.26,
    "unit": "주간"
   },
   {
    "name": "은",
-   "changePct": 4.24,
+   "changePct": 6.03,
    "unit": "주간"
   }
  ],
@@ -1514,49 +1518,49 @@
    "id": "wti",
    "code": "WTI",
    "name": "서부 텍사스 중질유",
-   "price": 85.64,
+   "price": 83.08,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 0.0,
-   "changePct": 0.0,
-   "changeBasis": "전일(11/26) 단축장 정산가 대비",
+   "change": -0.6,
+   "changePct": -0.72,
+   "changeBasis": "전일(11/25) 정산가 대비 — 11/26 추수감사절 휴장",
    "contract": "2027년 1월물",
    "date": "2026-11-27",
-   "sourceName": "야후 파이낸스 NYMEX 1월물",
+   "sourceName": "로이터·신화통신 NYMEX 정산가 (야후 파이낸스 CL=F와 일치)",
    "sourceUrl": "https://finance.yahoo.com/quote/CL=F",
-   "note": "추수감사절 단축장(11/26)에서 11/25 정산 83.68달러 → 85.64달러로 2.3% 올랐습니다. 11/27 아시아 장(한국시간 11:10)은 같은 85.64달러로 보합입니다. 브렌트−WTI 6.68달러."
+   "note": "WTI 1월물 11/27 정산 83.08달러. 추수감사절(11/26) 휴장으로 직전 정산 11/25 83.68달러와 비교해 0.60달러(0.72%) 내렸습니다. 브렌트와의 차이는 12.36달러입니다."
   },
   {
    "id": "brent",
    "code": "BRENT",
    "name": "북해 브렌트유",
-   "price": 92.32,
+   "price": 95.44,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": -0.04,
-   "changePct": -0.04,
-   "changeBasis": "전일(11/26) 종가 대비",
-   "contract": "근월 연속(ICE)",
+   "change": -1.13,
+   "changePct": -1.17,
+   "changeBasis": "전일(11/25) 정산가 대비 — 11/26 휴장",
+   "contract": "2027년 1월물",
    "date": "2026-11-27",
-   "sourceName": "야후 파이낸스 ICE 브렌트 근월 연속",
-   "sourceUrl": "https://finance.yahoo.com/quote/BZ=F",
-   "note": "ICE 브렌트 근월 연속은 11/25 90.64달러 → 11/26 92.36달러로 1.9% 올랐고, 11/27 아시아 장 92.32달러입니다. 오피넷이 고시한 11/26 브렌트 선물 96.57달러와는 계약월·기준이 달라 그대로 비교하지 않았습니다."
+   "sourceName": "로이터·신화통신 ICE 브렌트 정산가",
+   "sourceUrl": "https://www.cnbc.com/2026/11/27/brent-oil-wti-hormuz-middle-east.html",
+   "note": "브렌트 1월물 11/27 정산 95.44달러(−1.13달러, −1.2%). 호르무즈 해협 유조선 공격·사우디 설비 피격 우려로 장중 11월 9일 이후 최고치까지 올랐다가 차익 실현으로 밀렸습니다. 주간으로는 3% 올라 11월 첫 주간 상승입니다. 오피넷 고시 브렌트 선물도 95.44달러로 같습니다."
   },
   {
    "id": "dubai",
    "code": "DUBAI",
    "name": "두바이유",
-   "price": 87.0,
+   "price": 89.0,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 2.81,
-   "changePct": 3.34,
-   "changeBasis": "전일(11/25) 대비",
+   "change": 2.0,
+   "changePct": 2.3,
+   "changeBasis": "전일(11/26) 대비",
    "contract": "현물 (싱가포르 거래 추정가)",
-   "date": "2026-11-26",
+   "date": "2026-11-27",
    "sourceName": "오피넷(한국석유공사) 국제원유 가격",
    "sourceUrl": "https://www.opinet.co.kr/gloptotSelect.do",
-   "note": "오피넷 고시 11/26 87.00달러(11/25 84.19달러). 같은 표의 브렌트 선물 96.57달러, WTI 선물은 휴장으로 미고시(0)입니다."
+   "note": "오피넷 고시 11/27 89.00달러(11/26 87.00달러). 같은 표의 브렌트 선물 95.44달러, WTI 선물 83.08달러입니다."
   },
   {
    "id": "usdkrw",
@@ -1567,11 +1571,11 @@
    "decimals": 2,
    "change": -1.2,
    "changePct": -0.09,
-   "changeBasis": "전일 고시(11/26) 대비",
+   "changeBasis": "전일 고시(11/26) 대비 — 11/28 토요일 휴장",
    "date": "2026-11-27",
    "sourceName": "한국수출입은행 고시 매매기준율",
    "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
-   "note": "한국수출입은행 매매기준율 11/27 고시 1,342.70원. 전일(11/26) 1,343.90원 대비 1.20원 하락(0.09%). 장중 시장환율은 1,342원 안팎입니다."
+   "note": "토요일은 고시가 없어 11/27 고시 1,342.70원을 유지합니다. 전일(11/26) 1,343.90원 대비 1.20원(0.09%) 하락입니다. 11/27 장중 시장환율(야후)은 1,343.53원이었습니다."
   },
   {
    "id": "jpykrw100",
@@ -1582,11 +1586,11 @@
    "decimals": 2,
    "change": -1.42,
    "changePct": -0.17,
-   "changeBasis": "전일 고시(11/26) 대비",
+   "changeBasis": "전일 고시(11/26) 대비 — 11/28 토요일 휴장",
    "date": "2026-11-27",
    "sourceName": "한국수출입은행 고시 매매기준율",
    "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
-   "note": "100엔 기준. 11/27 고시 842.95원으로 전일(11/26) 844.37원 대비 1.42원 하락."
+   "note": "100엔 기준. 토요일 휴장으로 11/27 고시 842.95원 유지(11/26 844.37원, 1.42원 하락)."
   },
   {
    "id": "cnykrw",
@@ -1597,41 +1601,41 @@
    "decimals": 2,
    "change": -0.14,
    "changePct": -0.07,
-   "changeBasis": "전일 고시(11/26) 대비",
+   "changeBasis": "전일 고시(11/26) 대비 — 11/28 토요일 휴장",
    "date": "2026-11-27",
    "sourceName": "한국수출입은행 고시 매매기준율",
    "sourceUrl": "https://www.koreaexim.go.kr/wg/HPHKWG057M01",
-   "note": "위안화(CNH) 기준. 11/27 고시 201.43원으로 전일(11/26) 201.57원 대비 0.14원 하락."
+   "note": "위안화(CNH) 기준. 토요일 휴장으로 11/27 고시 201.43원 유지(11/26 201.57원, 0.14원 하락)."
   },
   {
    "id": "btc",
    "code": "BTC",
    "name": "비트코인",
-   "price": 61199,
+   "price": 60164,
    "unit": "USD",
    "decimals": 0,
-   "change": 341.0,
-   "changePct": 0.56,
-   "changeBasis": "24시간 대비 (코인게코)",
-   "date": "2026-11-27",
+   "change": -1088,
+   "changePct": -1.78,
+   "changeBasis": "24시간 대비 (코인게코, 11/28 11:16)",
+   "date": "2026-11-28",
    "sourceName": "코인게코(CoinGecko) 현물 시세",
    "sourceUrl": "https://www.coingecko.com/en/coins/bitcoin",
-   "note": "코인게코 달러 현물 61,199달러(24시간 +0.56%). 같은 시각 업비트 원화 8,217만9,875원."
+   "note": "코인게코 달러 현물 60,164달러(24시간 −1.78%). 같은 시각 업비트 원화 81,706,000원(+0.57%, 김치프리미엄 약 1.2%)."
   },
   {
    "id": "eth",
    "code": "ETH",
    "name": "이더리움",
-   "price": 1715,
+   "price": 1669,
    "unit": "USD",
    "decimals": 0,
-   "change": 13.0,
-   "changePct": 0.74,
-   "changeBasis": "24시간 대비 (코인게코)",
-   "date": "2026-11-27",
+   "change": -46,
+   "changePct": -2.71,
+   "changeBasis": "24시간 대비 (코인게코, 11/28 11:16)",
+   "date": "2026-11-28",
    "sourceName": "코인게코(CoinGecko) 현물 시세",
    "sourceUrl": "https://www.coingecko.com/en/coins/ethereum",
-   "note": "코인게코 달러 현물 1,714.71달러(24시간 +0.74%). 같은 시각 업비트 원화 230만2,550원."
+   "note": "코인게코 달러 현물 1,669.31달러(24시간 −2.71%). 같은 시각 업비트 원화 2,268,000원(+0.49%)."
   }
  ],
  "commodities": [
@@ -1641,15 +1645,15 @@
    "nameEn": "Gold",
    "group": "metal",
    "grade": "현물 1트로이온스",
-   "price": 3616.46,
+   "price": 3653.5,
    "unit": "USD/oz",
-   "change": 17.5,
-   "changePct": 0.49,
-   "changeBasis": "전일(11/26) 스냅샷 대비",
+   "change": 37.04,
+   "changePct": 1.02,
+   "changeBasis": "전일(11/27) 스냅샷 대비",
    "date": "2026-11-27",
    "sourceName": "Swissquote 실시간 현물(XAU/USD)",
    "sourceUrl": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAU/USD",
-   "note": "Swissquote 현물 3,616.46달러(11:10, 매수·매도 중간값). 전일 오전 3,598.96달러보다 0.5% 올랐습니다."
+   "note": "Swissquote 현물 3,653.50달러(11/28 11:10, 매수·매도 중간값). 전일 오전 3,616.46달러보다 1.0% 올랐습니다. COMEX 금 1월물 11/27 종가는 3,668.50달러입니다."
   },
   {
    "code": "AG",
@@ -1657,15 +1661,15 @@
    "nameEn": "Silver",
    "group": "metal",
    "grade": "현물 1트로이온스",
-   "price": 43.01,
+   "price": 43.75,
    "unit": "USD/oz",
-   "change": 1.0,
-   "changePct": 2.38,
-   "changeBasis": "전일(11/26) 스냅샷 대비",
+   "change": 0.74,
+   "changePct": 1.72,
+   "changeBasis": "전일(11/27) 스냅샷 대비",
    "date": "2026-11-27",
    "sourceName": "Swissquote 실시간 현물(XAG/USD)",
    "sourceUrl": "https://forex-data-feed.swissquote.com/public-quotes/bboquotes/instrument/XAG/USD",
-   "note": "Swissquote 현물 43.01달러(11:10). 전일 오전 42.01달러 대비 2.4% 상승."
+   "note": "Swissquote 현물 43.75달러(11/28 11:10). 전일 오전 43.01달러 대비 1.7% 상승, 한 주 동안 6.0% 올랐습니다."
   },
   {
    "code": "CU",
@@ -1673,15 +1677,15 @@
    "nameEn": "Copper",
    "group": "metal",
    "grade": "LME 3개월 선물",
-   "price": 11758.0,
+   "price": 12330.0,
    "unit": "USD/t",
-   "change": -297.0,
-   "changePct": -2.46,
-   "changeBasis": "전일 공식가(11/24) 대비",
-   "date": "2026-11-25",
-   "sourceName": "LME 공식가 (Westmetall 정리)",
+   "change": 370.0,
+   "changePct": 3.09,
+   "changeBasis": "전일(11/26) 공식가 대비",
+   "date": "2026-11-27",
+   "sourceName": "LME 공식가 (웨스트메탈 Westmetall 표)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash",
-   "note": "LME 3개월 공식가 11/25 11,758.00달러(현물 결제 11,703.00달러, 재고 336,750톤). 11/24 12,055.00달러 대비 2.5% 하락."
+   "note": "LME 구리 3개월 선물 11/27 공식가 12,330.00달러(11/26 11,960.00달러, +3.1%). 현물 결제가는 12,311.50달러이고 재고는 338,325톤입니다. 11/25 11,758달러에서 이틀 만에 4.9% 올랐습니다."
   },
   {
    "code": "AL",
@@ -1689,15 +1693,15 @@
    "nameEn": "Aluminum",
    "group": "metal",
    "grade": "LME 3개월 선물",
-   "price": 2760.0,
+   "price": 2835.5,
    "unit": "USD/t",
-   "change": -29.0,
-   "changePct": -1.04,
-   "changeBasis": "전일 공식가(11/24) 대비",
-   "date": "2026-11-25",
-   "sourceName": "LME 공식가 (Westmetall 정리)",
+   "change": 15.0,
+   "changePct": 0.53,
+   "changeBasis": "전일(11/26) 공식가 대비",
+   "date": "2026-11-27",
+   "sourceName": "LME 공식가 (웨스트메탈 Westmetall 표)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Al_cash",
-   "note": "LME 3개월 공식가 11/25 2,760.00달러(현물 결제 2,849.00달러, 재고 219,200톤). 11/24 2,789.00달러 대비 1.0% 하락."
+   "note": "LME 알루미늄 3개월 선물 11/27 공식가 2,835.50달러(11/26 2,820.50달러, +0.5%). 현물 결제가 2,983.00달러, 재고 215,625톤입니다."
   },
   {
    "code": "ZN",
@@ -1705,16 +1709,16 @@
    "nameEn": "Zinc",
    "group": "metal",
    "grade": "LME 현물 (공식 Cash)",
-   "price": 3520.5,
+   "price": 3677.0,
    "unit": "USD/t",
    "decimals": 1,
-   "change": -144.5,
-   "changePct": -3.94,
-   "changeBasis": "전일(11/24) 현물 대비",
-   "date": "2026-11-25",
-   "sourceName": "LME 공식가 (Westmetall 정리)",
+   "change": 31.0,
+   "changePct": 0.85,
+   "changeBasis": "전일(11/26) 공식가 대비",
+   "date": "2026-11-27",
+   "sourceName": "LME 공식가 (웨스트메탈 Westmetall 표)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Zn_cash",
-   "note": "LME 현물 결제가 11/25 3,520.50달러(3개월 3,394.00달러, 재고 143,450톤). 11/24 3,665.00달러 대비 3.9% 하락."
+   "note": "LME 아연 현물 결제가 11/27 3,677.00달러(11/26 3,646.00달러, +0.9%). 3개월 선물은 3,565.00달러입니다."
   },
   {
    "code": "PB",
@@ -1722,16 +1726,16 @@
    "nameEn": "Lead",
    "group": "metal",
    "grade": "LME 현물 (공식 Cash)",
-   "price": 1792.0,
+   "price": 1840.0,
    "unit": "USD/t",
    "decimals": 1,
-   "change": 6.0,
-   "changePct": 0.34,
-   "changeBasis": "전일(11/24) 현물 대비",
-   "date": "2026-11-25",
-   "sourceName": "LME 공식가 (Westmetall 정리)",
+   "change": -4.0,
+   "changePct": -0.22,
+   "changeBasis": "전일(11/26) 공식가 대비",
+   "date": "2026-11-27",
+   "sourceName": "LME 공식가 (웨스트메탈 Westmetall 표)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Pb_cash",
-   "note": "LME 현물 결제가 11/25 1,792.00달러(3개월 1,827.00달러, 재고 256,675톤). 11/24 1,786.00달러 대비 소폭 상승."
+   "note": "LME 납 현물 결제가 11/27 1,840.00달러(11/26 1,844.00달러, −0.2%). 3개월 선물은 1,871.00달러입니다."
   },
   {
    "code": "NI",
@@ -1739,16 +1743,16 @@
    "nameEn": "Nickel",
    "group": "metal",
    "grade": "LME 현물 (공식 Cash)",
-   "price": 15035.0,
+   "price": 15745.0,
    "unit": "USD/t",
    "decimals": 1,
-   "change": -25.0,
-   "changePct": -0.17,
-   "changeBasis": "전일(11/24) 현물 대비",
-   "date": "2026-11-25",
-   "sourceName": "LME 공식가 (Westmetall 정리)",
+   "change": 80.0,
+   "changePct": 0.51,
+   "changeBasis": "전일(11/26) 공식가 대비",
+   "date": "2026-11-27",
+   "sourceName": "LME 공식가 (웨스트메탈 Westmetall 표)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Ni_cash",
-   "note": "LME 현물 결제가 11/25 15,035.00달러(3개월 15,210.00달러, 재고 275,604톤). 11/24 15,060.00달러와 거의 같습니다."
+   "note": "LME 니켈 현물 결제가 11/27 15,745.00달러(11/26 15,665.00달러, +0.5%). 3개월 선물은 15,845.00달러입니다."
   },
   {
    "code": "SN",
@@ -1756,16 +1760,16 @@
    "nameEn": "Tin",
    "group": "metal",
    "grade": "LME 현물 (공식 Cash)",
-   "price": 38200.0,
+   "price": 40275.0,
    "unit": "USD/t",
    "decimals": 1,
-   "change": -2625.0,
-   "changePct": -6.43,
-   "changeBasis": "전일(11/24) 현물 대비",
-   "date": "2026-11-25",
-   "sourceName": "LME 공식가 (Westmetall 정리)",
+   "change": 1850.0,
+   "changePct": 4.81,
+   "changeBasis": "전일(11/26) 공식가 대비",
+   "date": "2026-11-27",
+   "sourceName": "LME 공식가 (웨스트메탈 Westmetall 표)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Sn_cash",
-   "note": "LME 현물 결제가 11/25 38,200.00달러(3개월 38,050.00달러, 재고 3,805톤). 11/24 40,825.00달러에서 6.4% 급락했습니다."
+   "note": "LME 주석 현물 결제가 11/27 40,275.00달러(11/26 38,425.00달러, +4.8%). 3개월 선물은 40,200.00달러입니다."
   },
   {
    "code": "CU-PPS",
@@ -1778,11 +1782,11 @@
    "decimals": 0,
    "change": 350000,
    "changePct": 1.99,
-   "changeBasis": "전일(11/26) 방출가 대비",
+   "changeBasis": "11/26 방출가 대비 (11/28 새 공고 없음)",
    "date": "2026-11-27",
    "sourceName": "조달청 비축물자 원자재 판매가격",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "조달청 11/27 판매가(99.99%이상, 부가세 포함·실수요업체 한도). 11/26 17,550,000원에서 2.0% 올랐습니다."
+   "note": "판매기간이 2026.11.27인 공고가 최신입니다(토요일이라 새 공고 없음). 구리 17,900,000원(11/26 17,550,000원, +2.0%)."
   },
   {
    "code": "AL-PPS",
@@ -1795,11 +1799,11 @@
    "decimals": 0,
    "change": 160000,
    "changePct": 3.45,
-   "changeBasis": "전일(11/26) 방출가 대비",
+   "changeBasis": "11/26 방출가 대비 (11/28 새 공고 없음)",
    "date": "2026-11-27",
    "sourceName": "조달청 비축물자 원자재 판매가격",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "조달청 11/27 판매가(서구산, 부가세 포함). 11/26 4,640,000원에서 3.5% 올랐습니다. 비서구산은 4,770,000원입니다."
+   "note": "알루미늄(서구산) 4,800,000원(11/26 4,640,000원, +3.5%), 비서구산 4,770,000원. 판매기간 2026.11.27 공고가 최신입니다."
   },
   {
    "code": "PB-PPS",
@@ -1812,11 +1816,11 @@
    "decimals": 0,
    "change": 80000,
    "changePct": 2.75,
-   "changeBasis": "전일(11/26) 방출가 대비",
+   "changeBasis": "11/26 방출가 대비 (11/28 새 공고 없음)",
    "date": "2026-11-27",
    "sourceName": "조달청 비축물자 원자재 판매가격",
    "sourceUrl": "https://www.pps.go.kr/bichuk/index.do",
-   "note": "조달청 11/27 판매가(99.99%이상). 11/26 2,910,000원에서 2.8% 올랐습니다."
+   "note": "납(99.99%이상) 2,990,000원(11/26 2,910,000원, +2.8%). 판매기간 2026.11.27 공고가 최신입니다."
   },
   {
    "code": "SN-PPS",
@@ -1841,15 +1845,15 @@
    "nameEn": "Naphtha",
    "group": "petrochem",
    "grade": "CFR Japan 공개 평가가",
-   "price": 801.25,
+   "price": 821.25,
    "unit": "USD/t",
-   "change": 13.0,
-   "changePct": 1.65,
-   "changeBasis": "직전 평가가(11/24) 대비",
-   "date": "2026-11-25",
+   "change": 20.0,
+   "changePct": 2.5,
+   "changeBasis": "직전 평가가(11/25) 대비",
+   "date": "2026-11-26",
    "sourceName": "CommodityScope 나프타 CFR Japan 평가가",
    "sourceUrl": "https://commodityscope.com/markets/naphtha-japan-cfr",
-   "note": "CFR Japan 평가가 11/25 801.25달러/톤(+13.00, +1.6%). 11/26 평가가는 아직 공개되지 않았습니다."
+   "note": "CFR Japan 평가가 11/26 821.25달러/톤(+20.00, +2.5%). 11/27 평가가는 아직 공개되지 않았습니다."
   },
   {
    "code": "NAP-SG",
@@ -1857,16 +1861,16 @@
    "nameEn": "Naphtha · Singapore",
    "group": "petrochem",
    "grade": "국제 석유제품 가격 (배럴 기준)",
-   "price": 88.09,
+   "price": 88.76,
    "unit": "USD/bbl",
    "decimals": 2,
-   "change": 2.23,
-   "changePct": 2.6,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": 0.67,
+   "changePct": 0.76,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "오피넷(한국석유공사) 국제 석유제품 가격",
    "sourceUrl": "https://www.opinet.co.kr/glopopdSelect.do",
-   "note": "오피넷 싱가포르 나프타 현물 11/26 88.09달러/배럴(11/25 85.86달러). 같은 표의 휘발유 91.72·경유 135.82달러입니다."
+   "note": "오피넷 싱가포르 나프타 현물 11/27 88.76달러/배럴(11/26 88.09달러). 같은 표의 휘발유 94.37·경유 139.09달러입니다."
   },
   {
    "code": "C2",
@@ -1890,15 +1894,15 @@
    "nameEn": "Propylene",
    "group": "petrochem",
    "grade": "1급",
-   "price": 9326.5,
+   "price": 9479.0,
    "unit": "RMB/t",
-   "change": 127.5,
-   "changePct": 1.39,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": 152.5,
+   "changePct": 1.64,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "SunSirs 중국 현물가",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "중국 프로필렌 11/26 9,326.50위안(11/25 9,199.00위안)."
+   "note": "중국 프로필렌 11/27 9,479.00위안(11/26 9,326.50위안)."
   },
   {
    "code": "BZ",
@@ -1906,15 +1910,15 @@
    "nameEn": "Benzene",
    "group": "petrochem",
    "grade": "1급 (순도 99.90% 이상)",
-   "price": 7383.33,
+   "price": 7410.0,
    "unit": "RMB/t",
-   "change": 63.33,
-   "changePct": 0.87,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": 26.67,
+   "changePct": 0.36,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "SunSirs 중국 현물가",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "중국 순수 벤젠 11/26 7,383.33위안(11/25 7,320.00위안)."
+   "note": "중국 순수 벤젠 11/27 7,410.00위안(11/26 7,383.33위안)."
   },
   {
    "code": "TOL",
@@ -1924,13 +1928,13 @@
    "grade": "1급",
    "price": 6016.67,
    "unit": "RMB/t",
-   "change": -66.66,
-   "changePct": -1.1,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": 0.0,
+   "changePct": 0.0,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "SunSirs 중국 현물가",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "중국 톨루엔 11/26 6,016.67위안(11/25 6,083.33위안)."
+   "note": "중국 톨루엔 11/27 기준가 6,016.67위안으로 11/26과 같습니다(보합)."
   },
   {
    "code": "SM",
@@ -1942,11 +1946,11 @@
    "unit": "RMB/t",
    "change": 0.0,
    "changePct": 0.0,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "SunSirs 중국 현물가",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "중국 스티렌모노머 11/26 9,310.00위안(11/25 9,310.00위안)."
+   "note": "중국 스티렌모노머 11/27 기준가 9,310.00위안으로 11/26과 같습니다(보합)."
   },
   {
    "code": "PC",
@@ -1956,13 +1960,13 @@
    "grade": "일반 등급",
    "price": 13750.0,
    "unit": "RMB/t",
-   "change": -233.33,
-   "changePct": -1.67,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": 0.0,
+   "changePct": 0.0,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "SunSirs 중국 현물가",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "중국 폴리카보네이트 11/26 13,750.00위안(11/25 13,983.33위안)."
+   "note": "중국 폴리카보네이트 11/27 13,750.00위안으로 11/26과 같습니다."
   },
   {
    "code": "PMMA",
@@ -1974,11 +1978,11 @@
    "unit": "RMB/t",
    "change": 0.0,
    "changePct": 0.0,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "SunSirs 중국 현물가",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "중국 PMMA 11/26 14,733.33위안(11/25 14,733.33위안)."
+   "note": "중국 PMMA 11/27 기준가 14,733.33위안으로 11/26과 같습니다."
   },
   {
    "code": "PP",
@@ -1986,15 +1990,15 @@
    "nameEn": "PP",
    "group": "petrochem",
    "grade": "L5E89 (라피아)",
-   "price": 9400.0,
+   "price": 9566.67,
    "unit": "RMB/t",
-   "change": -233.33,
-   "changePct": -2.42,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": 166.67,
+   "changePct": 1.77,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "SunSirs 중국 현물가",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "중국 PP 11/26 9,400.00위안(11/25 9,633.33위안)."
+   "note": "중국 PP 11/27 9,566.67위안(11/26 9,400.00위안)."
   },
   {
    "code": "LDPE",
@@ -2002,15 +2006,15 @@
    "nameEn": "LDPE",
    "group": "petrochem",
    "grade": "2426H (필름)",
-   "price": 10500.0,
+   "price": 10600.0,
    "unit": "RMB/t",
-   "change": 133.33,
-   "changePct": 1.29,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": 100.0,
+   "changePct": 0.95,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "SunSirs 중국 현물가",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "중국 LDPE 11/26 10,500.00위안(11/25 10,366.67위안)."
+   "note": "중국 LDPE 11/27 10,600.00위안(11/26 10,500.00위안)."
   },
   {
    "code": "HDPE",
@@ -2018,15 +2022,15 @@
    "nameEn": "HDPE",
    "group": "petrochem",
    "grade": "5000S (사출)",
-   "price": 10037.5,
+   "price": 10050.0,
    "unit": "RMB/t",
-   "change": -50.0,
-   "changePct": -0.5,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": 12.5,
+   "changePct": 0.12,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "SunSirs 중국 현물가",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "중국 HDPE 11/26 10,037.50위안(11/25 10,087.50위안)."
+   "note": "중국 HDPE 11/27 10,050.00위안(11/26 10,037.50위안)."
   },
   {
    "code": "ABS",
@@ -2034,15 +2038,15 @@
    "nameEn": "ABS",
    "group": "petrochem",
    "grade": "일반 등급",
-   "price": 11400.0,
+   "price": 11416.67,
    "unit": "RMB/t",
-   "change": -33.33,
-   "changePct": -0.29,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": 16.67,
+   "changePct": 0.15,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "SunSirs 중국 현물가",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "중국 ABS 11/26 11,400.00위안(11/25 11,433.33위안)."
+   "note": "중국 ABS 11/27 11,416.67위안(11/26 11,400.00위안)."
   },
   {
    "code": "PVC",
@@ -2050,15 +2054,15 @@
    "nameEn": "PVC",
    "group": "petrochem",
    "grade": "SG5",
-   "price": 5080.0,
+   "price": 5085.0,
    "unit": "RMB/t",
-   "change": 125.0,
-   "changePct": 2.52,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": 5.0,
+   "changePct": 0.1,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "SunSirs 중국 현물가",
    "sourceUrl": "https://www.sunsirs.com/kr/sdetail-day--.html",
-   "note": "중국 PVC 11/26 5,080.00위안(11/25 4,955.00위안)."
+   "note": "중국 PVC 11/27 5,085.00위안(11/26 5,080.00위안)."
   },
   {
    "code": "BDI",
@@ -2066,16 +2070,16 @@
    "nameEn": "Baltic Dry Index",
    "group": "shipping",
    "grade": "종합지수 (케이프 40% · 파나막스 30% · 수프라막스 30%)",
-   "price": 3152,
+   "price": 3137,
    "unit": "포인트",
    "decimals": 0,
-   "change": 45,
-   "changePct": 1.45,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": -15,
+   "changePct": -0.48,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "발틱해운거래소(Reuters 인용)",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "발틱 건화물운임지수 11/26 3,152포인트(+45, +1.45%). 9월 29일 이후 최고치입니다. 케이프사이즈 5,100·파나막스 2,273(+50)·수프라막스 1,816(+2)."
+   "note": "발틱 건화물운임지수 11/27 3,137포인트(−15, −0.48%). 금요일은 케이프사이즈가 1.5% 밀리며 소폭 내렸지만 주간으로는 4.6% 올랐습니다. 케이프 5,023(−77)·파나막스 2,315(+42)·수프라막스 1,818(+2)."
   },
   {
    "code": "BCI",
@@ -2083,16 +2087,16 @@
    "nameEn": "Capesize Index",
    "group": "shipping",
    "grade": "15만t급 철광석·석탄",
-   "price": 5100,
+   "price": 5023,
    "unit": "포인트",
    "decimals": 0,
-   "change": 86,
-   "changePct": 1.72,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": -77,
+   "changePct": -1.51,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "발틱해운거래소(Reuters 인용)",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "발틱 케이프사이즈 11/26 5,100포인트(+86)."
+   "note": "발틱 케이프사이즈 11/27 5,023포인트(-77)."
   },
   {
    "code": "BPI",
@@ -2100,16 +2104,16 @@
    "nameEn": "Panamax Index",
    "group": "shipping",
    "grade": "6~7만t급 곡물·석탄",
-   "price": 2273,
+   "price": 2315,
    "unit": "포인트",
    "decimals": 0,
-   "change": 50,
-   "changePct": 2.25,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "change": 42,
+   "changePct": 1.85,
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "발틱해운거래소(Reuters 인용)",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "발틱 파나막스 11/26 2,273포인트(+50)."
+   "note": "발틱 파나막스 11/27 2,315포인트(+42)."
   },
   {
    "code": "BSI",
@@ -2117,16 +2121,16 @@
    "nameEn": "Supramax Index",
    "group": "shipping",
    "grade": "4.8~6만t급",
-   "price": 1816,
+   "price": 1818,
    "unit": "포인트",
    "decimals": 0,
    "change": 2,
    "changePct": 0.11,
-   "changeBasis": "전일(11/25) 대비",
-   "date": "2026-11-26",
+   "changeBasis": "전일(11/26) 대비",
+   "date": "2026-11-27",
    "sourceName": "발틱해운거래소(Reuters 인용)",
    "sourceUrl": "https://www.balticexchange.com/en/data-services/market-information0/dry-indices.html",
-   "note": "발틱 수프라막스 11/26 1,816포인트(+2)."
+   "note": "발틱 수프라막스 11/27 1,818포인트(+2)."
   },
   {
    "code": "FAO-FPI",
@@ -2219,16 +2223,16 @@
    "nameEn": "Wheat",
    "group": "agri",
    "grade": "CME CBOT 선물 · 2027년 3월물",
-   "price": 586.5,
+   "price": 591.0,
    "unit": "¢/bu",
    "decimals": 2,
-   "change": -1.0,
-   "changePct": -0.17,
-   "changeBasis": "직전 거래일(11/25) 종가 대비",
-   "date": "2026-11-26",
-   "sourceName": "야후 파이낸스 CBOT 소맥(3월물)",
-   "sourceUrl": "https://finance.yahoo.com/quote/ZW=F",
-   "note": "CBOT 소맥 3월물(2027년) 기준입니다. 11/25 밤 세션 종가 587.50센트 → 11/26 새벽 586.50센트. 11/26은 추수감사절 휴장, 11/27 야간장은 한국시간 오전 10시 재개."
+   "change": 3.5,
+   "changePct": 0.6,
+   "changeBasis": "직전 거래일(11/25) 종가 대비 — 11/26 휴장",
+   "date": "2026-11-27",
+   "sourceName": "야후 파이낸스 CBOT 소맥 3월물(ZWH27)",
+   "sourceUrl": "https://finance.yahoo.com/quote/ZWH27.CBT",
+   "note": "CBOT 소맥 3월물(2027년) 11/27 종가 591.00센트(11/25 587.50센트, +0.6%). 추수감사절(11/26) 휴장 뒤 금요일 거래는 반나절장이었습니다."
   },
   {
    "code": "ZC",
@@ -2236,16 +2240,16 @@
    "nameEn": "Corn",
    "group": "agri",
    "grade": "CME CBOT 선물 · 2027년 3월물",
-   "price": 456.25,
+   "price": 472.75,
    "unit": "¢/bu",
    "decimals": 2,
-   "change": -0.25,
-   "changePct": -0.05,
-   "changeBasis": "직전 거래일(11/25) 종가 대비",
-   "date": "2026-11-26",
-   "sourceName": "야후 파이낸스 CBOT 옥수수(3월물)",
-   "sourceUrl": "https://finance.yahoo.com/quote/ZC=F",
-   "note": "CBOT 옥수수 3월물(2027년) 기준입니다. 12월물(439.75센트)과 계약월이 다릅니다. 11/25 456.50 → 11/26 새벽 456.25센트. 11/26은 추수감사절 휴장."
+   "change": 7.0,
+   "changePct": 1.5,
+   "changeBasis": "직전 거래일(11/25) 종가 대비 — 11/26 휴장",
+   "date": "2026-11-27",
+   "sourceName": "야후 파이낸스 CBOT 옥수수 3월물(ZCK27)",
+   "sourceUrl": "https://finance.yahoo.com/quote/ZCK27.CBT",
+   "note": "CBOT 옥수수 3월물(2027년) 11/27 종가 472.75센트(11/25 465.75센트, +1.5%). 12월물은 446.75센트로 계약월 차이가 있습니다."
   },
   {
    "code": "ZS",
@@ -2253,16 +2257,16 @@
    "nameEn": "Soybeans",
    "group": "agri",
    "grade": "CME CBOT 선물 · 2027년 1월물",
-   "price": 1243.25,
+   "price": 1266.25,
    "unit": "¢/bu",
    "decimals": 2,
-   "change": -0.75,
-   "changePct": -0.06,
-   "changeBasis": "직전 거래일(11/25) 종가 대비",
-   "date": "2026-11-26",
-   "sourceName": "야후 파이낸스 CBOT 대두(1월물)",
-   "sourceUrl": "https://finance.yahoo.com/quote/ZS=F",
-   "note": "CBOT 대두 1월물 11/25 1,244.00 → 11/26 새벽 1,243.25센트로 보합입니다. 11/26은 추수감사절 휴장."
+   "change": 22.25,
+   "changePct": 1.79,
+   "changeBasis": "직전 거래일(11/25) 종가 대비 — 11/26 휴장",
+   "date": "2026-11-27",
+   "sourceName": "야후 파이낸스 CBOT 대두 1월물(ZSF27)",
+   "sourceUrl": "https://finance.yahoo.com/quote/ZSF27.CBT",
+   "note": "CBOT 대두 1월물 11/27 종가 1,266.25센트(11/25 1,244.00센트, +1.8%)."
   },
   {
    "code": "SHFE-CU",
@@ -2270,16 +2274,16 @@
    "nameEn": "Copper · SHFE",
    "group": "chinafutures",
    "grade": "cu2701 (2027년 1월물) 주력 계약",
-   "price": 92220,
+   "price": 93660,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 3450,
-   "changePct": 3.89,
+   "change": 4360,
+   "changePct": 4.88,
    "changeBasis": "전일(11/26) 정산가 대비",
    "date": "2026-11-27",
    "sourceName": "시나파이낸스 중국 선물 지연시세",
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-CU.shtml",
-   "note": "SHFE 구리 주력 11/27 오전 92,220위안. 11/26 정산 88,770위안 대비 3.9% 상승했습니다. 이날 상승폭 상위 품목입니다."
+   "note": "SHFE 구리 주력 11/27 종가 93,660위안. 11/26 정산 89,300위안 대비 4.9% 올랐습니다. LME 구리 급등과 같은 흐름입니다."
   },
   {
    "code": "SHFE-AL",
@@ -2287,16 +2291,16 @@
    "nameEn": "Aluminum · SHFE",
    "group": "chinafutures",
    "grade": "al2701 (2027년 1월물) 주력 계약",
-   "price": 21365,
+   "price": 21510,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 365,
-   "changePct": 1.74,
+   "change": 430,
+   "changePct": 2.04,
    "changeBasis": "전일(11/26) 정산가 대비",
    "date": "2026-11-27",
    "sourceName": "시나파이낸스 중국 선물 지연시세",
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-AL.shtml",
-   "note": "SHFE 알루미늄 11/27 오전 21,365위안(11/26 정산 21,000위안)."
+   "note": "SHFE 알루미늄 11/27 종가 21,510위안(11/26 정산 21,080위안, +2.0%)."
   },
   {
    "code": "SHFE-SC",
@@ -2304,16 +2308,16 @@
    "nameEn": "Crude Oil · INE/SHFE",
    "group": "chinafutures",
    "grade": "sc2701 (2027년 1월물) 주력 계약",
-   "price": 600.7,
+   "price": 602.4,
    "unit": "RMB/bbl",
    "decimals": 1,
-   "change": 6.7,
-   "changePct": 1.13,
+   "change": 9.1,
+   "changePct": 1.53,
    "changeBasis": "전일(11/26) 정산가 대비",
    "date": "2026-11-27",
    "sourceName": "시나파이낸스 중국 선물 지연시세",
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SHFE-SC.shtml",
-   "note": "상하이 원유(SC) 11/27 오전 600.70위안(11/26 정산 594.00위안). 국제유가 강세를 따라 600위안을 넘었습니다."
+   "note": "상하이 원유(SC) 11/27 종가 602.40위안(11/26 정산 593.30위안, +1.5%). 국제유가 강세를 따라 600위안을 넘었습니다."
   },
   {
    "code": "DCE-PP",
@@ -2321,16 +2325,16 @@
    "nameEn": "PP · DCE",
    "group": "chinafutures",
    "grade": "pp2701 (2027년 1월물) 주력 계약",
-   "price": 8849,
+   "price": 8828,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 87,
-   "changePct": 0.99,
+   "change": 47,
+   "changePct": 0.54,
    "changeBasis": "전일(11/26) 정산가 대비",
    "date": "2026-11-27",
    "sourceName": "시나파이낸스 중국 선물 지연시세",
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-PP.shtml",
-   "note": "DCE PP 11/27 오전 8,849위안(11/26 정산 8,762위안)."
+   "note": "DCE PP 11/27 종가 8,828위안(11/26 정산 8,781위안, +0.5%)."
   },
   {
    "code": "DCE-L",
@@ -2338,16 +2342,16 @@
    "nameEn": "LLDPE · DCE",
    "group": "chinafutures",
    "grade": "l2701 (2027년 1월물) 주력 계약",
-   "price": 8314,
+   "price": 8331,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 145,
-   "changePct": 1.78,
+   "change": 80,
+   "changePct": 0.97,
    "changeBasis": "전일(11/26) 정산가 대비",
    "date": "2026-11-27",
    "sourceName": "시나파이낸스 중국 선물 지연시세",
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-L.shtml",
-   "note": "DCE LLDPE 11/27 오전 8,314위안(11/26 정산 8,169위안)."
+   "note": "DCE LLDPE 11/27 종가 8,331위안(11/26 정산 8,251위안, +1.0%)."
   },
   {
    "code": "DCE-V",
@@ -2355,16 +2359,16 @@
    "nameEn": "PVC · DCE",
    "group": "chinafutures",
    "grade": "v2701 (2027년 1월물) 주력 계약",
-   "price": 5062,
+   "price": 5049,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 14,
-   "changePct": 0.28,
+   "change": -4,
+   "changePct": -0.08,
    "changeBasis": "전일(11/26) 정산가 대비",
    "date": "2026-11-27",
    "sourceName": "시나파이낸스 중국 선물 지연시세",
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-V.shtml",
-   "note": "DCE PVC 11/27 오전 5,062위안(11/26 정산 5,048위안)."
+   "note": "DCE PVC 11/27 종가 5,049위안(11/26 정산 5,053위안)으로 보합권입니다."
   },
   {
    "code": "DCE-EG",
@@ -2372,16 +2376,16 @@
    "nameEn": "EG · DCE",
    "group": "chinafutures",
    "grade": "eg2701 (2027년 1월물) 주력 계약",
-   "price": 5289,
+   "price": 5268,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 160,
-   "changePct": 3.12,
+   "change": 43,
+   "changePct": 0.82,
    "changeBasis": "전일(11/26) 정산가 대비",
    "date": "2026-11-27",
    "sourceName": "시나파이낸스 중국 선물 지연시세",
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/DCE-EG.shtml",
-   "note": "DCE 모노에틸렌글리콜 11/27 오전 5,289위안(11/26 정산 5,129위안). 이날 상승폭 상위 품목입니다."
+   "note": "DCE 모노에틸렌글리콜 11/27 종가 5,268위안(11/26 정산 5,225위안, +0.8%)."
   },
   {
    "code": "ZCE-TA",
@@ -2389,16 +2393,16 @@
    "nameEn": "PTA · ZCE",
    "group": "chinafutures",
    "grade": "TA701 (2027년 1월물) 주력 계약",
-   "price": 6088,
+   "price": 6086,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": 12,
-   "changePct": 0.2,
+   "change": -10,
+   "changePct": -0.16,
    "changeBasis": "전일(11/26) 정산가 대비",
    "date": "2026-11-27",
    "sourceName": "시나파이낸스 중국 선물 지연시세",
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/ZCE-TA.shtml",
-   "note": "ZCE PTA 11/27 오전 6,088위안(11/26 정산 6,076위안)."
+   "note": "ZCE PTA 11/27 종가 6,086위안(11/26 정산 6,096위안, −0.2%)."
   },
   {
    "code": "ZCE-MA",
@@ -2406,50 +2410,50 @@
    "nameEn": "Methanol · ZCE",
    "group": "chinafutures",
    "grade": "MA701 (2027년 1월물) 주력 계약",
-   "price": 3150,
+   "price": 3126,
    "unit": "RMB/t",
    "decimals": 0,
-   "change": -16,
-   "changePct": -0.51,
+   "change": -50,
+   "changePct": -1.57,
    "changeBasis": "전일(11/26) 정산가 대비",
    "date": "2026-11-27",
    "sourceName": "시나파이낸스 중국 선물 지연시세",
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/ZCE-MA.shtml",
-   "note": "ZCE 메탄올 11/27 오전 3,150위안(11/26 정산 3,166위안)으로 소폭 내렸습니다."
+   "note": "ZCE 메탄올 11/27 종가 3,126위안(11/26 정산 3,176위안, −1.6%)으로 내렸습니다."
   },
   {
    "code": "SCFI",
    "name": "상하이컨테이너운임지수",
    "nameEn": "SCFI",
    "group": "shipping",
-   "grade": "종합지수 (2026-11-20 고시, 매주 금요일 발표)",
-   "price": 3503.78,
+   "grade": "종합지수 (2026-11-27 고시, 매주 금요일 발표)",
+   "price": 3569.54,
    "unit": "포인트",
    "decimals": 2,
-   "change": -68.54,
-   "changePct": -1.92,
-   "changeBasis": "전주(11/13)",
-   "date": "2026-11-20",
+   "change": 65.76,
+   "changePct": 1.88,
+   "changeBasis": "전주(11/20) 대비",
+   "date": "2026-11-27",
    "sourceName": "상하이해운거래소(SSE) SCFI",
    "sourceUrl": "https://en.sse.net.cn/indices/scfinew.jsp",
-   "note": "11/13 3,572.33 → 11/20 3,503.78. 두 주 연속 하락. 세부 항로별 지수는 유료 구독자 공개"
+   "note": "11/20 3,503.78 → 11/27 3,569.54(+65.76, +1.9%). 3주 연속 하락을 끊고 반등했습니다. 유럽 2,435달러(+182)·지중해 4,261달러(+583)·남미 3,612달러(+502)·중동 6,786달러(+116)는 올랐고, 미주 동안 8,262달러(−514)·미주 서안 6,357달러(−354)는 내렸습니다."
   },
   {
    "code": "CCFI",
    "name": "중국컨테이너운임지수",
    "nameEn": "CCFI",
    "group": "shipping",
-   "grade": "종합지수 (2026-11-20 고시)",
-   "price": 1923.21,
+   "grade": "종합지수 (2026-11-27 고시)",
+   "price": 1906.81,
    "unit": "포인트",
    "decimals": 2,
-   "change": 3.94,
-   "changePct": 0.21,
-   "changeBasis": "전주(11/13)",
-   "date": "2026-11-20",
+   "change": -16.4,
+   "changePct": -0.85,
+   "changeBasis": "전주(11/20) 대비",
+   "date": "2026-11-27",
    "sourceName": "상하이해운거래소(SSE) CCFI",
    "sourceUrl": "https://en.sse.net.cn/indices/ccfinew.jsp",
-   "note": "11/13 1,919.27 → 1,923.21. 한국 항로 760.24(−0.8%), 지중해 2,456.39(+1.6%), 일본 +2.7%"
+   "note": "11/20 1,923.21 → 11/27 1,906.81(−16.40, −0.9%). SCFI와 달리 소폭 내렸습니다."
   },
   {
    "code": "CU-KOMIS",
@@ -2457,16 +2461,16 @@
    "nameEn": "Copper · LME Cash",
    "group": "metal",
    "grade": "LME 현물(Cash) 고시 · 1일 1회",
-   "price": 11703.0,
+   "price": 12311.5,
    "unit": "USD/t",
    "decimals": 2,
-   "change": -332.0,
-   "changePct": -2.76,
-   "changeBasis": "전일(11/24) 대비",
-   "date": "2026-11-25",
-   "sourceName": "LME 공식가 (Westmetall 정리)",
+   "change": 346.5,
+   "changePct": 2.9,
+   "changeBasis": "전일(11/26) 현물 결제가 대비",
+   "date": "2026-11-27",
+   "sourceName": "LME 현물 결제가 (웨스트메탈 Westmetall 표)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Cu_cash",
-   "note": "LME 현물 결제가 11/25 11,703.00달러(11/24 12,035.00달러)."
+   "note": "LME 구리 현물 결제가 11/27 12,311.50달러(11/26 11,965.00달러, +2.9%)."
   },
   {
    "code": "AL-KOMIS",
@@ -2474,16 +2478,16 @@
    "nameEn": "Aluminum · LME Cash",
    "group": "metal",
    "grade": "LME 현물(Cash) 고시 · 1일 1회",
-   "price": 2849.0,
+   "price": 2983.0,
    "unit": "USD/t",
    "decimals": 2,
-   "change": -271.5,
-   "changePct": -8.7,
-   "changeBasis": "전일(11/24) 대비",
-   "date": "2026-11-25",
-   "sourceName": "LME 공식가 (Westmetall 정리)",
+   "change": 3.0,
+   "changePct": 0.1,
+   "changeBasis": "전일(11/26) 현물 결제가 대비",
+   "date": "2026-11-27",
+   "sourceName": "LME 현물 결제가 (웨스트메탈 Westmetall 표)",
    "sourceUrl": "https://www.westmetall.com/en/markdaten.php?action=table&field=LME_Al_cash",
-   "note": "LME 현물 결제가 11/25 2,849.00달러(11/24 3,120.50달러). 8.7% 급락했습니다."
+   "note": "LME 알루미늄 현물 결제가 11/27 2,983.00달러(11/26 2,980.00달러). 11/20 3,184.50달러에서 한 주 6.3% 내렸습니다."
   },
   {
    "code": "CU-YANGSHAN",
@@ -2658,18 +2662,18 @@
  ],
  "notes": [
   "모든 가격은 무료 공개 출처에서 확인된 값입니다. 유료 지수 전용 품목은 추정하지 않고 표기하지 않았습니다.",
-  "LME 아연·납·니켈·주석은 LME 공식 현물(Cash) 결제가(11/25: 아연 3,520.50·납 1,792.00·니켈 15,035.00·주석 38,200.00달러)이고, 표의 구리·알루미늄은 3개월 선물 공식가(11/25: 구리 11,758.00·알루미늄 2,760.00달러)라 기준이 다릅니다. 11/26 공식가는 조회 시점에 아직 게시되지 않아 11/25 값을 유지했습니다. 출처는 LME 공식가를 그대로 옮긴 웨스트메탈(Westmetall) 표입니다.",
+  "LME 아연·납·니켈·주석은 LME 공식 현물(Cash) 결제가(11/27: 아연 3,677.00·납 1,840.00·니켈 15,745.00·주석 40,275.00달러)이고, 표의 구리·알루미늄은 3개월 선물 공식가(11/27: 구리 12,330.00·알루미늄 2,835.50달러)라 기준이 다릅니다. 추수감사절로 비어 있던 11/26 공식가(구리 11,960.00·알루미늄 2,820.50달러)도 이번에 함께 확인해 등락 기준으로 썼습니다. 출처는 LME 공식가를 그대로 옮긴 웨스트메탈(Westmetall) 표입니다.",
   "석유화학·플라스틱 원료는 중국 국내 현물가(위안/톤)로, 한국 수입 협상가와는 등급·물량·운임에 따라 차이가 있습니다.",
-  "나프타는 두 가지로 실었습니다. CFR Japan(MOPJ) 공개 평가가는 801.25달러/톤(11/25, +1.6%)이고, 오피넷(한국석유공사) 국제 석유제품 가격의 싱가포르 현물은 88.09달러/배럴(11/26, 전일 85.86달러)입니다. 단위가 달라 직접 비교할 수 없습니다.",
-  "BDI·케이프사이즈·파나막스·수프라막스는 발틱해운거래소 지수로 11월 26일(목) 종가입니다(BDI 3,152·BCI 5,100·BPI 2,273·BSI 1,816). BDI는 9월 29일 이후 최고치입니다.",
+  "나프타는 두 가지로 실었습니다. CFR Japan(MOPJ) 공개 평가가는 821.25달러/톤(11/26, +2.5%)이고, 오피넷(한국석유공사) 국제 석유제품 가격의 싱가포르 현물은 88.76달러/배럴(11/27, 전일 88.09달러)입니다. 단위가 달라 직접 비교할 수 없습니다.",
+  "BDI·케이프사이즈·파나막스·수프라막스는 발틱해운거래소 지수로 11월 27일(금) 종가입니다(BDI 3,137·BCI 5,023·BPI 2,315·BSI 1,818). 금요일 하루는 소폭 내렸지만 주간으로 BDI 4.6%·케이프 5.1%·파나막스 7.7% 올랐습니다.",
   "FAO 식량·곡물가격지수는 월간 지수로 2026년 10월 값(11월 6일 발표)입니다. FAO 발표는 식량 133.9(−1.6포인트, −1.2%), 곡물 116.8(−5.5포인트, −4.5%)이며, KREI 화면 표기(식량 −1.7포인트)와 소폭 차이가 있습니다.",
-  "CBOT 소맥·옥수수는 3월물로 이월돼 근월 연속 종가를 센트/부셸로 실었고, 대두는 1월물입니다. 11월 26일은 추수감사절 휴장이라 11/25 밤 세션(한국시간 11/26 새벽) 값이 최신이고, 11월 27일 야간장은 한국시간 오전 10시에 재개됐습니다. 국내 수입단가는 농수산물무역정보의 2026년 10월 통관 기준 달러/톤입니다.",
+  "CBOT 소맥·옥수수는 2027년 3월물, 대두는 1월물 종가를 센트/부셸로 실었습니다. 11월 26일 추수감사절 휴장으로 11월 25일 종가와 비교했고, 11월 27일은 반나절장으로 마감했습니다. 국내 수입단가는 농수산물무역정보의 2026년 10월 통관 기준 달러/톤입니다.",
   "크립토는 24시간 거래로 기준일이 다릅니다. 가격·등락률은 코인게코(CoinGecko) 달러 현물과 24시간 변동률이고, 원화 가격은 같은 시각 업비트 원화 마켓 기준입니다.",
   "LME 구리·알루미늄은 3개월 선물가를 기준으로 하고, 현물 결제가는 각 항목 비고에 적었습니다.",
-  "조달청 비축물자 방출가는 부가세 포함·등록 실수요업체 한도 내 판매가로, LME 국제시세와 직접 비교할 수 없습니다. 11/27 공고에는 알루미늄·구리·납만 있어 주석은 11/26 값을 유지했습니다.",
+  "조달청 비축물자 방출가는 부가세 포함·등록 실수요업체 한도 내 판매가로, LME 국제시세와 직접 비교할 수 없습니다. 판매기간이 2026.11.27인 공고가 최신이며(토요일 새 공고 없음), 이 공고에는 알루미늄·구리·납만 있어 주석은 11/26 값을 유지했습니다.",
   "한국석유화학협회(KPIA) 원료·수지 가격은 무료로 확인할 수 없어 넣지 않았습니다. kpia.or.kr은 접속 오류(500·503)가 나고 협회 자료가 kcia.kr(한국화학산업협회)로 옮겨졌으며, 협회 가격·통계 DB는 유료 이용자(연 120만원, 기기 2대) 전용입니다. 추정치는 넣지 않았습니다.",
-  "환율은 한국수출입은행 고시 매매기준율(영업일 1회, 오전 11시 전후 고시)이며, 은행 창구·카드 결제 환율과는 다릅니다. 11/27 고시는 원·달러 1,342.70원·원·엔 842.95원·원·위안 201.43원으로, 11/26(1,343.90·844.37·201.57)보다 모두 소폭 내렸습니다.",
-  "중국 선물은 상하이선물거래소(SHFE)·다롄상품거래소(DCE)·정저우상품거래소(ZCE) 주력 계약을 시나파이낸스 지연시세로 읽은 값입니다. 11월 27일 오전 장중 값이고, 전일 값은 11월 26일 정산가입니다.",
+  "환율은 한국수출입은행 고시 매매기준율(영업일 1회, 오전 11시 전후 고시)이며, 은행 창구·카드 결제 환율과는 다릅니다. 11월 28일은 토요일이라 새 고시가 없어 11/27 고시(원·달러 1,342.70원·원·엔 842.95원·원·위안 201.43원)를 유지합니다.",
+  "중국 선물은 상하이선물거래소(SHFE)·다롄상품거래소(DCE)·정저우상품거래소(ZCE) 주력 계약을 시나파이낸스 지연시세로 읽은 값입니다. 11월 27일 종가이고, 전일 값은 11월 26일 정산가입니다.",
   "SHFE 구리·알루미늄은 위안/톤, 상하이 원유(SC)는 위안/배럴입니다. LME 달러 표기와 환율·부가세·등급이 달라 직접 비교할 수 없습니다.",
   "DCE PP·LLDPE·PVC·EG와 ZCE PTA·메탄올의 등락액은 11월 26일 정산가와의 차이로 계산했습니다.",
   "SCFI·CCFI는 상하이해운거래소(SSE)가 매주 금요일 발표하는 컨테이너 운임지수입니다. 종합지수만 공개되고 항로별 세부지수는 유료 구독자에게 제공됩니다.",
@@ -2683,6 +2687,6 @@
   "한국비철금속협회(nonferrous.or.kr)는 LME 6개 비철금속(구리·알루미늄·아연·납·니켈·주석) 현물 시세와 월평균, 아연괴 내수 판매가격을 공개합니다. 아연괴 내수가는 고려아연이 제공하는 부가세 별도 국내 유통 기준가입니다.",
   "협회 사이트의 LME 재고량, 귀금속(금·은) 시세, 주간·월간 시황 코멘트는 공개 메뉴에서 확인하지 못했습니다. 통계정보의 비철통계·가격정보 게시판 하위 통계 화면은 서버 오류(VBScript 800a0009)로 열리지 않아, 게시글로 올라온 가격·통계 자료만 사용했습니다.",
   "재생원자재는 한국환경공단 「재활용가능자원 가격조사」(국가승인통계 제392001호)의 월간 공시값입니다. 매월 10일 조사·26일 공표이고, 단위는 원/kg(부가가치세 포함, 물류비 제외)이며 전국 평균입니다. 폐지·철스크랩은 중간가공업체의 미가공 원료 매입가, 폐플라스틱·폐유리병·폐금속캔은 중간가공 후 판매가라서 같은 품목이라도 실제 거래가와 다를 수 있습니다. 2026년 11월분은 11월 25일 순환자원정보센터에 게시됐고 ABS 플레이크는 미공표(―)라 표에서 뺐습니다.",
-  "중국 현물은 SunSirs 일일 리스트(11/26) 값입니다. HDPE 10,037.50위안, PVC 5,080.00위안, PP 9,400.00위안, LDPE 10,500.00위안 등이며, 등락률은 SunSirs가 같은 표에서 밝힌 11/25 대비 값입니다."
+  "중국 현물은 SunSirs 일일 리스트(11/27) 값입니다. PP 9,566.67위안(+1.8%), LDPE 10,600.00위안(+1.0%), HDPE 10,050.00위안(+0.1%), PVC 5,085.00위안(+0.1%), 벤젠 7,410.00위안(+0.4%)입니다. 톨루엔·스티렌모노머·PMMA·PC는 11/27 기준가가 전일과 같아 보합입니다."
  ]
 }

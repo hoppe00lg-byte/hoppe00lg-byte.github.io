@@ -1,6 +1,6 @@
 {
  "version": 1,
- "generatedAt": "2026-11-27T11:59:55+09:00",
+ "generatedAt": "2026-11-28T11:16:02+09:00",
  "windowDays": 400,
  "note": "This is the actual daily closing price used in the market graph. For US futures, exchange rates, and crypto, Yahoo Finance and China's three major futures exchanges, Sina Finance, are the daily closing prices of the K line, and there are no interpolated or estimated values. Domestic, monthly, and single-shot indicators that do not have a free daily time series are not included in this file, and only the actual measurement reference point in market.json and the cumulative snapshot in market-history.json are displayed on the screen.",
  "series": {
@@ -15,10 +15,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/CL%3DF/history",
    "note": "NYMEX consecutive closing prices for nearby months. The price in the table is the December settlement price quoted by Reuters, so the value is slightly different due to the difference in settlement month.",
    "points": [
-    [
-     "2025-10-23",
-     61.79
-    ],
     [
      "2025-10-24",
      61.5
@@ -1116,8 +1112,8 @@
      83.68
     ],
     [
-     "2026-11-26",
-     85.58
+     "2026-11-27",
+     83.08
     ]
    ]
   },
@@ -1132,10 +1128,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/BZ%3DF/history",
    "note": "ICE Brent close monthly closing price. The price in the table is the January 2027 settlement price.",
    "points": [
-    [
-     "2025-10-23",
-     65.99
-    ],
     [
      "2025-10-24",
      65.94
@@ -2233,8 +2225,8 @@
      94.61
     ],
     [
-     "2026-11-26",
-     92.05
+     "2026-11-27",
+     90.84
     ]
    ]
   },
@@ -2249,10 +2241,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/KRW%3DX/history",
    "note": "Market exchange rate (24 hours) closing price. The values ​​in the table are the sales standard rates announced by the Export-Import Bank of Korea, so the announced times and standards are different.",
    "points": [
-    [
-     "2025-10-23",
-     1430.4
-    ],
     [
      "2025-10-24",
      1435.84
@@ -3387,7 +3375,7 @@
     ],
     [
      "2026-11-27",
-     1342.78
+     1343.53
     ]
    ]
   },
@@ -3402,10 +3390,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/BTC-USD/history",
    "note": "Dollar spot closing price (UTC daily). The won price and Kimchi Premium in the table are based on Upbit.",
    "points": [
-    [
-     "2025-10-23",
-     110069.7266
-    ],
     [
      "2025-10-24",
      111033.9219
@@ -4999,8 +4983,12 @@
      60378.1992
     ],
     [
-     "2026-11-27",
-     61234.2891
+     "2026-11-26",
+     60494.7109
+    ],
+    [
+     "2026-11-28",
+     60133.4492
     ]
    ]
   },
@@ -5015,10 +5003,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/ETH-USD/history",
    "note": "Dollar spot closing price (UTC daily). The KRW prices in the table are based on Upbit.",
    "points": [
-    [
-     "2025-10-23",
-     3856.0264
-    ],
     [
      "2025-10-24",
      3934.5674
@@ -6612,8 +6596,12 @@
      1690.769
     ],
     [
-     "2026-11-27",
-     1719.64
+     "2026-11-26",
+     1687.7418
+    ],
+    [
+     "2026-11-28",
+     1668.42
     ]
    ]
   },
@@ -6628,10 +6616,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/GC%3DF/history",
    "note": "COMEX gold front-month futures closing price. The values ​​in the table vary by the spot 1 troy ounce Gosirah futures premium.",
    "points": [
-    [
-     "2025-10-23",
-     4145.6001
-    ],
     [
      "2025-10-24",
      4137.7998
@@ -7729,8 +7713,8 @@
      3535.8
     ],
     [
-     "2026-11-26",
-     3652.1001
+     "2026-11-27",
+     3668.5
     ]
    ]
   },
@@ -7745,10 +7729,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/SI%3DF/history",
    "note": "COMEX is the closing price of front month futures. The values ​​in the table are spot notices.",
    "points": [
-    [
-     "2025-10-23",
-     48.482
-    ],
     [
      "2025-10-24",
      48.377
@@ -8846,8 +8826,8 @@
      40.052
     ],
     [
-     "2026-11-26",
-     43.76
+     "2026-11-27",
+     43.702
     ]
    ]
   },
@@ -8862,10 +8842,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/HG%3DF/history",
    "note": "COMEX copper front-month futures (USD/lb) converted to per tonne. The values ​​in the table are LME 3-month futures, so the market and settlement months are different.",
    "points": [
-    [
-     "2025-10-23",
-     11203.8917
-    ],
     [
      "2025-10-24",
      11229.2456
@@ -9963,8 +9939,8 @@
      11756.1501
     ],
     [
-     "2026-11-26",
-     12470.4476
+     "2026-11-27",
+     12346.9892
     ]
    ]
   },
@@ -9979,10 +9955,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/ALI%3DF/history",
    "note": "CME aluminum futures closing price. The values ​​in the table are LME 3-month futures.",
    "points": [
-    [
-     "2025-10-23",
-     2768.75
-    ],
     [
      "2025-10-24",
      2776.75
@@ -11080,8 +11052,8 @@
      2822.75
     ],
     [
-     "2026-11-26",
-     2818.75
+     "2026-11-27",
+     2786.0
     ]
    ]
   },
@@ -11096,10 +11068,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/ZW%3DF/history",
    "note": "CBOT Wheat close monthly closing price. The values ​​in the table are December closing prices.",
    "points": [
-    [
-     "2025-10-23",
-     513.0
-    ],
     [
      "2025-10-24",
      512.5
@@ -12195,6 +12163,10 @@
     [
      "2026-11-25",
      565.5
+    ],
+    [
+     "2026-11-27",
+     591.0
     ]
    ]
   },
@@ -12209,10 +12181,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/ZC%3DF/history",
    "note": "CBOT Corn close monthly consecutive closing prices. The values ​​in the table are December closing prices.",
    "points": [
-    [
-     "2025-10-23",
-     428.0
-    ],
     [
      "2025-10-24",
      423.25
@@ -13308,6 +13276,10 @@
     [
      "2026-11-25",
      439.75
+    ],
+    [
+     "2026-11-27",
+     463.0
     ]
    ]
   },
@@ -13322,10 +13294,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/ZS%3DF/history",
    "note": "CBOT Soybean front-month consecutive closing prices. The values ​​in the table are the January contract closing prices.",
    "points": [
-    [
-     "2025-10-23",
-     1044.75
-    ],
     [
      "2025-10-24",
      1041.75
@@ -14421,6 +14389,10 @@
     [
      "2026-11-25",
      1244.0
+    ],
+    [
+     "2026-11-27",
+     1266.25
     ]
    ]
   },
@@ -14435,10 +14407,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/KRW%3DX/history",
    "note": "Won per 100 yen. It was calculated using the market exchange rate (USD/KRW ÷ USD/JPY × 100), and the values ​​in the table are announced by the Export-Import Bank of Korea.",
    "points": [
-    [
-     "2025-10-23",
-     941.3376
-    ],
     [
      "2025-10-24",
      940.905
@@ -15573,7 +15541,7 @@
     ],
     [
      "2026-11-27",
-     843.5555
+     843.4967
     ]
    ]
   },
@@ -15588,10 +15556,6 @@
    "sourceUrl": "https://finance.yahoo.com/quote/KRW%3DX/history",
    "note": "Yuan Tang Won. It was calculated based on the market exchange rate (USD/KRW ÷ USD/CNY), and the values ​​in the table are announced by the Export-Import Bank.",
    "points": [
-    [
-     "2025-10-23",
-     200.7382
-    ],
     [
      "2025-10-24",
      201.5016
@@ -16726,7 +16690,7 @@
     ],
     [
      "2026-11-27",
-     201.546
+     201.6101
     ]
    ]
   },
@@ -16741,10 +16705,6 @@
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/CU0.shtml",
    "note": "This is the daily closing price of the Shanghai Futures Exchange copper main contract.",
    "points": [
-    [
-     "2025-10-23",
-     86070.0
-    ],
     [
      "2025-10-24",
      87720.0
@@ -17808,6 +17768,10 @@
     [
      "2026-11-26",
      89300.0
+    ],
+    [
+     "2026-11-27",
+     93660.0
     ]
    ]
   },
@@ -17822,10 +17786,6 @@
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/AL0.shtml",
    "note": "This is the daily closing price of the aluminum main contract of the Shanghai Futures Exchange.",
    "points": [
-    [
-     "2025-10-23",
-     21165.0
-    ],
     [
      "2025-10-24",
      21225.0
@@ -18889,6 +18849,10 @@
     [
      "2026-11-26",
      21080.0
+    ],
+    [
+     "2026-11-27",
+     21510.0
     ]
    ]
   },
@@ -18903,10 +18867,6 @@
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/SC0.shtml",
    "note": "This is the daily closing price of the Shanghai International Energy Exchange (INE) crude oil main contract.",
    "points": [
-    [
-     "2025-10-23",
-     459.7
-    ],
     [
      "2025-10-24",
      464.9
@@ -19970,6 +19930,10 @@
     [
      "2026-11-26",
      593.3
+    ],
+    [
+     "2026-11-27",
+     602.4
     ]
    ]
   },
@@ -19984,10 +19948,6 @@
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/PP0.shtml",
    "note": "This is the daily closing price of the Dalian Commodity Exchange’s PP main contract.",
    "points": [
-    [
-     "2025-10-23",
-     6691.0
-    ],
     [
      "2025-10-24",
      6662.0
@@ -21051,6 +21011,10 @@
     [
      "2026-11-26",
      8781.0
+    ],
+    [
+     "2026-11-27",
+     8828.0
     ]
    ]
   },
@@ -21065,10 +21029,6 @@
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/L0.shtml",
    "note": "This is the daily closing price of the Dalian Commodity Exchange’s LLDPE flagship contract.",
    "points": [
-    [
-     "2025-10-23",
-     6999.0
-    ],
     [
      "2025-10-24",
      6969.0
@@ -22132,6 +22092,10 @@
     [
      "2026-11-26",
      8251.0
+    ],
+    [
+     "2026-11-27",
+     8331.0
     ]
    ]
   },
@@ -22146,10 +22110,6 @@
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/V0.shtml",
    "note": "This is the daily closing price of the Dalian Commodity Exchange’s PVC main contract.",
    "points": [
-    [
-     "2025-10-23",
-     4730.0
-    ],
     [
      "2025-10-24",
      4708.0
@@ -23213,6 +23173,10 @@
     [
      "2026-11-26",
      5053.0
+    ],
+    [
+     "2026-11-27",
+     5049.0
     ]
    ]
   },
@@ -23227,10 +23191,6 @@
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/EG0.shtml",
    "note": "This is the daily closing price of the Dalian Commodity Exchange EG main contract.",
    "points": [
-    [
-     "2025-10-23",
-     4095.0
-    ],
     [
      "2025-10-24",
      4077.0
@@ -24294,6 +24254,10 @@
     [
      "2026-11-26",
      5225.0
+    ],
+    [
+     "2026-11-27",
+     5268.0
     ]
    ]
   },
@@ -24308,10 +24272,6 @@
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/TA0.shtml",
    "note": "This is the daily closing price of the Zhengzhou Commodity Exchange PTA main contract.",
    "points": [
-    [
-     "2025-10-23",
-     4508.0
-    ],
     [
      "2025-10-24",
      4518.0
@@ -25375,6 +25335,10 @@
     [
      "2026-11-26",
      6096.0
+    ],
+    [
+     "2026-11-27",
+     6086.0
     ]
    ]
   },
@@ -25389,10 +25353,6 @@
    "sourceUrl": "https://finance.sina.com.cn/futures/quotes/MA0.shtml",
    "note": "This is the daily closing price of the methanol main contract on the Zhengzhou Commodity Exchange.",
    "points": [
-    [
-     "2025-10-23",
-     2292.0
-    ],
     [
      "2025-10-24",
      2272.0
@@ -26456,6 +26416,10 @@
     [
      "2026-11-26",
      3176.0
+    ],
+    [
+     "2026-11-27",
+     3126.0
     ]
    ]
   }
