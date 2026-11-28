@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/ja/feed.xml" rel="self" type="application/rss+xml"/>
     <description>経済・金融、貿易・原材料、AI・テック、災害・安全の現場をデータとインタビューで追跡する独立リサーチウェブマガジン。インターネット新聞登録メディアではない独立メディアです。</description>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Nov 2026 08:57:36 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 09:16:32 +0900</lastBuildDate>
+    <item>
+      <title>基礎年金38万ウォン、2027年4月から3区間…夫婦減額20％→10％の条件</title>
+      <link>https://insightbriefnews.com/ja/a/basic-pension-38man-april-2027.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/basic-pension-38man-april-2027.html</guid>
+      <pubDate>Sat, 28 Nov 2026 09:07:37 +0900</pubDate>
+      <category>経済・金融</category>
+      <description>基礎年金法改正案が2026年11月25日国会保健福祉委法案いわゆるを通過した。所得下位30％38万ウォン、30～45％35万9,000ウォン、45～70％34万9,700ウォンの3区間差分支給と夫婦減額率20％→10％が核心だ。ただし、2027年1～3月は凍結し、本会の議決と区間境界告示が残っている。</description>
+    </item>
     <item>
       <title>新村ブルースの厳仁浩が鳴らす警告、AI音楽依存の経済学</title>
       <link>https://insightbriefnews.com/ja/a/sinchon-blues-ai-music-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:48:27 +0900</pubDate>
       <category>エネルギー・気候</category>
       <description>米エネルギー情報庁（EIA）データによると、2025年に米国は34クォードの1次エネルギーを投入したが、実質電力販売量は14クォードにとどまった。エネルギー損失の95％が発電プロセスの熱放出に起因し、これは電力料金の構造的コストに直結します。</description>
-    </item>
-    <item>
-      <title>イギリス病院インフルエンザ入院率ファンデミック後の最高値記録</title>
-      <link>https://insightbriefnews.com/ja/a/england-hospitals-flu-surge-nov-2026-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/ja/a/england-hospitals-flu-surge-nov-2026-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:38:52 +0900</pubDate>
-      <category>バイオ・健康</category>
-      <description>英国NHS病院のインフルエンザ入院率がコロナ19以前のレベルを超えたことが分かった。保健当局は医療スタッフと訪問者のマスク着用を勧告し、冬季病院の過負荷に備えている。</description>
     </item>
   </channel>
 </rss>

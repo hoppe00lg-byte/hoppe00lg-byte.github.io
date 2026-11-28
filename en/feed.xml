@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/en/feed.xml" rel="self" type="application/rss+xml"/>
     <description>An independent research webzine that tracks the economy and finance, trade and raw materials, AI and tech, and disaster and safety through data and interviews. It is an independent media outlet, not a registered internet newspaper.</description>
     <language>en</language>
-    <lastBuildDate>Sat, 28 Nov 2026 08:57:34 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 09:16:22 +0900</lastBuildDate>
+    <item>
+      <title>Basic pension of 380,000 won, three sections from April 2027… Couple’s reduction 20% → 10% condition</title>
+      <link>https://insightbriefnews.com/en/a/basic-pension-38man-april-2027.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/en/a/basic-pension-38man-april-2027.html</guid>
+      <pubDate>Sat, 28 Nov 2026 09:07:37 +0900</pubDate>
+      <category>Economy &amp; Finance</category>
+      <description>The amendment to the Basic Pension Act was passed by the Legislative Subcommittee of the Health and Welfare Committee of the National Assembly on November 25, 2026. The key is differential payment in three categories: 380,000 won for the bottom 30%, 359,000 won for the 30-45%, and 349,700 won for the 45-70%, and a couple reduction rate of 20% → 10%. However, the period from January to March 2027 is frozen, and the plenary session&#x27;s resolution and section boundary notice remain.</description>
+    </item>
     <item>
       <title>The 40-year legacy of Sinchon Blues: Why human artistry triumphs over AI in the modern music economy</title>
       <link>https://insightbriefnews.com/en/a/sinchon-blues-ai-music-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:38:52 +0900</pubDate>
       <category>Health &amp; Bio</category>
       <description>Flu hospitalization rates in UK NHS hospitals have exceeded pre-COVID-19 levels. Health authorities are preparing for hospital overload in the winter by recommending that medical staff and visitors wear masks.</description>
-    </item>
-    <item>
-      <title>Suwon Policy Seminar, Analysis of Real Estate Regulation Solutions in Seoul and Gyeonggi Province</title>
-      <link>https://insightbriefnews.com/en/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/en/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:37:24 +0900</pubDate>
-      <category>Property &amp; Tax</category>
-      <description>Seoul Mayor Oh Se-hoon and Rep. Kim Eun-hye declared policy cooperation in Suwon on December 1. We look at the practical effectiveness of deregulation and supply measures to restore the housing ladder in the metropolitan area.</description>
     </item>
   </channel>
 </rss>

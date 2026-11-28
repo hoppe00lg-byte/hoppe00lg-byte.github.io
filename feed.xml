@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/feed.xml" rel="self" type="application/rss+xml"/>
     <description>경제·금융, 무역·원자재, AI·테크, 재난·안전 현장을 데이터와 인터뷰로 추적하는 독립 리서치 웹진. 인터넷신문 등록 언론사가 아닌 독립 미디어입니다.</description>
     <language>ko</language>
-    <lastBuildDate>Sat, 28 Nov 2026 08:53:23 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 09:12:26 +0900</lastBuildDate>
+    <item>
+      <title>기초연금 38만원, 2027년 4월부터 세 구간…부부 감액 20%→10%의 조건</title>
+      <link>https://insightbriefnews.com/a/basic-pension-38man-april-2027.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/a/basic-pension-38man-april-2027.html</guid>
+      <pubDate>Sat, 28 Nov 2026 09:07:37 +0900</pubDate>
+      <category>경제·금융</category>
+      <description>기초연금법 개정안이 2026년 11월 25일 국회 보건복지위 법안소위를 통과했다. 소득 하위 30% 38만원, 30~45% 35만9,000원, 45~70% 34만9,700원의 3구간 차등 지급과 부부 감액률 20%→10%가 핵심이다. 다만 2027년 1~3월은 동결되고, 본회의 의결과 구간 경계 고시가 남아 있다.</description>
+    </item>
     <item>
       <title>40주년 맞은 신촌블루스 엄인호가 경고한 AI 음악 의존의 경제학</title>
       <link>https://insightbriefnews.com/a/sinchon-blues-ai-music-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:38:52 +0900</pubDate>
       <category>바이오·헬스</category>
       <description>영국 NHS 병원들의 독감 입원율이 코로나19 이전 수준을 넘어선 것으로 나타났다. 보건 당국은 의료진과 방문객의 마스크 착용을 권고하며 겨울철 병원 과부하에 대비하고 있다.</description>
-    </item>
-    <item>
-      <title>수원 정책 세미나, 서울·경기 부동산 규제 해법 분석</title>
-      <link>https://insightbriefnews.com/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:37:24 +0900</pubDate>
-      <category>부동산·생활세금</category>
-      <description>오세훈 서울시장과 김은혜 의원이 12월 1일 수원에서 정책 공조를 선언했다. 수도권 주거 사다리 복원을 위한 규제 완화와 공급 대책의 실질적 효용성을 짚어본다.</description>
     </item>
   </channel>
 </rss>

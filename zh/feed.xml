@@ -6,7 +6,15 @@
     <atom:link href="https://insightbriefnews.com/zh/feed.xml" rel="self" type="application/rss+xml"/>
     <description>一本通过数据和采访追踪经济与金融、贸易与原材料、人工智能与技术、灾难与安全现场的独立研究网络杂志。本刊为独立媒体，并非注册的互联网新闻媒体。</description>
     <language>zh-Hans</language>
-    <lastBuildDate>Sat, 28 Nov 2026 08:57:35 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 09:16:27 +0900</lastBuildDate>
+    <item>
+      <title>基本年金38万韩元，2027年4月起分三期…夫妻减免20%→10%条件</title>
+      <link>https://insightbriefnews.com/zh/a/basic-pension-38man-april-2027.html</link>
+      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/basic-pension-38man-april-2027.html</guid>
+      <pubDate>Sat, 28 Nov 2026 09:07:37 +0900</pubDate>
+      <category>经济·金融</category>
+      <description>国会保健福祉委员会立法小组委员会于2026年11月25日通过了《基本年金法》修正案。关键是实行三类差别支付：底层30%的人为38万韩元、30-45%的人为35.9万韩元、45-70%的人为34.97万韩元、情侣减少率20%→10%。但2027年1月至3月期间被冻结，全体会议决议和分区边界通知仍然保留。</description>
+    </item>
     <item>
       <title>新村布鲁斯 (Sinchon Blues) 的 Eom In-ho 在成立 40 周年之际警告依赖人工智能音乐的经济学</title>
       <link>https://insightbriefnews.com/zh/a/sinchon-blues-ai-music-analysis-20261128.html</link>
@@ -158,14 +166,6 @@
       <pubDate>Fri, 27 Nov 2026 06:38:52 +0900</pubDate>
       <category>生物·健康</category>
       <description>英国 NHS 医院的流感住院率已超过 COVID-19 之前的水平。卫生当局建议医务人员和访客戴口罩，为冬季医院超负荷做准备。</description>
-    </item>
-    <item>
-      <title>水原政策研讨会，首尔和京畿道房地产调控解决方案分析</title>
-      <link>https://insightbriefnews.com/zh/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</link>
-      <guid isPermaLink="true">https://insightbriefnews.com/zh/a/seoul-gyeonggi-real-estate-policy-seminar-2026-20261127.html</guid>
-      <pubDate>Fri, 27 Nov 2026 06:37:24 +0900</pubDate>
-      <category>房产·个税</category>
-      <description>首尔市长吴世勋和众议员金恩惠于12月1日在水原宣布了政策合作。我们关注放松管制和供应措施以恢复首都圈住房阶梯的实际效果。</description>
     </item>
   </channel>
 </rss>
