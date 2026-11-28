@@ -3,7 +3,7 @@
  "kind": "goods",
  "lang": "ja",
  "date": "2026-11-28",
- "generatedAt": "2026-11-28T14:51:38+09:00",
+ "generatedAt": "2026-11-28T21:12:21+09:00",
  "fx": {
   "usdKrw": 1335.09,
   "jpyKrw": 8.3693,
@@ -60,7 +60,7 @@
    "cur": "JPY",
    "price": 12520,
    "priceKind": "live",
-   "buySource": "価格.com 最安(12店)",
+   "buySource": "価格.com 最安(13店)",
    "buyTitle": "737 Power Bank (PowerCore 24000) A1289N11 [ブラック]",
    "invested": 118356,
    "customs": 0,
@@ -111,33 +111,33 @@
    "model": "1822221",
    "origin": "JP",
    "cur": "JPY",
-   "price": 14100,
+   "price": 13980,
    "priceKind": "live",
-   "buySource": "価格.com 最安(3店)",
-   "buyTitle": "チェアワン ホーム 19750028 [マスタード]",
-   "invested": 131777,
+   "buySource": "価格.com 最安(4店)",
+   "buyTitle": "チェアワン 1822221 [ブラック]",
+   "invested": 130758,
    "customs": 0,
    "ict": 0,
    "domestic": 170810,
    "sell": 170810,
-   "margin": 27493,
-   "roi": 20.9,
+   "margin": 28512,
+   "roi": 21.8,
    "krName": "헬리녹스 체어원 홈",
    "krN": 14,
    "krLow": 126490,
    "krHigh": 319370,
-   "overseasUrl": "https://kakaku.com/item/K0001695752/",
+   "overseasUrl": "https://kakaku.com/item/K0001036776/",
    "krUrl": "https://www.enuri.com/catalog/133791871",
    "fx": 8.3693,
    "intl": 12000,
-   "cardFee": 1770,
+   "cardFee": 1755,
    "dutyPct": 8.0,
    "taxable": false,
    "sellFee": 8540,
    "shipout": 3000,
    "fill": {
     "cur": "JPY",
-    "price": 14100,
+    "price": 13980,
     "fx": 8.3693,
     "local": 0,
     "intl": 12000,
@@ -149,7 +149,7 @@
     "fee": 5.0,
     "fixed": 0,
     "shipout": 3000,
-    "other": 1770
+    "other": 1755
    },
    "rank": 2
   },
@@ -558,5 +558,5 @@
    "side": "sell"
   }
  ],
- "syncedAt": "2026-11-28T14:54:29+09:00"
+ "syncedAt": "2026-11-28T21:15:26+09:00"
 }
