@@ -21,11 +21,15 @@
   function candidateUrls() {
     var out = [];
     function add(u) { if (u && u.charAt(0) === '/' && out.indexOf(u) === -1 && u !== path) out.push(u); }
-    var ascii = (path.match(/^[\x21-\x7E]+/) || [''])[0];
+    /* 주소창의 한글은 퍼센트 인코딩(%EC%8B%9C…)이라 먼저 풀어서 봅니다. */
+    var decoded = path;
+    try { decoded = decodeURIComponent(path); } catch (e) { decoded = path; }
+    var ascii = (decoded.match(/^[\x21-\x7E]+/) || [''])[0];
     var bases = [];
     /* '/market.html시장' 처럼 URL 뒤에 다른 문자권 글자가 붙은 주소는 앞의 ASCII 부분을 먼저 봅니다. */
-    if (ascii && ascii.length > 1 && ascii !== path) bases.push(ascii);
-    bases.push(path);
+    if (ascii && ascii.length > 1 && ascii !== decoded) bases.push(ascii);
+    bases.push(decoded);
+    if (decoded !== path) bases.push(path);
     bases.forEach(function (p) {
       var noSlash = p.replace(/\/+$/, '');
       add(noSlash);
